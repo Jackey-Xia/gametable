@@ -725,6 +725,9 @@ if(pq!==null&&pq!==""){$("#q").value=pq;kw=pq;}
 const pt=params.get("tab");
 if(pt==="ns"||pt==="mem"){showTab(pt);}else{showTab("ps");}
 })();
+
+/* 改70: 注册 Service Worker —— 封面图看过一次后锁存在顾客设备本地, 再打开零加载秒出 */
+if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){});});}
 </script>
 </body>
 </html>

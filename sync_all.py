@@ -44,6 +44,10 @@ site = os.path.join(BASE, "site")
 os.makedirs(site, exist_ok=True)
 shutil.copyfile(os.path.join(BASE, "data.js"), os.path.join(site, "data.js"))
 shutil.copyfile(os.path.join(BASE, "index.html"), os.path.join(site, "index.html"))
+# 改70: Service Worker (封面本地锁存)
+sw = os.path.join(BASE, "sw.js")
+if os.path.exists(sw):
+    shutil.copyfile(sw, os.path.join(site, "sw.js"))
 av = os.path.join(BASE, "avatar.jpg")
 if os.path.exists(av):
     shutil.copyfile(av, os.path.join(site, "avatar.jpg"))
