@@ -8,6 +8,11 @@ const CACHE = 'gt-covers-v2';
 
 self.addEventListener('install', e => self.skipWaiting());
 
+/* 改71c: 页面每次打开都发消息续传预存(中断的部分自动补齐, 已缓存跳过) */
+self.addEventListener('message', e => {
+  if (e.data && e.data.type === 'precache') { precache().catch(function(){}); }
+});
+
 self.addEventListener('activate', e => {
   e.waitUntil((async () => {
     // 清理旧版本缓存

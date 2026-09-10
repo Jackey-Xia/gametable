@@ -730,6 +730,11 @@ if(pt==="ns"||pt==="mem"){showTab(pt);}else{showTab("ps");}
 /* 改71b: 尽早注册 SW(updateViaCache=none 让浏览器立即拿到新版); 页脚显示锁存状态, 便于确认生效 */
 if("serviceWorker" in navigator){
   navigator.serviceWorker.register("sw.js",{updateViaCache:"none"}).catch(function(){});
+  // 每次打开都让 SW 续传预存(中断的自动补齐)
+  navigator.serviceWorker.ready.then(function(reg){
+    if(reg.active)reg.active.postMessage({type:"precache"});
+    else navigator.serviceWorker.controller&&navigator.serviceWorker.controller.postMessage({type:"precache"});
+  }).catch(function(){});
   function gtSwStat(){
     caches.keys().then(function(ks){
       if(ks.indexOf("gt-covers-v2")<0)return;
@@ -739,7 +744,9 @@ if("serviceWorker" in navigator){
       });
     }).catch(function(){});
   }
-  setTimeout(gtSwStat,3000);setTimeout(gtSwStat,15000);setTimeout(gtSwStat,45000);
+  // 持续刷新指示器(每5秒, 共4分钟), 让预存进度可见
+  var gtT=0;var gtTimer=setInterval(function(){gtT++;gtSwStat();if(gtT>48)clearInterval(gtTimer);},5000);
+  setTimeout(gtSwStat,3000);
 }
 </script>
 </body>
