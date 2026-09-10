@@ -2,7 +2,7 @@
  * 作用: 封面图本地锁存 —— 顾客看过一次的封面永久存在其设备上,
  *       之后再打开页面直接读本地、零网络请求、图片秒出;
  *       图片在后台静默更新(先给旧的、拿到新的换上), 更换封面也能正常传播。
- * 策略: covers/*.jpg = stale-while-revalidate; 其余请求不拦截(页面/数据保持在线取最新)
+ * 策略: 站点全部 .jpg(封面/头像avatar/背景bg) = stale-while-revalidate; 其余请求不拦截(页面/数据保持在线取最新)
  */
 const CACHE = 'gt-covers-v1';
 
@@ -20,7 +20,7 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
   if (url.origin !== location.origin) return;                 // 只管本站
-  if (!/^\/gametable\/covers\/.+\.jpg$/i.test(url.pathname)) return; // 只管封面图
+  if (!/^\/gametable\/.+\.jpg$/i.test(url.pathname)) return; // 封面/头像/背景 全部锁存
   if (e.request.method !== 'GET') return;
 
   e.respondWith((async () => {
