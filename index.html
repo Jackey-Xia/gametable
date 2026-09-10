@@ -306,6 +306,7 @@ footer b{color:#4b5563}
 <footer>
   <div><b>「夏天Jackey」PS丨NS 数字版游戏</b></div>
   <div style="margin-top:4px">库存与价格请以拍前客服确认为准</div>
+  <div id="swStat" style="margin-top:6px;opacity:.75;font-size:12px">图片加速：首次访问后生效</div>
 </footer>
 
 <button id="toTop" class="toTop" aria-label="返回顶部" title="返回顶部">↑ 返回顶部</button>
@@ -726,8 +727,20 @@ const pt=params.get("tab");
 if(pt==="ns"||pt==="mem"){showTab(pt);}else{showTab("ps");}
 })();
 
-/* 改70: 注册 Service Worker —— 封面图看过一次后锁存在顾客设备本地, 再打开零加载秒出 */
-if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){});});}
+/* 改71b: 尽早注册 SW(updateViaCache=none 让浏览器立即拿到新版); 页脚显示锁存状态, 便于确认生效 */
+if("serviceWorker" in navigator){
+  navigator.serviceWorker.register("sw.js",{updateViaCache:"none"}).catch(function(){});
+  function gtSwStat(){
+    caches.keys().then(function(ks){
+      if(ks.indexOf("gt-covers-v2")<0)return;
+      caches.open("gt-covers-v2").then(function(c){return c.keys();}).then(function(all){
+        var el=document.getElementById("swStat");
+        if(el)el.textContent="⚡ 图片已锁存 "+all.length+" 张 · 再次打开秒出";
+      });
+    }).catch(function(){});
+  }
+  setTimeout(gtSwStat,3000);setTimeout(gtSwStat,15000);setTimeout(gtSwStat,45000);
+}
 </script>
 </body>
 </html>
