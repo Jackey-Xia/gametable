@@ -339,7 +339,7 @@ function gtCoverSrc(im,url){
 async function gtPrecacheAll(urls){
   const list=[],seen={};(urls||[]).forEach(u=>{if(u&&!seen[u]){seen[u]=1;list.push(u);}});
   let i=0;
-  const workers=Array.from({length:4},async function(){
+  const workers=Array.from({length:6},async function(){
     while(i<list.length){
       const u=list[i++];
       try{
