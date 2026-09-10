@@ -1,0 +1,7 @@
+# 原始表导出含敏感列(账号/密码), 绝不入库
+data/kdc_export.json
+# 构建产物由 CI 现场生成
+site/
+data.js
+__pycache__/
+*.pyc

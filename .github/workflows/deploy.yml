@@ -1,0 +1,37 @@
+name: sync-and-deploy
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # 每小时整点(UTC, 与北京时间整点一致) - 安全兜底重建
+  workflow_dispatch: {}    # 支持手动触发
+  push:
+    branches: [main]
+    paths: ['data/**']      # AirScript 云端脚本推新数据 -> 立即构建发布
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build site from latest data
+        run: python3 sync_all.py
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - uses: actions/deploy-pages@v4

@@ -1,0 +1,52 @@
+name: privacy-guard
+
+on:
+  push:
+    branches: [main]
+    paths: ['data/**']
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Blank sensitive columns (N-Q) if any
+        run: |
+          python3 - << 'PY'
+          import json, os, sys
+          p = 'data/ps_grid.json'
+          if not os.path.exists(p):
+              print('no grid file'); sys.exit(0)
+          try:
+              d = json.load(open(p, encoding='utf-8'))
+          except Exception as e:
+              print('skip:', e); sys.exit(0)
+          rows = d.get('rows') or []
+          n = 0
+          for r in rows:
+              for c in (13, 14, 15, 16):
+                  if c < len(r) and r[c] not in (None, ''):
+                      r[c] = ''; n += 1
+          if n == 0:
+              print('clean: no sensitive values found'); sys.exit(0)
+          print('!! found %d sensitive cells -> scrubbing' % n)
+          json.dump(d, open(p, 'w', encoding='utf-8'), ensure_ascii=False)
+          open('/tmp/changed', 'w').write('1')
+          PY
+
+      - name: Commit scrub
+        run: |
+          if [ -f /tmp/changed ]; then
+            git config user.name  "privacy-guard"
+            git config user.email "privacy-guard@users.noreply.github.com"
+            git add data/ps_grid.json
+            git commit -m "[guard] auto-scrub sensitive columns (account/password) from public data"
+            git push
+          else
+            echo "nothing to do"
+          fi
