@@ -348,6 +348,10 @@ function verPriceOf(g){
 
 function platformOf(h){return (HOST_PLAT[h]||"");}
 
+/* 改69: 模糊搜索 —— ①两侧去分隔符(·・:：（）空格等)后包含即命中 ②仍不中则按"字序匹配"(所有字按顺序出现即可, 无需连续): 真三国 → 真·三国无双起源 ✅ */
+function normStr(s){return String(s||"").toLowerCase().replace(/[\s\u00b7\u2022\u2027\u30fb.:：,，、\-—_~～!！?？()（）\u3010\u3011"'“”‘’]/g,"");}
+function subseq(needle,hay){let i=0;for(let j=0;j<hay.length&&i<needle.length;j++){if(hay[j]===needle[i])i++;}return i===needle.length;}
+
 function filterPS(){
   const q=kw.trim().toLowerCase();
   let arr=PS.slice();
@@ -372,7 +376,7 @@ function filterPS(){
       if(regionSel&&g.region!==regionSel)return false;
       /* 改67k: 勾选租赁版本后, 仅显示该版本当前有货的游戏(可认证=PS4或PS5任一有货; 非认证=fc有货; 限定版=xd有货) */
       if(verSel.length&&!verSel.some(k=>VER_STOCK[k].some(f=>String(g[f]||"").trim()==="1")))return false;
-      if(q){const hay=(g.name+" "+g.en+" "+g.region).toLowerCase();if(hay.indexOf(q)<0)return false;}
+      if(q){const nq=normStr(q);if(nq){const hay=normStr(g.name+" "+g.en+" "+g.region);if(hay.indexOf(nq)<0&&!subseq(nq,hay))return false;}}
       return true;
     });
   }
