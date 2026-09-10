@@ -1,10 +1,10 @@
-/* 夏天Jackey 价目表 · Service Worker (改70)
- * 作用: 封面图本地锁存 —— 顾客看过一次的封面永久存在其设备上,
- *       之后再打开页面直接读本地、零网络请求、图片秒出;
- *       图片在后台静默更新(先给旧的、拿到新的换上), 更换封面也能正常传播。
- * 策略: 站点全部 .jpg(封面/头像avatar/背景bg) = stale-while-revalidate; 其余请求不拦截(页面/数据保持在线取最新)
+/* 夏天Jackey 价目表 · Service Worker (改71)
+ * 作用: 站点图片(封面/头像/背景)本地锁存 —— 顾客第2次打开即全量秒出。
+ * 机制: ①激活时预缓存全部封面(manifest 清单)+头像+背景(后台分批下载, 已缓存的自动跳过)
+ *       ②运行期拦截图片请求: 先回缓存秒出, 后台静默刷新(图片更换也能传播)
+ * 页面/数据/manifest 不拦截, 保证价格库存永远最新。
  */
-const CACHE = 'gt-covers-v1';
+const CACHE = 'gt-covers-v2';
 
 self.addEventListener('install', e => self.skipWaiting());
 
@@ -14,8 +14,39 @@ self.addEventListener('activate', e => {
     const keys = await caches.keys();
     await Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)));
     await self.clients.claim();
+    // 预缓存全量图片(失败不阻塞, 运行期拦截会继续补)
+    try { await precache(); } catch (err) {}
   })());
 });
+
+async function precache() {
+  const cache = await caches.open(CACHE);
+  let urls = ['avatar.jpg', 'bg.jpg'];
+  try {
+    const res = await fetch('covers/manifest.json', { cache: 'no-store' });
+    if (res.ok) {
+      const m = await res.json();
+      Object.keys(m).forEach(k => { if (typeof m[k] === 'string') urls.push(m[k]); });
+    }
+  } catch (err) {}
+  const base = self.registration.scope;
+  urls = [...new Set(urls.map(u => new URL(u, base).href))];
+  // 跳过已缓存的(增量)
+  const have = new Set((await cache.keys()).map(r => r.url));
+  urls = urls.filter(u => !have.has(u));
+  // 6 并发分批下载, 避免挤占顾客网络
+  let i = 0;
+  async function worker() {
+    while (i < urls.length) {
+      const u = urls[i++];
+      try {
+        const r = await fetch(u);
+        if (r && r.ok) await cache.put(u, r);
+      } catch (err) {}
+    }
+  }
+  await Promise.all(Array.from({ length: 6 }, worker));
+}
 
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
