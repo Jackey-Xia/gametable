@@ -50,4 +50,12 @@ if os.path.exists(av):
 bg = os.path.join(BASE, "bg.jpg")
 if os.path.exists(bg):
     shutil.copyfile(bg, os.path.join(site, "bg.jpg"))
+# 改68: 封面目录整体同步 (covers/manifest.json + 图片) 到 Pages 站点
+cv_src = os.path.join(BASE, "covers")
+if os.path.isdir(cv_src):
+    cv_dst = os.path.join(site, "covers")
+    if os.path.isdir(cv_dst):
+        shutil.rmtree(cv_dst)
+    shutil.copytree(cv_src, cv_dst, ignore=shutil.ignore_patterns("*.pyc"))
+    print("covers/ 已同步:", len([f for f in os.listdir(cv_dst) if f.endswith(".jpg")]), "张")
 print("sync_all 完成, site/ 已就绪")

@@ -130,6 +130,11 @@ select{border:1px solid var(--line);border-radius:10px;padding:8px 8px;backgroun
 .ghead-row:first-child{margin-top:2px}
 .gline{flex:1;height:1px;background:var(--line)}
 .gcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 12px 10px;box-shadow:var(--shadow);display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start}
+/* 改68: 游戏封面位 —— covers/manifest.json 有映射则显示真实封面, 无则显示首字占位 */
+.gcover{flex:0 0 auto;width:96px;height:128px;border-radius:10px;overflow:hidden;background:#eef1f6;border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative}
+.gcover img{width:100%;height:100%;object-fit:cover;display:block}
+.gcover.ph .phc{font-size:30px;font-weight:800;color:#ccd3df;line-height:1}
+.gcover.ph .pht{font-size:10px;color:#c3c9d4;margin-top:7px}
 .gmain{flex:1 1 300px;min-width:0}
 .gname{font-size:15.5px;font-weight:700;line-height:1.35;word-break:break-word}
 .gname small{font-size:11px;font-weight:600;color:#6b7280;background:#f1f4f9;border-radius:5px;padding:1px 6px;margin-left:6px;vertical-align:2px}
@@ -209,6 +214,10 @@ footer b{color:#4b5563}
 }
 @media (max-width:640px){
  .gcard{gap:8px}
+ /* 改68: 手机端封面位缩小 */
+ .gcover{width:74px;height:99px;border-radius:8px}
+ .gcover.ph .phc{font-size:24px}
+ .gmain{flex:1 1 150px}
  .gprices{flex:1 1 100%}
  /* 改67s: 小屏恢复满行均分(覆盖桌面固定150px宽) */
  .gprices .pt{flex:1 1 0;width:auto;min-width:0;padding:6px 4px 5px}
@@ -445,8 +454,28 @@ function stockLight(txt,st){
   s.appendChild(document.createTextNode(txt));
   return s;
 }
+/* 改68: 封面映射 —— 运行时读一次 covers/manifest.json, 卡片按游戏名查封面路径; 加载失败不影响列表 */
+const COVERS={};
+try{
+  fetch("covers/manifest.json?t="+Date.now()).then(r=>r.ok?r.json():{}).then(m=>{
+    if(m&&typeof m==="object"){
+      Object.keys(m).forEach(k=>{COVERS[k]=m[k];});
+      /* 封面到货后若列表已渲染, 刷新当前列表让占位变封面 */
+      if(rendered>0&&typeof renderPS==="function"){renderPS();}
+    }
+  }).catch(function(){});
+}catch(e){}
+
 function gameCard(g){
   const card=el("div","gcard");
+  /* 改68: 卡片封面(有映射显示真图, 无映射显示首字占位) */
+  (function(){
+    const f=COVERS[g.name];
+    const box=el("div","gcover"+(f?"":" ph"));
+    if(f){const im=document.createElement("img");im.src=f;im.alt="";im.loading="lazy";box.appendChild(im);}
+    else{box.appendChild(el("div","phc",String(g.name||"").slice(0,1)));box.appendChild(el("div","pht","封面待接入"));}
+    card.appendChild(box);
+  })();
   const main=el("div","gmain");
   const nm=el("div","gname",g.name);
   main.appendChild(nm);
