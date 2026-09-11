@@ -71,7 +71,8 @@ input,select{font:inherit}
 /* 控制条 */
 .controls{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:var(--shadow);display:flex;gap:18px 8px;flex-wrap:wrap;align-items:center;position:sticky;top:8px;z-index:20}
 .search{flex:1 1 220px;position:relative}
-.search input{width:100%;border:1px solid var(--line);border-radius:10px;padding:9px 12px 9px 34px;background:#fafbfc;color:var(--ink);outline:none}
+/* 改77: font-size 必须≥16px, 否则 iPhone 上点击搜索框整个页面会被 iOS 自动放大 */
+.search input{width:100%;border:1px solid var(--line);border-radius:10px;padding:8px 12px 8px 34px;background:#fafbfc;color:var(--ink);outline:none;font-size:16px}
 .search input:focus{border-color:#6d85e0;background:#fff}
 .search svg{position:absolute;left:10px;top:10px;opacity:.5}
 .ctrl{display:flex;gap:6px;flex-wrap:nowrap}
@@ -169,7 +170,6 @@ select{border:1px solid var(--line);border-radius:10px;padding:8px 8px;backgroun
 .sugbox.show{display:block}
 .sugbox .si{display:flex;align-items:center;gap:9px;padding:10px 13px;cursor:pointer;font-size:14px;color:#1f2430;-webkit-tap-highlight-color:transparent}
 .sugbox .si:hover,.sugbox .si:active{background:#f5f7fb}
-.sugbox .si svg{flex:none;opacity:.5}
 .sugbox .si .nm{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sugbox .si .nm b{color:#d33a3a;font-weight:700}
 .sugbox .si .hs{flex:none;font-size:11px;color:#8a93a3;background:#f1f4f9;border-radius:5px;padding:1px 6px}
@@ -488,19 +488,46 @@ function homophoneRows(q){
 /* 改76: 百度式搜索联想下拉 —— 输入即弹出库内真实游戏(模糊命中优先, 不足补同音),
    手机5条/电脑10条; 点击条目直接跳到该游戏卡片并闪烁高亮(下方黄条提示已按需求移除) */
 function SUG_MAX(){return window.innerWidth<768?5:10;}
+/* 改77: 同一游戏多库存(名字尾部(1)(2)(3)…序号, 代表同一游戏的多个账号)在联想里只占一条 */
+function stripSeq(s){return String(s||"").replace(/[（(]\s*\d+\s*[)）]\s*$/,"");}
+var SEQ_KAKO=/[（(]\s*\d+\s*[)）]\s*$/;            /* 库存序号: 尾部括号数字, 如 摧毁Dysmantle（2） */
+var SEQ_BARE=/^(.*\D)\d+$/;                        /* 库存序号: 尾部裸数字,   如 鬼武者：剑之道3   */
+var SEQ_TAIL=/([（(]\s*\d+\s*[)）]|\d+)\s*$/;      /* 名字尾部带任意序号 */
+/* 这些系列的数字是"作品序号"不是"账号序号", 不合并(如 最终幻想2 ≠ 最终幻想1的另一个账号) */
+var MERGE_EXCLUDE=["最终幻想","虐杀原形"];
+/* 两个商品是否为同一游戏的重复库存 */
+function dupOf(a,b){
+  const ba=stripSeq(a.name),bb=stripSeq(b.name);
+  if(ba!==""&&ba===bb&&(SEQ_KAKO.test(a.name)||SEQ_KAKO.test(b.name)))return true;
+  const ma=a.name.match(SEQ_BARE),mb=b.name.match(SEQ_BARE);
+  /* 裸数字: 仅当"同价同日"才视为同游戏多账号(防误伤鬼灭1/2、禁闭求生1/2这类真续作) */
+  if(ma&&mb&&ma[1]===mb[1]&&ma[1].length>=2
+     &&a.ck7===b.ck7&&a.fc7===b.fc7&&a.xd30===b.xd30&&a.date===b.date
+     &&!MERGE_EXCLUDE.some(x=>ma[1].indexOf(x)===0))return true;
+  return false;
+}
 function sugMatches(q){
   const nq=normStr(q);
   if(!nq)return [];
-  const max=SUG_MAX(),exact=[],homo=[],qpy=toPY(nq);
-  for(let i=0;i<PS.length;i++){
-    const g=PS[i];
-    if(exact.length<max){
-      const hay=normStr(g.name+" "+(g.en||""));
-      if(hay.indexOf(nq)>=0||subseq(nq,hay)){exact.push(g);continue;}
-    }
-    if(homo.length<max&&qpy&&toPY(g.name).indexOf(qpy)>=0)homo.push(g);
+  const cap=SUG_MAX()*4,exact=[],homo=[],qpy=toPY(nq);
+  for(let i=0;i<PS.length&&exact.length<cap;i++){
+    const g=PS[i],hay=normStr(g.name+" "+(g.en||""));
+    if(hay.indexOf(nq)>=0||subseq(nq,hay))exact.push(g);
   }
-  return exact.concat(homo).slice(0,max);
+  if(qpy&&exact.length<cap){
+    for(let i=0;i<PS.length&&homo.length<cap;i++){
+      const g=PS[i];
+      if(toPY(g.name).indexOf(qpy)>=0&&exact.indexOf(g)<0)homo.push(g);
+    }
+  }
+  /* 同游戏多库存去重: 每组只留一条; 若组内有"无序号的干净名"优先展示干净名 */
+  const out=[];
+  for(const g of exact.concat(homo)){
+    const at=out.findIndex(h=>dupOf(h,g));
+    if(at<0){out.push(g);continue;}
+    if(SEQ_TAIL.test(out[at].name)&&!SEQ_TAIL.test(g.name))out[at]=g;
+  }
+  return out.slice(0,SUG_MAX());
 }
 /* 精确包含时把命中片段标红; 字序/同音命中不高亮 */
 function sugHighlight(name,q){
@@ -518,7 +545,7 @@ function sugHighlight(name,q){
   if(start<0||end<0)return null;
   return [name.slice(0,start),name.slice(start,end),name.slice(end)];
 }
-const MAG='<svg width="13" height="13" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#6b7280" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="#6b7280" stroke-width="2" stroke-linecap="round"/></svg>';
+/* 改77: 放大镜图标已移除(原 MAG 常量废弃) */
 function renderSug(){
   const box=$("#sugbox");
   if(!box)return;
@@ -530,8 +557,8 @@ function renderSug(){
   if(!list.length){box.classList.remove("show");box.innerHTML="";return;}
   box.innerHTML="";
   list.forEach(g=>{
+    /* 改77: 去掉条目左侧放大镜图标(部分机型渲染成"错误符号"方块且与文字重叠), 改为纯文字更干净 */
     const it=el("div","si");
-    it.innerHTML=MAG;
     const nm=el("div","nm");
     const hl=sugHighlight(g.name,q);
     if(hl){nm.appendChild(document.createTextNode(hl[0]));nm.appendChild(el("b",null,hl[1]));nm.appendChild(document.createTextNode(hl[2]));}
