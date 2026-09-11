@@ -940,7 +940,9 @@ function renderMEM(){
 }
 
 /* ---------- Tab 与事件 ---------- */
+let curTab="ps";   /* 改81: 记录当前所在的大分类, 供"返回顶部"回到本分类第一屏 */
 function showTab(name){
+  curTab=name;     /* 改81 */
   $("#psView").style.display=name==="ps"?"block":"none";
   $("#nsView").style.display=name==="ns"?"block":"none";
   $("#memView").style.display=name==="mem"?"block":"none";
@@ -1017,15 +1019,13 @@ $("#resetBtn").addEventListener("click",()=>{
 $("#moreBtn").addEventListener("click",()=>renderMore(PAGE));
 document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.tab)));
 function resetLetter(){Object.keys(__letterSeen).forEach(k=>delete __letterSeen[k]);}
-/* 改49: 返回顶部按钮 —— 下滑超过400px出现, 点击恢复刚打开链接时的初始状态(顶部+默认筛选) */
+/* 改49: 返回顶部按钮 —— 下滑超过400px出现 */
+/* 改81: 点击只回到"当前所在分类"的第一屏(PS/NS/会员 各自对应), 保留该分类下的搜索与筛选状态;
+   不再固定跳回 PS 分类 + 默认筛选(那是链接刚打开的样子, 顾客切到 NS/会员 下点它会莫名跳走) */
 window.addEventListener("scroll",()=>{const b=$("#toTop");if(b)b.classList.toggle("show",window.scrollY>400);},{passive:true});
 $("#toTop").addEventListener("click",()=>{
-  kw="";$("#q").value="";
   const sb=$("#sugbox");if(sb){sb.classList.remove("show");sb.innerHTML="";}   /* 改76 */
-  vselHost.reset();vselRegion.reset();vselVer.reset();vselSort.reset();
-  hostSel="";regionSel="";verSel=[];sortMode="src";
-  resetLetter();renderPS();showTab("ps");
-  window.scrollTo(0,0);
+  showTab(curTab);   /* 改81: 与"刚点击当前分类标签"完全一致 —— 回到该分类第一屏并滚到顶 */
 });
 
 /* 读取 URL 参数 ?tab= & ?q= */
