@@ -595,7 +595,9 @@ function renderSug(){
     it.addEventListener("mousedown",e=>{e.preventDefault();sugGo(g);});
     box.appendChild(it);
   });
-  box.appendChild(el("div","ft",list.length>=SUG_MAX()?("共匹配 "+list.length+"+ 款，点击直接前往；回车查看全部"):"点击游戏名直接前往"));
+  /* 改80: 手机没有回车键提示, 仅桌面端显示"回车查看全部" */
+  const ftTxt=list.length>=SUG_MAX()?("共匹配 "+list.length+"+ 款，点击直接前往"+(window.innerWidth<768?"":"；回车查看全部")):"点击游戏名直接前往";
+  box.appendChild(el("div","ft",ftTxt));
   box.classList.add("show");
 }
 function listElVisible(e){return !!(e&&e.offsetParent!==null);}
