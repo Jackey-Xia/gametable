@@ -14,7 +14,7 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(BASE, "match_out")
 os.makedirs(OUT, exist_ok=True)
 
-games = json.load(open(os.path.join(BASE, "cloudrepo/data/ps_games.json"), encoding="utf-8"))
+games = json.load(open(os.path.join(BASE, "data/ps_games.json"), encoding="utf-8"))
 
 
 def http(url, timeout=40):

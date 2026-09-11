@@ -11,7 +11,7 @@ import json, os, re, hashlib, time, urllib.request, urllib.parse
 from concurrent.futures import ThreadPoolExecutor
 
 BASE = os.path.dirname(os.path.abspath(__file__))
-COVERS = os.path.join(BASE, "cloudrepo/covers")
+COVERS = os.path.join(BASE, "covers")
 os.makedirs(COVERS, exist_ok=True)
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/121.0 Safari/537.36")
@@ -143,9 +143,24 @@ def main():
     # 自定义覆盖文件存在性校验
     for name, path in list(byname.items()):
         if name in overrides:
-            p = os.path.join(BASE, "cloudrepo", path)
+            p = os.path.join(BASE, path)
             if not os.path.exists(p):
                 del byname[name]
+
+    # 合并旧 manifest: 本轮匹配不到的条目, 只要旧图文件还在就保留(防止误清下架已有封面)
+    mpath = os.path.join(COVERS, "manifest.json")
+    if os.path.exists(mpath):
+        try:
+            old = json.load(open(mpath, encoding="utf-8"))
+            kept = 0
+            for name, rel in old.items():
+                if name not in byname and os.path.exists(os.path.join(BASE, rel)):
+                    byname[name] = rel
+                    kept += 1
+            if kept:
+                print("保留旧 manifest 条目:", kept)
+        except Exception:
+            pass
 
     json.dump(byname, open(os.path.join(COVERS, "manifest.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=0, sort_keys=True)
