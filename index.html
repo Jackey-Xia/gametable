@@ -520,14 +520,27 @@ function sugMatches(q){
       if(toPY(g.name).indexOf(qpy)>=0&&exact.indexOf(g)<0)homo.push(g);
     }
   }
-  /* 同游戏多库存去重: 每组只留一条; 若组内有"无序号的干净名"优先展示干净名 */
+  /* 同游戏多库存去重: 每组只留一条; 若组内有"无序号的干净名"优先展示干净名。
+     改78: 拷贝后打 _merged 标记(不污染 PS 原对象), 供下方展示名去序号 */
   const out=[];
   for(const g of exact.concat(homo)){
     const at=out.findIndex(h=>dupOf(h,g));
-    if(at<0){out.push(g);continue;}
-    if(SEQ_TAIL.test(out[at].name)&&!SEQ_TAIL.test(g.name))out[at]=g;
+    if(at<0){out.push(Object.assign({},g));continue;}
+    if(SEQ_TAIL.test(out[at].name)&&!SEQ_TAIL.test(g.name))out[at]=Object.assign({},g);
+    out[at]._merged=true;
   }
-  return out.slice(0,SUG_MAX());
+  /* 改78: 组代表若仍带序号(库里没有无序号干净名), 展示名去掉尾部序号:
+     鬼武者：剑之道1 → 鬼武者：剑之道 (最终幻想2等真续作走 MERGE_EXCLUDE 排除, 不受影响) */
+  const PSnames={};
+  for(let i=0;i<PS.length;i++)PSnames[PS[i].name]=1;
+  return out.slice(0,SUG_MAX()).map(g=>{
+    if(!g._merged)return g;
+    let base=null;
+    if(SEQ_KAKO.test(g.name))base=stripSeq(g.name);
+    else{const m=g.name.match(SEQ_BARE);if(m&&m[1].length>=2)base=m[1];}
+    if(base&&!PSnames[base]&&!MERGE_EXCLUDE.some(x=>base.indexOf(x)===0))g.disp=base;
+    return g;
+  });
 }
 /* 精确包含时把命中片段标红; 字序/同音命中不高亮 */
 function sugHighlight(name,q){
@@ -560,9 +573,10 @@ function renderSug(){
     /* 改77: 去掉条目左侧放大镜图标(部分机型渲染成"错误符号"方块且与文字重叠), 改为纯文字更干净 */
     const it=el("div","si");
     const nm=el("div","nm");
-    const hl=sugHighlight(g.name,q);
+    const showName=g.disp||g.name;   /* 改78: 多库存组代表展示名去尾部序号 */
+    const hl=sugHighlight(showName,q);
     if(hl){nm.appendChild(document.createTextNode(hl[0]));nm.appendChild(el("b",null,hl[1]));nm.appendChild(document.createTextNode(hl[2]));}
-    else nm.textContent=g.name;
+    else nm.textContent=showName;
     it.appendChild(nm);
     if((g.hs||[]).length)it.appendChild(el("span","hs",g.hs.join(" ")));
     /* mousedown 抢在 input blur 之前执行, 防止点选丢失 */
