@@ -83,7 +83,19 @@ membership={
 
 updated=datetime.date.today().strftime("%Y-%m-%d")
 
-data={"updated":updated,
+# 改86: 把 AirScript 的同步时间戳也带进 data.js(原 `updated` 只精确到日, 看不出是否最新)
+synced=""
+try:
+    for _src in ("ps_grid.json","ns_grid.json"):
+        _p=os.path.join(BASE,"data",_src)
+        if os.path.exists(_p):
+            with open(_p,encoding="utf-8") as _f: _g=json.load(_f)
+            _t=(_g.get("synced_at") or "").strip()
+            if _t: synced=synced+(_src[:2].upper()+" "+_t+"  ") if synced else _t
+except Exception:
+    pass
+
+data={"updated":updated,"synced":synced,
  "promo":"一次拍2单7天送3天=17天，一次拍3单7天送9天=30天",
  "ps":clean,"ns":ns,"membership":membership}
 

@@ -329,6 +329,7 @@ footer b{color:#4b5563}
 <footer>
   <div><b>「夏天Jackey」PS丨NS 数字版游戏</b></div>
   <div style="margin-top:4px">库存与价格请以拍前客服确认为准</div>
+  <div id="dataSynced" style="margin-top:6px;opacity:.75;font-size:12px">库存数据：加载中…</div>
   <div id="swStat" style="margin-top:6px;opacity:.75;font-size:12px">图片加速：首次访问后生效</div>
 </footer>
 
@@ -352,6 +353,18 @@ footer b{color:#4b5563}
 window.__GTBOOT=function(){
 (function(){
 const D=window.GT_DATA||{};
+/* 改86: 页脚显示数据同步时间戳 —— 让店主一眼判断当前看到的是不是最新库存 */
+(function(){
+  var el=document.getElementById("dataSynced");
+  if(!el) return;
+  var synced=window.GT_DATA && window.GT_DATA.synced;
+  if(!synced){ el.textContent="库存数据：未带同步时间"; return; }
+  var d=new Date(synced);
+  if(isNaN(d.getTime())){ el.textContent="库存数据：同步时间无效"; return; }
+  function pad(n){ return n<10?"0"+n:""+n; }
+  var s=d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate())+" "+pad(d.getHours())+":"+pad(d.getMinutes());
+  el.textContent="📦 库存数据同步于 "+s+"  ·  看到旧数据请下拉刷新";
+})();
 const PS=D.ps||[], NS=D.ns||[], MEM=D.membership||{};
 const CONFIG={ shopUrl:"", q:"" };   // 如需“立即购买”跳转，请填店铺下单链接
 const $=s=>document.querySelector(s);
