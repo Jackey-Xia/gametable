@@ -514,6 +514,36 @@ function dupOf(a,b){
      &&!MERGE_EXCLUDE.some(x=>ma[1].indexOf(x)===0))return true;
   return false;
 }
+/* 改82: 搜索相关度排序 —— 有关键词时让"最贴近搜索词"的排在最前:
+   ① 名称以关键词开头 > 名称包含关键词 > 英文名命中 > 字序命中;
+   ② 关键词后紧跟的序号按自然序排列(搜"仁王" → 仁王1 → 仁王2 → 仁王3, 不再被2026年发售的仁王3挤到前面);
+   ③ 同序号时"名字最简洁"的优先(仁王1（完整版） 排在 "仁王1+仁王2合集"、"仁王3（豪华版）" 之前);
+   ④ 同分保持原有先后(稳定排序), 因此用户选过的"发售日期/价格"排序仍作为同级内的次序 */
+function searchRank(g,nq){
+  const full=normStr(g.name);
+  const bare=normStr(stripSeq(String(g.name||"")));   /* 去掉尾部库存序号, 免得 仁王3（1）→"仁王31" 把序号读成31 */
+  const en=normStr(g.en||"");
+  const at=full.indexOf(nq);
+  const tier=at===0?0:(at>0?1:((en.indexOf(nq)>=0)?2:3));
+  let num=999;
+  const at2=bare.indexOf(nq);
+  if(at2>=0){const m=bare.slice(at2+nq.length).match(/^(\d{1,2})/);if(m)num=parseInt(m[1],10);}
+  return [tier,num,num<999?bare.length:0];
+}
+function sortByRelevance(list,nq){
+  const rows=list.map((g,i)=>[g,searchRank(g,nq),i]);
+  /* 只有"关键词后跟序号"的结果≥2条时才算一整套序列(仁王1/2/3)并按序号排;
+     孤零零一条(如搜"刺客信条"里的"刺客信条3")不算序列, 保持原有顺序不被顶到最前 */
+  const series=rows.filter(r=>r[1][1]<999).length>=2;
+  rows.sort((A,B)=>{
+    const ra=A[1],rb=B[1];
+    if(ra[0]!==rb[0])return ra[0]-rb[0];
+    if(series){if(ra[1]!==rb[1])return ra[1]-rb[1];if(ra[2]!==rb[2])return ra[2]-rb[2];}
+    return A[2]-B[2];
+  });
+  return rows.map(r=>r[0]);
+}
+function orderBySearch(arr,nq){return nq?sortByRelevance(arr,nq):arr;}
 function sugMatches(q){
   const nq=normStr(q);
   if(!nq)return [];
@@ -542,7 +572,9 @@ function sugMatches(q){
      真续作(生化危机5/6、纪念碑谷1/2、特斯拉学徒1/2、八方旅人1/2 等)保持原样 */
   const PSnames={};
   for(let i=0;i<PS.length;i++)PSnames[PS[i].name]=1;
-  return out.slice(0,SUG_MAX()).map(g=>{
+  /* 改82: 下拉同样按相关度排序(仁王1 在 仁王3 之前), 与列表顺序保持一致 */
+  const ranked=sortByRelevance(out,nq);
+  return ranked.slice(0,SUG_MAX()).map(g=>{
     let base=null;
     const kn=suffixNum(g.name);
     if(kn>0&&kn<=30)base=stripSeq(g.name);
@@ -646,6 +678,8 @@ function filterPS(){
       return true;
     });
   }
+  /* 改82: 有关键词时按相关度排序(前缀命中优先 + 名称里序号自然序), 用户所选的排序作为同级次序 */
+  if(q)arr=orderBySearch(arr,normStr(q));
   return arr;
 }
 
