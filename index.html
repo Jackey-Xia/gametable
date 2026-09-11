@@ -328,7 +328,7 @@ footer b{color:#4b5563}
 
 <footer>
   <div><b>「夏天Jackey」PS丨NS 数字版游戏</b></div>
-  <div style="margin-top:4px">库存与价格请以拍前客服确认为准</div>
+  <div style="margin-top:4px">库存与价格请拍前与商家确认</div>
   <div id="dataSynced" style="margin-top:6px;opacity:.75;font-size:12px">库存数据：加载中…</div>
   <div id="swStat" style="margin-top:6px;opacity:.75;font-size:12px">图片加速：首次访问后生效</div>
 </footer>
@@ -363,7 +363,7 @@ const D=window.GT_DATA||{};
   if(isNaN(d.getTime())){ el.textContent="库存数据：同步时间无效"; return; }
   function pad(n){ return n<10?"0"+n:""+n; }
   var s=d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate())+" "+pad(d.getHours())+":"+pad(d.getMinutes());
-  el.textContent="📦 库存数据同步于 "+s+"  ·  看到旧数据请下拉刷新";
+  el.textContent="📦 库存数据同步于 "+s;
 })();
 const PS=D.ps||[], NS=D.ns||[], MEM=D.membership||{};
 const CONFIG={ shopUrl:"", q:"" };   // 如需“立即购买”跳转，请填店铺下单链接
@@ -462,8 +462,8 @@ function gtSwPaint(){
   if(GTI.lastKnown>200&&GTI.base!=null&&GTI.base<t*0.5&&GTI.base<GTI.lastKnown*0.5){
     elx.textContent="本地图库被系统清理，正在重建 "+n+"/"+t+" 张…";return;}
   if(n<=0){elx.textContent="首次访问：正在建立本地图库 0/"+t+" 张…";return;}
-  if(n<t){elx.textContent="⚡ 本地图片库 "+n+"/"+t+" 张 · 后台补齐中";return;}
-  elx.textContent="⚡ 本地图片库 "+n+" 张 · 再次打开秒出";
+  if(n<t){elx.textContent="⚡ 本地图片库加载 "+n+"/"+t+" 张";return;}
+  elx.textContent="⚡ 本地图片库加载 "+n+"/"+t+" 张";
 }
 
 /* 文案挂载 */
