@@ -1146,9 +1146,14 @@ setTimeout(gtSwStat,3500);
   if(!c||!ph) return;
   var on=false, baseTop=0;
   function calcBase(){ baseTop = c.offsetTop; }   /* controls 原始文档位置 */
+  /* 改92: 键盘态 fixed 的 top 要对齐 visual viewport —— iOS(尤其微信 WKWebView)弹出键盘后
+     可见区相对布局视口整体下移(visualViewport.offsetTop>0), 仍写死 top:0 会让容器顶部
+     (搜索框)被顶出可见区上方, 只剩底部筛选+字母可见。动态把 top 跟随 offsetTop 即可钉在可见区顶端。 */
+  function vvTop(){ return window.visualViewport ? Math.max(0, Math.round(window.visualViewport.offsetTop)) : 0; }
+  function place(){ if(on) c.style.top=vvTop()+"px"; }
   function apply(){
     if(getComputedStyle(c).display==="none"){          /* 控制栏被隐藏的视图(如会员资费页)不吸顶 */
-      if(on){ on=false; c.classList.remove("pinned"); ph.style.height="0px"; }
+      if(on){ on=false; c.classList.remove("pinned"); c.style.top=""; ph.style.height="0px"; }
       return;
     }
     var need = window.scrollY >= baseTop;    /* 页面滚过 controls 原始位置 -> 吸顶 */
@@ -1157,12 +1162,16 @@ setTimeout(gtSwStat,3500);
     if(on){
       ph.style.height=c.offsetHeight+"px";             /* 先量高度再切, 原位不留空 */
       c.classList.add("pinned");
+      c.style.top=vvTop()+"px";                        /* 改92: 键盘态对齐可见区顶端 */
     }else{
       c.classList.remove("pinned");
+      c.style.top="";                                  /* 改92: 清掉内联 top, 还原 CSS 的 0 */
       ph.style.height="0px";
     }
   }
-  function upd(){ apply(); }   /* 直接算, 不用 rAF(后台标签页 rAF 会被暂停, 吸顶会失灵) */
+  /* 直接算, 不用 rAF(后台标签页 rAF 会被暂停, 吸顶会失灵);
+     改92: apply 后无条件 place() —— 键盘平移(visualViewport scroll)时即使吸顶状态没变, top 也要跟着走 */
+  function upd(){ apply(); place(); }
   addEventListener("scroll",upd,{passive:true});
   /* iOS 键盘弹出/收起改的是 visualViewport, 只监听 scroll 覆盖不到"开输入法后再滑"这个场景 */
   if(window.visualViewport){
