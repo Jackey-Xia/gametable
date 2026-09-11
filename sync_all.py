@@ -44,6 +44,10 @@ site = os.path.join(BASE, "site")
 os.makedirs(site, exist_ok=True)
 shutil.copyfile(os.path.join(BASE, "data.js"), os.path.join(site, "data.js"))
 shutil.copyfile(os.path.join(BASE, "index.html"), os.path.join(site, "index.html"))
+# 改75: 拼音映射(同音搜索), 由 gen_pinyin.py 生成
+pyjs = os.path.join(BASE, "pinyin.js")
+if os.path.exists(pyjs):
+    shutil.copyfile(pyjs, os.path.join(site, "pinyin.js"))
 # 改70: Service Worker (封面本地锁存)
 sw = os.path.join(BASE, "sw.js")
 if os.path.exists(sw):
