@@ -69,7 +69,12 @@ input,select{font:inherit}
 
 .wrap{max-width:1060px;margin:0 auto;padding:16px}
 /* 控制条 */
-.controls{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:var(--shadow);display:flex;gap:18px 8px;flex-wrap:wrap;align-items:center;position:sticky;top:8px;z-index:20}
+.controls{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;box-shadow:var(--shadow);display:flex;gap:18px 8px;flex-wrap:wrap;align-items:center;position:sticky;top:0;z-index:20}
+/* 改84: 键盘态吸顶加固 —— iOS 弹出输入法后页面按 visual viewport 滚动, 单靠 sticky 控制区会随内容滚走,
+   故由 JS 在滚过原位后切换为 fixed, 真正钉在屏幕上(sticky 保留, 作为脚本未执行时的降级) */
+/* 改84: 占位必须始终留在文档流里 —— display:none 的元素 getBoundingClientRect() 全为 0, 会被误判成"已滚过" */
+#ctrlPh{height:0;overflow:hidden}
+.controls.pinned{position:fixed;top:0;left:0;right:0;margin:0 auto;max-width:1028px;border-radius:0 0 14px 14px;box-shadow:0 6px 18px rgba(16,24,40,.16)}
 .search{flex:1 1 220px;position:relative}
 /* 改77: font-size 必须≥16px, 否则 iPhone 上点击搜索框整个页面会被 iOS 自动放大 */
 .search input{width:100%;border:1px solid var(--line);border-radius:10px;padding:8px 12px 8px 34px;background:#fafbfc;color:var(--ink);outline:none;font-size:16px}
@@ -218,8 +223,10 @@ footer b{color:#4b5563}
 
 /* 改67l: 小屏断点430→500px, 覆盖大屏手机(如Pro Max/安卓480dp)保证4筛选+重置同一行 */
 @media (max-width:500px){
-  .wrap{padding-left:10px;padding-right:10px}
-  .controls{gap:14px 4px;padding:8px}
+.wrap{padding-left:10px;padding-right:10px}
+.controls{gap:14px 4px;padding:8px}
+/* 改84: 小屏 fixed 吸顶时与 .wrap 的左右 10px 内边距对齐 */
+.controls.pinned{max-width:none;margin:0 10px}
   .ctrl{gap:4px;flex:1 1 100%}
   .ctrl select,.ctrl .vsel-btn{flex:1 1 0;width:auto;max-width:none;min-width:0;font-size:11.5px;padding:8px 3px}
   .ctrl .vsel-btn{justify-content:space-between}
@@ -272,6 +279,8 @@ footer b{color:#4b5563}
 
 <main class="wrap">
   <!-- 控制栏（仅列表页） -->
+  <!-- 改84: 吸顶占位 —— 控制区切成 fixed 后由它撑住原位置, 避免列表内容跳动 -->
+  <div id="ctrlPh" aria-hidden="true"></div>
   <div class="controls" id="controls">
     <div class="search">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#6b7280" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="#6b7280" stroke-width="2" stroke-linecap="round"/></svg>
@@ -1090,6 +1099,51 @@ function gtSwStat(){
 var gtT=0;var gtTimer=setInterval(function(){gtT++;gtSwStat();if(gtT>48)clearInterval(gtTimer);},5000);
 setTimeout(gtSwPaint,2500);
 setTimeout(gtSwStat,3500);
+})();
+
+/* 改84: 控制区吸顶加固 —— 滚过原位后把 .controls 切成 fixed。
+   关键场景: iOS 弹出输入法后, 在结果列表上滑动页面, 搜索框原本会跟着滚走(键盘态滚动按 visual
+   viewport 计算, sticky 顶不住), 改 fixed 后真正钉在屏幕顶部不动。 */
+(function(){
+  var c=document.getElementById("controls"), ph=document.getElementById("ctrlPh");
+  if(!c||!ph) return;
+  var on=false;
+  function apply(){
+    if(getComputedStyle(c).display==="none"){          /* 控制栏被隐藏的视图(如会员资费页)不吸顶 */
+      if(on){ on=false; c.classList.remove("pinned"); ph.style.height="0px"; }
+      return;
+    }
+    var need = ph.getBoundingClientRect().top <= 0;    /* 占位已滚出视口顶 -> 该吸顶了 */
+    if(need===on) return;
+    on=need;
+    if(on){
+      ph.style.height=c.offsetHeight+"px";             /* 先量高度再切, 原位不留空 */
+      c.classList.add("pinned");
+    }else{
+      c.classList.remove("pinned");
+      ph.style.height="0px";
+    }
+  }
+  function upd(){ apply(); }   /* 直接算, 不用 rAF(后台标签页 rAF 会被暂停, 吸顶会失灵) */
+  addEventListener("scroll",upd,{passive:true});
+  /* iOS 键盘弹出/收起改的是 visualViewport, 只监听 scroll 覆盖不到"开输入法后再滑"这个场景 */
+  if(window.visualViewport){
+    window.visualViewport.addEventListener("resize",upd);
+    window.visualViewport.addEventListener("scroll",upd);
+  }
+  /* 聚焦搜索框时 iOS 会自动滚页面把输入框顶到键盘上方, 这里主动重算一次 */
+  var q=document.getElementById("q");
+  if(q){
+    q.addEventListener("focus",function(){setTimeout(upd,120);});
+    q.addEventListener("blur",function(){setTimeout(upd,120);});
+    q.addEventListener("input",upd);
+  }
+  addEventListener("resize",function(){
+    if(on) ph.style.height=c.offsetHeight+"px";       /* 保持吸顶, 只刷新占位高度(旋屏/改窗宽) */
+    else upd();
+  });
+  addEventListener("orientationchange",function(){setTimeout(upd,260);});
+  setTimeout(upd,300);
 })();
 </script>
 </body>
