@@ -164,13 +164,19 @@ select{border:1px solid var(--line);border-radius:10px;padding:8px 8px;backgroun
 .pt .s{font-size:10.5px;margin-top:2px;font-weight:600;min-height:14px;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;align-content:center;column-gap:4px;row-gap:1px;flex:1 1 auto}
 .pt .v.off{color:#c4c9d2}
 .empty{background:#fff;border:1px dashed var(--line);border-radius:14px;padding:34px 14px;text-align:center;color:#98a0ab;margin-top:12px}
-/* 改75: 同音搜索提示条 —— 无结果时给"您是不是要找"同音字点选 + 同音游戏推荐 */
-.pysug{margin:10px 0 4px;padding:10px 13px;background:#fdf7ea;border:1px solid #eedcb0;border-radius:12px;font-size:13px;color:#6b5b2e;line-height:1.7}
-.pysug .tt{font-weight:600;color:#8a6d1f}
-.pysug .chips{margin-top:6px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.pysug .chips .lb{font-size:12.5px;color:#8a6d1f}
-.pysug .chip{display:inline-block;padding:3px 12px;background:#fff;border:1px solid #dcb95c;border-radius:999px;cursor:pointer;font-size:13px;color:#8a6d1f;user-select:none;-webkit-tap-highlight-color:transparent}
-.pysug .chip:active{background:#f7ecd2}
+/* 改76: 百度式搜索联想下拉 —— 输入即弹出库内游戏建议, 点击直接跳转该游戏卡片 */
+.sugbox{position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 30px rgba(15,23,42,.14);z-index:60;overflow:hidden;display:none}
+.sugbox.show{display:block}
+.sugbox .si{display:flex;align-items:center;gap:9px;padding:10px 13px;cursor:pointer;font-size:14px;color:#1f2430;-webkit-tap-highlight-color:transparent}
+.sugbox .si:hover,.sugbox .si:active{background:#f5f7fb}
+.sugbox .si svg{flex:none;opacity:.5}
+.sugbox .si .nm{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sugbox .si .nm b{color:#d33a3a;font-weight:700}
+.sugbox .si .hs{flex:none;font-size:11px;color:#8a93a3;background:#f1f4f9;border-radius:5px;padding:1px 6px}
+.sugbox .ft{padding:6px 13px;font-size:11.5px;color:#98a0ab;border-top:1px solid var(--line);background:#fafbfd}
+/* 改76: 联想跳转后目标卡片闪烁高亮 */
+.gcard.jump-hl{animation:jumpPulse 1.1s ease 2}
+@keyframes jumpPulse{0%,100%{box-shadow:0 0 0 0 rgba(211,58,58,0)}35%{box-shadow:0 0 0 3px rgba(211,58,58,.5)}}
 .morebtn{display:block;margin:14px auto 0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 26px;font-weight:600;color:#4b5563}
 .morebtn:hover{border-color:#6d85e0;color:var(--brand)}
 
@@ -270,6 +276,7 @@ footer b{color:#4b5563}
     <div class="search">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#6b7280" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="#6b7280" stroke-width="2" stroke-linecap="round"/></svg>
       <input id="q" type="search" placeholder="搜索游戏中文名 / 英文名…" autocomplete="off">
+      <div class="sugbox" id="sugbox"></div>
     </div>
     <div class="ctrl">
       <!-- 改67k: 4个筛选项全部重写为同一套自绘下拉(原生select弹层由系统渲染无法控样式, 4项统一后手机/电脑完全一致) -->
@@ -293,7 +300,6 @@ footer b{color:#4b5563}
   <!-- PS -->
   <section id="psView">
     <div class="alphahint"><span>游戏所在分组快捷查找（例：想搜索<b class="hl1">"刺客信条"</b>，直接点击<b class="hl1">"刺"</b>拼音首字母<b class="hl3">"C"</b>）</span><span>发售日期以官方发布为准，若新增DLC或其他内容则随之更新</span></div>
-    <div id="psSuggest" style="display:none"></div>
     <div class="glist" id="psList"></div>
     <button class="morebtn" id="moreBtn" style="display:none">加载更多 ↓</button>
     <div class="empty" id="psEmpty" style="display:none">没有找到匹配的游戏，换个关键词试试～</div>
@@ -478,38 +484,83 @@ function homophoneRows(q){
   if(cn.length)return cn.slice(0,100);
   return PS.filter(g=>toPY(g.en||"").indexOf(qpy)>=0).slice(0,100);
 }
-/* 提取"同音不同字"候选: 输入里的每个字 → 在同音结果的游戏名中找拼音相同但写法不同的字 */
-function homoChips(q,rows){
-  const out=[],seen={};
-  for(const ch of q){
-    const py=PYM[ch];if(!py)continue;
-    for(const g of rows){
-      for(const c of String(g.name||"")){
-        if(c===ch||seen[c])continue;
-        if(PYM[c]===py){seen[c]=1;out.push(c);if(out.length>=8)return out;}
-      }
+
+/* 改76: 百度式搜索联想下拉 —— 输入即弹出库内真实游戏(模糊命中优先, 不足补同音),
+   手机5条/电脑10条; 点击条目直接跳到该游戏卡片并闪烁高亮(下方黄条提示已按需求移除) */
+function SUG_MAX(){return window.innerWidth<768?5:10;}
+function sugMatches(q){
+  const nq=normStr(q);
+  if(!nq)return [];
+  const max=SUG_MAX(),exact=[],homo=[],qpy=toPY(nq);
+  for(let i=0;i<PS.length;i++){
+    const g=PS[i];
+    if(exact.length<max){
+      const hay=normStr(g.name+" "+(g.en||""));
+      if(hay.indexOf(nq)>=0||subseq(nq,hay)){exact.push(g);continue;}
     }
+    if(homo.length<max&&qpy&&toPY(g.name).indexOf(qpy)>=0)homo.push(g);
   }
-  return out;
+  return exact.concat(homo).slice(0,max);
 }
-function paintSuggest(q,rows){
-  const box=$("#psSuggest");
-  box.innerHTML="";
-  const t=el("div",null);
-  t.innerHTML='<span class="tt">没有找到「'+q.replace(/</g,"&lt;")+'」</span>　为你找到 <b>'+rows.length+'</b> 款读音相近的游戏：';
-  box.appendChild(t);
-  const chips=homoChips(q,rows);
-  if(chips.length){
-    const cw=el("div","chips");
-    cw.appendChild(el("span","lb","您是不是想搜："));
-    chips.forEach(c=>{
-      const b=el("span","chip",c);
-      b.onclick=()=>{$("#q").value=c;kw=c;resetLetter();renderPS();};
-      cw.appendChild(b);
-    });
-    box.appendChild(cw);
+/* 精确包含时把命中片段标红; 字序/同音命中不高亮 */
+function sugHighlight(name,q){
+  const nq=normStr(q),hay=normStr(name);
+  const pos=hay.indexOf(nq);
+  if(pos<0)return null;
+  const re=/[\s\u00b7\u2022\u2027\u30fb.:：,，、\-—_~～!！?？()（）\u3010\u3011"'“”‘’]/;
+  let k=0,start=-1,end=-1;
+  for(let i=0;i<name.length;i++){
+    if(re.test(name[i]))continue;
+    if(k===pos)start=i;
+    k++;
+    if(k===pos+nq.length){end=i+1;break;}
   }
-  box.style.display="block";
+  if(start<0||end<0)return null;
+  return [name.slice(0,start),name.slice(start,end),name.slice(end)];
+}
+const MAG='<svg width="13" height="13" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#6b7280" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="#6b7280" stroke-width="2" stroke-linecap="round"/></svg>';
+function renderSug(){
+  const box=$("#sugbox");
+  if(!box)return;
+  const q=kw.trim();
+  /* 仅 PS 列表页展示联想; NS/资费页隐藏 */
+  const pv=$("#psView");
+  if(!q||!listElVisible(pv)){box.classList.remove("show");box.innerHTML="";return;}
+  const list=sugMatches(q);
+  if(!list.length){box.classList.remove("show");box.innerHTML="";return;}
+  box.innerHTML="";
+  list.forEach(g=>{
+    const it=el("div","si");
+    it.innerHTML=MAG;
+    const nm=el("div","nm");
+    const hl=sugHighlight(g.name,q);
+    if(hl){nm.appendChild(document.createTextNode(hl[0]));nm.appendChild(el("b",null,hl[1]));nm.appendChild(document.createTextNode(hl[2]));}
+    else nm.textContent=g.name;
+    it.appendChild(nm);
+    if((g.hs||[]).length)it.appendChild(el("span","hs",g.hs.join(" ")));
+    /* mousedown 抢在 input blur 之前执行, 防止点选丢失 */
+    it.addEventListener("mousedown",e=>{e.preventDefault();sugGo(g);});
+    box.appendChild(it);
+  });
+  box.appendChild(el("div","ft",list.length>=SUG_MAX()?("共匹配 "+list.length+"+ 款，点击直接前往；回车查看全部"):"点击游戏名直接前往"));
+  box.classList.add("show");
+}
+function listElVisible(e){return !!(e&&e.offsetParent!==null);}
+function sugGo(g){
+  const box=$("#sugbox");
+  box.classList.remove("show");box.innerHTML="";
+  $("#q").value="";kw="";
+  if(!curRows.some(o=>o.name===g.name))renderPS();
+  const idx=curRows.findIndex(o=>o.name===g.name);
+  if(idx<0)return;
+  if(rendered<=idx)renderMore(idx+1-rendered);
+  const card=document.getElementById("gc-"+idx);
+  if(!card)return;
+  card.scrollIntoView({behavior:"smooth",block:"center"});
+  card.classList.remove("jump-hl");
+  void card.offsetWidth;   /* 重启动画 */
+  card.classList.add("jump-hl");
+  setTimeout(()=>card.classList.remove("jump-hl"),2600);
 }
 
 function filterPS(){
@@ -548,15 +599,9 @@ function parseDate(s){const m=String(s||"").match(/(\d{4})年(\d{1,2})月(\d{1,2
 let curRows=[],rendered=0,PAGE=120;
 function renderPS(){
   curRows=filterPS();
-  /* 改75: 完全无结果 → 同音推荐兜底(展示提示条+同音字点选, 列表直接呈现同音游戏) */
-  const sug=$("#psSuggest");
-  if(sug){sug.style.display="none";sug.innerHTML="";}
+  /* 改75: 完全无结果 → 同音游戏兜底列表(提示交互已改为改76搜索框下拉联想) */
   if(!curRows.length&&kw.trim()){
-    const alt=homophoneRows(kw.trim());
-    if(alt.length){
-      curRows=alt;
-      if(sug)paintSuggest(kw.trim(),alt);
-    }
+    curRows=homophoneRows(kw.trim());
   }
   rendered=0; $("#psList").innerHTML="";
   Object.keys(__letterSeen).forEach(k=>delete __letterSeen[k]);
@@ -574,7 +619,7 @@ function renderMore(extra){
   while(rendered<curRows.length&&added<extra){
     const o=curRows[rendered];rendered++;added++;
     if(renderedAddedForLetter(o)){list.appendChild(letterHead(o.letter));}
-    list.appendChild(gameCard(o));
+    list.appendChild(gameCard(o,rendered-1));   /* 改76: 带索引id, 供联想跳转定位 */
   }
   $("#moreBtn").style.display=rendered<curRows.length?"block":"none";
 }
@@ -673,8 +718,9 @@ try{
   }).catch(function(){});
 }catch(e){}
 
-function gameCard(g){
+function gameCard(g,idx){
   const card=el("div","gcard");
+  if(idx!=null)card.id="gc-"+idx;   /* 改76: 联想跳转定位用 */
   /* 改68: 卡片封面(有映射显示真图, 无映射显示首字占位) */
   (function(){
     const f=COVERS[g.name];
@@ -856,7 +902,11 @@ function showTab(name){
 
 /* 输入防抖 */
 let tmr=null;
-$("#q").addEventListener("input",e=>{kw=e.target.value;clearTimeout(tmr);tmr=setTimeout(()=>{resetLetter();renderPS();},200);});
+$("#q").addEventListener("input",e=>{kw=e.target.value;clearTimeout(tmr);tmr=setTimeout(()=>{resetLetter();renderPS();renderSug();},200);});
+/* 改76: 联想下拉的开合 */
+$("#q").addEventListener("focus",()=>{if(kw.trim())renderSug();});
+$("#q").addEventListener("blur",()=>{setTimeout(()=>{const b=$("#sugbox");if(b){b.classList.remove("show");b.innerHTML="";}},180);});
+document.addEventListener("click",e=>{const b=$("#sugbox");if(b&&!b.contains(e.target)&&e.target!==$("#q"))b.classList.remove("show");});
 /* 改67k: 统一下拉组件工厂 —— 4个筛选项共用同一结构/CSS/交互, 保证观感一模一样 */
 function makeVsel(box,def,title,opts,onPick,fmt){
   box.innerHTML='<button type="button" class="vsel-btn"><span class="vt"></span><span class="arr"></span></button>'
@@ -904,6 +954,7 @@ const vselSort=makeVsel($("#sortSel"),"src","排序",
 /* 改67: 红色重置按钮 —— 所有筛选条件恢复默认 */
 $("#resetBtn").addEventListener("click",()=>{
   kw="";$("#q").value="";
+  const sb=$("#sugbox");if(sb){sb.classList.remove("show");sb.innerHTML="";}   /* 改76 */
   vselHost.reset();vselRegion.reset();vselVer.reset();vselSort.reset();
   hostSel="";regionSel="";verSel=[];sortMode="src";
   resetLetter();renderPS();
@@ -915,6 +966,7 @@ function resetLetter(){Object.keys(__letterSeen).forEach(k=>delete __letterSeen[
 window.addEventListener("scroll",()=>{const b=$("#toTop");if(b)b.classList.toggle("show",window.scrollY>400);},{passive:true});
 $("#toTop").addEventListener("click",()=>{
   kw="";$("#q").value="";
+  const sb=$("#sugbox");if(sb){sb.classList.remove("show");sb.innerHTML="";}   /* 改76 */
   vselHost.reset();vselRegion.reset();vselVer.reset();vselSort.reset();
   hostSel="";regionSel="";verSel=[];sortMode="src";
   resetLetter();renderPS();showTab("ps");
