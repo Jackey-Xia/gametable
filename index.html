@@ -334,8 +334,22 @@ footer b{color:#4b5563}
 
 <button id="toTop" class="toTop" aria-label="返回顶部" title="返回顶部">↑ 返回顶部</button>
 <script src="pinyin.js?v=20260911"></script>
-<script src="data.js?t=20260909155923"></script>
+<!-- 改85: 数据文件改为动态加载(带时间戳)
+     原来写死 `<script src="data.js?t=20260909155923">`, URL 恒定不变, 而 GitHub Pages 给
+     data.js 的 max-age 是 600s —— 库存改完后 10 分钟内(或更久)URL 相同, 浏览器直接用缓存,
+     顾客/手机端刷新也看不到新库存, 只有强刷才更新。
+     改成每次加载都拼新时间戳: 数据没变时命中 ETag 返回 304(几乎无流量), 数据一变立刻取到新的。 -->
 <script>
+(function(){
+  var s=document.createElement("script");
+  s.src="data.js?t="+Date.now();
+  s.onload=s.onerror=function(){ if(window.__GTBOOT) window.__GTBOOT(); };
+  document.head.appendChild(s);
+})();
+</script>
+<script>
+/* 改85: 主逻辑改为等 data.js 到位后再跑(动态加载是异步的), 数据取不到时也照常渲染空列表 */
+window.__GTBOOT=function(){
 (function(){
 const D=window.GT_DATA||{};
 const PS=D.ps||[], NS=D.ns||[], MEM=D.membership||{};
@@ -1145,6 +1159,7 @@ setTimeout(gtSwStat,3500);
   addEventListener("orientationchange",function(){setTimeout(upd,260);});
   setTimeout(upd,300);
 })();
+};   /* 改85: __GTBOOT 结束 —— 以上为等 data.js 加载完成后再执行的入口 */
 </script>
 </body>
 </html>
