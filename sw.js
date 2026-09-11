@@ -1,26 +1,24 @@
-/* 夏天Jackey 价目表 · Service Worker (改71)
- * 作用: 站点图片(封面/头像/背景)本地锁存 —— 顾客第2次打开即全量秒出。
- * 机制: ①激活时预缓存全部封面(manifest 清单)+头像+背景(后台分批下载, 已缓存的自动跳过)
- *       ②运行期拦截图片请求: 先回缓存秒出, 后台静默刷新(图片更换也能传播)
+/* 夏天Jackey 价目表 · Service Worker (改74)
+ * 作用: 图片的网络层加速 —— 运行期拦截图片请求, 先回缓存秒出, 后台静默刷新。
+ * 改74: 全量预缓存已下线(改由页面 IndexedDB 图库承担本地化), 避免同批图片存两份占手机空间。
+ *       仅在页面报告"本机本地图库不可用"时, 才由页面发消息启用预缓存兜底。
  * 页面/数据/manifest 不拦截, 保证价格库存永远最新。
  */
-const CACHE = 'gt-covers-v2';
+const CACHE = 'gt-covers-v3';
 
 self.addEventListener('install', e => self.skipWaiting());
 
-/* 改71c: 页面每次打开都发消息续传预存(中断的部分自动补齐, 已缓存跳过) */
+/* 兜底: 仅当页面判断本机 IndexedDB/CacheStorage 都不可用时, 才发消息让 SW 预缓存 */
 self.addEventListener('message', e => {
   if (e.data && e.data.type === 'precache') { precache().catch(function(){}); }
 });
 
 self.addEventListener('activate', e => {
   e.waitUntil((async () => {
-    // 清理旧版本缓存
+    // 清理旧版本缓存(含旧的 gt-covers-v2 全量预缓存, 回收空间)
     const keys = await caches.keys();
     await Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)));
     await self.clients.claim();
-    // 预缓存全量图片(失败不阻塞, 运行期拦截会继续补)
-    try { await precache(); } catch (err) {}
   })());
 });
 

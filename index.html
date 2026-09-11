@@ -319,37 +319,100 @@ const CONFIG={ shopUrl:"", q:"" };   // 如需“立即购买”跳转，请填�
 const $=s=>document.querySelector(s);
 const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;};
 
-/* 改72: IndexedDB 图片本地库 —— 不依赖 ServiceWorker, 微信iPhone(WKWebView)也能秒出; 全平台统一渲染路径 */
-function gtIdb(){return new Promise(function(res){try{var r=indexedDB.open("gtImg",1);r.onupgradeneeded=function(){try{if(!r.result.objectStoreNames.contains("img"))r.result.createObjectStore("img");}catch(e){}};r.onsuccess=function(){res(r.result)};r.onerror=function(){res(null)};}catch(e){res(null)}})}
-function gtIdbGet(k){return gtIdb().then(function(db){if(!db)return null;return new Promise(function(res){try{var t=db.transaction("img").objectStore("img").get(k);t.onsuccess=function(){res(t.result||null)};t.onerror=function(){res(null)}}catch(e){res(null)}})})}
-function gtIdbPut(k,blob){return gtIdb().then(function(db){if(!db)return;return new Promise(function(res){try{var t=db.transaction("img","readwrite");t.objectStore("img").put(blob,k);t.oncomplete=function(){res()};t.onerror=function(){res()}}catch(e){res()}})})}
+/* 改74: IndexedDB 图片本地库 v2 —— 单例连接(修 iOS 连接爆炸致挂起/丢数据) + open超时保护 + 持久化申请 + 故障可见 */
+var GTI={db:null,pend:null,err:"",puts:0,gets:0,persist:"",done:null,base:null,total:0,lastKnown:0};
+var GTS="idb";  /* 活跃存储通道: idb | cache | none */
+function gtIdb(){
+  if(GTI.db)return Promise.resolve(GTI.db);
+  if(GTI.dead)return Promise.resolve(null);      /* 改74: 探测失败只试一次, 不反复等待 */
+  if(GTI.pend)return GTI.pend;
+  GTI.pend=new Promise(function(res){
+    var done=false,timedout=false;
+    function fin(v){if(done)return;done=true;if(!v)GTI.pend=null;res(v);}
+    try{
+      if(!window.indexedDB){GTI.err="no-idb";GTI.dead=1;return fin(null);}
+      var r=indexedDB.open("gtImg",1);
+      var to=setTimeout(function(){timedout=true;GTI.err="timeout";GTI.dead=1;GTI.pend=null;fin(null);},3000);
+      r.onupgradeneeded=function(){try{if(!r.result.objectStoreNames.contains("img"))r.result.createObjectStore("img");}catch(e){}};
+      r.onsuccess=function(){
+        clearTimeout(to);
+        if(timedout){try{r.result.close();}catch(e){}return;}
+        GTI.db=r.result;
+        try{r.result.onclose=function(){GTI.db=null;};}catch(e){}
+        if(!GTI.persist&&navigator.storage&&navigator.storage.persist){
+          try{navigator.storage.persist().then(function(ok){GTI.persist=ok?"granted":"denied";}).catch(function(){});}catch(e){}
+        }
+        fin(r.result);
+      };
+      r.onerror=function(){clearTimeout(to);GTI.err="open-error";GTI.dead=1;fin(null);};
+    }catch(e){GTI.err="throw";GTI.dead=1;fin(null);}
+  });
+  return GTI.pend;
+}
+function gtIdbGet(k){return gtIdb().then(function(db){if(!db)return null;return new Promise(function(res){try{var t=db.transaction("img").objectStore("img").get(k);t.onsuccess=function(){GTI.gets++;res(t.result||null)};t.onerror=function(){res(null)}}catch(e){res(null)}})})}
+function gtIdbPut(k,blob){return gtIdb().then(function(db){if(!db)return;return new Promise(function(res){try{var t=db.transaction("img","readwrite");t.objectStore("img").put(blob,k);t.oncomplete=function(){GTI.puts++;res()};t.onerror=function(){res()}}catch(e){res()}})})}
 function gtIdbCount(){return gtIdb().then(function(db){if(!db)return 0;return new Promise(function(res){try{var t=db.transaction("img").objectStore("img").count();t.onsuccess=function(){res(t.result||0)};t.onerror=function(){res(0)}}catch(e){res(0)}})})}
 function gtIdbClean(valid){return gtIdb().then(function(db){if(!db)return;return new Promise(function(res){try{var t=db.transaction("img","readwrite");var kr=t.objectStore("img").openCursor();kr.onsuccess=function(ev){var c=ev.target.result;if(c){if(!valid.has(c.key))c.delete(c.key);c.continue();}else res()};kr.onerror=function(){res()}}catch(e){res()}})})}
+/* 改74: 备用通道 CacheStorage —— 同样不依赖 ServiceWorker; IDB 被系统限制时自动接管 */
+function gtRel(u){try{return new URL(u,location.href).pathname.replace(/^\/gametable\//,"").replace(/^\//,"");}catch(e){return u;}}
+function gtCache(){try{return window.caches?window.caches.open("gtImgCache"):null;}catch(e){return null;}}
+function gtCacheGet(k){var p=gtCache();if(!p)return Promise.resolve(null);return p.then(function(c){return c.match(k)}).then(function(r){return r?r.blob():null}).catch(function(){return null});}
+function gtCachePut(k,blob){var p=gtCache();if(!p)return Promise.resolve();return p.then(function(c){return c.put(k,new Response(blob))}).catch(function(){});}
+function gtCacheCount(){var p=gtCache();if(!p)return Promise.resolve(0);return p.then(function(c){return c.keys()}).then(function(a){return a.length}).catch(function(){return 0});}
+function gtCacheClean(valid){var p=gtCache();if(!p)return Promise.resolve();return p.then(function(c){return c.keys()}).then(function(a){a.forEach(function(rq){if(!valid.has(gtRel(rq.url)))c.delete(rq);});}).catch(function(){});}
+/* 统一存储接口: GTS = idb | cache | none */
+function gtGet(k){return GTS==="cache"?gtCacheGet(k):(GTS==="none"?Promise.resolve(null):gtIdbGet(k));}
+function gtPut(k,b){return GTS==="cache"?gtCachePut(k,b):(GTS==="none"?Promise.resolve():gtIdbPut(k,b));}
+function gtCount(){return GTS==="cache"?gtCacheCount():(GTS==="none"?Promise.resolve(0):gtIdbCount());}
+function gtClean(v){return GTS==="cache"?gtCacheClean(v):(GTS==="none"?Promise.resolve():gtIdbClean(v));}
+/* 改74: 页面一加载就定好存储通道(不等到图片开始渲染), 失败自动降级 */
+gtIdb().then(function(db){
+  if(db){GTS="idb";}
+  else if(window.caches){GTS="cache";GTI.err="";}
+  else{GTS="none";GTI.err="no-idb";gtSwFallback();}
+}).catch(function(){});
 /* 封面渲染: 本地有 → blobURL 秒出; 没有 → 网络取一次并顺带入库 */
 function gtCoverSrc(im,url){
-  gtIdbGet(url).then(function(b){
+  gtGet(url).then(function(b){
     if(b){try{im.src=URL.createObjectURL(b);}catch(e){im.src=url;}return;}
     fetch(url).then(function(r){return r&&r.ok?r.blob():null}).then(function(bl){
-      if(bl){gtIdbPut(url,bl);try{im.src=URL.createObjectURL(bl);}catch(e){im.src=url;}}
+      if(bl){gtPut(url,bl);try{im.src=URL.createObjectURL(bl);}catch(e){im.src=url;}}
       else{im.src=url;}
     }).catch(function(){im.src=url;});
   }).catch(function(){im.src=url;});
 }
-/* 后台全量预存(4并发, 已存跳过, 中断下次打开续传); 头像/背景每次小刷新保新鲜 */
+/* 后台全量预存(6并发, 已存跳过, 中断下次打开续传); 头像/背景每次小刷新保新鲜 */
 async function gtPrecacheAll(urls){
   const list=[],seen={};(urls||[]).forEach(u=>{if(u&&!seen[u]){seen[u]=1;list.push(u);}});
-  let i=0;
+  let i=0,done=0;
+  const tick=function(){GTI.done=done;gtSwPaint();};
   const workers=Array.from({length:6},async function(){
     while(i<list.length){
       const u=list[i++];
       try{
-        if(u!=="avatar.jpg"&&u!=="bg.jpg"){const b=await gtIdbGet(u);if(b)continue;}
+        if(u!=="avatar.jpg"&&u!=="bg.jpg"){const b=await gtGet(u);if(b){done++;if(done%25===0)tick();continue;}}
         const r=await fetch(u);
-        if(r&&r.ok){const bl=await r.blob();if(bl&&bl.size)await gtIdbPut(u,bl);}
+        if(r&&r.ok){const bl=await r.blob();if(bl&&bl.size){await gtPut(u,bl);done++;}}
       }catch(e){}
+      if(done%25===0)tick();
     }
   });
   await Promise.all(workers);
+  GTI.done=done;
+}
+/* 改74: 页脚状态 —— 让顾客/店主一眼看出本机是否已本地化, 以及是否被系统清理 */
+function gtSwPaint(){
+  var elx=document.getElementById("swStat");if(!elx)return;
+  var n=(GTI.done!=null?GTI.done:(GTI.base||0)),t=GTI.total||0;
+  if(GTI.err==="no-idb"){elx.textContent="图片加速：本浏览器不支持本地存储（图片正常显示）";return;}
+  if(GTI.err==="blob-broken"){elx.textContent="图片加速：本机不支持图片缓存（图片正常显示）";return;}
+  if(GTI.err==="timeout"||GTI.err==="open-error"||GTI.err==="throw"){elx.textContent="图片加速：本地存储被限制，暂不可用";return;}
+  if(!t){elx.textContent="图片加速：首次访问后生效";return;}
+  if(GTI.lastKnown>200&&GTI.base!=null&&GTI.base<t*0.5&&GTI.base<GTI.lastKnown*0.5){
+    elx.textContent="本地图库被系统清理，正在重建 "+n+"/"+t+" 张…";return;}
+  if(n<=0){elx.textContent="首次访问：正在建立本地图库 0/"+t+" 张…";return;}
+  if(n<t){elx.textContent="⚡ 本地图片库 "+n+"/"+t+" 张 · 后台补齐中";return;}
+  elx.textContent="⚡ 本地图片库 "+n+" 张 · 再次打开秒出";
 }
 
 /* 文案挂载 */
@@ -500,12 +563,38 @@ try{
       Object.keys(m).forEach(k=>{COVERS[k]=m[k];});
       /* 封面到货后若列表已渲染, 刷新当前列表让占位变封面 */
       if(rendered>0&&typeof renderPS==="function"){renderPS();}
-      /* 改72: 后台全量预存进 IndexedDB(全平台含微信iPhone); 完成后清理已不再引用的旧图 */
+      /* 改72/74: 后台全量预存进 IndexedDB(全平台含微信iPhone); 完成后清理已不再引用的旧图 */
       setTimeout(function(){
         const valid=new Set(["avatar.jpg","bg.jpg"]);
         Object.keys(m).forEach(k=>{if(typeof m[k]==="string")valid.add(m[k]);});
         const arr=Array.from(valid);
-        gtPrecacheAll(arr).then(function(){return gtIdbClean(valid);}).catch(function(){});
+        GTI.total=arr.length;
+        try{GTI.lastKnown=parseInt(localStorage.getItem("gtIdbLast")||"0",10)||0;}catch(e){GTI.lastKnown=0;}
+        /* 改74: 通道已在页面初始化时定好; 预存→清理→计数→自检, 自检失败自动换通道重跑一次 */
+        var rebuilt=0;
+        function gtCycle(){
+          return gtPrecacheAll(arr).then(function(){return gtClean(valid);}).then(function(){
+            return gtCount();
+          }).then(function(n){
+            GTI.done=n;GTI.finished=1;
+            try{if(n)localStorage.setItem("gtIdbLast",String(n));}catch(e){}
+            var probe=arr.filter(function(u){return u!=="avatar.jpg"&&u!=="bg.jpg";})[0];
+            if(probe&&n>0){
+              return gtGet(probe).then(function(b){
+                if(!b||!b.size){
+                  if(!rebuilt&&GTS==="idb"&&window.caches){rebuilt=1;GTS="cache";GTI.err="";return gtCycle();}
+                  GTI.err="blob-broken";
+                }
+                gtSwPaint();
+              });
+            }
+            gtSwPaint();
+          });
+        }
+        gtCount().then(function(base){
+          GTI.base=base;gtSwPaint();
+          return gtCycle();
+        }).catch(function(){if(!GTI.err)GTI.err="precache-fail";gtSwPaint();});
       },2000);
     }
   }).catch(function(){});
@@ -769,19 +858,24 @@ if(pt==="ns"||pt==="mem"){showTab(pt);}else{showTab("ps");}
 /* 改71b/72: 尽早注册 SW(updateViaCache=none); 每次打开让 SW 续传预存; 页脚指示器读 IDB 锁存数(在闭包内才能访问 gtIdbCount) */
 if("serviceWorker" in navigator){
   navigator.serviceWorker.register("sw.js",{updateViaCache:"none"}).catch(function(){});
+}
+/* 改74: 仅当本机 IndexedDB/CacheStorage 都不可用时, 才让 SW 做全量预缓存兜底 */
+function gtSwFallback(){
+  if(!("serviceWorker" in navigator))return;
   navigator.serviceWorker.ready.then(function(reg){
-    if(reg.active)reg.active.postMessage({type:"precache"});
-    else navigator.serviceWorker.controller&&navigator.serviceWorker.controller.postMessage({type:"precache"});
+    var sw=reg.active||navigator.serviceWorker.controller;
+    if(sw)sw.postMessage({type:"precache"});
   }).catch(function(){});
 }
 function gtSwStat(){
-  gtIdbCount().then(function(n){
-    var el=document.getElementById("swStat");
-    if(el&&n>0)el.textContent="⚡ 图片已锁存 "+n+" 张 · 再次打开秒出";
-  }).catch(function(){});
+  gtCount().then(function(n){
+    if(n>0)GTI.done=n;
+    gtSwPaint();
+  }).catch(function(){gtSwPaint();});
 }
 var gtT=0;var gtTimer=setInterval(function(){gtT++;gtSwStat();if(gtT>48)clearInterval(gtTimer);},5000);
-setTimeout(gtSwStat,3000);
+setTimeout(gtSwPaint,2500);
+setTimeout(gtSwStat,3500);
 })();
 </script>
 </body>
