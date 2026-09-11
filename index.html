@@ -1144,11 +1144,12 @@ setTimeout(gtSwStat,3500);
 (function(){
   var c=document.getElementById("controls"), ph=document.getElementById("ctrlPh");
   if(!c||!ph) return;
-  var on=false, baseTop=0;
-  function calcBase(){ baseTop = c.offsetTop; }   /* controls 原始文档位置 */
-  /* 改92: 键盘态 fixed 的 top 要对齐 visual viewport —— iOS(尤其微信 WKWebView)弹出键盘后
-     可见区相对布局视口整体下移(visualViewport.offsetTop>0), 仍写死 top:0 会让容器顶部
-     (搜索框)被顶出可见区上方, 只剩底部筛选+字母可见。动态把 top 跟随 offsetTop 即可钉在可见区顶端。 */
+  var on=false;
+  /* 改94: 吸顶阈值不再缓存, 实时读占位符 #ctrlPh 的文档位置 —— 它永远留在文档流不会变 fixed,
+     offsetTop 恒等于 controls 原始位置。旧做法(calcBase 缓存 baseTop)会被污染:
+     吸顶状态下(c 为 fixed, offsetTop≈0)任何一次 calcBase(旋屏/时序不巧的 resize)都会把
+     baseTop 写成 0, 此后 scrollY>=0 恒真, 「返回顶部」永远解不开吸顶(2026-09-11 深夜真机复现)。 */
+  function baseTop(){ return ph.offsetTop; }
   function vvTop(){ return window.visualViewport ? Math.max(0, Math.round(window.visualViewport.offsetTop)) : 0; }
   function place(){ if(on) c.style.top=vvTop()+"px"; }
   function apply(){
@@ -1156,7 +1157,7 @@ setTimeout(gtSwStat,3500);
       if(on){ on=false; c.classList.remove("pinned"); c.style.top=""; ph.style.height="0px"; }
       return;
     }
-    var need = window.scrollY >= baseTop;    /* 页面滚过 controls 原始位置 -> 吸顶 */
+    var need = window.scrollY >= baseTop();    /* 页面滚过 controls 原始位置 -> 吸顶 */
     if(need===on) return;
     on=need;
     if(on){
@@ -1187,10 +1188,11 @@ setTimeout(gtSwStat,3500);
   }
   addEventListener("resize",function(){
     if(on) ph.style.height=c.offsetHeight+"px";       /* 保持吸顶, 只刷新占位高度(旋屏/改窗宽) */
-    else { calcBase(); upd(); }
+    else upd();
   });
-  addEventListener("orientationchange",function(){setTimeout(function(){calcBase();upd();},300);});
-  setTimeout(function(){calcBase();upd();},300);
+  /* 改94: 旋屏不再调 calcBase(已废除) —— 阈值实时读, 旋屏后自动正确 */
+  addEventListener("orientationchange",function(){setTimeout(upd,300);});
+  setTimeout(upd,300);
 })();
 };   /* 改85: __GTBOOT 结束 —— 以上为等 data.js 加载完成后再执行的入口 */
 </script>
