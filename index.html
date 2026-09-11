@@ -493,16 +493,24 @@ function stripSeq(s){return String(s||"").replace(/[（(]\s*\d+\s*[)）]\s*$/,""
 var SEQ_KAKO=/[（(]\s*\d+\s*[)）]\s*$/;            /* 库存序号: 尾部括号数字, 如 摧毁Dysmantle（2） */
 var SEQ_BARE=/^(.*\D)\d+$/;                        /* 库存序号: 尾部裸数字,   如 鬼武者：剑之道3   */
 var SEQ_TAIL=/([（(]\s*\d+\s*[)）]|\d+)\s*$/;      /* 名字尾部带任意序号 */
+/* 取尾部括号序号里的数字(如 仁王3（1）→1); 无则返回0 */
+function suffixNum(s){const m=String(s||"").match(SEQ_KAKO);if(!m)return 0;const d=parseInt(m[0].replace(/[^0-9]/g,""),10);return isNaN(d)?0:d;}
 /* 这些系列的数字是"作品序号"不是"账号序号", 不合并(如 最终幻想2 ≠ 最终幻想1的另一个账号) */
 var MERGE_EXCLUDE=["最终幻想","虐杀原形"];
+/* 改78: 英文名归一化——真"多账号库存"英文名必然相同(如 九张羊皮纸1/2 都是 Nine Parchments);
+   若英文名不同则是不同作品(如 纪念碑谷1=Monument Valley 1 vs 纪念碑谷2=Monument Valley 2, 生化危机5=Resident Evil 5 vs 6), 不合并 */
+function enKey(s){return String(s||"").toLowerCase().replace(/[\s:：·・.。、,，!！?？'"“”‘’()（）\[\]【】\-—_\/\\+]/g,"");}
 /* 两个商品是否为同一游戏的重复库存 */
 function dupOf(a,b){
+  const ea=enKey(a.en),eb=enKey(b.en);
+  const enOK=(ea!==""&&ea===eb)||(ea===""&&eb==="");   /* 英文名相同, 或双方都未填 */
   const ba=stripSeq(a.name),bb=stripSeq(b.name);
-  if(ba!==""&&ba===bb&&(SEQ_KAKO.test(a.name)||SEQ_KAKO.test(b.name)))return true;
+  if(ba!==""&&ba===bb&&(SEQ_KAKO.test(a.name)||SEQ_KAKO.test(b.name))&&enOK)return true;
   const ma=a.name.match(SEQ_BARE),mb=b.name.match(SEQ_BARE);
-  /* 裸数字: 仅当"同价同日"才视为同游戏多账号(防误伤鬼灭1/2、禁闭求生1/2这类真续作) */
+  /* 裸数字: 需"同价同日"且英文名相同才视为同游戏多账号(防误伤鬼灭1/2、生化危机5/6这类真续作) */
   if(ma&&mb&&ma[1]===mb[1]&&ma[1].length>=2
      &&a.ck7===b.ck7&&a.fc7===b.fc7&&a.xd30===b.xd30&&a.date===b.date
+     &&enOK
      &&!MERGE_EXCLUDE.some(x=>ma[1].indexOf(x)===0))return true;
   return false;
 }
@@ -529,15 +537,19 @@ function sugMatches(q){
     if(SEQ_TAIL.test(out[at].name)&&!SEQ_TAIL.test(g.name))out[at]=Object.assign({},g);
     out[at]._merged=true;
   }
-  /* 改78: 组代表若仍带序号(库里没有无序号干净名), 展示名去掉尾部序号:
-     鬼武者：剑之道1 → 鬼武者：剑之道 (最终幻想2等真续作走 MERGE_EXCLUDE 排除, 不受影响) */
+  /* 改78: 下拉里的展示名去掉库存序号(不影响点击跳转与完整列表):
+     ① 尾部括号数字 (n) 是库存编号 → 去掉;  ② 尾部裸数字仅当判定为同游戏多账号(_merged)才去掉,
+     真续作(生化危机5/6、纪念碑谷1/2、特斯拉学徒1/2、八方旅人1/2 等)保持原样 */
   const PSnames={};
   for(let i=0;i<PS.length;i++)PSnames[PS[i].name]=1;
   return out.slice(0,SUG_MAX()).map(g=>{
-    if(!g._merged)return g;
     let base=null;
-    if(SEQ_KAKO.test(g.name))base=stripSeq(g.name);
-    else{const m=g.name.match(SEQ_BARE);if(m&&m[1].length>=2)base=m[1];}
+    const kn=suffixNum(g.name);
+    if(kn>0&&kn<=30)base=stripSeq(g.name);
+    else if(g._merged){
+      const m=g.name.match(SEQ_BARE);
+      if(m&&m[1].length>=2)base=m[1];
+    }
     if(base&&!PSnames[base]&&!MERGE_EXCLUDE.some(x=>base.indexOf(x)===0))g.disp=base;
     return g;
   });
