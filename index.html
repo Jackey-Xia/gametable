@@ -1130,17 +1130,21 @@ setTimeout(gtSwStat,3500);
 
 /* 改84: 控制区吸顶加固 —— 滚过原位后把 .controls 切成 fixed。
    关键场景: iOS 弹出输入法后, 在结果列表上滑动页面, 搜索框原本会跟着滚走(键盘态滚动按 visual
-   viewport 计算, sticky 顶不住), 改 fixed 后真正钉在屏幕顶部不动。 */
+   viewport 计算, sticky 顶不住), 改 fixed 后真正钉在屏幕顶部不动。
+   2026-09-11 22:00: 判定从 getBoundingClientRect().top 改为 window.scrollY >= baseTop,
+   因为 iOS 键盘弹出时 visual viewport 会上移, getBoundingClientRect 的 top 会突然变大,
+   导致脚本误判"已回顶"而取消 fixed。scrollY 是 layout viewport 滚动量, 不受键盘影响。 */
 (function(){
   var c=document.getElementById("controls"), ph=document.getElementById("ctrlPh");
   if(!c||!ph) return;
-  var on=false;
+  var on=false, baseTop=0;
+  function calcBase(){ baseTop = c.offsetTop; }   /* controls 原始文档位置 */
   function apply(){
     if(getComputedStyle(c).display==="none"){          /* 控制栏被隐藏的视图(如会员资费页)不吸顶 */
       if(on){ on=false; c.classList.remove("pinned"); ph.style.height="0px"; }
       return;
     }
-    var need = ph.getBoundingClientRect().top <= 0;    /* 占位已滚出视口顶 -> 该吸顶了 */
+    var need = window.scrollY >= baseTop;    /* 页面滚过 controls 原始位置 -> 吸顶 */
     if(need===on) return;
     on=need;
     if(on){
@@ -1167,10 +1171,10 @@ setTimeout(gtSwStat,3500);
   }
   addEventListener("resize",function(){
     if(on) ph.style.height=c.offsetHeight+"px";       /* 保持吸顶, 只刷新占位高度(旋屏/改窗宽) */
-    else upd();
+    else { calcBase(); upd(); }
   });
-  addEventListener("orientationchange",function(){setTimeout(upd,260);});
-  setTimeout(upd,300);
+  addEventListener("orientationchange",function(){setTimeout(function(){calcBase();upd();},300);});
+  setTimeout(function(){calcBase();upd();},300);
 })();
 };   /* 改85: __GTBOOT 结束 —— 以上为等 data.js 加载完成后再执行的入口 */
 </script>
