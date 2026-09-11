@@ -365,7 +365,7 @@ const D=window.GT_DATA||{};
   if(isNaN(d.getTime())){ el.textContent="库存数据：同步时间无效"; return; }
   function pad(n){ return n<10?"0"+n:""+n; }
   var s=d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate())+" "+pad(d.getHours())+":"+pad(d.getMinutes());
-  el.textContent="📦 库存数据同步于 "+s;
+  el.textContent="【数据同步于 "+s+"】";
 })();
 const PS=D.ps||[], NS=D.ns||[], MEM=D.membership||{};
 const CONFIG={ shopUrl:"", q:"" };   // 如需“立即购买”跳转，请填店铺下单链接
