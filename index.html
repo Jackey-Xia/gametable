@@ -625,6 +625,23 @@ function sugMatches(q){
       const m=g.name.match(SEQ_BARE);
       if(m&&m[1].length>=2)base=m[1];
     }
+    /* 改95: 序号夹在名字中间(后面还跟着版本/奖励文字)的也要剥 ——
+       如 羊蹄山之魂（5）（豪华版）→ 羊蹄山之魂（豪华版）;
+       数码宝贝物语 时空异客（豪华版）（1）+预购奖励 → 数码宝贝物语 时空异客（豪华版）+预购奖励。
+       判据: ①括号内是 1~30 的纯数字且不在尾部(尾部已有 stripSeq 管);
+             ②数字前的文字必须是库内真实游戏名的前缀(防"拳皇（97）"这类作品名自带数字误伤);
+             ③剥完的名字不能撞上库内另一款真实游戏(否则两条联想同名混淆)。 */
+    if(!base){
+      const mm=g.name.match(/^(.{2,}?)[（(]\s*(\d{1,2})\s*[)）](.+)$/);
+      if(mm&&parseInt(mm[2],10)<=30){
+        const pre=mm[1];
+        const preExists=(pre in PSnames)||PS.some(p=>p.name.indexOf(pre+"（")===0||p.name.indexOf(pre+"(")===0);
+        if(preExists){
+          const cand=pre+mm[3];
+          if(!(cand in PSnames))base=cand;
+        }
+      }
+    }
     if(base&&!PSnames[base]&&(!MERGE_EXCLUDE.some(x=>base.indexOf(x)===0)||isForceMerge(base)))g.disp=base;   /* 改88: 特例名单放行 */
     return g;
   });
