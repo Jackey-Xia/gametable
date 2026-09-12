@@ -542,6 +542,8 @@ function isForceMerge(base){const s=String(base||"");return MERGE_FORCE.some(x=>
 /* 改78: 英文名归一化——真"多账号库存"英文名必然相同(如 九张羊皮纸1/2 都是 Nine Parchments);
    若英文名不同则是不同作品(如 纪念碑谷1=Monument Valley 1 vs 纪念碑谷2=Monument Valley 2, 生化危机5=Resident Evil 5 vs 6), 不合并 */
 function enKey(s){return String(s||"").toLowerCase().replace(/[\s:：·・.。、,，!！?？'"“”‘’()（）\[\]【】\-—_\/\\+]/g,"");}
+/* 改96: 英文名去括号段后归一化 —— "Ghost of Yotei（Deluxe Edition）" 与 "Ghost of Yotei" 视为同一基础游戏 */
+function enBase(s){return String(s||"").toLowerCase().replace(/[（(][^）)]*[)）]/g,"").replace(/[^a-z0-9]/g,"");}
 /* 两个商品是否为同一游戏的重复库存 */
 function dupOf(a,b){
   const ea=enKey(a.en),eb=enKey(b.en);
@@ -635,10 +637,29 @@ function sugMatches(q){
       const mm=g.name.match(/^(.{2,}?)[（(]\s*(\d{1,2})\s*[)）](.+)$/);
       if(mm&&parseInt(mm[2],10)<=30){
         const pre=mm[1];
-        const preExists=(pre in PSnames)||PS.some(p=>p.name.indexOf(pre+"（")===0||p.name.indexOf(pre+"(")===0);
+        const preExists=(pre in PSnames)||PS.some(p=>{const r=p.name.slice(pre.length);return p.name.indexOf(pre)===0&&r&&(/[（(]/.test(r[0])||/\d/.test(r[0]));});
         if(preExists){
           const cand=pre+mm[3];
           if(!(cand in PSnames))base=cand;
+        }
+      }
+    }
+    /* 改96: 裸数字中间序号(店主把（1）改成1后的新形态) —— 羊蹄山之魂5（豪华版）→ 羊蹄山之魂（豪华版）。
+       裸数字大多是作品序号(暗黑血统3/孤岛惊魂5/海贼无双4), 严禁见数字就剥, 必须同时满足:
+       ①数字紧跟版本括号组且在名字末尾; ②库内存在 ≥2 条 pre+纯数字 的无后缀行(同游戏多账号系列, 如 羊蹄山之魂1~4);
+       ③这些行与当前行英文名(去括号)一致; ④剥完不撞库内真名。 */
+    if(!base){
+      const mm=g.name.match(/^(.{2,}\D)(\d{1,2})([（(][^）)]*[)）])$/);
+      if(mm){
+        const pre=mm[1];
+        const esc=pre.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+        const anchors=PS.filter(p=>new RegExp("^"+esc+"\\d{1,2}$").test(p.name));
+        if(anchors.length>=2){
+          const eb=enBase(anchors[0].en);
+          if(anchors.every(a=>enBase(a.en)===eb)&&enBase(g.en)===eb){
+            const cand=pre+mm[3];
+            if(!(cand in PSnames))base=cand;
+          }
         }
       }
     }
