@@ -471,7 +471,6 @@ function gtSwPaint(){
 /* 文案挂载 */
 /* 改51: 可认证/非认证合并为表头, 两个活动各自成行 —— 表达两类租赁都享受拍2送3/拍3送9 */
 $("#promoTxt").innerHTML=D.promo?"<b>可认证 / 非认证</b>"+D.promo.split("，").map(s=>"<i>"+s+"</i>").join(""):"";
-$("#cntPS").textContent=PS.length;
 
 /* 版本标签 */
 const REGMAP={港:"港版",日:"日版",美:"美版",欧:"欧版",国:"国行",韩:"韩版",台:"台版",中:"国行"};
@@ -539,6 +538,29 @@ var MERGE_EXCLUDE=["最终幻想","虐杀原形"];
    伊瓦利斯战记1/2 都= Final Fantasy Tactics - The Ivalice Chronicles, 库存 12/6/25 完全一致 */
 var MERGE_FORCE=["伊瓦利斯战记"];
 function isForceMerge(base){const s=String(base||"");return MERGE_FORCE.some(x=>s.slice(-x.length)===x);}
+/* 改99: 启动时一次性给每行 PS 数据算好同游戏多账号分组 id(_gid), 供主列表合并与款数统计用。
+   必须放在 SEQ_BARE/MERGE_EXCLUDE 等常量赋值之后(var 提升不会带初始化, 提前跑 dupOf 会崩)。
+   先按英文名(归一化)分桶再桶内两两 dupOf, 避免全量 O(n²) 拖慢手机端首屏。 */
+(function(){
+  const buckets={};
+  for(let i=0;i<PS.length;i++){
+    const k=enKey(PS[i].en);
+    (buckets[k]||(buckets[k]=[])).push(PS[i]);
+  }
+  let gid=0;
+  Object.keys(buckets).forEach(k=>{
+    const b=buckets[k];
+    for(let i=0;i<b.length;i++){
+      if(b[i]._gid!=null)continue;
+      b[i]._gid=gid;
+      for(let j=i+1;j<b.length;j++){
+        if(b[j]._gid==null&&dupOf(b[i],b[j]))b[j]._gid=gid;
+      }
+      gid++;
+    }
+  });
+})();
+$("#cntPS").textContent=mergeRows(PS).length;   /* 改99: 页头款数改为合并后的真实款数 */
 /* 改78: 英文名归一化——真"多账号库存"英文名必然相同(如 九张羊皮纸1/2 都是 Nine Parchments);
    若英文名不同则是不同作品(如 纪念碑谷1=Monument Valley 1 vs 纪念碑谷2=Monument Valley 2, 生化危机5=Resident Evil 5 vs 6), 不合并 */
 function enKey(s){return String(s||"").toLowerCase().replace(/[\s:：·・.。、,，!！?？'"“”‘’()（）\[\]【】\-—_\/\\+]/g,"");}
@@ -620,52 +642,59 @@ function sugMatches(q){
   /* 改82: 下拉同样按相关度排序(仁王1 在 仁王3 之前), 与列表顺序保持一致 */
   const ranked=sortByRelevance(out,nq);
   return ranked.slice(0,SUG_MAX()).map(g=>{
-    let base=null;
-    const kn=suffixNum(g.name);
-    if(kn>0&&kn<=30)base=stripSeq(g.name);
-    else if(g._merged){
-      const m=g.name.match(SEQ_BARE);
-      if(m&&m[1].length>=2)base=m[1];
+    const d=dispOf(g,!!g._merged,PSnames);
+    if(d)g.disp=d;   /* 改88: 特例名单放行 */
+    return g;
+  });
+}
+/* 改99: 展示名去库存序号(主列表与搜索联想共用), 从 sugMatches 中抽出。
+   ① 尾部括号数字 (n) → 去掉;  ② 尾部裸数字仅当 merged(同游戏多账号组)才去掉, 真续作保持原样;
+   ③ 中间括号序号(羊蹄山之魂（5）（豪华版）);  ④ 中间裸序号(羊蹄山之魂5（豪华版）, 须≥2条纯编号锚行+英文名一致)。
+   返回 null 表示没有可剥的序号(或剥了会撞库内真名, 保持原名)。 */
+function dispOf(g,merged,PSnames){
+  let base=null;
+  const kn=suffixNum(g.name);
+  if(kn>0&&kn<=30)base=stripSeq(g.name);
+  else if(merged){
+    const m=g.name.match(SEQ_BARE);
+    if(m&&m[1].length>=2)base=m[1];
+  }
+  /* 改95: 序号夹在名字中间(后面还跟着版本/奖励文字)的也要剥 ——
+     如 羊蹄山之魂（5）（豪华版）→ 羊蹄山之魂（豪华版）。
+     判据: ①括号内是 1~30 的纯数字; ②数字前的文字必须是库内真实游戏名的前缀(防"拳皇（97）"这类作品名自带数字误伤);
+           ③剥完的名字不能撞上库内另一款真实游戏(否则两条联想同名混淆)。 */
+  if(!base){
+    const mm=g.name.match(/^(.{2,}?)[（(]\s*(\d{1,2})\s*[)）](.+)$/);
+    if(mm&&parseInt(mm[2],10)<=30){
+      const pre=mm[1];
+      const preExists=(pre in PSnames)||PS.some(p=>{const r=p.name.slice(pre.length);return p.name.indexOf(pre)===0&&r&&(/[（(]/.test(r[0])||/\d/.test(r[0]));});
+      if(preExists){
+        const cand=pre+mm[3];
+        if(!(cand in PSnames))base=cand;
+      }
     }
-    /* 改95: 序号夹在名字中间(后面还跟着版本/奖励文字)的也要剥 ——
-       如 羊蹄山之魂（5）（豪华版）→ 羊蹄山之魂（豪华版）;
-       数码宝贝物语 时空异客（豪华版）（1）+预购奖励 → 数码宝贝物语 时空异客（豪华版）+预购奖励。
-       判据: ①括号内是 1~30 的纯数字且不在尾部(尾部已有 stripSeq 管);
-             ②数字前的文字必须是库内真实游戏名的前缀(防"拳皇（97）"这类作品名自带数字误伤);
-             ③剥完的名字不能撞上库内另一款真实游戏(否则两条联想同名混淆)。 */
-    if(!base){
-      const mm=g.name.match(/^(.{2,}?)[（(]\s*(\d{1,2})\s*[)）](.+)$/);
-      if(mm&&parseInt(mm[2],10)<=30){
-        const pre=mm[1];
-        const preExists=(pre in PSnames)||PS.some(p=>{const r=p.name.slice(pre.length);return p.name.indexOf(pre)===0&&r&&(/[（(]/.test(r[0])||/\d/.test(r[0]));});
-        if(preExists){
+  }
+  /* 改96: 裸数字中间序号(店主把（1）改成1后的新形态) —— 羊蹄山之魂5（豪华版）→ 羊蹄山之魂（豪华版）。
+     裸数字大多是作品序号(暗黑血统3/孤岛惊魂5/海贼无双4), 严禁见数字就剥, 必须同时满足:
+     ①数字紧跟版本括号组且在名字末尾; ②库内存在 ≥2 条 pre+纯数字 的无后缀行(同游戏多账号系列, 如 羊蹄山之魂1~4);
+     ③这些行与当前行英文名(去括号)一致; ④剥完不撞库内真名。 */
+  if(!base){
+    const mm=g.name.match(/^(.{2,}\D)(\d{1,2})([（(][^）)]*[)）])$/);
+    if(mm){
+      const pre=mm[1];
+      const esc=pre.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+      const anchors=PS.filter(p=>new RegExp("^"+esc+"\\d{1,2}$").test(p.name));
+      if(anchors.length>=2){
+        const eb=enBase(anchors[0].en);
+        if(anchors.every(a=>enBase(a.en)===eb)&&enBase(g.en)===eb){
           const cand=pre+mm[3];
           if(!(cand in PSnames))base=cand;
         }
       }
     }
-    /* 改96: 裸数字中间序号(店主把（1）改成1后的新形态) —— 羊蹄山之魂5（豪华版）→ 羊蹄山之魂（豪华版）。
-       裸数字大多是作品序号(暗黑血统3/孤岛惊魂5/海贼无双4), 严禁见数字就剥, 必须同时满足:
-       ①数字紧跟版本括号组且在名字末尾; ②库内存在 ≥2 条 pre+纯数字 的无后缀行(同游戏多账号系列, 如 羊蹄山之魂1~4);
-       ③这些行与当前行英文名(去括号)一致; ④剥完不撞库内真名。 */
-    if(!base){
-      const mm=g.name.match(/^(.{2,}\D)(\d{1,2})([（(][^）)]*[)）])$/);
-      if(mm){
-        const pre=mm[1];
-        const esc=pre.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
-        const anchors=PS.filter(p=>new RegExp("^"+esc+"\\d{1,2}$").test(p.name));
-        if(anchors.length>=2){
-          const eb=enBase(anchors[0].en);
-          if(anchors.every(a=>enBase(a.en)===eb)&&enBase(g.en)===eb){
-            const cand=pre+mm[3];
-            if(!(cand in PSnames))base=cand;
-          }
-        }
-      }
-    }
-    if(base&&!PSnames[base]&&(!MERGE_EXCLUDE.some(x=>base.indexOf(x)===0)||isForceMerge(base)))g.disp=base;   /* 改88: 特例名单放行 */
-    return g;
-  });
+  }
+  if(base&&!PSnames[base]&&(!MERGE_EXCLUDE.some(x=>base.indexOf(x)===0)||isForceMerge(base)))return base;
+  return null;
 }
 /* 精确包含时把命中片段标红; 字序/同音命中不高亮 */
 function sugHighlight(name,q){
@@ -718,8 +747,10 @@ function sugGo(g){
   const box=$("#sugbox");
   box.classList.remove("show");box.innerHTML="";
   $("#q").value="";kw="";
-  if(!curRows.some(o=>o.name===g.name))renderPS();
-  const idx=curRows.findIndex(o=>o.name===g.name);
+  /* 改99: curRows 已是合并视图, 按组成员匹配(联想条目可能是组内任一账号行) */
+  const inGrp=o=>(o._grp||[o]).some(m=>m.name===g.name);
+  if(!curRows.some(inGrp))renderPS();
+  const idx=curRows.findIndex(inGrp);
   if(idx<0)return;
   if(rendered<=idx)renderMore(idx+1-rendered);
   const card=document.getElementById("gc-"+idx);
@@ -729,6 +760,41 @@ function sugGo(g){
   void card.offsetWidth;   /* 重启动画 */
   card.classList.add("jump-hl");
   setTimeout(()=>card.classList.remove("jump-hl"),2600);
+}
+
+/* ---------- 改99: 主列表同类商品合并 ---------- */
+/* 把(筛选后的)原始行按 gid 聚合成展示视图: 每组一张卡。
+   库存规则(店主 2026-09-13 指定): 同一商品买多个, 每个版本位取"任一账号有货即有";
+   价格各账号一致(dupOf 判据保证), 取首个有价的; 名称去库存序号(dispOf)。 */
+function mergeRows(rows){
+  const PSnames={};
+  for(let i=0;i<PS.length;i++)PSnames[PS[i].name]=1;
+  const byGid=new Map();
+  for(const g of rows){
+    const k=g._gid!=null?("g"+g._gid):("solo:"+g.name);
+    let grp=byGid.get(k);
+    if(!grp){grp=[];byGid.set(k,grp);}
+    grp.push(g);
+  }
+  const views=[];
+  byGid.forEach(grp=>{
+    /* 代表行: 组内无尾部序号行的优先(如 羊蹄山之魂 优先于 羊蹄山之魂5（豪华版）), 否则取首行 */
+    const rep=grp.find(m=>!SEQ_TAIL.test(m.name))||grp[0];
+    const v=Object.assign({},rep);
+    v._grp=grp;
+    v._disp=dispOf(rep,grp.length>1,PSnames)||rep.name;
+    /* 库存聚合: 全组该位都缺(null/undefined)才保持 null(不显示), 否则任一有货=1 */
+    ["ck4","ck5","fc","xd"].forEach(k=>{
+      const vals=grp.map(m=>m[k]);
+      v[k]=vals.every(x=>x===null||x===undefined)?null:(vals.some(x=>x?1:0)?1:0);
+    });
+    /* 价格: 组内账号同价(dupOf 保证), 取首个非空, 防代表行价格空 */
+    ["ck7","fc7","xd30"].forEach(k=>{
+      if(fmtMoney(v[k])==null){const f=grp.find(m=>fmtMoney(m[k])!=null);if(f)v[k]=f[k];}
+    });
+    views.push(v);
+  });
+  return views;
 }
 
 function filterPS(){
@@ -768,10 +834,11 @@ function parseDate(s){const m=String(s||"").match(/(\d{4})年(\d{1,2})月(\d{1,2
 
 let curRows=[],rendered=0,PAGE=120;
 function renderPS(){
-  curRows=filterPS();
+  /* 改99: 筛选后按同游戏多账号合并 —— 每组一张卡, 库存取"任一有货即有" */
+  curRows=mergeRows(filterPS());
   /* 改75: 完全无结果 → 同音游戏兜底列表(提示交互已改为改76搜索框下拉联想) */
   if(!curRows.length&&kw.trim()){
-    curRows=homophoneRows(kw.trim());
+    curRows=mergeRows(homophoneRows(kw.trim()));
   }
   rendered=0; $("#psList").innerHTML="";
   Object.keys(__letterSeen).forEach(k=>delete __letterSeen[k]);
@@ -893,14 +960,18 @@ function gameCard(g,idx){
   if(idx!=null)card.id="gc-"+idx;   /* 改76: 联想跳转定位用 */
   /* 改68: 卡片封面(有映射显示真图, 无映射显示首字占位) */
   (function(){
-    const f=COVERS[g.name];
+    /* 改99: 合并组的封面 —— 组内任一账号有封面就用(代表名可能无封面) */
+    const grp=g._grp||[g];
+    let f=null;
+    for(let i=0;i<grp.length&&!f;i++)f=COVERS[grp[i].name]||null;
+    const dispName=g._disp||g.name;
     const box=el("div","gcover"+(f?"":" ph"));
     if(f){const im=document.createElement("img");im.alt="";im.loading="lazy";gtCoverSrc(im,f);box.appendChild(im);}
-    else{box.appendChild(el("div","phc",String(g.name||"").slice(0,1)));box.appendChild(el("div","pht","封面待接入"));}
+    else{box.appendChild(el("div","phc",String(dispName).slice(0,1)));box.appendChild(el("div","pht","封面待接入"));}
     card.appendChild(box);
   })();
   const main=el("div","gmain");
-  const nm=el("div","gname",g.name);
+  const nm=el("div","gname",g._disp||g.name);   /* 改99: 合并组显示去库存序号的名称 */
   main.appendChild(nm);
   if(g.en)main.appendChild(el("div","gen",g.en));
   /* 信息行(改16B/67t): 发售日期/游戏版本(原发售地区)/支持主机 —— 纯固定信息, 不随库存变动 */
