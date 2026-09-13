@@ -5,3 +5,4 @@ site/
 data.js
 __pycache__/
 *.pyc
+covers/manifest.json.bak*
