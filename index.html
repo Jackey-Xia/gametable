@@ -150,6 +150,13 @@ select{border:1px solid var(--line);border-radius:10px;padding:8px 8px;backgroun
 .gmeta{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
 .chip{display:inline-flex;align-items:center;gap:4px;border-radius:999px;padding:2.5px 9px;font-size:11.5px;font-weight:600;background:#f1f4f9;color:#4b5563}
 .chip .pre{font-style:normal;font-weight:500;color:#9aa3af;margin-right:1px}
+/* 改100: 游戏版本(发售地区)文字配色 —— 仅【港版/日版/欧版/美版/国行】5个字着色, 底纹与边框一律不动, 色值取自店主提供的地区色板 */
+.chip .rv{font-weight:600}
+.chip .rv.r-hk{color:#8149FE}
+.chip .rv.r-jp{color:#DCA70F}
+.chip .rv.r-eu{color:#D22A83}
+.chip .rv.r-us{color:#2992DD}
+.chip .rv.r-cn{color:#2F3745}
 .chip.ps{background:var(--psbg);color:var(--ps)}
 .chip.host{background:var(--goldbg);border:1px solid #f3e2b2;color:var(--gold)}
 .chip.ns{background:var(--nsbg);color:var(--ns)}
@@ -371,6 +378,8 @@ const PS=D.ps||[], NS=D.ns||[], MEM=D.membership||{};
 const CONFIG={ shopUrl:"", q:"" };   // 如需“立即购买”跳转，请填店铺下单链接
 const $=s=>document.querySelector(s);
 const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;};
+/* 改100: 发售地区(display 值) -> 文字配色 class, 仅用于【游戏版本】标签内那 5 个字的着色 */
+const REGION_COLOR={"港版":"r-hk","日版":"r-jp","欧版":"r-eu","美版":"r-us","国行":"r-cn"};
 
 /* 改74: IndexedDB 图片本地库 v2 —— 单例连接(修 iOS 连接爆炸致挂起/丢数据) + open超时保护 + 持久化申请 + 故障可见 */
 var GTI={db:null,pend:null,err:"",puts:0,gets:0,persist:"",done:null,base:null,total:0,lastKnown:0};
@@ -977,7 +986,8 @@ function gameCard(g,idx){
   /* 信息行(改16B/67t): 发售日期/游戏版本(原发售地区)/支持主机 —— 纯固定信息, 不随库存变动 */
   const meta=el("div","gmeta");
   if(g.date){const c=el("span","chip");c.appendChild(el("i","pre","发售日期"));c.appendChild(document.createTextNode(g.date));meta.appendChild(c);}
-  if(g.region){const c=el("span","chip");c.appendChild(el("i","pre","游戏版本"));c.appendChild(document.createTextNode(g.region));meta.appendChild(c);}
+  /* 改100: 游戏版本值单独包一层 span —— 仅这 5 个字按发售地区配色, 标签底纹/边框保持原样; 其它地区值仍为原灰字 */
+  if(g.region){const c=el("span","chip");c.appendChild(el("i","pre","游戏版本"));c.appendChild(el("span","rv"+(REGION_COLOR[g.region]?" "+REGION_COLOR[g.region]:""),g.region));meta.appendChild(c);}
   if((g.hs||[]).length){
     const hc=el("span","chip host");
     hc.appendChild(el("i","pre","支持主机"));
