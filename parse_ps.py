@@ -155,6 +155,9 @@ while r < 4000:
             and grid[r][4]=="" and grid[r][7]=="" and grid[r][8]==""):
         r+=1; continue
     gname=name
+    # 改100: 同名但"发售地区"不同的相邻行 = 不同版本商品(如 渎神2 港版PS5 / 美版PS4),
+    # 必须拆成独立条目, 否则会被合并成一条、只保留首行地区并错把主机取成并集。
+    greg=grid[r][6].strip()
     grp=[]
     while r<4000:
         nm=grid[r][2]
@@ -162,6 +165,9 @@ while r < 4000:
             r+=1
             break
         if nm!=gname:
+            break
+        rg=grid[r][6].strip()
+        if greg and rg and rg!=greg:
             break
         grp.append(r)
         r+=1
