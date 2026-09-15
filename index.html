@@ -577,6 +577,10 @@ function enKey(s){return String(s||"").toLowerCase().replace(/[\s:：·・.。�
 function enBase(s){return String(s||"").toLowerCase().replace(/[（(][^）)]*[)）]/g,"").replace(/[^a-z0-9]/g,"");}
 /* 两个商品是否为同一游戏的重复库存 */
 function dupOf(a,b){
+  /* 改101: 发售地区(G列)不同 = 不同商品(如 符文工房 龙之天地 港版/日版), 必须拆成两张卡, 不合并。
+     仅当双方地区都填了且不同才拦截; 任一方为空(合并格继承行)时维持原合并行为, 避免误拆多账号库存。 */
+  const ra=String(a.region||"").replace(/\s/g,""),rb=String(b.region||"").replace(/\s/g,"");
+  if(ra&&rb&&ra!==rb)return false;
   const ea=enKey(a.en),eb=enKey(b.en);
   const enOK=(ea!==""&&ea===eb)||(ea===""&&eb==="");   /* 英文名相同, 或双方都未填 */
   const ba=stripSeq(a.name),bb=stripSeq(b.name);
