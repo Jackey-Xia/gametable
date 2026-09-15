@@ -653,10 +653,20 @@ function sugMatches(q){
   const PSnames={};
   for(let i=0;i<PS.length;i++)PSnames[PS[i].name]=1;
   /* 改82: 下拉同样按相关度排序(仁王1 在 仁王3 之前), 与列表顺序保持一致 */
-  const ranked=sortByRelevance(out,nq);
-  return ranked.slice(0,SUG_MAX()).map(g=>{
+  const ranked=sortByRelevance(out,nq).slice(0,SUG_MAX());
+  /* 改101: 下拉里同名但地区不同的款(如 符文工房 日版/港版)补 "· 地区" 后缀, 否则两条一模一样没法选 */
+  const byNm={};
+  ranked.forEach(g=>{
+    const d=dispOf(g,!!g._merged,PSnames)||g.name;
+    let a=byNm[d]; if(!a){a=[];byNm[d]=a;}
+    a.push(g);
+  });
+  return ranked.map(g=>{
     const d=dispOf(g,!!g._merged,PSnames);
     if(d)g.disp=d;   /* 改88: 特例名单放行 */
+    const a=byNm[d||g.name]||[],rs={};let n=0;
+    a.forEach(x=>{const r=String(x.region||"").trim();if(r&&!rs[r]){rs[r]=1;n++;}});
+    if(a.length>1&&n>1&&String(g.region||"").trim())g.disp=(d||g.name)+" · "+String(g.region).trim();
     return g;
   });
 }
@@ -761,7 +771,8 @@ function sugGo(g){
   box.classList.remove("show");box.innerHTML="";
   $("#q").value="";kw="";
   /* 改99: curRows 已是合并视图, 按组成员匹配(联想条目可能是组内任一账号行) */
-  const inGrp=o=>(o._grp||[o]).some(m=>m.name===g.name);
+  /* 改101: 名字+地区一起匹配 —— 同名但地区不同的款(渎神2 港版/美版)点哪条跳哪张卡, 不再都跳第一张 */
+  const inGrp=o=>(o._grp||[o]).some(m=>m.name===g.name&&String(m.region||"")===String(g.region||""));
   if(!curRows.some(inGrp))renderPS();
   const idx=curRows.findIndex(inGrp);
   if(idx<0)return;
@@ -806,6 +817,21 @@ function mergeRows(rows){
       if(fmtMoney(v[k])==null){const f=grp.find(m=>fmtMoney(m[k])!=null);if(f)v[k]=f[k];}
     });
     views.push(v);
+  });
+  /* 改101: 展示名相同但发售地区不同的款(如 符文工房 港版/日版、渎神2 港版/美版),
+     卡片名后补 "· 地区" 后缀, 免得列表里出现两张一模一样的卡让顾客分不清 */
+  const byDisp=new Map();
+  for(const v of views){
+    const k=v._disp;
+    let arr=byDisp.get(k); if(!arr){arr=[];byDisp.set(k,arr);}
+    arr.push(v);
+  }
+  byDisp.forEach(arr=>{
+    if(arr.length<2)return;
+    const rs={};let n=0;
+    arr.forEach(v=>{const r=String(v.region||"").trim();if(r&&!rs[r]){rs[r]=1;n++;}});
+    if(n<2)return;
+    arr.forEach(v=>{if(String(v.region||"").trim())v._disp=v._disp+" · "+String(v.region).trim();});
   });
   return views;
 }
