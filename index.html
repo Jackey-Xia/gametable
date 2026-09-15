@@ -152,11 +152,12 @@ select{border:1px solid var(--line);border-radius:10px;padding:8px 8px;backgroun
 .chip .pre{font-style:normal;font-weight:500;color:#9aa3af;margin-right:1px}
 /* 改100: 游戏版本(发售地区)文字配色 —— 仅【港版/日版/欧版/美版/国行】5个字着色, 底纹与边框一律不动, 色值取自店主提供的地区色板 */
 .chip .rv{font-weight:600}
-.chip .rv.r-hk{color:#8149FE}
-.chip .rv.r-jp{color:#DCA70F}
-.chip .rv.r-eu{color:#D22A83}
-.chip .rv.r-us{color:#2992DD}
-.chip .rv.r-cn{color:#2F3745}
+/* 改103: 五色改为全局 class(.rv/.rg 共用), 联想下拉的地区小标签也用同一套色 */
+.r-hk{color:#8149FE}
+.r-jp{color:#DCA70F}
+.r-eu{color:#D22A83}
+.r-us{color:#2992DD}
+.r-cn{color:#2F3745}
 .chip.ps{background:var(--psbg);color:var(--ps)}
 .chip.host{background:var(--goldbg);border:1px solid #f3e2b2;color:var(--gold)}
 .chip.ns{background:var(--nsbg);color:var(--ns)}
@@ -187,6 +188,8 @@ select{border:1px solid var(--line);border-radius:10px;padding:8px 8px;backgroun
 .sugbox .si .nm{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .sugbox .si .nm b{color:#d33a3a;font-weight:700}
 .sugbox .si .hs{flex:none;font-size:11px;color:#8a93a3;background:#f1f4f9;border-radius:5px;padding:1px 6px}
+/* 改103: 联想条目右侧的「游戏版本」小标签 —— 同款五色, 与卡片上的版本字色一致 */
+.sugbox .si .rg{flex:none;font-size:11px;font-weight:700;background:#f1f4f9;border-radius:5px;padding:1px 6px;margin-right:2px}
 .sugbox .ft{padding:6px 13px;font-size:11.5px;color:#98a0ab;border-top:1px solid var(--line);background:#fafbfd}
 /* 改76: 联想跳转后目标卡片闪烁高亮 */
 .gcard.jump-hl{animation:jumpPulse 1.1s ease 2}
@@ -654,19 +657,10 @@ function sugMatches(q){
   for(let i=0;i<PS.length;i++)PSnames[PS[i].name]=1;
   /* 改82: 下拉同样按相关度排序(仁王1 在 仁王3 之前), 与列表顺序保持一致 */
   const ranked=sortByRelevance(out,nq).slice(0,SUG_MAX());
-  /* 改101: 下拉里同名但地区不同的款(如 符文工房 日版/港版)补 "· 地区" 后缀, 否则两条一模一样没法选 */
-  const byNm={};
-  ranked.forEach(g=>{
-    const d=dispOf(g,!!g._merged,PSnames)||g.name;
-    let a=byNm[d]; if(!a){a=[];byNm[d]=a;}
-    a.push(g);
-  });
+  /* 改103: 名字后缀已撤(店主要求) —— 版本改由条目右侧的彩色小标签标注(见 renderSug) */
   return ranked.map(g=>{
     const d=dispOf(g,!!g._merged,PSnames);
     if(d)g.disp=d;   /* 改88: 特例名单放行 */
-    const a=byNm[d||g.name]||[],rs={};let n=0;
-    a.forEach(x=>{const r=String(x.region||"").trim();if(r&&!rs[r]){rs[r]=1;n++;}});
-    if(a.length>1&&n>1&&String(g.region||"").trim())g.disp=(d||g.name)+" · "+String(g.region).trim();
     return g;
   });
 }
@@ -755,6 +749,9 @@ function renderSug(){
     if(hl){nm.appendChild(document.createTextNode(hl[0]));nm.appendChild(el("b",null,hl[1]));nm.appendChild(document.createTextNode(hl[2]));}
     else nm.textContent=showName;
     it.appendChild(nm);
+    /* 改103: 条目右侧「游戏版本」彩色小标签(五色同卡片), 有地区就标 */
+    const rgCls=REGION_COLOR[String(g.region||"").trim()];
+    if(g.region&&rgCls)it.appendChild(el("span","rg "+rgCls,g.region));
     if((g.hs||[]).length)it.appendChild(el("span","hs",g.hs.join(" ")));
     /* mousedown 抢在 input blur 之前执行, 防止点选丢失 */
     it.addEventListener("mousedown",e=>{e.preventDefault();sugGo(g);});
@@ -817,21 +814,6 @@ function mergeRows(rows){
       if(fmtMoney(v[k])==null){const f=grp.find(m=>fmtMoney(m[k])!=null);if(f)v[k]=f[k];}
     });
     views.push(v);
-  });
-  /* 改101: 展示名相同但发售地区不同的款(如 符文工房 港版/日版、渎神2 港版/美版),
-     卡片名后补 "· 地区" 后缀, 免得列表里出现两张一模一样的卡让顾客分不清 */
-  const byDisp=new Map();
-  for(const v of views){
-    const k=v._disp;
-    let arr=byDisp.get(k); if(!arr){arr=[];byDisp.set(k,arr);}
-    arr.push(v);
-  }
-  byDisp.forEach(arr=>{
-    if(arr.length<2)return;
-    const rs={};let n=0;
-    arr.forEach(v=>{const r=String(v.region||"").trim();if(r&&!rs[r]){rs[r]=1;n++;}});
-    if(n<2)return;
-    arr.forEach(v=>{if(String(v.region||"").trim())v._disp=v._disp+" · "+String(v.region).trim();});
   });
   return views;
 }
