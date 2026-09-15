@@ -9,7 +9,7 @@ on:
     paths: ['data/**']      # AirScript 云端脚本推新数据 -> 立即构建发布
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -26,6 +26,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      # 自动封面: 发现新增商品 -> 港服 zh-Hans 搜索官方主图 -> 严格唯一匹配才入库
+      - name: Auto-fetch covers for new products
+        run: python3 autocover.py
+
+      # 有新封面则提交回仓库(只动 covers/**, 不会再触发本 workflow)
+      - name: Commit auto-fetched covers
+        run: |
+          git config user.name "autocover-bot"
+          git config user.email "autocover-bot@users.noreply.github.com"
+          git add covers
+          if git diff --cached --quiet; then
+            echo "no new covers"
+          else
+            git commit -m "covers(auto): 新商品封面自动抓取"
+            git pull --rebase origin main || true
+            git push || (sleep 8 && git pull --rebase origin main || true && git push || echo "push failed, next run will retry")
+          fi
 
       - name: Build site from latest data
         run: python3 sync_all.py
