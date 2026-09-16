@@ -13,6 +13,9 @@ import shutil
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import autocover as A
+
+import cover_policy as CP
 import identify_zh as I  # noqa: E402
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -30,6 +33,8 @@ def main():
     shutil.copy(p, dst)
     assert os.path.getsize(dst) > 3000, "文件过小"
     m[TARGET] = rel
+    CP.set_cover(TARGET, rel, CP.SRC_MANUAL, "P", "名利游戏 PS5 (PPSA26324)",
+                 "店主反馈两款海报不一致 -> 统一港服中文竖版")
     import autocover as A
     # 旧文件若不再被其它键引用则删除
     keep = {os.path.basename(x) for x in m.values()}

@@ -20,6 +20,7 @@ import time
 import traceback
 
 import autocover as A
+import cover_policy as CP
 import identify_zh as I
 
 BASE = A.BASE
@@ -79,6 +80,8 @@ def main():
                 raise ValueError("文件过小")
             old = m.get(name)
             m[name] = rel
+            # 登记为人工封面: 今后任何自动流程都不得覆盖
+            CP.set_cover(name, rel, CP.SRC_MANUAL, role, r["store"], "店主圈定清单 -> apply_missing")
             keep = {"covers/" + os.path.basename(x) for x in m.values()}
             if old and old not in keep and os.path.exists(os.path.join(BASE, old)):
                 os.remove(os.path.join(BASE, old))

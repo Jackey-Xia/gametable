@@ -23,6 +23,7 @@ import time
 import traceback
 
 import autocover as A
+import cover_policy as CP
 import identify_zh as I
 
 BASE = A.BASE
@@ -70,6 +71,9 @@ def main():
                 fo.write(fi.read())
             old = m.get(name)
             m[name] = rel
+            # 登记为人工封面: 今后任何自动流程都不得覆盖
+            CP.set_cover(name, rel, CP.SRC_MANUAL, r.get("shLocal", ""),
+                         r.get("storeName", ""), "店主圈定清单 -> apply_zh")
             keep = {"covers/" + os.path.basename(p) for p in m.values()}
             if old and old not in keep and os.path.exists(os.path.join(BASE, old)):
                 os.remove(os.path.join(BASE, old))

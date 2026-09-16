@@ -9,12 +9,19 @@ autocover.py —— 新商品封面自动抓取（港服 PS Store · zh-Hans 中
   1. 读 data/ps_grid.json 的真实商品名（rows 第3列, 索引2）
   2. 已有封面(manifest 键) / 有意无封面(auto_skip) / 多次失败(auto_state) 的名字直接跳过
   3. 其余 = 新商品 -> 用 PS Store 搜索 API (getSearchResults persisted query) 搜港服 zh-Hans
+     —— **唯一自动来源**, 不使用任何第三方图床或其它地区页
   4. 严格评分匹配, 唯一最高分才自动入库; 有歧义 -> 记入 pending 交店主人工核对
-  5. 下载 zh-Hans MASTER 官方主图(504x504, 中文版封面) -> covers/ac{md5}.jpg -> 更新 manifest
+  5. 按「竖图 2:3 PORTRAIT_BANNER > 方图 1:1 MASTER」挑选官方图
+     -> covers/ac{md5}.jpg -> 登记 cover_sources.json(source=store_zh_hk) + manifest
   6. 报告写 covers/autocover_report.json
 
+★ 封面优先级三条铁律（见 cover_policy.py，2026-09-16 店主定稿）:
+  1. 人工指定的 > 自动抓取的 —— 凡是 cover_sources.json 里 source=manual 的封面，本脚本绝不碰
+  2. 自动抓图来源只认 PS 港服中文页（zh-Hans-HK）
+  3. 形态上竖图 > 方图（缺竖版才退方图）
+
 安全红线（务必遵守）:
-  - 只新增键, 绝不覆盖/删除已有 manifest 键
+  - 只新增键, 绝不覆盖/删除已有 manifest 键（cover_policy.guard 二次拦截）
   - 绝不修改 data/ 下任何文件
   - 任何异常都不抛出(exit 0), 不阻断部署
 """
@@ -26,6 +33,8 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+
+import cover_policy as CP
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 GRID = os.path.join(BASE, "data", "ps_grid.json")
@@ -125,7 +134,8 @@ def http_download(url, path, timeout=40):
 
 
 def store_search(term):
-    """港服 zh-Hans 搜索, 返回 [ {id,name,platforms,master_url} ] (仅 Product 类型)"""
+    """港服 zh-Hans 搜索, 返回 [ {id,name,platforms,master,portrait,media} ] (仅 Product 类型)
+    同时收集 MASTER(方) 与 PORTRAIT_BANNER(竖) 两个 role, 供「竖图优先」挑选"""
     if not term or not term.strip():
         return []
     q = urllib.parse.quote(json.dumps({
@@ -140,12 +150,19 @@ def store_search(term):
     for r in rs:
         if r.get("__typename") != "Product":
             continue
-        master = ""
+        master, portrait = "", ""
         for m in r.get("media") or []:
-            if m.get("role") == "MASTER" and m.get("type") == "IMAGE":
+            if m.get("type") not in (None, "IMAGE"):
+                continue
+            role = m.get("role")
+            if role == "MASTER" and not master:
                 master = m.get("url", "")
-                break
-        out.append({"id": r.get("id"), "name": r.get("name"), "platforms": r.get("platforms") or [], "master": master})
+            elif role == "PORTRAIT_BANNER" and not portrait:
+                portrait = m.get("url", "")
+        if not (master or portrait):
+            continue
+        out.append({"id": r.get("id"), "name": r.get("name"), "platforms": r.get("platforms") or [],
+                    "master": master, "portrait": portrait, "media": r.get("media") or []})
     return out
 
 
@@ -187,7 +204,7 @@ def best_of(wps, cands, alt=""):
     """返回 (best_cand, best_score, second_score) 候选须唯一最高分(同名双平台算同分同类)"""
     scored = []
     for c in cands:
-        if not c.get("master"):
+        if not (c.get("master") or c.get("portrait")):
             continue
         if is_excluded(c["name"], wps + " " + alt):
             continue
@@ -301,15 +318,41 @@ def run():
         st["n"] = st.get("n", 0) + 1
         st["last"] = time.strftime("%Y-%m-%dT%H:%M:%S")
         if ok:
+            # ★ 形态优先级: 竖图 PORTRAIT_BANNER > 方图 MASTER
+            media = best.get("media") or [
+                {"role": "MASTER", "url": best.get("master")},
+                {"role": "PORTRAIT_BANNER", "url": best.get("portrait")},
+            ]
+            role, url = CP.pick_role(media)
+            if not url:
+                errors.append({"name": name, "error": "港服无可用形态图"})
+                pending.append({"name": name, "reason": "港服该商品无竖版/方图"})
+                st["err"] = "no media"
+                state[name] = st
+                continue
+            # ★ 人工封面保护（cover_policy 二次拦截）
+            okcov, why = CP.guard(name, CP.SRC_STORE_ZH_HK)
+            if not okcov:
+                pending.append({"name": name, "reason": "受保护: %s" % why})
+                st["err"] = "guarded: " + why[:100]
+                print("  - %s  跳过(受保护): %s" % (name, why[:60]))
+                state[name] = st
+                continue
             fn = "covers/ac%s.jpg" % hashlib.md5(name.encode()).hexdigest()[:12]
             try:
-                sz = http_download(best["master"], os.path.join(BASE, fn))
+                sz = http_download(url, os.path.join(BASE, fn))
+                ok2, msg = CP.set_cover(name, fn, CP.SRC_STORE_ZH_HK,
+                                        CP.ROLE_CODE.get(role, ""), best["name"],
+                                        "autocover 自动抓取 · 港服中文页")
+                if not ok2:
+                    raise ValueError(msg)
                 m[name] = fn
                 done += 1
                 added.append({"name": name, "product": best["id"], "storeName": best["name"],
-                              "score": bscore, "file": fn, "bytes": sz})
+                              "score": bscore, "file": fn, "role": CP.ROLE_CODE.get(role, ""), "bytes": sz})
                 st["ok"] = fn
-                print("  + %s  <-  %s (score %.2f)" % (name, best["name"], bscore))
+                print("  + %s  <-  %s (score %.2f, %s图)" % (name, best["name"], bscore,
+                                                             "竖" if role == "PORTRAIT_BANNER" else "方"))
             except Exception as ex:
                 errors.append({"name": name, "error": "download: %s" % str(ex)[:150]})
                 pending.append({"name": name, "reason": "下载失败: %s" % str(ex)[:80]})
