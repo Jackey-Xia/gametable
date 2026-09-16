@@ -1,0 +1,215 @@
+{
+ "time": "2026-09-16T15:00:11",
+ "added": [
+  {
+   "name": "钢铁收割（完整版）",
+   "to": "covers/rc875c926e1121.jpg",
+   "role": "P",
+   "store": "Iron Harvest - Complete Edition (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "size": 103255
+  },
+  {
+   "name": "名利游戏（PS4）",
+   "to": "covers/rc08cdb08fa1f6.jpg",
+   "role": "P",
+   "store": "名利游戏 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "size": 73564
+  },
+  {
+   "name": "美女，请别影响我成仙（PS5）",
+   "to": "covers/rcb0c51c71a7cc.jpg",
+   "role": "P",
+   "store": "美女，请别影响我成仙 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "size": 95747
+  },
+  {
+   "name": "牧场物语 来吧！风之繁华集市",
+   "to": "covers/rcdac76c7fab70.jpg",
+   "role": "P",
+   "store": "牧场物语 来吧！风之繁华集市 (日语, 简体中文, 繁体中文, 英语)",
+   "size": 141157
+  },
+  {
+   "name": "魔女祇兵",
+   "to": "covers/rce90837bca3b4.jpg",
+   "role": "P",
+   "store": "魔女祇兵－The Witch of Luludidea－ (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "size": 130860
+  },
+  {
+   "name": "漫威金刚狼5",
+   "to": "covers/rcbb21280d389f.jpg",
+   "role": "P",
+   "store": "《漫威金刚狼》 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "size": 106775
+  },
+  {
+   "name": "漫威金刚狼6",
+   "to": "covers/rc5d1f87471596.jpg",
+   "role": "P",
+   "store": "《漫威金刚狼》 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "size": 106775
+  },
+  {
+   "name": "审判之逝：湮灭的记忆（豪华版）",
+   "to": "covers/rc1e5f946cc700.jpg",
+   "role": "P",
+   "store": "审判之逝：湮灭的记忆 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "size": 73735
+  },
+  {
+   "name": "丧尸围城：豪华复刻版（豪华版）",
+   "to": "covers/rcb3484ad780ac.jpg",
+   "role": "P",
+   "store": "Dead Rising Deluxe Remaster (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "size": 98023
+  },
+  {
+   "name": "死神公主与异书馆的怪物",
+   "to": "covers/rc25e163d93ddd.jpg",
+   "role": "P",
+   "store": "死神公主与异书馆的怪物 (日语, 韩语, 繁体中文)",
+   "size": 115660
+  },
+  {
+   "name": "甜心帝国",
+   "to": "covers/rc75b977f4cf8c.jpg",
+   "role": "P",
+   "store": "甜心帝国 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "size": 49636
+  },
+  {
+   "name": "无休仙途",
+   "to": "covers/rc21055c214450.jpg",
+   "role": "P",
+   "store": "无休仙途 (日语, 简体中文, 繁体中文, 英语)",
+   "size": 131332
+  },
+  {
+   "name": "最终幻想战略版 伊瓦利斯战记1",
+   "to": "covers/rc600dae1887a0.jpg",
+   "role": "P",
+   "store": "FINAL FANTASY TACTICS - The Ivalice Chronicles [PS4 & PS5] (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "size": 117391
+  },
+  {
+   "name": "碧蓝幻想Relink：无尽黄昏",
+   "to": "covers/rc73d2cc1b4864.jpg",
+   "role": "M",
+   "store": "碧蓝幻想Relink 无尽黄昏（普通版） (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "size": 94642
+  },
+  {
+   "name": "方根书简",
+   "to": "covers/rce31d46470325.jpg",
+   "role": "M",
+   "store": "√Letter-方根书简- (中文版)",
+   "size": 78825
+  },
+  {
+   "name": "夏洛克·福尔摩斯：罪与罚",
+   "to": "covers/rc23b898c00151.jpg",
+   "role": "M",
+   "store": "Sherlock Holmes: Crimes and Punishments (日语, 韩语, 简体中文, 英语)",
+   "size": 45469
+  },
+  {
+   "name": "剑风传奇无双/烙印勇士无双（完整版）",
+   "to": "covers/rcd7dad18b2929.jpg",
+   "role": "M",
+   "store": "烙印勇士无双 (中文版)",
+   "size": 86724
+  },
+  {
+   "name": "龙珠：斗士Z",
+   "to": "covers/rcee5ec01c78eb.jpg",
+   "role": "M",
+   "store": "DRAGON BALL FighterZ PS4™&PS5® (日语, 韩语, 简体中文, 繁体中文)",
+   "size": 111565
+  },
+  {
+   "name": "莱莎的炼金工房3～终结之炼金术士与秘密钥匙～DX",
+   "to": "covers/rca6842995ef63.jpg",
+   "role": "M",
+   "store": "莱莎的炼金工房３ ～终结之炼金术士与秘密钥匙～ DX (PS4&5) (日语, 韩语, 简体中文, 繁体中文)",
+   "size": 92861
+  },
+  {
+   "name": "毛线小精灵1+2/崩解1+2（同捆包）（1）",
+   "to": "covers/rcb0377ce08690.jpg",
+   "role": "M",
+   "store": "《Unravel Yarny》同捆包 (英文版)",
+   "size": 84692
+  },
+  {
+   "name": "如龙7 人中之龙7：光与暗的去向",
+   "to": "covers/rc936223c2b878.jpg",
+   "role": "M",
+   "store": "人中之龙7　光与暗的去向 (中日文版)",
+   "size": 63300
+  },
+  {
+   "name": "忍者神龟：施莱德的复仇（终极版）",
+   "to": "covers/rca4e2b75662e4.jpg",
+   "role": "M",
+   "store": "Teenage Mutant Ninja Turtles: Shredder's Revenge: Dimension Shellshock (中日英韩文版)",
+   "size": 83179
+  },
+  {
+   "name": "三国志14 威力加强传承版",
+   "to": "covers/rc957487c0fe63.jpg",
+   "role": "M",
+   "store": "三国志14 威力加强传承版 (中文版)",
+   "size": 74918
+  },
+  {
+   "name": "夏日美女：欧巴请和我恋爱吧！",
+   "to": "covers/rce32d94fb42c8.jpg",
+   "role": "M",
+   "store": "夏日美女：欧巴请和我恋爱吧！ (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "size": 47408
+  },
+  {
+   "name": "勇者斗恶龙 建造者1 创世小玩家 阿雷夫加尔德复仇记",
+   "to": "covers/rc05522b791c3e.jpg",
+   "role": "M",
+   "store": "DRAGON QUEST BUILDERS™ (英文版)",
+   "size": 87810
+  }
+ ],
+ "errors": [],
+ "unskipped": [
+  "钢铁收割（完整版）",
+  "名利游戏（PS4）",
+  "美女，请别影响我成仙（PS5）",
+  "牧场物语 来吧！风之繁华集市",
+  "魔女祇兵",
+  "漫威金刚狼5",
+  "漫威金刚狼6",
+  "审判之逝：湮灭的记忆（豪华版）",
+  "丧尸围城：豪华复刻版（豪华版）",
+  "死神公主与异书馆的怪物",
+  "甜心帝国",
+  "无休仙途",
+  "最终幻想战略版 伊瓦利斯战记1",
+  "碧蓝幻想Relink：无尽黄昏",
+  "方根书简",
+  "夏洛克·福尔摩斯：罪与罚",
+  "剑风传奇无双/烙印勇士无双（完整版）",
+  "龙珠：斗士Z",
+  "莱莎的炼金工房3～终结之炼金术士与秘密钥匙～DX",
+  "毛线小精灵1+2/崩解1+2（同捆包）（1）",
+  "如龙7 人中之龙7：光与暗的去向",
+  "忍者神龟：施莱德的复仇（终极版）",
+  "三国志14 威力加强传承版",
+  "夏日美女：欧巴请和我恋爱吧！",
+  "勇者斗恶龙 建造者1 创世小玩家 阿雷夫加尔德复仇记"
+ ],
+ "stats": {
+  "picks": 25,
+  "added": 25,
+  "err": 0,
+  "manifest": 1099,
+  "skip": 88
+ }
+}
