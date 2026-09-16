@@ -8798,5 +8798,13 @@
   "store": "UP4581-PPSA02304_00-OLLIOLLIWORLDRAD (zh-Hans-HK)",
   "time": "2026-09-16T22:31:56",
   "note": "店主选定第4张:Rad版 EDITION_KEY_ART 版本主视觉(504x284横版)"
+ },
+ "暴雨+超凡双生": {
+  "file": "covers/ac9bbaaf301b63.jpg",
+  "source": "store_zh_hk",
+  "role": "P",
+  "store": "The Heavy Rain™ ＆ BEYOND: Two Souls™ Collection (中英韩文版)",
+  "time": "2026-09-16T14:57:12",
+  "note": "autocover 自动抓取 · 港服中文页"
  }
 }

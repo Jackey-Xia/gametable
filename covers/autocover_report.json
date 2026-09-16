@@ -1,6 +1,16 @@
 {
- "time": "2026-09-16T14:37:54",
- "added": [],
+ "time": "2026-09-16T14:57:12",
+ "added": [
+  {
+   "name": "暴雨+超凡双生",
+   "product": "HP9000-CUSA02567_00-HRPS4BEYOND00000",
+   "storeName": "The Heavy Rain™ ＆ BEYOND: Two Souls™ Collection (中英韩文版)",
+   "score": 0.85,
+   "file": "covers/ac9bbaaf301b63.jpg",
+   "role": "P",
+   "bytes": 54896
+  }
+ ],
  "pending": [
   {
    "name": "海贼无双4（传奇版）（1）",
@@ -17,8 +27,8 @@
  ],
  "errors": [],
  "stats": {
-  "total": 1189,
-  "covered": 1100,
+  "total": 1188,
+  "covered": 1101,
   "pending_open": 3
  }
 }
