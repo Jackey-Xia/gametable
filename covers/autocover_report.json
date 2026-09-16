@@ -1,11 +1,22 @@
 {
- "time": "2026-09-16T09:25:38",
+ "time": "2026-09-16T09:27:44",
  "added": [],
- "pending": [],
+ "pending": [
+  {
+   "name": "海贼无双4（传奇版）（1）",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "海贼无双4（传奇版）（2）",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  }
+ ],
  "errors": [],
  "stats": {
-  "total": 1187,
+  "total": 1188,
   "covered": 1099,
-  "pending_open": 0
+  "pending_open": 2
  }
 }
