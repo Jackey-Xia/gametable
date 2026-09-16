@@ -1,0 +1,44 @@
+[
+ {
+  "label": "★当前线上（已生效）",
+  "pid": "",
+  "role": "",
+  "size": "504x756",
+  "url": ""
+ },
+ {
+  "label": "Rad版·竖图 PORTRAIT_BANNER",
+  "pid": "UP4581-PPSA02304_00-OLLIOLLIWORLDRAD",
+  "role": "PORTRAIT_BANNER",
+  "size": "504x756",
+  "url": "https://image.api.playstation.com/vulcan/ap/rnd/202106/0321/cmnPrScBACtoXXMmE6yxcaTN.jpg"
+ },
+ {
+  "label": "Rad版·方图 MASTER",
+  "pid": "UP4581-PPSA02304_00-OLLIOLLIWORLDRAD",
+  "role": "MASTER",
+  "size": "504x504",
+  "url": "https://image.api.playstation.com/vulcan/ap/rnd/202106/0321/aOY1Fb5Tcw3Zti8m3qfZeIDM.png"
+ },
+ {
+  "label": "Rad版·版本主视觉 EDITION_KEY_ART",
+  "pid": "UP4581-PPSA02304_00-OLLIOLLIWORLDRAD",
+  "role": "EDITION_KEY_ART",
+  "size": "504x284",
+  "url": "https://image.api.playstation.com/vulcan/ap/rnd/202111/2414/5vjRBGEnxbIkg8cwrBgTY45v.jpg"
+ },
+ {
+  "label": "基础版·竖图 PORTRAIT_BANNER",
+  "pid": "UP4581-PPSA02304_00-OLLIOLLIWORLD000",
+  "role": "PORTRAIT_BANNER",
+  "size": "504x756",
+  "url": "https://image.api.playstation.com/vulcan/ap/rnd/202106/0321/cmnPrScBACtoXXMmE6yxcaTN.jpg"
+ },
+ {
+  "label": "基础版·方图 MASTER",
+  "pid": "UP4581-PPSA02304_00-OLLIOLLIWORLD000",
+  "role": "MASTER",
+  "size": "504x504",
+  "url": "https://image.api.playstation.com/vulcan/ap/rnd/202106/0321/aOY1Fb5Tcw3Zti8m3qfZeIDM.png"
+ }
+]
