@@ -8800,12 +8800,12 @@
   "note": "店主选定第4张:Rad版 EDITION_KEY_ART 版本主视觉(504x284横版)"
  },
  "暴雨+超凡双生": {
-  "file": "covers/ac9bbaaf301b63.jpg",
-  "source": "store_zh_hk",
-  "role": "P",
-  "store": "The Heavy Rain™ ＆ BEYOND: Two Souls™ Collection (中英韩文版)",
-  "time": "2026-09-16T14:57:12",
-  "note": "autocover 自动抓取 · 港服中文页"
+  "file": "covers/rcfc67ce60c571.jpg",
+  "source": "manual",
+  "role": "KEY",
+  "store": "HP9000-CUSA02567_00-HRPS4BEYOND00000 (zh-Hans-HK)",
+  "time": "2026-09-16T23:50:27",
+  "note": "店主指令:改用商城合集瓦片(Heavy Rain & BEYOND Two Souls Collection);由该条目EDITION_KEY_ART重排竖版(logo带+折纸/祖迪双面板)"
  },
  "阿凡达：潘多拉边境（完整版）": {
   "file": "covers/rca601ae0f8dee.jpg",
