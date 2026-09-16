@@ -50,6 +50,7 @@ EXCLUDE = [
     "立绘", "poster", "海报", "glasses", "headgear", "backpack",
     "sunglass", "preorder", "预购", "点数", "coins", "points", "credits",
     "currency", "subscription", "定期服务", "soundtrack", "原声带",
+    "试玩版", "试玩", "体验版", "序章", "捆绑包", "合集包",
 ]
 
 UA_STRIP = re.compile(r"[（(]\s*(?:PS4|PS5|PSVR|PSVR2|港版英文|美版英文|日版英文|中英文版|英文版|中文版|日文版|韩文版)\s*[）)]", re.I)

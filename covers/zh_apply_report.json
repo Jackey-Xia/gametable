@@ -1,0 +1,199 @@
+{
+ "time": "2026-09-16T12:52:21",
+ "dry": false,
+ "replaced": [
+  {
+   "name": "暗邪西部",
+   "from": "covers/fc1b97df343b_s.jpg",
+   "to": "covers/rc2ec0de8c34c1.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "Evil West (韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "阿加莎·克里斯蒂：东方快车谋杀案",
+   "from": "covers/01b13a29fc6a_s.jpg",
+   "to": "covers/rc1fecea3d5eda.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "阿加莎·克里斯蒂：东方快车谋杀案 (日语, 韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "茶杯头（完整版）",
+   "from": "covers/9b5196df0c93_s.jpg",
+   "to": "covers/rce4f5515a50af.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "Cuphead & The Delicious Last Course (游戏)"
+  },
+  {
+   "name": "电车炫客",
+   "from": "covers/3ed8cc957729_s.jpg",
+   "to": "covers/rc5feb2edf62d5.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "电车炫客 (日语, 韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "代号三国：龙起",
+   "from": "covers/1a5fc9ecc43c_s.jpg",
+   "to": "covers/rcb8367699268b.jpg",
+   "shape": "M",
+   "score": 1.0,
+   "store": "代号三国：龙起 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "光明记忆：无限",
+   "from": "covers/358207baff42_s.jpg",
+   "to": "covers/rcd760a11753ec.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "光明记忆：无限 (日语, 韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "黄泉之路",
+   "from": "covers/67f5360dee6d_s.jpg",
+   "to": "covers/rcbd17bb39e6ec.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "Trek to Yomi (日语, 韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "纪念碑谷2",
+   "from": "covers/8ab0d5e75177_s.jpg",
+   "to": "covers/rcdcb0bfa2958d.jpg",
+   "shape": "P",
+   "score": 1.05,
+   "store": "纪念碑谷 2 (日语, 韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "觉醒深渊（完整版）",
+   "from": "covers/773e5d2a10ba_s.jpg",
+   "to": "covers/rc87de8c539130.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "Still Wakes the Deep (日语, 韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "笠鬼",
+   "from": "covers/4f7651f04191_s.jpg",
+   "to": "covers/rcd1b393aba47f.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "笠鬼 (日语, 韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "明末：渊虚之羽",
+   "from": "covers/0ef52c5e31ab_s.jpg",
+   "to": "covers/rce0154d47b6f0.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "明末：渊虚之羽 (韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "尼尔：人工生命",
+   "from": "covers/f51953a72a3b_s.jpg",
+   "to": "covers/rc6758ae6d6fd2.jpg",
+   "shape": "M",
+   "score": 1.05,
+   "store": "NieR Replicant ver.1.22474487139... (日语, 韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "涅克罗蒙达：赏金猎人",
+   "from": "covers/8ae213290c10_s.jpg",
+   "to": "covers/rca4f649a6ed1a.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "Necromunda: Hired Gun (简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "破碎怪谈：恶意关注",
+   "from": "covers/a464dcb7c8ca_s.jpg",
+   "to": "covers/rc9bfbe3d66518.jpg",
+   "shape": "M",
+   "score": 1.0,
+   "store": "破碎怪谈：恶意关注 (日语, 韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "情感反诈模拟器（PS5）",
+   "from": "covers/ab93da8848b3_s.jpg",
+   "to": "covers/rcd0f2dd110a97.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "情感反诈模拟器 (简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "失落星船：马拉松",
+   "from": "covers/5e4ce379d469_s.jpg",
+   "to": "covers/rc2a014dbd253a.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "失落星船：马拉松 (日语, 韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "山河旅探",
+   "from": "covers/062ee37b5019_s.jpg",
+   "to": "covers/rc46fa23a3aa0f.jpg",
+   "shape": "M",
+   "score": 1.0,
+   "store": "山河旅探 (日语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "无间冥寺",
+   "from": "covers/4d9b6ce8ea59_s.jpg",
+   "to": "covers/rc2b7b4185f853.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "Curse of the Dead Gods (日语, 韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "完蛋 我被美女包围了2（PS5）",
+   "from": "covers/e410e127d724_s.jpg",
+   "to": "covers/rc9f4932157015.jpg",
+   "shape": "P",
+   "score": 1.05,
+   "store": "完蛋！我被美女包围了！2 (日语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "消逝的光芒：困兽",
+   "from": "covers/0043c1eaab54_s.jpg",
+   "to": "covers/rc4e55ecd694b8.jpg",
+   "shape": "M",
+   "score": 1.0,
+   "store": "《消逝的光芒：困兽》 (韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "勇敢小骑士",
+   "from": "covers/94f6af4b4b1b_s.jpg",
+   "to": "covers/rcb615d4333cfe.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "The Plucky Squire (勇敢小骑士) (日语, 韩语, 简体中文, 繁体中文, 英语)"
+  },
+  {
+   "name": "自由锁链",
+   "from": "covers/63dd0d87673c_s.jpg",
+   "to": "covers/rc69c42fad3c9b.jpg",
+   "shape": "P",
+   "score": 1.0,
+   "store": "Chains of Freedom PS4 & PS5 (日语, 简体中文, 英语)"
+  },
+  {
+   "name": "战场的赋格曲2",
+   "from": "covers/5b9c8bc3877d_s.jpg",
+   "to": "covers/rccaa091e7906a.jpg",
+   "shape": "M",
+   "score": 1.05,
+   "store": "战场的赋格曲２ (日语, 韩语, 简体中文, 繁体中文, 英语)"
+  }
+ ],
+ "skipped": [],
+ "errors": [],
+ "stats": {
+  "targets": 23,
+  "replaced": 23,
+  "skip": 0,
+  "err": 0,
+  "manifest": 1074
+ }
+}
