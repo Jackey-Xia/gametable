@@ -8790,5 +8790,13 @@
   "store": "",
   "time": "2026-09-16T18:00:00",
   "note": "历史人工批次(受保护)"
+ },
+ "奥力奥力世界（拉德版）": {
+  "file": "covers/rc50caebb4db79.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "UP4581-PPSA02304_00-OLLIOLLIWORLDRAD (zh-Hans-HK)",
+  "time": "2026-09-16T22:21:23",
+  "note": "店主指令:改用港服商城Rad版条目封面(红框HK$234版),非基础版图"
  }
 }
