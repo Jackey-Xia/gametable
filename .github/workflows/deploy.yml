@@ -6,7 +6,10 @@ on:
   workflow_dispatch: {}    # 支持手动触发
   push:
     branches: [main]
-    paths: ['data/**']      # AirScript 云端脚本推新数据 -> 立即构建发布
+    paths:                # 命中任一即立即构建发布
+      - 'data/**'         # AirScript 云端脚本推新数据
+      - 'covers/**'       # 手工/脚本换封面(manifest+图片)
+                          # 注: 构建内 autocover 的 bot commit 用 GITHUB_TOKEN 推送, 不会再触发本 workflow
 
 permissions:
   contents: write
