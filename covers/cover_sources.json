@@ -8806,5 +8806,13 @@
   "store": "The Heavy Rain™ ＆ BEYOND: Two Souls™ Collection (中英韩文版)",
   "time": "2026-09-16T14:57:12",
   "note": "autocover 自动抓取 · 港服中文页"
+ },
+ "阿凡达：潘多拉边境（完整版）": {
+  "file": "covers/rca601ae0f8dee.jpg",
+  "source": "manual",
+  "role": "KEY",
+  "store": "JP0001-PPSA01579_00-AVATAR2COMPED000 (zh-Hans-HK)",
+  "time": "2026-09-16T23:22:46",
+  "note": "店主指令:用商城完整版瓦片(红框HK$468);该条目唯一带COMPLETE EDITION标识的官方素材为EDITION_KEY_ART,按商城同款方形居中裁切入库"
  }
 }
