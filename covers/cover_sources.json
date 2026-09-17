@@ -5520,12 +5520,12 @@
   "note": "店主指令:用港服商城红框方图;红框图区与终极满意捆绑包条目MASTER 504x504同构图(目检确认,ULTIMATE SATISFACTION BUNDLE金标),替换原竖图"
  },
  "苍翼：混沌效应X（豪华版）": {
-  "file": "covers/b0104e93b8e9_s.jpg",
+  "file": "covers/rcb5da5a4d9e78.jpg",
   "source": "manual",
   "role": "P",
-  "store": "",
-  "time": "2026-09-16T18:00:00",
-  "note": "历史人工批次(受保护)"
+  "store": "UB0473-PPSA29714_00-BBEEXDELUXE00000 (zh-Hans-HK)",
+  "time": "2026-09-17T10:20:06",
+  "note": "店主指令:体现豪华版英文标识;官方竖图无版本标识,从该条目EDITION_KEY_ART提取DELUXE EDITION金绶带合成到竖图y44-67(3:4裁切安全区y42-714内,替换原顶部英文小字行),新文件名避缓存"
  },
  "城市猎人": {
   "file": "covers/81b14e71bb36_s.jpg",
