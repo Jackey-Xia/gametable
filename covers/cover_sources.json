@@ -8830,5 +8830,13 @@
   "store": "JP0001-PPSA10529_00-MEMORYCOMPLETEDI (zh-Hans-HK)",
   "time": "2026-09-17T09:18:26",
   "note": "店主指令:用商城完全版红框瓦片;PORTRAIT_BANNER自带COMPLETE EDITION英文标识(OCR验证),按竖图优先入库"
+ },
+ "刺客信条：黑旗（豪华版）": {
+  "file": "covers/rcbab71b740e84.jpg",
+  "source": "manual",
+  "role": "M",
+  "store": "JP0001-CUSA00206_00-ASIA0000FULLGAME (zh-Hans-HK)",
+  "time": "2026-09-17T10:41:19",
+  "note": "店主指令:用港服商城红框方图;红框图区与刺客信条4黑旗数字标准版PlayStationHits条目MASTER 504x504同构图(目检确认,金色骷髅徽记);原manifest无此商品条目,新增"
  }
 }
