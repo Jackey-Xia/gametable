@@ -8359,6 +8359,14 @@
   "store": "",
   "time": "2026-09-16T18:00:00"
  },
+ "饿狼传说 群狼之城（特别版）": {
+  "file": "covers/rc48c0559b2bac.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "JP0576-PPSA19359_00-PS5JPGAROU07COTW (zh-Hans-HK)",
+  "time": "2026-09-17T14:07:51",
+  "note": "店主指令:红框图=港服 FATAL FURY: City of the Wolves 标准版主视觉(群狼之城 金色logo + REV IT UP/UNLEASH YOUR DESTINY);条目原为 auto_skip 留白,现补上;用竖图因方图 3:4 左右各裁 63px 会把 REV IT UP 与 City of the Wolves 金字横幅切边"
+ },
  "首都高赛车": {
   "file": "covers/cc37d2d14a41_s.jpg",
   "note": "历史人工批次(受保护)",
