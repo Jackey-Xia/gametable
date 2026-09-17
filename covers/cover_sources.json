@@ -4544,12 +4544,12 @@
   "note": "方图改留边版(零裁切), 源 816a03096c2a_s.jpg"
  },
  "暗黑破坏神4（完整版）": {
-  "file": "covers/rcce4215db70fa.jpg",
-  "note": "店主指令:改用商城红框瓦片(憎恨之时收藏版AGE OF HATRED COLLECTION);由该条目EDITION_KEY_ART重排为竖版(顶部logo带+三联面板)",
-  "role": "KEY",
+  "file": "covers/rced1358d697b7.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "UP0002-PPSA02442_00-DIVLOHCOMBO00000 (zh-Hans-HK)",
-  "time": "2026-09-16T23:40:02"
+  "time": "2026-09-17T22:35:58",
+  "note": "504×756 重排竖版改留边版(完整保留+虚化边, 零裁切), 源 rcce4215db70fa.jpg"
  },
  "暗黑血统1（战神版）": {
   "file": "covers/1bb5bc6c9709_s.jpg",
