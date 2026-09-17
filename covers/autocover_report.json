@@ -1,10 +1,15 @@
 {
- "time": "2026-09-17T11:10:55",
+ "time": "2026-09-17T11:34:44",
  "added": [],
  "pending": [
   {
    "name": "海贼无双4（传奇版）（1）",
    "reason": "失败6次, 需人工核对"
+  },
+  {
+   "name": "寂静岭：小镇陷落",
+   "reason": "匹配有歧义或无命中",
+   "top": "SILENT HILL: Townfall (日语, 韩语, 简体中文, 繁体中文, 英语) (0.85 vs 0.85)"
   },
   {
    "name": "漫威金刚狼7",
@@ -13,8 +18,8 @@
  ],
  "errors": [],
  "stats": {
-  "total": 1186,
+  "total": 1187,
   "covered": 1122,
-  "pending_open": 2
+  "pending_open": 3
  }
 }
