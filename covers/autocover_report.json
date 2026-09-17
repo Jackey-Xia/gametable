@@ -1,7 +1,27 @@
 {
- "time": "2026-09-17T13:27:17",
- "added": [],
+ "time": "2026-09-17T14:01:35",
+ "added": [
+  {
+   "name": "摩纳哥2（1）",
+   "product": "UP3864-PPSA23108_00-MONACO2PS50000NA",
+   "storeName": "Monaco 2 (简体中文, 英语)",
+   "score": 0.8,
+   "file": "covers/aced1e992810ba.jpg",
+   "role": "P",
+   "bytes": 52930
+  }
+ ],
  "pending": [
+  {
+   "name": "黑暗之魂3（豪华版）（1）",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "黑暗之魂3（豪华版）（2）",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
   {
    "name": "海贼无双4（传奇版）（1）",
    "reason": "失败6次, 需人工核对"
@@ -11,14 +31,19 @@
    "reason": "失败6次, 需人工核对"
   },
   {
+   "name": "摩纳哥2（2）",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
    "name": "漫威金刚狼7",
    "reason": "失败6次, 需人工核对"
   }
  ],
  "errors": [],
  "stats": {
-  "total": 1187,
-  "covered": 1122,
-  "pending_open": 3
+  "total": 1189,
+  "covered": 1123,
+  "pending_open": 6
  }
 }
