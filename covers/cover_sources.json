@@ -5432,12 +5432,12 @@
   "note": "历史人工批次(受保护)"
  },
  "尘埃5（年度版）": {
-  "file": "covers/44720190f879_s.jpg",
+  "file": "covers/rc039ffc94b76e.jpg",
   "source": "manual",
   "role": "P",
-  "store": "",
-  "time": "2026-09-16T18:00:00",
-  "note": "历史人工批次(受保护)"
+  "store": "EP4001-PPSA01551_00-DIRT5YEARONEEDIT (zh-Hans-HK)",
+  "time": "2026-09-17T09:38:48",
+  "note": "店主指令:用商城红框Year One Edition瓦片;官方PORTRAIT_BANNER为唯一含YEAR 1字样的role(OCR验证),替换原普通版竖图"
  },
  "创尸纪（豪华版）": {
   "file": "covers/2f7e72306b81_s.jpg",
