@@ -2743,6 +2743,14 @@
   "store": "",
   "time": "2026-09-16T18:00:00"
  },
+ "孤岛惊魂：破晓 新曙光": {
+  "file": "covers/rc1d553fdca1f3.jpg",
+  "source": "manual",
+  "role": "M",
+  "store": "EP0001-CUSA13885_00-ASIAFULLGAME0000 (zh-Hans-HK)",
+  "time": "2026-09-17T14:22:38",
+  "note": "店主指令:红框图=港服《极地战嚎：破晓》数码标准版 MASTER 方图;该 SKU 无 PORTRAIT_BANNER/EDITION_KEY_ART/FOUR_BY_THREE_BANNER(商品页 zh-hans-hk 与 en-hk 双 locale SSR 实测均 0 条),故只能用方图;条目原为 auto_skip 留白,现补上"
+ },
  "宇宙机器人（豪华版）": {
   "file": "covers/0bfadb7496a3_s.jpg",
   "note": "历史人工批次(受保护)",
