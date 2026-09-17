@@ -1136,12 +1136,12 @@
   "note": "历史人工批次(受保护)"
  },
  "城堡破坏者": {
-  "file": "covers/1c7fabf801f1_s.jpg",
+  "file": "covers/rc592876944c41.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-16T18:00:00",
-  "note": "历史人工批次(受保护)"
+  "role": "M",
+  "store": "UP2015-CUSA14409_00-CASTLECRASHERSNA (en-US)",
+  "time": "2026-09-17T09:29:36",
+  "note": "店主指令:用美服商城红框Remastered方图(港服无此商品);与美服MASTER 504x504比对dhash=8确认"
  },
  "堕灭暴徒 废墟": {
   "file": "covers/12c79c6244dc_s.jpg",
