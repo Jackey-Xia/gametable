@@ -7319,6 +7319,14 @@
   "store": "",
   "time": "2026-09-16T18:00:00"
  },
+ "葛叶雷道：超力兵团奇谭（豪华版）": {
+  "file": "covers/rc6c17f23ec00a.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "JP0005-PPSA15366_00-DDXEDITION000000 (zh-Hans-HK)",
+  "time": "2026-09-17T14:34:59",
+  "note": "店主指令:红框图=港服 RAIDOU Remastered 超力兵团奇谭 数字豪华版封面(红框卡1:1=官方MASTER方图,MAE 15.5 确认);但方图入前端3:4需左右各裁63px会把 RAIDOU 的 R 左竖切掉(OCR 只认出 AUDOU),竖图 PORTRAIT_BANNER 上下各裁42px后横向零损失,OCR 完整识别 RAIDOU/Remastered -> 取竖图 role=P;条目原为 auto_skip 留白,现补上"
+ },
  "蒸汽世界（合集版）": {
   "file": "covers/a4fa16339934_s.jpg",
   "note": "历史人工批次(受保护)",
