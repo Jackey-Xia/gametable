@@ -5528,12 +5528,12 @@
   "note": "店主指令:体现豪华版英文标识;官方竖图无版本标识,从该条目EDITION_KEY_ART提取DELUXE EDITION金绶带合成到竖图y44-67(3:4裁切安全区y42-714内,替换原顶部英文小字行),新文件名避缓存"
  },
  "城市猎人": {
-  "file": "covers/81b14e71bb36_s.jpg",
+  "file": "covers/rc0f1e4b8545c5.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-16T18:00:00",
-  "note": "历史人工批次(受保护)"
+  "role": "M",
+  "store": "JP5784-PPSA34366_00-CITYHUNTER000000 (zh-Hans-HK)",
+  "time": "2026-09-17T10:37:02",
+  "note": "店主指令:用港服商城红框方图;红框图区与城市猎人(多语言版)条目MASTER 504x504同构图(目检确认,紫色CITYHUNTER Logo),替换原竖图"
  },
  "尘埃异变1": {
   "file": "covers/74f2bb673f7a_s.jpg",
