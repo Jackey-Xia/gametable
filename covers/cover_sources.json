@@ -1559,6 +1559,14 @@
   "store": "",
   "time": "2026-09-16T18:00:00"
  },
+ "古墓丽影1-6合集（复刻版）": {
+  "file": "covers/rc343954dfe581.jpg",
+  "source": "manual",
+  "role": "M",
+  "store": "UP1032-PPSA16901_00-0661375719375092 (en-US)",
+  "time": "2026-09-17T16:03:13",
+  "note": "店主指令:图片用美服商城红框图=美服《Tomb Raider I-VI Remastered》GAME BUNDLE $54.99 封面(红框卡图区实测250x250=1:1=官方MASTER方图,MAE 9.58 vs 竖图41.5;美服搜索需 locale-override 头 en-US,API countryCode 参数无效);该 SKU 亦有 PORTRAIT_BANNER(504x756),但方图 3:4 裁切(左右各63px)后 TOMB RAIDER I-VI REMASTERED logo 居中完整不受损,OCR 完整识别;条目原为 auto_skip 留白,现补上"
+ },
  "古墓丽影10：崛起（20周年版）": {
   "file": "covers/rce02ebc506f98.jpg",
   "source": "manual",
