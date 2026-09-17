@@ -8528,12 +8528,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "鬼灭之刃：争当最强队士": {
-  "file": "covers/88c7f9505a25_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "P",
+  "file": "covers/rcbc992ba3d0a4.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-16T18:00:00"
+  "role": "M",
+  "store": "HP0177-PPSA21143_00-SAIKYOTAISHI0000 (zh-Hans-HK)",
+  "time": "2026-09-17T15:21:42",
+  "note": "店主指令:红框图=港服《鬼灭之刃 争当最强队士!》PS4&PS5 标准版 HK$129.60(-55%) 封面(红框卡图区实测250x250=1:1=官方MASTER方图,MAE 13.5 vs KEYART 82.28);方图3:4裁切(左右各63px)后「鬼灭之刃 争当最强队士」logo居中完整、祢豆子与炭治郎主体完整,仅边缘配角轻微切边 -> 取方图 role=M;与同系列《火之神血风谭1/2》(role=M)选型一致;注:该 SKU 有 PORTRAIT_BANNER,但入库时图床 image.api.playstation.com 整体 Reset(15次×20s 重试全失败)无法下载对比,后续可补复校;替换历史人工批次旧图 88c7f9505a25_s.jpg"
  },
  "鬼灭之刃：火之神血风谭1": {
   "file": "covers/rcb42695c4a218.jpg",
