@@ -8544,12 +8544,12 @@
   "note": "店主指令:红框图=港服《鬼灭之刃 火之神血风谭》PS4&PS5 标准版 HK$249(-50%) 封面(红框卡图区实测250x250=1:1=官方MASTER方图,MAE 19.95 vs 竖图73.41);该 SKU 有竖图 PORTRAIT_BANNER(504x756),但方图3:4裁切(左右各63px)logo 居中完整不受损,且96x128 下 logo 更大更清晰、炭治郎主体突出;竖图构图 logo 缩小+底部紫色火焰区占面积大 -> 取方图 role=M;替换历史人工批次旧图 5e77e595a2b3_s.jpg"
  },
  "鬼灭之刃：火之神血风谭2": {
-  "file": "covers/96a6e258bbce_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "P",
+  "file": "covers/rc44c6e2b5cf7e.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-16T18:00:00"
+  "role": "M",
+  "store": "HP0177-PPSA25427_00-HINOKAMI20000000 (zh-Hans-HK)",
+  "time": "2026-09-17T14:59:14",
+  "note": "店主指令:红框图=港服《鬼灭之刃 火之神血风谭2》PS4&PS5 标准版 HK$219(-50%) 封面(红框卡图区实测250x250=1:1=官方MASTER方图,MAE 24.96 vs 竖图66.72);该 SKU 有竖图 PORTRAIT_BANNER(504x756),但方图3:4裁切后「鬼灭之刃2」logo与副标完整不受损,96x128 下 logo 更大、炭治郎主体突出;与同系列《火之神血风谭1》(rcb42695c4a218, role=M)选型一致;书法体 logo OCR 复验无效,目检定案;替换历史人工批次旧图 96a6e258bbce_s.jpg"
  },
  "鬼魂之歌": {
   "file": "covers/03fc246020b7_s.jpg",
