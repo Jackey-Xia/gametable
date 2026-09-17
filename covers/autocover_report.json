@@ -1,16 +1,6 @@
 {
- "time": "2026-09-17T04:20:55",
- "added": [
-  {
-   "name": "多重人生（豪华版）",
-   "product": "EP4361-PPSA16033_00-0542202998131184",
-   "storeName": "The Alters: Deluxe Edition (日语, 韩语, 简体中文, 英语)",
-   "score": 0.85,
-   "file": "covers/ac84d2f6527bf8.jpg",
-   "role": "P",
-   "bytes": 64038
-  }
- ],
+ "time": "2026-09-17T04:25:01",
+ "added": [],
  "pending": [
   {
    "name": "海贼无双4（传奇版）（1）",
@@ -28,7 +18,7 @@
  "errors": [],
  "stats": {
   "total": 1187,
-  "covered": 1108,
+  "covered": 1109,
   "pending_open": 3
  }
 }
