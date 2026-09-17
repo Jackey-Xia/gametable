@@ -2031,6 +2031,14 @@
   "store": "EP9000-PPSA17903_00-HFWCE00000000000 (zh-Hans-HK)",
   "time": "2026-09-17T10:59:48"
  },
+ "地平线5 极限竞速（顶级版）": {
+  "file": "covers/rc041a195512ba.jpg",
+  "source": "manual",
+  "role": "M",
+  "store": "UP6312-PPSA22327_00-0810100104879906 (zh-Hans-HK)",
+  "time": "2026-09-17T12:38:51",
+  "note": "店主指令:红框图=官方顶级版MASTER方图(顶部金色PREMIUM英文标识完整保留);竖图PORTRAIT金条会被前端3:4裁掉故不用"
+ },
  "地狱丧钟": {
   "file": "covers/4a1419589238_s.jpg",
   "note": "历史人工批次(受保护)",
@@ -7832,12 +7840,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "迪士尼午后合集": {
-  "file": "covers/b8ab5f1570bf_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "P",
+  "file": "covers/rcde2829ea90ec.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-16T18:00:00"
+  "role": "M",
+  "store": "UP0102-CUSA06809_00-ASIAPLACEHOLDER0 (zh-Hans-HK)",
+  "time": "2026-09-17T13:41:17",
+  "note": "店主指令:红框图=官方英文版MASTER方图(原竖图错配成Epic Mickey封面)"
  },
  "迪士尼幻梦岛：与米奇和朋友们历险": {
   "file": "covers/fdf49bcb2dc0_s.jpg",

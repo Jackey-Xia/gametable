@@ -257,7 +257,7 @@ def init_skip():
     m = load_json(MANIFEST, {})
     manual_new = set(sys.argv[2:]) if len(sys.argv) > 2 else set()
     missing = [n for n in names if n not in m and n not in manual_new]
-    json.dump(missing, open(SKIP, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump(missing, open(SKIP, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print("auto_skip 初始化: %d 个名字 (无封面且非手动新增)" % len(missing))
 
 
@@ -366,7 +366,10 @@ def run():
             print("  ? %s  pending %s" % (name, top[:60]))
         state[name] = st
 
-    json.dump(m, open(MANIFEST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    # ★ indent=2 + 字典序 必须与仓库既有 manifest 一致, 否则每次写入都会整文件重排,
+    #   产生千行噪声 diff (曾因此把 git 冲突解决变成噩梦, 见 kdocs-sheet-to-catalog-site skill)
+    m = {k: m[k] for k in sorted(m)}
+    json.dump(m, open(MANIFEST, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     json.dump(state, open(STATE, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     report = {
         "time": time.strftime("%Y-%m-%dT%H:%M:%S"),

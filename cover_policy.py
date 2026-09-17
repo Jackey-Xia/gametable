@@ -51,6 +51,9 @@ def load_sources():
 
 
 def save_sources(src):
+    # ★ 键必须 sorted 输出: 仓库既有文件为字典序, 保序写入会让新增键漂到末尾,
+    #   造成整文件重排的千行噪声 diff（历史遗留问题, 2026-09-17 修正）
+    src = {k: src[k] for k in sorted(src)}
     json.dump(src, open(SOURCES, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 
@@ -59,7 +62,10 @@ def load_manifest():
 
 
 def save_manifest(m):
-    json.dump(m, open(MANIFEST, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    # ★ indent=2 + 字典序，必须与仓库既有 covers/manifest.json 一致（autocover.py 也统一），
+    #   否则每次写入都会整文件重排, 产生千行噪声 diff 并放大冲突面积
+    m = {k: m[k] for k in sorted(m)}
+    json.dump(m, open(MANIFEST, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
 
 def pick_role(media):
