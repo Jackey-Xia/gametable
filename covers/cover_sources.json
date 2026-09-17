@@ -8822,5 +8822,13 @@
   "store": "UP4040-PPSA04721_00-HUNDREDHEROESDLX (zh-Hans-HK)",
   "time": "2026-09-16T23:58:55",
   "note": "店主指令:改用港服商城数字豪华版条目官方中文竖图(自带DIGITAL DELUXE EDITION标识)"
+ },
+ "波斯王子：失落的王冠（完全版）": {
+  "file": "covers/rce91b10b2d60d.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "JP0001-PPSA10529_00-MEMORYCOMPLETEDI (zh-Hans-HK)",
+  "time": "2026-09-17T09:18:26",
+  "note": "店主指令:用商城完全版红框瓦片;PORTRAIT_BANNER自带COMPLETE EDITION英文标识(OCR验证),按竖图优先入库"
  }
 }
