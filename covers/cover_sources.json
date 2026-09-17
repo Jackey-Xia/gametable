@@ -1584,12 +1584,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "古墓丽影9（决定版）": {
-  "file": "covers/bd23ac376e0e_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rc2d24ae4f97ee.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-16T18:00:00"
+  "role": "M",
+  "store": "UP0082-CUSA00107_00-000000TOMBRAIDER (en-US)",
+  "time": "2026-09-17T16:09:52",
+  "note": "店主指令:图片用美服商城红框图=美服《Tomb Raider: Definitive Edition》$19.99(-60%) 封面(红框卡图区实测250x250=1:1=官方MASTER方图,MAE 6.09);该 SKU 仅 MASTER 无 PORTRAIT_BANNER/EDITION_KEY_ART;方图 3:4 裁切(左右各63px)后 TOMB RAIDER/DEFINITIVE EDITION 标题完整,OCR 裁切区完整识别全标题;替换历史人工批次旧图 bd23ac376e0e_s.jpg"
  },
  "只只大冒险1": {
   "file": "covers/0e08df0042bb_s.jpg",
