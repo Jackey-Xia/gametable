@@ -8846,5 +8846,13 @@
   "store": "JP4860-PPSA02921_00-2527416918830591 (zh-Hans-HK)",
   "time": "2026-09-17T10:45:27",
   "note": "店主指令:用港服商城红框方图;红框图区与The Sinking City Remastered Deluxe Edition条目MASTER 504x504同构图(目检确认,红绶带REMASTERED DELUXE EDITION);原auto_skip留白,manifest无条目,新增"
+ },
+ "刀剑神域：导演典藏版": {
+  "file": "covers/ac229d9caf41c4.jpg",
+  "source": "store_zh_hk",
+  "role": "M",
+  "store": "刀剑神域 导演典藏版 (中英文版)",
+  "time": "2026-09-17T03:28:47",
+  "note": "autocover 自动抓取 · 港服中文页"
  }
 }
