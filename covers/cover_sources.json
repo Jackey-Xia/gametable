@@ -3536,12 +3536,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "怪物猎人：世界/冰原": {
-  "file": "covers/9a6f54fa83b6_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rc2f1231cffef4.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-16T18:00:00"
+  "role": "M",
+  "store": "HP0102-CUSA09554_00-ICEBORNME0000000 (zh-Hans-HK)",
+  "time": "2026-09-17T16:20:46",
+  "note": "店主指令:图片用港服商城红框图=港服《Monster Hunter World: Iceborne Master Edition(中日韩英版)》HK$378.25(-75%) 封面(红框卡图区实测250x250=1:1=官方MASTER方图,MAE 14.74 vs KEYART 70.6);该 SKU 无 PORTRAIT_BANNER(仅 MASTER+EDITION_KEY_ART 横图);方图 3:4 裁切(左右各63px)后 MONSTER HUNTER WORLD ICEBORNE / MASTER EDITION 标题完整,OCR 裁切区与整图识别一致;替换历史人工批次旧图 9a6f54fa83b6_s.jpg"
  },
  "怪物猎人：荒野1": {
   "file": "covers/86973ccdae9b_s.jpg",
