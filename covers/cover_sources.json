@@ -1560,12 +1560,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "古墓丽影10：崛起（20周年版）": {
-  "file": "covers/2747e7a5d9dd_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "P",
+  "file": "covers/rce02ebc506f98.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-16T18:00:00"
+  "role": "M-pad",
+  "store": "HP0700-CUSA06059_00-RISEOFTOMBRAIDER (zh-Hans-HK)",
+  "time": "2026-09-17T15:37:04",
+  "note": "店主指令:红框图=港服《Rise of the Tomb Raider: 20 Year Celebration》(中韩文版) HK$267.00 封面(红框卡图区实测250x250=1:1=官方MASTER方图,MAE 7.87);该 SKU 无 PORTRAIT_BANNER/EDITION_KEY_ART(GraphQL media 与商品页 SSR 双查均 0 条,仅 MASTER/BACKGROUND/GAMEHUB/LOGO/SCREENSHOT);但 MASTER 方图 3:4 裁切会把横贯全宽的标题切坏(OCR 裁切区只认出 ISE/TH/OMB RAIDE),故做留边版:504x504 方图居中+上下各 84px 拉伸高斯模糊背景,504x672=3:4 前端零裁切,OCR 完整识别 RISE OF THE TOMB RAIDER 20 YEAR CELEBRATION;替换历史人工批次旧图 2747e7a5d9dd_s.jpg"
  },
  "古墓丽影11：暗影（决定版）": {
   "file": "covers/2cd89e391ed7_s.jpg",
