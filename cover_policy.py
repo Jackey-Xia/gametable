@@ -16,6 +16,12 @@ cover_policy.py —— 封面读取/写入的唯一规则来源（Single Source 
    → 同一商品官方同时提供两种形态时，**自动抓图默认取竖版**；只有竖版不存在时才退回方图。
      人工指定时以人工的形态为准。
 
+   ★★ 补充铁律（2026-09-17 店主定稿）：**没有竖图、只能用官方方图时，一律先做成「留边版」再入库**
+   —— 前端卡片是 96×128（3:4）`object-fit:cover`，方图 1:1 上线必然被左右各裁掉 63px 原图像素，
+      即便标题/Logo 侥幸没被切，画面边缘元素（角标、装饰、构图主体）也常被裁掉（店主多次反馈"有遮挡"）。
+      因此判定标准从「标题有没有被切」收紧为：**只要无竖图 → 直接留边版（M-pad），零裁切。**
+      留边版配方见 `make_pad34()`，role 记 `M-pad`。
+
 产出文件 covers/cover_sources.json：
   { "商品名": {"file": "covers/xxx.jpg", "source": "manual|store_zh_hk",
                "role": "P|M", "store": "港服命中名", "time": "...", "note": "..."} }
@@ -31,6 +37,11 @@ SOURCES = os.path.join(BASE, "covers", "cover_sources.json")
 # 形态优先级：竖图 > 方图（role 是 PS Store media 的字段名）
 ROLE_PREF = ["PORTRAIT_BANNER", "MASTER"]
 ROLE_CODE = {"PORTRAIT_BANNER": "P", "MASTER": "M"}
+
+# 留边版（方图补虚化边到 3:4, 前端零裁切）
+ROLE_PAD = "M-pad"
+PAD_BLUR = 40      # 背景高斯模糊半径
+PAD_COLOR = 0.9    # 背景降饱和, 避免虚化色块抢眼
 
 # 来源优先级：人工 > 港服中文页自动抓取
 SRC_MANUAL = "manual"
@@ -83,6 +94,52 @@ def pick_role(media):
         if avail.get(role):
             return role, avail[role]
     return None, None
+
+
+def need_pad(role, media=None):
+    """是否必须做留边版：命中方图且该商品没有竖图 -> True
+    判据（2026-09-17 店主定稿）：无竖图时方图上线必被左右各裁 63px 原图像素，
+    即便标题完整，画面边缘元素也常被裁 -> 一律留边，不再逐张目检。
+    role : "MASTER" | "PORTRAIT_BANNER"
+    media: 原始 media 列表（可选，用于再确认是否真的没竖图）
+    """
+    if role != "MASTER":
+        return False
+    if media:
+        has_portrait = any(
+            (m.get("role") == "PORTRAIT_BANNER" and m.get("url")) for m in media
+        )
+        if has_portrait:
+            return False
+    return True
+
+
+def make_pad34(src_abs, dst_abs):
+    """把方图(通常 504×504)做成 3:4 留边版：原图居中 + 上下各补虚化带
+    配方与古墓丽影10 首例一致：
+      背景 = 原图拉伸到 504×672 -> GaussianBlur(40) -> Color 0.9
+      再把原图居中贴到画布 -> 成品 504×672 恰好 3:4，前端 object-fit:cover 零裁切
+    依赖 Pillow；任何失败都返回 False（调用方应回退原图，不阻断流程）。
+    """
+    try:
+        from PIL import Image, ImageFilter, ImageEnhance
+    except Exception:
+        return False
+    try:
+        im = Image.open(src_abs).convert("RGB")
+        w, h = im.size
+        if w <= 0 or h <= 0:
+            return False
+        # 目标 3:4：以原图宽度为基准，高度 = w * 4/3
+        tw, th = w, int(round(w * 4 / 3))
+        bg = im.resize((tw, th)).filter(ImageFilter.GaussianBlur(PAD_BLUR))
+        bg = ImageEnhance.Color(bg).enhance(PAD_COLOR)
+        canvas = bg.copy()
+        canvas.paste(im, (0, (th - h) // 2))
+        canvas.save(dst_abs, "JPEG", quality=92)
+        return True
+    except Exception:
+        return False
 
 
 def is_protected(name):

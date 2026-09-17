@@ -30,6 +30,10 @@ jobs:
         with:
           python-version: '3.12'
 
+      # 留边版封面(无竖图时把方图补虚化边到 3:4)依赖 Pillow
+      - name: Install Pillow for cover padding
+        run: pip install --quiet pillow || true
+
       # 自动封面: 发现新增商品 -> 港服 zh-Hans 搜索官方主图 -> 严格唯一匹配才入库
       - name: Auto-fetch covers for new products
         run: python3 autocover.py

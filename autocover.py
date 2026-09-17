@@ -13,6 +13,9 @@ autocover.py —— 新商品封面自动抓取（港服 PS Store · zh-Hans 中
   4. 严格评分匹配, 唯一最高分才自动入库; 有歧义 -> 记入 pending 交店主人工核对
   5. 按「竖图 2:3 PORTRAIT_BANNER > 方图 1:1 MASTER」挑选官方图
      -> covers/ac{md5}.jpg -> 登记 cover_sources.json(source=store_zh_hk) + manifest
+     ★ 若该商品**没有竖图只能用方图** -> 直接生成留边版 covers/ac{md5}p34.jpg (role=M-pad):
+       方图 1:1 上线到前端 3:4 卡片必被左右各裁 63px，边缘元素常被裁掉(店主多次反馈"有遮挡")，
+       故不再逐张目检标题是否被切，一律补虚化边到 3:4 实现零裁切（见 cover_policy.need_pad/make_pad34）
   6. 报告写 covers/autocover_report.json
 
 ★ 封面优先级三条铁律（见 cover_policy.py，2026-09-16 店主定稿）:
@@ -29,7 +32,9 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import sys
+import tempfile
 import time
 import urllib.parse
 import urllib.request
@@ -338,21 +343,46 @@ def run():
                 print("  - %s  跳过(受保护): %s" % (name, why[:60]))
                 state[name] = st
                 continue
-            fn = "covers/ac%s.jpg" % hashlib.md5(name.encode()).hexdigest()[:12]
+            h = hashlib.md5(name.encode()).hexdigest()[:12]
+            fn = "covers/ac%s.jpg" % h
             try:
-                sz = http_download(url, os.path.join(BASE, fn))
+                # ★ 无竖图 + 方图 -> 直接留边版(3:4 补虚化边), 避免上线被左右裁切造成遮挡
+                #   (2026-09-17 店主定稿; 不再逐张目检标题是否被切)
+                pad = CP.need_pad(role, media)
+                if pad:
+                    tmp = os.path.join(tempfile.gettempdir(), "ac%s_src.jpg" % h)
+                    http_download(url, tmp)
+                    fn = "covers/ac%sp34.jpg" % h
+                    if CP.make_pad34(tmp, os.path.join(BASE, fn)):
+                        role_code = CP.ROLE_PAD
+                        sz = os.path.getsize(os.path.join(BASE, fn))
+                    else:
+                        # Pillow 缺失/处理失败 -> 回退原始方图, 不阻断部署
+                        fn = "covers/ac%s.jpg" % h
+                        shutil.copy(tmp, os.path.join(BASE, fn))
+                        role_code = CP.ROLE_CODE.get(role, "M")
+                        sz = os.path.getsize(os.path.join(BASE, fn))
+                    try:
+                        os.remove(tmp)
+                    except Exception:
+                        pass
+                else:
+                    role_code = CP.ROLE_CODE.get(role, "")
+                    sz = http_download(url, os.path.join(BASE, fn))
                 ok2, msg = CP.set_cover(name, fn, CP.SRC_STORE_ZH_HK,
-                                        CP.ROLE_CODE.get(role, ""), best["name"],
-                                        "autocover 自动抓取 · 港服中文页")
+                                        role_code, best["name"],
+                                        "autocover 自动抓取 · 港服中文页"
+                                        + ("（无竖图, 方图留边版零裁切）" if role_code == CP.ROLE_PAD else ""))
                 if not ok2:
                     raise ValueError(msg)
                 m[name] = fn
                 done += 1
                 added.append({"name": name, "product": best["id"], "storeName": best["name"],
-                              "score": bscore, "file": fn, "role": CP.ROLE_CODE.get(role, ""), "bytes": sz})
+                              "score": bscore, "file": fn, "role": role_code, "bytes": sz})
                 st["ok"] = fn
-                print("  + %s  <-  %s (score %.2f, %s图)" % (name, best["name"], bscore,
-                                                             "竖" if role == "PORTRAIT_BANNER" else "方"))
+                print("  + %s  <-  %s (score %.2f, %s)" % (
+                    name, best["name"], bscore,
+                    "留边版(无竖图)" if role_code == CP.ROLE_PAD else ("竖图" if role == "PORTRAIT_BANNER" else "方图")))
             except Exception as ex:
                 errors.append({"name": name, "error": "download: %s" % str(ex)[:150]})
                 pending.append({"name": name, "reason": "下载失败: %s" % str(ex)[:80]})
