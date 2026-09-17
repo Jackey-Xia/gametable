@@ -1,5 +1,5 @@
 {
- "time": "2026-09-17T04:30:56",
+ "time": "2026-09-17T04:41:08",
  "added": [],
  "pending": [
   {
@@ -9,16 +9,12 @@
   {
    "name": "漫威金刚狼7",
    "reason": "失败6次, 需人工核对"
-  },
-  {
-   "name": "漫威金刚狼8",
-   "reason": "失败6次, 需人工核对"
   }
  ],
  "errors": [],
  "stats": {
-  "total": 1187,
+  "total": 1186,
   "covered": 1109,
-  "pending_open": 3
+  "pending_open": 2
  }
 }
