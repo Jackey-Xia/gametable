@@ -5287,6 +5287,14 @@
   "time": "2026-09-18T13:39:53",
   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 a9f21b1aaf93_s.jpg"
  },
+ "沙丘：觉醒（豪华版）": {
+  "file": "covers/acb066cde35e94p34.jpg",
+  "source": "store_zh_hk",
+  "role": "P-pad",
+  "store": "Dune: Awakening 沙丘：觉醒 - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-18T11:04:12",
+  "note": "autocover 自动抓取 · 港服中文页（留边版 3:4 零裁切）"
+ },
  "沙加 未拓领域1 开拓者1（重制版）": {
   "file": "covers/rc6a8943d85c6c.jpg",
   "source": "manual",

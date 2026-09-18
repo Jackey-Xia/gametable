@@ -1,6 +1,16 @@
 {
- "time": "2026-09-18T10:15:19",
- "added": [],
+ "time": "2026-09-18T11:04:12",
+ "added": [
+  {
+   "name": "沙丘：觉醒（豪华版）",
+   "product": "EP1833-PPSA02391_00-DADELUXEEDITION0",
+   "storeName": "Dune: Awakening 沙丘：觉醒 - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/acb066cde35e94p34.jpg",
+   "role": "P-pad",
+   "bytes": 57537
+  }
+ ],
  "pending": [
   {
    "name": "寂静岭：小镇陷落",
@@ -13,8 +23,8 @@
  ],
  "errors": [],
  "stats": {
-  "total": 1187,
-  "covered": 1127,
+  "total": 1188,
+  "covered": 1128,
   "pending_open": 2
  }
 }
