@@ -216,12 +216,12 @@
   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 07b554f19381_s.jpg"
  },
  "Rumbral": {
-  "file": "covers/034edb5df151_s.jpg",
+  "file": "covers/rc658f7ca26979.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:51:24",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc658f7ca26979.jpg"
+  "time": "2026-09-18T22:47:20",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/034edb5df151_s.jpg"
  },
  "UFC5/终极格斗冠军5（终极版）（1）": {
   "file": "covers/rc0382836577ef.jpg",
@@ -576,12 +576,12 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcc609e35b4803.jpg"
  },
  "云端掠影": {
-  "file": "covers/c98ff1b514d9_s.jpg",
+  "file": "covers/rc51c80ef940c3.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:51:31",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc51c80ef940c3.jpg"
+  "time": "2026-09-18T22:47:21",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/c98ff1b514d9_s.jpg"
  },
  "亚尔默逊：冒险者的遗产": {
   "file": "covers/7be4fb0c476d_s.jpg",
@@ -696,12 +696,12 @@
   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 rcb8367699268b.jpg"
  },
  "以撒的结合：忏悔": {
-  "file": "covers/7d8b39651c43_s.jpg",
+  "file": "covers/rce46fccd57614.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:51:33",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rce46fccd57614.jpg"
+  "time": "2026-09-18T22:47:21",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/7d8b39651c43_s.jpg"
  },
  "伊多拉": {
   "file": "covers/rc85fa46366d35.jpg",
@@ -1352,12 +1352,12 @@
   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 bf2622748f35_s.jpg"
  },
  "勇者斗恶龙3 HD-2D Remake": {
-  "file": "covers/5e76a8d8d0c1_s.jpg",
+  "file": "covers/rcb6625c5725eb.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:51:40",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcb6625c5725eb.jpg"
+  "time": "2026-09-18T22:47:21",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/5e76a8d8d0c1_s.jpg"
  },
  "北方之灵 北方之魂（增强版）": {
   "file": "covers/rcb79af7fcd663.jpg",
@@ -1640,20 +1640,20 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rca6997141c7d3.jpg"
  },
  "合金弹头3（港版日文）": {
-  "file": "covers/3c1513b87539_s.jpg",
+  "file": "covers/rc6d7f92abb421.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:51:46",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc6d7f92abb421.jpg"
+  "time": "2026-09-18T22:47:22",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/3c1513b87539_s.jpg"
  },
  "合金弹头XX（港版日文）": {
-  "file": "covers/2e636e5baab2_s.jpg",
+  "file": "covers/rce62b5c4e73b0.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:51:46",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rce62b5c4e73b0.jpg"
+  "time": "2026-09-18T22:47:22",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/2e636e5baab2_s.jpg"
  },
  "合金弹头：战略版": {
   "file": "covers/rc8ca2e4654856.jpg",
@@ -3512,12 +3512,12 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc8c16cf338072.jpg"
  },
  "快打刑事X": {
-  "file": "covers/54b2b4ac7924_s.jpg",
+  "file": "covers/rc5acd9746cfab.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:52:16",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc5acd9746cfab.jpg"
+  "time": "2026-09-18T22:47:22",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/54b2b4ac7924_s.jpg"
  },
  "怒之铁拳4：格斗五人组（完整版）": {
   "file": "covers/rc62cab8ce9c2e.jpg",
@@ -3664,12 +3664,12 @@
   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 d67d2f225f2d_s.jpg"
  },
  "愚灵": {
-  "file": "covers/fc22598030ce_s.jpg",
+  "file": "covers/rc11e2e4e9e3c5.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:52:20",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc11e2e4e9e3c5.jpg"
+  "time": "2026-09-18T22:47:23",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/fc22598030ce_s.jpg"
  },
  "成长物语：永恒树之歌": {
   "file": "covers/rc14f04f89f98d.jpg",
@@ -4504,12 +4504,12 @@
   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 456242ef4b76_s.jpg"
  },
  "暗喻幻想": {
-  "file": "covers/4a632368181c_s.jpg",
+  "file": "covers/rc9cb788fc2751.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:52:37",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc9cb788fc2751.jpg"
+  "time": "2026-09-18T22:47:23",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/4a632368181c_s.jpg"
  },
  "暗夜长梦（PS4）": {
   "file": "covers/rc99d177824397.jpg",
@@ -5176,12 +5176,12 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcd9bb85afd750.jpg"
  },
  "死神：魂魄觉醒": {
-  "file": "covers/097f4a561e43_s.jpg",
+  "file": "covers/rcfe45b2a7f271.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:52:53",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcfe45b2a7f271.jpg"
+  "time": "2026-09-18T22:47:23",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/097f4a561e43_s.jpg"
  },
  "残月之锁宫": {
   "file": "covers/rc3a1255dfb38a.jpg",
@@ -5936,20 +5936,20 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc0ee067cafcad.jpg"
  },
  "狂野星球之旅（最佳员工版）": {
-  "file": "covers/d9ecbdbea324_s.jpg",
+  "file": "covers/rcd6f03baf62ac.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:53:04",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcd6f03baf62ac.jpg"
+  "time": "2026-09-18T22:47:24",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/d9ecbdbea324_s.jpg"
  },
  "狂野星球复仇记": {
-  "file": "covers/6ff2fc39a25c_s.jpg",
+  "file": "covers/rcd9c03603c1a6.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:53:05",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcd9c03603c1a6.jpg"
+  "time": "2026-09-18T22:47:24",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/6ff2fc39a25c_s.jpg"
  },
  "狙击手：幽灵战士契约1（完整版）": {
   "file": "covers/813aed63c51a_s.jpg",
@@ -6080,12 +6080,12 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc014b762cad19.jpg"
  },
  "瑞利达": {
-  "file": "covers/24e7503c748f_s.jpg",
+  "file": "covers/rc70b2981f6f49.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:53:09",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc70b2981f6f49.jpg"
+  "time": "2026-09-18T22:47:24",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/24e7503c748f_s.jpg"
  },
  "瑞奇与叮当": {
   "file": "covers/rce44f9f5a437b.jpg",
@@ -6552,12 +6552,12 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcb56f41c4fcba.jpg"
  },
  "神都不良探": {
-  "file": "covers/161520f770e0_s.jpg",
+  "file": "covers/rc9b5a3c32eb91.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:53:20",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc9b5a3c32eb91.jpg"
+  "time": "2026-09-18T22:47:24",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/161520f770e0_s.jpg"
  },
  "禁忌试炼": {
   "file": "covers/d231be0a8486_s.jpg",
@@ -6944,12 +6944,12 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcf69a7dcd66b5.jpg"
  },
  "罗密欧是个绝命侠": {
-  "file": "covers/47aad5819f19_s.jpg",
+  "file": "covers/rc24edd8e42293.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:53:30",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc24edd8e42293.jpg"
+  "time": "2026-09-18T22:47:25",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/47aad5819f19_s.jpg"
  },
  "罪恶王权": {
   "file": "covers/f06197b21c5f_s.jpg",
@@ -7584,12 +7584,12 @@
   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 cd3d7bd77fdc_s.jpg"
  },
  "血色之月": {
-  "file": "covers/440915b5a4fe_s.jpg",
+  "file": "covers/rc3e4b3ce34ead.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:53:42",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc3e4b3ce34ead.jpg"
+  "time": "2026-09-18T22:47:25",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/440915b5a4fe_s.jpg"
  },
  "衔尾：龙之铃": {
   "file": "covers/rc85e727baf68c.jpg",
@@ -7720,12 +7720,12 @@
   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 f9c56fe4a127_s.jpg"
  },
  "负鼠闹翻天": {
-  "file": "covers/5f0274260d3b_s.jpg",
+  "file": "covers/rc7030e7dd6475.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:53:46",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc7030e7dd6475.jpg"
+  "time": "2026-09-18T22:47:25",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/5f0274260d3b_s.jpg"
  },
  "质量效应123（传奇版）（港版英文）": {
   "file": "covers/rc70c6d5557e4d.jpg",
@@ -8176,12 +8176,12 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc60f92aea3241.jpg"
  },
  "重装机兵xeno：重生": {
-  "file": "covers/726af3e015bc_s.jpg",
+  "file": "covers/rc38b87c60fa47.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:53:52",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc38b87c60fa47.jpg"
+  "time": "2026-09-18T22:47:26",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/726af3e015bc_s.jpg"
  },
  "野狗子": {
   "file": "covers/4901ca125f32_s.jpg",
@@ -8224,12 +8224,12 @@
   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rc875c926e1121.jpg"
  },
  "铁甲少女": {
-  "file": "covers/51bdd72b2b75_s.jpg",
+  "file": "covers/rcf2ed4345d050.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:53:53",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcf2ed4345d050.jpg"
+  "time": "2026-09-18T22:47:26",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/51bdd72b2b75_s.jpg"
  },
  "银魂乱舞": {
   "file": "covers/rcf3f858fb0703.jpg",
@@ -8512,12 +8512,12 @@
   "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rc48c0559b2bac.jpg"
  },
  "首都高赛车": {
-  "file": "covers/cc37d2d14a41_s.jpg",
+  "file": "covers/rcf2b2b71a6acd.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "P-pad",
   "store": "",
-  "time": "2026-09-18T21:53:57",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcf2b2b71a6acd.jpg"
+  "time": "2026-09-18T22:47:26",
+  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/cc37d2d14a41_s.jpg"
  },
  "驱灵者：新伊甸的幽灵": {
   "file": "covers/rcc1591064bf62.jpg",

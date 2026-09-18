@@ -34,6 +34,13 @@ jobs:
       - name: Install Pillow for cover padding
         run: pip install --quiet pillow || true
 
+      # 形态判定(cover_policy.decide_form)在 CI 里用 tesseract 做文字识别备选;
+      # 装不上也不影响 —— decide_form 拿不到 OCR 会保守取留边版
+      - name: Install tesseract for cover form decision
+        run: |
+          sudo apt-get install -y -q tesseract-ocr tesseract-ocr-chi-sim >/dev/null 2>&1 || true
+          pip install --quiet pytesseract || true
+
       # ★ 多库存封面沿用(2026-09-18 店主定稿): 同一商品只是加库存(漫威金刚狼1/2/3…、鬼武者：剑之道1…)
       #   新行直接沿用同款已确认封面, 只增不删 —— 绝不留空, 也绝不动已有封面
       - name: Inherit covers for extra stock rows

@@ -437,16 +437,28 @@ def run():
                 #    （不再区分"有无竖图"，竖图直上同样会被上下各裁 42px）
                 tmp = os.path.join(tempfile.gettempdir(), "ac%s_src.jpg" % h)
                 http_download(url, tmp)
-                fn = "covers/ac%sp34.jpg" % h
-                if CP.make_pad_auto(tmp, os.path.join(BASE, fn)):
-                    role_code = CP.ROLE_PAD if role == "MASTER" else CP.ROLE_PAD_P
-                    sz = os.path.getsize(os.path.join(BASE, fn))
-                else:
-                    # Pillow 缺失/处理失败 -> 回退原图, 不阻断部署
+                # ★★ 2026-09-18 晚店主定稿（形态终版规则, cover_policy.decide_form 统一判定）：
+                #    方图 -> 留边版；竖图 -> 前端裁切带内有文字才留边, 否则原图直上；
+                #    纯横版 -> 原图直上；无法做文字识别 -> 保守留边
+                mode, finfo = CP.decide_form(tmp)
+                if mode == "orig":
+                    fn = "covers/ac%so.jpg" % h
+                    shutil.copy(tmp, os.path.join(BASE, fn))
+                    role_code = "M" if "横版" in finfo else "P"
+                elif mode == "keep":
                     fn = "covers/ac%s.jpg" % h
                     shutil.copy(tmp, os.path.join(BASE, fn))
-                    role_code = CP.ROLE_CODE.get(role, "M")
-                    sz = os.path.getsize(os.path.join(BASE, fn))
+                    role_code = CP.ROLE_CODE.get(role, "P")
+                else:
+                    fn = "covers/ac%sp34.jpg" % h
+                    if CP.make_pad_auto(tmp, os.path.join(BASE, fn)):
+                        role_code = CP.ROLE_PAD if role == "MASTER" else CP.ROLE_PAD_P
+                    else:
+                        # Pillow 缺失/处理失败 -> 回退原图, 不阻断部署
+                        fn = "covers/ac%so.jpg" % h
+                        shutil.copy(tmp, os.path.join(BASE, fn))
+                        role_code = CP.ROLE_CODE.get(role, "M")
+                sz = os.path.getsize(os.path.join(BASE, fn))
                 try:
                     os.remove(tmp)
                 except Exception:
@@ -458,9 +470,7 @@ def run():
                     ed_note += " · 港服无声明版本,降级匹配"
                 ok2, msg = CP.set_cover(name, fn, CP.SRC_STORE_ZH_HK,
                                         role_code, best["name"],
-                                        "autocover 自动抓取 · 港服中文页"
-                                        + ("（留边版 3:4 零裁切）" if role_code in (CP.ROLE_PAD, CP.ROLE_PAD_P)
-                                           else "（横版原图直上, 不做留边）")
+                                        "autocover 自动抓取 · 港服中文页（%s）" % finfo
                                         + ed_note)
                 if not ok2:
                     raise ValueError(msg)

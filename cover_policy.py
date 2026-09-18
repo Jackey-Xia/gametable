@@ -16,11 +16,14 @@ cover_policy.py —— 封面读取/写入的唯一规则来源（Single Source 
    → 同一商品官方同时提供两种形态时，**自动抓图默认取竖版**；只有竖版不存在时才退回方图。
      人工指定时以人工的形态为准。
 
-   ★★ 补充铁律（2026-09-17 店主定稿）：**没有竖图、只能用官方方图时，一律先做成「留边版」再入库**
-   —— 前端卡片是 96×128（3:4）`object-fit:cover`，方图 1:1 上线必然被左右各裁掉 63px 原图像素，
-      即便标题/Logo 侥幸没被切，画面边缘元素（角标、装饰、构图主体）也常被裁掉（店主多次反馈"有遮挡"）。
-      因此判定标准从「标题有没有被切」收紧为：**只要无竖图 → 直接留边版（M-pad），零裁切。**
-      留边版配方见 `make_pad34()`，role 记 `M-pad`。
+   ★★★ **形态终版规则（2026-09-18 晚店主定稿，取代 09-17 的"无竖图一律留边"）**
+   —— 一切以**消费者前端 96×128（3:4）实际展示**为准，由 `decide_form()` 统一判定：
+     ① **方图（1:1）源** → **留边版**（方图上线必被左右各裁 63px，零裁切优先）
+     ② **非方图（竖图）源** → 前端上下裁切带内**有文字/字母被遮挡** → 留边版；
+        **不遮挡任何文字/字母** → **原图直上**（主体更大；人物/图案被裁没关系）
+     ③ **纯横版（w/h ≥ 1.15）** → 原图直上（补边会把主体压成扁条）
+     无法做文字识别时 → 保守取留边版（绝不冒险切字）。
+   自动抓图与人工换图**都必须**走 `decide_form()` / `install_cover()`，不许各自判断。
 
 产出文件 covers/cover_sources.json：
   { "商品名": {"file": "covers/xxx.jpg", "source": "manual|store_zh_hk",
@@ -182,6 +185,149 @@ def make_pad_auto(src_abs, dst_abs):
         return True
     except Exception:
         return False
+
+
+def cut_ratio(w, h):
+    """前端 96×128（3:4）显示 w×h 的图时，上下各被裁掉的比例（相对图高）"""
+    try:
+        r = float(w) / float(h)
+    except Exception:
+        return 0.0
+    cr = 0.5 * (1 - (4.0 / 3.0) * r)
+    return cr if cr > 0 else 0.0
+
+
+def _vision_bin():
+    """macOS Vision OCR 小工具（自带坐标）。优先已编译的 /tmp/ocrbox，
+    否则用仓库内 tools/ocrbox.swift 现编一个；非 macOS 返回 None。"""
+    import shutil, subprocess
+    for p in ("/tmp/ocrbox", os.path.join(BASE, "tools", "ocrbox")):
+        if os.path.exists(p) and os.access(p, os.X_OK):
+            return p
+    sw = os.path.join(BASE, "tools", "ocrbox.swift")
+    if os.path.exists(sw) and shutil.which("swiftc"):
+        try:
+            r = subprocess.run(["swiftc", "-O", sw, "-o", "/tmp/ocrbox"],
+                               capture_output=True, timeout=180)
+            if r.returncode == 0 and os.path.exists("/tmp/ocrbox"):
+                return "/tmp/ocrbox"
+        except Exception:
+            pass
+    return None
+
+
+def text_boxes(path):
+    """识别图中文字块，返回 [(x, y, w, h, text)]（x/y 为左上角，全部归一化 0~1）。
+    取不到任何 OCR 能力时返回 None（None = 无法判定，调用方须保守处理）。
+    优先级：macOS Vision（准） > pytesseract（CI Linux 备用）。"""
+    import subprocess
+    exe = _vision_bin()
+    if exe:
+        try:
+            r = subprocess.run([exe, path], capture_output=True, timeout=60)
+            for line in r.stdout.decode("utf-8", "replace").splitlines():
+                try:
+                    j = json.loads(line)
+                except Exception:
+                    continue
+                iw, ih = float(j.get("w") or 0), float(j.get("h") or 0)
+                out = []
+                for b in j.get("blocks") or []:
+                    if (b.get("c") or 0) < 0.3:
+                        continue
+                    out.append((float(b.get("x") or 0), float(b.get("y") or 0),
+                                float(b.get("w") or 0), float(b.get("h") or 0),
+                                b.get("t") or ""))
+                if out:
+                    return out
+                return []
+        except Exception:
+            pass
+    try:
+        import pytesseract
+        from PIL import Image
+        im = Image.open(path)
+        iw, ih = im.size
+        d = pytesseract.image_to_data(im, lang="chi_sim+eng",
+                                      output_type=pytesseract.Output.DICT)
+        out = []
+        for i, t in enumerate(d.get("text") or []):
+            t = (t or "").strip()
+            try:
+                conf = float(d["conf"][i])
+            except Exception:
+                conf = -1
+            if not t or conf < 30:
+                continue
+            out.append((float(d["left"][i]) / iw, float(d["top"][i]) / ih,
+                        float(d["width"][i]) / iw, float(d["height"][i]) / ih, t))
+        return out
+    except Exception:
+        return None
+
+
+def decide_form(src_abs, boxes=None):
+    """★★ 形态终版判定（2026-09-18 店主定稿）——自动抓图与人工换图唯一入口
+    返回 (mode, info)
+      mode = "pad"  做 3:4 留边版（零裁切）
+      mode = "orig" 原图直上（前端按 object-fit:cover 裁切展示）
+      mode = "keep" 已是 3:4，原样保存
+    info 里给出尺寸/裁切比例/判定依据，写进 cover_sources.note 备查。
+    """
+    try:
+        from PIL import Image
+        w, h = Image.open(src_abs).size
+    except Exception:
+        return "pad", "无法读取尺寸, 保守留边"
+    if w <= 0 or h <= 0:
+        return "pad", "尺寸异常, 保守留边"
+    if abs(w * 4 - h * 3) <= 12:
+        return "keep", "已是 3:4 %dx%d, 原样" % (w, h)
+    if w >= h * 1.15:                                   # ③ 纯横版
+        return "orig", "纯横版 %dx%d, 原图直上(留边会把主体压扁)" % (w, h)
+    if abs(w - h) <= max(w, h) * 0.05:                  # ① 方图
+        return "pad", "方图 %dx%d, 留边版(前端会左右各裁 63px)" % (w, h)
+    # ② 竖图：看前端上下裁切带里有没有文字/字母
+    cr = cut_ratio(w, h)
+    if boxes is None:
+        boxes = text_boxes(src_abs)
+    if boxes is None:
+        return "pad", "竖图 %dx%d 上下各裁 %.1f%%, 无 OCR 能力, 保守留边" % (w, h, cr * 100)
+    if not boxes:
+        return "pad", "竖图 %dx%d 上下各裁 %.1f%%, 未识别到文字, 保守留边" % (w, h, cr * 100)
+    lo, hi = cr + 0.006, 1 - cr - 0.006
+    hit = [b[4] for b in boxes if b[1] < lo or (b[1] + b[3]) > hi]
+    if hit:
+        return "pad", "竖图 %dx%d 上下各裁 %.1f%%, 裁切带内有文字 %s" % (
+            w, h, cr * 100, "、".join(hit[:3]))
+    return "orig", "竖图 %dx%d 上下各裁 %.1f%%, 裁切带内无文字, 原图直上" % (w, h, cr * 100)
+
+
+def install_cover(name, src_abs, source=SRC_MANUAL, store="", note="", tag=""):
+    """按 decide_form() 落盘并登记（人工换图请用这个入口，自动抓图也可复用）
+    tag: 参与文件名哈希的标记（换判定/重做时传不同 tag，保证换图必换名）
+    返回 (ok, rel_path_or_msg)
+    """
+    import hashlib, shutil
+    mode, info = decide_form(src_abs)
+    if mode == "pad":
+        suffix = "pad34" + ("|" + tag if tag else "")
+        rel = "covers/rc%s.jpg" % hashlib.md5((name + "|" + suffix).encode()).hexdigest()[:12]
+        if not make_pad_auto(src_abs, os.path.join(BASE, rel)):
+            return False, "留边处理失败 " + info
+        role = ROLE_PAD_P if "竖图" in info else ROLE_PAD
+    elif mode == "keep":
+        suffix = "keep" + ("|" + tag if tag else "")
+        rel = "covers/rc%s.jpg" % hashlib.md5((name + "|" + suffix).encode()).hexdigest()[:12]
+        shutil.copy(src_abs, os.path.join(BASE, rel))
+        role = "P"
+    else:  # orig
+        suffix = "orig" + ("|" + tag if tag else "")
+        rel = "covers/rc%s.jpg" % hashlib.md5((name + "|" + suffix).encode()).hexdigest()[:12]
+        shutil.copy(src_abs, os.path.join(BASE, rel))
+        role = "M" if "横版" in info else "P"
+    full = (note + " · " if note else "") + info
+    return set_cover(name, rel, source, role, store, full)
 
 
 def is_protected(name):
