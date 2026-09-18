@@ -346,33 +346,28 @@ def run():
             h = hashlib.md5(name.encode()).hexdigest()[:12]
             fn = "covers/ac%s.jpg" % h
             try:
-                # ★ 无竖图 + 方图 -> 直接留边版(3:4 补虚化边), 避免上线被左右裁切造成遮挡
-                #   (2026-09-17 店主定稿; 不再逐张目检标题是否被切)
-                pad = CP.need_pad(role, media)
-                if pad:
-                    tmp = os.path.join(tempfile.gettempdir(), "ac%s_src.jpg" % h)
-                    http_download(url, tmp)
-                    fn = "covers/ac%sp34.jpg" % h
-                    if CP.make_pad34(tmp, os.path.join(BASE, fn)):
-                        role_code = CP.ROLE_PAD
-                        sz = os.path.getsize(os.path.join(BASE, fn))
-                    else:
-                        # Pillow 缺失/处理失败 -> 回退原始方图, 不阻断部署
-                        fn = "covers/ac%s.jpg" % h
-                        shutil.copy(tmp, os.path.join(BASE, fn))
-                        role_code = CP.ROLE_CODE.get(role, "M")
-                        sz = os.path.getsize(os.path.join(BASE, fn))
-                    try:
-                        os.remove(tmp)
-                    except Exception:
-                        pass
+                # ★★ 2026-09-18 店主定稿：新抓的封面一律做 3:4 留边版，零裁切
+                #    方图源 -> 上下补边；竖图源 -> 整图完整保留 + 左右补边
+                #    （不再区分"有无竖图"，竖图直上同样会被上下各裁 42px）
+                tmp = os.path.join(tempfile.gettempdir(), "ac%s_src.jpg" % h)
+                http_download(url, tmp)
+                fn = "covers/ac%sp34.jpg" % h
+                if CP.make_pad_auto(tmp, os.path.join(BASE, fn)):
+                    role_code = CP.ROLE_PAD if role == "MASTER" else CP.ROLE_PAD_P
+                    sz = os.path.getsize(os.path.join(BASE, fn))
                 else:
-                    role_code = CP.ROLE_CODE.get(role, "")
-                    sz = http_download(url, os.path.join(BASE, fn))
+                    # Pillow 缺失/处理失败 -> 回退原图, 不阻断部署
+                    fn = "covers/ac%s.jpg" % h
+                    shutil.copy(tmp, os.path.join(BASE, fn))
+                    role_code = CP.ROLE_CODE.get(role, "M")
+                    sz = os.path.getsize(os.path.join(BASE, fn))
+                try:
+                    os.remove(tmp)
+                except Exception:
+                    pass
                 ok2, msg = CP.set_cover(name, fn, CP.SRC_STORE_ZH_HK,
                                         role_code, best["name"],
-                                        "autocover 自动抓取 · 港服中文页"
-                                        + ("（无竖图, 方图留边版零裁切）" if role_code == CP.ROLE_PAD else ""))
+                                        "autocover 自动抓取 · 港服中文页（留边版 3:4 零裁切）")
                 if not ok2:
                     raise ValueError(msg)
                 m[name] = fn

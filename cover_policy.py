@@ -39,7 +39,8 @@ ROLE_PREF = ["PORTRAIT_BANNER", "MASTER"]
 ROLE_CODE = {"PORTRAIT_BANNER": "P", "MASTER": "M"}
 
 # 留边版（方图补虚化边到 3:4, 前端零裁切）
-ROLE_PAD = "M-pad"
+ROLE_PAD = "M-pad"        # 方图源 -> 上下补边留边版
+ROLE_PAD_P = "P-pad"      # 竖图/其它源 -> 整图保留 + 左右补边留边版
 PAD_BLUR = 40      # 背景高斯模糊半径
 PAD_COLOR = 0.9    # 背景降饱和, 避免虚化色块抢眼
 
@@ -136,6 +137,41 @@ def make_pad34(src_abs, dst_abs):
         bg = ImageEnhance.Color(bg).enhance(PAD_COLOR)
         canvas = bg.copy()
         canvas.paste(im, (0, (th - h) // 2))
+        canvas.save(dst_abs, "JPEG", quality=92)
+        return True
+    except Exception:
+        return False
+
+
+def make_pad_auto(src_abs, dst_abs):
+    """任意形态 -> 3:4 留边版（2026-09-18 店主定稿：全部封面一律留边，零裁切）
+    方图(≈1:1)  : 等比到 504×504 居中 + 上下虚化补边 -> 504×672
+    竖图/其它   : 整图等比缩放完整保留 + 左右虚化补边 -> 504×672（绝不裁掉任何内容）
+    已是 3:4    : 原样保存
+    依赖 Pillow；失败返回 False（调用方应回退原图，不阻断部署）。
+    """
+    try:
+        from PIL import Image, ImageFilter, ImageEnhance
+    except ImportError:
+        return False
+    try:
+        im = Image.open(src_abs).convert("RGB")
+        w, h = im.size
+        if w <= 0 or h <= 0:
+            return False
+        if abs(w * 4 - h * 3) <= 12:                 # 已是 3:4
+            im.save(dst_abs, "JPEG", quality=92)
+            return True
+        bg = im.resize((504, 672), Image.LANCZOS).filter(ImageFilter.GaussianBlur(PAD_BLUR))
+        bg = ImageEnhance.Color(bg).enhance(PAD_COLOR)
+        canvas = bg.copy()
+        if abs(w - h) <= max(w, h) * 0.05:           # 方图: 缩到 504 见方后上下补边
+            fg = im.resize((504, 504), Image.LANCZOS)
+            canvas.paste(fg, (0, (672 - 504) // 2))
+        else:                                         # 竖图/横图: 整图完整保留, 居中
+            scale = min(504.0 / w, 672.0 / h)
+            fw, fh = int(round(w * scale)), int(round(h * scale))
+            canvas.paste(im.resize((fw, fh), Image.LANCZOS), ((504 - fw) // 2, (672 - fh) // 2))
         canvas.save(dst_abs, "JPEG", quality=92)
         return True
     except Exception:
