@@ -475,6 +475,8 @@ function gtSwPaint(){
   if(!t){elx.textContent="图片加速：首次访问后生效";return;}
   if(GTI.lastKnown>200&&GTI.base!=null&&GTI.base<t*0.5&&GTI.base<GTI.lastKnown*0.5){
     elx.textContent="本地图库被系统清理，正在重建 "+n+"/"+t+" 张…";return;}
+  /* 改110: 本地残留旧图(换图/留边遗留)会让 n 短暂大于 t —— 不显示自相矛盾的数字 */
+  if(n>t){elx.textContent="正在整理本地图库缓存…";return;}
   if(n<=0){elx.textContent="首次访问：正在建立本地图库 0/"+t+" 张…";return;}
   if(n<t){elx.textContent="⚡ 本地图片库加载 "+n+"/"+t+" 张";return;}
   elx.textContent="⚡ 本地图片库加载 "+n+"/"+t+" 张";
@@ -995,11 +997,18 @@ try{
         const arr=Array.from(valid);
         GTI.total=arr.length;
         try{GTI.lastKnown=parseInt(localStorage.getItem("gtIdbLast")||"0",10)||0;}catch(e){GTI.lastKnown=0;}
-        /* 改74: 通道已在页面初始化时定好; 预存→清理→计数→自检, 自检失败自动换通道重跑一次 */
+        /* 改74: 通道已在页面初始化时定好; 清理→预存→计数→自检, 自检失败自动换通道重跑一次 */
+        /* 改110: 清理提到预存**之前** —— 换图/留边转换后会遗留旧文件名的图, 旧顺序(预存→清理)
+           会让页脚在加载中显示 n/t 且 n 可能大于 t(本地残留 1385 > 当前 1126), 数据自相矛盾;
+           先清掉不再引用的旧图(毫秒级), 分子分母立刻对齐 */
         var rebuilt=0;
         function gtCycle(){
-          return gtPrecacheAll(arr).then(function(){return gtClean(valid);}).then(function(){
+          return gtClean(valid).then(function(){return gtPrecacheAll(arr);}).then(function(){
             return gtCount();
+          }).then(function(n){
+            /* 改110: 自愈 —— 计数仍大于总数说明清理没成功(被浏览器限制), 再清一次重计 */
+            if(n>arr.length){return gtClean(valid).then(function(){return gtCount();});}
+            return n;
           }).then(function(n){
             GTI.done=n;GTI.finished=1;
             try{if(n)localStorage.setItem("gtIdbLast",String(n));}catch(e){}
