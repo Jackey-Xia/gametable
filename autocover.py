@@ -57,6 +57,41 @@ MAX_ATTEMPTS = 6       # 同名累计失败次数上限(之后进 pending 不再
 MIN_SCORE = 0.80       # 自动入库最低分
 SCORE_GAP = 0.04       # 与第二名最小分差(防歧义)
 
+# ★★ 版本规则（2026-09-18 店主定稿）
+#   · WPS 商品名标了版本（如「漫威金刚狼（豪华版）」）  -> 抓商城对应版本条目
+#   · WPS 商品名没标版本                              -> 默认抓「标准版」条目
+#   · 英文侧同理：带 Deluxe/Ultimate/Premium/Complete/Gold/GOTY 等标识才算特殊版本
+# 实现: 命中声明版本 +0.15；命中别的版本（或未标注却撞上版本条目）-0.25
+EDITION_WORDS = {
+    "豪华版": ("豪华版", "deluxeedition", "deluxe"),
+    "完全版": ("完全版", "完整版", "completeedition"),   # 港服中文页「完整版」= Complete Edition
+    "终极版": ("终极版", "ultimateedition"),
+    "高级版": ("高级版", "premiumedition"),
+    "特别版": ("特别版", "specialedition"),
+    "传奇版": ("传奇版", "legendaryedition", "legendedition"),
+    "纪念版": ("纪念版", "anniversaryedition"),
+    "年度版": ("年度版", "goty", "gameoftheyear"),
+    "黄金版": ("黄金版", "goldedition"),
+    "典藏版": ("典藏版", "collectorsedition"),
+    "限定版": ("限定版", "limitededition"),
+    "标准版": ("标准版", "数字版", "standardedition"),
+}
+EDITION_BONUS = 0.15    # 命中商品名声明的版本
+EDITION_PENALTY = 0.25  # 命中其它版本 / 未标注却撞上版本条目
+
+# 比标题前先剥掉版本标识（商城条目常写作「XXX 数字豪华版」, WPS 写作「XXX（豪华版）」,
+# 不剥的话两者永远比不上）。「数字」前缀一并剥掉。
+ED_STRIP = re.compile(
+    r"(?:数字)?(?:豪华版|完整版|完全版|终极版|高级版|特别版|传奇版|纪念版|年度版|黄金版|典藏版|限定版|标准版|数字版"
+    r"|deluxeedition|deluxe|completeedition|ultimateedition|premiumedition|specialedition"
+    r"|legendaryedition|legendedition|anniversaryedition"
+    r"|collectorsedition|limitededition|standardedition|goty|gameoftheyear)", re.I)
+
+
+def strip_ed(n):
+    """剥掉名称里的版本标识, 便于跨版本比对主标题"""
+    return ED_STRIP.sub("", n)
+
 # DLC/噪声排除词(归一化后子串匹配; 命中则剔除候选) —— 持续维护
 EXCLUDE = [
     "demo", "trial", "theme", "主题", "avatar", "seasonpass", "dlc",
@@ -183,37 +218,82 @@ def _sub_score(nw, ns, base):
     return base
 
 
-def score_one(wps, cand):
+def edition_of(nm):
+    """名称属于哪个版本; 无版本词 = 标准版('')"""
+    s = norm(nm)
+    for k, words in EDITION_WORDS.items():
+        if k == "标准版":
+            continue
+        for w in words:
+            if w in s:
+                return k
+    return ""
+
+
+def wanted_edition(wps):
+    """WPS 商品名声明的版本; 未标注 = '' (= 默认标准版)"""
+    s = norm(wps)
+    for w in EDITION_WORDS.get("标准版", ()):
+        if w in s:
+            return "标准版"
+    return edition_of(wps)
+
+
+def apply_edition(s, wps, cand_name, strict=True):
+    """★ 版本偏好加权（2026-09-18 店主定稿）
+    未标注版本 -> 压低一切带版本标识的条目(默认取标准版)
+    标注了版本 -> 只给对应版本加分, 其它版本/标准版一律压低
+    strict=False 为降级模式(港服确实没有对应版本时): 不做任何版本干预
+    """
+    if not strict or s < MIN_SCORE:
+        return s
+    want, got = wanted_edition(wps), edition_of(cand_name)
+    if want:
+        if got == want:
+            return s + EDITION_BONUS
+        if want == "标准版" and not got:
+            return s + EDITION_BONUS
+        return s - EDITION_PENALTY
+    # 未标注 -> 默认标准版
+    return s - EDITION_PENALTY if got else s
+
+
+def score_one(wps, cand, strict=True):
     s = 0.0
     nw, ns = norm(wps), norm(cand["name"])
     if not nw or not ns:
         return 0.0
-    if nw == ns:
+    # 比标题前先剥版本标识(WPS「XXX（豪华版）」 vs 商城「XXX 数字豪华版」)
+    ew, es = strip_ed(nw), strip_ed(ns)
+    if ew and ew == es:
         s = 1.0
     else:
-        bw, bs = strip_seq(nw), strip_seq(ns)
+        bw, bs = strip_seq(ew), strip_seq(es)
         if bw and bs and bw == bs:
             s = 0.85
-        elif len(nw) >= 3:
-            s = _sub_score(nw, ns, 0.80)
-            if not s and len(ns) >= 3:
-                s = _sub_score(ns, nw, 0.75)
+        elif len(ew) >= 3:
+            s = _sub_score(ew, es, 0.80)
+            if not s and len(es) >= 3:
+                s = _sub_score(es, ew, 0.75)
         if not s:
             return 0.0
     if has_seq(nw) == has_seq(ns):
         s += 0.05
+    s = apply_edition(s, wps, cand["name"], strict)
     return round(min(s, 1.05), 3)
 
 
-def best_of(wps, cands, alt=""):
-    """返回 (best_cand, best_score, second_score) 候选须唯一最高分(同名双平台算同分同类)"""
+def best_of(wps, cands, alt="", strict=True):
+    """返回 (best_cand, best_score, second_score) 候选须唯一最高分(同名双平台算同分同类)
+    strict=True 应用版本偏好加权; 无合格候选时调用方可以 strict=False 降级重试
+    """
     scored = []
     for c in cands:
         if not (c.get("master") or c.get("portrait")):
             continue
         if is_excluded(c["name"], wps + " " + alt):
             continue
-        s = max(score_one(wps, c), score_one(alt, c) if alt else 0.0)
+        s = max(score_one(wps, c, strict), score_one(alt, c, strict) if alt else 0.0)
         scored.append((s, c))
     scored.sort(key=lambda x: -x[0])
     if not scored or scored[0][0] < MIN_SCORE:
@@ -300,13 +380,19 @@ def run():
                 queries.append(q)
 
         best, bscore, sscore, ok = None, 0.0, 0.0, False
+        relaxed = False   # 是否走了"港服无对应版本 -> 回退原始名匹配"的降级
         try:
             round_best = None
             for qi, q in enumerate(queries[:2]):
                 cands = store_search(q)
                 # 英文词搜索时, 候选同时用 WPS 中文名与英文词打分(取高者)
                 alt = "" if q == name else q
-                c, s, ss = best_of(name, cands, alt)
+                c, s, ss = best_of(name, cands, alt, strict=True)
+                if c is None:
+                    # 降级: 港服可能确实没有该版本条目(或版本词写法不同) -> 不干预版本再试
+                    c, s, ss = best_of(name, cands, alt, strict=False)
+                    if c is not None:
+                        relaxed = True
                 if c is None:
                     continue
                 if round_best is not None and round_best[1] >= MIN_SCORE and c["id"] != round_best[0]["id"] and abs(s - round_best[1]) < SCORE_GAP:
@@ -365,11 +451,17 @@ def run():
                     os.remove(tmp)
                 except Exception:
                     pass
+                want_e = wanted_edition(name)
+                got_e = edition_of(best["name"]) or "标准版"
+                ed_note = " · 版本: %s%s" % (got_e, "" if want_e else "(商品名未标注,取标准版)")
+                if relaxed:
+                    ed_note += " · 港服无声明版本,降级匹配"
                 ok2, msg = CP.set_cover(name, fn, CP.SRC_STORE_ZH_HK,
                                         role_code, best["name"],
                                         "autocover 自动抓取 · 港服中文页"
                                         + ("（留边版 3:4 零裁切）" if role_code in (CP.ROLE_PAD, CP.ROLE_PAD_P)
-                                           else "（横版原图直上, 不做留边）"))
+                                           else "（横版原图直上, 不做留边）")
+                                        + ed_note)
                 if not ok2:
                     raise ValueError(msg)
                 m[name] = fn
