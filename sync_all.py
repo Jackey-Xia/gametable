@@ -66,4 +66,10 @@ if os.path.isdir(cv_src):
         shutil.rmtree(cv_dst)
     shutil.copytree(cv_src, cv_dst, ignore=shutil.ignore_patterns("*.pyc"))
     print("covers/ 已同步:", len([f for f in os.listdir(cv_dst) if f.endswith(".jpg")]), "张")
+# 审核预览目录（如 pad_review/）原样带上站点
+for extra in ("pad_review", "blank_review"):
+    ex_src = os.path.join(BASE, extra)
+    if os.path.isdir(ex_src):
+        shutil.copytree(ex_src, os.path.join(site, extra), dirs_exist_ok=True)
+        print(extra + "/ 已同步")
 print("sync_all 完成, site/ 已就绪")
