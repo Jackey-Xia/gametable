@@ -1336,12 +1336,12 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc18aad66f42e7.jpg"
  },
  "勇者斗恶龙11S：寻觅逝去的时光（决定版）": {
-  "file": "covers/rcbae064619085.jpg",
+  "file": "covers/rc0daf90a681e1.jpg",
   "source": "manual",
-  "role": "M-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:13",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 59e5946fb5f1_s.jpg"
+  "role": "P",
+  "store": "DRAGON QUEST XI S: Echoes of an Elusive Age – Definitive Edition (英语)",
+  "time": "2026-09-19T00:17:40",
+  "note": "店主审核 H15 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上"
  },
  "勇者斗恶龙2：恶灵之神": {
   "file": "covers/rc0c8be563aa5a.jpg",
@@ -2072,12 +2072,12 @@
   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 4a1419589238_s.jpg"
  },
  "地狱之刃2：塞娜的传说": {
-  "file": "covers/rccb6d37eeb122.jpg",
+  "file": "covers/rcbfb61cac0401.jpg",
   "source": "manual",
-  "role": "M-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:20",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 964c79d3d6af_s.jpg"
+  "role": "P-pad",
+  "store": "Hellblade II: Senua’s Saga (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:40",
+  "note": "店主审核 H24 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 ENHANCED"
  },
  "地狱之魂": {
   "file": "covers/17de3e9ede48_s.jpg",
@@ -2312,12 +2312,12 @@
   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 rc7751a6e9ff18.jpg"
  },
  "天命奇御2": {
-  "file": "covers/rc8be45ad55b5f.jpg",
+  "file": "covers/rc0f86cda4fc97.jpg",
   "source": "manual",
-  "role": "M-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:22",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 e08d2bf357a6_s.jpg"
+  "role": "P",
+  "store": "天命奇御二 (简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:40",
+  "note": "店主审核 H25 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上"
  },
  "天命重启：心跳的抉择": {
   "file": "covers/rc6a12bfe73723.jpg",
@@ -4440,12 +4440,12 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc90e484395b4c.jpg"
  },
  "星界战士 星座上升（完整版）": {
-  "file": "covers/rc7b3a224582f4.jpg",
+  "file": "covers/rca9aac032f9e9.jpg",
   "source": "manual",
-  "role": "M-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:45",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 5c4c047928ae_s.jpg"
+  "role": "P-pad",
+  "store": "星界战士 (Astral Ascent) PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:41",
+  "note": "店主审核 H37 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 Asfral"
  },
  "星穹遗迹": {
   "file": "covers/rc81437ddf1f64.jpg",
@@ -5112,12 +5112,12 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc8d3a463fc2da.jpg"
  },
  "死亡搁浅1：导演剪辑版（豪华版）": {
-  "file": "covers/rcf1486d1b9b58.jpg",
+  "file": "covers/rc3220ed1609fb.jpg",
   "source": "manual",
-  "role": "M-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:51",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 f627b676eec6_s.jpg"
+  "role": "P",
+  "store": "DEATH STRANDING DIRECTOR'S CUT (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:41",
+  "note": "店主审核 H43 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上"
  },
  "死亡搁浅2：冥滩之上": {
   "file": "covers/rcef6040d8ae10.jpg",
@@ -5688,60 +5688,60 @@
   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 af4d174c92d9_s.jpg"
  },
  "漫威金刚狼1": {
-  "file": "covers/rc911ce7537cb8.jpg",
+  "file": "covers/rcbb2579f12db9.jpg",
   "source": "manual",
-  "role": "M-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:57",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 e5baf05f2c99_s.jpg"
- },
- "漫威金刚狼2": {
-  "file": "covers/rc868189302199.jpg",
-  "source": "manual",
-  "role": "M-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:57",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 e2f09a4b7d3e_s.jpg"
- },
- "漫威金刚狼3": {
-  "file": "covers/rcad9396b5c3b7.jpg",
-  "source": "manual",
-  "role": "M-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:57",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 a06dbd30f0c8_s.jpg"
- },
- "漫威金刚狼4": {
-  "file": "covers/rc7be08ebbd203.jpg",
-  "source": "manual",
-  "role": "M-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:57",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 5d0af042da9d_s.jpg"
- },
- "漫威金刚狼5": {
-  "file": "covers/rcea0463ebd31f.jpg",
-  "source": "manual",
-  "role": "P-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:57",
-  "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rcbb21280d389f.jpg"
- },
- "漫威金刚狼6": {
-  "file": "covers/rc2142b65244ad.jpg",
-  "source": "manual",
-  "role": "P-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:57",
-  "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rc5d1f87471596.jpg"
- },
- "漫威金刚狼7": {
-  "file": "covers/ac915f4d8c5deap34.jpg",
-  "source": "store_zh_hk",
   "role": "P-pad",
   "store": "《漫威金刚狼》 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-18T11:18:01",
-  "note": "autocover 自动抓取 · 港服中文页（留边版 3:4 零裁切） · 版本: 标准版(商品名未标注,取标准版)"
+  "time": "2026-09-19T00:17:41",
+  "note": "店主审核 H49 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MARVEL"
+ },
+ "漫威金刚狼2": {
+  "file": "covers/rcbb2579f12db9.jpg",
+  "source": "manual",
+  "role": "P-pad",
+  "store": "《漫威金刚狼》 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:42",
+  "note": "店主审核 H49 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MARVEL"
+ },
+ "漫威金刚狼3": {
+  "file": "covers/rcbb2579f12db9.jpg",
+  "source": "manual",
+  "role": "P-pad",
+  "store": "《漫威金刚狼》 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:42",
+  "note": "店主审核 H49 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MARVEL"
+ },
+ "漫威金刚狼4": {
+  "file": "covers/rcbb2579f12db9.jpg",
+  "source": "manual",
+  "role": "P-pad",
+  "store": "《漫威金刚狼》 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:42",
+  "note": "店主审核 H49 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MARVEL"
+ },
+ "漫威金刚狼5": {
+  "file": "covers/rcbb2579f12db9.jpg",
+  "source": "manual",
+  "role": "P-pad",
+  "store": "《漫威金刚狼》 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:43",
+  "note": "店主审核 H49 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MARVEL"
+ },
+ "漫威金刚狼6": {
+  "file": "covers/rcbb2579f12db9.jpg",
+  "source": "manual",
+  "role": "P-pad",
+  "store": "《漫威金刚狼》 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:43",
+  "note": "店主审核 H49 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MARVEL"
+ },
+ "漫威金刚狼7": {
+  "file": "covers/rcbb2579f12db9.jpg",
+  "source": "manual",
+  "role": "P-pad",
+  "store": "《漫威金刚狼》 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:43",
+  "note": "店主审核 H49 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MARVEL"
  },
  "漫威银河护卫队": {
   "file": "covers/rcdc5cbed0f682.jpg",
@@ -6568,20 +6568,20 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc88df54ac802c.jpg"
  },
  "禁止过分投入1": {
-  "file": "covers/rc6e8f7966ab69.jpg",
+  "file": "covers/rc6970f059c3b4.jpg",
   "source": "manual",
   "role": "P-pad",
-  "store": "",
-  "time": "2026-09-18T13:40:06",
-  "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 bf1fb3c9721f_s.jpg"
+  "store": "禁止过分投入 (Love Too Easily) (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:44",
+  "note": "店主审核 H56 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 ctooorf botsag、nf to Bse inet. Nuc.、aie thot/canbt rull"
  },
  "禁止过分投入2": {
-  "file": "covers/1642ef50ec79_s.jpg",
+  "file": "covers/rc6970f059c3b4.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:53:21",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc076e49af1861.jpg"
+  "role": "P-pad",
+  "store": "禁止过分投入 (Love Too Easily) (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:44",
+  "note": "店主审核 H56 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 ctooorf botsag、nf to Bse inet. Nuc.、aie thot/canbt rull"
  },
  "禁闭求生1": {
   "file": "covers/6d9447293a29_s.jpg",
@@ -8304,20 +8304,20 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc0d4d566180ed.jpg"
  },
  "阿斯泰利克斯历险记：全拍飞1": {
-  "file": "covers/rcbb8a630c7b03.jpg",
+  "file": "covers/rca651a580c591.jpg",
   "source": "manual",
-  "role": "M-pad",
-  "store": "",
-  "time": "2026-09-18T13:40:22",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 78ad1992df8f_s.jpg"
+  "role": "P-pad",
+  "store": "阿斯泰利克斯历险记：全拍飞 (日语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:44",
+  "note": "店主审核 H65 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边"
  },
  "阿斯泰利克斯历险记：全拍飞2": {
-  "file": "covers/f55641401ed5_s.jpg",
+  "file": "covers/rca651a580c591.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:53:55",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc4b4d845400d6.jpg"
+  "role": "P-pad",
+  "store": "阿斯泰利克斯历险记：全拍飞 (日语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T00:17:45",
+  "note": "店主审核 H65 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边"
  },
  "阿斯泰利克斯历险记：幻想新国度2": {
   "file": "covers/rc981c94e970eb.jpg",
