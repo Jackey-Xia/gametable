@@ -933,6 +933,25 @@ function stockLight(txt,st){
 }
 /* 改68: 封面映射 —— 运行时读一次 covers/manifest.json, 卡片按游戏名查封面路径; 加载失败不影响列表 */
 const COVERS={};
+/* 改108: 封面查找带回退 —— 表格新增库存后同一商品会变成 "X（1）/X（2）" 多行,
+   而 manifest 里登记的是无序号原名, 精确匹配会落空 -> 卡片封面看起来"消失"。
+   回退顺序: 精确原名 -> 去掉尾部库存序号 -> 展示名 -> 展示名去序号。 */
+const SEQTAIL_COVER=/[（(]\s*\d+\s*[）)]\s*$/;
+function stripSeqTailCover(s){return String(s==null?"":s).replace(SEQTAIL_COVER,"").trim();}
+function coverOf(g,disp){
+  const names=[];
+  const grp=(g&&g._grp)||(g?[g]:[]);
+  for(let i=0;i<grp.length;i++)names.push(grp[i].name);
+  if(disp)names.push(disp);
+  if(g&&g.name&&!grp.length)names.push(g.name);
+  for(let i=0;i<names.length;i++){
+    const n=names[i]; if(!n)continue;
+    if(COVERS[n])return COVERS[n];
+    const b=stripSeqTailCover(n);
+    if(b&&COVERS[b])return COVERS[b];
+  }
+  return null;
+}
 try{
   fetch("covers/manifest.json?t="+Date.now()).then(r=>r.ok?r.json():{}).then(m=>{
     if(m&&typeof m==="object"){
@@ -982,10 +1001,9 @@ function gameCard(g,idx){
   /* 改68: 卡片封面(有映射显示真图, 无映射显示首字占位) */
   (function(){
     /* 改99: 合并组的封面 —— 组内任一账号有封面就用(代表名可能无封面) */
-    const grp=g._grp||[g];
-    let f=null;
-    for(let i=0;i<grp.length&&!f;i++)f=COVERS[grp[i].name]||null;
     const dispName=g._disp||g.name;
+    /* 改108: 用带回退的 coverOf(精确 -> 去库存序号 -> 展示名), 解决新增库存后封面消失 */
+    let f=coverOf(g,dispName);
     const box=el("div","gcover"+(f?"":" ph"));
     if(f){const im=document.createElement("img");im.alt="";im.loading="lazy";gtCoverSrc(im,f);box.appendChild(im);}
     else{box.appendChild(el("div","phc",String(dispName).slice(0,1)));box.appendChild(el("div","pht","封面待接入"));}

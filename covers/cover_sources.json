@@ -4079,6 +4079,14 @@
   "time": "2026-09-17T14:01:34",
   "note": "autocover 自动抓取 · 港服中文页"
  },
+ "摩纳哥2（2）": {
+  "file": "covers/aced1e992810ba.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "Monaco 2 (简体中文, 英语)",
+  "time": "2026-09-18T11:07:53",
+  "note": "库存拆分改名后继承同名封面(源键: 摩纳哥2（1）)"
+ },
  "教团1886": {
   "file": "covers/af42df8d826d_s.jpg",
   "note": "历史人工批次(受保护)",
@@ -5438,6 +5446,14 @@
   "source": "manual",
   "store": "HP0700-PPSA27500_00-OPPW4LGDEDITION0 (zh-Hans-HK)",
   "time": "2026-09-16T19:11:59"
+ },
+ "海贼无双4（传奇版）（1）": {
+  "file": "covers/f613120a898f_s.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "HP0700-PPSA27500_00-OPPW4LGDEDITION0 (zh-Hans-HK)",
+  "time": "2026-09-18T11:07:53",
+  "note": "库存拆分改名后继承同名封面(源键: 海贼无双4（传奇版）)"
  },
  "海贼王：寻秘世界（豪华版）": {
   "file": "covers/7ad3b55e15c4_s.jpg",
@@ -8854,6 +8870,22 @@
   "store": "",
   "time": "2026-09-17T19:53:15",
   "note": "方图改留边版(零裁切), 源 3920e90575b9_s.jpg"
+ },
+ "黑暗之魂3（豪华版）（1）": {
+  "file": "covers/rcd9c46ebfd68a.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "",
+  "time": "2026-09-18T11:07:53",
+  "note": "库存拆分改名后继承同名封面(源键: 黑暗之魂3（豪华版）)"
+ },
+ "黑暗之魂3（豪华版）（2）": {
+  "file": "covers/rcd9c46ebfd68a.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "",
+  "time": "2026-09-18T11:07:53",
+  "note": "库存拆分改名后继承同名封面(源键: 黑暗之魂3（豪华版）)"
  },
  "黑白莫比乌斯：岁月的代价": {
   "file": "covers/rcdd548964e3d3.jpg",
