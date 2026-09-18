@@ -34,6 +34,13 @@ jobs:
       - name: Install Pillow for cover padding
         run: pip install --quiet pillow || true
 
+      # ★ 多库存封面沿用(2026-09-18 店主定稿): 同一商品只是加库存(漫威金刚狼1/2/3…、鬼武者：剑之道1…)
+      #   新行直接沿用同款已确认封面, 只增不删 —— 绝不留空, 也绝不动已有封面
+      - name: Inherit covers for extra stock rows
+        run: |
+          python3 parse_ps.py data/ps_grid.json data/ps_games.json || true
+          python3 inherit_stock_covers.py || true
+
       # 自动封面: 发现新增商品 -> 港服 zh-Hans 搜索官方主图 -> 严格唯一匹配才入库
       - name: Auto-fetch covers for new products
         run: python3 autocover.py

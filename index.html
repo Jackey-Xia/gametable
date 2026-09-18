@@ -938,6 +938,18 @@ const COVERS={};
    回退顺序: 精确原名 -> 去掉尾部库存序号 -> 展示名 -> 展示名去序号。 */
 const SEQTAIL_COVER=/[（(]\s*\d+\s*[）)]\s*$/;
 function stripSeqTailCover(s){return String(s==null?"":s).replace(SEQTAIL_COVER,"").trim();}
+/* 改109: 多库存封面沿用(2026-09-18 店主定稿) —— 表格新增库存行(如 漫威金刚狼7/8、
+   鬼武者：剑之道8)时, 该行可能还没登记封面; 前端绝不能因此留空, 更不能把 1~6
+   已确定的封面清掉。这里按"去库存序号后的基础名"建同款索引兜底。
+   裸数字才剥: 数字前是 + - × x / & · 等连字符时是作品名(鬼武者1+2), 不算库存序号。 */
+function stripSeqAnyCover(s){
+  var t=String(s==null?"":s).replace(SEQTAIL_COVER,"").trim();
+  var m=t.match(/^(.*?)([0-9]+)$/);
+  if(m&&m[1]&&!/[0-9+\-×xX\/／&·.。、\s]$/.test(m[1]))t=m[1].trim();
+  return t;
+}
+var COVER_FAM={};    /* 基础名 -> {rel,en}: 同款多库存的封面索引(en 用于防误用) */
+var FAM_EN={};       /* 表格商品名 -> 归一化英文名 */
 function coverOf(g,disp){
   const names=[];
   const grp=(g&&g._grp)||(g?[g]:[]);
@@ -950,12 +962,30 @@ function coverOf(g,disp){
     const b=stripSeqTailCover(n);
     if(b&&COVERS[b])return COVERS[b];
   }
+  /* 改109: 兜底 —— 同款(基础名相同)且有封面 -> 沿用; 英文名不同(生化危机5 vs 生化危机)不沿用 */
+  const myen=enKey((g&&g.en)||"");
+  for(let i=0;i<names.length;i++){
+    const n=names[i]; if(!n)continue;
+    const b=stripSeqAnyCover(n);
+    /* 系列序号作品(最终幻想2 ≠ 最终幻想1 的另一库存)不沿用, 特例名单除外 */
+    if(MERGE_EXCLUDE.some(x=>b.indexOf(x)===0)&&!isForceMerge(b))continue;
+    const fam=COVER_FAM[b];
+    if(fam&&(!myen||!fam.en||myen===fam.en))return fam.rel;
+  }
   return null;
 }
 try{
   fetch("covers/manifest.json?t="+Date.now()).then(r=>r.ok?r.json():{}).then(m=>{
     if(m&&typeof m==="object"){
       Object.keys(m).forEach(k=>{COVERS[k]=m[k];});
+      /* 改109: 建同款(多库存)封面索引 —— 新增库存行没登记封面时前端直接沿用同款, 不留空 */
+      try{
+        for(let i=0;i<PS.length;i++){if(PS[i]&&PS[i].name)FAM_EN[PS[i].name]=enKey(PS[i].en||"");}
+        Object.keys(m).forEach(k=>{
+          var b=stripSeqAnyCover(k);
+          if(b&&b!==k&&!COVER_FAM[b])COVER_FAM[b]={rel:m[k],en:FAM_EN[k]||""};
+        });
+      }catch(e){}
       /* 封面到货后若列表已渲染, 刷新当前列表让占位变封面 */
       if(rendered>0&&typeof renderPS==="function"){renderPS();}
       /* 改72/74: 后台全量预存进 IndexedDB(全平台含微信iPhone); 完成后清理已不再引用的旧图 */
