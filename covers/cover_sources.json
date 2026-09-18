@@ -112,12 +112,12 @@
   "note": "方图改留边版(零裁切), 源 ecfe1c8bda62_s.jpg"
  },
  "GTA侠盗猎车手三部曲/给他爱三部曲": {
-  "file": "covers/fb089315a7d3_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "P",
+  "file": "covers/rc0b9d7f064f6a.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:26",
+  "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 fb089315a7d3_s.jpg"
  },
  "Gris": {
   "file": "covers/d3c74608d513_s.jpg",
@@ -127,13 +127,21 @@
   "store": "",
   "time": "2026-09-16T18:00:00"
  },
- "Inside+Limbo（2）": {
-  "file": "covers/fe5bc0375615_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+ "Inside+Limbo（1）": {
+  "file": "covers/rc84bf0af43622.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:46",
+  "note": "补登记: 与 Inside+Limbo（2）同图(店主要求留边版); 该行此前无封面"
+ },
+ "Inside+Limbo（2）": {
+  "file": "covers/rc84bf0af43622.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "",
+  "time": "2026-09-18T12:49:32",
+  "note": "店主点名改留边版(方图上下补边, 零裁切), 源 fe5bc0375615_s.jpg"
  },
  "JOJO的奇妙冒险 天国之眼": {
   "file": "covers/f779adcc88f3_s.jpg",
@@ -1104,12 +1112,12 @@
   "time": "2026-09-17T12:17:48"
  },
  "创尸纪（豪华版）": {
-  "file": "covers/2f7e72306b81_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rcc77986dca204.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:22",
+  "note": "店主点名改留边版(方图上下补边, 零裁切), 源 2f7e72306b81_s.jpg"
  },
  "刺客信条3（重置版）": {
   "file": "covers/rc8dd36762bcde.jpg",
@@ -1832,12 +1840,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "哈利波特：魁地奇斗士 锦标赛（豪华版）": {
-  "file": "covers/169a35f2c1e8_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rc52ca4363de6b.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:28",
+  "note": "店主点名改留边版(方图上下补边, 零裁切), 源 169a35f2c1e8_s.jpg"
  },
  "哈迪斯1": {
   "file": "covers/70c450996b8b_s.jpg",
@@ -2216,12 +2224,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "夏洛克·福尔摩斯：第一章（豪华版）": {
-  "file": "covers/0a243c11b106_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rceba3a5f3b335.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:25",
+  "note": "店主点名改留边版(方图上下补边, 零裁切), 源 0a243c11b106_s.jpg"
  },
  "夏洛克·福尔摩斯：罪与罚": {
   "file": "covers/rc23b898c00151.jpg",
@@ -2392,12 +2400,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "夺宝奇兵/印第安纳琼斯：古老之圈（高级版）": {
-  "file": "covers/rcca32ff91c65e.jpg",
+  "file": "covers/rc924edea2be59.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "M-pad",
   "store": "UP1003-PPSA26786_00-PREMIUMEDITION00 (zh-Hans-HK)",
-  "time": "2026-09-17T13:53:50",
-  "note": "店主指令:红框图=官方Premium Edition高级版封面;竖图自带底部PREMIUM EDITION英文标识且3:4裁切(上下42px)后完整保留(OCR已验证);旧封面是不带标识的标准版主视觉"
+  "time": "2026-09-18T12:49:23",
+  "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rcca32ff91c65e.jpg"
  },
  "奇唤士": {
   "file": "covers/f1e825b321c1_s.jpg",
@@ -3160,12 +3168,12 @@
   "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rc1786afa1a824.jpg"
  },
  "幻想大陆战记 深渊": {
-  "file": "covers/59a35f27fba5_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "P",
+  "file": "covers/rc20199499eb5d.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-16T18:00:00"
+  "role": "M-pad",
+  "store": "JP0530-PPSA27752_00-NBD0000000000000 幻想大陆战记 深渊 (zh-Hans-HK)",
+  "time": "2026-09-18T12:48:41",
+  "note": "店主红框指定: 港服中文版 MASTER 504 补边, 零裁切"
  },
  "幻想水浒传1+2（重置版）": {
   "file": "covers/558b8d175e8a_s.jpg",
@@ -3584,12 +3592,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "恶名昭彰：破晓": {
-  "file": "covers/6da05aed35cf_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rc6d79eee5d9df.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:24",
+  "note": "店主点名改留边版(方图上下补边, 零裁切), 源 6da05aed35cf_s.jpg"
  },
  "恶灵附身1（完整版）": {
   "file": "covers/5899bf3df420_s.jpg",
@@ -4512,12 +4520,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "暗邪西部": {
-  "file": "covers/rc2ec0de8c34c1.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "P",
+  "file": "covers/rcefd0c0f0e4ee.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:21",
+  "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rc2ec0de8c34c1.jpg"
  },
  "暗黑地牢1（完整版）": {
   "file": "covers/rc29932a27bb6a.jpg",
@@ -5424,12 +5432,12 @@
   "note": "港服标准版(HK308) MASTER 方图；3:4裁切后SpongeBob Logo+潮汐巨神标题完整；替换旧图"
  },
  "海贼无双4": {
-  "file": "covers/rcf764ac4e1dea.jpg",
-  "note": "店主指定:普通版官方MASTER方图(路飞+雷利中文logo);原竖图实为传奇版主视觉,已归位传奇版",
-  "role": "M",
+  "file": "covers/rcbca647f05bca.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "HP0700-PPSA27500_00-ASIAFULLGAME0000 (zh-Hans-HK)",
-  "time": "2026-09-16T19:11:59"
+  "time": "2026-09-18T12:49:31",
+  "note": "店主点名改留边版(方图上下补边, 零裁切), 源 rcf764ac4e1dea.jpg"
  },
  "海贼无双4（传奇版）": {
   "file": "covers/f613120a898f_s.jpg",
@@ -5440,36 +5448,36 @@
   "time": "2026-09-16T19:11:59"
  },
  "海贼无双4（传奇版）（1）": {
-  "file": "covers/f613120a898f_s.jpg",
+  "file": "covers/rcffc9954098bd.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "M-pad",
   "store": "HP0700-PPSA27500_00-OPPW4LGDEDITION0 (zh-Hans-HK)",
-  "time": "2026-09-18T11:07:53",
-  "note": "库存拆分改名后继承同名封面(源键: 海贼无双4（传奇版）)"
+  "time": "2026-09-18T12:49:31",
+  "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 f613120a898f_s.jpg"
  },
  "海贼王：寻秘世界（豪华版）": {
-  "file": "covers/7ad3b55e15c4_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rc0df70b0b7b24.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:30",
+  "note": "店主点名改留边版(方图上下补边, 零裁切), 源 7ad3b55e15c4_s.jpg"
  },
  "海贼王：无限世界 赤红（豪华版）": {
-  "file": "covers/b7924131856a_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rc33f64926b01b.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:29",
+  "note": "店主点名改留边版(方图上下补边, 零裁切), 源 b7924131856a_s.jpg"
  },
  "海贼王：时光旅诗（豪华版）": {
-  "file": "covers/ab4efbdbbf26_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rc749fc2063e7a.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:30",
+  "note": "店主点名改留边版(方图上下补边, 零裁切), 源 ab4efbdbbf26_s.jpg"
  },
  "涅克罗蒙达：赏金猎人": {
   "file": "covers/rca4f649a6ed1a.jpg",
@@ -6720,28 +6728,28 @@
   "note": "港服PS5|PS4终极版(HK238) PORTRAIT_BANNER 竖图；方图3:4裁切RED SOLSTICE 2两侧被切故取竖图；替换旧图"
  },
  "红色沙漠1": {
-  "file": "covers/41bc1b78da3e_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rcc39abbf92c36.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-16T18:00:00"
+  "role": "M-pad",
+  "store": "UP4162-PPSA25286_00-0653729629077452 红色沙漠：增强版 (zh-Hans-HK)",
+  "time": "2026-09-18T12:48:39",
+  "note": "店主红框指定: 港服中文版 MASTER 504 补边, 零裁切"
  },
  "红色沙漠2": {
-  "file": "covers/ca735999c8b5_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rc36e512585088.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-16T18:00:00"
+  "role": "M-pad",
+  "store": "UP4162-PPSA25286_00-0653729629077452 红色沙漠：增强版 (zh-Hans-HK)",
+  "time": "2026-09-18T12:48:40",
+  "note": "店主红框指定: 港服中文版 MASTER 504 补边, 零裁切"
  },
  "红色沙漠3": {
-  "file": "covers/c56e72dd1b5b_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rc98a16ea1684c.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-16T18:00:00"
+  "role": "M-pad",
+  "store": "UP4162-PPSA25286_00-0653729629077452 红色沙漠：增强版 (zh-Hans-HK)",
+  "time": "2026-09-18T12:48:40",
+  "note": "店主红框指定: 港服中文版 MASTER 504 补边, 零裁切"
  },
  "纪元117：罗马和平（黄金版）": {
   "file": "covers/e50d341df191_s.jpg",
@@ -7400,12 +7408,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "葛叶雷道：超力兵团奇谭（豪华版）": {
-  "file": "covers/rc6c17f23ec00a.jpg",
+  "file": "covers/rce5ea366a0699.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "M-pad",
   "store": "JP0005-PPSA15366_00-DDXEDITION000000 (zh-Hans-HK)",
-  "time": "2026-09-17T14:34:59",
-  "note": "店主指令:红框图=港服 RAIDOU Remastered 超力兵团奇谭 数字豪华版封面(红框卡1:1=官方MASTER方图,MAE 15.5 确认);但方图入前端3:4需左右各裁63px会把 RAIDOU 的 R 左竖切掉(OCR 只认出 AUDOU),竖图 PORTRAIT_BANNER 上下各裁42px后横向零损失,OCR 完整识别 RAIDOU/Remastered -> 取竖图 role=P;条目原为 auto_skip 留白,现补上"
+  "time": "2026-09-18T12:49:27",
+  "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rc6c17f23ec00a.jpg"
  },
  "蒸汽世界（合集版）": {
   "file": "covers/a4fa16339934_s.jpg",
@@ -7760,12 +7768,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "超侦探事件簿 雾雨迷宫PLUS": {
-  "file": "covers/rc7d08f85f1602.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "P",
+  "file": "covers/rc23385a3b4694.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:22",
+  "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rc7d08f85f1602.jpg"
  },
  "超凡双生": {
   "file": "covers/e0fb0e99a9fd_s.jpg",
@@ -7832,12 +7840,12 @@
   "note": "方图改留边版(零裁切), 源 2218efa3f1fc_s.jpg"
  },
  "超英派遣中心": {
-  "file": "covers/3a2e6a9fea35_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rc22a4411b789f.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:23",
+  "note": "店主点名改留边版(方图上下补边, 零裁切), 源 3a2e6a9fea35_s.jpg"
  },
  "足球经理2026": {
   "file": "covers/73340a46f822_s.jpg",
@@ -8152,20 +8160,20 @@
   "time": "2026-09-16T18:00:00"
  },
  "钢铁之尾1/铁尾传奇1": {
-  "file": "covers/12aaec739d62_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rc45108ccb9c8a.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:26",
+  "note": "店主点名改留边版(方图上下补边, 零裁切), 源 12aaec739d62_s.jpg"
  },
  "钢铁之尾2/铁尾传奇2（豪华版）": {
-  "file": "covers/6e5adfbf172f_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rc1ff0702e9739.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:27",
+  "note": "店主点名改留边版(方图上下补边, 零裁切), 源 6e5adfbf172f_s.jpg"
  },
  "钢铁收割（完整版）": {
   "file": "covers/rc875c926e1121.jpg",
@@ -8280,12 +8288,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "阿斯达伦：地球之泪": {
-  "file": "covers/e9621fce6f60_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "P",
+  "file": "covers/rcd6a111eb40a4.jpg",
   "source": "manual",
+  "role": "M-pad",
   "store": "",
-  "time": "2026-09-16T18:00:00"
+  "time": "2026-09-18T12:49:21",
+  "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 e9621fce6f60_s.jpg"
  },
  "阿西，美女室友竟然1": {
   "file": "covers/rc38f8f41ca069.jpg",
@@ -8456,12 +8464,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "饿狼传说 群狼之城（特别版）": {
-  "file": "covers/rc48c0559b2bac.jpg",
+  "file": "covers/rc8fec60bb9f17.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "M-pad",
   "store": "JP0576-PPSA19359_00-PS5JPGAROU07COTW (zh-Hans-HK)",
-  "time": "2026-09-17T14:07:51",
-  "note": "店主指令:红框图=港服 FATAL FURY: City of the Wolves 标准版主视觉(群狼之城 金色logo + REV IT UP/UNLEASH YOUR DESTINY);条目原为 auto_skip 留白,现补上;用竖图因方图 3:4 左右各裁 63px 会把 REV IT UP 与 City of the Wolves 金字横幅切边"
+  "time": "2026-09-18T12:49:24",
+  "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rc48c0559b2bac.jpg"
  },
  "首都高赛车": {
   "file": "covers/cc37d2d14a41_s.jpg",
@@ -8736,12 +8744,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "鳄鱼侦探：布罗格": {
-  "file": "covers/4539af2e80d3_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "P",
+  "file": "covers/rc753f6c023858.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-16T18:00:00"
+  "role": "M-pad",
+  "store": "HP2005-PPSA13517_00-BROKPS5000000000 BROK the InvestiGator 鳄鱼侦探布罗格 (zh-Hans-HK)",
+  "time": "2026-09-18T12:48:39",
+  "note": "店主红框指定: 港服中文版 MASTER 504 补边, 零裁切"
  },
  "鳄鱼侦探：布罗格 乱斗酒吧": {
   "file": "covers/5a1ac03f33a1_s.jpg",
@@ -8920,12 +8928,12 @@
   "time": "2026-09-16T18:00:00"
  },
  "黑神话：悟空（豪华版）": {
-  "file": "covers/rc7942720b176d.jpg",
+  "file": "covers/rca640dbfa5761.jpg",
   "source": "manual",
-  "role": "P",
+  "role": "M-pad",
   "store": "HP6545-PPSA23226_00-GAMEDELUXE000000 (zh-Hans-HK)",
-  "time": "2026-09-17T17:32:56",
-  "note": "港服数字豪华版(HK368) PORTRAIT_BANNER 竖图；方图3:4裁切左侧悟空书法Logo被切故取竖图；替换旧图"
+  "time": "2026-09-18T12:49:28",
+  "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rc7942720b176d.jpg"
  },
  "黑色五叶草 骑士四重奏（豪华版）": {
   "file": "covers/rc14b15d222bb9.jpg",
