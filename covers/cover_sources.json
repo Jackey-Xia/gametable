@@ -2472,12 +2472,12 @@
   "note": "方图改留边版(零裁切), 源 4897cb6e9480_s.jpg"
  },
  "奥力奥力世界（拉德版）": {
-  "file": "covers/rc58c185410589.jpg",
+  "file": "covers/rc33497c285b82.jpg",
   "source": "manual",
-  "role": "P-pad",
+  "role": "KEY",
   "store": "UP4581-PPSA02304_00-OLLIOLLIWORLDRAD (zh-Hans-HK)",
-  "time": "2026-09-18T13:39:24",
-  "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rc581ce622ce11.jpg"
+  "time": "2026-09-18T14:13:18",
+  "note": "横版主视觉(504x284)不做留边: 留边后整图被压到 504x284 居中导致主体过小。按店主 2026-09-18 要求恢复原图直上(前端按高裁两侧, 主体最大化)"
  },
  "女神异闻录5/P5（PS4）": {
   "file": "covers/rceee9182def9d.jpg",

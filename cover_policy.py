@@ -147,6 +147,7 @@ def make_pad_auto(src_abs, dst_abs):
     """任意形态 -> 3:4 留边版（2026-09-18 店主定稿：全部封面一律留边，零裁切）
     方图(≈1:1)  : 等比到 504×504 居中 + 上下虚化补边 -> 504×672
     竖图/其它   : 整图等比缩放完整保留 + 左右虚化补边 -> 504×672（绝不裁掉任何内容）
+    横图(w/h≥1.15): ★ 返回 False —— 不做留边，调用方直用原图
     已是 3:4    : 原样保存
     依赖 Pillow；失败返回 False（调用方应回退原图，不阻断部署）。
     """
@@ -162,6 +163,11 @@ def make_pad_auto(src_abs, dst_abs):
         if abs(w * 4 - h * 3) <= 12:                 # 已是 3:4
             im.save(dst_abs, "JPEG", quality=92)
             return True
+        # ★★ 2026-09-18 店主裁定：纯横版主视觉（如 504×284 的 EDITION_KEY_ART）
+        #    补边后整图被压成扁扁一条、主体过小，反而难看 —— 这类直用原图，
+        #    由前端按容器高度撑满、左右裁切，主体最大化。
+        if w >= h * 1.15:
+            return False
         bg = im.resize((504, 672), Image.LANCZOS).filter(ImageFilter.GaussianBlur(PAD_BLUR))
         bg = ImageEnhance.Color(bg).enhance(PAD_COLOR)
         canvas = bg.copy()

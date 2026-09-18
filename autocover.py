@@ -367,7 +367,9 @@ def run():
                     pass
                 ok2, msg = CP.set_cover(name, fn, CP.SRC_STORE_ZH_HK,
                                         role_code, best["name"],
-                                        "autocover 自动抓取 · 港服中文页（留边版 3:4 零裁切）")
+                                        "autocover 自动抓取 · 港服中文页"
+                                        + ("（留边版 3:4 零裁切）" if role_code in (CP.ROLE_PAD, CP.ROLE_PAD_P)
+                                           else "（横版原图直上, 不做留边）"))
                 if not ok2:
                     raise ValueError(msg)
                 m[name] = fn

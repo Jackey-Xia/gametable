@@ -31,6 +31,9 @@ def shape(p):
         return "34", (w, h)
     if abs(w - h) <= max(w, h) * 0.05:
         return "sq", (w, h)
+    if w >= h * 1.15:
+        # ★ 2026-09-18 店主裁定：横版主视觉不做留边（补边后主体过小），保持原图
+        return "land", (w, h)
     return "vh", (w, h)
 
 
@@ -41,7 +44,7 @@ def main():
     for k, v in man.items():
         groups.setdefault(v, []).append(k)
 
-    todo, skip34, fail = [], [], []
+    todo, skip34, skipland, fail = [], [], [], []
     for rel, keys in groups.items():
         p = os.path.join(C.BASE, rel)
         if not os.path.exists(p):
@@ -55,11 +58,17 @@ def main():
         if kind == "34":
             skip34.append((rel, keys, sz))
             continue
+        if kind == "land":
+            # 横版主视觉: 补边会把主体压得极小, 保持原图不动
+            skipland.append((rel, keys, sz))
+            continue
         todo.append((rel, keys, kind, sz))
 
-    print("唯一图 %d | 需转换 %d 张(涉及 %d 个商品键) | 已是3:4跳过 %d 张 | 异常 %d"
+    print("唯一图 %d | 需转换 %d 张(涉及 %d 个商品键) | 已是3:4跳过 %d 张 | 横版保持原图 %d 张 | 异常 %d"
           % (len(groups), len(todo), sum(len(k) for _, k, _, _ in todo),
-             len(skip34), len(fail)))
+             len(skip34), len(skipland), len(fail)))
+    for rel, keys, sz in skipland[:10]:
+        print("   横版保持原图: %s %s -> %d 个键" % (rel, sz, len(keys)))
     for rel, keys, kind, sz in todo[:8]:
         print("   例: %s %s %s -> %d 个键" % (rel, sz, kind, len(keys)))
     for rel, why in fail[:10]:
