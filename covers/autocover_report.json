@@ -1,20 +1,30 @@
 {
- "time": "2026-09-18T11:11:33",
- "added": [],
- "pending": [
+ "time": "2026-09-18T11:18:01",
+ "added": [
   {
    "name": "寂静岭：小镇陷落",
-   "reason": "失败6次, 需人工核对"
+   "product": "JP0101-PPSA33286_00-TOWNFALLSIEJ0000",
+   "storeName": "SILENT HILL: Townfall (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/ac0660a7b5913dp34.jpg",
+   "role": "P-pad",
+   "bytes": 66301
   },
   {
    "name": "漫威金刚狼7",
-   "reason": "失败6次, 需人工核对"
+   "product": "UP9000-PPSA03671_00-MARVELSWOLVERINE",
+   "storeName": "《漫威金刚狼》 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/ac915f4d8c5deap34.jpg",
+   "role": "P-pad",
+   "bytes": 116455
   }
  ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1188,
-  "covered": 1128,
-  "pending_open": 2
+  "covered": 1130,
+  "pending_open": 0
  }
 }
