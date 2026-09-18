@@ -1,0 +1,560 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>留白商品找图 · 三形态对比审核</title>
+<style>
+body{margin:0;background:#f5f6f7;font:14px/1.5 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:#1c1c1c}
+header{position:sticky;top:0;z-index:9;background:#33260e;color:#f7efe2;padding:10px 14px}
+header h1{margin:0 0 6px;font-size:16px;font-weight:600}
+header p{margin:0;font-size:12px;opacity:.85}
+input{padding:6px 10px;border-radius:6px;border:1px solid #6b5a38;background:#463tú71;color:#f7efe2;font-size:13px;margin-top:8px}
+input{background:#46371f}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(400px,1fr));gap:10px;padding:12px}
+.card{background:#fff;border:1px solid #e2e5e8;border-radius:10px;padding:8px}
+.card.miss{opacity:.75;background:#faf7f2}
+.hd{font-size:13px;margin-bottom:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hd b{color:#b05e10;margin-right:6px}
+.row{display:flex;gap:8px}
+.col{flex:1;text-align:center}
+.col img{width:100%;border-radius:6px;display:block;background:#eee}
+.cap{font-size:11px;color:#666;margin-bottom:3px}
+.cap.r{color:#1e7e34;font-weight:600}.cap.r2{color:#c0392b;font-weight:600}
+.none{font-size:12px;color:#999;padding:8px 0}
+.ft{margin-top:6px;display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:11px;background:#eef1f3;color:#555;border-radius:4px;padding:2px 6px}
+.tag.t1{background:#fff3e0;color:#b05e10}
+.tag.cand{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+</style></head><body>
+<header>
+  <h1>留白商品找图 · 三形态对比审核</h1>
+  <p>A 方图留边（先裁方再上下补边）｜B 竖图留边（整图保留+左右补边，零裁切）｜C 满填不留边（3:4 满填裁切，主体最大）。挑中哪种把「编号+字母」报给我，如「#3 用 C」。</p>
+  <input id="q" placeholder="搜商品名…">
+</header>
+<div class="grid" id="g">
+<div class="card">
+  <div class="hd"><b>#1</b> 007初露锋芒（豪华版）（1）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0001_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0001_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0001_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.85分</span><span class="tag cand">007 First Light (日语, 韩语, 简体中文, 繁体中文, 英语)</span></div>
+</div>
+<div class="card miss"><div class="hd"><b>#2</b> 007初露锋芒（豪华版）（2）</div>
+<div class="none">未找到图（未找到）—— 待网上找图 / 人工补</div></div>
+<div class="card miss"><div class="hd"><b>#3</b> 007初露锋芒（豪华版）（3）</div>
+<div class="none">未找到图（未找到）—— 待网上找图 / 人工补</div></div>
+<div class="card miss"><div class="hd"><b>#4</b> 007初露锋芒（豪华版）（4）</div>
+<div class="none">未找到图（未找到）—— 待网上找图 / 人工补</div></div>
+<div class="card">
+  <div class="hd"><b>#5</b> 三国志14 威力加强版（豪华版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0005_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0005_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0005_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">1.05分</span><span class="tag cand">三国志14 威力加强版 (英文版)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#6</b> 三国志8 威力加强版</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0006_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0006_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0006_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">④网上找图(游民短词)</span><span class="tag">0.00分</span><span class="tag cand">三国志8重制版</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#7</b> 仁王1（PS5）+仁王2（PS4/PS5）（完整版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0007_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0007_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0007_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">0.85分</span><span class="tag cand">The Nioh Collection</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#8</b> 侏罗纪世界：进化2（完整版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0008_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0008_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0008_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.85分</span><span class="tag cand">《侏罗纪世界：进化 2》 (日语, 韩语, 简体中文, 繁体中文, 英语)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#9</b> 勇敢的心：合辑</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0009_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0009_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0009_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">1.05分</span><span class="tag cand">Valiant Hearts: The Great War™</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#10</b> 勇者斗恶龙10：觉醒的五种族（豪华版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0010_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0010_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0010_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.80分</span><span class="tag cand">DRAGON QUEST (日文版)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#11</b> 勇者斗恶龙7 重制版（豪华版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0011_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0011_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0011_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.80分</span><span class="tag cand">DRAGON QUEST (日文版)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#12</b> 四海兄弟：故乡（决定版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0012_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0012_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0012_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">1.05分</span><span class="tag cand">Mafia: The Old Country</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#13</b> 圣斗士星矢 斗士之魂</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0013_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0013_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0013_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">③游民星空</span><span class="tag">0.00分</span><span class="tag cand">圣斗士星矢：斗士之魂</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#14</b> 圣歌Anthem（黎明军团版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0014_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0014_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0014_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">④网上找图(游民英文名)</span><span class="tag">0.00分</span><span class="tag cand">圣歌</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#15</b> 奇异人生：本色（豪华版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0015_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0015_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0015_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.85分</span><span class="tag cand">《奇异人生：本色》终极版 PS4 &amp; PS5 (日语, 简体中文, 英语)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#16</b> 女神异闻录3：Reload+后日谈DLC（完整版）/P3R</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0016_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0016_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0016_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">③游民星空</span><span class="tag">0.00分</span><span class="tag cand">女神异闻录3：Reload</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#17</b> 师父/师傅（豪华版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0017_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0017_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0017_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">1.05分</span><span class="tag cand">Sifu</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#18</b> 幽浮2（典藏合辑）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0018_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0018_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0018_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.80分</span><span class="tag cand">XCOM® 2 典藏合集 (中英韩文版)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#19</b> 异形：火力小队精英1（终极版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0019_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0019_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0019_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">④网上找图(游民短词)</span><span class="tag">0.00分</span><span class="tag cand">异形：火力小队精英</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#20</b> 往左一点 向左一点（完整版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0020_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0020_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0020_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(英文名)</span><span class="tag">0.85分</span><span class="tag cand">A Little to the Left: Extra Tidy Bundle (日语,</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#21</b> 忍者神龟：破碎命运 史林特的命运（黄金版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0021_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0021_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0021_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">1.05分</span><span class="tag cand">Teenage Mutant Ninja Turtles: Splintered Fat</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#22</b> 文明7 席德·梅尔的文明帝国7（完整版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0022_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0022_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0022_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">④网上找图(游民短词)</span><span class="tag">0.00分</span><span class="tag cand">文明7</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#23</b> 无主之地3（终极版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0023_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0023_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0023_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.85分</span><span class="tag cand">无主之地3：终极版 PS4™ &amp;  PS5™ (日语, 韩语, 简体中文, 繁体中文, </span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#24</b> 机械战警合集（暴戾都市+未竟之事）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0024_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0024_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0024_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.80分</span><span class="tag cand">机械战警 (中英文版)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#25</b> 机械迷城+嘎吱作响</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0025_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0025_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0025_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.85分</span><span class="tag cand">Machinarium + Creaks 捆绑包 (日语, 韩语, 简体中文, 繁体中文</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#26</b> 机甲战魔 神话之裔（豪华版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0026_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0026_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0026_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.85分</span><span class="tag cand">机甲战魔 神话之裔 (日语, 韩语, 简体中文, 繁体中文, 英语)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#27</b> 杀戮尖塔1</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0027_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0027_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0027_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">0.85分</span><span class="tag cand">Slay the Spire</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#28</b> 模拟山羊1（年度版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0028_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0028_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0028_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">0.85分</span><span class="tag cand">Goat Simulator</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#29</b> 死亡之屋1（重制版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0029_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0029_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0029_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">④网上找图(游民短词)</span><span class="tag">0.00分</span><span class="tag cand">死亡之屋：重制版</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#30</b> 死或生6（豪华版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0030_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0030_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0030_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(英文名)</span><span class="tag">0.80分</span><span class="tag cand">DEAD OR ALIVE 6 Last Round (日语, 韩语, 简体中文, 繁体</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#31</b> 汤姆克兰西：全境封锁2（终极版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0031_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0031_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0031_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">1.05分</span><span class="tag cand">Tom Clancy’s The Division 2</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#32</b> 漫威斗魂（终极版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0032_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0032_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0032_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(英文名)</span><span class="tag">0.85分</span><span class="tag cand">《MARVEL Tōkon: Fighting Souls》 (泰语, 日语, 韩语, </span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#33</b> 潜水员戴夫（完整版）春日一番DLC+丛林DLC</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0033_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0033_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0033_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">1.05分</span><span class="tag cand">DAVE THE DIVER</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#34</b> 灵魂石幸存者（完整版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0034_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0034_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0034_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">0.80分</span><span class="tag cand">Soulstone Survivors</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#35</b> 生灵重塑 再生动物（豪华版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0035_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0035_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0035_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(英文名)</span><span class="tag">0.85分</span><span class="tag cand">REANIMAL (日语, 韩语, 简体中文, 繁体中文, 英语)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#36</b> 看门狗1（完整版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0036_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0036_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0036_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">0.85分</span><span class="tag cand">Watch Dogs™ </span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#37</b> 看门狗：军团（黄金版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0037_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0037_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0037_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.85分</span><span class="tag cand">《看门狗：军团》 PS4 &amp; PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#38</b> 真·三国无双 起源（1）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0038_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0038_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0038_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">1.05分</span><span class="tag cand">DYNASTY WARRIORS: ORIGINS</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#39</b> 真·三国无双 起源（豪华版）（2）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0039_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0039_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0039_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">1.05分</span><span class="tag cand">DYNASTY WARRIORS: ORIGINS</span></div>
+</div>
+<div class="card miss"><div class="hd"><b>#40</b> 真·三国无双 起源（豪华版）（3）</div>
+<div class="none">未找到图（未找到）—— 待网上找图 / 人工补</div></div>
+<div class="card miss"><div class="hd"><b>#41</b> 真·三国无双 起源（豪华版）（4）</div>
+<div class="none">未找到图（未找到）—— 待网上找图 / 人工补</div></div>
+<div class="card">
+  <div class="hd"><b>#42</b> 真人快打11（终极版）（1）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0042_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0042_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0042_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">1.05分</span><span class="tag cand">Mortal Kombat 11</span></div>
+</div>
+<div class="card miss"><div class="hd"><b>#43</b> 真人快打11（终极版）（2）</div>
+<div class="none">未找到图（未找到）—— 待网上找图 / 人工补</div></div>
+<div class="card">
+  <div class="hd"><b>#44</b> 破晓传说/破晓传奇+黎明新程（完整版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0044_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0044_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0044_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">1.05分</span><span class="tag cand">Tales of ARISE - Beyond the Dawn Premium Edi</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#45</b> 破碎怪谈：恶意取关（豪华版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0045_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0045_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0045_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.85分</span><span class="tag cand">破碎怪谈：恶意取关 (日语, 简体中文, 繁体中文, 英语)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#46</b> 纸人1+2</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0046_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0046_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0046_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">0.90分</span><span class="tag cand">Paper Dolls 2</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#47</b> 英雄传说：黎之轨迹2 绯红原罪</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0047_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0047_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0047_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">④网上找图(游民英文名)</span><span class="tag">0.00分</span><span class="tag cand">英雄传说：黎之轨迹2</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#48</b> 莱莎的炼金工房1～常暗女王与秘密藏身处～</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0048_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0048_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0048_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">④网上找图(游民短词)</span><span class="tag">0.00分</span><span class="tag cand">莱莎的炼金工房：常暗女王与秘密藏身处</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#49</b> 莱莎的炼金工房2～失落传说与秘密妖精～</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0049_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0049_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0049_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.85分</span><span class="tag cand">莱莎的炼金工房２ ～失落传说与秘密妖精～ DX (PS4&amp;5) (日语, 英语)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#50</b> 虐杀原形1</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0050_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0050_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0050_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">0.85分</span><span class="tag cand">[PROTOTYPE™]</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#51</b> 虐杀原形2</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0051_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0051_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0051_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">1.05分</span><span class="tag cand">Prototype®2</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#52</b> 虚构世界1</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0052_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0052_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0052_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">0.85分</span><span class="tag cand">Figment</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#53</b> 行尸走肉1（完整版）（美版英文）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0053_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0053_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0053_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">④网上找图(游民短词)</span><span class="tag">0.00分</span><span class="tag cand">行尸走肉：第一季</span></div>
+</div>
+<div class="card miss"><div class="hd"><b>#54</b> 行尸走肉2（美版英文）</div>
+<div class="none">未找到图（未找到）—— 待网上找图 / 人工补</div></div>
+<div class="card miss"><div class="hd"><b>#55</b> 行尸走肉3</div>
+<div class="none">未找到图（未找到）—— 待网上找图 / 人工补</div></div>
+<div class="card">
+  <div class="hd"><b>#56</b> 行尸走肉4（完整版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0056_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0056_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0056_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">④网上找图(游民短词)</span><span class="tag">0.00分</span><span class="tag cand">行尸走肉：最终季</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#57</b> 行尸走肉：米琼恩</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0057_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0057_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0057_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">1.05分</span><span class="tag cand">The Walking Dead: Michonne - A Telltale Mini</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#58</b> 遗迹2（终极版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0058_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0058_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0058_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">④网上找图(游民英文名)</span><span class="tag">0.00分</span><span class="tag cand">遗迹2</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#59</b> 雨中冒险2（完整版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0059_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0059_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0059_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(中文名)</span><span class="tag">0.85分</span><span class="tag cand">雨中冒险 2: 合金意念 (中日英韩文版)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#60</b> 霓虹深渊（豪华版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0060_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0060_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0060_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(英文名)</span><span class="tag">0.85分</span><span class="tag cand">Neon Abyss (日语, 简体中文, 繁体中文, 英语)</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#61</b> 饥荒（联机版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0061_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0061_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0061_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">④网上找图(游民短词)</span><span class="tag">0.00分</span><span class="tag cand">饥荒：联机版</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#62</b> 魔戒：咕噜（珍藏版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0062_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0062_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0062_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(英文名)</span><span class="tag">0.85分</span><span class="tag cand">The Lord of the Rings: Gollum™ (日语, 韩语, 简体中文</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#63</b> 龙珠Z：卡卡罗特（大师版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0063_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0063_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0063_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">②美服(英文名)</span><span class="tag">0.85分</span><span class="tag cand">DRAGON BALL Z: KAKAROT Dragon Palace Bowl</span></div>
+</div>
+<div class="card">
+  <div class="hd"><b>#64</b> 龙珠：异战2 超宇宙2（特别版）</div>
+  <div class="row">
+    <div class="col"><div class="cap">A 方图留边</div><img loading="lazy" src="img/0064_a.jpg"></div>
+    <div class="col"><div class="cap r">B 竖图留边(零裁切)</div><img loading="lazy" src="img/0064_b.jpg"></div>
+    <div class="col"><div class="cap r2">C 满填不留边</div><img loading="lazy" src="img/0064_c.jpg"></div>
+  </div>
+  <div class="ft"><span class="tag t1">①港服(英文名)</span><span class="tag">0.85分</span><span class="tag cand">DRAGON BALL XENOVERSE (日文版)</span></div>
+</div>
+</div>
+<script>
+var q=document.getElementById('q');
+q.oninput=function(){var s=q.value.trim().toLowerCase();
+ document.querySelectorAll('.card').forEach(function(c){
+  c.style.display=(!s||c.textContent.toLowerCase().indexOf(s)>=0)?'':'none';});};
+</script>
+</body></html>
