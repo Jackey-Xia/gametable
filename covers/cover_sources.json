@@ -8509,12 +8509,13 @@
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x756） · 同款多库存沿用"
  },
  "阿斯泰利克斯历险记：全拍飞2": {
-  "file": "covers/rca0d337b62ee1.jpg",
+  "file": "covers/rc119585d7f717.jpg",
   "source": "manual",
-  "role": "P-fill",
-  "store": "阿斯泰利克斯历险记：全拍飞 (日语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-19T02:49:19",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x756） · 同款多库存沿用"
+  "role": "P-orig",
+  "store": "阿斯泰利克斯历险记：全拍飞2 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T22:26:04",
+  "note": "店主指认: 港服商城红框卡(PORTRAIT_BANNER 504x756), 裁切带无字→原图直上; 不联动1",
+  "en": "Asterix & Obelix: Slap Them All! 2"
  },
  "阿斯泰利克斯历险记：幻想新国度2": {
   "file": "covers/rc46fcb0cea3fb.jpg",
