@@ -1,11 +1,17 @@
 {
- "time": "2026-09-19T09:15:15",
+ "time": "2026-09-19T09:35:08",
  "added": [],
- "pending": [],
+ "pending": [
+  {
+   "name": "守望者",
+   "reason": "匹配有歧义或无命中",
+   "top": "《Keeper》 (泰语, 马来语, 日语, 韩语, 简体中文, 繁体中文, 英语) (0.85 vs 0.85)"
+  }
+ ],
  "errors": [],
  "stats": {
   "total": 1188,
   "covered": 1153,
-  "pending_open": 0
+  "pending_open": 1
  }
 }
