@@ -71,7 +71,20 @@ def main():
             en2names_norm.setdefault(norm_en(en), []).append(n)
 
     moved, nohit = [], []
+    # 店主明确置空(auto_skip)的商品不自动补图: 旧键不沿用、新名不登记
+    skip_path = os.path.join(REPO, "covers", "auto_skip.json")
+    auto_skip = set()
+    if os.path.exists(skip_path):
+        try:
+            v = json.load(open(skip_path, encoding="utf-8"))
+            if isinstance(v, list):
+                auto_skip = {str(x).strip() for x in v}
+        except Exception:
+            auto_skip = set()
     for k in sorted(orphans):
+        if k.strip() in auto_skip:
+            nohit.append(k)
+            continue
         rec = src.get(k) or {}
         key_en = (rec.get("en") or "").strip().lower()
         cands = []
@@ -93,11 +106,11 @@ def main():
         kb = strip_alias(k)
         if kb:
             for n, _en in grid:
-                if n in m:
+                if n in m or n.strip() in auto_skip:
                     continue
                 if strip_alias(n) == kb:
                     cands.append(n)
-        cands = [n for n in dict.fromkeys(cands) if n not in m]
+        cands = [n for n in dict.fromkeys(cands) if n not in m and n.strip() not in auto_skip]
         if not cands:
             nohit.append(k)
             continue
