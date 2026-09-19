@@ -1,4 +1,40 @@
 {
+ "007初露锋芒（豪华版）（1）": {
+  "file": "covers/rce750149d2c90.jpg",
+  "source": "manual",
+  "role": "P-pad",
+  "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T22:47:57",
+  "note": "店主指认: 港服红框卡(PORTRAIT留边版, 保留DELUXE条/无TACSIM条)",
+  "en": "007 First Light (Deluxe Edition)"
+ },
+ "007初露锋芒（豪华版）（2）": {
+  "file": "covers/rce750149d2c90.jpg",
+  "source": "manual",
+  "role": "P-pad",
+  "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T22:47:57",
+  "note": "店主指认: 港服红框卡(PORTRAIT留边版, 保留DELUXE条/无TACSIM条)",
+  "en": "007 First Light (Deluxe Edition)"
+ },
+ "007初露锋芒（豪华版）（3）": {
+  "file": "covers/rce750149d2c90.jpg",
+  "source": "manual",
+  "role": "P-pad",
+  "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T22:47:57",
+  "note": "店主指认: 港服红框卡(PORTRAIT留边版, 保留DELUXE条/无TACSIM条)",
+  "en": "007 First Light (Deluxe Edition)"
+ },
+ "007初露锋芒（豪华版）（4）": {
+  "file": "covers/rce750149d2c90.jpg",
+  "source": "manual",
+  "role": "P-pad",
+  "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T22:47:57",
+  "note": "店主指认: 港服红框卡(PORTRAIT留边版, 保留DELUXE条/无TACSIM条)",
+  "en": "007 First Light (Deluxe Edition)"
+ },
  "1998收费员的故事": {
   "file": "covers/a49a45c11f4c_s.jpg",
   "source": "manual",
@@ -544,12 +580,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc113c0f9d93ec.jpg"
  },
  "九山：狼之城": {
-  "file": "covers/f09309ee16c2_s.jpg",
+  "file": "covers/rca96a01c90df3.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:51:30",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc0957f6d2fc19.jpg"
+  "role": "P-orig",
+  "store": "九山：狼之城 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T22:47:57",
+  "note": "店主指认: 港服红框卡(PORTRAIT含DEMO徽章), 裁切带无字→原图直上",
+  "en": "Kusan: City of Wolves"
  },
  "九张羊皮纸1": {
   "file": "covers/658a9997eef0_s.jpg",
@@ -752,12 +789,13 @@
   "note": "方图改留边版(零裁切), 源 rc8f56c6d9b5e4.jpg"
  },
  "传说法师1": {
-  "file": "covers/rc599d48ebd1a3.jpg",
+  "file": "covers/rc4358284aef46.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "Wizard of Legend 2 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-18T23:13:54",
-  "note": "店主审核 B132 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上"
+  "role": "M-pad",
+  "store": "Wizard of Legend (日语, 韩语, 简体中文, 英语)",
+  "time": "2026-09-19T22:47:57",
+  "note": "店主指认: 港服红框卡(MASTER方图)→留边版; 不联动传说法师2",
+  "en": "Wizard of Legend"
  },
  "传说法师2": {
   "file": "covers/rc599d48ebd1a3.jpg",
@@ -4891,12 +4929,13 @@
   "note": "店主审核 B147 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上"
  },
  "木卫四协议（豪华版）": {
-  "file": "covers/rc8980bce95311.jpg",
+  "file": "covers/rc98363e601e66.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:17",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+  "role": "P-pad",
+  "store": "The Callisto Protocol™ - Digital Deluxe Edition PS5 (日语, 韩语, 简体中文, 英语)",
+  "time": "2026-09-19T22:47:57",
+  "note": "店主指认: 港服红框卡(PORTRAIT留边版, 保留DIGITAL DELUXE EDITION条)",
+  "en": "The Callisto Protocol (Digital Deluxe Edition)"
  },
  "木筏求生": {
   "file": "covers/rcaaac4c4c63ec.jpg",
@@ -6163,12 +6202,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc6e9989eeba2b.jpg"
  },
  "玛莉的炼金工房Re：萨尔布鲁克的炼金术士（豪华版）": {
-  "file": "covers/fda29bbf3757_s.jpg",
+  "file": "covers/rc1305c238647a.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:53:08",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc9613e632e2cd.jpg"
+  "role": "M-pad",
+  "store": "玛莉的炼金工房 Remake ～萨尔布鲁克的炼金术士～ (PS4 & PS5)",
+  "time": "2026-09-19T22:47:58",
+  "note": "店主指认: 港服红框卡(官方图无版本条, 按红框卡合成「数字豪华版」紫条)→留边版",
+  "en": "Atelier Marie Remake: The Alchemist of Salburg"
  },
  "球比伦战记1": {
   "file": "covers/6fc6f5f382f9_s.jpg",
@@ -6707,13 +6747,13 @@
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x756） · 同款多库存沿用"
  },
  "禁止过分投入2：夏日大排档": {
-  "file": "covers/acac15b82f56c2p34.jpg",
-  "source": "store_zh_hk",
-  "role": "P-pad",
-  "store": "禁止过分投入2：夏日大排档 (Love Too Easily 2: Summer Pocha) (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-19T14:30:08",
-  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
-  "en": "Love Too Easily 2：Summer Pocha"
+  "file": "covers/rc2bc66df93f8a.jpg",
+  "source": "manual",
+  "role": "P-orig",
+  "store": "禁止过分投入2：夏日大排档 (Love Too Easily 2: Summer Pocha)",
+  "time": "2026-09-19T22:47:57",
+  "note": "店主指认: 港服红框卡(PORTRAIT), 裁切带无字→原图直上; 不联动1",
+  "en": "Love Too Easily 2: Summer Pocha"
  },
  "禁闭求生1": {
   "file": "covers/6d9447293a29_s.jpg",
@@ -6956,12 +6996,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc93d44895513f.jpg"
  },
  "纪念碑谷3": {
-  "file": "covers/a566a09f1138_s.jpg",
+  "file": "covers/rcefe8410d2efd.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:53:26",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc251c5afea335.jpg"
+  "role": "P-orig",
+  "store": "纪念碑谷 3 (马来语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T22:47:57",
+  "note": "店主指认: 港服红框卡(PORTRAIT 504x756), 裁切带无字→原图直上",
+  "en": "Monument Valley 3"
  },
  "纳克大冒险1": {
   "file": "covers/rc34734f2babc0.jpg",
@@ -8582,12 +8623,13 @@
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）"
  },
  "零：月蚀的假面": {
-  "file": "covers/rc573539e1b373.jpg",
+  "file": "covers/rcc12f762a9fd9.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:19",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+  "role": "M-pad",
+  "store": "零 ～月蚀的假面～ (PS4 & PS5) (简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T22:47:57",
+  "note": "店主指认: 港服红框卡(MASTER方图)→留边版",
+  "en": "Fatal Frame: Mask of the Lunar Eclipse"
  },
  "零：濡鸦之巫女": {
   "file": "covers/rc2633c14fce17.jpg",
