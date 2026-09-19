@@ -654,6 +654,15 @@
   "time": "2026-09-19T02:49:15",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
+ "仁王1+2合集": {
+  "file": "covers/rc7208ff645459.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "The Nioh Collection",
+  "time": "2026-09-20T01:03:44",
+  "note": "②店主审核: 采用C满填不留边 · ②美服(英文名) · The Nioh Collection · 改名沿用",
+  "en": "Nioh Collection（Complete Edition）"
+ },
  "仁王1（PS5）+仁王2（PS4/PS5）（完整版）": {
   "file": "covers/rc7208ff645459.jpg",
   "source": "manual",
@@ -816,6 +825,15 @@
   "time": "2026-09-18T21:51:33",
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcb4e641561c35.jpg"
  },
+ "使命召唤12：黑色行动3（僵尸编年史版）": {
+  "file": "covers/e4bc6a72088e_s.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "",
+  "time": "2026-09-20T01:02:35",
+  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcb4e641561c35.jpg · 改名沿用(表格去掉 /CODxx 后缀)",
+  "en": "COD 12/Call of Duty12: Black Ops 3（Zombies Chronicles Edition）"
+ },
  "使命召唤13：无限战争/COD13（豪华版）": {
   "file": "covers/rc1cd3b66c15dc.jpg",
   "source": "manual",
@@ -825,12 +843,12 @@
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
  "使命召唤13：无限战争（豪华版）": {
-  "file": "covers/ac4f61b58c3e0bp34.jpg",
-  "source": "store_zh_hk",
-  "role": "M-pad",
-  "store": "Call of Duty®: Infinite Warfare (英文版)",
-  "time": "2026-09-19T09:59:12",
-  "note": "autocover 自动抓取 · 港服中文页（方图 504x504, 留边版(前端会左右各裁 63px)） · 版本: 标准版 · 港服无声明版本,降级匹配",
+  "file": "covers/rc1cd3b66c15dc.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "",
+  "time": "2026-09-20T01:02:35",
+  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504） · 改名沿用(表格去掉 /CODxx 后缀)",
   "en": "COD 13/Call of Duty：Infinite Warfare（Deluxe Edition）"
  },
  "使命召唤14：二战/COD14（豪华版）": {
@@ -850,6 +868,15 @@
   "note": "店主指认红框卡 · 《使命召唤®：二战》数字豪华版 (中英韩文版) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
   "en": "COD 14/Call of Duty 14：WWII"
  },
+ "使命召唤15：黑色行动4": {
+  "file": "covers/rcf6cea81273e3.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "",
+  "time": "2026-09-20T01:02:35",
+  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504） · 改名沿用(表格去掉 /CODxx 后缀)",
+  "en": "COD 15/Call of Duty15: Black Ops 4"
+ },
  "使命召唤15：黑色行动4/COD15": {
   "file": "covers/rcf6cea81273e3.jpg",
   "source": "manual",
@@ -857,6 +884,15 @@
   "store": "",
   "time": "2026-09-19T02:49:15",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+ },
+ "使命召唤16：现代战争": {
+  "file": "covers/rc14c9a0560168.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "",
+  "time": "2026-09-20T01:02:35",
+  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504） · 改名沿用(表格去掉 /CODxx 后缀)",
+  "en": "COD 16Call Of Duty 16：Modern Warfare"
  },
  "使命召唤16：现代战争/COD16": {
   "file": "covers/rc14c9a0560168.jpg",
@@ -866,6 +902,15 @@
   "time": "2026-09-19T02:49:15",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
+ "使命召唤17：黑色行动5 冷战": {
+  "file": "covers/rc9d98562c6d1f.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "",
+  "time": "2026-09-20T01:02:35",
+  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504） · 改名沿用(表格去掉 /CODxx 后缀)",
+  "en": "COD 17/Call Of Duty 17：Black Ops Cold War"
+ },
  "使命召唤17：黑色行动5 冷战/COD17": {
   "file": "covers/rc9d98562c6d1f.jpg",
   "source": "manual",
@@ -873,6 +918,15 @@
   "store": "",
   "time": "2026-09-19T02:49:15",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+ },
+ "使命召唤18：决胜时刻 先锋": {
+  "file": "covers/rc15827e642bdd.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "",
+  "time": "2026-09-20T01:02:35",
+  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504） · 改名沿用(表格去掉 /CODxx 后缀)",
+  "en": "COD 18/Call Of Duty 18：Vanguard"
  },
  "使命召唤18：决胜时刻 先锋/COD18": {
   "file": "covers/rc15827e642bdd.jpg",
@@ -882,6 +936,15 @@
   "time": "2026-09-19T02:49:15",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
+ "使命召唤19：现代战争2": {
+  "file": "covers/rc2e9529236ae8.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "",
+  "time": "2026-09-20T01:02:35",
+  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504） · 改名沿用(表格去掉 /CODxx 后缀)",
+  "en": "COD 19/Call of Duty 19：Modern Warfare 2"
+ },
  "使命召唤19：现代战争2/COD19": {
   "file": "covers/rc2e9529236ae8.jpg",
   "source": "manual",
@@ -889,6 +952,15 @@
   "store": "",
   "time": "2026-09-19T02:49:15",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+ },
+ "使命召唤20：现代战争3": {
+  "file": "covers/rcbc5b4dabfe34.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "",
+  "time": "2026-09-20T01:02:35",
+  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504） · 改名沿用(表格去掉 /CODxx 后缀)",
+  "en": "COD 20/Call of Duty 20：Modern Warfare 3"
  },
  "使命召唤20：现代战争3/COD20": {
   "file": "covers/rcbc5b4dabfe34.jpg",
@@ -898,6 +970,15 @@
   "time": "2026-09-19T02:49:15",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
+ "使命召唤21：决胜时刻 黑色行动6": {
+  "file": "covers/rc5b4fb339939d.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "",
+  "time": "2026-09-20T01:02:35",
+  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504） · 改名沿用(表格去掉 /CODxx 后缀)",
+  "en": "COD 21/Call Of Duty 21：Black Ops 6"
+ },
  "使命召唤21：决胜时刻 黑色行动6/COD21": {
   "file": "covers/rc5b4fb339939d.jpg",
   "source": "manual",
@@ -906,6 +987,15 @@
   "time": "2026-09-19T02:49:15",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
+ "使命召唤22：决胜时刻 黑色行动7": {
+  "file": "covers/rc6a698f23a803.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "",
+  "time": "2026-09-20T01:02:35",
+  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504） · 改名沿用(表格去掉 /CODxx 后缀)",
+  "en": "COD 22/Call Of Duty 22：Black Ops 7"
+ },
  "使命召唤22：决胜时刻 黑色行动7/COD22": {
   "file": "covers/rc6a698f23a803.jpg",
   "source": "manual",
@@ -913,6 +1003,15 @@
   "store": "",
   "time": "2026-09-19T02:49:15",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+ },
+ "使命召唤23：现代战争4": {
+  "file": "covers/rc5f86ccf258c9.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "",
+  "time": "2026-09-20T01:02:36",
+  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504） · 改名沿用(表格去掉 /CODxx 后缀)",
+  "en": "COD 23/Call of Duty 23：Modern Warfare 4"
  },
  "使命召唤23：现代战争4/COD23": {
   "file": "covers/rc5f86ccf258c9.jpg",
@@ -946,6 +1045,15 @@
   "store": "",
   "time": "2026-09-19T02:49:15",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+ },
+ "使命召唤6：现代战争2（重制版）": {
+  "file": "covers/rca94896c5cd83.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "",
+  "time": "2026-09-20T01:02:35",
+  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504） · 改名沿用(表格去掉 /CODxx 后缀)",
+  "en": "COD 6/Call of Duty6: Modern Warfare 2 Campaign Remastered"
  },
  "侏罗纪世界：进化3": {
   "file": "covers/04e43a7cc9e5_s.jpg",
@@ -2922,8 +3030,8 @@
   "source": "manual",
   "role": "P",
   "store": "",
-  "time": "2026-09-19T09:58:46",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc3e32839cae17.jpg · 改名沿用(旧键: Keeper)",
+  "time": "2026-09-20T01:03:44",
+  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc3e32839cae17.jpg · 改名沿用(旧键: Keeper, 英文名 Keeper 不变) · 改名沿用",
   "en": "Keeper"
  },
  "完美音浪": {

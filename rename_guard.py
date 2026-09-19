@@ -37,6 +37,21 @@ def load_grid():
     return out
 
 
+def norm_en(s):
+    """英文名归一化: 小写 + 只留字母数字(用于宽松包含匹配)"""
+    return "".join(ch for ch in str(s or "").lower() if ch.isalnum())
+
+
+def strip_alias(s):
+    """去掉中文名里的斜杠别名段, 用于判断"规范化改名"
+    '使命召唤12：黑色行动3/COD12（僵尸编年史版）' -> '使命召唤12：黑色行动3（僵尸编年史版）'
+    """
+    import re
+    # 只删 "/COD12" 这类 ASCII 别名段(遇中文/全角括号即停), 避免吃掉后面的版本括注
+    t = re.sub(r"[/／][A-Za-z0-9\s·_\-\.]*", "", str(s or ""))
+    return re.sub(r"[\s　]", "", t)
+
+
 def main():
     apply = "--apply" in sys.argv
     m = CP.load_manifest()
@@ -50,6 +65,10 @@ def main():
     for n, en in grid:
         if en:
             en2names.setdefault(en.lower(), []).append(n)
+    en2names_norm = {}
+    for n, en in grid:
+        if en:
+            en2names_norm.setdefault(norm_en(en), []).append(n)
 
     moved, nohit = [], []
     for k in sorted(orphans):
@@ -60,6 +79,24 @@ def main():
             cands += en2names[k.strip().lower()]
         if key_en and key_en in en2names:
             cands += en2names[key_en]
+        # ★ 英文名放宽: 归一化后相等, 或一方包含另一方(长度>=10)
+        kn = norm_en(rec.get("en") or "")
+        for cand_en, names in en2names_norm.items():
+            if not cand_en or len(cand_en) < 10:
+                continue
+            if kn and len(kn) >= 10 and (cand_en in kn or kn in cand_en):
+                cands += names
+            if k.strip() and norm_en(k) and len(norm_en(k)) >= 10 \
+               and (cand_en in norm_en(k) or norm_en(k) in cand_en):
+                cands += names
+        # ★★ 中文名规范化: 去掉 "/COD12" 这类斜杠别名段后相等 -> 同一商品改名, 沿用
+        kb = strip_alias(k)
+        if kb:
+            for n, _en in grid:
+                if n in m:
+                    continue
+                if strip_alias(n) == kb:
+                    cands.append(n)
         cands = [n for n in dict.fromkeys(cands) if n not in m]
         if not cands:
             nohit.append(k)
