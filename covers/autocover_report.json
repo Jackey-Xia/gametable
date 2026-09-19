@@ -1,6 +1,16 @@
 {
- "time": "2026-09-19T14:11:02",
- "added": [],
+ "time": "2026-09-19T14:30:08",
+ "added": [
+  {
+   "name": "禁止过分投入2：夏日大排档",
+   "product": "HP5035-PPSA35525_00-LOVETOOEASILY200",
+   "storeName": "禁止过分投入2：夏日大排档 (Love Too Easily 2: Summer Pocha) (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/acac15b82f56c2p34.jpg",
+   "role": "P-pad",
+   "bytes": 85724
+  }
+ ],
  "pending": [
   {
    "name": "仁王1+2合集",
@@ -62,7 +72,7 @@
  "errors": [],
  "stats": {
   "total": 1188,
-  "covered": 1157,
+  "covered": 1158,
   "pending_open": 14
  }
 }

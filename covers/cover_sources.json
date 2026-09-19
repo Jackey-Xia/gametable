@@ -6706,6 +6706,15 @@
   "time": "2026-09-19T02:49:18",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x756） · 同款多库存沿用"
  },
+ "禁止过分投入2：夏日大排档": {
+  "file": "covers/acac15b82f56c2p34.jpg",
+  "source": "store_zh_hk",
+  "role": "P-pad",
+  "store": "禁止过分投入2：夏日大排档 (Love Too Easily 2: Summer Pocha) (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T14:30:08",
+  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
+  "en": "Love Too Easily 2：Summer Pocha"
+ },
  "禁闭求生1": {
   "file": "covers/6d9447293a29_s.jpg",
   "source": "manual",
