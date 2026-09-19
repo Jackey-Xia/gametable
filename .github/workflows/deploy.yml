@@ -48,6 +48,11 @@ jobs:
           python3 parse_ps.py data/ps_grid.json data/ps_games.json || true
           python3 inherit_stock_covers.py || true
 
+      # ★ 改名沿用(2026-09-19): 店主在 WPS 里只改中文名(英文名不变)时, manifest 旧键失配 -> 前端白图。
+      #   孤儿键 按英文名 匹配到新行 -> 把封面登记到新中文名下(旧键保留兜底, 只增不删)
+      - name: Keep covers when product is renamed
+        run: python3 rename_guard.py --apply || true
+
       # 自动封面: 发现新增商品 -> 港服 zh-Hans 搜索官方主图 -> 严格唯一匹配才入库
       - name: Auto-fetch covers for new products
         run: python3 autocover.py

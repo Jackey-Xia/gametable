@@ -2815,6 +2815,15 @@
   "time": "2026-09-18T23:12:44",
   "note": "店主审核 A11 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上"
  },
+ "守望者": {
+  "file": "covers/9798dddf0ab9_s.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "",
+  "time": "2026-09-19T17:44:58",
+  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc3e32839cae17.jpg · 改名沿用(旧键: Keeper, 英文名 Keeper 不变)",
+  "en": "Keeper"
+ },
  "完美音浪": {
   "file": "covers/rc2e4476f5241a.jpg",
   "source": "manual",
