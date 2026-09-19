@@ -783,6 +783,15 @@
   "time": "2026-09-19T02:49:15",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
+ "使命召唤13：无限战争（豪华版）": {
+  "file": "covers/ac4f61b58c3e0bp34.jpg",
+  "source": "store_zh_hk",
+  "role": "M-pad",
+  "store": "Call of Duty®: Infinite Warfare (英文版)",
+  "time": "2026-09-19T09:59:12",
+  "note": "autocover 自动抓取 · 港服中文页（方图 504x504, 留边版(前端会左右各裁 63px)） · 版本: 标准版 · 港服无声明版本,降级匹配",
+  "en": "COD 13/Call of Duty：Infinite Warfare（Deluxe Edition）"
+ },
  "使命召唤14：二战/COD14（豪华版）": {
   "file": "covers/rcdc37b0007178.jpg",
   "source": "manual",
@@ -2822,6 +2831,15 @@
   "store": "",
   "time": "2026-09-19T17:44:58",
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc3e32839cae17.jpg · 改名沿用(旧键: Keeper, 英文名 Keeper 不变)",
+  "en": "Keeper"
+ },
+ "守望者Keeper": {
+  "file": "covers/9798dddf0ab9_s.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "",
+  "time": "2026-09-19T09:58:46",
+  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc3e32839cae17.jpg · 改名沿用(旧键: Keeper)",
   "en": "Keeper"
  },
  "完美音浪": {
@@ -7695,6 +7713,15 @@
   "store": "",
   "time": "2026-09-18T21:53:42",
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rca3bdbb007ab0.jpg"
+ },
+ "蠕行的恐惧（完整版）": {
+  "file": "covers/acd90533dadf48p34.jpg",
+  "source": "store_zh_hk",
+  "role": "P-pad",
+  "store": "蠕行的恐惧：克苏鲁选集 - 完整版 (Menace from the Deep: Complete Edition) (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T09:59:06",
+  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 完全版",
+  "en": "Menace from the Deep（Complete Edition）"
  },
  "血污 赤痕：夜之仪式（完整版）": {
   "file": "covers/rc288381d3ad0f.jpg",

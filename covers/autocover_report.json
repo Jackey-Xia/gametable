@@ -1,11 +1,101 @@
 {
- "time": "2026-09-19T09:49:14",
- "added": [],
- "pending": [],
+ "time": "2026-09-19T09:59:19",
+ "added": [
+  {
+   "name": "蠕行的恐惧（完整版）",
+   "product": "UP3528-PPSA35129_00-0033055998499852",
+   "storeName": "蠕行的恐惧：克苏鲁选集 - 完整版 (Menace from the Deep: Complete Edition) (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 1.0,
+   "file": "covers/acd90533dadf48p34.jpg",
+   "role": "P-pad",
+   "bytes": 85939
+  },
+  {
+   "name": "使命召唤13：无限战争（豪华版）",
+   "product": "UP0002-CUSA04762_00-ASIAWTHEGAMEST01",
+   "storeName": "Call of Duty®: Infinite Warfare (英文版)",
+   "score": 0.8,
+   "file": "covers/ac4f61b58c3e0bp34.jpg",
+   "role": "M-pad",
+   "bytes": 78751
+  }
+ ],
+ "pending": [
+  {
+   "name": "仁王1+2合集",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "使命召唤4：现代战争1（重制版）",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "使命召唤6：现代战争2（重制版）",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "使命召唤12：黑色行动3（僵尸编年史版）",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "使命召唤14：二战（豪华版）",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "使命召唤15：黑色行动4",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "使命召唤16：现代战争",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "使命召唤17：黑色行动5 冷战",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "使命召唤18：决胜时刻 先锋",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "使命召唤19：现代战争2",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "使命召唤20：现代战争3",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "使命召唤21：决胜时刻 黑色行动6",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "使命召唤22：决胜时刻 黑色行动7",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "使命召唤23：现代战争4",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  }
+ ],
  "errors": [],
  "stats": {
   "total": 1188,
-  "covered": 1154,
-  "pending_open": 0
+  "covered": 1157,
+  "pending_open": 14
  }
 }
