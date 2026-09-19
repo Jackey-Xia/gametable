@@ -959,12 +959,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc2b686819e55b.jpg"
  },
  "偶像大师：星耀季节（豪华版）": {
-  "file": "covers/0073e129362d_s.jpg",
+  "file": "covers/rce10bc2561558.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:51:35",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc561b0674dd1d.jpg"
+  "role": "P-pad",
+  "store": "偶像大师 STARLIT SEASON 数字豪华版 (韩语, 简体中文, 繁体中文)",
+  "time": "2026-09-19T23:29:25",
+  "note": "偶像大师 STARLIT SEASON 数字豪华版 (韩语, 简体中文, 繁体中文) · 店主指认红框卡 · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
+  "en": "The Idolmaster：Starlit Season（Deluxe Edition）"
  },
  "僵尸世界大战：劫后余生（豪华版）": {
   "file": "covers/rc916ae1592e96.jpg",
@@ -2399,12 +2400,13 @@
   "note": "店主审核 H25 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上"
  },
  "天命重启：心跳的抉择": {
-  "file": "covers/rc6a12bfe73723.jpg",
+  "file": "covers/rc2b7fbb0ef839.jpg",
   "source": "manual",
   "role": "P-pad",
   "store": "天命重启：心跳的抉择 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-18T23:12:41",
-  "note": "店主审核 A1 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 心眺的抉择"
+  "time": "2026-09-19T23:29:17",
+  "note": "天命重启：心跳的抉择 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 心能的抉择')(portrait)",
+  "en": "Refate：Echoes of Desire"
  },
  "天国：拯救1（皇家版）": {
   "file": "covers/rc7ea156d1ed1f.jpg",
@@ -2631,12 +2633,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc841df3028dea.jpg"
  },
  "如龙 人中之龙 维新！极": {
-  "file": "covers/rc263c457c3110.jpg",
+  "file": "covers/rc543168f9c5fb.jpg",
   "source": "manual",
   "role": "P-pad",
-  "store": "Like a Dragon: Ishin! PS4 & PS5",
-  "time": "2026-09-18T23:51:58",
-  "note": "店主审核 E92 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边"
+  "store": "人中之龙 维新！ 极 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T23:29:43",
+  "note": "人中之龙 维新！ 极 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边')(portrait)",
+  "en": "Like a Dragon：Ishin!"
  },
  "如龙 人中北斗": {
   "file": "covers/rcc6f4df17c7bf.jpg",
@@ -2647,36 +2650,38 @@
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
  "如龙0 人中之龙0：誓约的场所（导演剪辑版）（1）": {
-  "file": "covers/rc90103a1fd374.jpg",
+  "file": "covers/rc352e431ae0f6.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:16",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+  "role": "P-pad",
+  "store": "人中之龙０ 誓约的场所 导演剪辑版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T23:29:31",
+  "note": "人中之龙０ 誓约的场所 导演剪辑版 (日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 导演剪辑版')(portrait)",
+  "en": "Yakuza 0（Director's Cut Edition）"
  },
  "如龙0 人中之龙0：誓约的场所（导演剪辑版）（2）": {
-  "file": "covers/rc3b62c6934ba4.jpg",
+  "file": "covers/rc352e431ae0f6.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:16",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+  "role": "P-pad",
+  "store": "人中之龙０ 誓约的场所 导演剪辑版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T23:29:31",
+  "note": "人中之龙０ 誓约的场所 导演剪辑版 (日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 导演剪辑版')(portrait)"
  },
  "如龙1 人中之龙：极1（1）": {
-  "file": "covers/rc3e5d1778f0ce.jpg",
+  "file": "covers/rc1c910140f2ed.jpg",
   "source": "manual",
   "role": "P-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:25",
-  "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 7baa87332760_s.jpg"
+  "store": "人中之龙 极 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T23:29:49",
+  "note": "人中之龙 极 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 人中之龙圾、KIWAMI')(portrait)",
+  "en": "Yakuza：Kiwami1"
  },
  "如龙1 人中之龙：极1（2）": {
-  "file": "covers/rc816ac59179f9.jpg",
+  "file": "covers/rc1c910140f2ed.jpg",
   "source": "manual",
   "role": "P-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:25",
-  "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 69bb4bc3d049_s.jpg"
+  "store": "人中之龙 极 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T23:29:49",
+  "note": "人中之龙 极 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 人中之龙圾、KIWAMI')(portrait)"
  },
  "如龙2 人中之龙：极2（1）": {
   "file": "covers/c0ba8008b665_s.jpg",
@@ -2695,20 +2700,21 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc5c95c6e6630b.jpg"
  },
  "如龙3 人中之龙：极3+3外传（1）": {
-  "file": "covers/rc7f7932a60b49.jpg",
+  "file": "covers/rc211500799ce5.jpg",
   "source": "manual",
-  "role": "M-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:25",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 a551cf007a1c_s.jpg"
+  "role": "P-pad",
+  "store": "人中之龙 极３ / 人中之龙３外传 Dark Ties PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T23:29:38",
+  "note": "人中之龙 极３ / 人中之龙３外传 Dark Ties PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 LKIWAMI、TIES')(portrait)",
+  "en": "Yakuza Kiwami 3 & Dark Ties"
  },
  "如龙3 人中之龙：极3+3外传（2）": {
-  "file": "covers/rc8a4412a2913c.jpg",
+  "file": "covers/rc211500799ce5.jpg",
   "source": "manual",
-  "role": "M-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:26",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 390ef5dead26_s.jpg"
+  "role": "P-pad",
+  "store": "人中之龙 极３ / 人中之龙３外传 Dark Ties PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T23:29:38",
+  "note": "人中之龙 极３ / 人中之龙３外传 Dark Ties PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 LKIWAMI、TIES')(portrait)"
  },
  "如龙4 人中之龙4：继承传说者": {
   "file": "covers/rc7b7913f930ce.jpg",
@@ -5137,6 +5143,15 @@
   "time": "2026-09-18T23:13:31",
   "note": "店主审核 B101 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上"
  },
+ "模拟山羊1（年度版）": {
+  "file": "covers/rc8ce08f88cd34.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "Goat Simulator: The GOATY (中日英韩文版)",
+  "time": "2026-09-19T23:29:02",
+  "note": "Goat Simulator: The GOATY (中日英韩文版) · 店主指认红框卡 · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+  "en": "Goat Simulator 1（Game of the Year Edition）"
+ },
  "模拟山羊3（完整版）": {
   "file": "covers/rc5026d3ac4c0e.jpg",
   "source": "manual",
@@ -7198,12 +7213,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc582d79d007bc.jpg"
  },
  "美女，请别影响我学习（PS5）": {
-  "file": "covers/rcf666de018300.jpg",
+  "file": "covers/rc40ed6f5b211b.jpg",
   "source": "manual",
   "role": "P-pad",
-  "store": "",
-  "time": "2026-09-18T13:40:10",
-  "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 115b88f15cd6_s.jpg"
+  "store": "美女，请别影响我学习 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T23:29:08",
+  "note": "美女，请别影响我学习 (日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 美女请跳')(portrait)",
+  "en": "Knowledge, or know Lady（PS5）"
  },
  "美女，请别影响我成仙（PS5）": {
   "file": "covers/rcff1aad22d1dc.jpg",
@@ -8335,12 +8351,13 @@
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
  "逆袭重启": {
-  "file": "covers/71205cc8e6c6_s.jpg",
+  "file": "covers/rce88f69ad03b8.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:53:49",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rca8e4a2e3bbf6.jpg"
+  "role": "P-pad",
+  "store": "逆袭重启 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-19T23:29:13",
+  "note": "逆袭重启 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 重容')(portrait)",
+  "en": "Rebooted Fate"
  },
  "逆转检察官1&2：御剑精选集": {
   "file": "covers/rc4dcfff48a0c2.jpg",
