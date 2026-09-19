@@ -420,12 +420,13 @@
   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 44d501787b05_s.jpg"
  },
  "上古卷轴4：湮灭 重制版（豪华版）": {
-  "file": "covers/9bfa0da85e8f_s.jpg",
+  "file": "covers/rc1d8736e73ed3.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:51:26",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc36ad88903de0.jpg"
+  "role": "P-pad",
+  "store": "The Elder Scrolls IV: Oblivion Remastered - Deluxe Edition (日语, 简体中文, 英语)",
+  "time": "2026-09-20T00:06:56",
+  "note": "店主指认红框卡 · The Elder Scrolls IV: Oblivion Remastered - Deluxe Edition (日语, 简体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
+  "en": "The Elder Scrolls 4：Oblivion Remastered（Deluxe Edition）"
  },
  "上古卷轴5：天际（特别版/周年纪念版）": {
   "file": "covers/rc0e7aa99cdcb1.jpg",
@@ -838,6 +839,15 @@
   "time": "2026-09-19T02:49:15",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
+ "使命召唤14：二战（豪华版）": {
+  "file": "covers/rc1697c4154baf.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "《使命召唤®：二战》数字豪华版 (中英韩文版)",
+  "time": "2026-09-20T00:06:58",
+  "note": "店主指认红框卡 · 《使命召唤®：二战》数字豪华版 (中英韩文版) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+  "en": "COD 14/Call of Duty 14：WWII"
+ },
  "使命召唤15：黑色行动4/COD15": {
   "file": "covers/rcf6cea81273e3.jpg",
   "source": "manual",
@@ -917,6 +927,15 @@
   "store": "",
   "time": "2026-09-19T02:49:15",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+ },
+ "使命召唤4：现代战争1（重制版）": {
+  "file": "covers/rc633992754670.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "Call of Duty®: Modern Warfare® Remastered (英文版)",
+  "time": "2026-09-20T00:06:57",
+  "note": "店主指认红框卡 · Call of Duty®: Modern Warfare® Remastered (英文版) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+  "en": "COD 4/Call of Duty4: Modern Warfare 1 Remastered"
  },
  "使命召唤6：现代战争2/COD6（重制版）": {
   "file": "covers/rca94896c5cd83.jpg",
@@ -1456,12 +1475,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc7e9effd33592.jpg"
  },
  "十年不晚": {
-  "file": "covers/c3523e45b54a_s.jpg",
+  "file": "covers/rc54ccf5748f18.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:51:41",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc2d5e41c51815.jpg"
+  "role": "P-pad",
+  "store": "十年不晚 (日语, 韩语, 简体中文, 英语)",
+  "time": "2026-09-20T00:06:56",
+  "note": "店主指认红框卡 · 十年不晚 (日语, 韩语, 简体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
+  "en": "Best Served Cold"
  },
  "午夜之南": {
   "file": "covers/rc46375b000688.jpg",
@@ -2016,12 +2036,22 @@
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
  "四海兄弟123合集": {
-  "file": "covers/544652b6a592_s.jpg",
-  "note": "历史人工批次(受保护)",
-  "role": "M",
+  "file": "covers/rcefae0bd6a9e5.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-16T18:00:00"
+  "role": "P-pad",
+  "store": "《四海兄弟：三部曲》 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:06:57",
+  "note": "店主指认红框卡 · 《四海兄弟：三部曲》 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MAFIA')(portrait)",
+  "en": "MaFia（Definitive Edition）"
+ },
+ "四海兄弟：故乡（决定版）": {
+  "file": "covers/rcf90d4352932b.jpg",
+  "source": "manual",
+  "role": "P-pad",
+  "store": "《四海兄弟：故乡 最终版》 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:06:57",
+  "note": "店主指认红框卡 · 《四海兄弟：故乡 最终版》 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
+  "en": "MaFia：The Old Country"
  },
  "因果动物园": {
   "file": "covers/rc932224b15cb0.jpg",
@@ -2056,12 +2086,13 @@
   "note": "店主审核 E89 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上"
  },
  "圣女战旗（完整版）": {
-  "file": "covers/rcd43c5dba33f3.jpg",
+  "file": "covers/rcb5835d0ddf63.jpg",
   "source": "manual",
-  "role": "P-fill",
-  "store": "Banner of the Maid",
-  "time": "2026-09-19T02:49:16",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x504）"
+  "role": "P-pad",
+  "store": "圣女战旗 Banner of the Maid (简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:06:54",
+  "note": "店主指认红框卡 · 圣女战旗 Banner of the Maid (简体中文, 繁体中文, 英语) · form=('pad', '竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边')(portrait)",
+  "en": "Banner of the Maid（Complete Edition）"
  },
  "圣战群英传：统治": {
   "file": "covers/48f3bab1a986_s.jpg",
@@ -2465,12 +2496,13 @@
   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rc09f87cebe378.jpg"
  },
  "失落史诗": {
-  "file": "covers/dbfea80cc3a5_s.jpg",
+  "file": "covers/rc1580e454a2a1.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:51:56",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc8f0ae999e4c3.jpg"
+  "role": "P-pad",
+  "store": "失落史诗 (日语, 韩语, 简体中文, 英语)",
+  "time": "2026-09-20T00:06:55",
+  "note": "店主指认红框卡 · 失落史诗 (日语, 韩语, 简体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
+  "en": "Lost Epic"
  },
  "失落星船：马拉松": {
   "file": "covers/rcc9e452a8847f.jpg",
@@ -2684,20 +2716,21 @@
   "note": "人中之龙 极 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 人中之龙圾、KIWAMI')(portrait)"
  },
  "如龙2 人中之龙：极2（1）": {
-  "file": "covers/c0ba8008b665_s.jpg",
+  "file": "covers/rc4d1adcf510c9.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:51:59",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc27595a4e4da1.jpg"
+  "role": "P-pad",
+  "store": "人中之龙 极２ PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:06:52",
+  "note": "店主指认红框卡 · 人中之龙 极２ PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
+  "en": "Yakuza：Kiwami2"
  },
  "如龙2 人中之龙：极2（2）": {
-  "file": "covers/e27deb297a20_s.jpg",
+  "file": "covers/rc4d1adcf510c9.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:52:00",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc5c95c6e6630b.jpg"
+  "role": "P-orig",
+  "store": "人中之龙 极２ PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:07:22",
+  "note": "店主指认红框卡 · 人中之龙 极２ PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait) · 多库存沿用"
  },
  "如龙3 人中之龙：极3+3外传（1）": {
   "file": "covers/rc211500799ce5.jpg",
@@ -2749,12 +2782,13 @@
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
  "如龙7 人中之龙7：光与暗的去向（国际版）": {
-  "file": "covers/rcf44ab1accb55.jpg",
+  "file": "covers/rced9eeb7fdb97.jpg",
   "source": "manual",
   "role": "P-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:26",
-  "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 3563f9f03daf_s.jpg"
+  "store": "人中之龙7　光与暗的去向　国际版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:06:53",
+  "note": "店主指认红框卡 · 人中之龙7　光与暗的去向　国际版 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 国际版')(portrait)",
+  "en": "Yakuza 7（International Edition）"
  },
  "如龙7外传 人中之龙7外传：英雄无名": {
   "file": "covers/rcfef647280c03.jpg",
@@ -2765,28 +2799,30 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc8220ea7ec144.jpg"
  },
  "如龙8 人中之龙8 ：无尽财富（豪华版）（1）": {
-  "file": "covers/rce2883d52af13.jpg",
+  "file": "covers/rcf61412c62d33.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:16",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+  "role": "M-pad",
+  "store": "人中之龙８　豪华版　PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:06:53",
+  "note": "店主指认红框卡 · 人中之龙８　豪华版　PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+  "en": "Like a Dragon 8：Infinite Wealth（Deluxe Edition）"
  },
  "如龙8 人中之龙8 ：无尽财富（豪华版）（2）": {
-  "file": "covers/rce1c81c04b55b.jpg",
+  "file": "covers/rcf61412c62d33.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:16",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+  "role": "M-pad",
+  "store": "人中之龙８　豪华版　PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:07:22",
+  "note": "店主指认红框卡 · 人中之龙８　豪华版　PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master) · 多库存沿用"
  },
  "如龙8外传 人中之龙8外传：夏威夷海盗": {
-  "file": "covers/dcea44bf1ee1_s.jpg",
+  "file": "covers/rce1a3ab2504b0.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:52:01",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcdb8b331f5829.jpg"
+  "role": "P-pad",
+  "store": "人中之龙８外传 Pirates in Hawaii PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:06:53",
+  "note": "店主指认红框卡 · 人中之龙８外传 Pirates in Hawaii PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
+  "en": "Like a Dragon 8：Pirate Yakuza in Hawaii"
  },
  "妖精的尾巴2": {
   "file": "covers/rcdbf0ff9cad9e.jpg",
@@ -2895,20 +2931,21 @@
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
  "完蛋 我被美女包围了1（PS4）": {
-  "file": "covers/1c22bfde0766_s.jpg",
+  "file": "covers/rc092e1a3250cd.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:52:02",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc023d3bc836f4.jpg"
+  "role": "P-pad",
+  "store": "完蛋！我被美女包围了！ (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:06:58",
+  "note": "店主指认红框卡 · 完蛋！我被美女包围了！ (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
+  "en": "Love is All Around 1"
  },
  "完蛋 我被美女包围了1（PS5）": {
-  "file": "covers/47895928957f_s.jpg",
+  "file": "covers/rc092e1a3250cd.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:52:03",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc0b6a81e468c8.jpg"
+  "role": "P-orig",
+  "store": "完蛋！我被美女包围了！ (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:07:22",
+  "note": "店主指认红框卡 · 完蛋！我被美女包围了！ (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait) · 多库存沿用"
  },
  "完蛋 我被美女包围了2（PS5）": {
   "file": "covers/rc9f4932157015.jpg",
@@ -5298,12 +5335,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc4b7cd36e4cbb.jpg"
  },
  "死亡细胞（完整版）": {
-  "file": "covers/rcf6c4b4420ead.jpg",
+  "file": "covers/rcc8323a11c3ac.jpg",
   "source": "manual",
-  "role": "P-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:17",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）"
+  "role": "P-pad",
+  "store": "死亡细胞 Dead Cells: Medley of Pain Bundle (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:06:55",
+  "note": "店主指认红框卡 · 死亡细胞 Dead Cells: Medley of Pain Bundle (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 DEADS［ELS、nstleonmin')(portrait)",
+  "en": "Dead Cells"
  },
  "死亡重启": {
   "file": "covers/rce9c8a0953009.jpg",
@@ -5314,12 +5352,13 @@
   "note": "店主审核 B94 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上"
  },
  "死或生6（豪华版）": {
-  "file": "covers/rcc388702ef68e.jpg",
+  "file": "covers/rc44d3861cea66.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "DEAD OR ALIVE 6 Last Round (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-19T02:49:20",
-  "note": "②店主审核: 采用C满填不留边 · ①港服(英文名) · DEAD OR ALIVE 6 Last Round (日语, 韩语, 简体中文"
+  "role": "M-pad",
+  "store": "DEAD OR ALIVE 6: Core Fighters (中日英韩文版)",
+  "time": "2026-09-20T00:06:56",
+  "note": "店主指认红框卡 · DEAD OR ALIVE 6: Core Fighters (中日英韩文版) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+  "en": "Dead or Alive 6（Deluxe Edition）"
  },
  "死或生6：最后一战": {
   "file": "covers/rc2cf695161536.jpg",
@@ -6026,12 +6065,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc25230082fa5d.jpg"
  },
  "热血西游记 天竺奇谭": {
-  "file": "covers/2f6c06d2c4aa_s.jpg",
+  "file": "covers/rc41499b5ef7ed.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:53:02",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rce915d3e2356d.jpg"
+  "role": "P-pad",
+  "store": "热血西游记 天竺奇谭 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:06:54",
+  "note": "店主指认红框卡 · 热血西游记 天竺奇谭 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
+  "en": "River City Saga：Journey to the West"
  },
  "燧石枪：黎明之围": {
   "file": "covers/rc75f7f1075595.jpg",
@@ -8047,12 +8087,13 @@
   "note": "店主审核 B151 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上"
  },
  "赛马娘Pretty Derby": {
-  "file": "covers/rc03f50730311f.jpg",
+  "file": "covers/rc699709631787.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:19",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+  "role": "M-pad",
+  "store": "赛马娘 Pretty Derby 热血喧闹大感谢祭！ (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:06:55",
+  "note": "店主指认红框卡 · 赛马娘 Pretty Derby 热血喧闹大感谢祭！ (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+  "en": "Umamusume：Pretty Derby - Party Dash"
  },
  "赶紧送走": {
   "file": "covers/rc36d7f1529517.jpg",
@@ -8504,12 +8545,13 @@
   "note": "店主审核 B102 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 CLIMB TOGETUER"
  },
  "闪电十一人 英雄们的胜利之路（豪华版）": {
-  "file": "covers/rcc35d4bcface2.jpg",
+  "file": "covers/rc6d9c351a2bf4.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:19",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+  "role": "M-pad",
+  "store": "闪电十一人 英雄们的胜利之路 豪华版 (日语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:06:56",
+  "note": "店主指认红框卡 · 闪电十一人 英雄们的胜利之路 豪华版 (日语, 简体中文, 繁体中文, 英语) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+  "en": "Inazuma Eleven：Victory Road（Deluxe Edition）"
  },
  "队长小翼1 新秀崛起（终极版）": {
   "file": "covers/45c71a86ebd5_s.jpg",
