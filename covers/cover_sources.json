@@ -1,39 +1,36 @@
 {
  "007初露锋芒（豪华版）（1）": {
-  "file": "covers/rce750149d2c90.jpg",
+  "file": "covers/rcc6572e968304.jpg",
   "source": "manual",
-  "role": "P-pad",
+  "role": "P-fill",
   "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-19T22:47:57",
-  "note": "店主指认: 港服红框卡(PORTRAIT留边版, 保留DELUXE条/无TACSIM条)",
-  "en": "007 First Light (Deluxe Edition)"
+  "time": "2026-09-20T03:12:12",
+  "note": "店主指令: 取消留边改竖版满铺(crop34)",
+  "en": "007 First Light（Deluxe Edition）"
  },
  "007初露锋芒（豪华版）（2）": {
-  "file": "covers/rce750149d2c90.jpg",
+  "file": "covers/rcc6572e968304.jpg",
   "source": "manual",
-  "role": "P-pad",
+  "role": "P-fill",
   "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-19T22:47:57",
-  "note": "店主指认: 港服红框卡(PORTRAIT留边版, 保留DELUXE条/无TACSIM条)",
-  "en": "007 First Light (Deluxe Edition)"
+  "time": "2026-09-20T03:12:12",
+  "note": "店主指令: 取消留边改竖版满铺(crop34)"
  },
  "007初露锋芒（豪华版）（3）": {
-  "file": "covers/rce750149d2c90.jpg",
+  "file": "covers/rcc6572e968304.jpg",
   "source": "manual",
-  "role": "P-pad",
+  "role": "P-fill",
   "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-19T22:47:57",
-  "note": "店主指认: 港服红框卡(PORTRAIT留边版, 保留DELUXE条/无TACSIM条)",
-  "en": "007 First Light (Deluxe Edition)"
+  "time": "2026-09-20T03:12:12",
+  "note": "店主指令: 取消留边改竖版满铺(crop34)"
  },
  "007初露锋芒（豪华版）（4）": {
-  "file": "covers/rce750149d2c90.jpg",
+  "file": "covers/rcc6572e968304.jpg",
   "source": "manual",
-  "role": "P-pad",
+  "role": "P-fill",
   "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-19T22:47:57",
-  "note": "店主指认: 港服红框卡(PORTRAIT留边版, 保留DELUXE条/无TACSIM条)",
-  "en": "007 First Light (Deluxe Edition)"
+  "time": "2026-09-20T03:12:12",
+  "note": "店主指令: 取消留边改竖版满铺(crop34)"
  },
  "1998收费员的故事": {
   "file": "covers/a49a45c11f4c_s.jpg",
@@ -582,13 +579,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc113c0f9d93ec.jpg"
  },
  "九山：狼之城": {
-  "file": "covers/rca96a01c90df3.jpg",
+  "file": "covers/rcbea116aac7a3.jpg",
   "source": "manual",
-  "role": "P-orig",
-  "store": "九山：狼之城 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-19T22:47:57",
-  "note": "店主指认: 港服红框卡(PORTRAIT含DEMO徽章), 裁切带无字→原图直上",
-  "en": "Kusan: City of Wolves"
+  "role": "M-pad",
+  "store": "九山：狼之城 (PS Store HK 正式版)",
+  "time": "2026-09-20T03:14:05",
+  "note": "店主指认红框卡 · 中文卡（九山 狼之城）· 方图留边版",
+  "en": "Kusan：City of Wolves"
  },
  "九张羊皮纸1": {
   "file": "covers/658a9997eef0_s.jpg",
@@ -1312,12 +1309,13 @@
   "note": "店主点名改留边版(方图上下补边, 零裁切), 源 2f7e72306b81_s.jpg"
  },
  "刺客信条3（重置版）": {
-  "file": "covers/rca679c41e1b85.jpg",
+  "file": "covers/rcfd33e0b68386.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "Assassin's Creed III: Remastered",
-  "time": "2026-09-19T02:49:15",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 336x364）"
+  "role": "M-pad",
+  "store": "《刺客信条 III 重制版》 (英语)",
+  "time": "2026-09-20T03:12:12",
+  "note": "店主指令: 取消满铺改留边版",
+  "en": "Assassin's Creed III Remastered"
  },
  "刺客信条：叛变（重置版）": {
   "file": "covers/rc1002c3cab192.jpg",
@@ -1594,12 +1592,13 @@
   "note": "店主审核 B110 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 WEAVER'S EDITION"
  },
  "南瓜先生2：九龙城寨": {
-  "file": "covers/16e57aa0319c_s.jpg",
+  "file": "covers/rca0d88f5e0410.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:51:41",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcf7b57f237005.jpg"
+  "role": "M-pad",
+  "store": "PS 国服商城 南瓜先生2 九龙城寨 (中文版)",
+  "time": "2026-09-20T03:12:30",
+  "note": "店主指认红框卡 · PS国服 · 方图留边版",
+  "en": "Mr. Pumpkin 2：Kowloon Walled City"
  },
  "博德之门3（1）": {
   "file": "covers/b383cee52938_s.jpg",
@@ -3523,12 +3522,13 @@
   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 ac7a9b1365cb_s.jpg"
  },
  "廖添丁：绝代凶贼之末日": {
-  "file": "covers/916e89a0703b_s.jpg",
+  "file": "covers/rcaede0745b53f.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:52:10",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc45450375ee1e.jpg"
+  "role": "P-pad",
+  "store": "廖添丁：绝代凶贼之末日 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T03:12:14",
+  "note": "店主指认红框卡 · 廖添丁：绝代凶贼之末日 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=o(portrait)",
+  "en": "The Legend of Tianding"
  },
  "异形：火力小队精英2": {
   "file": "covers/rc3b27ddc29113.jpg",
@@ -4776,12 +4776,13 @@
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）"
  },
  "暗喻幻想": {
-  "file": "covers/rc9cb788fc2751.jpg",
+  "file": "covers/rc4d50ae361c0f.jpg",
   "source": "manual",
-  "role": "P-pad",
-  "store": "",
-  "time": "2026-09-18T22:47:23",
-  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/4a632368181c_s.jpg"
+  "role": "P-fill",
+  "store": "原图 covers/4a632368181c_s.jpg",
+  "time": "2026-09-20T03:12:12",
+  "note": "店主指令: 取消留边改竖版满铺(crop34)",
+  "en": "Metaphor：ReFantazio"
  },
  "暗夜长梦（PS4）": {
   "file": "covers/rc99d177824397.jpg",
@@ -5104,6 +5105,15 @@
   "time": "2026-09-18T21:52:47",
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc346d279a2463.jpg"
  },
+ "机械战警合集（暴戾都市+未竟之事）": {
+  "file": "covers/rc2d64b4926b12.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "RoboCop: Rogue City - Collection (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T03:12:13",
+  "note": "店主指认红框卡 · RoboCop: Rogue City - Collection (日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master)",
+  "en": "RoboCop：Rogue City（Collection）"
+ },
  "机械迷城+嘎吱作响": {
   "file": "covers/rc841dca55799a.jpg",
   "source": "manual",
@@ -5111,6 +5121,15 @@
   "store": "Machinarium + Creaks 捆绑包 (日语, 韩语, 简体中文, 繁体中文, 英语)",
   "time": "2026-09-19T02:49:20",
   "note": "②店主审核: 采用C满填不留边 · ①港服(中文名) · Machinarium + Creaks 捆绑包 (日语, 韩语, 简体中文, "
+ },
+ "机甲战魔 神话之裔（豪华版）": {
+  "file": "covers/rc97f7b3f86675.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "机甲战魔 神话之裔 数字豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T03:12:13",
+  "note": "店主指认红框卡 · 机甲战魔 神话之裔 数字豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master)（保留数字豪华版横幅）",
+  "en": "Daemon X Machina：Titanic Scion（Deluxe Edition）"
  },
  "杀戮尖塔1": {
   "file": "covers/rc07d62922de80.jpg",
@@ -5177,12 +5196,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc3a5de2c652ed.jpg"
  },
  "极品飞车21：热度（豪华版）": {
-  "file": "covers/rc12da37b94196.jpg",
+  "file": "covers/rc374b7310e00f.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:17",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+  "role": "M-pad",
+  "store": "《Need for Speed™ Heat》豪华版 (中英韩文版)",
+  "time": "2026-09-20T03:12:13",
+  "note": "店主指令: 取消满铺改留边版",
+  "en": "Need For Speed 21：Heat（Deluxe Edition）"
  },
  "极速骑行5（特别版）": {
   "file": "covers/rc4dabe832e332.jpg",
@@ -5956,6 +5976,15 @@
   "time": "2026-09-18T23:12:56",
   "note": "店主审核 A29 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上"
  },
+ "漫威斗魂（终极版）": {
+  "file": "covers/rc7e304f70080c.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "《MARVEL Tōkon: Fighting Souls》终极版 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T03:12:14",
+  "note": "店主指认红框卡 · 《MARVEL Tōkon: Fighting Souls》终极版 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master)（关键文字保留）",
+  "en": "Marvel Tōkon: Fighting Souls（Ultimate Edition）"
+ },
  "漫威暗夜之子（PS4）（传奇版）": {
   "file": "covers/rc8b4d6029c775.jpg",
   "source": "manual",
@@ -6147,6 +6176,15 @@
   "store": "Spiritfarer®: Farewell Edition",
   "time": "2026-09-18T23:51:46",
   "note": "店主审核 E37 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上"
+ },
+ "灵魂石幸存者（完整版）": {
+  "file": "covers/rc26b357ad816e.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "Soulstone Survivors & Supporter Pack (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T03:12:14",
+  "note": "店主指认红框卡 · Soulstone Survivors & Supporter Pack (日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master)",
+  "en": "Soulstone Survivors & Supporter Pack"
  },
  "灵魂能力6（完整版）": {
   "file": "covers/rcaf4b3fe282da.jpg",
@@ -6750,13 +6788,32 @@
   "time": "2026-09-18T21:53:18",
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rce0d2b9b6b3dd.jpg"
  },
- "看门狗2（黄金版）": {
-  "file": "covers/rc9353fb479539.jpg",
+ "看门狗1（完整版）": {
+  "file": "covers/rc06a7469fae2d.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:18",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+  "role": "M-pad",
+  "store": "《看门狗》- 数字标准版 PlayStation®Hits (中日英韩文版)",
+  "time": "2026-09-20T03:12:13",
+  "note": "店主指认红框卡 · 《看门狗》- 数字标准版 PlayStation®Hits (中日英韩文版) · form=p(master)",
+  "en": "Watch Dogs 1（Complete Edition）"
+ },
+ "看门狗2（黄金版）": {
+  "file": "covers/rc27556aaeeed7.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "看门狗 2 - 数码黄金版 (韩语, 简体中文, 英语)",
+  "time": "2026-09-20T03:12:13",
+  "note": "店主指令: 取消满铺改留边版",
+  "en": "Watch Dogs 2（Gold Edition）"
+ },
+ "看门狗：军团（黄金版）": {
+  "file": "covers/rc74c5f5c82016.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "《看门狗：军团》- 黄金版 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T03:12:13",
+  "note": "店主指认红框卡 · 《看门狗：军团》- 黄金版 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master)（GOLD横幅保留）",
+  "en": "Watch Dogs：Legion（Gold Edition）"
  },
  "真人快打1（终极版）（1）": {
   "file": "covers/rcf4a172648f18.jpg",
@@ -7754,6 +7811,15 @@
   "time": "2026-09-18T13:40:13",
   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 b13fccd23823_s.jpg"
  },
+ "莱莎的炼金工房2～失落传说与秘密妖精～": {
+  "file": "covers/rcfe769bc4fde6.jpg",
+  "source": "manual",
+  "role": "P-pad",
+  "store": "游民星空 ku 主图",
+  "time": "2026-09-20T03:12:30",
+  "note": "店主指令: 游民星空主图 · form=o",
+  "en": "Atelier Ryza 2～Lost Legends & the Secret Fairy～"
+ },
  "莱莎的炼金工房2～失落传说与秘密妖精～DX": {
   "file": "covers/rcb13c842d5275.jpg",
   "source": "manual",
@@ -7851,20 +7917,22 @@
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
  "虐杀原形1": {
-  "file": "covers/rc5dda93fa702f.jpg",
+  "file": "covers/rcc3ddfc41ca82.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "[PROTOTYPE™]",
-  "time": "2026-09-19T02:49:20",
-  "note": "②店主审核: 采用C满填不留边 · ②美服(英文名) · [PROTOTYPE™]"
+  "role": "P-pad",
+  "store": "",
+  "time": "2026-09-20T03:12:13",
+  "note": "店主指令: 取消满铺改竖版留边版(原竖图补边)",
+  "en": "Prototype 1"
  },
  "虐杀原形2": {
-  "file": "covers/rc2cd1b3a78053.jpg",
+  "file": "covers/rc6f537422cef2.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "Prototype®2",
-  "time": "2026-09-19T02:49:20",
-  "note": "②店主审核: 采用C满填不留边 · ②美服(英文名) · Prototype®2"
+  "role": "P-pad",
+  "store": "",
+  "time": "2026-09-20T03:12:13",
+  "note": "店主指令: 取消满铺改竖版留边版(原竖图补边)",
+  "en": "Prototype 2"
  },
  "虚构世界1": {
   "file": "covers/rc9f17d7fd1234.jpg",
@@ -8801,12 +8869,13 @@
   "en": "Fatal Frame: Mask of the Lunar Eclipse"
  },
  "零：濡鸦之巫女": {
-  "file": "covers/rc2633c14fce17.jpg",
+  "file": "covers/rcf6909b18f5b4.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:19",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+  "role": "M-pad",
+  "store": "零 ～濡鸦之巫女～ PS4 & PS5 (简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T03:12:13",
+  "note": "店主指令: 取消满铺改留边版",
+  "en": "Fatal Frame: The Black Haired Shrine Maiden"
  },
  "零：红蝶（重制版）": {
   "file": "covers/rcfbb95549751d.jpg",
@@ -9160,6 +9229,15 @@
   "time": "2026-09-18T21:53:59",
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc9b8f54da39c0.jpg"
  },
+ "魔戒：咕噜（珍藏版）": {
+  "file": "covers/rcf08cdc198164.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "The Lord of the Rings: Gollum™ - Precious Edition (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T03:12:14",
+  "note": "店主指认红框卡 · The Lord of the Rings: Gollum™ - Precious Edition (日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master)（PRECIOUS EDITION横幅保留）",
+  "en": "The Lord of the Rings：Gollum（Precious Edition）"
+ },
  "魔法传送门": {
   "file": "covers/rc1a3b49f778d3.jpg",
   "source": "manual",
@@ -9447,6 +9525,24 @@
   "store": "",
   "time": "2026-09-19T02:49:19",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+ },
+ "龙珠Z：卡卡罗特（大师版）": {
+  "file": "covers/rc5bff51164474.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "七龙珠Z 卡卡洛特 MASTER EDITION PS4 & PS5 (泰语, 韩语, 简体中文, 繁体中文)",
+  "time": "2026-09-20T03:12:14",
+  "note": "店主指认红框卡 · 七龙珠Z 卡卡洛特 MASTER EDITION PS4 & PS5 (泰语, 韩语, 简体中文, 繁体中文) · form=p(master)（MASTER EDITION横幅保留）",
+  "en": "DRAGON BALL Z：KAKAROT（Legendary Edition）"
+ },
+ "龙珠：异战2 超宇宙2（特别版）": {
+  "file": "covers/rc3ad4e846c412.jpg",
+  "source": "manual",
+  "role": "M-pad",
+  "store": "七龙珠 异战2 数字特别版 (日语, 韩语, 简体中文, 繁体中文)",
+  "time": "2026-09-20T03:12:14",
+  "note": "店主指认红框卡 · 七龙珠 异战2 数字特别版 (日语, 韩语, 简体中文, 繁体中文) · form=p(master)（SPECIAL EDITION横幅保留）",
+  "en": "Dragon Ball：Xenoverse 2（Special Edition）"
  },
  "龙珠：斗士Z": {
   "file": "covers/rc4f315583398e.jpg",
