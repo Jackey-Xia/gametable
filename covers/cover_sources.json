@@ -525,12 +525,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc154c12499e62.jpg"
  },
  "主播之心": {
-  "file": "covers/f653eb2d9e96_s.jpg",
+  "file": "covers/rce5c821242f96.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:51:28",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc5db74eb35856.jpg"
+  "role": "P-orig",
+  "store": "主播之心 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:39:23",
+  "note": "店主指认红框卡 · 主播之心 (日语, 韩语, 简体中文, 繁体中文, 英语) · 竖图裁切带无文字原图直上",
+  "en": "The Heart of Influencer"
  },
  "主播女孩重度依赖": {
   "file": "covers/rc7372b8c4cfc0.jpg",
@@ -726,12 +727,13 @@
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
  },
  "仙剑奇侠传7": {
-  "file": "covers/00a89a0d5aab_s.jpg",
+  "file": "covers/rc4edefb7a3eb8.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:51:32",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc7c1f23e042c5.jpg"
+  "role": "P-orig",
+  "store": "仙剑奇侠传七 (日语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:39:22",
+  "note": "店主指认红框卡 · 仙剑奇侠传七 (日语, 简体中文, 繁体中文, 英语) · 竖图裁切带无文字原图直上",
+  "en": "PAL 7"
  },
  "仙剑客栈2": {
   "file": "covers/bd405df50bc5_s.jpg",
@@ -1395,12 +1397,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcec198cd98886.jpg"
  },
  "勇者斗恶龙 无限神速斩（豪华版）": {
-  "file": "covers/c8cddb20df62_s.jpg",
+  "file": "covers/rc37fbe4624660.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:51:40",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rce31321b4926f.jpg"
+  "role": "P-orig",
+  "store": "无限神速斩　勇者斗恶龙 达伊的大冒险　数字豪华版 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:39:22",
+  "note": "店主指认红框卡 · 无限神速斩　勇者斗恶龙 达伊的大冒险　数字豪华版 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · 竖图裁切带无文字原图直上",
+  "en": "Infinity Strash Dragon Quest The Adventure of Dai（Deluxe Edition）"
  },
  "勇者斗恶龙1": {
   "file": "covers/rccdb33bc7360f.jpg",
@@ -1996,12 +1999,13 @@
   "note": "店主审核 B140 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 U"
  },
  "嘘，美女拍摄中": {
-  "file": "covers/rc1c1eacf28ed6.jpg",
+  "file": "covers/rc5ea2357905df.jpg",
   "source": "manual",
   "role": "M-pad",
-  "store": "",
-  "time": "2026-09-18T13:39:19",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 72e48cb6de46_s.jpg"
+  "store": "嘘, 美女拍摄中 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:37:23",
+  "note": "店主指认红框卡 · 嘘, 美女拍摄中 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+  "en": "Heroines Through My Lens"
  },
  "噬神者123合集": {
   "file": "covers/rc2202326dd4eb.jpg",
@@ -3860,12 +3864,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc345141885500.jpg"
  },
  "我们的王国 蚀时果实与远古魔物": {
-  "file": "covers/d385d5770a2a_s.jpg",
+  "file": "covers/rcffb74f9ba8fa.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:52:21",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcc4eea4dbebf5.jpg"
+  "role": "P-orig",
+  "store": "我们的王国 蚀时果实与远古魔物 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:39:22",
+  "note": "店主指认红框卡 · 我们的王国 蚀时果实与远古魔物 (日语, 韩语, 简体中文, 繁体中文, 英语) · 竖图裁切带无文字原图直上",
+  "en": "Kingdom's Return：Time-Eating Fruit and the Ancient Monster"
  },
  "我的世界：地下城（终极版）": {
   "file": "covers/rcbd0e5141d9f6.jpg",
@@ -3948,28 +3953,31 @@
   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 64f1fe6c6f3f_s.jpg"
  },
  "战场女武神4": {
-  "file": "covers/143428b737c5_s.jpg",
+  "file": "covers/rc90a98abec1d6.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:52:22",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcef206fec2af1.jpg"
+  "role": "M-pad",
+  "store": "战场女武神４ (中文版)",
+  "time": "2026-09-20T00:37:24",
+  "note": "店主指认红框卡 · 战场女武神４ (中文版) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+  "en": "Valkyria Chronicles 4"
  },
  "战场的赋格曲1": {
-  "file": "covers/rc53acfcf43158.jpg",
+  "file": "covers/rc701de503e91f.jpg",
   "source": "manual",
-  "role": "P-fill",
-  "store": "战场的赋格曲3 (日语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-19T02:49:17",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x756） · 同款多库存沿用"
+  "role": "M-pad",
+  "store": "战场的赋格曲 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:37:24",
+  "note": "店主指认红框卡 · 战场的赋格曲 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+  "en": "Fuga：Melodies of Steel 1"
  },
  "战场的赋格曲2": {
-  "file": "covers/rc53acfcf43158.jpg",
+  "file": "covers/rcbcc871fca3bd.jpg",
   "source": "manual",
-  "role": "P-fill",
-  "store": "战场的赋格曲3 (日语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-19T02:49:17",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x756） · 同款多库存沿用"
+  "role": "M-pad",
+  "store": "战场的赋格曲２ (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:37:24",
+  "note": "店主指认红框卡 · 战场的赋格曲２ (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+  "en": "Fuga：Melodies of Steel 2"
  },
  "战场的赋格曲3": {
   "file": "covers/rc53acfcf43158.jpg",
@@ -3996,12 +4004,13 @@
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcd78f623714cc.jpg"
  },
  "战神4（豪华版）": {
-  "file": "covers/a4e7f54a33d7_s.jpg",
+  "file": "covers/rc60b282ae5cbc.jpg",
   "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-18T21:52:23",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcc7a037d8be50.jpg"
+  "role": "P-orig",
+  "store": "God of War 豪华下载版 (韩语, 繁体中文, 英语)",
+  "time": "2026-09-20T00:39:23",
+  "note": "店主指认红框卡 · God of War 豪华下载版 (韩语, 繁体中文, 英语) · 竖图裁切带无文字原图直上",
+  "en": "God of War 4（Deluxe Edition）"
  },
  "战神5：诸神黄昏": {
   "file": "covers/2b8d49a9ddbd_s.jpg",
@@ -7382,20 +7391,21 @@
   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 42f4d87c1d9c_s.jpg"
  },
  "致命躯壳2（虔诚版）（1）": {
-  "file": "covers/rc1e83c848bb04.jpg",
+  "file": "covers/rcf810cce9a80f.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:18",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+  "role": "P-orig",
+  "store": "《致命躯壳 II：虔诚版》 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:39:23",
+  "note": "店主指认红框卡 · 《致命躯壳 II：虔诚版》 (日语, 韩语, 简体中文, 繁体中文, 英语) · 竖图裁切带无文字原图直上",
+  "en": "Mortal Shell 2（Devout Edition）"
  },
  "致命躯壳2（虔诚版）（2）": {
-  "file": "covers/rc5b66f92c6cb4.jpg",
+  "file": "covers/rcf810cce9a80f.jpg",
   "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-19T02:49:18",
-  "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）"
+  "role": "P-orig",
+  "store": "《致命躯壳 II：虔诚版》 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T00:39:23",
+  "note": "店主指认红框卡 · 《致命躯壳 II：虔诚版》 (日语, 韩语, 简体中文, 繁体中文, 英语) · 竖图裁切带无文字原图直上"
  },
  "艾尔登法环/老头环 黑夜君临（豪华版）（1）": {
   "file": "covers/rc6694f05329c2.jpg",
