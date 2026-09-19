@@ -360,11 +360,12 @@ def guard(name, source):
     return True, ""
 
 
-def set_cover(name, rel_path, source, role="", store="", note=""):
+def set_cover(name, rel_path, source, role="", store="", note="", en=""):
     """统一写 manifest + cover_sources，并做保护校验
     rel_path: 'covers/xxx.jpg'
     source  : manual | store_zh_hk
     role    : P(竖) | M(方)
+    en      : 该商品在 WPS 表里的英文名（用于店主改名后自动沿用封面, rename_guard.py）
     返回 (ok, msg)
     """
     ok, why = guard(name, source)
@@ -382,6 +383,8 @@ def set_cover(name, rel_path, source, role="", store="", note=""):
         "time": time.strftime("%Y-%m-%dT%H:%M:%S"),
         "note": note,
     }
+    if en:
+        src[name]["en"] = en
     save_sources(src)
     return True, rel_path
 

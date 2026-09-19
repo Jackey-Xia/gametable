@@ -471,7 +471,7 @@ def run():
                 ok2, msg = CP.set_cover(name, fn, CP.SRC_STORE_ZH_HK,
                                         role_code, best["name"],
                                         "autocover 自动抓取 · 港服中文页（%s）" % finfo
-                                        + ed_note)
+                                        + ed_note, en=en)
                 if not ok2:
                     raise ValueError(msg)
                 m[name] = fn
