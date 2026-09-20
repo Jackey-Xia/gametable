@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1087,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-21T01:55:00"
+  "updated": "2026-09-20T17:54:35"
  },
  "locks": {
   "p0001": {
@@ -12352,10 +12352,10 @@
    "cn": [
     "超级忍 反攻的斩击（豪华版）"
    ],
-   "en": "",
+   "en": "Shinobi: Art of Vengeance Digital Deluxe Edition",
    "file": "covers/rc815d1282a365.jpg",
    "md5": "5b2d47bd47d6616172979a67506f564f",
-   "note": "店主审核: 满铺版(顶部对齐 crop34) · 港服数字豪华版 · 顶部 DIGITAL DELUXE EDITION 横幅完整",
+   "note": "店主审核: 改满铺(crop34 顶部对齐, 1440x1920->504x672) · 港服数字豪华版竖图 1440x2160 · 顶部 DIGITAL DELUXE EDITION 横幅完整保留(仅裁底部闪电无文字) · 前留边版 rcd0659ec9bae8",
    "platform": "PS",
    "role": "P-fill",
    "store": "超级忍 反攻的斩击 数字豪华版 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
