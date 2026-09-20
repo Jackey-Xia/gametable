@@ -1,16 +1,11 @@
 {
- "time": "2026-09-20T01:10:05",
+ "time": "2026-09-20T01:12:55",
  "added": [],
- "pending": [
-  {
-   "name": "小小梦魇1（完整版/强化版）",
-   "reason": "失败6次, 需人工核对"
-  }
- ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1187,
-  "covered": 1197,
-  "pending_open": 1
+  "covered": 1215,
+  "pending_open": 0
  }
 }
