@@ -49,12 +49,12 @@
   "time": "2026-09-19T02:49:15"
  },
  "8号出口+8号站台（PS5同捆版）": {
-  "file": "covers/rc61e7434ba057.jpg",
-  "note": "店主指令: 改回留边版(沿用原留边图, 黄黑几何图补边接缝无断层)",
+  "file": "covers/rc8cf3041032f2.jpg",
+  "note": "店主指令: AI延展-黄上黑下斜线延伸填满(pad34|v2)",
   "role": "M-pad",
   "source": "manual",
   "store": "",
-  "time": "2026-09-21T00:06:48"
+  "time": "2026-09-21T01:30:00"
  },
  "8道门：雅兰的来世冒险": {
   "file": "covers/rca041a980b19b.jpg",
@@ -2991,22 +2991,22 @@
   "time": "2026-09-20T00:06:53"
  },
  "如龙7 人中之龙7：光与暗的去向（国际版）（1）": {
+  "en": "Yakuza 7（International Edition）",
   "file": "covers/rced9eeb7fdb97.jpg",
-  "source": "manual",
-  "role": "P-pad",
-  "store": "人中之龙7　光与暗的去向　国际版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-20T16:48:33",
   "note": "★人工锁死沿用(锁p0317, 中文名一致)",
-  "en": "Yakuza 7（International Edition）"
+  "role": "P-pad",
+  "source": "manual",
+  "store": "人中之龙7　光与暗的去向　国际版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T16:48:33"
  },
  "如龙7 人中之龙7：光与暗的去向（国际版）（传奇英雄版）（2）": {
+  "en": "Yakuza 7（International Edition）（Legendary Hero Edition）",
   "file": "covers/rced9eeb7fdb97.jpg",
-  "source": "manual",
-  "role": "P-pad",
-  "store": "人中之龙7　光与暗的去向　国际版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-20T16:48:33",
   "note": "店主指认红框卡 · 人中之龙7　光与暗的去向　国际版 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 国际版')(portrait) · 改名沿用(旧键: 如龙7 人中之龙7：光与暗的去向（国际版）)",
-  "en": "Yakuza 7（International Edition）（Legendary Hero Edition）"
+  "role": "P-pad",
+  "source": "manual",
+  "store": "人中之龙7　光与暗的去向　国际版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-20T16:48:33"
  },
  "如龙7外传 人中之龙7外传：英雄无名": {
   "file": "covers/rcfef647280c03.jpg",
