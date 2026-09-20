@@ -3001,12 +3001,12 @@
  },
  "如龙7 人中之龙7：光与暗的去向（国际版）（传奇英雄版）（2）": {
   "en": "Yakuza 7（International Edition）（Legendary Hero Edition）",
-  "file": "covers/rc7b61dc9591a2.jpg",
-  "note": "店主指认美服红框卡 · Yakuza: Like a Dragon Legendary Hero Edition · 竖图 1440x2160 上下各裁 5.6%, 裁切带内有文字 LEGENDARY HERO EDITION -> P-pad 留边 · 拆锁自p0317(仅传奇英雄版键换新图, 国际版/(1)沿用旧图)",
-  "role": "P-pad",
+  "file": "covers/rc371898da9eaa.jpg",
+  "note": "店主审核: 改为满铺(crop34 顶部对齐, 1440x1920->504x672) · 美服 Legendary Hero Edition 竖图 · 顶部 LEGENDARY HERO EDITION 横幅完整保留(仅裁底部) · 前留边版 rc7b61dc9591a2",
+  "role": "P-fill",
   "source": "manual",
   "store": "Yakuza: Like a Dragon Legendary Hero Edition PS4 & PS5",
-  "time": "2026-09-21T01:45:00"
+  "time": "2026-09-21T01:42:00"
  },
  "如龙7外传 人中之龙7外传：英雄无名": {
   "file": "covers/rcfef647280c03.jpg",
