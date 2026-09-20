@@ -4108,13 +4108,22 @@
   "time": "2026-09-20T00:39:22"
  },
  "我的世界：地下城1（终极版）": {
+  "en": "Minecraft Dungeons 1（Ultimate Edition）",
   "file": "covers/rcbd0e5141d9f6.jpg",
-  "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-20T06:59:26",
   "note": "★人工锁死沿用(锁p0444, 近似匹配 0.96 《我的世界：地下城（终极版）》)",
-  "en": "Minecraft Dungeons 1（Ultimate Edition）"
+  "role": "M-fill",
+  "source": "manual",
+  "store": "",
+  "time": "2026-09-20T06:59:26"
+ },
+ "我的世界：地下城2（豪华版）": {
+  "en": "Minecraft Dungeons 2（Deluxe Edition）",
+  "file": "covers/rc2e8f671c0092.jpg",
+  "note": "店主指定: 港服商城 Minecraft Dungeons II Deluxe Edition 卡, 保留英文 DELUXE EDITION 标识, 方图留边版 · 方图 1024x1024, 留边版(前端会左右各裁 63px)",
+  "role": "M-pad",
+  "source": "manual",
+  "store": "PS Store HK (zh-Hans)",
+  "time": "2026-09-20T23:28:47"
  },
  "我的世界：地下城（终极版）": {
   "file": "covers/rcbd0e5141d9f6.jpg",
