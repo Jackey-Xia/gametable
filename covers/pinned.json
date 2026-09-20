@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1087,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-21T01:42:00"
+  "updated": "2026-09-20T17:42:36"
  },
  "locks": {
   "p0001": {
@@ -14270,7 +14270,7 @@
    "en": "Yakuza 7（International Edition）（Legendary Hero Edition）",
    "file": "covers/rc371898da9eaa.jpg",
    "md5": "e9b2cc3cdf42bc1db94d0fcccfc75dd7",
-   "note": "店主审核: 满铺版(顶部对齐 crop34) · 美服 Legendary Hero Edition · 顶部英文横幅完整",
+   "note": "店主审核: 改为满铺(crop34 顶部对齐, 1440x1920->504x672) · 美服 Legendary Hero Edition 竖图 · 顶部 LEGENDARY HERO EDITION 横幅完整保留(仅裁底部) · 前留边版 rc7b61dc9591a2",
    "platform": "PS",
    "role": "P-fill",
    "store": "Yakuza: Like a Dragon Legendary Hero Edition PS4 & PS5",
