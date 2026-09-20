@@ -2200,12 +2200,12 @@
  },
  "四海兄弟：故乡（决定版）": {
   "en": "Mafia：The Old Country",
-  "file": "covers/rcb70b20eedab4.jpg",
-  "note": "换回商城原始竖图(此前为放大裁切版)",
-  "role": "P-orig",
+  "file": "covers/rc13c348b65f4c.jpg",
+  "note": "店主截图样式: 完整海报+留边(P-pad)",
+  "role": "P-pad",
   "source": "manual",
   "store": "四海兄弟：故乡 (PS Store HK portrait)",
-  "time": "2026-09-20T10:08:53"
+  "time": "2026-09-20T10:14:27"
  },
  "因果动物园": {
   "file": "covers/rc932224b15cb0.jpg",
@@ -2586,12 +2586,12 @@
  },
  "天命重启：心跳的抉择": {
   "en": "Refate：Echoes of Desire",
-  "file": "covers/rc85a3994d322e.jpg",
-  "note": "换回商城原始竖图(此前为放大裁切版) · 画面与店主截图一致",
-  "role": "P-orig",
+  "file": "covers/rc06f7287d706e.jpg",
+  "note": "店主截图样式: 完整海报+留边(P-pad)",
+  "role": "P-pad",
   "source": "manual",
   "store": "天命重启：心跳的抉择 (PS Store HK portrait)",
-  "time": "2026-09-20T10:08:53"
+  "time": "2026-09-20T10:14:27"
  },
  "天国：拯救1（皇家版）": {
   "file": "covers/rc7ea156d1ed1f.jpg",
