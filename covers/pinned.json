@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1086,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-20T15:41:42"
+  "updated": "2026-09-20T23:55:54"
  },
  "locks": {
   "p0001": {
@@ -7127,9 +7127,9 @@
     "暗黑地牢2（完整版）"
    ],
    "en": "",
-   "file": "covers/rc0e1ed067d940.jpg",
-   "md5": "66b223f86bfdf18d56d9ae768232b7eb",
-   "note": "方图改留边版(零裁切), 源 343b9f5e4096_s.jpg",
+   "file": "covers/rca0c8a96b89bb.jpg",
+   "md5": "6555291aeb16c626c7325b015bb87e15",
+   "note": "店主指令: 留边接缝生硬改自然 · 镜像延伸+轻模糊+18px羽化(原拉伸虚化亮带已弃) · 源 343b9f5e4096_s.jpg",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
@@ -14258,7 +14258,7 @@
    "md5": "8a774e8207a6e08b04a3f316dfff3bfe",
    "note": "店主指令: 改满铺(crop34) · 港服 Minecraft Dungeons II Deluxe Edition 卡, 含英文 DELUXE EDITION 标识 · 方图 1024x1024 居中裁 768x1024",
    "platform": "PS",
-   "role": "M-fill",
+   "role": "M-pad",
    "store": "PS Store HK (zh-Hans)",
    "time": "2026-09-20T23:28:47"
   }
