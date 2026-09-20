@@ -169,6 +169,34 @@ def main():
             pass
     print("保留已有封面(不被覆盖): %d | 本轮新增填补: %d" % (protected + filled, len(byname) - protected - filled))
 
+    # ★第二道铁律护栏(2026-09-21): covers/pinned.json 锁定的图片拥有最高优先级
+    #   - 即使某个已锁定的图片文件被误删 / manifest 条目缺失, 本脚本也绝不用 PC 兜底图顶替
+    #   - 命中锁且锁文件仍在磁盘 -> 按锁自愈还原; 命中锁但文件缺失 -> 维持现状(宁缺勿错)
+    ppath = os.path.join(COVERS, "pinned.json")
+    pin_heal = 0
+    pin_hold = 0
+    if os.path.exists(ppath):
+        try:
+            pdoc = json.load(open(ppath, encoding="utf-8"))
+            for _lid, _lock in (pdoc.get("locks") or {}).items():
+                rel = (_lock or {}).get("file") or ""
+                names = [n for n in ((_lock or {}).get("cn") or []) if n]
+                if (_lock or {}).get("en"):
+                    names.append(_lock["en"])
+                if not rel or not names:
+                    continue
+                exists = os.path.exists(os.path.join(BASE, rel))
+                for nm in names:
+                    if nm in byname:
+                        if exists and byname[nm] != rel:
+                            byname[nm] = rel
+                            pin_heal += 1
+                        elif not exists:
+                            pin_hold += 1
+        except Exception:
+            pass
+    print("锁定图片保护(不让位给 PC 兜底图): 自愈 %d | 缺失保持原状 %d" % (pin_heal, pin_hold))
+
     json.dump(byname, open(os.path.join(COVERS, "manifest.json"), "w", encoding="utf-8"),
               ensure_ascii=False, indent=2, sort_keys=True)
     json.dump({"ok": ok, "cached": cached, "fail": fail, "failed_files": failed_files,
