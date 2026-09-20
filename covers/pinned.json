@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1087,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-20T17:35:54"
+  "updated": "2026-09-21T01:42:00"
  },
  "locks": {
   "p0001": {
@@ -14268,13 +14268,13 @@
     "如龙7 人中之龙7：光与暗的去向（国际版）（传奇英雄版）（2）"
    ],
    "en": "Yakuza 7（International Edition）（Legendary Hero Edition）",
-   "file": "covers/rc7b61dc9591a2.jpg",
-   "md5": "b0c510599afad42cdc8e6a870cea329c",
-   "note": "店主指认美服红框卡 · Yakuza: Like a Dragon Legendary Hero Edition · 竖图 1440x2160 上下各裁 5.6%, 裁切带内有文字 LEGENDARY HERO EDITION -> P-pad 留边 · 拆锁自p0317(仅传奇英雄版键换新图, 国际版/(1)沿用旧图)",
+   "file": "covers/rc371898da9eaa.jpg",
+   "md5": "e9b2cc3cdf42bc1db94d0fcccfc75dd7",
+   "note": "店主审核: 满铺版(顶部对齐 crop34) · 美服 Legendary Hero Edition · 顶部英文横幅完整",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "Yakuza: Like a Dragon Legendary Hero Edition PS4 & PS5",
-   "time": "2026-09-21T01:45:00"
+   "time": "2026-09-21T01:42:00"
   }
  }
 }
