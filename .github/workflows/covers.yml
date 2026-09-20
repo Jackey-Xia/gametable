@@ -1,13 +1,12 @@
 name: auto-covers
 
 # 方案A封面维护: 匹配缺失封面的游戏并入库
-# - 每周日 20:00 北京时间自动运行
+# - 定时触发已关闭，如需执行请在 Actions 页面手动 Run workflow
 # - 可在 Actions 页面手动触发 (Run workflow)
 
+# 定时任务已于 2026-09-21 关闭（仅保留手动触发）
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 12 * * 0"
 
 permissions:
   contents: write
