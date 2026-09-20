@@ -1,17 +1,11 @@
 {
- "time": "2026-09-20T02:32:51",
+ "time": "2026-09-20T02:57:12",
  "added": [],
- "pending": [
-  {
-   "name": "女神异闻录3：Reload+后日谈DLC/P3R",
-   "reason": "匹配有歧义或无命中",
-   "top": ""
-  }
- ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1187,
-  "covered": 1223,
-  "pending_open": 1
+  "covered": 1224,
+  "pending_open": 0
  }
 }
