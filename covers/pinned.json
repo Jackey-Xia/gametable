@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1084,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-20T02:32:50"
+  "updated": "2026-09-20T10:42:07"
  },
  "locks": {
   "p0001": {
@@ -649,12 +649,12 @@
     "丧尸围城：豪华复刻版（豪华版）"
    ],
    "en": "Dead Rising Deluxe Remaster（Deluxe Edition）",
-   "file": "covers/rca5e1b521e979.jpg",
-   "md5": "52e0fa49ab64f961040135c41f7b897b",
-   "note": "恢复满铺+窗口左移[0,768] DRDR首字母D完整",
+   "file": "covers/rc762437a7af21.jpg",
+   "md5": "2e098b24da2e3e552e362c7fce8c3cdc",
+   "note": "DIGITAL DELUXE完整居中+DRDR首字母D完整",
    "platform": "PS",
    "role": "M-fill",
-   "store": "Dead Rising Deluxe Remaster Digital Deluxe",
+   "store": "Dead Rising Deluxe Remaster Digital Deluxe 官方3840x2160横幅",
    "time": "2026-09-20T10:23:40"
   },
   "p0050": {
@@ -961,13 +961,13 @@
    "cn": [
     "仁王3（1）"
    ],
-   "en": "",
-   "file": "covers/rceb38d2d8f465.jpg",
-   "md5": "28104ca3fe9c8ed3b6834997aee93d48",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",
+   "en": "Nioh 3",
+   "file": "covers/rc66e75b4ffe87.jpg",
+   "md5": "04a5314b336615c9a0feaa97ee897701",
+   "note": "排版同豪华版: 窗口[230,998] NIOH完整",
    "platform": "PS",
    "role": "M-fill",
-   "store": "",
+   "store": "仁王3 (PS Store HK)",
    "time": "2026-09-20T10:23:40"
   },
   "p0074": {
@@ -3043,12 +3043,12 @@
     "四海兄弟：故乡（决定版）"
    ],
    "en": "MaFia：The Old Country",
-   "file": "covers/rc1ccd31433d98.jpg",
-   "md5": "44fd845d03fe34ddcbd886b85f8b6915",
-   "note": "店主截图样式: 白框卡片 海报完整内缩",
+   "file": "covers/rccecec38cd389.jpg",
+   "md5": "705fbbfc918091bae75d81d9d93fe5fb",
+   "note": "店主截图=方图卡 白框版",
    "platform": "PS",
-   "role": "P-pad",
-   "store": "PS Store HK portrait 白框卡片版",
+   "role": "M-pad",
+   "store": "四海兄弟：故乡 最终版 (PS Store HK master)",
    "time": "2026-09-20T10:23:40"
   },
   "p0232": {
@@ -3655,12 +3655,12 @@
     "天命重启：心跳的抉择"
    ],
    "en": "Refate：Echoes of Desire",
-   "file": "covers/rc4e0bba43a4e1.jpg",
-   "md5": "4fa34e7ad4741e90ba0ab9828c07f5b8",
-   "note": "店主截图样式: 白框卡片 海报完整内缩",
+   "file": "covers/rcb259e39b6a30.jpg",
+   "md5": "1672db3527b41d3f3eb0b72bac5c3332",
+   "note": "店主截图=FATE方图卡 白框版",
    "platform": "PS",
-   "role": "P-pad",
-   "store": "PS Store HK portrait 白框卡片版",
+   "role": "M-pad",
+   "store": "天命重启：心跳的抉择 (PS Store HK master)",
    "time": "2026-09-20T10:23:41"
   },
   "p0279": {
@@ -3926,7 +3926,8 @@
   },
   "p0299": {
    "cn": [
-    "女神异闻录3：Reload+后日谈DLC（完整版）/P3R"
+    "女神异闻录3：Reload+后日谈DLC（完整版）/P3R",
+    "女神异闻录3：Reload+后日谈DLC/P3R"
    ],
    "en": "Persona 5 Reload+Episode Aegis（Complete Edition）",
    "file": "covers/rc3e981042ffd7.jpg",
@@ -14226,12 +14227,12 @@
     "天命重启：信条的抉择"
    ],
    "en": "Refate：Echoes of Desire",
-   "file": "covers/rc4e0bba43a4e1.jpg",
-   "md5": "4fa34e7ad4741e90ba0ab9828c07f5b8",
-   "note": "★改名预挂别名(店主 WPS 新名), 与旧名共用同一锁死图",
+   "file": "covers/rcb259e39b6a30.jpg",
+   "md5": "1672db3527b41d3f3eb0b72bac5c3332",
+   "note": "店主截图=FATE方图卡 白框版(别名键同图)",
    "platform": "PS",
-   "role": "P-pad",
-   "store": "PS Store HK portrait 白框卡片版",
+   "role": "M-pad",
+   "store": "天命重启：心跳的抉择 (PS Store HK master)",
    "time": "2026-09-20T10:31:24"
   }
  }
