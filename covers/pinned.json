@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1086,
+  "count": 1087,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-20T17:30:57"
+  "updated": "2026-09-21T01:45:00"
  },
  "locks": {
   "p0001": {
@@ -4167,13 +4167,12 @@
   "p0317": {
    "cn": [
     "如龙7 人中之龙7：光与暗的去向（国际版）",
-    "如龙7 人中之龙7：光与暗的去向（国际版）（1）",
-    "如龙7 人中之龙7：光与暗的去向（国际版）（传奇英雄版）（2）"
+    "如龙7 人中之龙7：光与暗的去向（国际版）（1）"
    ],
-   "en": "Yakuza 7（International Edition）（Legendary Hero Edition）",
+   "en": "Yakuza 7（International Edition）",
    "file": "covers/rced9eeb7fdb97.jpg",
    "md5": "34f6798fb10d50eee87c8df3391b5cc1",
-   "note": "店主指认红框卡 · 人中之龙7　光与暗的去向　国际版 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 国际版')(portrait) · 改名沿用(旧键: 如龙7 人中之龙7：光与暗的去向（国际版）)",
+   "note": "店主指认红框卡 · 人中之龙7　光与暗的去向　国际版 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 国际版')(portrait) · 改名沿用(旧键: 如龙7 人中之龙7：光与暗的去向（国际版）) · 拆锁: 传奇英雄版键移至p1087",
    "platform": "PS",
    "role": "P-pad",
    "store": "人中之龙7　光与暗的去向　国际版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
@@ -14263,6 +14262,19 @@
    "role": "M-fill",
    "store": "PS Store HK (zh-Hans)",
    "time": "2026-09-20T23:28:47"
+  },
+  "p1087": {
+   "cn": [
+    "如龙7 人中之龙7：光与暗的去向（国际版）（传奇英雄版）（2）"
+   ],
+   "en": "Yakuza 7（International Edition）（Legendary Hero Edition）",
+   "file": "covers/rc7b61dc9591a2.jpg",
+   "md5": "b0c510599afad42cdc8e6a870cea329c",
+   "note": "店主指认美服红框卡 · Legendary Hero Edition 顶部英文标识 · P-pad 留边(裁切带内有文字)",
+   "platform": "PS",
+   "role": "P-pad",
+   "store": "Yakuza: Like a Dragon Legendary Hero Edition PS4 & PS5",
+   "time": "2026-09-21T01:45:00"
   }
  }
 }
