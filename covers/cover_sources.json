@@ -4107,6 +4107,15 @@
   "store": "我们的王国 蚀时果实与远古魔物 (日语, 韩语, 简体中文, 繁体中文, 英语)",
   "time": "2026-09-20T00:39:22"
  },
+ "我的世界：地下城1（终极版）": {
+  "file": "covers/rcbd0e5141d9f6.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "",
+  "time": "2026-09-20T06:59:26",
+  "note": "★人工锁死沿用(锁p0444, 近似匹配 0.96 《我的世界：地下城（终极版）》)",
+  "en": "Minecraft Dungeons 1（Ultimate Edition）"
+ },
  "我的世界：地下城（终极版）": {
   "file": "covers/rcbd0e5141d9f6.jpg",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",
