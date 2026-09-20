@@ -147,23 +147,30 @@ def main():
             if not os.path.exists(p):
                 del byname[name]
 
-    # 合并旧 manifest: 本轮匹配不到的条目, 只要旧图文件还在就保留(防止误清下架已有封面)
+    # 合并旧 manifest ★铁律(2026-09-20): 已有封面一律不被本脚本覆盖
+    #   - 店主明确要求「人工确认过的图片与商品锁死」。本脚本图源是 PCGamingWiki 盒图 / Steam 海报,
+    #     属兜底图, 只能补「完全没有封面」的商品, 绝不能替换已有的 PS 商城封面 / 人工定版图。
+    #   - 旧条目只要图片文件还在磁盘上, 就无条件保留(优先级高于本轮抓取结果)。
     mpath = os.path.join(COVERS, "manifest.json")
+    protected = 0
+    filled = 0
     if os.path.exists(mpath):
         try:
             old = json.load(open(mpath, encoding="utf-8"))
-            kept = 0
             for name, rel in old.items():
-                if name not in byname and os.path.exists(os.path.join(BASE, rel)):
-                    byname[name] = rel
-                    kept += 1
-            if kept:
-                print("保留旧 manifest 条目:", kept)
+                if not rel or not os.path.exists(os.path.join(BASE, rel)):
+                    continue
+                if name in byname and byname[name] != rel:
+                    protected += 1       # 本轮本会覆盖 -> 保护旧封面
+                else:
+                    filled += 1
+                byname[name] = rel
         except Exception:
             pass
+    print("保留已有封面(不被覆盖): %d | 本轮新增填补: %d" % (protected + filled, len(byname) - protected - filled))
 
     json.dump(byname, open(os.path.join(COVERS, "manifest.json"), "w", encoding="utf-8"),
-              ensure_ascii=False, indent=0, sort_keys=True)
+              ensure_ascii=False, indent=2, sort_keys=True)
     json.dump({"ok": ok, "cached": cached, "fail": fail, "failed_files": failed_files,
                "no_page": json.load(open(os.path.join(BASE, "match_out/no_page.json"), encoding="utf-8"))},
               open(os.path.join(BASE, "match_out/fetch_report.json"), "w", encoding="utf-8"),
