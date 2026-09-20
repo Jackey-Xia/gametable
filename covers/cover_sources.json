@@ -2210,12 +2210,12 @@
  },
  "四海兄弟：故乡（决定版）": {
   "en": "MaFia：The Old Country",
-  "file": "covers/rc7ad927a430c0.jpg",
-  "note": "★OCR+NCC比对(NCC=0.957)确定: 竖图portrait满铺, 非方图白框版",
-  "role": "P-fill",
+  "file": "covers/rc653dab651b78.jpg",
+  "note": "★店主定版: 商城卡片样式 方图完整(宽420)+四周白边, 非满铺",
+  "role": "M-pad",
   "source": "manual",
-  "store": "四海兄弟：故乡 (PS Store HK portrait)",
-  "time": "2026-09-20T11:45:32"
+  "store": "PS Store HK master 方图",
+  "time": "2026-09-20T12:41:20"
  },
  "因果动物园": {
   "file": "covers/rc932224b15cb0.jpg",
@@ -2596,21 +2596,21 @@
  },
  "天命重启：信条的抉择": {
   "en": "Refate：Echoes of Desire",
-  "file": "covers/rc90b90f562f1a.jpg",
-  "note": "★OCR+NCC比对(NCC=0.807)确定: 竖图portrait满铺, 非方图白框版",
-  "role": "P-fill",
+  "file": "covers/rc47eb0e209588.jpg",
+  "note": "★店主定版: 商城卡片样式 FATE方图完整(宽420)+四周白边, 非持刀竖图",
+  "role": "M-pad",
   "source": "manual",
-  "store": "天命重启 (PS Store HK portrait)",
-  "time": "2026-09-20T11:45:32"
+  "store": "PS Store HK master 方图",
+  "time": "2026-09-20T12:41:20"
  },
  "天命重启：心跳的抉择": {
   "en": "Refate：Echoes of Desire",
-  "file": "covers/rc90b90f562f1a.jpg",
-  "note": "★OCR+NCC比对(NCC=0.807)确定: 竖图portrait满铺, 非方图白框版",
-  "role": "P-fill",
+  "file": "covers/rc47eb0e209588.jpg",
+  "note": "★店主定版: 商城卡片样式 FATE方图完整(宽420)+四周白边, 非持刀竖图",
+  "role": "M-pad",
   "source": "manual",
-  "store": "天命重启 (PS Store HK portrait)",
-  "time": "2026-09-20T11:45:32"
+  "store": "PS Store HK master 方图",
+  "time": "2026-09-20T12:41:20"
  },
  "天国：拯救1（皇家版）": {
   "file": "covers/rc7ea156d1ed1f.jpg",
