@@ -1,16 +1,11 @@
 {
- "time": "2026-09-20T15:12:05",
+ "time": "2026-09-20T15:32:30",
  "added": [],
- "pending": [
-  {
-   "name": "我的世界：地下城2（豪华版）",
-   "reason": "失败6次, 需人工核对"
-  }
- ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1188,
-  "covered": 1226,
-  "pending_open": 1
+  "covered": 1227,
+  "pending_open": 0
  }
 }
