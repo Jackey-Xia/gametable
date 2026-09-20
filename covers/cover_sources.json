@@ -1504,12 +1504,12 @@
  },
  "勇敢的心：合辑": {
   "en": "Valiant Hearts：The Great War",
-  "file": "covers/rc6f5f323e4d16.jpg",
-  "note": "店主指认红框卡 · 方图源留边",
-  "role": "M-pad",
+  "file": "covers/rc1c5f6293ae05.jpg",
+  "note": "取消留边改满铺(crop34)",
+  "role": "M-fill",
   "source": "manual",
-  "store": "勇敢的心：典藏版 Valiant Hearts: The Collection (PS Store HK)",
-  "time": "2026-09-20T04:25:30"
+  "store": "Valiant Hearts: The Collection (PS Store HK)",
+  "time": "2026-09-20T09:38:46"
  },
  "勇者斗恶龙 建造者1 创世小玩家 阿雷夫加尔德复仇记": {
   "file": "covers/rcd3d24c101181.jpg",
@@ -6995,21 +6995,22 @@
   "time": "2026-09-20T04:25:32"
  },
  "真人快打11（终极版）（1）": {
-  "en": "Mortal Kombat 11（Ultimate Edition）",
-  "file": "covers/rc81cf23a87742.jpg",
-  "note": "店主指认红框卡 · 方图源留边",
-  "role": "M-pad",
+  "en": "Mortal Kombat 11 Ultimate",
+  "file": "covers/rc6832b5145c79.jpg",
+  "note": "取消留边改竖版原图直上",
+  "role": "P-orig",
   "source": "manual",
-  "store": "真人快打11终极版 PS4 & PS5 (PS Store HK)",
-  "time": "2026-09-20T04:25:31"
+  "store": "Mortal Kombat 11 Ultimate (PS Store HK portrait)",
+  "time": "2026-09-20T09:38:46"
  },
  "真人快打11（终极版）（2）": {
-  "file": "covers/rc81cf23a87742.jpg",
-  "note": "店主指认红框卡 · 方图源留边",
-  "role": "M-pad",
+  "en": "Mortal Kombat 11 Ultimate",
+  "file": "covers/rc6832b5145c79.jpg",
+  "note": "取消留边改竖版原图直上",
+  "role": "P-orig",
   "source": "manual",
-  "store": "真人快打11终极版 PS4 & PS5 (PS Store HK)",
-  "time": "2026-09-20T04:25:31"
+  "store": "Mortal Kombat 11 Ultimate (PS Store HK portrait)",
+  "time": "2026-09-20T09:38:46"
  },
  "真人快打1（终极版）（1）": {
   "file": "covers/rcf4a172648f18.jpg",
@@ -8857,12 +8858,12 @@
  },
  "遗迹2（终极版）": {
   "en": "Remnant II",
-  "file": "covers/rc81b97023ff48.jpg",
-  "note": "ULTIMATE EDITION 缎带居中v2 去红角标",
-  "role": "M-pad",
+  "file": "covers/rcd454cfad51e5.jpg",
+  "note": "取消留边改满铺(crop34)",
+  "role": "M-fill",
   "source": "manual",
   "store": "PS港服+官方缎带合成",
-  "time": "2026-09-20T09:30:49"
+  "time": "2026-09-20T09:38:46"
  },
  "遗迹：第一守护者": {
   "file": "covers/rcb10f7ecb1414.jpg",
