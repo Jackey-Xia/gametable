@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1086,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-20T16:03:01"
+  "updated": "2026-09-21T00:06:48"
  },
  "locks": {
   "p0001": {
@@ -52,11 +52,11 @@
     "8号出口+8号站台（PS5同捆版）"
    ],
    "en": "",
-   "file": "covers/rc5d2150242b6f.jpg",
-   "md5": "39a9fb3d60aa38a197df7acd42a8e5e7",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",
+   "file": "covers/rc61e7434ba057.jpg",
+   "md5": "4bf1d1f1af410b91e5a210a4b168bfc8",
+   "note": "店主指令: 改回留边版(沿用原留边图, 黄黑几何图补边接缝无断层)",
    "platform": "PS",
-   "role": "M-fill",
+   "role": "M-pad",
    "store": "",
    "time": "2026-09-20T10:23:40"
   },
@@ -14258,7 +14258,7 @@
    "md5": "8a774e8207a6e08b04a3f316dfff3bfe",
    "note": "店主指令: 改满铺(crop34) · 港服 Minecraft Dungeons II Deluxe Edition 卡, 含英文 DELUXE EDITION 标识 · 方图 1024x1024 居中裁 768x1024",
    "platform": "PS",
-   "role": "M-fill",
+   "role": "M-pad",
    "store": "PS Store HK (zh-Hans)",
    "time": "2026-09-20T23:28:47"
   }
