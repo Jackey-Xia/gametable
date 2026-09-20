@@ -5861,12 +5861,13 @@
   "time": "2026-09-18T23:12:48"
  },
  "波斯王子：失落的王冠（完全版）": {
-  "file": "covers/rc5054433165ca.jpg",
-  "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rce91b10b2d60d.jpg",
-  "role": "M-pad",
+  "en": "Prince of Persia：The Lost Crown（Complete Edition）",
+  "file": "covers/rc18ad82c4720e.jpg",
+  "note": "★店主要求: 改满铺crop34(居中窗口[128,896]), 顶部COMPLETE EDITION完整居中(文字x207-817在窗口内余79px)",
+  "role": "M-fill",
   "source": "manual",
-  "store": "JP0001-PPSA10529_00-MEMORYCOMPLETEDI (zh-Hans-HK)",
-  "time": "2026-09-17T22:54:21"
+  "store": "《波斯王子™：失落的王冠》- 完全版 (PS Store HK master)",
+  "time": "2026-09-20T13:57:46"
  },
  "泰坦陨落2/泰坦降临2（终极版）": {
   "file": "covers/rc18055713a5a6.jpg",
