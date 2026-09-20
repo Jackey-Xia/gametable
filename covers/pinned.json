@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1087,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-20T17:42:36"
+  "updated": "2026-09-21T01:55:00"
  },
  "locks": {
   "p0001": {
@@ -12353,13 +12353,13 @@
     "超级忍 反攻的斩击（豪华版）"
    ],
    "en": "",
-   "file": "covers/rcd0659ec9bae8.jpg",
-   "md5": "2d2bc7257b979980ea47e991abe8cabc",
-   "note": "店主审核 A15 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 DIGITAL DELUXE EDITION",
+   "file": "covers/rc815d1282a365.jpg",
+   "md5": "5b2d47bd47d6616172979a67506f564f",
+   "note": "店主审核: 满铺版(顶部对齐 crop34) · 港服数字豪华版 · 顶部 DIGITAL DELUXE EDITION 横幅完整",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "超级忍 反攻的斩击 数字豪华版 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-09-21T01:55:00"
   },
   "p0942": {
    "cn": [
