@@ -1048,6 +1048,15 @@
   "store": "",
   "time": "2026-09-20T02:19:44"
  },
+ "使命召唤6：现代战争2/COD6（重制版）": {
+  "en": "Call Of Duty 6/COD 6/Call of Duty6: Modern Warfare 2 Campaign Remastered",
+  "file": "covers/rc3bedf774083e.jpg",
+  "note": "★人工锁死沿用(锁p0100, 中文名一致)",
+  "role": "M-fill",
+  "source": "manual",
+  "store": "Gamersky ku · Call of Duty: Modern Warfare 2 Campaign Remastered",
+  "time": "2026-09-20T10:28:32"
+ },
  "使命召唤6：现代战争2（重制版）": {
   "en": "COD 6/Call of Duty6: Modern Warfare 2 Campaign Remastered",
   "file": "covers/rc3bedf774083e.jpg",
@@ -2199,13 +2208,13 @@
   "time": "2026-09-20T00:06:57"
  },
  "四海兄弟：故乡（决定版）": {
-  "en": "Mafia：The Old Country",
-  "file": "covers/rc13c348b65f4c.jpg",
-  "note": "店主截图样式: 完整海报+留边(P-pad)",
+  "en": "MaFia：The Old Country",
+  "file": "covers/rc1ccd31433d98.jpg",
+  "note": "店主截图样式: 白框卡片 海报完整内缩",
   "role": "P-pad",
   "source": "manual",
-  "store": "四海兄弟：故乡 (PS Store HK portrait)",
-  "time": "2026-09-20T10:14:27"
+  "store": "PS Store HK portrait 白框卡片版",
+  "time": "2026-09-20T10:31:10"
  },
  "因果动物园": {
   "file": "covers/rc932224b15cb0.jpg",
@@ -2584,14 +2593,23 @@
   "store": "天命奇御二 (简体中文, 繁体中文, 英语)",
   "time": "2026-09-19T00:17:40"
  },
- "天命重启：心跳的抉择": {
+ "天命重启：信条的抉择": {
   "en": "Refate：Echoes of Desire",
-  "file": "covers/rc06f7287d706e.jpg",
-  "note": "店主截图样式: 完整海报+留边(P-pad)",
+  "file": "covers/rc4e0bba43a4e1.jpg",
+  "note": "★改名预挂别名(店主 WPS 新名), 与旧名共用同一锁死图",
   "role": "P-pad",
   "source": "manual",
-  "store": "天命重启：心跳的抉择 (PS Store HK portrait)",
-  "time": "2026-09-20T10:14:27"
+  "store": "PS Store HK portrait 白框卡片版",
+  "time": "2026-09-20T10:31:10"
+ },
+ "天命重启：心跳的抉择": {
+  "en": "Refate：Echoes of Desire",
+  "file": "covers/rc4e0bba43a4e1.jpg",
+  "note": "店主截图样式: 白框卡片 海报完整内缩",
+  "role": "P-pad",
+  "source": "manual",
+  "store": "PS Store HK portrait 白框卡片版",
+  "time": "2026-09-20T10:31:10"
  },
  "天国：拯救1（皇家版）": {
   "file": "covers/rc7ea156d1ed1f.jpg",
@@ -4370,6 +4388,15 @@
   "source": "manual",
   "store": "",
   "time": "2026-09-18T21:52:27"
+ },
+ "控制：共振（豪华版）": {
+  "en": "Control Resonant（Deluxe Edition）",
+  "file": "covers/rca3dd55d8828c.jpg",
+  "note": "★人工锁死沿用(锁p0480, 中文名一致)",
+  "role": "P-pad",
+  "source": "manual",
+  "store": "CONTROL Resonant Digital Deluxe Edition",
+  "time": "2026-09-20T10:28:32"
  },
  "控制：共振（豪华版）（1）": {
   "file": "covers/rca3dd55d8828c.jpg",
@@ -7575,6 +7602,51 @@
   "source": "manual",
   "store": "",
   "time": "2026-09-18T13:40:09"
+ },
+ "羊蹄山之魂1": {
+  "en": "Ghost of Yotei",
+  "file": "covers/rced2bf8adfefe.jpg",
+  "note": "★人工锁死沿用(锁p0834, 近似匹配 0.91 《羊蹄山之魂（1）》)",
+  "role": "M-fill",
+  "source": "manual",
+  "store": "",
+  "time": "2026-09-20T10:28:32"
+ },
+ "羊蹄山之魂2": {
+  "en": "Ghost of Yotei",
+  "file": "covers/rced2bf8adfefe.jpg",
+  "note": "★人工锁死沿用(锁p0834, 近似匹配 0.91 《羊蹄山之魂（1）》)",
+  "role": "M-fill",
+  "source": "manual",
+  "store": "",
+  "time": "2026-09-20T10:28:32"
+ },
+ "羊蹄山之魂3": {
+  "en": "Ghost of Yotei",
+  "file": "covers/rced2bf8adfefe.jpg",
+  "note": "★人工锁死沿用(锁p0834, 近似匹配 0.91 《羊蹄山之魂（1）》)",
+  "role": "M-fill",
+  "source": "manual",
+  "store": "",
+  "time": "2026-09-20T10:28:32"
+ },
+ "羊蹄山之魂4": {
+  "en": "Ghost of Yotei",
+  "file": "covers/rced2bf8adfefe.jpg",
+  "note": "★人工锁死沿用(锁p0834, 近似匹配 0.91 《羊蹄山之魂（1）》)",
+  "role": "M-fill",
+  "source": "manual",
+  "store": "",
+  "time": "2026-09-20T10:28:32"
+ },
+ "羊蹄山之魂5（豪华版）": {
+  "en": "Ghost of Yotei（Deluxe Edition）",
+  "file": "covers/rced2bf8adfefe.jpg",
+  "note": "★人工锁死沿用(锁p0834, 近似匹配 0.95 《羊蹄山之魂（豪华版）（5）》)",
+  "role": "M-fill",
+  "source": "manual",
+  "store": "",
+  "time": "2026-09-20T10:28:32"
  },
  "羊蹄山之魂（1）": {
   "file": "covers/rc46426f6a145a.jpg",

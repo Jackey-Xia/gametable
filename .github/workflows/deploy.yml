@@ -48,6 +48,16 @@ jobs:
           python3 parse_ps.py data/ps_grid.json data/ps_games.json || true
           python3 inherit_stock_covers.py || true
 
+      # ★★ 人工封面永久锁死(2026-09-20 店主铁律):
+      #    「一旦我人工确认过的图片全部与商品锁死，即使微调了商品名称也不要删掉图片」
+      #    ① build_pinned: 把所有人工封面登记进 covers/pinned.json（锚点=中文名历史+英文名+图片md5）
+      #    ② lock_covers : 店主改中文名后, 按三重锚点把锁重挂到新名 —— 只增不删, 绝不删图
+      - name: Pin all manually confirmed covers
+        run: python3 build_pinned.py || true
+
+      - name: Re-bind locked covers after rename
+        run: python3 lock_covers.py --apply || true
+
       # ★ 改名沿用(2026-09-19): 店主在 WPS 里只改中文名(英文名不变)时, manifest 旧键失配 -> 前端白图。
       #   孤儿键 按英文名 匹配到新行 -> 把封面登记到新中文名下(旧键保留兜底, 只增不删)
       - name: Keep covers when product is renamed

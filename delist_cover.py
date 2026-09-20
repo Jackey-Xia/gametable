@@ -42,6 +42,7 @@ def grid_names():
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     apply_ = "--apply" in sys.argv
+    force = "--force" in sys.argv        # 店主明确要求连同锁死图一起清掉才用
     if not args:
         print(__doc__)
         return
@@ -61,12 +62,20 @@ def main():
 
     others = [k for k, v in m.items() if v == rel and k != name]
     fp = os.path.join(C.BASE, rel)
+    is_lock = C.is_locked_file(rel)
     print("商品名  :", name)
     print("封面文件:", rel, "| 磁盘存在:", os.path.exists(fp))
     print("共用同图的其它商品:", others or "无")
+    print("永久锁死登记:", "★是(人工确认过的封面)" if is_lock else "否")
+    if is_lock and not force:
+        print("\n拒绝执行：该图在 covers/pinned.json 里已永久锁死（店主铁律："
+              "人工确认过的图片即使改名也不删）。\n"
+              "若确属彻底下架且不再需要，请显式加 --force。")
 
     if not apply_:
         print("\n[dry-run] 加 --apply 才会真正删除。")
+        return
+    if is_lock and not force:
         return
 
     # 先摘键，再判断图片是否还被引用
@@ -79,9 +88,16 @@ def main():
     keep = {os.path.normpath(v) for v in m.values() if v}
     if os.path.normpath(rel) in keep:
         print("图片仍被其它商品引用，保留:", rel)
+    elif is_lock and not force:
+        print("图片已永久锁死，保留:", rel)
     elif os.path.exists(fp):
         os.remove(fp)
         print("已删除图片:", rel)
+        if force:
+            C.unpin(name)
+            print("已解除该商品的锁死登记")
+    elif force:
+        C.unpin(name)
     print("完成。")
 
 

@@ -37,6 +37,13 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 MANIFEST = os.path.join(BASE, "covers", "manifest.json")
 SOURCES = os.path.join(BASE, "covers", "cover_sources.json")
 
+# ★★★ 人工封面永久锁死登记表（2026-09-20 店主定稿）
+# 铁律：「一旦我人工确认过的图片全部与商品锁死，即使微调了商品名称也不要删掉图片」
+#   · 任何 source == manual 的封面写入 -> 自动登记一条锁（含中文名/英文名/图片md5）
+#   · 店主改中文名后，lock_covers.py 按「英文名 / 中文名近似 + 版本标注一致」把锁重挂到新名
+#   · 被锁住的图片文件，任何人/任何脚本都不得删除（remove_old/delist 一律拒绝）
+PINNED = os.path.join(BASE, "covers", "pinned.json")
+
 # 形态优先级：竖图 > 方图（role 是 PS Store media 的字段名）
 ROLE_PREF = ["PORTRAIT_BANNER", "MASTER"]
 ROLE_CODE = {"PORTRAIT_BANNER": "P", "MASTER": "M"}
@@ -70,6 +77,108 @@ def save_sources(src):
     #   造成整文件重排的千行噪声 diff（历史遗留问题, 2026-09-17 修正）
     src = {k: src[k] for k in sorted(src)}
     json.dump(src, open(SOURCES, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+
+# ---------------------------------------------------------------------------
+# 永久锁死登记（pinned.json）
+# ---------------------------------------------------------------------------
+def load_pinned():
+    d = load_json(PINNED, {})
+    if not isinstance(d, dict):
+        d = {}
+    if not isinstance(d.get("locks"), dict):
+        d["locks"] = {}
+    return d
+
+
+def save_pinned(p):
+    locks = p.get("locks", {})
+    locks = {k: locks[k] for k in sorted(locks)}
+    p["locks"] = locks
+    json.dump(p, open(PINNED, "w", encoding="utf-8"),
+              ensure_ascii=False, indent=1, sort_keys=True)
+
+
+def _file_md5(rel):
+    import hashlib
+    fp = os.path.join(BASE, rel)
+    try:
+        with open(fp, "rb") as f:
+            return hashlib.md5(f.read()).hexdigest()
+    except Exception:
+        return ""
+
+
+def pin_lock(name, rel, role="", store="", note="", en="", platform="PS"):
+    """登记/续期一条人工封面锁。同名重复登记只累加中文名历史、更新图片，不新增锁。"""
+    p = load_pinned()
+    locks = p.setdefault("locks", {})
+    name = str(name or "").strip()
+    rel = str(rel or "")
+    if not name or not rel:
+        return None
+    # 同中文名命中 -> 续期
+    for lid, rec in locks.items():
+        if name in (rec.get("cn") or []):
+            if rec.get("file") != rel:
+                rec["file"] = rel
+                rec["md5"] = _file_md5(rel)
+            for k, v in (("role", role), ("store", store), ("note", note),
+                         ("en", en), ("platform", platform)):
+                if v:
+                    rec[k] = v
+            p["_meta"] = {"updated": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                          "count": len(locks)}
+            save_pinned(p)
+            return lid
+    # 同图命中(换名不换图) -> 把新中文名并入历史
+    md5 = _file_md5(rel)
+    if md5:
+        for lid, rec in locks.items():
+            if rec.get("md5") == md5 and rec.get("platform", "PS") == platform:
+                if name not in (rec.get("cn") or []):
+                    rec.setdefault("cn", []).append(name)
+                if en and not rec.get("en"):
+                    rec["en"] = en
+                p["_meta"] = {"updated": time.strftime("%Y-%m-%dT%H:%M:%S"),
+                              "count": len(locks)}
+                save_pinned(p)
+                return lid
+    lid = "p%04d" % (len(locks) + 1)
+    while lid in locks:
+        lid = "p%04d" % (int(lid[1:]) + 1)
+    locks[lid] = {
+        "cn": [name], "en": en or "", "file": rel, "md5": md5,
+        "role": role or "", "store": store or "", "note": note or "",
+        "platform": platform or "PS",
+        "time": time.strftime("%Y-%m-%dT%H:%M:%S"),
+    }
+    p["_meta"] = {"updated": time.strftime("%Y-%m-%dT%H:%M:%S"), "count": len(locks)}
+    save_pinned(p)
+    return lid
+
+
+def unpin(name):
+    """仅在店主明确要求彻底下架时调用（delist_cover.py --force）"""
+    p = load_pinned()
+    locks = p.get("locks", {})
+    hit = [lid for lid, r in locks.items() if name in (r.get("cn") or [])]
+    for lid in hit:
+        locks.pop(lid, None)
+    if hit:
+        p["_meta"] = {"updated": time.strftime("%Y-%m-%dT%H:%M:%S"), "count": len(locks)}
+        save_pinned(p)
+    return hit
+
+
+def locked_files():
+    """所有被锁住的图片相对路径集合 —— 删除操作必须绕开它们"""
+    return {r.get("file") for r in load_pinned().get("locks", {}).values()
+            if r.get("file")}
+
+
+def is_locked_file(rel):
+    return str(rel or "") in locked_files()
 
 
 def load_manifest():
@@ -386,16 +495,27 @@ def set_cover(name, rel_path, source, role="", store="", note="", en=""):
     if en:
         src[name]["en"] = en
     save_sources(src)
+    # ★ 人工确认过的封面 -> 永久锁死登记（改名可重挂，图片绝不删除）
+    if source == SRC_MANUAL:
+        try:
+            pin_lock(name, rel_path, role, store, note, en)
+        except Exception as e:
+            print("   ! pin_lock 失败(不阻断): %s" % e)
     return True, rel_path
 
 
 def remove_old(m, old_rel):
-    """旧图确认不再被任何键引用后才删除"""
+    """旧图确认不再被任何键引用后才删除
+    ★ 被永久锁死表(pinned.json)登记过的图片一律不删 —— 店主铁律：
+      「人工确认过的图片与商品锁死，即使改名也不要删掉图片」
+    """
     if not old_rel:
         return None
     keep = {os.path.normpath(v) for v in m.values() if v}
     p = os.path.normpath(old_rel)
     if p in keep:
+        return None
+    if is_locked_file(old_rel):
         return None
     fp = os.path.join(BASE, old_rel)
     if os.path.exists(fp):
