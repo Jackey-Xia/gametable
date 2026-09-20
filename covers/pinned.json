@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1086,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-20T15:39:52"
+  "updated": "2026-09-20T23:37:13"
  },
  "locks": {
   "p0001": {
@@ -14256,7 +14256,7 @@
    "en": "Minecraft Dungeons 2（Deluxe Edition）",
    "file": "covers/rcc72f14b514eb.jpg",
    "md5": "8a774e8207a6e08b04a3f316dfff3bfe",
-   "note": "店主指定: 港服商城 Minecraft Dungeons II Deluxe Edition 卡, 保留英文 DELUXE EDITION 标识, 方图留边版 · 方图 1024x1024, 留边版(前端会左右各裁 63px)",
+   "note": "店主指令: 改满铺(crop34) · 港服 Minecraft Dungeons II Deluxe Edition 卡, 含英文 DELUXE EDITION 标识 · 方图 1024x1024 居中裁 768x1024",
    "platform": "PS",
    "role": "M-pad",
    "store": "PS Store HK (zh-Hans)",
