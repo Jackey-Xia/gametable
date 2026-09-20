@@ -492,12 +492,12 @@
  },
  "丧尸围城：豪华复刻版（豪华版）": {
   "en": "Dead Rising Deluxe Remaster（Deluxe Edition）",
-  "file": "covers/rcee5ecf8a94cf.jpg",
-  "note": "★回退v3版: 方图窗口[0,768]满铺(NCC比对0.87确定为店主截图所要求版本)",
+  "file": "covers/rcf78a91ca7654.jpg",
+  "note": "★店主定版: v3主视觉(方图crop[0,768]) + 顶栏DIGITAL DELUXE完整居中(3840横幅取字按1024/2160缩放)",
   "role": "M-fill",
   "source": "manual",
   "store": "Dead Rising Deluxe Remaster Digital Deluxe (PS Store HK)",
-  "time": "2026-09-20T11:45:32"
+  "time": "2026-09-20T12:27:47"
  },
  "丧灵激汤": {
   "file": "covers/87774ffd8df2_s.jpg",
