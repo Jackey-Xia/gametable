@@ -4118,9 +4118,9 @@
  },
  "我的世界：地下城2（豪华版）": {
   "en": "Minecraft Dungeons 2（Deluxe Edition）",
-  "file": "covers/rc2e8f671c0092.jpg",
-  "note": "店主指定: 港服商城 Minecraft Dungeons II Deluxe Edition 卡, 保留英文 DELUXE EDITION 标识, 方图留边版 · 方图 1024x1024, 留边版(前端会左右各裁 63px)",
-  "role": "M-pad",
+  "file": "covers/rcc72f14b514eb.jpg",
+  "note": "店主指令: 改满铺(crop34) · 港服 Minecraft Dungeons II Deluxe Edition 卡, 含英文 DELUXE EDITION 标识 · 方图 1024x1024 居中裁 768x1024",
+  "role": "M-fill",
   "source": "manual",
   "store": "PS Store HK (zh-Hans)",
   "time": "2026-09-20T23:28:47"
