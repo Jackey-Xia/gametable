@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1086,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-20T15:36:35"
+  "updated": "2026-09-20T15:39:52"
  },
  "locks": {
   "p0001": {
@@ -14254,8 +14254,8 @@
     "我的世界：地下城2（豪华版）"
    ],
    "en": "Minecraft Dungeons 2（Deluxe Edition）",
-   "file": "covers/rc2e8f671c0092.jpg",
-   "md5": "162ccdc3d5c363ee7f1cfa6808cbacd3",
+   "file": "covers/rcc72f14b514eb.jpg",
+   "md5": "8a774e8207a6e08b04a3f316dfff3bfe",
    "note": "店主指定: 港服商城 Minecraft Dungeons II Deluxe Edition 卡, 保留英文 DELUXE EDITION 标识, 方图留边版 · 方图 1024x1024, 留边版(前端会左右各裁 63px)",
    "platform": "PS",
    "role": "M-pad",
