@@ -492,12 +492,12 @@
  },
  "丧尸围城：豪华复刻版（豪华版）": {
   "en": "Dead Rising Deluxe Remaster（Deluxe Edition）",
-  "file": "covers/rc9d5de9329f8d.jpg",
-  "note": "店主指认改留边 · DRDR Digital Deluxe 黄卡",
-  "role": "M-pad",
+  "file": "covers/rca5e1b521e979.jpg",
+  "note": "恢复满铺+窗口左移[0,768] DRDR首字母D完整",
+  "role": "M-fill",
   "source": "manual",
-  "store": "Dead Rising Deluxe Remaster Digital Deluxe (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-20T03:57:29"
+  "store": "Dead Rising Deluxe Remaster Digital Deluxe",
+  "time": "2026-09-20T10:08:53"
  },
  "丧灵激汤": {
   "file": "covers/87774ffd8df2_s.jpg",
@@ -704,39 +704,39 @@
  },
  "仁王3（豪华版）（2）": {
   "en": "Nioh 3（Deluxe Edition）",
-  "file": "covers/rc406b697955ab.jpg",
-  "note": "店主指认改满铺 · 仁王3 数字豪华版金框卡",
+  "file": "covers/rc31d2bcf25daa.jpg",
+  "note": "整体左移: 窗口[230,998] NIOH的H完整",
   "role": "M-fill",
   "source": "manual",
-  "store": "仁王3 数字豪华版 (日语, 简体中文, 繁体中文)",
-  "time": "2026-09-20T03:57:27"
+  "store": "仁王3 数字豪华版 (PS Store HK)",
+  "time": "2026-09-20T10:08:53"
  },
  "仁王3（豪华版）（3）": {
   "en": "Nioh 3（Deluxe Edition）",
-  "file": "covers/rc406b697955ab.jpg",
-  "note": "店主指认改满铺 · 仁王3 数字豪华版金框卡",
+  "file": "covers/rc31d2bcf25daa.jpg",
+  "note": "整体左移: 窗口[230,998] NIOH的H完整",
   "role": "M-fill",
   "source": "manual",
-  "store": "仁王3 数字豪华版 (日语, 简体中文, 繁体中文)",
-  "time": "2026-09-20T03:57:27"
+  "store": "仁王3 数字豪华版 (PS Store HK)",
+  "time": "2026-09-20T10:08:53"
  },
  "仁王3（豪华版）（4）": {
   "en": "Nioh 3（Deluxe Edition）",
-  "file": "covers/rc406b697955ab.jpg",
-  "note": "店主指认改满铺 · 仁王3 数字豪华版金框卡",
+  "file": "covers/rc31d2bcf25daa.jpg",
+  "note": "整体左移: 窗口[230,998] NIOH的H完整",
   "role": "M-fill",
   "source": "manual",
-  "store": "仁王3 数字豪华版 (日语, 简体中文, 繁体中文)",
-  "time": "2026-09-20T03:57:28"
+  "store": "仁王3 数字豪华版 (PS Store HK)",
+  "time": "2026-09-20T10:08:53"
  },
  "仁王3（豪华版）（5）": {
   "en": "Nioh 3（Deluxe Edition）",
-  "file": "covers/rc406b697955ab.jpg",
-  "note": "店主指认改满铺 · 仁王3 数字豪华版金框卡",
+  "file": "covers/rc31d2bcf25daa.jpg",
+  "note": "整体左移: 窗口[230,998] NIOH的H完整",
   "role": "M-fill",
   "source": "manual",
-  "store": "仁王3 数字豪华版 (日语, 简体中文, 繁体中文)",
-  "time": "2026-09-20T03:57:28"
+  "store": "仁王3 数字豪华版 (PS Store HK)",
+  "time": "2026-09-20T10:08:53"
  },
  "仙乐传说 交响传奇（复刻版）": {
   "file": "covers/rc9c4a5fa759b8.jpg",
@@ -2199,13 +2199,13 @@
   "time": "2026-09-20T00:06:57"
  },
  "四海兄弟：故乡（决定版）": {
-  "en": "MaFia：The Old Country",
-  "file": "covers/rc1ed89bff411b.jpg",
-  "note": "店主指认改满铺 · 竖图原图直上",
+  "en": "Mafia：The Old Country",
+  "file": "covers/rcb70b20eedab4.jpg",
+  "note": "换回商城原始竖图(此前为放大裁切版)",
   "role": "P-orig",
   "source": "manual",
-  "store": "四海兄弟：故乡 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-20T03:57:28"
+  "store": "四海兄弟：故乡 (PS Store HK portrait)",
+  "time": "2026-09-20T10:08:53"
  },
  "因果动物园": {
   "file": "covers/rc932224b15cb0.jpg",
@@ -2586,12 +2586,12 @@
  },
  "天命重启：心跳的抉择": {
   "en": "Refate：Echoes of Desire",
-  "file": "covers/rc37f95f10906c.jpg",
-  "note": "店主指认 · 与商城卡片画面完全一致(原图直上, 弃留边版)",
+  "file": "covers/rc85a3994d322e.jpg",
+  "note": "换回商城原始竖图(此前为放大裁切版) · 画面与店主截图一致",
   "role": "P-orig",
   "source": "manual",
-  "store": "天命重启：心跳的抉择 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-20T03:57:30"
+  "store": "天命重启：心跳的抉择 (PS Store HK portrait)",
+  "time": "2026-09-20T10:08:53"
  },
  "天国：拯救1（皇家版）": {
   "file": "covers/rc7ea156d1ed1f.jpg",
@@ -2765,12 +2765,12 @@
  },
  "女神异闻录3：Reload+后日谈DLC（完整版）/P3R": {
   "en": "Persona 5 Reload+Episode Aegis（Complete Edition）",
-  "file": "covers/rcc548c54c6c1e.jpg",
-  "note": "店主截图样式全网寻图 · Episode Aigis 蓝/红主视觉 · 纯横版 1920x1080, 原图直上(留边会把主体压扁)",
-  "role": "M",
+  "file": "covers/rc3e981042ffd7.jpg",
+  "note": "红蓝斜线精确对角线版(横缩4%)+蓝方头像完整 · 改名后按英文名自动重挂",
+  "role": "M-fill",
   "source": "manual",
-  "store": "官网 p3re.jp Episode Aigis 主视觉 1920x1080",
-  "time": "2026-09-20T03:57:26"
+  "store": "官网 p3re.jp Episode Aigis 主视觉",
+  "time": "2026-09-20T10:08:53"
  },
  "女神异闻录5/P5（PS4）": {
   "file": "covers/rceee9182def9d.jpg",
@@ -8143,21 +8143,21 @@
  },
  "虐杀原形1": {
   "en": "Prototype 1",
-  "file": "covers/rcc3ddfc41ca82.jpg",
-  "note": "店主指令: 取消满铺改竖版留边版(原竖图补边)",
-  "role": "P-pad",
+  "file": "covers/rcdcb7c35c074e.jpg",
+  "note": "真·留边版: 官方方图fit宽度+白边 [PROTOTYPE]文字完整",
+  "role": "M-pad",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-20T03:12:13"
+  "store": "[PROTOTYPE™] (PS Store US master)",
+  "time": "2026-09-20T10:08:53"
  },
  "虐杀原形2": {
   "en": "Prototype 2",
-  "file": "covers/rc6f537422cef2.jpg",
-  "note": "店主指令: 取消满铺改竖版留边版(原竖图补边)",
-  "role": "P-pad",
+  "file": "covers/rccdac9b10c75e.jpg",
+  "note": "真·留边版: 官方方图fit宽度+白边 [PROTOTYPE 2]文字完整",
+  "role": "M-pad",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-20T03:12:13"
+  "store": "Prototype®2 (PS Store US master)",
+  "time": "2026-09-20T10:08:53"
  },
  "虚构世界1": {
   "file": "covers/rc9f17d7fd1234.jpg",
