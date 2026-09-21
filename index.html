@@ -127,8 +127,8 @@ select{border:1px solid var(--line);border-radius:10px;padding:8px 8px;backgroun
 /* 改104: 游玩人数多选下拉 —— 复用 vsel 外观, 选项带勾选框; 最多勾2个(1本地+1线上), 违规组合置灰禁点 */
 .vsel-item.pl{display:flex;align-items:center;gap:8px}
 .vsel-item.pl .cb{width:15px;height:15px;border:1.5px solid #c3cad6;border-radius:4px;flex:0 0 auto;position:relative;background:#fff}
-.vsel-item.pl.on .cb{background:var(--brand);border-color:var(--brand)}
-.vsel-item.pl.on .cb::after{content:"";position:absolute;left:4px;top:2px;width:4px;height:8px;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(45deg)}
+/* 改105: 对勾改用 SVG 背景居中绘制 —— viewBox 内勾形几何重心=正中, background center 定位, PC/手机/任意DPR渲染一致; 替换原手算偏移的伪元素勾 */
+.vsel-item.pl.on .cb{border-color:var(--brand);background:var(--brand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3.5 12.25 L9.5 18.25 L20.5 5.75' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/13px 13px no-repeat}
 .vsel-item.pl.dis{color:#c3cad6;cursor:not-allowed}
 .vsel-item.pl.dis .cb{border-color:#e3e7ee;background:#f5f6f9}
 .vsel-item.pl.dis:hover{background:#fff}
