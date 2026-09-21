@@ -26,6 +26,8 @@ for g in ps:
          # 改67: 价格/库存字段强制转字符串, 防止数字类型导致页面 fmtMoney 抛错
          "ck7":str(g["ck7"]),"fc7":str(g["fc7"]),"xd30":str(g["xd30"]),
          "ck4":g["ck4"],"ck5":g["ck5"],"fc":g["fc"],"xd":g["xd"]}
+    # 改104: 游玩人数标签数组(如 ["本地双人","线上多人"]), 前端筛选用; 空则不带
+    if g.get("pl"): rec["pl"]=g["pl"]
     clean.append(rec)
 print("PS 清洗后:",len(clean))
 
