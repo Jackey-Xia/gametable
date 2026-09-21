@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1088,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-21T17:24:35"
+  "updated": "2026-09-21T17:40:01"
  },
  "locks": {
   "p0001": {
@@ -6297,12 +6297,13 @@
    "cn": [
     "控制：共振（豪华版）（1）",
     "控制：共振（豪华版）（2）",
-    "控制：共振（豪华版）"
+    "控制：共振（豪华版）",
+    "控制：共振（豪华版）（3）"
    ],
    "en": "Control Resonant（Deluxe Edition）",
    "file": "covers/rca3dd55d8828c.jpg",
    "md5": "f781043b33ecb241ce4ba73f68d1dcc2",
-   "note": "店主审核 E52 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 DIGITAL DELUXE EDITION",
+   "note": "多库存沿用: 与《控制：共振（豪华版）（1）》同一商品仅增加库存, 直接沿用同款封面",
    "platform": "PS",
    "role": "P-pad",
    "store": "CONTROL Resonant Digital Deluxe Edition",
