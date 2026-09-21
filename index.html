@@ -124,6 +124,15 @@ select{border:1px solid var(--line);border-radius:10px;padding:8px 8px;backgroun
 .vsel-item:last-child{border-bottom:none}
 .vsel-item:hover{background:#f1f4f9}
 .vsel-item.on{color:var(--brand);font-weight:600;background:var(--psbg)}
+/* 改104: 游玩人数多选下拉 —— 复用 vsel 外观, 选项带勾选框; 最多勾2个(1本地+1线上), 违规组合置灰禁点 */
+.vsel-item.pl{display:flex;align-items:center;gap:8px}
+.vsel-item.pl .cb{width:15px;height:15px;border:1.5px solid #c3cad6;border-radius:4px;flex:0 0 auto;position:relative;background:#fff}
+.vsel-item.pl.on .cb{background:var(--brand);border-color:var(--brand)}
+.vsel-item.pl.on .cb::after{content:"";position:absolute;left:4.2px;top:1px;width:4px;height:8px;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(45deg)}
+.vsel-item.pl.dis{color:#c3cad6;cursor:not-allowed}
+.vsel-item.pl.dis .cb{border-color:#e3e7ee;background:#f5f6f9}
+.vsel-item.pl.dis:hover{background:#fff}
+.plhint{padding:7px 14px;font-size:11px;color:#98a0ab;background:#fafbfd;border-top:1px solid var(--line);white-space:nowrap}
 /* 改67: 红色重置按钮 —— 一键恢复所有筛选条件为默认 */
 .resetBtn{border-radius:10px;background:#dc2626;color:#fff;font-weight:700;padding:8px 14px;box-shadow:0 1px 3px rgba(220,38,38,.35);white-space:nowrap}
 .resetBtn:active{transform:scale(.95)}
@@ -239,8 +248,8 @@ footer b{color:#4b5563}
 .controls{gap:14px 4px;padding:8px}
 /* 改84: 小屏 fixed 吸顶时与 .wrap 的左右 10px 内边距对齐 */
 .controls.pinned{max-width:none;margin:0 10px;padding-top:calc(8px + env(safe-area-inset-top, 0px));}
-  .ctrl{gap:4px;flex:1 1 100%}
-  .ctrl select,.ctrl .vsel-btn{flex:1 1 0;width:auto;max-width:none;min-width:0;font-size:11.5px;padding:8px 3px}
+  .ctrl{gap:8px 4px;flex:1 1 100%;flex-wrap:wrap}   /* 改104: 筛选项增至5个+重置, 小屏改为每行3个自动换行 */
+  .ctrl select,.ctrl .vsel-btn{flex:1 1 30%;width:auto;max-width:none;min-width:30%;font-size:11.5px;padding:8px 3px}
   .ctrl .vsel-btn{justify-content:space-between}
   .ctrl .resetBtn{flex:0 0 auto;padding:8px 7px;font-size:12.5px}
 }
@@ -304,6 +313,8 @@ footer b{color:#4b5563}
       <div class="vsel" id="hostFilter"></div>
       <div class="vsel" id="regionFilter"></div>
       <div class="vsel" id="verFilter"></div>
+      <!-- 改104: 游玩人数多选筛选(数据源 WPS N列, 随表格更新自动变化) -->
+      <div class="vsel" id="plFilter"></div>
       <div class="vsel" id="sortSel"></div>
       <!-- 改67: 红色重置按钮 -->
       <button class="resetBtn" id="resetBtn" title="恢复所有筛选条件为默认">重置</button>
@@ -496,6 +507,8 @@ const HOST_PLAT={PS4:"ps",PS5:"ps",PSVR:"ps",NS1:"ns",NS2:"ns"};
 
 /* ---------- 渲染 ---------- */
 let hostSel="",regionSel="",verSel=[],sortMode="src",kw="";
+/* 改104: 游玩人数筛选 —— plSel 为已勾选标签(0~2个) */
+let plSel=[];
 
 /* 改67: 租赁版本 -> 对应7天/30天价格字段; 勾选后按价格排序与过滤均取该版本价格 */
 const VER_META={ck:"ck7",fc:"fc7",xd:"xd30"};
@@ -820,6 +833,23 @@ function mergeRows(rows){
   return views;
 }
 
+/* 改104: 游玩人数匹配规则(2026-09-21 店主定稿)
+   单选=模糊搜索: 本地双人→游戏含 本地双人或本地多人; 线上双人→含 线上双人或线上多人; 本地多人/线上多人→精确含该项。
+   双选(必为1本地+1线上)=精准搜索: 游戏必须同时含所选两项。
+   无游玩人数数据的商品在任何勾选状态下都不命中。 */
+function plMatch(g){
+  if(!plSel.length)return true;
+  const tags=g.pl||[];
+  const has=t=>tags.indexOf(t)>=0;
+  if(plSel.length===1){
+    const t=plSel[0];
+    if(t==="本地双人")return has("本地双人")||has("本地多人");
+    if(t==="线上双人")return has("线上双人")||has("线上多人");
+    return has(t);
+  }
+  return plSel.every(has);
+}
+
 function filterPS(){
   const q=kw.trim().toLowerCase();
   let arr=PS.slice();
@@ -838,12 +868,14 @@ function filterPS(){
       return a.name<b.name?-1:1;
     });
   }
-  if(q||hostSel||regionSel||verSel.length){
+  if(q||hostSel||regionSel||verSel.length||plSel.length){
     arr=arr.filter(g=>{
       if(hostSel&&!(g.hs||[]).includes(hostSel))return false;
       if(regionSel&&g.region!==regionSel)return false;
       /* 改67k: 勾选租赁版本后, 仅显示该版本当前有货的游戏(可认证=PS4或PS5任一有货; 非认证=fc有货; 限定版=xd有货) */
       if(verSel.length&&!verSel.some(k=>VER_STOCK[k].some(f=>String(g[f]||"").trim()==="1")))return false;
+      /* 改104: 游玩人数筛选(单选模糊/双选精准) */
+      if(plSel.length&&!plMatch(g))return false;
       if(q){const nq=normStr(q);if(nq){const hay=normStr(g.name+" "+g.en+" "+g.region);if(hay.indexOf(nq)<0&&!subseq(nq,hay))return false;}}
       return true;
     });
@@ -1273,11 +1305,51 @@ const vselVer=makeVsel($("#verFilter"),"","租赁版本",
 const vselSort=makeVsel($("#sortSel"),"src","排序",
   [{v:"src",label:"排序"},{v:"date",label:"发售日期（新→旧）"},{v:"dateAsc",label:"发售日期（旧→新）"},{v:"priceDesc",label:"价格（高→低）"},{v:"priceAsc",label:"价格（低→高）"}],
   v=>{sortMode=v;resetLetter();renderPS();});
+/* 改104: 游玩人数多选下拉(2026-09-21 店主需求):
+   4个选项=本地双人/本地多人/线上双人/线上多人(与WPS表一致); 最多勾2个, 且只允许 1本地+1线上 的组合,
+   两本地/两线上/3个以上的组合直接置灰禁点。可勾选形态正好8种: 空默认 + 4单选 + 4个本地×线上双选。 */
+const PL_TAGS=["本地双人","本地多人","线上双人","线上多人"];
+function plIsLoc(t){return t.slice(0,2)==="本地";}
+function plOk(next){
+  if(next.length>2)return false;
+  let L=0,O=0;next.forEach(t=>plIsLoc(t)?L++:O++);
+  return L<=1&&O<=1;
+}
+function makePlSel(box){
+  box.innerHTML='<button type="button" class="vsel-btn"><span class="vt"></span><span class="arr"></span></button>'
+    +'<div class="vsel-pop plpop">'+PL_TAGS.map(t=>'<div class="vsel-item pl" data-v="'+t+'"><span class="cb"></span><span>'+t+"</span></div>").join("")
+    +'<div class="plhint">最多选2项：1个本地 + 1个线上</div></div>';
+  function sync(){
+    const vt=box.querySelector(".vt");
+    vt.textContent=plSel.length?plSel.join("+"):"游玩人数";
+    vt.style.color=plSel.length?"var(--brand)":"";
+    box.querySelectorAll(".vsel-item").forEach(it=>{
+      const t=it.dataset.v,on=plSel.indexOf(t)>=0;
+      it.classList.toggle("on",on);
+      it.classList.toggle("dis",!on&&!plOk(plSel.concat([t])));
+    });
+  }
+  box.querySelector(".vsel-btn").addEventListener("click",e=>{
+    e.stopPropagation();
+    document.querySelectorAll(".vsel.open").forEach(v=>{if(v!==box)v.classList.remove("open");});
+    box.classList.toggle("open");
+  });
+  box.querySelector(".vsel-pop").addEventListener("click",e=>{
+    const it=e.target.closest(".vsel-item");if(!it)return;
+    if(it.classList.contains("dis"))return;   /* 违规组合不可勾选 */
+    const t=it.dataset.v,i=plSel.indexOf(t);
+    if(i>=0)plSel.splice(i,1);else plSel.push(t);
+    sync();resetLetter();renderPS();
+  });
+  sync();
+  return {reset:()=>{plSel=[];sync();box.classList.remove("open");}};
+}
+const vselPl=makePlSel($("#plFilter"));
 /* 改67: 红色重置按钮 —— 所有筛选条件恢复默认 */
 $("#resetBtn").addEventListener("click",()=>{
   kw="";$("#q").value="";
   const sb=$("#sugbox");if(sb){sb.classList.remove("show");sb.innerHTML="";}   /* 改76 */
-  vselHost.reset();vselRegion.reset();vselVer.reset();vselSort.reset();
+  vselHost.reset();vselRegion.reset();vselVer.reset();vselPl.reset();vselSort.reset();
   hostSel="";regionSel="";verSel=[];sortMode="src";
   resetLetter();renderPS();
 });
