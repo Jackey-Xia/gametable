@@ -15,7 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Blank sensitive columns (N-Q) if any
+      # ★ 2026-09-21 店主把「游玩人数」列移到 N 列(col13, 需公开), 账号/密码/备注/备用信息右移为 O-R(col14-17)。
+      #   护栏同步移位: 清空 col14-17。游玩人数(col13)由 parse_ps.py 的表头门保护 —— 表头不是「游玩人数」绝不读取。
+      - name: Blank sensitive columns (O-R) if any
         run: |
           python3 - << 'PY'
           import json, os, sys
@@ -29,7 +31,7 @@ jobs:
           rows = d.get('rows') or []
           n = 0
           for r in rows:
-              for c in (13, 14, 15, 16):
+              for c in (14, 15, 16, 17):
                   if c < len(r) and r[c] not in (None, ''):
                       r[c] = ''; n += 1
           if n == 0:
