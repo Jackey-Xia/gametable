@@ -128,11 +128,10 @@ select{border:1px solid var(--line);border-radius:10px;padding:8px 8px;backgroun
 .vsel-item.pl{display:flex;align-items:center;gap:8px}
 .vsel-item.pl .cb{width:15px;height:15px;border:1.5px solid #c3cad6;border-radius:4px;flex:0 0 auto;position:relative;background:#fff}
 .vsel-item.pl.on .cb{background:var(--brand);border-color:var(--brand)}
-.vsel-item.pl.on .cb::after{content:"";position:absolute;left:4.2px;top:1px;width:4px;height:8px;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(45deg)}
+.vsel-item.pl.on .cb::after{content:"";position:absolute;left:4px;top:2px;width:4px;height:8px;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(45deg)}
 .vsel-item.pl.dis{color:#c3cad6;cursor:not-allowed}
 .vsel-item.pl.dis .cb{border-color:#e3e7ee;background:#f5f6f9}
 .vsel-item.pl.dis:hover{background:#fff}
-.plhint{padding:7px 14px;font-size:11px;color:#98a0ab;background:#fafbfd;border-top:1px solid var(--line);white-space:nowrap}
 /* 改67: 红色重置按钮 —— 一键恢复所有筛选条件为默认 */
 .resetBtn{border-radius:10px;background:#dc2626;color:#fff;font-weight:700;padding:8px 14px;box-shadow:0 1px 3px rgba(220,38,38,.35);white-space:nowrap}
 .resetBtn:active{transform:scale(.95)}
@@ -1317,8 +1316,7 @@ function plOk(next){
 }
 function makePlSel(box){
   box.innerHTML='<button type="button" class="vsel-btn"><span class="vt"></span><span class="arr"></span></button>'
-    +'<div class="vsel-pop plpop">'+PL_TAGS.map(t=>'<div class="vsel-item pl" data-v="'+t+'"><span class="cb"></span><span>'+t+"</span></div>").join("")
-    +'<div class="plhint">最多选2项：1个本地 + 1个线上</div></div>';
+    +'<div class="vsel-pop plpop">'+PL_TAGS.map(t=>'<div class="vsel-item pl" data-v="'+t+'"><span class="cb"></span><span>'+t+"</span></div>").join("")+'</div>';
   function sync(){
     const vt=box.querySelector(".vt");
     vt.textContent=plSel.length?plSel.join("+"):"游玩人数";
