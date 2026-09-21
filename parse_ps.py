@@ -141,6 +141,22 @@ else:
 
     print("items:",n_items)
 
+# ---- 游玩人数(2026-09-21 店主新增, 移列后位于 N 列=col13) ----
+# 硬护栏: 仅当表头(前4行)col13 明确写着「游玩人数」才解析该列。
+# 列还没移过来时 col13=账号(敏感列) —— 靠这道表头门保证敏感列绝不外发。
+PL_HDR = any("游玩人数" in str(grid[rr][13]) for rr in range(0, min(4, MAXR)))
+PL_TOKENS = ("本地双人", "本地多人", "线上双人", "线上多人")
+def parse_players(s):
+    """格子文本 -> 标签数组(只认4个合法词, 顺序固定, 天然兼容 +、/、、等分隔符)"""
+    s = str(s or "")
+    return [t for t in PL_TOKENS if t in s]
+
+# 租金列防串列护栏(2026-09-21): 若价格字段出现邮箱/7位以上数字串(手机号),
+# 说明列位漂移、敏感列被当成了价格列 —— 直接中止解析, 不发布(line CI 会沿用旧 ps_games.json)
+def _rent_clean(v):
+    s = str(v or "")
+    return ("@" not in s) and (re.search(r"\d{7,}", s) is None) and len(s) <= 12
+
 # 统计每行是否有游戏名，粗看结构
 products=[]
 seen_block=[]
@@ -199,6 +215,14 @@ while r < 4000:
          # 库存: 可认证 PS4/PS5 独立位(col7 按主机子行); 非认证(col9)/限定版(col11) 共用位
          "ck4":stock(7,"PS4"),"ck5":stock(7,"PS5"),
          "fc":stock(9),"xd":stock(11)}
+    # 租金列位防漂移校验(异常即中止, 不发布)
+    if not (_rent_clean(rec["ck7"]) and _rent_clean(rec["fc7"]) and _rent_clean(rec["xd30"])):
+        print("!! 租金字段异常(疑似列位漂移/敏感串), 中止解析:", gname, rec["ck7"], rec["fc7"], rec["xd30"])
+        sys.exit(1)
+    # 游玩人数: 组内取第一个非空(与租金同口径); 表头门未过(未移列)则绝不读取 col13
+    if PL_HDR:
+        pv = parse_players(firstval(13))
+        if pv: rec["pl"] = pv
     # 改67v: PSVR等无PS4/PS5子行的游戏, 可认证库存取组内第一个col7值(通用位), 使前端能显示 库存:有/无
     if not any(grid[rr][5] in ("PS4","PS5") for rr in grp):
         v7=firstval(7)
@@ -211,6 +235,7 @@ while r < 4000:
 cleaned=[]
 for rec in products:
     rec2={k:rec[k] for k in ("name","en","date","region","letter","ck7","fc7","xd30","ck4","ck5","fc","xd","hs")}
+    if rec.get("pl"): rec2["pl"]=rec["pl"]   # 游玩人数标签数组, 空则不带(省体积)
     cleaned.append(rec2)
 
 print("总组(游戏)数:", len(cleaned))
