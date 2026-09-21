@@ -1,27 +1,11 @@
 {
- "time": "2026-09-21T04:01:59",
- "added": [
-  {
-   "name": "寂静岭：小镇陷落1",
-   "product": "JP0101-PPSA33286_00-TOWNFALLSIEJ0000",
-   "storeName": "SILENT HILL: Townfall (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "score": 0.85,
-   "file": "covers/ac1e4d70f49612p34.jpg",
-   "role": "P-pad",
-   "bytes": 66301
-  }
- ],
- "pending": [
-  {
-   "name": "寂静岭：小镇陷落2",
-   "reason": "匹配有歧义或无命中",
-   "top": ""
-  }
- ],
+ "time": "2026-09-21T04:11:06",
+ "added": [],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1190,
-  "covered": 1230,
-  "pending_open": 1
+  "covered": 1231,
+  "pending_open": 0
  }
 }

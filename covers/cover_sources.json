@@ -3255,6 +3255,14 @@
   "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
   "en": "Silent Hill：Townfall"
  },
+ "寂静岭：小镇陷落2": {
+  "file": "covers/ac1e4d70f49612p34.jpg",
+  "source": "store_zh_hk",
+  "role": "P-pad",
+  "store": "SILENT HILL: Townfall (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-21T04:11:06",
+  "note": "多库存沿用: 与《寂静岭：小镇陷落1》同一商品仅增加库存, 直接沿用同款封面"
+ },
  "寂静村的孩子们": {
   "file": "covers/rcd015a2d158c7.jpg",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",
