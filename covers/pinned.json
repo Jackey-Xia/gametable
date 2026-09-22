@@ -1,8 +1,7 @@
 {
  "_meta": {
   "count": 1089,
-  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-22T15:14:19"
+  "updated": "2026-09-22T23:24:49"
  },
  "locks": {
   "p0001": {
@@ -14295,11 +14294,11 @@
     "黯井微光"
    ],
    "en": "Well Dweller",
-   "file": "covers/rc79e89700262a.jpg",
-   "md5": "9ee3f032619e85f29021cc82133c6f24",
-   "note": "店主指定: 港服商城体验版卡(中文logo版), 非正式版英文logo卡 · 方图 1024x1024, 留边版(前端会左右各裁 63px)",
+   "file": "covers/rcdc99552b027e.jpg",
+   "md5": "7f1889239fb1e06fb21cff3123356791",
+   "note": "店主选定: 满铺(crop34 横向按主体居中裁, 768x1024->504x672) · 港服体验版卡中文logo · 前留边版 rc79e89700262a 已替换",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "M-fill",
    "store": "港服 Well Dweller Demo (UP5155-PPSA38721_00-WELLDWELLERDEMO0)",
    "time": "2026-09-22T23:08:55"
   }
