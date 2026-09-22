@@ -1323,7 +1323,8 @@ function makePlSel(box){
     vt.style.color=plSel.length?"var(--brand)":"";
     /* 改106: 弹层顶部标题项与其他筛选项一致 —— 未勾选任何项时高亮(等同默认值), 点击=清空筛选 */
     box.querySelector(".plhead").classList.toggle("on",!plSel.length);
-    box.querySelectorAll(".vsel-item").forEach(it=>{
+    /* 改106b: 只遍历带勾选框的选项行, 避免覆盖标题项高亮 */
+    box.querySelectorAll(".vsel-item.pl").forEach(it=>{
       const t=it.dataset.v,on=plSel.indexOf(t)>=0;
       it.classList.toggle("on",on);
       it.classList.toggle("dis",!on&&!plOk(plSel.concat([t])));
