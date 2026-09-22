@@ -1,11 +1,27 @@
 {
- "time": "2026-09-22T12:13:59",
- "added": [],
- "pending": [],
+ "time": "2026-09-22T12:35:41",
+ "added": [
+  {
+   "name": "罪金游戏",
+   "product": "HB0700-PPSA35930_00-0423124719599458",
+   "storeName": "罪金游戏 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/acc379b7dc5cfep34.jpg",
+   "role": "P-pad",
+   "bytes": 98237
+  }
+ ],
+ "pending": [
+  {
+   "name": "黯井微光",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  }
+ ],
  "errors": [],
  "stats": {
-  "total": 1192,
-  "covered": 1233,
-  "pending_open": 0
+  "total": 1194,
+  "covered": 1234,
+  "pending_open": 1
  }
 }
