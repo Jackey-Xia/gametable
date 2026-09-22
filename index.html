@@ -1316,11 +1316,13 @@ function plOk(next){
 }
 function makePlSel(box){
   box.innerHTML='<button type="button" class="vsel-btn"><span class="vt"></span><span class="arr"></span></button>'
-    +'<div class="vsel-pop plpop">'+PL_TAGS.map(t=>'<div class="vsel-item pl" data-v="'+t+'"><span class="cb"></span><span>'+t+"</span></div>").join("")+'</div>';
+    +'<div class="vsel-pop plpop"><div class="vsel-item plhead" data-v="__head__">游玩人数</div>'+PL_TAGS.map(t=>'<div class="vsel-item pl" data-v="'+t+'"><span class="cb"></span><span>'+t+"</span></div>").join("")+'</div>';
   function sync(){
     const vt=box.querySelector(".vt");
     vt.textContent=plSel.length?plSel.join("+"):"游玩人数";
     vt.style.color=plSel.length?"var(--brand)":"";
+    /* 改106: 弹层顶部标题项与其他筛选项一致 —— 未勾选任何项时高亮(等同默认值), 点击=清空筛选 */
+    box.querySelector(".plhead").classList.toggle("on",!plSel.length);
     box.querySelectorAll(".vsel-item").forEach(it=>{
       const t=it.dataset.v,on=plSel.indexOf(t)>=0;
       it.classList.toggle("on",on);
@@ -1334,6 +1336,12 @@ function makePlSel(box){
   });
   box.querySelector(".vsel-pop").addEventListener("click",e=>{
     const it=e.target.closest(".vsel-item");if(!it)return;
+    /* 改106: 点标题项=清空游玩人数筛选并收起弹层(与其他筛选项点默认项行为一致) */
+    if(it.dataset.v==="__head__"){
+      if(plSel.length){plSel=[];sync();resetLetter();renderPS();}
+      box.classList.remove("open");
+      return;
+    }
     if(it.classList.contains("dis"))return;   /* 违规组合不可勾选 */
     const t=it.dataset.v,i=plSel.indexOf(t);
     if(i>=0)plSel.splice(i,1);else plSel.push(t);
