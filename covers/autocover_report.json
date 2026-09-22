@@ -1,16 +1,11 @@
 {
- "time": "2026-09-22T14:58:59",
+ "time": "2026-09-22T15:14:20",
  "added": [],
- "pending": [
-  {
-   "name": "黯井微光",
-   "reason": "失败6次, 需人工核对"
-  }
- ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1194,
-  "covered": 1234,
-  "pending_open": 1
+  "covered": 1235,
+  "pending_open": 0
  }
 }
