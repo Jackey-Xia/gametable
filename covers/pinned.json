@@ -1,7 +1,8 @@
 {
  "_meta": {
   "count": 1089,
-  "updated": "2026-09-23T02:30:54"
+  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
+  "updated": "2026-09-23T03:11:15"
  },
  "locks": {
   "p0001": {
@@ -8813,7 +8814,7 @@
    "en": "Subnautica",
    "file": "covers/187ae3144c93_s.jpg",
    "md5": "f4ce16441319907ffe4a8792202cebe2",
-   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rca7dedd7dfa1d.jpg",
+   "note": "★人工锁死沿用(锁p0672, 近似匹配 0.89 《深海迷航》)",
    "platform": "PS",
    "role": "P",
    "store": "",
