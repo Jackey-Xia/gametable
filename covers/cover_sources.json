@@ -7154,6 +7154,24 @@
   "store": "真・三国无双 起源 梦幻四英杰 (中日文版) + Digital Deluxe Edition 字样 (PS Store HK)",
   "time": "2026-09-20T04:25:32"
  },
+ "真三国无双2 猛将传1": {
+  "file": "covers/rc949ad833fcde.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "港服 真・三国无双２ with 猛将传 Remastered (JP0106-PPSA32935_00-DW3CEREMASTERED0)",
+  "time": "2026-09-24T00:37:21",
+  "note": "店主选定: 满铺(crop34, x0=109 保留完整版标/REMASTERED, 裁右侧盔甲) · 港服预购正式版方图",
+  "en": "Dynasty Warriors 3：Complete Edition Remastered"
+ },
+ "真三国无双2 猛将传2": {
+  "file": "covers/rc949ad833fcde.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "港服 真・三国无双２ with 猛将传 Remastered (JP0106-PPSA32935_00-DW3CEREMASTERED0)",
+  "time": "2026-09-24T00:37:21",
+  "note": "店主选定: 满铺(crop34, x0=109 保留完整版标/REMASTERED, 裁右侧盔甲) · 港服预购正式版方图",
+  "en": "Dynasty Warriors 3：Complete Edition Remastered"
+ },
  "真人快打11（终极版）（1）": {
   "en": "Mortal Kombat 11 Ultimate",
   "file": "covers/rc6832b5145c79.jpg",
