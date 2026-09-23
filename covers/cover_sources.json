@@ -3263,6 +3263,14 @@
   "time": "2026-09-21T04:11:06",
   "note": "多库存沿用: 与《寂静岭：小镇陷落1》同一商品仅增加库存, 直接沿用同款封面"
  },
+ "寂静岭：小镇陷落3": {
+  "file": "covers/ac1e4d70f49612p34.jpg",
+  "source": "store_zh_hk",
+  "role": "P-pad",
+  "store": "SILENT HILL: Townfall (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-23T02:30:54",
+  "note": "多库存沿用: 与《寂静岭：小镇陷落1》同一商品仅增加库存, 直接沿用同款封面"
+ },
  "寂静村的孩子们": {
   "file": "covers/rcd015a2d158c7.jpg",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",
@@ -6137,6 +6145,24 @@
   "source": "manual",
   "store": "",
   "time": "2026-09-18T21:52:59"
+ },
+ "深海迷航1": {
+  "file": "covers/187ae3144c93_s.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "",
+  "time": "2026-09-23T02:30:54",
+  "note": "★人工锁死沿用(锁p0672, 近似匹配 0.89 《深海迷航》)",
+  "en": "Subnautica"
+ },
+ "深海迷航2": {
+  "file": "covers/187ae3144c93_s.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "",
+  "time": "2026-09-23T02:30:54",
+  "note": "★人工锁死沿用(锁p0672, 近似匹配 0.89 《深海迷航》)",
+  "en": "Subnautica"
  },
  "深海迷航：冰点之下": {
   "file": "covers/4e16a40d9e39_s.jpg",
