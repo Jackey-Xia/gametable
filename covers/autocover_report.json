@@ -1,17 +1,22 @@
 {
- "time": "2026-09-23T16:15:13",
+ "time": "2026-09-23T16:28:22",
  "added": [],
  "pending": [
   {
-   "name": "真三国无双2 猛将传",
+   "name": "真三国无双2 猛将传1",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "真三国无双2 猛将传2",
    "reason": "匹配有歧义或无命中",
    "top": ""
   }
  ],
  "errors": [],
  "stats": {
-  "total": 1200,
+  "total": 1201,
   "covered": 1243,
-  "pending_open": 1
+  "pending_open": 2
  }
 }
