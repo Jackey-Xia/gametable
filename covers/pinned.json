@@ -1,8 +1,7 @@
 {
  "_meta": {
-  "count": 1089,
-  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-23T16:28:19"
+  "count": 1090,
+  "updated": "2026-09-24T00:37:22"
  },
  "locks": {
   "p0001": {
@@ -14309,6 +14308,20 @@
    "role": "M-fill",
    "store": "港服 Well Dweller Demo (UP5155-PPSA38721_00-WELLDWELLERDEMO0)",
    "time": "2026-09-22T23:08:55"
+  },
+  "p1090": {
+   "cn": [
+    "真三国无双2 猛将传1",
+    "真三国无双2 猛将传2"
+   ],
+   "en": "Dynasty Warriors 3：Complete Edition Remastered",
+   "file": "covers/rc949ad833fcde.jpg",
+   "md5": "33142e86328a2c8fb1792a8c0a56cc7a",
+   "note": "店主选定: 满铺(crop34, x0=109 保留完整版标/REMASTERED, 裁右侧盔甲) · 港服预购正式版方图",
+   "platform": "PS",
+   "role": "M-fill",
+   "store": "港服 真・三国无双２ with 猛将传 Remastered (JP0106-PPSA32935_00-DW3CEREMASTERED0)",
+   "time": "2026-09-24T00:37:21"
   }
  }
 }
