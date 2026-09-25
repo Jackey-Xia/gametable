@@ -1,11 +1,21 @@
 {
- "time": "2026-09-25T13:13:01",
- "added": [],
+ "time": "2026-09-25T14:01:19",
+ "added": [
+  {
+   "name": "有这么一个家伙",
+   "product": "HP8406-PPSA37568_00-NIUSUCHAGUYGLOAB",
+   "storeName": "有这么一个家伙 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/ace2403fab4ed0p34.jpg",
+   "role": "P-pad",
+   "bytes": 143804
+  }
+ ],
  "pending": [],
  "errors": [],
  "stats": {
-  "total": 1201,
-  "covered": 1245,
+  "total": 1202,
+  "covered": 1246,
   "pending_open": 0
  }
 }
