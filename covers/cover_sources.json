@@ -9100,12 +9100,13 @@
   "time": "2026-09-18T21:53:50"
  },
  "逸剑风云决": {
-  "file": "covers/fd959f825c18_s.jpg",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc453980c683a4.jpg",
-  "role": "P",
+  "file": "covers/rc2d5ca34311c8.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-09-18T21:53:50"
+  "role": "P-fill",
+  "store": "港服 逸剑风云决 (中日英韩文版) (JP5784-PPSA34054_00-WANDERINGSWORD00)",
+  "time": "2026-09-27T01:01:54",
+  "note": "店主选定: 满铺(crop34 竖图顶部对齐, 1440x2160->裁底240px->504x672) · 港服标准版中文卡 · 前英文竖图直上版 fd959f825c18_s 已替换",
+  "en": "Wandering Sword"
  },
  "遍体鳞伤": {
   "file": "covers/ee28e2dd2b9e_s.jpg",
