@@ -1,7 +1,8 @@
 {
  "_meta": {
   "count": 1091,
-  "updated": "2026-09-27T01:01:55"
+  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
+  "updated": "2026-09-26T17:03:31"
  },
  "locks": {
   "p0001": {
@@ -12782,7 +12783,7 @@
    "en": "Wandering Sword",
    "file": "covers/rc2d5ca34311c8.jpg",
    "md5": "f4341b7f3e4ee9d14afb58131e8f29eb",
-   "note": "店主选定满铺B上线 · 港服标准版中文卡crop34顶对齐(原英文竖图直上被替换)",
+   "note": "店主选定: 满铺(crop34 竖图顶部对齐, 1440x2160->裁底240px->504x672) · 港服标准版中文卡 · 前英文竖图直上版 fd959f825c18_s 已替换",
    "platform": "PS",
    "role": "P-fill",
    "store": "港服 逸剑风云决 (中日英韩文版) (JP5784-PPSA34054_00-WANDERINGSWORD00)",
