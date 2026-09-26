@@ -1,7 +1,8 @@
 {
  "_meta": {
   "count": 1091,
-  "updated": "2026-09-26T15:33:05"
+  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
+  "updated": "2026-09-26T07:35:26"
  },
  "locks": {
   "p0001": {
@@ -14330,7 +14331,7 @@
    "en": "Such a guy",
    "file": "covers/rcca5b92138dd9.jpg",
    "md5": "cdf674a1e159a288b8c284b0025737c8",
-   "note": "店主选定满铺B上线 · 港服中文页竖图crop34顶对齐",
+   "note": "店主选定: 满铺(crop34 竖图顶部对齐, 1440x2160->裁底240px->504x672) · 港服中文页竖图 · 前留边版 ace2403fab4ed0p34 已替换",
    "platform": "PS",
    "role": "P-fill",
    "store": "港服 有这么一个家伙 (HP8406-PPSA37568_00-NIUSUCHAGUYGLOAB)",
