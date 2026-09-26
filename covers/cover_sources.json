@@ -5305,12 +5305,12 @@
   "time": "2026-09-18T21:52:47"
  },
  "有这么一个家伙": {
-  "file": "covers/ace2403fab4ed0p34.jpg",
-  "source": "store_zh_hk",
-  "role": "P-pad",
-  "store": "有这么一个家伙 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-25T14:01:19",
-  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)"
+  "file": "covers/rcca5b92138dd9.jpg",
+  "source": "manual",
+  "role": "P-fill",
+  "store": "港服 有这么一个家伙 (HP8406-PPSA37568_00-NIUSUCHAGUYGLOAB)",
+  "time": "2026-09-26T15:33:05",
+  "note": "店主选定: 满铺(crop34 竖图顶部对齐, 1440x2160->裁底240px->504x672) · 港服中文页竖图 · 前留边版 ace2403fab4ed0p34 已替换"
  },
  "木偶往事": {
   "file": "covers/rc54b188df8a49.jpg",
