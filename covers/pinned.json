@@ -1,8 +1,7 @@
 {
  "_meta": {
-  "count": 1090,
-  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-09-26T07:10:52"
+  "count": 1091,
+  "updated": "2026-09-26T15:33:05"
  },
  "locks": {
   "p0001": {
@@ -14323,6 +14322,19 @@
    "role": "M-fill",
    "store": "港服 真・三国无双２ with 猛将传 Remastered (JP0106-PPSA32935_00-DW3CEREMASTERED0)",
    "time": "2026-09-24T00:37:21"
+  },
+  "p1091": {
+   "cn": [
+    "有这么一个家伙"
+   ],
+   "en": "Such a guy",
+   "file": "covers/rcca5b92138dd9.jpg",
+   "md5": "cdf674a1e159a288b8c284b0025737c8",
+   "note": "店主选定满铺B上线 · 港服中文页竖图crop34顶对齐",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "港服 有这么一个家伙 (HP8406-PPSA37568_00-NIUSUCHAGUYGLOAB)",
+   "time": "2026-09-26T15:33:05"
   }
  }
 }
