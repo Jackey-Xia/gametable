@@ -1,11 +1,21 @@
 {
- "time": "2026-09-30T11:11:24",
- "added": [],
+ "time": "2026-09-30T12:01:16",
+ "added": [
+  {
+   "name": "皇牌空战8：希孚之翼",
+   "product": "JP0700-PPSA24913_00-MAINGAME00000000",
+   "storeName": "空战奇兵8 希孚之翼 (ACE COMBAT 8: WINGS OF THEVE) (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/ac595a4c2f1ff2p34.jpg",
+   "role": "P-pad",
+   "bytes": 72915
+  }
+ ],
  "pending": [],
  "errors": [],
  "stats": {
-  "total": 1202,
-  "covered": 1251,
+  "total": 1203,
+  "covered": 1252,
   "pending_open": 0
  }
 }
