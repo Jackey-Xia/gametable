@@ -7079,6 +7079,14 @@
   "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版) · 改名沿用(旧键: 皇牌空战8：希孚之翼)",
   "en": "Ace Combat 8：Wings of Theve"
  },
+ "皇牌空战8：希孚之翼2": {
+  "file": "covers/ac595a4c2f1ff2p34.jpg",
+  "source": "store_zh_hk",
+  "role": "P-pad",
+  "store": "空战奇兵8 希孚之翼 (ACE COMBAT 8: WINGS OF THEVE) (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-30T16:01:16",
+  "note": "多库存沿用: 与《皇牌空战8：希孚之翼1》同一商品仅增加库存, 直接沿用同款封面"
+ },
  "盐与献祭": {
   "file": "covers/rc3daa4f80aa32.jpg",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",

@@ -1,17 +1,11 @@
 {
- "time": "2026-09-30T15:52:32",
+ "time": "2026-09-30T16:01:16",
  "added": [],
- "pending": [
-  {
-   "name": "皇牌空战8：希孚之翼2",
-   "reason": "匹配有歧义或无命中",
-   "top": ""
-  }
- ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1204,
-  "covered": 1253,
-  "pending_open": 1
+  "covered": 1254,
+  "pending_open": 0
  }
 }
