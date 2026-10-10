@@ -1,11 +1,17 @@
 {
- "time": "2026-10-10T16:01:02",
+ "time": "2026-10-10T16:23:30",
  "added": [],
- "pending": [],
+ "pending": [
+  {
+   "name": "银松镇2",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  }
+ ],
  "errors": [],
  "stats": {
-  "total": 1206,
-  "covered": 1257,
-  "pending_open": 0
+  "total": 1207,
+  "covered": 1258,
+  "pending_open": 1
  }
 }
