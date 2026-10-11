@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1095,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-11T22:40:00"
+  "updated": "2026-10-11T14:42:37"
  },
  "locks": {
   "p0001": {
@@ -13303,7 +13303,7 @@
     "霓虹深渊（豪华版）",
     "霓虹深渊1（豪华版）"
    ],
-   "en": "Neon Abyss 2（Deluxe Edition）",
+   "en": "Neon Abyss 1（Deluxe Edition）",
    "file": "covers/rc84daa311d3b3.jpg",
    "md5": "82a610f4e9e54b175f87d28de20e9986",
    "note": "②店主审核: 采用C满填不留边 · ①港服(英文名) · Neon Abyss (日语, 简体中文, 繁体中文, 英语)",
@@ -14361,7 +14361,7 @@
    "en": "Neon Abyss 2（Deluxe Edition）",
    "file": "covers/rc9377af9df8da.jpg",
    "md5": "b017ecea39590223981ad8ffa07c0725",
-   "note": "店主选B·满铺上线(港服豪华版橙红卡, 方图横向裁768, 版标完整)；从 p1013 家族锁拆出",
+   "note": "店主指定B·满铺上线(港服豪华版橙红卡, 方图横向裁, 版标 NEON ABYSS 2 DELUXE 完整)",
    "platform": "PS",
    "role": "M-fill",
    "store": "Neon Abyss 2: Deluxe Edition (日语, 韩语, 简体中文, 繁体中文, 英语) PS Store HK",
@@ -14374,7 +14374,7 @@
    "en": "Super Robot Wars 30th Anniversary（Deluxe Edition）",
    "file": "covers/rc69a82d1fea91.jpg",
    "md5": "a5e526ab84aaa381b53da83368a0ee17",
-   "note": "店主选B·满铺上线(港服数字豪华版卡, 方图横向裁, DIGITAL DELUXE EDITION 完整)；从 p0942 拆出(此前错挂机战Y图)",
+   "note": "店主指定B·满铺上线(港服数字豪华版卡, 方图横向裁, DIGITAL DELUXE EDITION 完整；此前误挂机战Y图)",
    "platform": "PS",
    "role": "M-fill",
    "store": "超级机器人大战30 数字豪华版 (韩语, 简体中文, 繁体中文) PS Store HK",
