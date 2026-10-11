@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1092,
+  "count": 1095,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-11T14:17:24"
+  "updated": "2026-10-11T22:40:00"
  },
  "locks": {
   "p0001": {
@@ -12372,8 +12372,7 @@
   },
   "p0942": {
    "cn": [
-    "超级机器人大战Y（豪华版）",
-    "超级机器人大战30（豪华版）"
+    "超级机器人大战Y（豪华版）"
    ],
    "en": "Super Robot Wars 30th Anniversary（Deluxe Edition）",
    "file": "covers/rc49299e45974a.jpg",
@@ -13302,8 +13301,7 @@
   "p1013": {
    "cn": [
     "霓虹深渊（豪华版）",
-    "霓虹深渊1（豪华版）",
-    "霓虹深渊2（豪华版）"
+    "霓虹深渊1（豪华版）"
    ],
    "en": "Neon Abyss 2（Deluxe Edition）",
    "file": "covers/rc84daa311d3b3.jpg",
@@ -14355,6 +14353,45 @@
    "role": "M-fill",
    "store": "1348 - Ex Voto (标准版) PS Store HK",
    "time": "2026-10-11T07:37:04"
+  },
+  "p1093": {
+   "cn": [
+    "霓虹深渊2（豪华版）"
+   ],
+   "en": "Neon Abyss 2（Deluxe Edition）",
+   "file": "covers/rc9377af9df8da.jpg",
+   "md5": "b017ecea39590223981ad8ffa07c0725",
+   "note": "店主选B·满铺上线(港服豪华版橙红卡, 方图横向裁768, 版标完整)；从 p1013 家族锁拆出",
+   "platform": "PS",
+   "role": "M-fill",
+   "store": "Neon Abyss 2: Deluxe Edition (日语, 韩语, 简体中文, 繁体中文, 英语) PS Store HK",
+   "time": "2026-10-11T22:40:00"
+  },
+  "p1094": {
+   "cn": [
+    "超级机器人大战30（豪华版）"
+   ],
+   "en": "Super Robot Wars 30th Anniversary（Deluxe Edition）",
+   "file": "covers/rc69a82d1fea91.jpg",
+   "md5": "a5e526ab84aaa381b53da83368a0ee17",
+   "note": "店主选B·满铺上线(港服数字豪华版卡, 方图横向裁, DIGITAL DELUXE EDITION 完整)；从 p0942 拆出(此前错挂机战Y图)",
+   "platform": "PS",
+   "role": "M-fill",
+   "store": "超级机器人大战30 数字豪华版 (韩语, 简体中文, 繁体中文) PS Store HK",
+   "time": "2026-10-11T22:40:00"
+  },
+  "p1095": {
+   "cn": [
+    "猛鬼追魂 复苏"
+   ],
+   "en": "Clive Barker's Hellraiser Revival",
+   "file": "covers/rc392a7e48e3f0.jpg",
+   "md5": "a4f50c71a4e8d2a658820c18195295ae",
+   "note": "店主指定·满铺上线(港服标准版方图横向裁, HELLRAISER REVIVAL 标题完整)",
+   "platform": "PS",
+   "role": "M-fill",
+   "store": "Clive Barker's Hellraiser: Revival (英语) PS Store HK",
+   "time": "2026-10-11T22:40:00"
   }
  }
 }
