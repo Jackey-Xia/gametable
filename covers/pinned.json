@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1098,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-11T18:16:05"
+  "updated": "2026-10-12T02:32:52"
  },
  "locks": {
   "p0001": {
@@ -779,13 +779,13 @@
     "乐高 蝙蝠侠黑暗骑士传奇（豪华版）"
    ],
    "en": "",
-   "file": "covers/rcbf26818cff45.jpg",
-   "md5": "2033dc1c2feb6097ea40d924ed9d88fe",
-   "note": "店主审核 E3 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 DELUXEEOITION",
+   "file": "covers/rc88ee6d9e76ef.jpg",
+   "md5": "72bcfebee49d31e9a4b90f6e705151fb",
+   "note": "店主审核 E3 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 DELUXEEOITION | 店主确认满铺上线(顶对齐裁底) 2026-10-12T02:32:52",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "LEGO® Batman™: Legacy of the Dark Knight Deluxe Edition",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-12T02:32:52"
   },
   "p0060": {
    "cn": [
@@ -2807,13 +2807,13 @@
     "咒语旅团 法术小队"
    ],
    "en": "",
-   "file": "covers/rc2c3193324ccb.jpg",
-   "md5": "6162eb4365334d5be58edf30d7bb0092",
-   "note": "店主审核 E12 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 TSPELL",
+   "file": "covers/rc7118f55584a8.jpg",
+   "md5": "de59014c806494aadc928b86fcb75e89",
+   "note": "店主审核 E12 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 TSPELL | 店主确认满铺上线(顶对齐裁底) 2026-10-12T02:32:52",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "The Spell Brigade",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-12T02:32:52"
   },
   "p0214": {
    "cn": [
@@ -3472,13 +3472,13 @@
     "墨境"
    ],
    "en": "",
-   "file": "covers/rcd7768d357789.jpg",
-   "md5": "43dfc6b31dce46a86d14fb4a35b21494",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 1096d8545194_s.jpg",
+   "file": "covers/rc85fc790882c7.jpg",
+   "md5": "4549b3b435a45d618749e5d5278e35ac",
+   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 1096d8545194_s.jpg | 店主确认满铺上线(顶对齐裁底) 2026-10-12T02:32:52",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-12T02:32:52"
   },
   "p0265": {
    "cn": [
@@ -3760,13 +3760,13 @@
     "失落星船：马拉松"
    ],
    "en": "",
-   "file": "covers/rcc9e452a8847f.jpg",
-   "md5": "77f712ff4be67a876b8e02fe2acf244a",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rc2a014dbd253a.jpg",
+   "file": "covers/rc290843d1a4d2.jpg",
+   "md5": "95ac7e141abf7bfcb35da0238ba92248",
+   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rc2a014dbd253a.jpg | 店主确认满铺上线(顶对齐裁底) 2026-10-12T02:32:52",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-12T02:32:52"
   },
   "p0287": {
    "cn": [
@@ -5086,13 +5086,13 @@
     "康斯坦丝"
    ],
    "en": "",
-   "file": "covers/rc6f9d953e4f00.jpg",
-   "md5": "2f2dcc77780463b67d6deb3266f37ded",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 ac7a9b1365cb_s.jpg",
+   "file": "covers/rcc682a245c691.jpg",
+   "md5": "6d29c828ae09da7ce0fd7fd185613fb9",
+   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 ac7a9b1365cb_s.jpg | 店主确认满铺上线(顶对齐裁底) 2026-10-12T02:32:52",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-12T02:32:52"
   },
   "p0388": {
    "cn": [
@@ -6302,13 +6302,13 @@
     "控制：共振（豪华版）（4）"
    ],
    "en": "Control Resonant（Deluxe Edition）",
-   "file": "covers/rca3dd55d8828c.jpg",
-   "md5": "f781043b33ecb241ce4ba73f68d1dcc2",
-   "note": "多库存沿用: 与《控制：共振（豪华版）（1）》同一商品仅增加库存, 直接沿用同款封面",
+   "file": "covers/rc6bf6efb10df0.jpg",
+   "md5": "791335a9f1983c51793095036245014d",
+   "note": "多库存沿用: 与《控制：共振（豪华版）（1）》同一商品仅增加库存, 直接沿用同款封面 | 店主确认满铺上线(顶对齐裁底) 2026-10-12T02:32:52",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "CONTROL Resonant Digital Deluxe Edition",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-12T02:32:52"
   },
   "p0481": {
    "cn": [
@@ -6606,13 +6606,13 @@
     "无休仙途"
    ],
    "en": "",
-   "file": "covers/rc4e77938e76c6.jpg",
-   "md5": "4842ca26407dc3106161289714e9b7c7",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rc21055c214450.jpg",
+   "file": "covers/rc772866f960f9.jpg",
+   "md5": "6bbd596ac7bea2684a43f37dea726bee",
+   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rc21055c214450.jpg | 店主确认满铺上线(顶对齐裁底) 2026-10-12T02:32:52",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-12T02:32:52"
   },
   "p0504": {
    "cn": [
@@ -7767,13 +7767,13 @@
     "枪手真人秀（白金版）"
    ],
    "en": "",
-   "file": "covers/rc40e1fba9f625.jpg",
-   "md5": "313635472bf90787f80e83c0427746b7",
-   "note": "店主审核 B93 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 S;LEGUnETS",
+   "file": "covers/rc855a99b97b35.jpg",
+   "md5": "48379f5e276f9862783f531993775344",
+   "note": "店主审核 B93 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 S;LEGUnETS | 店主确认满铺上线(顶对齐裁底) 2026-10-12T02:32:52",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "Showgunners Platinum Edition (简体中文, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-12T02:32:52"
   },
   "p0593": {
    "cn": [
@@ -9015,13 +9015,13 @@
     "漫威金刚狼7"
    ],
    "en": "",
-   "file": "covers/rcbb2579f12db9.jpg",
-   "md5": "473e2d67b525cbb5ed5e3f9233131a95",
-   "note": "店主审核 H49 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MARVEL",
+   "file": "covers/rcf27a1fc0051d.jpg",
+   "md5": "4de08a0f04aee4e49f373113092468f5",
+   "note": "店主审核 H49 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MARVEL | 店主确认满铺上线(顶对齐裁底) 2026-10-12T02:32:52",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "《漫威金刚狼》 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-12T02:32:52"
   },
   "p0688": {
    "cn": [
@@ -12388,13 +12388,13 @@
     "超级浣熊羊"
    ],
    "en": "",
-   "file": "covers/rc0826c36382a4.jpg",
-   "md5": "a062d75471440561aa163cc39197b469",
-   "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rcc86b9786d689.jpg",
+   "file": "covers/rcce9960e7b088.jpg",
+   "md5": "a3333420783c070f4379186f8a403725",
+   "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rcc86b9786d689.jpg | 店主确认满铺上线(顶对齐裁底) 2026-10-12T02:32:52",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-12T02:32:52"
   },
   "p0944": {
    "cn": [
@@ -13448,13 +13448,13 @@
     "首都高赛车"
    ],
    "en": "",
-   "file": "covers/rcf2b2b71a6acd.jpg",
-   "md5": "16af0dced5c91cbc3b9b5368c7ce676b",
-   "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/cc37d2d14a41_s.jpg",
+   "file": "covers/rcc29db51e0df4.jpg",
+   "md5": "2d7f8298bc0371f91d6b42d3b9d171c6",
+   "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/cc37d2d14a41_s.jpg | 店主确认满铺上线(顶对齐裁底) 2026-10-12T02:32:52",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-12T02:32:52"
   },
   "p1025": {
    "cn": [
