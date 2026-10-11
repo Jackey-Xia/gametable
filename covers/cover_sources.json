@@ -3247,29 +3247,29 @@
   "time": "2026-09-18T11:17:59"
  },
  "寂静岭：小镇陷落1": {
+  "en": "Silent Hill：Townfall",
   "file": "covers/ac1e4d70f49612p34.jpg",
-  "source": "store_zh_hk",
-  "role": "P-pad",
-  "store": "SILENT HILL: Townfall (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-21T04:01:58",
   "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
-  "en": "Silent Hill：Townfall"
+  "role": "P-pad",
+  "source": "store_zh_hk",
+  "store": "SILENT HILL: Townfall (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-21T04:01:58"
  },
  "寂静岭：小镇陷落2": {
   "file": "covers/ac1e4d70f49612p34.jpg",
-  "source": "store_zh_hk",
+  "note": "多库存沿用: 与《寂静岭：小镇陷落1》同一商品仅增加库存, 直接沿用同款封面",
   "role": "P-pad",
+  "source": "store_zh_hk",
   "store": "SILENT HILL: Townfall (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-21T04:11:06",
-  "note": "多库存沿用: 与《寂静岭：小镇陷落1》同一商品仅增加库存, 直接沿用同款封面"
+  "time": "2026-09-21T04:11:06"
  },
  "寂静岭：小镇陷落3": {
   "file": "covers/ac1e4d70f49612p34.jpg",
-  "source": "store_zh_hk",
+  "note": "多库存沿用: 与《寂静岭：小镇陷落1》同一商品仅增加库存, 直接沿用同款封面",
   "role": "P-pad",
+  "source": "store_zh_hk",
   "store": "SILENT HILL: Townfall (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-23T02:30:54",
-  "note": "多库存沿用: 与《寂静岭：小镇陷落1》同一商品仅增加库存, 直接沿用同款封面"
+  "time": "2026-09-23T02:30:54"
  },
  "寂静村的孩子们": {
   "file": "covers/rcd015a2d158c7.jpg",
@@ -4487,19 +4487,19 @@
  },
  "控制：共振（豪华版）（3）": {
   "file": "covers/rca3dd55d8828c.jpg",
-  "source": "manual",
+  "note": "多库存沿用: 与《控制：共振（豪华版）（1）》同一商品仅增加库存, 直接沿用同款封面",
   "role": "P-pad",
+  "source": "manual",
   "store": "CONTROL Resonant Digital Deluxe Edition",
-  "time": "2026-09-21T17:40:00",
-  "note": "多库存沿用: 与《控制：共振（豪华版）（1）》同一商品仅增加库存, 直接沿用同款封面"
+  "time": "2026-09-21T17:40:00"
  },
  "控制：共振（豪华版）（4）": {
   "file": "covers/rca3dd55d8828c.jpg",
-  "source": "manual",
+  "note": "多库存沿用: 与《控制：共振（豪华版）（1）》同一商品仅增加库存, 直接沿用同款封面",
   "role": "P-pad",
+  "source": "manual",
   "store": "CONTROL Resonant Digital Deluxe Edition",
-  "time": "2026-09-22T02:04:42",
-  "note": "多库存沿用: 与《控制：共振（豪华版）（1）》同一商品仅增加库存, 直接沿用同款封面"
+  "time": "2026-09-22T02:04:42"
  },
  "提线木偶奇遇记": {
   "file": "covers/2cea929f3990_s.jpg",
@@ -5306,11 +5306,11 @@
  },
  "有这么一个家伙": {
   "file": "covers/rcca5b92138dd9.jpg",
-  "source": "manual",
+  "note": "店主选定: 满铺(crop34 竖图顶部对齐, 1440x2160->裁底240px->504x672) · 港服中文页竖图 · 前留边版 ace2403fab4ed0p34 已替换",
   "role": "P-fill",
+  "source": "manual",
   "store": "港服 有这么一个家伙 (HP8406-PPSA37568_00-NIUSUCHAGUYGLOAB)",
-  "time": "2026-09-26T15:33:05",
-  "note": "店主选定: 满铺(crop34 竖图顶部对齐, 1440x2160->裁底240px->504x672) · 港服中文页竖图 · 前留边版 ace2403fab4ed0p34 已替换"
+  "time": "2026-09-26T15:33:05"
  },
  "木偶往事": {
   "file": "covers/rc54b188df8a49.jpg",
@@ -6155,22 +6155,22 @@
   "time": "2026-09-18T21:52:59"
  },
  "深海迷航1": {
+  "en": "Subnautica",
   "file": "covers/187ae3144c93_s.jpg",
-  "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-23T02:30:54",
   "note": "★人工锁死沿用(锁p0672, 近似匹配 0.89 《深海迷航》)",
-  "en": "Subnautica"
+  "role": "P",
+  "source": "manual",
+  "store": "",
+  "time": "2026-09-23T02:30:54"
  },
  "深海迷航2": {
+  "en": "Subnautica",
   "file": "covers/187ae3144c93_s.jpg",
-  "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-23T02:30:54",
   "note": "★人工锁死沿用(锁p0672, 近似匹配 0.89 《深海迷航》)",
-  "en": "Subnautica"
+  "role": "P",
+  "source": "manual",
+  "store": "",
+  "time": "2026-09-23T02:30:54"
  },
  "深海迷航：冰点之下": {
   "file": "covers/4e16a40d9e39_s.jpg",
@@ -6455,31 +6455,31 @@
   "time": "2026-09-18T23:51:46"
  },
  "灵魂旅人（告别版）（1）": {
+  "en": "SpiritFarer（Farewell Edition）",
   "file": "covers/rc37c564d3bd64.jpg",
-  "source": "manual",
-  "role": "P",
-  "store": "Spiritfarer®: Farewell Edition",
-  "time": "2026-09-23T04:00:43",
   "note": "★人工锁死沿用(锁p0699, 中文名一致)",
-  "en": "SpiritFarer（Farewell Edition）"
+  "role": "P",
+  "source": "manual",
+  "store": "Spiritfarer®: Farewell Edition",
+  "time": "2026-09-23T04:00:43"
  },
  "灵魂旅人（告别版）（2）": {
+  "en": "SpiritFarer（Farewell Edition）",
   "file": "covers/rc37c564d3bd64.jpg",
-  "source": "manual",
-  "role": "P",
-  "store": "Spiritfarer®: Farewell Edition",
-  "time": "2026-09-23T04:00:43",
   "note": "★人工锁死沿用(锁p0699, 中文名一致)",
-  "en": "SpiritFarer（Farewell Edition）"
+  "role": "P",
+  "source": "manual",
+  "store": "Spiritfarer®: Farewell Edition",
+  "time": "2026-09-23T04:00:43"
  },
  "灵魂旅人（告别版）（3）": {
+  "en": "SpiritFarer（Farewell Edition）",
   "file": "covers/rc37c564d3bd64.jpg",
-  "source": "manual",
-  "role": "P",
-  "store": "Spiritfarer®: Farewell Edition",
-  "time": "2026-09-23T04:00:44",
   "note": "★人工锁死沿用(锁p0699, 中文名一致)",
-  "en": "SpiritFarer（Farewell Edition）"
+  "role": "P",
+  "source": "manual",
+  "store": "Spiritfarer®: Farewell Edition",
+  "time": "2026-09-23T04:00:44"
  },
  "灵魂石幸存者（完整版）": {
   "en": "Soulstone Survivors & Supporter Pack",
@@ -7062,30 +7062,30 @@
   "time": "2026-09-17T16:42:15"
  },
  "皇牌空战8：希孚之翼": {
+  "en": "Ace Combat 8：Wings of Theve",
   "file": "covers/ac595a4c2f1ff2p34.jpg",
-  "source": "store_zh_hk",
-  "role": "P-pad",
-  "store": "空战奇兵8 希孚之翼 (ACE COMBAT 8: WINGS OF THEVE) (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-30T12:01:16",
   "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
-  "en": "Ace Combat 8：Wings of Theve"
+  "role": "P-pad",
+  "source": "store_zh_hk",
+  "store": "空战奇兵8 希孚之翼 (ACE COMBAT 8: WINGS OF THEVE) (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-30T12:01:16"
  },
  "皇牌空战8：希孚之翼1": {
+  "en": "Ace Combat 8：Wings of Theve",
   "file": "covers/ac595a4c2f1ff2p34.jpg",
-  "source": "store_zh_hk",
-  "role": "P-pad",
-  "store": "空战奇兵8 希孚之翼 (ACE COMBAT 8: WINGS OF THEVE) (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-30T15:52:30",
   "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版) · 改名沿用(旧键: 皇牌空战8：希孚之翼)",
-  "en": "Ace Combat 8：Wings of Theve"
+  "role": "P-pad",
+  "source": "store_zh_hk",
+  "store": "空战奇兵8 希孚之翼 (ACE COMBAT 8: WINGS OF THEVE) (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-30T15:52:30"
  },
  "皇牌空战8：希孚之翼2": {
   "file": "covers/ac595a4c2f1ff2p34.jpg",
-  "source": "store_zh_hk",
+  "note": "多库存沿用: 与《皇牌空战8：希孚之翼1》同一商品仅增加库存, 直接沿用同款封面",
   "role": "P-pad",
+  "source": "store_zh_hk",
   "store": "空战奇兵8 希孚之翼 (ACE COMBAT 8: WINGS OF THEVE) (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-30T16:01:16",
-  "note": "多库存沿用: 与《皇牌空战8：希孚之翼1》同一商品仅增加库存, 直接沿用同款封面"
+  "time": "2026-09-30T16:01:16"
  },
  "盐与献祭": {
   "file": "covers/rc3daa4f80aa32.jpg",
@@ -7189,22 +7189,22 @@
   "time": "2026-09-20T04:25:32"
  },
  "真三国无双2 猛将传1": {
+  "en": "Dynasty Warriors 3：Complete Edition Remastered",
   "file": "covers/rc949ad833fcde.jpg",
-  "source": "manual",
-  "role": "M-fill",
-  "store": "港服 真・三国无双２ with 猛将传 Remastered (JP0106-PPSA32935_00-DW3CEREMASTERED0)",
-  "time": "2026-09-24T00:37:21",
   "note": "店主选定: 满铺(crop34, x0=109 保留完整版标/REMASTERED, 裁右侧盔甲) · 港服预购正式版方图",
-  "en": "Dynasty Warriors 3：Complete Edition Remastered"
+  "role": "M-fill",
+  "source": "manual",
+  "store": "港服 真・三国无双２ with 猛将传 Remastered (JP0106-PPSA32935_00-DW3CEREMASTERED0)",
+  "time": "2026-09-24T00:37:21"
  },
  "真三国无双2 猛将传2": {
+  "en": "Dynasty Warriors 3：Complete Edition Remastered",
   "file": "covers/rc949ad833fcde.jpg",
-  "source": "manual",
-  "role": "M-fill",
-  "store": "港服 真・三国无双２ with 猛将传 Remastered (JP0106-PPSA32935_00-DW3CEREMASTERED0)",
-  "time": "2026-09-24T00:37:21",
   "note": "店主选定: 满铺(crop34, x0=109 保留完整版标/REMASTERED, 裁右侧盔甲) · 港服预购正式版方图",
-  "en": "Dynasty Warriors 3：Complete Edition Remastered"
+  "role": "M-fill",
+  "source": "manual",
+  "store": "港服 真・三国无双２ with 猛将传 Remastered (JP0106-PPSA32935_00-DW3CEREMASTERED0)",
+  "time": "2026-09-24T00:37:21"
  },
  "真人快打11（终极版）（1）": {
   "en": "Mortal Kombat 11 Ultimate",
@@ -7459,22 +7459,22 @@
   "time": "2026-09-18T21:53:24"
  },
  "空之轨迹1st（1）": {
+  "en": "Sora no Kiseki the 1st",
   "file": "covers/4a83b82f598d_s.jpg",
-  "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-23T08:01:00",
   "note": "★人工锁死沿用(锁p0802, 中文名一致)",
-  "en": "Sora no Kiseki the 1st"
+  "role": "P",
+  "source": "manual",
+  "store": "",
+  "time": "2026-09-23T08:01:00"
  },
  "空之轨迹1st（2）": {
+  "en": "Sora no Kiseki the 1st",
   "file": "covers/4a83b82f598d_s.jpg",
-  "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-09-23T08:01:00",
   "note": "★人工锁死沿用(锁p0802, 中文名一致)",
-  "en": "Sora no Kiseki the 1st"
+  "role": "P",
+  "source": "manual",
+  "store": "",
+  "time": "2026-09-23T08:01:00"
  },
  "空之轨迹2nd（1）": {
   "file": "covers/rc8fd7082a0fe4.jpg",
@@ -7807,13 +7807,13 @@
   "time": "2026-09-18T13:40:09"
  },
  "罪金游戏": {
+  "en": "The Vig",
   "file": "covers/acc379b7dc5cfep34.jpg",
-  "source": "store_zh_hk",
-  "role": "P-pad",
-  "store": "罪金游戏 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-22T12:35:41",
   "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
-  "en": "The Vig"
+  "role": "P-pad",
+  "source": "store_zh_hk",
+  "store": "罪金游戏 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-09-22T12:35:41"
  },
  "羊蹄山之魂1": {
   "en": "Ghost of Yotei",
@@ -7893,45 +7893,45 @@
   "time": "2026-09-19T02:49:18"
  },
  "羊蹄山之魂（完全版）（1）": {
+  "en": "Ghost of Yotei（Complete Edition）",
   "file": "covers/rced2bf8adfefe.jpg",
-  "source": "manual",
-  "role": "M-fill",
-  "store": "",
-  "time": "2026-09-30T09:35:33",
   "note": "★人工锁死沿用(锁p0834, 近似匹配 0.91 《羊蹄山之魂（1）》) · 改名沿用(旧键: 羊蹄山之魂1)",
-  "en": "Ghost of Yotei（Complete Edition）"
+  "role": "M-fill",
+  "source": "manual",
+  "store": "",
+  "time": "2026-09-30T09:35:33"
  },
  "羊蹄山之魂（完全版）（2）": {
   "file": "covers/ac601ef9d59c71p34.jpg",
-  "source": "store_zh_hk",
+  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 完全版",
   "role": "P-pad",
+  "source": "store_zh_hk",
   "store": "《羊蹄山之魂》完整版 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-30T09:35:41",
-  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 完全版"
+  "time": "2026-09-30T09:35:41"
  },
  "羊蹄山之魂（完全版）（3）": {
   "file": "covers/acb6cd12ddd644p34.jpg",
-  "source": "store_zh_hk",
+  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 完全版",
   "role": "P-pad",
+  "source": "store_zh_hk",
   "store": "《羊蹄山之魂》完整版 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-30T09:35:42",
-  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 完全版"
+  "time": "2026-09-30T09:35:42"
  },
  "羊蹄山之魂（完全版）（4）": {
   "file": "covers/ac0f92889c1a37p34.jpg",
-  "source": "store_zh_hk",
+  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 完全版",
   "role": "P-pad",
+  "source": "store_zh_hk",
   "store": "《羊蹄山之魂》完整版 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-30T09:35:43",
-  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 完全版"
+  "time": "2026-09-30T09:35:43"
  },
  "羊蹄山之魂（完全版）（5）": {
   "file": "covers/ac537efda4888cp34.jpg",
-  "source": "store_zh_hk",
+  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 完全版",
   "role": "P-pad",
+  "source": "store_zh_hk",
   "store": "《羊蹄山之魂》完整版 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-30T09:35:44",
-  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 完全版"
+  "time": "2026-09-30T09:35:44"
  },
  "羊蹄山之魂（豪华版）（5）": {
   "file": "covers/rced2bf8adfefe.jpg",
@@ -9167,13 +9167,13 @@
   "time": "2026-09-18T21:53:50"
  },
  "逸剑风云决": {
+  "en": "Wandering Sword",
   "file": "covers/rc2d5ca34311c8.jpg",
-  "source": "manual",
-  "role": "P-fill",
-  "store": "港服 逸剑风云决 (中日英韩文版) (JP5784-PPSA34054_00-WANDERINGSWORD00)",
-  "time": "2026-09-27T01:01:54",
   "note": "店主选定: 满铺(crop34 竖图顶部对齐, 1440x2160->裁底240px->504x672) · 港服标准版中文卡 · 前英文竖图直上版 fd959f825c18_s 已替换",
-  "en": "Wandering Sword"
+  "role": "P-fill",
+  "source": "manual",
+  "store": "港服 逸剑风云决 (中日英韩文版) (JP5784-PPSA34054_00-WANDERINGSWORD00)",
+  "time": "2026-09-27T01:01:54"
  },
  "遍体鳞伤": {
   "file": "covers/ee28e2dd2b9e_s.jpg",
@@ -9289,30 +9289,30 @@
   "time": "2026-09-19T02:49:19"
  },
  "银松镇": {
+  "en": "Silver Pines",
   "file": "covers/ac711720bcb409p34.jpg",
-  "source": "store_zh_hk",
-  "role": "P-pad",
-  "store": "Silver Pines (日语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-10-09T08:19:48",
   "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
-  "en": "Silver Pines"
+  "role": "P-pad",
+  "source": "store_zh_hk",
+  "store": "Silver Pines (日语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-10-09T08:19:48"
  },
  "银松镇1": {
+  "en": "Silver Pines",
   "file": "covers/ac711720bcb409p34.jpg",
-  "source": "store_zh_hk",
-  "role": "P-pad",
-  "store": "Silver Pines (日语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-10-10T16:23:29",
   "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版) · 改名沿用(旧键: 银松镇)",
-  "en": "Silver Pines"
+  "role": "P-pad",
+  "source": "store_zh_hk",
+  "store": "Silver Pines (日语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-10-10T16:23:29"
  },
  "银松镇2": {
   "file": "covers/ac711720bcb409p34.jpg",
-  "source": "store_zh_hk",
+  "note": "多库存沿用: 与《银松镇1》同一商品仅增加库存, 直接沿用同款封面",
   "role": "P-pad",
+  "source": "store_zh_hk",
   "store": "Silver Pines (日语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-10-10T18:14:21",
-  "note": "多库存沿用: 与《银松镇1》同一商品仅增加库存, 直接沿用同款封面"
+  "time": "2026-10-10T18:14:21"
  },
  "银魂乱舞": {
   "file": "covers/rc75ab47a5b478.jpg",
@@ -9454,12 +9454,12 @@
  },
  "雨中冒险2（完整版）": {
   "en": "Risk of Rain 2（Complete Edition）",
-  "file": "covers/rc477c284d599b.jpg",
-  "note": "店主指认红框卡 · 方图源留边",
+  "file": "covers/rc45bc422c1538.jpg",
+  "note": "店主选A·留边版上线(ROR2 DLC BUNDLE卡, 版标横贯全宽不可满铺, pad34 v2)",
   "role": "M-pad",
   "source": "manual",
   "store": "雨中冒险2+虚空幸存者+风暴探寻者+合金意念 捆绑包 (PS Store HK)",
-  "time": "2026-09-20T04:25:31"
+  "time": "2026-10-11T12:40:00"
  },
  "雪人兄弟 经典合集（PS5）": {
   "file": "covers/rc35892d38684b.jpg",
@@ -10113,13 +10113,13 @@
   "time": "2026-09-19T02:49:19"
  },
  "黯井微光": {
+  "en": "Well Dweller",
   "file": "covers/rcdc99552b027e.jpg",
-  "source": "manual",
-  "role": "M-fill",
-  "store": "港服 Well Dweller Demo (UP5155-PPSA38721_00-WELLDWELLERDEMO0)",
-  "time": "2026-09-22T23:24:49",
   "note": "店主选定: 满铺(crop34 横向按主体居中裁, 768x1024->504x672) · 港服体验版卡中文logo · 前留边版 rc79e89700262a 已替换",
-  "en": "Well Dweller"
+  "role": "M-fill",
+  "source": "manual",
+  "store": "港服 Well Dweller Demo (UP5155-PPSA38721_00-WELLDWELLERDEMO0)",
+  "time": "2026-09-22T23:24:49"
  },
  "龙之信条1：黑暗觉者": {
   "file": "covers/rc2bbbffb30c19.jpg",
@@ -10138,22 +10138,22 @@
   "time": "2026-09-18T21:54:03"
  },
  "龙之信条2（1）": {
+  "en": "Dragon's Dogma 2",
   "file": "covers/6d941c5eb55c_s.jpg",
-  "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-10-09T13:30:06",
   "note": "★人工锁死沿用(锁p1075, 中文名一致)",
-  "en": "Dragon's Dogma 2"
+  "role": "P",
+  "source": "manual",
+  "store": "",
+  "time": "2026-10-09T13:30:06"
  },
  "龙之信条2（2）": {
+  "en": "Dragon's Dogma 2",
   "file": "covers/6d941c5eb55c_s.jpg",
-  "source": "manual",
-  "role": "P",
-  "store": "",
-  "time": "2026-10-09T13:30:06",
   "note": "★人工锁死沿用(锁p1075, 中文名一致)",
-  "en": "Dragon's Dogma 2"
+  "role": "P",
+  "source": "manual",
+  "store": "",
+  "time": "2026-10-09T13:30:06"
  },
  "龙之皇冠Pro": {
   "file": "covers/rcb877f4f2fe9e.jpg",
