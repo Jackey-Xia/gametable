@@ -6190,13 +6190,13 @@
   "time": "2026-09-18T21:52:59"
  },
  "深渊尽头": {
+  "en": "End of Abyss",
   "file": "covers/acb84904572121p34.jpg",
-  "source": "store_zh_hk",
-  "role": "P-pad",
-  "store": "End of Abyss (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-10-11T08:56:07",
   "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
-  "en": "End of Abyss"
+  "role": "P-pad",
+  "source": "store_zh_hk",
+  "store": "End of Abyss (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-10-11T08:56:07"
  },
  "深渊绝赌：千王处刑": {
   "file": "covers/5ac890b56507_s.jpg",
@@ -6710,13 +6710,13 @@
   "time": "2026-09-18T21:53:06"
  },
  "猛鬼追魂 复苏": {
-  "file": "covers/acb5b90d0547bep34.jpg",
-  "source": "store_zh_hk",
-  "role": "M-pad",
-  "store": "Clive Barker's Hellraiser: Revival (英语)",
-  "time": "2026-10-11T08:00:35",
-  "note": "autocover 自动抓取 · 港服中文页（方图 504x504, 留边版(前端会左右各裁 63px)） · 版本: 标准版(商品名未标注,取标准版)",
-  "en": "Clive Barker's Hellraiser Revival"
+  "en": "Clive Barker's Hellraiser Revival",
+  "file": "covers/rc392a7e48e3f0.jpg",
+  "note": "店主指定·满铺上线(港服标准版方图横向裁, HELLRAISER REVIVAL 标题完整)",
+  "role": "M-fill",
+  "source": "manual",
+  "store": "Clive Barker's Hellraiser: Revival (英语) PS Store HK",
+  "time": "2026-10-11T22:40:00"
  },
  "猫咪斗恶龙1+2": {
   "file": "covers/15fcdd638fe4_s.jpg",
@@ -8913,12 +8913,12 @@
  },
  "超级机器人大战30（豪华版）": {
   "en": "Super Robot Wars 30th Anniversary（Deluxe Edition）",
-  "file": "covers/rc49299e45974a.jpg",
-  "note": "★人工锁死沿用(锁p0942, 近似匹配 0.89 《超级机器人大战Y（豪华版）》)",
-  "role": "P",
+  "file": "covers/rc69a82d1fea91.jpg",
+  "note": "店主指定B·满铺上线(港服数字豪华版卡, 方图横向裁, DIGITAL DELUXE EDITION 完整；此前误挂机战Y图)",
+  "role": "M-fill",
   "source": "manual",
-  "store": "超级机器人大战Y 数字豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-10-11T05:53:45"
+  "store": "超级机器人大战30 数字豪华版 (韩语, 简体中文, 繁体中文) PS Store HK",
+  "time": "2026-10-11T22:40:00"
  },
  "超级机器人大战Y（豪华版）": {
   "file": "covers/rc49299e45974a.jpg",
@@ -9564,22 +9564,22 @@
   "time": "2026-09-18T23:13:50"
  },
  "霓虹深渊1（豪华版）": {
+  "en": "Neon Abyss 1（Deluxe Edition）",
   "file": "covers/rc84daa311d3b3.jpg",
-  "source": "manual",
-  "role": "P",
-  "store": "Neon Abyss (日语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-10-11T12:01:09",
   "note": "★人工锁死沿用(锁p1013, 近似匹配 0.95 《霓虹深渊（豪华版）》)",
-  "en": "Neon Abyss 1（Deluxe Edition）"
+  "role": "P",
+  "source": "manual",
+  "store": "Neon Abyss (日语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-10-11T12:01:09"
  },
  "霓虹深渊2（豪华版）": {
-  "file": "covers/rc84daa311d3b3.jpg",
+  "en": "Neon Abyss 2（Deluxe Edition）",
+  "file": "covers/rc9377af9df8da.jpg",
+  "note": "店主指定B·满铺上线(港服豪华版橙红卡, 方图横向裁, 版标 NEON ABYSS 2 DELUXE 完整)",
+  "role": "M-fill",
   "source": "manual",
-  "role": "P",
-  "store": "Neon Abyss (日语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-10-11T12:01:09",
-  "note": "★人工锁死沿用(锁p1013, 近似匹配 0.95 《霓虹深渊（豪华版）》)",
-  "en": "Neon Abyss 2（Deluxe Edition）"
+  "store": "Neon Abyss 2: Deluxe Edition (日语, 韩语, 简体中文, 繁体中文, 英语) PS Store HK",
+  "time": "2026-10-11T22:40:00"
  },
  "霓虹深渊（豪华版）": {
   "file": "covers/rc84daa311d3b3.jpg",
