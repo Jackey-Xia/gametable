@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1095,
+  "count": 1096,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-11T17:26:45"
+  "updated": "2026-10-12T01:45:00"
  },
  "locks": {
   "p0001": {
@@ -14392,6 +14392,19 @@
    "role": "M-fill",
    "store": "Clive Barker's Hellraiser: Revival (英语) PS Store HK",
    "time": "2026-10-11T22:40:00"
+  },
+  "p1096": {
+   "cn": [
+    "沉星之序"
+   ],
+   "en": "Order of the Sinking Star",
+   "file": "covers/rc348e2ec613db.jpg",
+   "md5": "e5ec85044ad8e26e6531b747ba5e750c",
+   "note": "店主指定·满铺上线(港服竖图顶对齐裁底, 游戏名完整)",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "沉星之序 (日语, 韩语, 简体中文, 繁体中文, 英语) PS Store HK",
+   "time": "2026-10-12T01:45:00"
   }
  }
 }
