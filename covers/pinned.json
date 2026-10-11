@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1092,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-11T07:37:04"
+  "updated": "2026-10-11T07:39:23"
  },
  "locks": {
   "p0001": {
@@ -14345,13 +14345,13 @@
    "cn": [
     "1348圣誓"
    ],
-   "en": "",
+   "en": "1348 Ex Voto",
    "file": "covers/rc964ec7adc1b1.jpg",
    "md5": "a3bbae1df955fcfa1ecdf552f2480546",
-   "note": "",
+   "note": "店主选B·满铺上线(港服标准版Ex Voto红卡, crop34主体更大版标完整)",
    "platform": "PS",
-   "role": "",
-   "store": "",
+   "role": "M-fill",
+   "store": "1348 - Ex Voto (标准版) PS Store HK",
    "time": "2026-10-11T07:37:04"
   }
  }
