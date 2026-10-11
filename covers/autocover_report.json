@@ -1,11 +1,17 @@
 {
- "time": "2026-10-11T07:40:35",
+ "time": "2026-10-11T07:52:56",
  "added": [],
- "pending": [],
+ "pending": [
+  {
+   "name": "猛鬼追魂 复苏",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  }
+ ],
  "errors": [],
  "stats": {
-  "total": 1209,
+  "total": 1210,
   "covered": 1261,
-  "pending_open": 0
+  "pending_open": 1
  }
 }
