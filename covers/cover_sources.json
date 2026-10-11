@@ -5875,13 +5875,13 @@
   "time": "2026-09-18T21:52:54"
  },
  "沉星之序": {
+  "en": "Order of the Sinking Star",
   "file": "covers/acd8e98c13f647p34.jpg",
-  "source": "store_zh_hk",
-  "role": "P-pad",
-  "store": "沉星之序 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-10-11T14:57:25",
   "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
-  "en": "Order of the Sinking Star"
+  "role": "P-pad",
+  "source": "store_zh_hk",
+  "store": "沉星之序 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-10-11T14:57:25"
  },
  "沉没之城1（死灵之书版）": {
   "file": "covers/rce596e371a148.jpg",
