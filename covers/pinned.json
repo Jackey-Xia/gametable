@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1096,
+  "count": 1098,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-11T17:37:19"
+  "updated": "2026-10-12T02:15:07"
  },
  "locks": {
   "p0001": {
@@ -359,13 +359,13 @@
     "UFC6/终极格斗冠军6（终极版）（2）"
    ],
    "en": "",
-   "file": "covers/rc2f8d03f8ed94.jpg",
-   "md5": "135aa47b4b3be542ae64cebb4eaec3d6",
-   "note": "店主审核 E55 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 ULTIMATE EDITION",
+   "file": "covers/rc43e0841ede16.jpg",
+   "md5": "80821da7286e60a361e976e26aafc982",
+   "note": "店主审核 E55 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 ULTIMATE EDITION | 店主确认满铺上线(顶对齐裁) 2026-10-12T02:15:07",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "UFC® 6 Ultimate Edition",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-12T02:15:07"
   },
   "p0028": {
    "cn": [
@@ -7559,13 +7559,13 @@
     "机械战警合集（暴戾都市+未竟之事）"
    ],
    "en": "RoboCop：Rogue City（Collection）",
-   "file": "covers/rc2d64b4926b12.jpg",
-   "md5": "1e4a71e63b82133ab42b1c7c05c75b01",
-   "note": "店主指认红框卡 · RoboCop: Rogue City - Collection (日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master)",
+   "file": "covers/rc334c273112fa.jpg",
+   "md5": "efd9175605cf99d4271c448198d68ae0",
+   "note": "店主指认红框卡 · RoboCop: Rogue City - Collection (日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master) | 店主确认满铺上线(居中裁) 2026-10-12T02:15:07",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "M-fill",
    "store": "RoboCop: Rogue City - Collection (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-12T02:15:07"
   },
   "p0577": {
    "cn": [
@@ -8864,13 +8864,13 @@
     "混音青春"
    ],
    "en": "",
-   "file": "covers/rc41fe22e60efd.jpg",
-   "md5": "c3f2a5b82d462ff5c819ac8861fc3290",
-   "note": "店主审核 B91 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MIXIAPE",
+   "file": "covers/rc64c0d612fea8.jpg",
+   "md5": "b7226c56f4c7fcb48bf676a961c9ec45",
+   "note": "店主审核 B91 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MIXIAPE | 店主确认满铺上线(底对齐裁) 2026-10-12T02:15:07",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "Mixtape (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-12T02:15:07"
   },
   "p0677": {
    "cn": [
@@ -8942,13 +8942,13 @@
     "漫威斗魂（终极版）"
    ],
    "en": "Marvel Tōkon: Fighting Souls（Ultimate Edition）",
-   "file": "covers/rc7e304f70080c.jpg",
-   "md5": "bd2b0ed8052f3efd43fdbff475380eea",
-   "note": "店主指认红框卡 · 《MARVEL Tōkon: Fighting Souls》终极版 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master)（关键文字保留）",
+   "file": "covers/rcf93662cf46bf.jpg",
+   "md5": "b68391ed940fee9c32eb30ea0dd1c928",
+   "note": "店主指认红框卡 · 《MARVEL Tōkon: Fighting Souls》终极版 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master)（关键文字保留） | 店主确认满铺上线(居中裁) 2026-10-12T02:15:07",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "M-fill",
    "store": "《MARVEL Tōkon: Fighting Souls》终极版 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-12T02:15:07"
   },
   "p0683": {
    "cn": [
@@ -9239,13 +9239,13 @@
     "热血西游记 天竺奇谭"
    ],
    "en": "River City Saga：Journey to the West",
-   "file": "covers/rc41499b5ef7ed.jpg",
-   "md5": "ca650028100dfd0457e6334d5e694f5c",
-   "note": "店主指认红框卡 · 热血西游记 天竺奇谭 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
+   "file": "covers/rc9fa095bce708.jpg",
+   "md5": "7e6393b5bb3df5b601784b72ea8ca38d",
+   "note": "店主指认红框卡 · 热血西游记 天竺奇谭 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait) | 店主确认满铺上线(居中裁) 2026-10-12T02:15:07",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "热血西游记 天竺奇谭 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-12T02:15:07"
   },
   "p0705": {
    "cn": [
@@ -10914,13 +10914,13 @@
     "罗密欧是个绝命侠"
    ],
    "en": "",
-   "file": "covers/rc24edd8e42293.jpg",
-   "md5": "dcad2fb25f06c3a08b25b70c133c64fb",
-   "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/47aad5819f19_s.jpg",
+   "file": "covers/rc1ee3b77541e1.jpg",
+   "md5": "33294b5465ccf0a431b2aef36bc6138e",
+   "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/47aad5819f19_s.jpg | 店主确认满铺上线(居中裁) 2026-10-12T02:15:07",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-12T02:15:07"
   },
   "p0832": {
    "cn": [
@@ -12743,13 +12743,13 @@
     "逆袭重启"
    ],
    "en": "Rebooted Fate",
-   "file": "covers/rce88f69ad03b8.jpg",
-   "md5": "2778446f60742f23924e0f2d224959f7",
-   "note": "逆袭重启 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 重容')(portrait)",
+   "file": "covers/rc47adfe3ac72b.jpg",
+   "md5": "0838ee1b9cf13f86a32d475909610dce",
+   "note": "逆袭重启 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 重容')(portrait) | 店主确认满铺上线(底对齐裁) 2026-10-12T02:15:07",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "逆袭重启 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-12T02:15:07"
   },
   "p0971": {
    "cn": [
@@ -14405,6 +14405,34 @@
    "role": "P-fill",
    "store": "沉星之序 (日语, 韩语, 简体中文, 繁体中文, 英语) PS Store HK",
    "time": "2026-10-12T01:45:00"
+  },
+  "p1097": {
+   "cn": [
+    "罪金游戏"
+   ],
+   "en": "The Vig",
+   "file": "covers/rc1e6da2d05e6b.jpg",
+   "md5": "103528682ca219c1dc7f97cc6ebb9cd8",
+   "note": "店主确认满铺上线(居中裁) 2026-10-12T02:15:07",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "罪金游戏 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "time": "2026-10-12T02:15:07"
+  },
+  "p1098": {
+   "cn": [
+    "皇牌空战8：希孚之翼",
+    "皇牌空战8：希孚之翼1",
+    "皇牌空战8：希孚之翼2"
+   ],
+   "en": "Ace Combat 8：Wings of Theve",
+   "file": "covers/rc7cc3220801d9.jpg",
+   "md5": "8afe4b3b32ca72e75a79e062a8e2c39e",
+   "note": "店主确认满铺上线(居中裁) 2026-10-12T02:15:07",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "空战奇兵8 希孚之翼 (ACE COMBAT 8: WINGS OF THEVE) (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "time": "2026-10-12T02:15:07"
   }
  }
 }

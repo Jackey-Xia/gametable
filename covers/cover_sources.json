@@ -282,20 +282,20 @@
   "time": "2026-09-19T02:49:15"
  },
  "UFC6/终极格斗冠军6（终极版）（1）": {
-  "file": "covers/rc2f8d03f8ed94.jpg",
-  "note": "店主审核 E55 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 ULTIMATE EDITION",
-  "role": "P-pad",
+  "file": "covers/rc43e0841ede16.jpg",
+  "note": "店主确认满铺上线(顶对齐裁) · 原留边版已替换",
+  "role": "P-fill",
   "source": "manual",
   "store": "UFC® 6 Ultimate Edition",
-  "time": "2026-09-18T23:51:50"
+  "time": "2026-10-12T02:15:07"
  },
  "UFC6/终极格斗冠军6（终极版）（2）": {
-  "file": "covers/rc2f8d03f8ed94.jpg",
-  "note": "店主审核 E55 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 ULTIMATE EDITION",
-  "role": "P-pad",
+  "file": "covers/rc43e0841ede16.jpg",
+  "note": "店主审核 E55 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 ULTIMATE EDITION | 满铺沿用主库存(顶对齐裁) 2026-10-12T02:15:07",
+  "role": "P-fill",
   "source": "manual",
   "store": "UFC® 6 Ultimate Edition",
-  "time": "2026-09-18T23:51:51"
+  "time": "2026-10-12T02:15:07"
  },
  "WRC10（豪华版）": {
   "file": "covers/rccb310ff2cfe0.jpg",
@@ -5356,12 +5356,12 @@
  },
  "机械战警合集（暴戾都市+未竟之事）": {
   "en": "RoboCop：Rogue City（Collection）",
-  "file": "covers/rc2d64b4926b12.jpg",
-  "note": "店主指认红框卡 · RoboCop: Rogue City - Collection (日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master)",
-  "role": "M-pad",
+  "file": "covers/rc334c273112fa.jpg",
+  "note": "店主确认满铺上线(居中裁) · 原留边版已替换",
+  "role": "M-fill",
   "source": "manual",
   "store": "RoboCop: Rogue City - Collection (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-20T03:12:13"
+  "time": "2026-10-12T02:15:07"
  },
  "机械迷城+嘎吱作响": {
   "file": "covers/rc841dca55799a.jpg",
@@ -6224,12 +6224,12 @@
   "time": "2026-09-17T22:54:23"
  },
  "混音青春": {
-  "file": "covers/rc41fe22e60efd.jpg",
-  "note": "店主审核 B91 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MIXIAPE",
-  "role": "P-pad",
+  "file": "covers/rc64c0d612fea8.jpg",
+  "note": "店主确认满铺上线(底对齐裁) · 原留边版已替换",
+  "role": "P-fill",
   "source": "manual",
   "store": "Mixtape (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-18T23:13:24"
+  "time": "2026-10-12T02:15:07"
  },
  "渎神1 神之亵渎1": {
   "file": "covers/rcdd22bfaa0e95.jpg",
@@ -6273,12 +6273,12 @@
  },
  "漫威斗魂（终极版）": {
   "en": "Marvel Tōkon: Fighting Souls（Ultimate Edition）",
-  "file": "covers/rc7e304f70080c.jpg",
-  "note": "店主指认红框卡 · 《MARVEL Tōkon: Fighting Souls》终极版 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master)（关键文字保留）",
-  "role": "M-pad",
+  "file": "covers/rcf93662cf46bf.jpg",
+  "note": "店主确认满铺上线(居中裁) · 原留边版已替换",
+  "role": "M-fill",
   "source": "manual",
   "store": "《MARVEL Tōkon: Fighting Souls》终极版 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-20T03:12:14"
+  "time": "2026-10-12T02:15:07"
  },
  "漫威暗夜之子（PS4）（传奇版）": {
   "file": "covers/rc8b4d6029c775.jpg",
@@ -6543,12 +6543,12 @@
  },
  "热血西游记 天竺奇谭": {
   "en": "River City Saga：Journey to the West",
-  "file": "covers/rc41499b5ef7ed.jpg",
-  "note": "店主指认红框卡 · 热血西游记 天竺奇谭 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
-  "role": "P-pad",
+  "file": "covers/rc9fa095bce708.jpg",
+  "note": "店主确认满铺上线(居中裁) · 原留边版已替换",
+  "role": "P-fill",
   "source": "manual",
   "store": "热血西游记 天竺奇谭 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-20T00:06:54"
+  "time": "2026-10-12T02:15:07"
  },
  "燧石枪：黎明之围": {
   "file": "covers/rc75f7f1075595.jpg",
@@ -7099,29 +7099,29 @@
  },
  "皇牌空战8：希孚之翼": {
   "en": "Ace Combat 8：Wings of Theve",
-  "file": "covers/ac595a4c2f1ff2p34.jpg",
-  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
-  "role": "P-pad",
+  "file": "covers/rc7cc3220801d9.jpg",
+  "note": "店主确认满铺上线(居中裁) · 原留边版已替换",
+  "role": "P-fill",
   "source": "store_zh_hk",
   "store": "空战奇兵8 希孚之翼 (ACE COMBAT 8: WINGS OF THEVE) (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-30T12:01:16"
+  "time": "2026-10-12T02:15:07"
  },
  "皇牌空战8：希孚之翼1": {
   "en": "Ace Combat 8：Wings of Theve",
-  "file": "covers/ac595a4c2f1ff2p34.jpg",
-  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版) · 改名沿用(旧键: 皇牌空战8：希孚之翼)",
-  "role": "P-pad",
+  "file": "covers/rc7cc3220801d9.jpg",
+  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版) · 改名沿用(旧键: 皇牌空战8：希孚之翼) | 满铺沿用主库存(居中裁) 2026-10-12T02:15:07",
+  "role": "P-fill",
   "source": "store_zh_hk",
   "store": "空战奇兵8 希孚之翼 (ACE COMBAT 8: WINGS OF THEVE) (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-30T15:52:30"
+  "time": "2026-10-12T02:15:07"
  },
  "皇牌空战8：希孚之翼2": {
-  "file": "covers/ac595a4c2f1ff2p34.jpg",
-  "note": "多库存沿用: 与《皇牌空战8：希孚之翼1》同一商品仅增加库存, 直接沿用同款封面",
-  "role": "P-pad",
+  "file": "covers/rc7cc3220801d9.jpg",
+  "note": "多库存沿用: 与《皇牌空战8：希孚之翼1》同一商品仅增加库存, 直接沿用同款封面 | 满铺沿用主库存(居中裁) 2026-10-12T02:15:07",
+  "role": "P-fill",
   "source": "store_zh_hk",
   "store": "空战奇兵8 希孚之翼 (ACE COMBAT 8: WINGS OF THEVE) (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-30T16:01:16"
+  "time": "2026-10-12T02:15:07"
  },
  "盐与献祭": {
   "file": "covers/rc3daa4f80aa32.jpg",
@@ -7819,12 +7819,12 @@
   "time": "2026-09-18T21:53:30"
  },
  "罗密欧是个绝命侠": {
-  "file": "covers/rc24edd8e42293.jpg",
-  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/47aad5819f19_s.jpg",
-  "role": "P-pad",
+  "file": "covers/rc1ee3b77541e1.jpg",
+  "note": "店主确认满铺上线(居中裁) · 原留边版已替换",
+  "role": "P-fill",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T22:47:25"
+  "time": "2026-10-12T02:15:07"
  },
  "罪恶王权": {
   "file": "covers/f06197b21c5f_s.jpg",
@@ -7844,12 +7844,12 @@
  },
  "罪金游戏": {
   "en": "The Vig",
-  "file": "covers/acc379b7dc5cfep34.jpg",
-  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
-  "role": "P-pad",
+  "file": "covers/rc1e6da2d05e6b.jpg",
+  "note": "店主确认满铺上线(居中裁) · 原留边版已替换",
+  "role": "P-fill",
   "source": "store_zh_hk",
   "store": "罪金游戏 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-22T12:35:41"
+  "time": "2026-10-12T02:15:07"
  },
  "羊蹄山之魂1": {
   "en": "Ghost of Yotei",
@@ -9188,12 +9188,12 @@
  },
  "逆袭重启": {
   "en": "Rebooted Fate",
-  "file": "covers/rce88f69ad03b8.jpg",
-  "note": "逆袭重启 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 重容')(portrait)",
-  "role": "P-pad",
+  "file": "covers/rc47adfe3ac72b.jpg",
+  "note": "店主确认满铺上线(底对齐裁) · 原留边版已替换",
+  "role": "P-fill",
   "source": "manual",
   "store": "逆袭重启 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-19T23:29:13"
+  "time": "2026-10-12T02:15:07"
  },
  "逆转检察官1&2：御剑精选集": {
   "file": "covers/rc4dcfff48a0c2.jpg",
