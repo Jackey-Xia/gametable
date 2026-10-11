@@ -1,11 +1,17 @@
 {
- "time": "2026-10-11T06:00:55",
+ "time": "2026-10-11T06:36:12",
  "added": [],
- "pending": [],
+ "pending": [
+  {
+   "name": "1348圣誓",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  }
+ ],
  "errors": [],
  "stats": {
-  "total": 1208,
+  "total": 1209,
   "covered": 1260,
-  "pending_open": 0
+  "pending_open": 1
  }
 }
