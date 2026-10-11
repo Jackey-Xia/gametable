@@ -9563,6 +9563,24 @@
   "store": "霍格沃茨之遗：数码豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
   "time": "2026-09-18T23:13:50"
  },
+ "霓虹深渊1（豪华版）": {
+  "file": "covers/rc84daa311d3b3.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "Neon Abyss (日语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-10-11T12:01:09",
+  "note": "★人工锁死沿用(锁p1013, 近似匹配 0.95 《霓虹深渊（豪华版）》)",
+  "en": "Neon Abyss 1（Deluxe Edition）"
+ },
+ "霓虹深渊2（豪华版）": {
+  "file": "covers/rc84daa311d3b3.jpg",
+  "source": "manual",
+  "role": "P",
+  "store": "Neon Abyss (日语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-10-11T12:01:09",
+  "note": "★人工锁死沿用(锁p1013, 近似匹配 0.95 《霓虹深渊（豪华版）》)",
+  "en": "Neon Abyss 2（Deluxe Edition）"
+ },
  "霓虹深渊（豪华版）": {
   "file": "covers/rc84daa311d3b3.jpg",
   "note": "②店主审核: 采用C满填不留边 · ①港服(英文名) · Neon Abyss (日语, 简体中文, 繁体中文, 英语)",
