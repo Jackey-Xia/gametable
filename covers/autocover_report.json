@@ -1,17 +1,21 @@
 {
- "time": "2026-10-11T07:52:56",
- "added": [],
- "pending": [
+ "time": "2026-10-11T08:00:35",
+ "added": [
   {
    "name": "猛鬼追魂 复苏",
-   "reason": "匹配有歧义或无命中",
-   "top": ""
+   "product": "EP6853-PPSA25642_00-0082868685413873",
+   "storeName": "Clive Barker's Hellraiser: Revival (英语)",
+   "score": 0.85,
+   "file": "covers/acb5b90d0547bep34.jpg",
+   "role": "M-pad",
+   "bytes": 70039
   }
  ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1210,
-  "covered": 1261,
-  "pending_open": 1
+  "covered": 1262,
+  "pending_open": 0
  }
 }
