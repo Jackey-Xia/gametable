@@ -25,6 +25,7 @@ input,select{font:inherit}
 
 /* 改40: 返回顶部悬浮按钮 */
 /* 改49: 返回顶部按钮带文字, 点击立即回顶 */
+/* 改107: 双向悬浮按钮 —— 下滑显示「↓ 跳到底部」, 上滑显示「↑ 返回顶部」 */
 .toTop{position:fixed;right:16px;bottom:28px;height:44px;padding:0 16px;border-radius:999px;background:var(--card);color:var(--brand);border:1px solid var(--line);box-shadow:0 2px 10px rgba(16,24,40,.18);font-size:13px;font-weight:700;line-height:1;display:flex;align-items:center;justify-content:center;gap:5px;white-space:nowrap;opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .25s,transform .25s;z-index:60}
 .toTop.show{opacity:1;pointer-events:auto;transform:translateY(0)}
 .toTop:active{transform:scale(.94)}
@@ -355,7 +356,7 @@ footer b{color:#4b5563}
   <div id="swStat" style="margin-top:6px;opacity:.75;font-size:12px">图片加速：首次访问后生效</div>
 </footer>
 
-<button id="toTop" class="toTop" aria-label="返回顶部" title="返回顶部">↑ 返回顶部</button>
+<button id="toTop" class="toTop" aria-label="跳到底部" title="跳到底部">↓ 跳到底部</button>
 <script src="pinyin.js?v=20260911"></script>
 <!-- 改85: 数据文件改为动态加载(带时间戳)
      原来写死 `<script src="data.js?t=20260909155923">`, URL 恒定不变, 而 GitHub Pages 给
@@ -1251,6 +1252,7 @@ function showTab(name){
   if(name==="ns"){renderNSComing();}
   if(name==="mem")renderMEM();
   window.scrollTo({top:0});
+  if(typeof gtSyncBtn==="function")gtSyncBtn();   /* 改107: 切分类回顶后, 悬浮按钮同步成「↓ 跳到底部」 */
 }
 
 /* 输入防抖 */
@@ -1363,13 +1365,48 @@ $("#resetBtn").addEventListener("click",()=>{
 $("#moreBtn").addEventListener("click",()=>renderMore(PAGE));
 document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>showTab(b.dataset.tab)));
 function resetLetter(){Object.keys(__letterSeen).forEach(k=>delete __letterSeen[k]);}
-/* 改49: 返回顶部按钮 —— 下滑超过400px出现 */
+/* 改107: 悬浮按钮改双向 —— 下滑时显示「↓ 跳到底部」(点击直达页底), 上滑时显示「↑ 返回顶部」(点击回本分类第一屏)。
+   方向判定: 比较本次与上次 scrollY, ±2px 容差防抖动; 位置兜底: 已在顶部只可能往下、已在底部只可能往上。
+   可滚动距离太小(<80px)时整个按钮不出现。 */
+const gtBtn=$("#toTop");
+let gtLastY=window.scrollY||0, gtDown=true, gtRaf=0;
+function gtMaxY(){
+  const dh=document.documentElement?document.documentElement.scrollHeight:0;
+  const bh=document.body?document.body.scrollHeight:0;
+  return Math.max(0,Math.max(dh,bh)-window.innerHeight);
+}
+function gtSyncBtn(){
+  const b=gtBtn; if(!b)return;
+  const y=window.scrollY||0, max=gtMaxY();
+  if(max<80){b.classList.remove("show");return;}      /* 几乎不可滚, 不占位 */
+  b.classList.add("show");
+  if(y<=2)gtDown=true;                                 /* 已在顶部 -> 只能往下 */
+  else if(y>=max-2)gtDown=false;                       /* 已在底部 -> 只能往上 */
+  b.textContent=gtDown?"↓ 跳到底部":"↑ 返回顶部";
+  b.setAttribute("aria-label",gtDown?"跳到底部":"返回顶部");
+  b.setAttribute("title",gtDown?"跳到底部":"返回顶部");
+}
+function gtQueue(){if(gtRaf)return;gtRaf=requestAnimationFrame(()=>{gtRaf=0;gtSyncBtn();});}
+window.addEventListener("scroll",()=>{
+  const y=window.scrollY||0;
+  if(y>gtLastY+2)gtDown=true; else if(y<gtLastY-2)gtDown=false;
+  gtLastY=y;
+  gtQueue();
+},{passive:true});
+window.addEventListener("resize",()=>{gtLastY=window.scrollY||0;gtQueue();},{passive:true});
+gtSyncBtn();
 /* 改81: 点击只回到"当前所在分类"的第一屏(PS/NS/会员 各自对应), 保留该分类下的搜索与筛选状态;
    不再固定跳回 PS 分类 + 默认筛选(那是链接刚打开的样子, 顾客切到 NS/会员 下点它会莫名跳走) */
-window.addEventListener("scroll",()=>{const b=$("#toTop");if(b)b.classList.toggle("show",window.scrollY>400);},{passive:true});
 $("#toTop").addEventListener("click",()=>{
   const sb=$("#sugbox");if(sb){sb.classList.remove("show");sb.innerHTML="";}   /* 改76 */
-  showTab(curTab);   /* 改81: 与"刚点击当前分类标签"完全一致 —— 回到该分类第一屏并滚到顶 */
+  if(gtDown){
+    const max=gtMaxY();
+    window.scrollTo(0,max);          /* 改107: 直接到底 */
+    gtLastY=max;gtDown=false;gtSyncBtn();
+  }else{
+    showTab(curTab);                 /* 改81: 与"刚点击当前分类标签"完全一致 —— 回到该分类第一屏并滚到顶 */
+    gtLastY=0;gtDown=true;gtSyncBtn();
+  }
 });
 
 /* 读取 URL 参数 ?tab= & ?q= */
