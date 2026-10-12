@@ -1,11 +1,21 @@
 {
- "time": "2026-10-12T01:48:49",
- "added": [],
+ "time": "2026-10-12T02:31:07",
+ "added": [
+  {
+   "name": "雪落情书时",
+   "product": "HB0700-PPSA39185_00-0555939999997626",
+   "storeName": "雪落情书时 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/ac12fcb50181eap34.jpg",
+   "role": "P-pad",
+   "bytes": 84935
+  }
+ ],
  "pending": [],
  "errors": [],
  "stats": {
-  "total": 1212,
-  "covered": 1266,
+  "total": 1213,
+  "covered": 1267,
   "pending_open": 0
  }
 }

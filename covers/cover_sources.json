@@ -9522,6 +9522,15 @@
   "store": "",
   "time": "2026-09-19T02:49:19"
  },
+ "雪落情书时": {
+  "file": "covers/ac12fcb50181eap34.jpg",
+  "source": "store_zh_hk",
+  "role": "P-pad",
+  "store": "雪落情书时 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-10-12T02:31:07",
+  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
+  "en": "A Love Letter in Snowfall"
+ },
  "零：月蚀的假面": {
   "en": "Fatal Frame: Mask of the Lunar Eclipse",
   "file": "covers/rcc12f762a9fd9.jpg",
