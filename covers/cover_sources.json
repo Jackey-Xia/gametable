@@ -6423,12 +6423,12 @@
  },
  "潜水员戴夫（完整版）春日一番DLC+丛林DLC": {
   "en": "Dave The Diver（Complete Edition）",
-  "file": "covers/rc854a175d27dc.jpg",
-  "note": "竖图源crop34底对齐满铺",
-  "role": "P-fill",
+  "file": "covers/rcfdf5d130765e.jpg",
+  "note": "拼接：现满铺主图+5DLC辅图(丛林/一番的休日/GGST/哥斯拉/渔帆暗涌)",
+  "role": "M-collage",
   "source": "manual",
   "store": "潜水员戴夫 - 丛林 Content Pack (中日英韩文版)",
-  "time": "2026-10-13T08:04:16"
+  "time": "2026-10-13T08:36:41"
  },
  "潜行者2：切尔诺贝利之心": {
   "file": "covers/6956dea2f700_s.jpg",
