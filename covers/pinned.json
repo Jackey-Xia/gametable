@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1098,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-13T03:32:06"
+  "updated": "2026-10-13T11:34:49"
  },
  "locks": {
   "p0001": {
@@ -13200,13 +13200,13 @@
     "雨中冒险2（完整版）"
    ],
    "en": "Risk of Rain 2（Complete Edition）",
-   "file": "covers/rc45bc422c1538.jpg",
-   "md5": "c9863a63f301a3ed4e8b70e756d697f6",
-   "note": "店主选A·留边版上线(ROR2 DLC BUNDLE卡, 版标横贯全宽不可满铺, pad34 v2)",
+   "file": "covers/rc7672b6d9d70b.jpg",
+   "md5": "ca4f4915797e97b3cdd706bd1634b7a8",
+   "note": "店主选A·留边版上线(ROR2 DLC BUNDLE卡, 版标横贯全宽不可满铺, pad34 v2) | v3镜像羽化留边重做 2026-10-13T11:34:49",
    "platform": "PS",
    "role": "M-pad",
    "store": "雨中冒险2+虚空幸存者+风暴探寻者+合金意念 捆绑包 (PS Store HK)",
-   "time": "2026-10-11T12:40:00"
+   "time": "2026-10-13T11:34:49"
   },
   "p1006": {
    "cn": [
