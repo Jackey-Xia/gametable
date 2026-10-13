@@ -1,36 +1,39 @@
 {
  "007初露锋芒（豪华版）（1）": {
   "en": "007 First Light（Deluxe Edition）",
-  "file": "covers/rcc6572e968304.jpg",
-  "note": "店主指令: 取消留边改竖版满铺(crop34)",
+  "file": "covers/rc35b368e1a2dd.jpg",
+  "note": "店长指定红框, 保留顶部DELUXE EDITION, crop34",
   "role": "P-fill",
   "source": "manual",
   "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-20T03:12:12"
+  "time": "2026-10-13T08:04:16"
  },
  "007初露锋芒（豪华版）（2）": {
-  "file": "covers/rcc6572e968304.jpg",
-  "note": "店主指令: 取消留边改竖版满铺(crop34)",
+  "en": "",
+  "file": "covers/rc35b368e1a2dd.jpg",
+  "note": "店长指定红框, 保留顶部DELUXE EDITION, crop34",
   "role": "P-fill",
   "source": "manual",
   "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-20T03:12:12"
+  "time": "2026-10-13T08:04:16"
  },
  "007初露锋芒（豪华版）（3）": {
-  "file": "covers/rcc6572e968304.jpg",
-  "note": "店主指令: 取消留边改竖版满铺(crop34)",
+  "en": "",
+  "file": "covers/rc35b368e1a2dd.jpg",
+  "note": "店长指定红框, 保留顶部DELUXE EDITION, crop34",
   "role": "P-fill",
   "source": "manual",
   "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-20T03:12:12"
+  "time": "2026-10-13T08:04:16"
  },
  "007初露锋芒（豪华版）（4）": {
-  "file": "covers/rcc6572e968304.jpg",
-  "note": "店主指令: 取消留边改竖版满铺(crop34)",
+  "en": "",
+  "file": "covers/rc35b368e1a2dd.jpg",
+  "note": "店长指定红框, 保留顶部DELUXE EDITION, crop34",
   "role": "P-fill",
   "source": "manual",
   "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-20T03:12:12"
+  "time": "2026-10-13T08:04:16"
  },
  "1348圣誓": {
   "en": "1348 Ex Voto",
@@ -1638,12 +1641,13 @@
   "time": "2026-09-19T02:49:16"
  },
  "十字军之王3（完整版）": {
-  "file": "covers/906fdce88873_s.jpg",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc7e9effd33592.jpg",
-  "role": "P",
+  "en": "",
+  "file": "covers/rca3a87311410f.jpg",
+  "note": "拼接: 主图+3张Chapter辅图",
+  "role": "collage",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T21:51:41"
+  "time": "2026-10-13T08:04:16"
  },
  "十年不晚": {
   "en": "Best Served Cold",
@@ -2452,12 +2456,13 @@
   "time": "2026-09-18T23:51:54"
  },
  "城市猎人": {
-  "file": "covers/rcb558d6b2bce7.jpg",
-  "note": "方图改留边版(零裁切), 源 rc0f1e4b8545c5.jpg",
-  "role": "M-pad",
+  "en": "",
+  "file": "covers/rcc2a3a2bab20f.jpg",
+  "note": "整体下移48px+顶部blur30延伸+18px羽化",
+  "role": "M-fill",
   "source": "manual",
   "store": "JP5784-PPSA34366_00-CITYHUNTER000000 (zh-Hans-HK)",
-  "time": "2026-09-17T19:53:01"
+  "time": "2026-10-13T08:04:16"
  },
  "城市：天际线（复刻版）": {
   "file": "covers/5b0849149c00_s.jpg",
@@ -2492,12 +2497,13 @@
   "time": "2026-10-12T02:32:52"
  },
  "夏日美女：欧巴请和我恋爱吧！": {
-  "file": "covers/rc4d5ecbcc5f86.jpg",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 rce32d94fb42c8.jpg",
-  "role": "M-pad",
+  "en": "",
+  "file": "covers/rc9841eebfc431.jpg",
+  "note": "方图源504→672中心裁左右满铺",
+  "role": "M-fill",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T13:39:21"
+  "time": "2026-10-13T08:04:16"
  },
  "夏洛克·福尔摩斯的遗嘱": {
   "file": "covers/17a7af372845_s.jpg",
@@ -3563,12 +3569,13 @@
   "time": "2026-09-18T21:52:09"
  },
  "帝国时代4（完整版）": {
-  "file": "covers/0a2748c98025_s.jpg",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc194db791037c.jpg",
-  "role": "P",
+  "en": "",
+  "file": "covers/rc4bb245f74219.jpg",
+  "note": "拼接: 主图+1张岳飞辅图",
+  "role": "collage",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T21:52:09"
+  "time": "2026-10-13T08:04:16"
  },
  "幸福工厂": {
   "file": "covers/rc553059b917cb.jpg",
@@ -3959,12 +3966,13 @@
   "time": "2026-09-18T21:52:16"
  },
  "忍者龙剑传4（豪华版）": {
-  "file": "covers/rc79918bec29bc.jpg",
-  "note": "店主审核 B90 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 DELUXE EDITION、NINJA、GIVDEN",
-  "role": "P-pad",
+  "en": "",
+  "file": "covers/rc15220d38fe3b.jpg",
+  "note": "左右自然虚化(镜像延伸blur10+羽化): 上下不变",
+  "role": "M-fill",
   "source": "manual",
   "store": "NINJA GAIDEN 4 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-18T23:13:23"
+  "time": "2026-10-13T08:04:16"
  },
  "忍者龙剑传：大师合集": {
   "file": "covers/0dc5266e3fcf_s.jpg",
@@ -4127,12 +4135,13 @@
   "time": "2026-09-19T02:49:17"
  },
  "愚灵": {
-  "file": "covers/rc11e2e4e9e3c5.jpg",
-  "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/fc22598030ce_s.jpg",
-  "role": "P-pad",
+  "en": "",
+  "file": "covers/rc62738ec8a87f.jpg",
+  "note": "竖图源crop34顶对齐满铺(选用顶对齐版)",
+  "role": "P-fill",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T22:47:23"
+  "time": "2026-10-13T08:04:16"
  },
  "成长物语：永恒树之歌": {
   "file": "covers/rcabef4076978b.jpg",
@@ -4721,12 +4730,13 @@
   "time": "2026-09-19T02:49:20"
  },
  "无主之地4（超级豪华版）": {
-  "file": "covers/rc055ebc9792fe.jpg",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 010d73a6674c_s.jpg",
-  "role": "M-pad",
+  "en": "",
+  "file": "covers/rcf8e65e2476e7.jpg",
+  "note": "竖图源crop34顶对齐满铺(横贯logo完整)",
+  "role": "P-fill",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T13:39:42"
+  "time": "2026-10-13T08:04:16"
  },
  "无人愿死": {
   "file": "covers/1298354b9142_s.jpg",
@@ -5322,12 +5332,13 @@
   "time": "2026-09-19T02:49:17"
  },
  "月影杀": {
-  "file": "covers/2765c7bb9f47_s.jpg",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc03ab5fe70573.jpg",
-  "role": "P",
+  "en": "",
+  "file": "covers/rcc82b6ffe35d5.jpg",
+  "note": "店长指定红框中文, 保版标",
+  "role": "P-fill",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T21:52:47"
+  "time": "2026-10-13T08:04:16"
  },
  "有这么一个家伙": {
   "file": "covers/rcca5b92138dd9.jpg",
@@ -5754,12 +5765,13 @@
   "time": "2026-09-20T00:06:56"
  },
  "死或生6：最后一战": {
-  "file": "covers/rc2cf695161536.jpg",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 151f4b736c5b_s.jpg",
-  "role": "M-pad",
+  "en": "",
+  "file": "covers/rc86effec20181.jpg",
+  "note": "边缘虚化(上下镜像延伸blur10+羽化): logo横贯无法满铺",
+  "role": "M-fill",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T13:39:51"
+  "time": "2026-10-13T08:04:16"
  },
  "死或生：维纳斯璀璨假期": {
   "file": "covers/937b84d109c9_s.jpg",
@@ -5956,12 +5968,13 @@
   "time": "2026-09-18T23:13:41"
  },
  "沙罗周期": {
-  "file": "covers/527a8f3fc9d6_s.jpg",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcad691f71decb.jpg",
-  "role": "P",
+  "en": "",
+  "file": "covers/rcd9921c8a9b14.jpg",
+  "note": "店长指定红框中文, 保版标",
+  "role": "P-fill",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T21:52:55"
+  "time": "2026-10-13T08:04:16"
  },
  "波与月夜之青莲": {
   "file": "covers/rc14d2a9e3c93f.jpg",
@@ -6410,12 +6423,12 @@
  },
  "潜水员戴夫（完整版）春日一番DLC+丛林DLC": {
   "en": "Dave The Diver（Complete Edition）",
-  "file": "covers/rcc9d62ff1037c.jpg",
-  "note": "店主指认红框卡 · 丛林 Content Pack · 方图 1024x1024, 留边版(前端会左右各裁 63px)",
-  "role": "M-pad",
+  "file": "covers/rc854a175d27dc.jpg",
+  "note": "竖图源crop34底对齐满铺",
+  "role": "P-fill",
   "source": "manual",
   "store": "潜水员戴夫 - 丛林 Content Pack (中日英韩文版)",
-  "time": "2026-09-20T03:57:27"
+  "time": "2026-10-13T08:04:16"
  },
  "潜行者2：切尔诺贝利之心": {
   "file": "covers/6956dea2f700_s.jpg",
@@ -6986,12 +6999,13 @@
   "time": "2026-09-20T03:57:30"
  },
  "电车炫客": {
-  "file": "covers/rc5feb2edf62d5.jpg",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc964790e2c93f.jpg",
-  "role": "P",
+  "en": "",
+  "file": "covers/rceece73a084de.jpg",
+  "note": "整体下移48px+顶部blur30延伸+18px羽化",
+  "role": "M-fill",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T21:53:14"
+  "time": "2026-10-13T08:04:16"
  },
  "电钻少女": {
   "file": "covers/rcb7abf8749447.jpg",
@@ -7208,37 +7222,39 @@
  },
  "真·三国无双 起源（1）": {
   "en": "Dynasty Warriors：Origins",
-  "file": "covers/rc9c0c0d548512.jpg",
-  "note": "店主指认红框卡 · 方图源留边",
-  "role": "M-pad",
+  "file": "covers/rc76c947b90caf.jpg",
+  "note": "边缘虚化(上下镜像延伸blur10+羽化)",
+  "role": "M-fill",
   "source": "manual",
   "store": "真・三国无双 起源 梦幻四英杰 (中日文版) (PS Store HK)",
-  "time": "2026-09-20T04:25:32"
+  "time": "2026-10-13T08:04:16"
  },
  "真·三国无双 起源（豪华版）（2）": {
   "en": "Dynasty Warriors：Origins（Deluxe Edition）",
-  "file": "covers/rc42fde3034700.jpg",
-  "note": "店主指认 · 梦幻四英杰卡左侧加 Digital Deluxe Edition 英文字样 · 留边",
-  "role": "M-pad",
+  "file": "covers/rc452e1725b8a1.jpg",
+  "note": "边缘虚化(上下镜像延伸blur10+羽化)",
+  "role": "M-fill",
   "source": "manual",
   "store": "真・三国无双 起源 梦幻四英杰 (中日文版) + Digital Deluxe Edition 字样 (PS Store HK)",
-  "time": "2026-09-20T04:25:32"
+  "time": "2026-10-13T08:04:16"
  },
  "真·三国无双 起源（豪华版）（3）": {
-  "file": "covers/rc42fde3034700.jpg",
-  "note": "店主指认 · 梦幻四英杰卡左侧加 Digital Deluxe Edition 英文字样 · 留边",
-  "role": "M-pad",
+  "en": "",
+  "file": "covers/rc452e1725b8a1.jpg",
+  "note": "边缘虚化(上下镜像延伸blur10+羽化)",
+  "role": "M-fill",
   "source": "manual",
   "store": "真・三国无双 起源 梦幻四英杰 (中日文版) + Digital Deluxe Edition 字样 (PS Store HK)",
-  "time": "2026-09-20T04:25:32"
+  "time": "2026-10-13T08:04:16"
  },
  "真·三国无双 起源（豪华版）（4）": {
-  "file": "covers/rc42fde3034700.jpg",
-  "note": "店主指认 · 梦幻四英杰卡左侧加 Digital Deluxe Edition 英文字样 · 留边",
-  "role": "M-pad",
+  "en": "",
+  "file": "covers/rc452e1725b8a1.jpg",
+  "note": "边缘虚化(上下镜像延伸blur10+羽化)",
+  "role": "M-fill",
   "source": "manual",
   "store": "真・三国无双 起源 梦幻四英杰 (中日文版) + Digital Deluxe Edition 字样 (PS Store HK)",
-  "time": "2026-09-20T04:25:32"
+  "time": "2026-10-13T08:04:16"
  },
  "真三国无双2 猛将传1": {
   "en": "Dynasty Warriors 3：Complete Edition Remastered",
@@ -7851,12 +7867,13 @@
   "time": "2026-09-18T21:53:30"
  },
  "罪恶装备 奋战（2.0入门版）": {
-  "file": "covers/rc9091cfef5b4f.jpg",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 78a27035ece3_s.jpg",
-  "role": "M-pad",
+  "en": "",
+  "file": "covers/rc15aca17db30f.jpg",
+  "note": "边缘虚化(上下镜像延伸blur10+羽化): 商城无2.0入门版",
+  "role": "M-fill",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T13:40:09"
+  "time": "2026-10-13T08:04:16"
  },
  "罪金游戏": {
   "en": "The Vig",
@@ -8471,12 +8488,13 @@
   "time": "2026-09-19T02:49:18"
  },
  "蒸汽世界（合集版）": {
-  "file": "covers/rc165dadfaddc6.jpg",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 a4fa16339934_s.jpg",
-  "role": "M-pad",
+  "en": "",
+  "file": "covers/rc750b84e18077.jpg",
+  "note": "竖图源crop34底对齐满铺",
+  "role": "P-fill",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T13:40:14"
+  "time": "2026-10-13T08:04:16"
  },
  "蓝精灵卡丁车": {
   "file": "covers/e4441a1bf57d_s.jpg",
@@ -8703,12 +8721,13 @@
   "time": "2026-09-18T21:53:43"
  },
  "街霸6 街头霸王6（完整版）": {
-  "file": "covers/fe5086fdd8ae_s.jpg",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc9f87a5c32e99.jpg",
-  "role": "P",
+  "en": "",
+  "file": "covers/rce347973d0f34.jpg",
+  "note": "拼接合成: 主图+4张Year Pass辅图(双点博物馆A2)",
+  "role": "collage",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T21:53:43"
+  "time": "2026-10-13T08:04:16"
  },
  "衹：女神之路": {
   "file": "covers/aa207052879a_s.jpg",
@@ -9409,12 +9428,13 @@
   "time": "2026-09-18T21:53:53"
  },
  "队长小翼2 世界群星": {
-  "file": "covers/c99a2390038a_s.jpg",
-  "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc534c3a8f7cb9.jpg",
-  "role": "P",
+  "en": "",
+  "file": "covers/rc2da405def8c6.jpg",
+  "note": "店长指定红框中文竖版卡, crop34顶对齐保版标",
+  "role": "P-fill",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T21:53:54"
+  "time": "2026-10-13T08:04:16"
  },
  "阴阳街传说（漓芳传+终极版）": {
   "file": "covers/rc36fa05755817.jpg",
@@ -9425,12 +9445,13 @@
   "time": "2026-09-19T02:49:19"
  },
  "阿凡达：潘多拉边境（完整版）": {
-  "file": "covers/rc0544a45edbb2.jpg",
-  "note": "店主审核 B156 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 COMPLETE EDITION",
-  "role": "P-pad",
+  "en": "",
+  "file": "covers/rc3bfd7ec6e998.jpg",
+  "note": "左右自然虚化(镜像延伸blur10+羽化)",
+  "role": "M-fill",
   "source": "manual",
   "store": "《阿凡达：潘多拉边境™》完整版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-  "time": "2026-09-18T23:14:09"
+  "time": "2026-10-13T08:04:16"
  },
  "阿加莎·克里斯蒂 - 赫丘勒·白罗：最初的案件": {
   "file": "covers/24da08a33657_s.jpg",
@@ -9574,12 +9595,13 @@
   "time": "2026-09-19T02:49:19"
  },
  "雾影猎人": {
-  "file": "covers/rc474d0c829a9e.jpg",
-  "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 3cfe245e464f_s.jpg",
-  "role": "M-pad",
+  "en": "",
+  "file": "covers/rc4a4ae6c773d2.jpg",
+  "note": "边缘虚化(上下镜像延伸blur10+羽化), 店长称雾隐猎人",
+  "role": "M-fill",
   "source": "manual",
   "store": "",
-  "time": "2026-09-18T13:40:23"
+  "time": "2026-10-13T08:04:16"
  },
  "霍格沃茨之遗（豪华版）（1）": {
   "file": "covers/rcdde3759a57fb.jpg",
