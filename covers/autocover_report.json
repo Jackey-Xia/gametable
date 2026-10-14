@@ -1,11 +1,21 @@
 {
- "time": "2026-10-14T11:18:37",
- "added": [],
+ "time": "2026-10-14T12:01:15",
+ "added": [
+  {
+   "name": "啦嗒铛",
+   "product": "HP5249-PPSA34884_00-0116723305741680",
+   "storeName": "啦嗒铛 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/aca22d9675713bp34.jpg",
+   "role": "P-pad",
+   "bytes": 182110
+  }
+ ],
  "pending": [],
  "errors": [],
  "stats": {
-  "total": 1221,
-  "covered": 1275,
+  "total": 1222,
+  "covered": 1276,
   "pending_open": 0
  }
 }

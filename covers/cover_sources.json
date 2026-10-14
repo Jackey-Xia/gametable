@@ -2155,6 +2155,15 @@
   "store": "",
   "time": "2026-09-19T02:49:16"
  },
+ "啦嗒铛": {
+  "file": "covers/aca22d9675713bp34.jpg",
+  "source": "store_zh_hk",
+  "role": "P-pad",
+  "store": "啦嗒铛 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-10-14T12:01:15",
+  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
+  "en": "Ratatan"
+ },
  "啪嗒砰1+2": {
   "file": "covers/rc13e2a54550c2.jpg",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",
@@ -6328,6 +6337,24 @@
   "store": "JP0001-PPSA01508_00-EDITIONGOLD00000 (zh-Hans-HK)",
   "time": "2026-09-19T02:49:18"
  },
+ "湖（PS4）": {
+  "file": "covers/rc56dfdc84f068.jpg",
+  "source": "manual",
+  "role": "P-fill",
+  "store": "Lake (日语, 简体中文, 英语) PS Store HK",
+  "note": "店主指定·满铺上线(港服竖图1440x2160居中裁上下各120px, 标题居中完整, 上下纯画面无版标, PS4/PS5两版商店图相同)",
+  "time": "2026-10-14T19:16:46",
+  "en": "Lake"
+ },
+ "湖（PS5）": {
+  "file": "covers/rc56dfdc84f068.jpg",
+  "source": "manual",
+  "role": "P-fill",
+  "store": "Lake (日语, 简体中文, 英语) PS Store HK",
+  "note": "店主指定·满铺上线(港服竖图1440x2160居中裁上下各120px, 标题居中完整, 上下纯画面无版标, PS4/PS5两版商店图相同)",
+  "time": "2026-10-14T19:16:46",
+  "en": "Lake"
+ },
  "漫威宇宙入侵": {
   "file": "covers/rc79831b5c53e0.jpg",
   "note": "店主审核 A29 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上",
@@ -10366,23 +10393,5 @@
   "source": "manual",
   "store": "",
   "time": "2026-09-19T02:49:19"
- },
- "湖（PS4）": {
-  "file": "covers/rc56dfdc84f068.jpg",
-  "source": "manual",
-  "role": "P-fill",
-  "store": "Lake (日语, 简体中文, 英语) PS Store HK",
-  "note": "店主指定·满铺上线(港服竖图1440x2160居中裁上下各120px, 标题居中完整, 上下纯画面无版标, PS4/PS5两版商店图相同)",
-  "time": "2026-10-14T19:16:46",
-  "en": "Lake"
- },
- "湖（PS5）": {
-  "file": "covers/rc56dfdc84f068.jpg",
-  "source": "manual",
-  "role": "P-fill",
-  "store": "Lake (日语, 简体中文, 英语) PS Store HK",
-  "note": "店主指定·满铺上线(港服竖图1440x2160居中裁上下各120px, 标题居中完整, 上下纯画面无版标, PS4/PS5两版商店图相同)",
-  "time": "2026-10-14T19:16:46",
-  "en": "Lake"
  }
 }
