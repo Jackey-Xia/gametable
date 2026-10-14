@@ -1,7 +1,8 @@
 {
  "_meta": {
   "count": 1100,
-  "updated": "2026-10-14T07:39:01"
+  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
+  "updated": "2026-10-14T07:55:46"
  },
  "locks": {
   "p0001": {
@@ -7303,7 +7304,7 @@
    "en": "Final Fantasy Resonance",
    "file": "covers/0a1f526b1357_s.jpg",
    "md5": "6a34400c00bbc2d6eee1873f5aaf60ae",
-   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc47077669ce0a.jpg",
+   "note": "★人工锁死沿用(锁p0556, 近似匹配 0.77 《最终幻想1》)",
    "platform": "PS",
    "role": "P",
    "store": "",
@@ -7356,7 +7357,7 @@
    "en": "Final Fantasy Resonance",
    "file": "covers/6ce55d1f31d5_s.jpg",
    "md5": "0898191af1ca06912d377e6e8ab57ccb",
-   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcfb0822e5346d.jpg",
+   "note": "★人工锁死沿用(锁p0560, 近似匹配 0.77 《最终幻想2》)",
    "platform": "PS",
    "role": "P",
    "store": "",
