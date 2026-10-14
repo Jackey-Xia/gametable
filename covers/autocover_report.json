@@ -1,22 +1,11 @@
 {
- "time": "2026-10-14T04:31:49",
+ "time": "2026-10-14T04:33:35",
  "added": [],
- "pending": [
-  {
-   "name": "恶魔城：贝尔蒙特的诅咒1",
-   "reason": "匹配有歧义或无命中",
-   "top": "Castlevania: Belmont's Curse (日语, 韩语, 简体中文, 繁体中文, 英语) (0.85 vs 0.85)"
-  },
-  {
-   "name": "恶魔城：贝尔蒙特的诅咒2",
-   "reason": "匹配有歧义或无命中",
-   "top": ""
-  }
- ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1217,
-  "covered": 1269,
-  "pending_open": 2
+  "covered": 1271,
+  "pending_open": 0
  }
 }
