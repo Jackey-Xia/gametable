@@ -1,7 +1,8 @@
 {
  "_meta": {
   "count": 1102,
-  "updated": "2026-10-14T19:16:46"
+  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
+  "updated": "2026-10-14T11:18:37"
  },
  "locks": {
   "p0001": {
@@ -14484,7 +14485,7 @@
    "en": "Lake",
    "file": "covers/rc56dfdc84f068.jpg",
    "md5": "aadf4d8da129bf856005d5fcb65b293e",
-   "note": "店主指定·满铺上线(PS4/PS5两版同图共锁)",
+   "note": "店主指定·满铺上线(港服竖图1440x2160居中裁上下各120px, 标题居中完整, 上下纯画面无版标, PS4/PS5两版商店图相同)",
    "platform": "PS",
    "role": "P-fill",
    "store": "Lake (日语, 简体中文, 英语) PS Store HK",
