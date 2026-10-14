@@ -1,17 +1,22 @@
 {
- "time": "2026-10-14T10:00:35",
+ "time": "2026-10-14T10:29:23",
  "added": [],
  "pending": [
   {
-   "name": "湖",
+   "name": "湖（PS4）",
    "reason": "匹配有歧义或无命中",
    "top": "Lake (日语, 简体中文, 英语) (0.85 vs 0.85)"
+  },
+  {
+   "name": "湖（PS5）",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
   }
  ],
  "errors": [],
  "stats": {
-  "total": 1220,
+  "total": 1221,
   "covered": 1273,
-  "pending_open": 1
+  "pending_open": 2
  }
 }
