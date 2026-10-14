@@ -1,8 +1,7 @@
 {
  "_meta": {
-  "count": 1099,
-  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-14T04:31:47"
+  "count": 1100,
+  "updated": "2026-10-14T12:31:09"
  },
  "locks": {
   "p0001": {
@@ -14448,6 +14447,20 @@
    "role": "P-fill",
    "store": "雪落情书时 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
    "time": "2026-10-13T12:41:26"
+  },
+  "p1100": {
+   "cn": [
+    "恶魔城：贝尔蒙特的诅咒1",
+    "恶魔城：贝尔蒙特的诅咒2"
+   ],
+   "en": "Castlevania：Belmont's Curse",
+   "file": "covers/rcfb2dcd818fc3.jpg",
+   "md5": "84359e076d13df6059f4c9f791a6b8a9",
+   "note": "店主指定·满铺上线(港服标准版竖图1440x2160居中裁上下各120px, 标题完整, 上下纯画面无版标, 未用Midnight版)",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "Castlevania: Belmont's Curse (日语, 韩语, 简体中文, 繁体中文, 英语) PS Store HK",
+   "time": "2026-10-14T12:31:09"
   }
  }
 }
