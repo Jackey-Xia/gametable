@@ -1,7 +1,8 @@
 {
  "_meta": {
   "count": 1101,
-  "updated": "2026-10-14T16:14:55"
+  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
+  "updated": "2026-10-14T08:16:38"
  },
  "locks": {
   "p0001": {
@@ -7302,7 +7303,7 @@
    "en": "Final Fantasy Resonance",
    "file": "covers/0a1f526b1357_s.jpg",
    "md5": "6a34400c00bbc2d6eee1873f5aaf60ae",
-   "note": "★人工锁死沿用(锁p0556, 近似匹配 0.77 《最终幻想1》) | 2026-10-14T16:14:55 摘除误继承键: 最终幻想：共鸣1",
+   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc47077669ce0a.jpg",
    "platform": "PS",
    "role": "P",
    "store": "",
@@ -7354,7 +7355,7 @@
    "en": "Final Fantasy Resonance",
    "file": "covers/6ce55d1f31d5_s.jpg",
    "md5": "0898191af1ca06912d377e6e8ab57ccb",
-   "note": "★人工锁死沿用(锁p0560, 近似匹配 0.77 《最终幻想2》) | 2026-10-14T16:14:55 摘除误继承键: 最终幻想：共鸣2",
+   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcfb0822e5346d.jpg",
    "platform": "PS",
    "role": "P",
    "store": "",
@@ -14470,7 +14471,7 @@
    "en": "Final Fantasy Resonance",
    "file": "covers/rcccc1dfbf08c1.jpg",
    "md5": "11b193a3a96014efb20a586ad2cb9678",
-   "note": "店主指定·满铺上线(共鸣1/2同商品多库存共锁)",
+   "note": "店主指定·满铺上线(港服标准版竖图1440x2160居中裁上下各120px, 标题完整, 上下纯画面无版标)。曾误继承《最终幻想1/2》锁p0556/p0560(近似0.77), 已摘除并建共锁",
    "platform": "PS",
    "role": "P-fill",
    "store": "FINAL FANTASY RESONANCE (韩语, 简体中文, 繁体中文) PS Store HK",
