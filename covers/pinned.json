@@ -1,8 +1,7 @@
 {
  "_meta": {
-  "count": 1101,
-  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-14T11:17:10"
+  "count": 1102,
+  "updated": "2026-10-14T19:16:46"
  },
  "locks": {
   "p0001": {
@@ -14476,6 +14475,20 @@
    "role": "P-fill",
    "store": "FINAL FANTASY RESONANCE (韩语, 简体中文, 繁体中文) PS Store HK",
    "time": "2026-10-14T16:14:55"
+  },
+  "p1102": {
+   "cn": [
+    "湖（PS4）",
+    "湖（PS5）"
+   ],
+   "en": "Lake",
+   "file": "covers/rc56dfdc84f068.jpg",
+   "md5": "aadf4d8da129bf856005d5fcb65b293e",
+   "note": "店主指定·满铺上线(PS4/PS5两版同图共锁)",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "Lake (日语, 简体中文, 英语) PS Store HK",
+   "time": "2026-10-14T19:16:46"
   }
  }
 }
