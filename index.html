@@ -565,7 +565,7 @@ function suffixNum(s){const m=String(s||"").match(SEQ_KAKO);if(!m)return 0;const
 var MERGE_EXCLUDE=["最终幻想","虐杀原形"];
 /* 改88: 特例名单 —— 虽命中 MERGE_EXCLUDE(以"最终幻想"开头), 但尾号实为同游戏多库存:
    伊瓦利斯战记1/2 都= Final Fantasy Tactics - The Ivalice Chronicles, 库存 12/6/25 完全一致 */
-var MERGE_FORCE=["伊瓦利斯战记"];
+var MERGE_FORCE=["伊瓦利斯战记","最终幻想：共鸣"];   /* 改112: 共鸣1/2 同商品多库存(同价同日同英文名), 强制合并 */
 function isForceMerge(base){const s=String(base||"");return MERGE_FORCE.some(x=>s.slice(-x.length)===x);}
 /* 改99: 启动时一次性给每行 PS 数据算好同游戏多账号分组 id(_gid), 供主列表合并与款数统计用。
    必须放在 SEQ_BARE/MERGE_EXCLUDE 等常量赋值之后(var 提升不会带初始化, 提前跑 dupOf 会崩)。
