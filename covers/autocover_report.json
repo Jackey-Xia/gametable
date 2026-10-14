@@ -1,11 +1,17 @@
 {
- "time": "2026-10-14T14:21:31",
+ "time": "2026-10-14T14:39:05",
  "added": [],
- "pending": [],
+ "pending": [
+  {
+   "name": "动物园之星2",
+   "reason": "匹配有歧义或无命中",
+   "top": "《动物园之星 2》 (日语, 韩语, 简体中文, 繁体中文, 英语) (0.80 vs 0.80)"
+  }
+ ],
  "errors": [],
  "stats": {
-  "total": 1222,
+  "total": 1223,
   "covered": 1277,
-  "pending_open": 0
+  "pending_open": 1
  }
 }
