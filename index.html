@@ -172,6 +172,8 @@ select{border:1px solid var(--line);border-radius:10px;padding:8px 8px;backgroun
 .chip.ns{background:var(--nsbg);color:var(--ns)}
 .chip.ok{background:var(--okbg);color:var(--ok)}
 .chip.no{background:#fee2e2;color:#dc2626;text-decoration:line-through;text-decoration-color:#dc2626;text-decoration-thickness:1.5px}
+/* 改111: 未发售(发售日期在今天之后/明天及未来)日期整颗红显 —— 已发售与发售当天保持原样 */
+.chip.future{background:#fee2e2;color:#dc2626}
 .gprices{display:flex;gap:6px;flex-wrap:wrap}
 .pt{background:#fafbfd;border:1px solid var(--line);border-radius:10px;padding:6px 9px 5px;min-width:0;text-align:center}
 /* 改33: 三价签等宽等高 */
@@ -886,6 +888,8 @@ function filterPS(){
 }
 
 function parseDate(s){const m=String(s||"").match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);return m? (+m[1])*10000+(+m[2])*100+(+m[3]):0;}
+/* 改111: 未发售判定 —— 日期数字 > 今天的年月日数字 即为未来(明天及以后); 解析失败一律视作已发售不红显 */
+function isFutureDate(s){const v=parseDate(s);if(!v)return false;const d=new Date();return v>(d.getFullYear()*10000+(d.getMonth()+1)*100+d.getDate());}
 
 let curRows=[],rendered=0,PAGE=120;
 function renderPS(){
@@ -1086,7 +1090,7 @@ function gameCard(g,idx){
   if(g.en)main.appendChild(el("div","gen",g.en));
   /* 信息行(改16B/67t): 发售日期/游戏版本(原发售地区)/支持主机 —— 纯固定信息, 不随库存变动 */
   const meta=el("div","gmeta");
-  if(g.date){const c=el("span","chip");c.appendChild(el("i","pre","发售日期"));c.appendChild(document.createTextNode(g.date));meta.appendChild(c);}
+  if(g.date){const c=el("span","chip"+(isFutureDate(g.date)?" future":""));c.appendChild(el("i","pre","发售日期"));c.appendChild(document.createTextNode(g.date));meta.appendChild(c);}
   /* 改100: 游戏版本值单独包一层 span —— 仅这 5 个字按发售地区配色, 标签底纹/边框保持原样; 其它地区值仍为原灰字 */
   if(g.region){const c=el("span","chip");c.appendChild(el("i","pre","游戏版本"));c.appendChild(el("span","rv"+(REGION_COLOR[g.region]?" "+REGION_COLOR[g.region]:""),g.region));meta.appendChild(c);}
   if((g.hs||[]).length){
