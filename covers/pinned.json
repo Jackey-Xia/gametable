@@ -1,8 +1,7 @@
 {
  "_meta": {
   "count": 1104,
-  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-15T02:35:21"
+  "updated": "2026-10-15T10:39:22"
  },
  "locks": {
   "p0001": {
@@ -10942,13 +10941,13 @@
    "cn": [
     "罪恶装备 奋战（2.0入门版）"
    ],
-   "en": "",
-   "file": "covers/rc15aca17db30f.jpg",
-   "md5": "15aca17db30f0d3f7d36d8dde9f51c6f",
-   "note": "边缘虚化(上下镜像延伸blur10+羽化): 商城无2.0入门版",
+   "en": "Guilty Gear Strive 2.0 Starter Edition",
+   "file": "covers/rc5937ac44152d.jpg",
+   "md5": "d7d73cdbeb182ba055c9ddded798ad24",
+   "note": "人工满铺版·罪恶装备奋战2.0入门版",
    "platform": "PS",
    "role": "M-fill",
-   "store": "",
+   "store": "圣骑士之战 -奋战- 2.0入门版 (简体中文, 繁体中文)",
    "time": "2026-10-13T08:04:16"
   },
   "p0834": {

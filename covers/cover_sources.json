@@ -7957,13 +7957,13 @@
   "time": "2026-09-18T21:53:30"
  },
  "罪恶装备 奋战（2.0入门版）": {
-  "en": "",
-  "file": "covers/rc15aca17db30f.jpg",
-  "note": "边缘虚化(上下镜像延伸blur10+羽化): 商城无2.0入门版",
-  "role": "M-fill",
+  "file": "covers/rc5937ac44152d.jpg",
   "source": "manual",
-  "store": "",
-  "time": "2026-10-13T08:04:16"
+  "role": "M-fill",
+  "store": "圣骑士之战 -奋战- 2.0入门版 (简体中文, 繁体中文)",
+  "time": "2026-10-15T10:39:22",
+  "note": "人工满铺版·2.0入门版高清方图(1920)居中裁3:4·主体右移保留GUILTY GEAR",
+  "en": "Guilty Gear Strive 2.0 Starter Edition"
  },
  "罪金游戏": {
   "en": "The Vig",
