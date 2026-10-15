@@ -1,7 +1,8 @@
 {
  "_meta": {
   "count": 1104,
-  "updated": "2026-10-15T10:39:22"
+  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
+  "updated": "2026-10-15T02:39:59"
  },
  "locks": {
   "p0001": {
@@ -10944,7 +10945,7 @@
    "en": "Guilty Gear Strive 2.0 Starter Edition",
    "file": "covers/rc5937ac44152d.jpg",
    "md5": "d7d73cdbeb182ba055c9ddded798ad24",
-   "note": "人工满铺版·罪恶装备奋战2.0入门版",
+   "note": "人工满铺版·2.0入门版高清方图(1920)居中裁3:4·主体右移保留GUILTY GEAR",
    "platform": "PS",
    "role": "M-fill",
    "store": "圣骑士之战 -奋战- 2.0入门版 (简体中文, 繁体中文)",
