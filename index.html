@@ -295,6 +295,51 @@ footer b{color:#4b5563}
  .nstable{display:block;overflow-x:auto;white-space:nowrap}
 }
 </style>
+
+<style>
+/* ===== 联系商家 悬浮按钮（置于返回顶部之上，避免重叠） ===== */
+.cta-fab{
+  position:fixed;right:16px;bottom:84px;z-index:60;
+  display:flex;align-items:center;gap:7px;
+  height:46px;padding:0 16px;border-radius:999px;
+  background:linear-gradient(135deg,#07c160,#06ad56);
+  color:#fff;font-size:14px;font-weight:700;line-height:1;
+  box-shadow:0 4px 16px rgba(7,193,96,.35);
+  cursor:pointer;border:none;
+  transition:transform .15s,box-shadow .15s;
+}
+.cta-fab:active{transform:scale(.95)}
+.cta-fab svg{width:18px;height:18px;fill:#fff}
+
+/* ===== 弹窗 ===== */
+.cta-mask{position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:70;
+  display:none;align-items:center;justify-content:center;padding:24px}
+.cta-mask.show{display:flex}
+.cta-card{background:#fff;width:100%;max-width:340px;border-radius:18px;padding:22px 20px 18px;
+  position:relative;box-shadow:0 20px 50px rgba(15,23,42,.25);animation:pop .18s ease}
+@keyframes pop{from{transform:scale(.92);opacity:.4}to{transform:scale(1);opacity:1}}
+.cta-close{position:absolute;top:12px;right:14px;width:28px;height:28px;border:none;background:none;
+  color:#9aa3af;font-size:22px;line-height:1;cursor:pointer}
+.cta-head{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.cta-head .ic{width:38px;height:38px;border-radius:11px;background:rgba(7,193,96,.12);
+  display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+.cta-head .ic svg{width:22px;height:22px;fill:#07c160}
+.cta-title{font-size:17px;font-weight:800}
+.cta-idbox{display:flex;flex-direction:column;align-items:center;gap:12px;background:#f5fbf7;border:1px solid #c8ecd6;
+  border-radius:12px;padding:16px 14px}
+.cta-id{width:100%;text-align:center;font-size:22px;font-weight:800;letter-spacing:1.5px;color:#0f7a43;
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;word-break:break-all}
+.cta-copy{border:none;background:#07c160;color:#fff;font-weight:700;font-size:14px;
+  padding:9px 34px;border-radius:999px;cursor:pointer}
+.cta-copy:active{background:#06ad56}
+.cta-welcome{margin-top:14px;text-align:center;font-size:13px;line-height:1.7;color:#3d4657}
+
+/* 复制成功 toast */
+.cta-toast{position:fixed;left:50%;bottom:120px;transform:translateX(-50%) translateY(10px);
+  background:rgba(17,24,39,.92);color:#fff;font-size:13px;font-weight:600;padding:10px 18px;border-radius:999px;
+  z-index:80;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}
+.cta-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
 </head>
 <body>
 <header class="hero">
@@ -1521,6 +1566,49 @@ setTimeout(gtSwStat,3500);
   setTimeout(upd,300);
 })();
 };   /* 改85: __GTBOOT 结束 —— 以上为等 data.js 加载完成后再执行的入口 */
+</script>
+
+<!-- 联系商家 悬浮按钮 -->
+  <button class="cta-fab" onclick="openCta()" aria-label="联系商家">
+    <svg viewBox="0 0 24 24"><path d="M12 3C6.9 3 3 6.6 3 11c0 2.3 1.1 4.4 2.9 5.8V21l3.2-1.8c.9.2 1.8.4 2.9.4 5.1 0 9-3.6 9-8s-4-7.6-9-7.6z"/></svg>
+    联系商家
+  </button>
+
+  <!-- 弹窗 -->
+  <div class="cta-mask" id="ctaMask" onclick="if(event.target===this)closeCta()">
+    <div class="cta-card">
+      <button class="cta-close" onclick="closeCta()" aria-label="关闭">×</button>
+      <div class="cta-head">
+        <div class="ic">
+          <svg viewBox="0 0 24 24"><path d="M12 3C6.9 3 3 6.6 3 11c0 2.3 1.1 4.4 2.9 5.8V21l3.2-1.8c.9.2 1.8.4 2.9.4 5.1 0 9-3.6 9-8s-4-7.6-9-7.6z"/></svg>
+        </div>
+        <div class="cta-title">微信联系商家</div>
+      </div>
+      <div class="cta-idbox">
+        <div class="cta-id" id="ctaId">Jackey0428</div>
+        <button class="cta-copy" onclick="copyWx()">复制</button>
+      </div>
+      <div class="cta-welcome">欢迎各位玩家加入交流群，每月免费抽取白金和游戏</div>
+    </div>
+  </div>
+
+  <div class="cta-toast" id="ctaToast">已复制微信号：Jackey0428</div>
+<script>
+function openCta(){document.getElementById('ctaMask').classList.add('show');}
+function closeCta(){document.getElementById('ctaMask').classList.remove('show');}
+function copyWx(){
+  var id="Jackey0428";
+  function ok(){var t=document.getElementById('ctaToast');t.classList.add('show');setTimeout(function(){t.classList.remove('show');},1600);}
+  function fb(){
+    var ta=document.createElement('textarea');ta.value=id;ta.style.position='fixed';ta.style.opacity='0';
+    document.body.appendChild(ta);ta.select();
+    try{document.execCommand('copy');}catch(e){}
+    document.body.removeChild(ta);ok();
+  }
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(id).then(ok).catch(fb);}
+  else{fb();}
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();});
 </script>
 </body>
 </html>
