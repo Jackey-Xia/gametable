@@ -1,8 +1,7 @@
 {
  "_meta": {
   "count": 1104,
-  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-16T06:00:55"
+  "updated": "2026-10-16T14:09:24"
  },
  "locks": {
   "p0001": {
@@ -11121,27 +11120,27 @@
    "cn": [
     "胡闹搬家1（豪华版）"
    ],
-   "en": "",
-   "file": "covers/rca833f7400a5e.jpg",
-   "md5": "7cb2b49a431b42b75a5e55d74b7743d9",
-   "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 7d09ea5448e7_s.jpg",
+   "en": "Moving Out Deluxe Edition",
+   "file": "covers/rc1f827d12d2ca.jpg",
+   "md5": "af71747135ba061ce0ee2696772a7eac",
+   "note": "人工满铺版·胡闹搬家1豪华版港服官方竖版居中裁3:4·下移保留MOVING",
    "platform": "PS",
-   "role": "M-pad",
-   "store": "",
-   "time": "2026-09-20T10:23:43"
+   "role": "P",
+   "store": "Moving Out Deluxe Edition (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "time": "2026-10-16T14:09:24"
   },
   "p0847": {
    "cn": [
     "胡闹搬家2（豪华版）"
    ],
-   "en": "",
-   "file": "covers/rce1fa21d46ce8.jpg",
-   "md5": "f6efa57c7b5417cc7f162742b350100c",
-   "note": "店主审核 B124 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 DELUXE EDITION",
+   "en": "Moving Out 2 - Deluxe Edition",
+   "file": "covers/rc772c52838033.jpg",
+   "md5": "9fdfdfc56758f8190a55158406589e67",
+   "note": "人工满铺版·胡闹搬家2豪华版港服官方竖版居中裁3:4·下移保留DELUXE EDITION",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P",
    "store": "Moving Out 2 - Deluxe Edition (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-16T14:09:24"
   },
   "p0848": {
    "cn": [
