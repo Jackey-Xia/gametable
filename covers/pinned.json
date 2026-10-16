@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1105,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-16T16:17:11"
+  "updated": "2026-10-16T17:19:56"
  },
  "locks": {
   "p0001": {
@@ -806,7 +806,7 @@
    ],
    "en": "Kusan：City of Wolves",
    "file": "covers/rcbea116aac7a3.jpg",
-   "md5": "96dd2f739ec9ff6f4d23718307165799",
+   "md5": "3f7bf168b18072c81debf03aa782f704",
    "note": "店主指认红框卡 · 中文卡（九山 狼之城）· 方图留边版",
    "platform": "PS",
    "role": "M-pad",
