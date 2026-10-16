@@ -4,7 +4,7 @@
  *       仅在页面报告"本机本地图库不可用"时, 才由页面发消息启用预缓存兜底。
  * 页面/数据/manifest 不拦截, 保证价格库存永远最新。
  */
-const CACHE = 'gt-covers-v3';
+const CACHE = 'gt-covers-v4';
 
 self.addEventListener('install', e => self.skipWaiting());
 
@@ -61,7 +61,7 @@ self.addEventListener('fetch', e => {
     const cache = await caches.open(CACHE);
     const cached = await cache.match(e.request);
     // 后台刷新: 有新图就换上, 下次打开即为新图
-    const refresh = fetch(e.request).then(res => {
+    const refresh = fetch(e.request, { cache: 'reload' }).then(res => {
       if (res && res.ok) cache.put(e.request, res.clone());
       return res;
     }).catch(() => null);
