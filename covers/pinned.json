@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1105,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-16T17:55:17"
+  "updated": "2026-10-16T18:03:52"
  },
  "locks": {
   "p0001": {
@@ -805,7 +805,7 @@
     "九山：狼之城"
    ],
    "en": "Kusan：City of Wolves",
-   "file": "covers/rcbea116aac7a3.jpg",
+   "file": "covers/rc3f7bf168b180.jpg",
    "md5": "3f7bf168b18072c81debf03aa782f704",
    "note": "店主指认红框卡 · 中文卡（九山 狼之城）· 方图留边版",
    "platform": "PS",
@@ -12826,7 +12826,7 @@
     "遗迹：第一守护者"
    ],
    "en": "",
-   "file": "covers/rcb10f7ecb1414.jpg",
+   "file": "covers/rc69e555eea596.jpg",
    "md5": "69e555eea596e8ea174e62ab495799bf",
    "note": "店主审核 B32 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 RELIC、FIRST CUARDIAN",
    "platform": "PS",
