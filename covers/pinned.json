@@ -1,7 +1,8 @@
 {
  "_meta": {
   "count": 1105,
-  "updated": "2026-10-16T15:51:43"
+  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
+  "updated": "2026-10-16T15:57:14"
  },
  "locks": {
   "p0001": {
@@ -1304,7 +1305,7 @@
    "en": "COD 23/Call of Duty 23：Modern Warfare 4",
    "file": "covers/rc5f86ccf258c9.jpg",
    "md5": "ef64d251a118fb7ce7e59409c3caeeba",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",
+   "note": "★人工锁死沿用(锁p0098, 中文名一致)",
    "platform": "PS",
    "role": "M-fill",
    "store": "",
