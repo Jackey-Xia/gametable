@@ -1,16 +1,11 @@
 {
- "time": "2026-10-16T13:43:56",
+ "time": "2026-10-16T13:46:42",
  "added": [],
- "pending": [
-  {
-   "name": "英灵神殿",
-   "reason": "失败6次, 需人工核对"
-  }
- ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1224,
-  "covered": 1279,
-  "pending_open": 1
+  "covered": 1280,
+  "pending_open": 0
  }
 }
