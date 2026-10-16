@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1105,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-16T18:08:31"
+  "updated": "2026-10-16T18:29:49"
  },
  "locks": {
   "p0001": {
@@ -9046,8 +9046,8 @@
     "潜水员戴夫（完整版）"
    ],
    "en": "Dave The Diver（Complete Edition）",
-   "file": "covers/rcfdf5d130765e.jpg",
-   "md5": "fdf5d130765e0549a3ca3eb0582a471b",
+   "file": "covers/rcb7309aadd665.jpg",
+   "md5": "b7309aadd665aba82cb565fca4548563",
    "note": "拼接：现满铺主图+5DLC辅图(丛林/一番的休日/GGST/哥斯拉/渔帆暗涌)",
    "platform": "PS",
    "role": "M-collage",
