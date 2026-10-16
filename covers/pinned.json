@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1105,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-16T17:19:56"
+  "updated": "2026-10-16T17:26:40"
  },
  "locks": {
   "p0001": {
@@ -12827,7 +12827,7 @@
    ],
    "en": "",
    "file": "covers/rcb10f7ecb1414.jpg",
-   "md5": "256526620b525f6e27d4b892c1afeca4",
+   "md5": "69e555eea596e8ea174e62ab495799bf",
    "note": "店主审核 B32 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 RELIC、FIRST CUARDIAN",
    "platform": "PS",
    "role": "P-pad",
