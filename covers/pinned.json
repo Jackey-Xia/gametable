@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1108,
+  "count": 1109,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-17T12:00:56"
+  "updated": "2026-10-17T12:03:52"
  },
  "locks": {
   "p0001": {
@@ -14572,6 +14572,19 @@
    "role": "M-fill",
    "store": "",
    "time": "2026-10-17T12:00:56"
+  },
+  "p1109": {
+   "cn": [
+    "使命召唤23：现代战争4（6）"
+   ],
+   "en": "",
+   "file": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc5f86ccf258c9.jpg&w=256&q=82&output=jpg",
+   "md5": "",
+   "note": "多库存沿用: 与《使命召唤23：现代战争4（1）》同一商品仅增加库存, 直接沿用同款封面",
+   "platform": "PS",
+   "role": "M-fill",
+   "store": "",
+   "time": "2026-10-17T12:03:52"
   }
  }
 }
