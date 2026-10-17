@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>夏天Jackey · PSN 扫码登录助手</title>
+<style>
+:root{
+  --bg:#0e1116; --panel:#171b22; --panel2:#1f242d; --line:#2a313c;
+  --txt:#e8edf2; --sub:#9aa6b2; --accent:#07c160; --accent2:#1f6feb;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 56px}
+header{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.logo{width:40px;height:40px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#059a4a);display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:20px}
+h1{font-size:19px;margin:0}
+.sub{color:var(--sub);font-size:13px;margin:0 0 20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:16px}
+.card h2{font-size:15px;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+.card h2 .n{width:22px;height:22px;border-radius:50%;background:var(--accent2);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}
+textarea{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:10px;color:var(--txt);padding:12px;font-size:14px;resize:vertical;font-family:inherit;min-height:84px}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+button{background:var(--accent2);color:#fff;border:0;border-radius:10px;padding:11px 16px;font-size:14px;font-weight:600;cursor:pointer}
+button.ghost{background:var(--panel2);border:1px solid var(--line);color:var(--txt)}
+button:active{transform:translateY(1px)}
+input[type=file]{display:none}
+#qrBox{display:flex;justify-content:center;padding:10px 0;min-height:40px}
+#qrBox img,#qrBox canvas{border-radius:12px;background:#fff;padding:10px;max-width:100%;width:300px;height:300px}
+.code{font-size:46px;font-weight:800;letter-spacing:8px;text-align:center;color:var(--accent);margin:6px 0}
+.codebox{text-align:center}
+.hint{color:var(--sub);font-size:13px;line-height:1.6}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;background:var(--panel2);color:var(--sub);margin-bottom:8px}
+.err{color:#ff6b6b;font-size:13px;min-height:18px;margin-top:8px}
+.grid2{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px}
+.pc,.mb{padding:10px 12px;border-radius:10px;background:var(--panel2);font-size:13px;line-height:1.5}
+.pc{border-left:3px solid var(--accent2)}
+.mb{border-left:3px solid var(--accent)}
+.pc b,.mb b{color:var(--txt)}
+@media(min-width:640px){.grid2{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><div class="logo">夏</div><div><h1>PSN 扫码登录助手</h1></div></header>
+  <p class="sub">夏天Jackey · 买家扫码登录 PS5 账号（电脑 / 手机通用）</p>
+
+  <div class="card">
+    <h2><span class="n">1</span>上传买家二维码截图（自动识别）</h2>
+    <div class="row">
+      <button class="ghost" onclick="document.getElementById('file').click()">选择图片</button>
+      <input type="file" id="file" accept="image/*" onchange="decodeFile(event)">
+    </div>
+    <div class="err" id="err1"></div>
+  </div>
+
+  <div class="card">
+    <h2><span class="n">2</span>或手动粘贴登录链接 / 6 位码</h2>
+    <textarea id="manual" placeholder="粘贴解码出的索尼登录链接，或直接填 6 位数字 code"></textarea>
+    <div class="row"><button onclick="fromManual()">生成登录二维码</button></div>
+  </div>
+
+  <div class="card" id="outCard" style="display:none">
+    <span class="tag">登录二维码（买家用 PS App 扫码）</span>
+    <div id="qrBox"></div>
+    <div class="codebox">
+      <div class="hint">6 位登录码（备用，手动输入用）</div>
+      <div class="code" id="code6">------</div>
+      <div class="row" style="justify-content:center">
+        <button class="ghost" onclick="copyCode()">复制 6 位码</button>
+        <button class="ghost" onclick="copyLink()">复制完整链接</button>
+      </div>
+    </div>
+    <div id="rawLink" class="hint" style="word-break:break-all;margin-top:10px"></div>
+    <div class="grid2">
+      <div class="pc"><b>💻 电脑端：</b>本页在电脑浏览器打开，把二维码全屏给买家用手机 PS App 扫；或把上方链接发买家。</div>
+      <div class="mb"><b>📱 手机端：</b>本页在手机打开，把链接发买家，买家用 PS App 扫；也可长按二维码保存后发给买家。</div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@zxing/library@0.21.3/dist/zxing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+const err1=document.getElementById('err1');
+function showOut(url,code){
+  document.getElementById('outCard').style.display='block';
+  document.getElementById('rawLink').textContent=url||'(仅 6 位码，无完整链接，无法生成二维码)';
+  document.getElementById('code6').textContent=code||'------';
+  const box=document.getElementById('qrBox'); box.innerHTML='';
+  if(url){
+    new QRCode(box,{text:url,width:300,height:300,colorDark:'#000',colorLight:'#fff',correctLevel:QRCode.CorrectLevel.M});
+  }else{
+    box.innerHTML='<div class="hint">缺少完整链接，无法生成二维码。请粘贴含 code 的索尼登录链接。</div>';
+  }
+}
+function copyCode(){ const c=document.getElementById('code6').textContent; if(c&&c!=='------')navigator.clipboard.writeText(c); }
+function copyLink(){ const l=document.getElementById('rawLink').textContent; if(l&&l.startsWith('http'))navigator.clipboard.writeText(l); }
+function extract(url){
+  try{ const u=new URL(url); const code=u.searchParams.get('code'); return {url:url, code:code}; }catch(e){ return null; }
+}
+function fromManual(){
+  const v=document.getElementById('manual').value.trim();
+  if(!v){ err1.textContent='请粘贴链接或 6 位码'; return; }
+  if(/^\d{4,8}$/.test(v)){ showOut(null, v); return; }
+  const ex=extract(v);
+  if(ex){ showOut(ex.url, ex.code); } else { err1.textContent='链接无法解析，请确认是索尼登录链接'; }
+}
+async function decodeFile(e){
+  err1.textContent='';
+  const f=e.target.files[0]; if(!f) return;
+  const url=URL.createObjectURL(f);
+  try{
+    const reader=new ZXing.BrowserQRCodeReader();
+    const res=await reader.decodeFromImage(undefined, url);
+    const ex=extract(res.text);
+    if(ex){ showOut(ex.url, ex.code); document.getElementById('manual').value=ex.url||''; }
+    else { err1.textContent='二维码已识别，但内容不是登录链接：'+res.text.slice(0,60); }
+  }catch(err){ err1.textContent='识别失败，请手动粘贴链接（'+err.message.slice(0,40)+'）'; }
+}
+</script>
+</body>
+</html>
