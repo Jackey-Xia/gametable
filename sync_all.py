@@ -44,6 +44,10 @@ site = os.path.join(BASE, "site")
 os.makedirs(site, exist_ok=True)
 shutil.copyfile(os.path.join(BASE, "data.js"), os.path.join(site, "data.js"))
 shutil.copyfile(os.path.join(BASE, "index.html"), os.path.join(site, "index.html"))
+# 扫码登录助手页（独立工具页，长期可访问）
+ql = os.path.join(BASE, "qr-login.html")
+if os.path.exists(ql):
+    shutil.copyfile(ql, os.path.join(site, "qr-login.html"))
 # 改75: 拼音映射(同音搜索), 由 gen_pinyin.py 生成
 pyjs = os.path.join(BASE, "pinyin.js")
 if os.path.exists(pyjs):
