@@ -354,6 +354,12 @@ footer b{color:#4b5563}
 .gt-loadhint .d{width:13px;height:13px;border:2px solid #e0a94a;border-right-color:transparent;border-radius:50%;flex:0 0 auto;animation:gtspin .9s linear infinite}
 .gt-loadhint.hide{display:none}
 </style>
+
+<style>
+/* 改112: 封面图禁止放大/长按保存/拖拽 */
+.gcover img{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;-webkit-user-drag:none;user-drag:none;pointer-events:none}
+.gcover{touch-action:manipulation}
+</style>
 </head>
 <body>
 <div id="gtLoadHint" class="gt-loadhint" role="status"><span class="d"></span><span>首次打开正在加载封面，请稍候，勿刷新</span></div>
