@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1109,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-18T09:15:13"
+  "updated": "2026-10-18T17:17:47"
  },
  "locks": {
   "p0001": {
@@ -1108,13 +1108,13 @@
     "传说法师1"
    ],
    "en": "Wizard of Legend",
-   "file": "covers/rc4358284aef46.jpg",
-   "md5": "10415c03d413bfcd91529d60990e91e4",
-   "note": "店主指认: 港服红框卡(MASTER方图)→留边版; 不联动传说法师2",
+   "file": "covers/rc0a35a9f4e49e.jpg",
+   "md5": "0a35a9f4e49e79f09112e7cb585919b0",
+   "note": "店主审核: 游民星空主图替换 + DELUXE色带合成批次",
    "platform": "PS",
    "role": "M-pad",
    "store": "Wizard of Legend (日语, 韩语, 简体中文, 英语)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T17:17:47"
   },
   "p0085": {
    "cn": [
@@ -1696,13 +1696,13 @@
     "冲就完事模拟器2"
    ],
    "en": "",
-   "file": "covers/rc4dc91e8ee804.jpg",
-   "md5": "d2865e5bf6bb0c1ee9262ba0dd1f272e",
-   "note": "方图改留边版(零裁切), 源 c2c683571b29_s.jpg",
+   "file": "covers/rc28b7271dcca0.jpg",
+   "md5": "28b7271dcca002e459a02c026fca407d",
+   "note": "店主审核: 游民星空主图替换 + DELUXE色带合成批次",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T17:17:47"
   },
   "p0129": {
    "cn": [
@@ -1761,13 +1761,13 @@
     "创尸纪（豪华版）"
    ],
    "en": "",
-   "file": "covers/rcc77986dca204.jpg",
-   "md5": "a462902b15af3879f54ce28f53b51600",
-   "note": "店主点名改留边版(方图上下补边, 零裁切), 源 2f7e72306b81_s.jpg",
+   "file": "covers/rcf1d6ba10c9e6.jpg",
+   "md5": "f1d6ba10c9e60f2f0f7c862e3cf582db",
+   "note": "店主审核: 游民星空主图替换 + DELUXE色带合成批次",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T17:17:47"
   },
   "p0134": {
    "cn": [
@@ -1879,13 +1879,13 @@
     "刺客信条：艾吉奥合集（2+兄弟会+启示录）"
    ],
    "en": "",
-   "file": "covers/rc383789d0dd34.jpg",
-   "md5": "a0f4ec4a36bfc82573ec7e1be0f56582",
-   "note": "方图改留边版(零裁切), 源 07f864cdea61_s.jpg",
+   "file": "covers/rc9810c5e8a719.jpg",
+   "md5": "9810c5e8a7195c13d9afde3702e960c5",
+   "note": "店主审核: 游民星空主图替换 + DELUXE色带合成批次",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T17:17:47"
   },
   "p0143": {
    "cn": [
@@ -3461,13 +3461,13 @@
     "堕落之主（豪华版）"
    ],
    "en": "",
-   "file": "covers/rc60ef55db3950.jpg",
-   "md5": "1ec5a3eb92595879e12447e0efaf96ea",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 b56de5774c9d_s.jpg",
+   "file": "covers/rc3fdbe924f201.jpg",
+   "md5": "3fdbe924f201b310e1fdd1ab33ea329c",
+   "note": "店主审核: 游民星空主图替换 + DELUXE色带合成批次",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T17:17:47"
   },
   "p0264": {
    "cn": [
@@ -5231,13 +5231,13 @@
     "弹丸论破V3/新枪弹辩驳V3 大家自相残杀的新学期"
    ],
    "en": "",
-   "file": "covers/rc8acb4efa817c.jpg",
-   "md5": "e95bfcb92b2922f65813408191a44780",
-   "note": "店主点名改留边版(方图上下补边, 零裁切), 源 60453ae8a3d0_s.jpg",
+   "file": "covers/rc1cfc547e2e7f.jpg",
+   "md5": "1cfc547e2e7fb928c09073b7741067fb",
+   "note": "店主审核: 游民星空主图替换 + DELUXE色带合成批次",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-18T17:17:47"
   },
   "p0399": {
    "cn": [
@@ -11335,13 +11335,13 @@
     "苍蓝革命之女武神"
    ],
    "en": "",
-   "file": "covers/rcfd45178c79d8.jpg",
-   "md5": "a66d0ce3b6ebe343935cc366e46339b8",
-   "note": "方图改留边版(零裁切), 源 c5484c3f9482_s.jpg",
+   "file": "covers/rcec55ed42363c.jpg",
+   "md5": "ec55ed42363c5dbd253ce9e1c8683a06",
+   "note": "店主审核: 游民星空主图替换 + DELUXE色带合成批次",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-18T17:17:47"
   },
   "p0863": {
    "cn": [
