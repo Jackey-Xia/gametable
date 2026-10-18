@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1109,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-18T16:51:57"
+  "updated": "2026-10-19T01:06:22"
  },
  "locks": {
   "p0001": {
@@ -5218,13 +5218,13 @@
     "弹丸论破1+2 枪弹辩驳1+2"
    ],
    "en": "",
-   "file": "covers/rc98be3adebef7.jpg",
-   "md5": "cfbe6ce9c972f91d42f14d61df6ff45a",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",
+   "file": "covers/rcd7d756f1afeb.jpg",
+   "md5": "d7d756f1afeb1648b1b729af8b3af93f",
+   "note": "店主审核: 弹丸论破1+2 用游民星空图去掉顶部PSVITA蓝条(保全宽·底部深色延展)",
    "platform": "PS",
    "role": "M-fill",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-19T01:06:22"
   },
   "p0398": {
    "cn": [
