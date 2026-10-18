@@ -1,11 +1,27 @@
 {
- "time": "2026-10-18T04:03:07",
- "added": [],
- "pending": [],
+ "time": "2026-10-18T04:51:53",
+ "added": [
+  {
+   "name": "古墓丽影：亚特兰蒂斯遗迹2",
+   "product": "UP5267-PPSA29000_00-TRLOASTND0000000",
+   "storeName": "《古墓丽影：亚特兰蒂斯遗迹》 (中日英韩文版)",
+   "score": 0.85,
+   "file": "covers/ac6fd526a5febcp34.jpg",
+   "role": "P-pad",
+   "bytes": 93648
+  }
+ ],
+ "pending": [
+  {
+   "name": "古墓丽影：亚特兰蒂斯遗迹1",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  }
+ ],
  "errors": [],
  "stats": {
-  "total": 1229,
-  "covered": 1286,
-  "pending_open": 0
+  "total": 1231,
+  "covered": 1287,
+  "pending_open": 1
  }
 }
