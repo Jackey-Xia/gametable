@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1109,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-18T15:35:39"
+  "updated": "2026-10-18T23:39:56"
  },
  "locks": {
   "p0001": {
@@ -1774,13 +1774,13 @@
     "刺客信条3（重置版）"
    ],
    "en": "Assassin's Creed III Remastered",
-   "file": "covers/rcae2de06640e7.jpg",
-   "md5": "ae2de06640e713307bd5fd287ad3dab7",
-   "note": "店主审核: 形态调整批次(埃博拉3/北方之魂/8道门/波与月夜/传奇重装步兵 位移保文字; 黑旗豪华+AC3重置 放大裁掉四周金线)",
+   "file": "covers/rc6f8a33549d38.jpg",
+   "md5": "6f8a33549d389b01d4b8e3d710af4cab",
+   "note": "店主审核: 批次3-G 总审核图编号1/2/3/4/8/10/11 上线",
    "platform": "PS",
    "role": "M-pad",
    "store": "《刺客信条 III 重制版》 (英语)",
-   "time": "2026-10-18T16:09:53"
+   "time": "2026-10-18T23:39:56"
   },
   "p0135": {
    "cn": [
@@ -1919,13 +1919,13 @@
     "刺客信条：黑旗（豪华版）"
    ],
    "en": "",
-   "file": "covers/rc5790711af175.jpg",
-   "md5": "5790711af175d31966c790332f146292",
-   "note": "店主审核: 形态调整批次(埃博拉3/北方之魂/8道门/波与月夜/传奇重装步兵 位移保文字; 黑旗豪华+AC3重置 放大裁掉四周金线)",
+   "file": "covers/rc9493ef1c3daa.jpg",
+   "md5": "9493ef1c3daa43b985b830b2b49a4f68",
+   "note": "店主审核: 批次3-G 总审核图编号1/2/3/4/8/10/11 上线",
    "platform": "PS",
    "role": "M-fill",
    "store": "JP0001-CUSA00206_00-ASIA0000FULLGAME (zh-Hans-HK)",
-   "time": "2026-10-18T16:09:53"
+   "time": "2026-10-18T23:39:56"
   },
   "p0146": {
    "cn": [
@@ -1959,13 +1959,13 @@
     "剑风传奇无双/烙印勇士无双（完整版）"
    ],
    "en": "",
-   "file": "covers/rc71e2ec51d479.jpg",
-   "md5": "c9b2ddceffaa989caf07127284b5ea6f",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 rcd7dad18b2929.jpg",
+   "file": "covers/rcf049be0566ab.jpg",
+   "md5": "f049be0566abc92a7f4e69207c60d18a",
+   "note": "店主审核: 批次3-G 总审核图编号1/2/3/4/8/10/11 上线",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T23:39:56"
   },
   "p0149": {
    "cn": [
@@ -3422,13 +3422,13 @@
     "城市猎人"
    ],
    "en": "",
-   "file": "covers/rcc2a3a2bab20f.jpg",
-   "md5": "c2a3a2bab20fd303e35e0056cdd73125",
-   "note": "整体下移48px+顶部blur30延伸+18px羽化",
+   "file": "covers/rcca3b74045273.jpg",
+   "md5": "ca3b74045273df30e9eb1f2a94655ee4",
+   "note": "店主审核: 批次3-G 总审核图编号1/2/3/4/8/10/11 上线",
    "platform": "PS",
    "role": "M-fill",
    "store": "JP5784-PPSA34366_00-CITYHUNTER000000 (zh-Hans-HK)",
-   "time": "2026-10-13T08:04:16"
+   "time": "2026-10-18T23:39:56"
   },
   "p0261": {
    "cn": [
@@ -3552,13 +3552,13 @@
     "夏洛克·福尔摩斯：觉醒Re（豪华版）"
    ],
    "en": "",
-   "file": "covers/rc1da1ae55e277.jpg",
-   "md5": "bf9dfef1b472e0ec724d80ca20f2d6ca",
-   "note": "店主审核 B128 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 SHERLOCKHOLMES",
+   "file": "covers/rca930fd9e9be8.jpg",
+   "md5": "a930fd9e9be8f59a6b0284a9865db3b5",
+   "note": "店主审核: 批次3-G 总审核图编号1/2/3/4/8/10/11 上线",
    "platform": "PS",
    "role": "P-pad",
    "store": "Sherlock Holmes The Awakened – Deluxe Edition PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-18T23:39:56"
   },
   "p0271": {
    "cn": [
@@ -4983,13 +4983,13 @@
     "幻想生活i 转圈圈的龙和偷取时间的少女（豪华版）"
    ],
    "en": "",
-   "file": "covers/rca0f6e0364b5b.jpg",
-   "md5": "6bebd3cada3cc953a1db4402b6094057",
-   "note": "港服数字豪华版(HK490) MASTER 方图留边版(504x672 上下虚化补边3:4)；店主反馈方图直裁上线后有遮挡改留边版零裁切；替换旧图",
+   "file": "covers/rc97e2b2ddee27.jpg",
+   "md5": "97e2b2ddee270802e60974d6b2e22fe5",
+   "note": "店主审核: 批次3-G 总审核图编号1/2/3/4/8/10/11 上线",
    "platform": "PS",
    "role": "M-pad",
    "store": "JP0720-PPSA27625_00-FANTASYLIFEIDLX0 (zh-Hans-HK)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-18T23:39:56"
   },
   "p0380": {
    "cn": [
@@ -7576,13 +7576,13 @@
     "机械迷城+嘎吱作响"
    ],
    "en": "",
-   "file": "covers/rc841dca55799a.jpg",
-   "md5": "b892b6453cb31bde5fdca54556400101",
-   "note": "②店主审核: 采用C满填不留边 · ①港服(中文名) · Machinarium + Creaks 捆绑包 (日语, 韩语, 简体中文, ",
+   "file": "covers/rcc71425566489.jpg",
+   "md5": "c714255664891dfdaa97921a0c81b3f4",
+   "note": "店主审核: 批次3-G 总审核图编号1/2/3/4/8/10/11 上线",
    "platform": "PS",
    "role": "P",
    "store": "Machinarium + Creaks 捆绑包 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-18T23:39:56"
   },
   "p0578": {
    "cn": [
