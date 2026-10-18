@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1109,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-18T14:48:29"
+  "updated": "2026-10-18T22:50:02"
  },
  "locks": {
   "p0001": {
@@ -1487,13 +1487,13 @@
     "光之子"
    ],
    "en": "",
-   "file": "covers/rc8d0aede69950.jpg",
-   "md5": "1652f12c299328c140384e57b66272c4",
-   "note": "方图改留边版(零裁切), 源 32cb830f37e5_s.jpg",
+   "file": "covers/rccbda05d2c050.jpg",
+   "md5": "cbda05d2c0505ecc48b2923e3c8a995c",
+   "note": "店主审核: 批次3-E 满铺修字8项(光之子/古墓丽影10/黑暗之魂1-2-3/黑色五叶草/海贼赤红/寻秘世界/极品飞车21)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T22:50:02"
   },
   "p0113": {
    "cn": [
@@ -2482,13 +2482,13 @@
     "古墓丽影10：崛起（20周年版）"
    ],
    "en": "",
-   "file": "covers/rce02ebc506f98.jpg",
-   "md5": "ed4fb9270c498e2b877d4e0f5d065944",
-   "note": "店主指令:红框图=港服《Rise of the Tomb Raider: 20 Year Celebration》(中韩文版) HK$267.00 封面(红框卡图区实测250x250=1:1=官方MASTER方图,MAE 7.87);该 SKU 无 PORTRAIT_BANNER/EDITION_KEY_ART(GraphQL media 与商品页 SSR 双查均 0 条,仅 MASTER/BACKGROUND/GAMEHUB/LOGO/SCREENSHOT);但 MASTER 方图 3:4 裁切会把横贯全宽的标题切坏(OCR 裁切区只认出 ISE/TH/OMB RAIDE),故做留边版:504x504 方图居中+上下各 84px 拉伸高斯模糊背景,504x672=3:4 前端零裁切,OCR 完整识别 RISE OF THE TOMB RAIDER 20 YEAR CELEBRATION;替换历史人工批次旧图 2747e7a5d9dd_s.jpg",
+   "file": "covers/rc9be2532a7618.jpg",
+   "md5": "9be2532a761800d7e245c90e4b3d4d92",
+   "note": "店主审核: 批次3-E 满铺修字8项(光之子/古墓丽影10/黑暗之魂1-2-3/黑色五叶草/海贼赤红/寻秘世界/极品飞车21)",
    "platform": "PS",
    "role": "M-pad",
    "store": "HP0700-CUSA06059_00-RISEOFTOMBRAIDER (zh-Hans-HK)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T22:50:02"
   },
   "p0189": {
    "cn": [
@@ -7706,13 +7706,13 @@
     "极品飞车21：热度（豪华版）"
    ],
    "en": "Need For Speed 21：Heat（Deluxe Edition）",
-   "file": "covers/rc374b7310e00f.jpg",
-   "md5": "19574ad5443acda8f6cc83c7efe0df66",
-   "note": "店主指令: 取消满铺改留边版",
+   "file": "covers/rce2e81a80036a.jpg",
+   "md5": "e2e81a80036aa28308442aaa1ecf5ec9",
+   "note": "店主审核: 批次3-E 满铺修字8项(光之子/古墓丽影10/黑暗之魂1-2-3/黑色五叶草/海贼赤红/寻秘世界/极品飞车21)",
    "platform": "PS",
    "role": "M-pad",
    "store": "《Need for Speed™ Heat》豪华版 (中英韩文版)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-18T22:50:02"
   },
   "p0588": {
    "cn": [
@@ -8697,26 +8697,26 @@
     "海贼王：寻秘世界（豪华版）"
    ],
    "en": "",
-   "file": "covers/rc0df70b0b7b24.jpg",
-   "md5": "60847448f21dbd0a1455a3e241b80ee0",
-   "note": "店主点名改留边版(方图上下补边, 零裁切), 源 7ad3b55e15c4_s.jpg",
+   "file": "covers/rc54f298a5306b.jpg",
+   "md5": "54f298a5306b437b0e47158217b00809",
+   "note": "店主审核: 批次3-E 满铺修字8项(光之子/古墓丽影10/黑暗之魂1-2-3/黑色五叶草/海贼赤红/寻秘世界/极品飞车21)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-18T22:50:02"
   },
   "p0664": {
    "cn": [
     "海贼王：无限世界 赤红（豪华版）"
    ],
    "en": "",
-   "file": "covers/rc33f64926b01b.jpg",
-   "md5": "8efd8413ea80df4c5c4fc06cdb9b12dd",
-   "note": "店主点名改留边版(方图上下补边, 零裁切), 源 b7924131856a_s.jpg",
+   "file": "covers/rcec65362d449f.jpg",
+   "md5": "ec65362d449f240e8c0d51a5894010eb",
+   "note": "店主审核: 批次3-E 满铺修字8项(光之子/古墓丽影10/黑暗之魂1-2-3/黑色五叶草/海贼赤红/寻秘世界/极品飞车21)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-18T22:50:02"
   },
   "p0665": {
    "cn": [
@@ -13969,26 +13969,26 @@
     "黑暗之魂1（重置版）"
    ],
    "en": "",
-   "file": "covers/rc9fc10064aa7a.jpg",
-   "md5": "9c60f34459a5fb6b752f3f28679ed6c4",
-   "note": "方图改留边版(零裁切), 源 e3896ddb1422_s.jpg",
+   "file": "covers/rc83f6c3513c09.jpg",
+   "md5": "83f6c3513c094d8e1b38f526dbdab43a",
+   "note": "店主审核: 批次3-E 满铺修字8项(光之子/古墓丽影10/黑暗之魂1-2-3/黑色五叶草/海贼赤红/寻秘世界/极品飞车21)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-18T22:50:02"
   },
   "p1064": {
    "cn": [
     "黑暗之魂2：原罪学者"
    ],
    "en": "",
-   "file": "covers/rc6cc422773b81.jpg",
-   "md5": "f73426c8b654e39225fa32e82f35cb59",
-   "note": "方图改留边版(零裁切), 源 27a203818f2d_s.jpg",
+   "file": "covers/rc9480c75aea44.jpg",
+   "md5": "9480c75aea44f479c9952d72caf82775",
+   "note": "店主审核: 批次3-E 满铺修字8项(光之子/古墓丽影10/黑暗之魂1-2-3/黑色五叶草/海贼赤红/寻秘世界/极品飞车21)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-18T22:50:02"
   },
   "p1065": {
    "cn": [
@@ -13997,13 +13997,13 @@
     "黑暗之魂3（豪华版）（2）"
    ],
    "en": "",
-   "file": "covers/rcd9c46ebfd68a.jpg",
-   "md5": "8f5de64060c3d3db89c3703bb4c45003",
-   "note": "库存拆分改名后继承同名封面(源键: 黑暗之魂3（豪华版）)",
+   "file": "covers/rc74e20f19d529.jpg",
+   "md5": "74e20f19d529a017a974b720499f3228",
+   "note": "店主审核: 批次3-E 满铺修字8项(光之子/古墓丽影10/黑暗之魂1-2-3/黑色五叶草/海贼赤红/寻秘世界/极品飞车21)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-18T22:50:02"
   },
   "p1066": {
    "cn": [
@@ -14088,13 +14088,13 @@
     "黑色五叶草 骑士四重奏（豪华版）"
    ],
    "en": "",
-   "file": "covers/rc14b15d222bb9.jpg",
-   "md5": "dfb2b4645edef35afe63028d2c0cc6ef",
-   "note": "港服豪华版 MASTER 方图留边版(上下模糊补边3:4)；方图直接裁切右侧标题Quartet Knights被切故留边；替换旧图",
+   "file": "covers/rc2d0ed3963cd1.jpg",
+   "md5": "2d0ed3963cd1b85a2eee5014f2e6d2a4",
+   "note": "店主审核: 批次3-E 满铺修字8项(光之子/古墓丽影10/黑暗之魂1-2-3/黑色五叶草/海贼赤红/寻秘世界/极品飞车21)",
    "platform": "PS",
    "role": "M-pad",
    "store": "HP0700-CUSA10622_00-0000000000000001 (zh-Hans-HK)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-18T22:50:02"
   },
   "p1073": {
    "cn": [
