@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1109,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-18T12:59:48"
+  "updated": "2026-10-18T21:27:16"
  },
  "locks": {
   "p0001": {
@@ -118,13 +118,13 @@
     "F1 25（经典/传奇版）"
    ],
    "en": "",
-   "file": "covers/d0ede3720503_s.jpg",
-   "md5": "4a3159ad9cbdd4455dda8ca8dc65b2de",
-   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc1ca60f1771ac.jpg",
+   "file": "covers/rc87af26c46faa.jpg",
+   "md5": "87af26c46faad1ac8a9b98c04776580f",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "P",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T21:27:16"
   },
   "p0010": {
    "cn": [
@@ -184,13 +184,13 @@
     "GTA侠盗猎车手三部曲/给他爱三部曲"
    ],
    "en": "",
-   "file": "covers/rc69ca2ddcf557.jpg",
-   "md5": "12e2357c025e5dec0744b81a0f8a4cc4",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
+   "file": "covers/rcc669c9fd6939.jpg",
+   "md5": "c669c9fd6939a69f7421910325ffffad",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "M-fill",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T21:27:16"
   },
   "p0015": {
    "cn": [
@@ -211,13 +211,13 @@
     "Inside+Limbo（2）"
    ],
    "en": "",
-   "file": "covers/rc84bf0af43622.jpg",
-   "md5": "ba610ba059ceb7a56d3297e9e4ce45de",
-   "note": "店主点名改留边版(方图上下补边, 零裁切), 源 fe5bc0375615_s.jpg",
+   "file": "covers/rca967047b6ac9.jpg",
+   "md5": "a967047b6ac98934691384a14aa183c7",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T21:27:16"
   },
   "p0017": {
    "cn": [
@@ -237,13 +237,13 @@
     "JOJO的奇妙冒险 群星之战（终极版）"
    ],
    "en": "",
-   "file": "covers/rc0b7817564c41.jpg",
-   "md5": "274765ac81378d6b50db09428426ef11",
-   "note": "店主审核 B66 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 DIGTAL ULTIMATE EOITION",
+   "file": "covers/rcea3bd268d5a0.jpg",
+   "md5": "ea3bd268d5a0f3791e6bbe04e8029ed3",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "P-pad",
    "store": "JOJO的奇妙冒险 群星之战 重制版　数字终极版 PS4 & PS5 (韩语, 简体中文, 繁体中文)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T21:27:16"
   },
   "p0019": {
    "cn": [
@@ -1526,13 +1526,13 @@
     "光环：战役进化（高级版）"
    ],
    "en": "",
-   "file": "covers/rc51ce0b217b3f.jpg",
-   "md5": "8f4325ccb9697ba54e86b3b60ff75edd",
-   "note": "店主审核 B83 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上",
+   "file": "covers/rc27f2e4f8d305.jpg",
+   "md5": "27f2e4f8d305620096447b4d585de771",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "P",
    "store": "Halo: Campaign Evolved - 高级版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T21:27:16"
   },
   "p0116": {
    "cn": [
@@ -2599,26 +2599,26 @@
     "合金弹头：战略版"
    ],
    "en": "",
-   "file": "covers/rc8ca2e4654856.jpg",
-   "md5": "54a433d64885fe3eeb93caa4cbf627f3",
-   "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rc88812d4245cb.jpg",
+   "file": "covers/rc8e53b89c007b.jpg",
+   "md5": "8e53b89c007b0178cdb0d2ea797d1f16",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T21:27:16"
   },
   "p0198": {
    "cn": [
     "合金弹头：进攻（重装上阵版）"
    ],
    "en": "",
-   "file": "covers/rc40218a5ce9d8.jpg",
-   "md5": "193c9dba88aeadea91a6f3de007289f4",
-   "note": "店主审核 B67 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 FREL®ADED",
+   "file": "covers/rce77ac0c36b2f.jpg",
+   "md5": "e77ac0c36b2fc2fd6bed0672e42bf135",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "P-pad",
    "store": "METAL SLUG ATTACK RELOADED (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T21:27:16"
   },
   "p0199": {
    "cn": [
@@ -3370,13 +3370,13 @@
     "埃博拉村庄"
    ],
    "en": "",
-   "file": "covers/rccf9d4ed34191.jpg",
-   "md5": "daee3876fc08ae2509a04ec9cc9da40b",
-   "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 cb40556730cd_s.jpg",
+   "file": "covers/rc72b77538929a.jpg",
+   "md5": "72b77538929a7200aff0358a42aa9da3",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-18T21:27:16"
   },
   "p0257": {
    "cn": [
@@ -4944,13 +4944,13 @@
     "幻兽帕鲁2"
    ],
    "en": "",
-   "file": "covers/rcd2a706955334.jpg",
-   "md5": "41bf1975356921ccf1d956875aceca45",
-   "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rc1786afa1a824.jpg",
+   "file": "covers/rc662fa503cda2.jpg",
+   "md5": "662fa503cda2c65f0fda56e7d8433a99",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "M-pad",
    "store": "UP6360-PPSA23126_00-0112788005082769 (zh-Hans-HK)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-18T21:27:16"
   },
   "p0377": {
    "cn": [
@@ -4997,13 +4997,13 @@
     "幻日夜羽 -湛海耀光-（PS5）"
    ],
    "en": "",
-   "file": "covers/rcce7a122731ba.jpg",
-   "md5": "8697aee57d908bfb6f62c2010556d50d",
-   "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rc4dab6d669fab.jpg",
+   "file": "covers/rccaad622ee5f0.jpg",
+   "md5": "caad622ee5f0f3ec03805f19b0429fbb",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "M-pad",
    "store": "JP1368-PPSA17175_00-YOHANEBDAPPJP000 (zh-Hans-HK)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-18T21:27:16"
   },
   "p0381": {
    "cn": [
@@ -5205,13 +5205,13 @@
     "弗兰克斯通的阴影（豪华版）"
    ],
    "en": "",
-   "file": "covers/rc5c7df2334747.jpg",
-   "md5": "3cd3e68f7e220f11b67c1cb78e6cfc8c",
-   "note": "店主审核 B136 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 DELUXE、EDITION、FROM THE WORLD OF W DEAD BY DAYLIGHT",
+   "file": "covers/rc3cdfd6279c76.jpg",
+   "md5": "3cdfd6279c768822f97a83283a435a25",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "P-pad",
    "store": "The Casting of Frank Stone™ Deluxe Edition (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-18T21:27:16"
   },
   "p0397": {
    "cn": [
@@ -5559,13 +5559,13 @@
     "怪物火车2（完整版）"
    ],
    "en": "",
-   "file": "covers/69d8a28b3379_s.jpg",
-   "md5": "06e582daa1c66eb360429f9b84d0c953",
-   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcf107fcca8116.jpg",
+   "file": "covers/rc4814c6719abe.jpg",
+   "md5": "4814c6719abe24573ad6bd82bb05bfd0",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "P",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-18T21:27:16"
   },
   "p0424": {
    "cn": [
@@ -7903,13 +7903,13 @@
     "欢迎来到帕拉迪泽（豪华版）（2）"
    ],
    "en": "",
-   "file": "covers/rce60edead87b6.jpg",
-   "md5": "737d5216d4a3b2b44175aa267e705984",
-   "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rc53564379103f.jpg",
+   "file": "covers/rc1191175e7e24.jpg",
+   "md5": "1191175e7e24eba20a3cfa7cb74c784a",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "M-pad",
    "store": "EP6665-PPSA09257_00-PZP00DELUXE00001 (zh-Hans-HK)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-18T21:27:16"
   },
   "p0603": {
    "cn": [
@@ -8216,13 +8216,13 @@
     "毁灭全人类2：再探测（完整版）"
    ],
    "en": "",
-   "file": "covers/rcba514e1117c2.jpg",
-   "md5": "7c980959d5bbd8154e27860b9fa6de90",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x756）",
+   "file": "covers/rcab85bd576140.jpg",
+   "md5": "ab85bd57614055676ffadb39f58edd46",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "P-fill",
    "store": "Destroy All Humans! 2 - Reprobed",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-18T21:27:16"
   },
   "p0627": {
    "cn": [
@@ -8658,13 +8658,13 @@
     "海贼无双4"
    ],
    "en": "",
-   "file": "covers/rcbca647f05bca.jpg",
-   "md5": "c87fd4277735f732b1964107ef19b303",
-   "note": "店主点名改留边版(方图上下补边, 零裁切), 源 rcf764ac4e1dea.jpg",
+   "file": "covers/rc34fdcb556b9d.jpg",
+   "md5": "34fdcb556b9dd83b01b81394342fa8ab",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "M-pad",
    "store": "HP0700-PPSA27500_00-ASIAFULLGAME0000 (zh-Hans-HK)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-18T21:27:16"
   },
   "p0661": {
    "cn": [
@@ -8855,13 +8855,13 @@
     "混乱斗士 骚乱格斗"
    ],
    "en": "",
-   "file": "covers/rc4cf7dacfbfca.jpg",
-   "md5": "12c50132af98b84480d62d65ee0f9735",
-   "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 87fc89406ace_s.jpg",
+   "file": "covers/rcc776bd6e1253.jpg",
+   "md5": "c776bd6e12538a6a8311ea975fca8c1e",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-18T21:27:16"
   },
   "p0676": {
    "cn": [
@@ -9085,13 +9085,13 @@
     "火影忍者 博人传：新忍出击（终极版）"
    ],
    "en": "",
-   "file": "covers/rc844d4230c551.jpg",
-   "md5": "e370ef02b4f1cc312c9572a46d6bee6d",
-   "note": "方图改留边版(零裁切), 源 8cba39fe8127_s.jpg",
+   "file": "covers/rc7c6207457b12.jpg",
+   "md5": "7c6207457b1288267080ff009c232bdf",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-18T21:27:16"
   },
   "p0693": {
    "cn": [
@@ -9150,13 +9150,13 @@
     "火线迈阿密 合集"
    ],
    "en": "",
-   "file": "covers/rcc52caa1b5ea9.jpg",
-   "md5": "bdb61007f9a0a8bbd4d051cfad5ea427",
-   "note": "方图改留边版(零裁切), 源 8a3063a8ccc2_s.jpg",
+   "file": "covers/rc8857f850f8eb.jpg",
+   "md5": "8857f850f8eb6645ca4d231437c372c4",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-18T21:27:16"
   },
   "p0698": {
    "cn": [
@@ -10682,13 +10682,13 @@
     "红色沙漠3"
    ],
    "en": "",
-   "file": "covers/rc98a16ea1684c.jpg",
-   "md5": "6925063b2a2c4b0f0dfd2267a25c02e4",
-   "note": "店主红框指定: 港服中文版 MASTER 504 补边, 零裁切",
+   "file": "covers/rc960fb0b822bb.jpg",
+   "md5": "960fb0b822bbd2f8225ef4ad235cee68",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "M-pad",
    "store": "UP4162-PPSA25286_00-0653729629077452 红色沙漠：增强版 (zh-Hans-HK)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-18T21:27:16"
   },
   "p0814": {
    "cn": [
@@ -12145,13 +12145,13 @@
     "诡野西部（决定版）"
    ],
    "en": "",
-   "file": "covers/rc14f2cd25bbf2.jpg",
-   "md5": "2cadb39717598ceb56fd008d3297a7ec",
-   "note": "店主审核 B53 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 DEFINITIVE EDITION",
+   "file": "covers/rce8354e18ee0a.jpg",
+   "md5": "e8354e18ee0ac801754c17c51281a55e",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "P-pad",
    "store": "Weird West: Definitive Edition (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-18T21:27:16"
   },
   "p0925": {
    "cn": [
@@ -12197,13 +12197,13 @@
     "负鼠闹翻天"
    ],
    "en": "",
-   "file": "covers/rcacdfa65229d5.jpg",
-   "md5": "f81cafc77093a124ce70af8e6e8abe2b",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x756）",
+   "file": "covers/rce5dcaab09243.jpg",
+   "md5": "e5dcaab0924341e06213c11ced1f6da5",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-18T21:27:16"
   },
   "p0929": {
    "cn": [
@@ -12315,13 +12315,13 @@
     "赶紧送走"
    ],
    "en": "",
-   "file": "covers/rc36d7f1529517.jpg",
-   "md5": "71e0749bcbba39015632fc056120f287",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 6988f93eca95_s.jpg",
+   "file": "covers/rc3a5d69933c89.jpg",
+   "md5": "3a5d69933c8902eaacc47907c2f536e3",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-18T21:27:16"
   },
   "p0938": {
    "cn": [
@@ -12930,39 +12930,39 @@
     "钢铁之尾1/铁尾传奇1"
    ],
    "en": "",
-   "file": "covers/rcff5a0f3df932.jpg",
-   "md5": "d954bfb2c2fb8989d2c6c608c62edb65",
-   "note": "店主审核 E83 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 NOW INGLUDES BRIGHT FIR FOR EST' EXIANSION",
+   "file": "covers/rc73fe9cc84baf.jpg",
+   "md5": "73fe9cc84baf6f2234c5d777447c4054",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "P-pad",
    "store": "Tails of Iron",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-18T21:27:16"
   },
   "p0985": {
    "cn": [
     "钢铁之尾2/铁尾传奇2（豪华版）"
    ],
    "en": "",
-   "file": "covers/rc3c26ce05d5d2.jpg",
-   "md5": "d97e8b670fac61943c4bb134aa386590",
-   "note": "店主审核 B87 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 •DELUXE EPITION•",
+   "file": "covers/rce88623e12be6.jpg",
+   "md5": "e88623e12be63025e749f5bd89be9c52",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "P-pad",
    "store": "Tails of Iron 2: Whiskers of Winter - Deluxe Edition (PS4 & PS5) (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-18T21:27:16"
   },
   "p0986": {
    "cn": [
     "钢铁收割（完整版）"
    ],
    "en": "",
-   "file": "covers/rccb226570d2b8.jpg",
-   "md5": "8eee4c4d2217d41c0376f5929afc3aa6",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
+   "file": "covers/rcf3899f43ec09.jpg",
+   "md5": "f3899f43ec09a3c491eb384ba2d9b0c4",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-18T21:27:16"
   },
   "p0987": {
    "cn": [
@@ -13915,13 +13915,13 @@
     "黄泉之路"
    ],
    "en": "",
-   "file": "covers/rc7e4b51b10f72.jpg",
-   "md5": "76e7ac8177ffb50372f6b061c2608421",
-   "note": "店主点名改留边版(竖图完整保留+左右补边, 零裁切), 源 rcbd17bb39e6ec.jpg",
+   "file": "covers/rcae537a2b190e.jpg",
+   "md5": "ae537a2b190e43ed94c72aaa1470c326",
+   "note": "店主审核: 位移/满铺/拼接批次3-A (26张新图)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-18T21:27:16"
   },
   "p1060": {
    "cn": [
