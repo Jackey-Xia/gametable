@@ -1,27 +1,22 @@
 {
- "time": "2026-10-18T04:51:53",
- "added": [
-  {
-   "name": "古墓丽影：亚特兰蒂斯遗迹2",
-   "product": "UP5267-PPSA29000_00-TRLOASTND0000000",
-   "storeName": "《古墓丽影：亚特兰蒂斯遗迹》 (中日英韩文版)",
-   "score": 0.85,
-   "file": "covers/ac6fd526a5febcp34.jpg",
-   "role": "P-pad",
-   "bytes": 93648
-  }
- ],
+ "time": "2026-10-18T05:29:59",
+ "added": [],
  "pending": [
   {
-   "name": "古墓丽影：亚特兰蒂斯遗迹1",
+   "name": "女神异闻录4：重制版/P4R（1）",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "女神异闻录4：重制版/P4R（2）",
    "reason": "匹配有歧义或无命中",
    "top": ""
   }
  ],
  "errors": [],
  "stats": {
-  "total": 1231,
-  "covered": 1287,
-  "pending_open": 1
+  "total": 1233,
+  "covered": 1288,
+  "pending_open": 2
  }
 }
