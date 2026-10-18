@@ -1,22 +1,11 @@
 {
- "time": "2026-10-18T06:01:10",
+ "time": "2026-10-18T06:09:57",
  "added": [],
- "pending": [
-  {
-   "name": "女神异闻录4：重制版/P4R（1）",
-   "reason": "匹配有歧义或无命中",
-   "top": ""
-  },
-  {
-   "name": "女神异闻录4：重制版/P4R（2）",
-   "reason": "匹配有歧义或无命中",
-   "top": ""
-  }
- ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1233,
-  "covered": 1288,
-  "pending_open": 2
+  "covered": 1290,
+  "pending_open": 0
  }
 }
