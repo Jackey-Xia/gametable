@@ -1,11 +1,22 @@
 {
- "time": "2026-10-19T14:38:31",
+ "time": "2026-10-19T14:41:17",
  "added": [],
- "pending": [],
+ "pending": [
+  {
+   "name": "猫咪斗恶龙1",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "猫咪斗恶龙2",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  }
+ ],
  "errors": [],
  "stats": {
-  "total": 1239,
+  "total": 1240,
   "covered": 1296,
-  "pending_open": 0
+  "pending_open": 2
  }
 }
