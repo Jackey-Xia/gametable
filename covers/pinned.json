@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1115,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-19T13:22:36"
+  "updated": "2026-10-19T21:22:45"
  },
  "locks": {
   "p0001": {
@@ -14181,13 +14181,13 @@
     "龙珠：异战2 超宇宙2（特别版）"
    ],
    "en": "Dragon Ball：Xenoverse 2（Special Edition）",
-   "file": "covers/rc3ad4e846c412.jpg",
-   "md5": "a227b9d59106ce9f46441299b50b9967",
-   "note": "店主指认红框卡 · 七龙珠 异战2 数字特别版 (日语, 韩语, 简体中文, 繁体中文) · form=p(master)（SPECIAL EDITION横幅保留）",
+   "file": "covers/rcb1b0c1e7fb39.jpg",
+   "md5": "b1b0c1e7fb391c83f7775d814db2ea4b",
+   "note": "满铺 P-fill · 港服 PORTRAIT_BANNER 异战2数字特别版 1440x2160 顶对齐裁底→3:4, SPECIAL EDITION 横幅保留",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "P-fill",
    "store": "七龙珠 异战2 数字特别版 (日语, 韩语, 简体中文, 繁体中文)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-19T21:22:45"
   },
   "p1080": {
    "cn": [
