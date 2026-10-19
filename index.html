@@ -6,13 +6,13 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta name="description" content="「夏天Jackey」PS丨NS 数字版游戏租赁价目表（顾客展示页）">
+<meta name="description" content="「夏天Jackey」PS数字版游戏租赁价目表（顾客展示页）">
 <link rel="icon" type="image/png" href="avatar_fill.png">
-    <title>「夏天Jackey」PS丨NS 数字版游戏</title>
+    <title>「夏天Jackey」PS数字版游戏</title>
 <!-- ===== 分享卡片（微信 / QQ / 朋友圈）· 头像方形图 ===== -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="夏天Jackey 游戏价目表">
-<meta property="og:title" content="「夏天Jackey」PS丨NS 数字版游戏">
+<meta property="og:title" content="「夏天Jackey」PS数字版游戏">
 <meta property="og:description" content="千款游戏 · 会员特价 · 一人一号">
 <meta property="og:url" content="https://jackey-xia.github.io/gametable/">
 <meta property="og:locale" content="zh_CN">
@@ -21,9 +21,9 @@
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="400">
 <meta property="og:image:height" content="400">
-<meta property="og:image:alt" content="夏天Jackey PS丨NS 数字版游戏">
+<meta property="og:image:alt" content="夏天Jackey PS数字版游戏">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="「夏天Jackey」PS丨NS 数字版游戏">
+<meta name="twitter:title" content="「夏天Jackey」PS数字版游戏">
 <meta name="twitter:description" content="千款游戏 · 会员特价 · 一人一号">
 <meta name="twitter:image" content="https://jackey-xia.github.io/gametable/avatar-og_fill.png">
 
@@ -68,7 +68,9 @@ input,select{font:inherit}
 .tabs{max-width:1060px;margin:-46px auto 0;padding:0 16px;position:relative;z-index:2}
 /* 改48: 两个标签严格等宽等高对称 */
 /* 改53: 三个标签统一为可见药丸样式, 未选中浅灰底, 选中各自品牌色, 视觉完全一致 */
-.tabbar{display:flex;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px;box-shadow:var(--shadow)}
+.tabbar{display:flex;flex-wrap:wrap;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px;box-shadow:var(--shadow)}
+.tab.half{flex:1 1 calc(50% - 4px)}
+.tab.full{flex:1 1 100%}
 /* 改57: 未选中标签底色加深+描边, 三个药丸清晰一致 */
 .tab{flex:1 1 0;min-width:0;height:46px;padding:0 6px;border-radius:11px;background:#e9edf4;border:1px solid #dde3ec;color:#4b5563;font-weight:600;text-align:center;transition:.15s;display:flex;align-items:center;justify-content:center;gap:6px;box-sizing:border-box}
 .tab.on{border-color:transparent}
@@ -82,7 +84,7 @@ input,select{font:inherit}
 .tab.on{background:linear-gradient(135deg,#2444c8,#6d28d9);color:#fff}
 .tab.on .cnt{background:rgba(255,255,255,.22);color:#fff}
 .tab.ps.on{background:linear-gradient(135deg,#1d6fe0,#123a8c)}
-.tab.ns.on{background:linear-gradient(135deg,#e4002b,#8f001b)}
+.tab.plat.on{background:linear-gradient(135deg,#1d6fe0,#123a8c)}   /* 与 .tab.ps.on 同款蓝 */
 /* 改45: 会员资费选中态改橙色底 (类名用tabmem, 避免与.mem内容区样式冲突) */
 .tab.tabmem.on{background:linear-gradient(135deg,#f59e0b,#d97706)}
 
@@ -368,7 +370,7 @@ footer b{color:#4b5563}
     <div class="brand">
       <div class="logo"><img src="avatar_fill.png" alt="夏天Jackey"></div>
       <div>
-        <h1>「夏天Jackey」PS丨NS 数字版游戏</h1>
+        <h1>「夏天Jackey」PS数字版游戏</h1>
         <div class="sub">千款游戏 · 会员特价 · 一人一号</div>
       </div>
     </div>
@@ -378,9 +380,9 @@ footer b{color:#4b5563}
 
 <div class="tabs">
   <div class="tabbar">
-    <button class="tab ps on" id="tabPS" data-tab="ps"><span>🎮 PS 游戏</span><span class="cnt" id="cntPS">0</span></button>
-    <button class="tab ns" id="tabNS" data-tab="ns"><span>🎮 NS 游戏</span></button>
-    <button class="tab tabmem" id="tabMEM" data-tab="mem"><span>🏷️ 会员资费</span></button>
+    <button class="tab ps half on" id="tabPS" data-tab="ps"><span>🎮 PS 游戏</span><span class="cnt" id="cntPS">0</span></button>
+    <button class="tab tabmem half" id="tabMEM" data-tab="mem"><span>🏷️ 会员资费</span></button>
+    <button class="tab plat full" id="tabNS" data-tab="ns"><span>🏆 PS 白金</span></button>
   </div>
 </div>
 
@@ -436,7 +438,7 @@ footer b{color:#4b5563}
 </main>
 
 <footer>
-  <div><b>「夏天Jackey」PS丨NS 数字版游戏</b></div>
+  <div><b>「夏天Jackey」PS数字版游戏</b></div>
   <div style="margin-top:4px">库存与价格请拍前与商家确认</div>
   <div id="dataSynced" style="margin-top:6px;opacity:.75;font-size:12px">库存数据：加载中…</div>
   <div id="swStat" style="margin-top:6px;opacity:.75;font-size:12px">图片加速：首次访问后生效</div>
@@ -1257,7 +1259,7 @@ function renderNSComing(){
   p.style.textAlign="center";p.style.padding="48px 16px";
   const t=el("div",null,"🪄");
   t.style.fontSize="34px";t.style.marginBottom="10px";
-  const s=el("div","gen","商品陆续上架中，敬请期待...");
+  const s=el("div","gen","🏆 PS白金游戏清单整理中，敬请期待...");
   s.style.fontSize="15px";s.style.fontWeight="600";s.style.color="var(--sub)";
   p.appendChild(t);p.appendChild(s);
   v.appendChild(p);
