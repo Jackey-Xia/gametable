@@ -75,6 +75,9 @@ if os.path.exists(avf):
 avof = os.path.join(BASE, "avatar-og_fill.png")
 if os.path.exists(avof):
     shutil.copyfile(avof, os.path.join(site, "avatar-og_fill.png"))
+ic = os.path.join(BASE, "icon.png")
+if os.path.exists(ic):
+    shutil.copyfile(ic, os.path.join(site, "icon.png"))
 bg = os.path.join(BASE, "bg.jpg")
 if os.path.exists(bg):
     shutil.copyfile(bg, os.path.join(site, "bg.jpg"))
