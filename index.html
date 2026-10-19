@@ -103,7 +103,7 @@ input,select{font:inherit}
 /* 改77: font-size 必须≥16px, 否则 iPhone 上点击搜索框整个页面会被 iOS 自动放大 */
 .search input{width:100%;border:1px solid var(--line);border-radius:10px;padding:8px 12px 8px 34px;background:#fafbfc;color:var(--ink);outline:none;font-size:16px}
 .search input:focus{border-color:#6d85e0;background:#fff}
-.search svg{position:absolute;left:10px;top:10px;opacity:.5}
+.search svg{position:absolute;left:10px;top:50%;transform:translateY(calc(-50% + 1px));opacity:.5;pointer-events:none;display:block}
 .ctrl{display:flex;gap:6px;flex-wrap:nowrap}
 select{border:1px solid var(--line);border-radius:10px;padding:8px 8px;background:#fafbfc;color:var(--ink);outline:none;max-width:150px;width:110px}
 /* 改42: 图例改为多行排版, 每条说明独占一行 */
