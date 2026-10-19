@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1115,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-19T08:01:02"
+  "updated": "2026-10-19T16:03:21"
  },
  "locks": {
   "p0001": {
@@ -12995,13 +12995,13 @@
     "链在一起"
    ],
    "en": "",
-   "file": "covers/rc3d2297ba6d8d.jpg",
-   "md5": "3d2297ba6d8d98661f510bd8bac028c5",
-   "note": "满铺 P-fill · 港服 PORTRAIT_BANNER 1440x2160 顶对齐裁底→3:4, 无留边",
+   "file": "covers/rca530691049df.jpg",
+   "md5": "a530691049df81086b465bed28e34d75",
+   "note": "满铺 P-fill · 港服 PORTRAIT_BANNER 1440x2160 底对齐裁顶→3:4, 底部英文 CHAINED CLIMB TOGETHER 完整露出",
    "platform": "PS",
    "role": "P-fill",
    "store": "Chained Climb Together (英语)",
-   "time": "2026-10-19T15:55:13"
+   "time": "2026-10-19T16:03:21"
   },
   "p0990": {
    "cn": [
