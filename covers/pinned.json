@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1115,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-19T14:15:07"
+  "updated": "2026-10-19T22:37:23"
  },
  "locks": {
   "p0001": {
@@ -8255,26 +8255,26 @@
     "毛线小精灵1+2/崩解1+2（同捆包）（1）"
    ],
    "en": "",
-   "file": "covers/rc4c4f11a4afab.jpg",
-   "md5": "df364457d822a3d82faaa9ac4aa8b96f",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 rcb0377ce08690.jpg",
+   "file": "covers/rc478e9259515d.jpg",
+   "md5": "478e9259515dc52570a28b6f5682c63d",
+   "note": "满铺 P-fill · 港服 MASTER Unravel Yarny Bundle 1024方图 居中横裁→3:4 (同捆包两行共用)",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-19T22:37:23"
   },
   "p0630": {
    "cn": [
     "毛线小精灵1+2/崩解1+2（同捆包）（2）"
    ],
    "en": "",
-   "file": "covers/rc58ae3c5989f5.jpg",
-   "md5": "2fc65330b13473634986d4f6ccbb1c8c",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 de56da3856db_s.jpg",
+   "file": "covers/rc478e9259515d.jpg",
+   "md5": "478e9259515dc52570a28b6f5682c63d",
+   "note": "满铺 P-fill · 港服 MASTER Unravel Yarny Bundle 1024方图 居中横裁→3:4 (同捆包两行共用)",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-19T22:37:23"
   },
   "p0631": {
    "cn": [
@@ -9192,13 +9192,13 @@
     "灵魂石幸存者（完整版）"
    ],
    "en": "Soulstone Survivors & Supporter Pack",
-   "file": "covers/rc26b357ad816e.jpg",
-   "md5": "6b8140e17a68d5511295232c16a93361",
-   "note": "店主指认红框卡 · Soulstone Survivors & Supporter Pack (日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master)",
+   "file": "covers/rc72e1042ae6d7.jpg",
+   "md5": "72e1042ae6d79751b1c44130ae74eb6a",
+   "note": "满铺 P-fill · 港服 PORTRAIT_BANNER Soulstone Supporter Pack 1440x2160 顶对齐裁底→3:4",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "P-fill",
    "store": "Soulstone Survivors & Supporter Pack (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-19T22:37:22"
   },
   "p0701": {
    "cn": [
@@ -9491,13 +9491,13 @@
     "猎厨狂欢SEDAP"
    ],
    "en": "",
-   "file": "covers/rcc65a68e5cbad.jpg",
-   "md5": "a7ea184afacf25d9a4114c4524a0aaa8",
-   "note": "店主审核 B96 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 SEDAP！、A Culinary Adventure",
+   "file": "covers/rc6922d9d4b345.jpg",
+   "md5": "6922d9d4b34534c36871fec3536fb0ce",
+   "note": "满铺 P-fill · 港服 PORTRAIT_BANNER SEDAP 1440x2160 裁顶留底(logo在底)→3:4",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "猎厨狂欢！SEDAP! (泰语, 马来语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-19T22:37:22"
   },
   "p0724": {
    "cn": [
@@ -11596,13 +11596,13 @@
     "莱莎的炼金工房1～常暗女王与秘密藏身处～DX"
    ],
    "en": "",
-   "file": "covers/rc41af63fc4963.jpg",
-   "md5": "f07a284bd692878469208bd8e1c9bd98",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 b13fccd23823_s.jpg",
+   "file": "covers/rcb621d84cbdf3.jpg",
+   "md5": "b621d84cbdf3fb63428db70cb5cf8334",
+   "note": "满铺 P-fill · 港服 MASTER 1024方图 按logo偏移横裁(左移x64)→3:4",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-19T22:37:22"
   },
   "p0883": {
    "cn": [
@@ -11622,13 +11622,13 @@
     "莱莎的炼金工房2～失落传说与秘密妖精～DX"
    ],
    "en": "",
-   "file": "covers/rcb13c842d5275.jpg",
-   "md5": "ce4815f46bd5fcf980c91be19c30b088",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 cd032a68fa2d_s.jpg",
+   "file": "covers/rce8d28b355c42.jpg",
+   "md5": "e8d28b355c422cc42aca50020da26647",
+   "note": "满铺 P-fill · 港服 MASTER 1024方图 按logo偏移横裁(左移x61)→3:4",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-19T22:37:23"
   },
   "p0885": {
    "cn": [
@@ -11648,13 +11648,13 @@
     "莱莎的炼金工房3～终结之炼金术士与秘密钥匙～DX"
    ],
    "en": "",
-   "file": "covers/rc597c2d78a8ee.jpg",
-   "md5": "9b037874634b2ee20059949f3ec478b2",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 rca6842995ef63.jpg",
+   "file": "covers/rc021dd24ac10c.jpg",
+   "md5": "021dd24ac10c74c57e46ee3ccc60819a",
+   "note": "满铺 P-fill · 港服 MASTER 1024方图 按logo偏移横裁(左移x48)→3:4",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-19T22:37:23"
   },
   "p0887": {
    "cn": [
@@ -13255,13 +13255,13 @@
     "零：濡鸦之巫女"
    ],
    "en": "Fatal Frame: The Black Haired Shrine Maiden",
-   "file": "covers/rcf6909b18f5b4.jpg",
-   "md5": "6261b77fc1f37f4ca6f587dcd0e6b0e8",
-   "note": "店主指令: 取消满铺改留边版",
+   "file": "covers/rce9cd076bdf47.jpg",
+   "md5": "e9cd076bdf477738d02f3136e72477e5",
+   "note": "满铺 P-fill · 港服 MASTER 1024方图 按logo偏移横裁(左移x64)→3:4",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "P-fill",
    "store": "零 ～濡鸦之巫女～ PS4 & PS5 (简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-19T22:37:23"
   },
   "p1010": {
    "cn": [
@@ -14168,13 +14168,13 @@
     "龙珠Z：卡卡罗特（大师版）"
    ],
    "en": "DRAGON BALL Z：KAKAROT（Legendary Edition）",
-   "file": "covers/rc5bff51164474.jpg",
-   "md5": "4f314e6afb69a7746e8d772bd524a873",
-   "note": "店主指认红框卡 · 七龙珠Z 卡卡洛特 MASTER EDITION PS4 & PS5 (泰语, 韩语, 简体中文, 繁体中文) · form=p(master)（MASTER EDITION横幅保留）",
+   "file": "covers/rcb6d5b75b6220.jpg",
+   "md5": "b6d5b75b622034d2d4852750454f22f5",
+   "note": "满铺 P-fill · 港服 PORTRAIT_BANNER 龙珠Z卡卡罗特 MASTER EDITION 1440x2160 顶对齐裁底→3:4",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "P-fill",
    "store": "七龙珠Z 卡卡洛特 MASTER EDITION PS4 & PS5 (泰语, 韩语, 简体中文, 繁体中文)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-19T22:37:22"
   },
   "p1079": {
    "cn": [
