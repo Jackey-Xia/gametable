@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1115,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-19T07:31:31"
+  "updated": "2026-10-19T15:55:13"
  },
  "locks": {
   "p0001": {
@@ -5101,13 +5101,13 @@
     "廖添丁：绝代凶贼之末日"
    ],
    "en": "The Legend of Tianding",
-   "file": "covers/rcaede0745b53f.jpg",
-   "md5": "6fe902189831dde1de1c7f0e55dc5896",
-   "note": "店主指认红框卡 · 廖添丁：绝代凶贼之末日 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=o(portrait)",
+   "file": "covers/rcbdf82693d484.jpg",
+   "md5": "bdf82693d484c7b8701c9676373a8095",
+   "note": "满铺 P-fill · 港服 PORTRAIT_BANNER 1440x2160 顶对齐裁底→3:4, 无留边",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "廖添丁：绝代凶贼之末日 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-19T15:55:13"
   },
   "p0389": {
    "cn": [
@@ -12995,13 +12995,13 @@
     "链在一起"
    ],
    "en": "",
-   "file": "covers/rc55cd125a9720.jpg",
-   "md5": "d51c3c215457cbfe819d29cea1eb9cc3",
-   "note": "店主审核 B102 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 CLIMB TOGETUER",
+   "file": "covers/rc3d2297ba6d8d.jpg",
+   "md5": "3d2297ba6d8d98661f510bd8bac028c5",
+   "note": "满铺 P-fill · 港服 PORTRAIT_BANNER 1440x2160 顶对齐裁底→3:4, 无留边",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "P-fill",
    "store": "Chained Climb Together (英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-19T15:55:13"
   },
   "p0990": {
    "cn": [
