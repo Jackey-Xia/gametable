@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1109,
+  "count": 1115,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-19T01:48:01"
+  "updated": "2026-10-19T02:30:56"
  },
  "locks": {
   "p0001": {
@@ -14585,6 +14585,84 @@
    "role": "M-fill",
    "store": "",
    "time": "2026-10-17T12:03:52"
+  },
+  "p1110": {
+   "cn": [
+    "影之刃零5"
+   ],
+   "en": "",
+   "file": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=256&q=82&output=jpg",
+   "md5": "",
+   "note": "多库存沿用: 与《影之刃零1》同一商品仅增加库存, 直接沿用同款封面",
+   "platform": "PS",
+   "role": "P",
+   "store": "",
+   "time": "2026-10-19T02:30:56"
+  },
+  "p1111": {
+   "cn": [
+    "影之刃零6"
+   ],
+   "en": "",
+   "file": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=256&q=82&output=jpg",
+   "md5": "",
+   "note": "多库存沿用: 与《影之刃零1》同一商品仅增加库存, 直接沿用同款封面",
+   "platform": "PS",
+   "role": "P",
+   "store": "",
+   "time": "2026-10-19T02:30:56"
+  },
+  "p1112": {
+   "cn": [
+    "影之刃零7"
+   ],
+   "en": "",
+   "file": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=256&q=82&output=jpg",
+   "md5": "",
+   "note": "多库存沿用: 与《影之刃零1》同一商品仅增加库存, 直接沿用同款封面",
+   "platform": "PS",
+   "role": "P",
+   "store": "",
+   "time": "2026-10-19T02:30:56"
+  },
+  "p1113": {
+   "cn": [
+    "影之刃零8"
+   ],
+   "en": "",
+   "file": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=256&q=82&output=jpg",
+   "md5": "",
+   "note": "多库存沿用: 与《影之刃零1》同一商品仅增加库存, 直接沿用同款封面",
+   "platform": "PS",
+   "role": "P",
+   "store": "",
+   "time": "2026-10-19T02:30:56"
+  },
+  "p1114": {
+   "cn": [
+    "影之刃零9"
+   ],
+   "en": "",
+   "file": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=256&q=82&output=jpg",
+   "md5": "",
+   "note": "多库存沿用: 与《影之刃零1》同一商品仅增加库存, 直接沿用同款封面",
+   "platform": "PS",
+   "role": "P",
+   "store": "",
+   "time": "2026-10-19T02:30:56"
+  },
+  "p1115": {
+   "cn": [
+    "影之刃零10"
+   ],
+   "en": "",
+   "file": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=256&q=82&output=jpg",
+   "md5": "",
+   "note": "多库存沿用: 与《影之刃零1》同一商品仅增加库存, 直接沿用同款封面",
+   "platform": "PS",
+   "role": "P",
+   "store": "",
+   "time": "2026-10-19T02:30:56"
   }
  }
 }
