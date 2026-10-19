@@ -7,7 +7,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="description" content="「夏天Jackey」PS丨NS 数字版游戏租赁价目表（顾客展示页）">
-<link rel="icon" type="image/png" href="avatar.png">
+<link rel="icon" type="image/png" href="avatar_fill.png">
     <title>「夏天Jackey」PS丨NS 数字版游戏</title>
 <!-- ===== 分享卡片（微信 / QQ / 朋友圈）· 头像方形图 ===== -->
 <meta property="og:type" content="website">
@@ -16,8 +16,8 @@
 <meta property="og:description" content="千款游戏 · 会员特价 · 一人一号">
 <meta property="og:url" content="https://jackey-xia.github.io/gametable/">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://jackey-xia.github.io/gametable/avatar-og.png">
-<meta property="og:image:secure_url" content="https://jackey-xia.github.io/gametable/avatar-og.png">
+<meta property="og:image" content="https://jackey-xia.github.io/gametable/avatar-og_fill.png">
+<meta property="og:image:secure_url" content="https://jackey-xia.github.io/gametable/avatar-og_fill.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="400">
 <meta property="og:image:height" content="400">
@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="「夏天Jackey」PS丨NS 数字版游戏">
 <meta name="twitter:description" content="千款游戏 · 会员特价 · 一人一号">
-<meta name="twitter:image" content="https://jackey-xia.github.io/gametable/avatar-og.png">
+<meta name="twitter:image" content="https://jackey-xia.github.io/gametable/avatar-og_fill.png">
 
 <style>
 :root{
@@ -366,7 +366,7 @@ footer b{color:#4b5563}
 <header class="hero">
   <div class="hero-inner">
     <div class="brand">
-      <div class="logo"><img src="avatar.png" alt="夏天Jackey"></div>
+      <div class="logo"><img src="avatar_fill.png" alt="夏天Jackey"></div>
       <div>
         <h1>「夏天Jackey」PS丨NS 数字版游戏</h1>
         <div class="sub">千款游戏 · 会员特价 · 一人一号</div>
@@ -569,7 +569,7 @@ async function gtPrecacheAll(urls){
     while(i<list.length){
       const u=list[i++];
       try{
-        if(u!=="avatar.png"&&u!=="bg.jpg"){const b=await gtGet(u);if(b){done++;if(done%25===0)tick();continue;}}
+        if(u!=="avatar_fill.png"&&u!=="bg.jpg"){const b=await gtGet(u);if(b){done++;if(done%25===0)tick();continue;}}
         const r=await fetch(u);
         if(r&&r.ok){const bl=await r.blob();if(bl&&bl.size){await gtPut(u,bl);done++;}}
       }catch(e){}
@@ -1131,7 +1131,7 @@ try{
       setTimeout(function(){
         try{var cn=navigator.connection||{};if(cn.saveData||/^(slow-2g|2g)$/.test(cn.effectiveType||""))return;}catch(e){}
         if(document.hidden)return;
-        const valid=new Set(["avatar.png","bg.jpg"]);
+        const valid=new Set(["avatar_fill.png","bg.jpg"]);
         Object.keys(m).forEach(k=>{if(typeof m[k]==="string")valid.add(m[k]);});
         const arr=Array.from(valid);
         GTI.total=arr.length;
@@ -1151,7 +1151,7 @@ try{
           }).then(function(n){
             GTI.done=n;GTI.finished=1;
             try{if(n)localStorage.setItem("gtIdbLast",String(n));}catch(e){}
-            var probe=arr.filter(function(u){return u!=="avatar.png"&&u!=="bg.jpg";})[0];
+            var probe=arr.filter(function(u){return u!=="avatar_fill.png"&&u!=="bg.jpg";})[0];
             if(probe&&n>0){
               return gtGet(probe).then(function(b){
                 if(!b||!b.size){
