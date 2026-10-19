@@ -1675,5 +1675,23 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
   setTimeout(tick,600);
 })();
 </script>
+<!-- 版本自动刷新: GitHub Pages 对 index.html 有 max-age=600 缓存, 老顾客可能看到旧页;
+     每次加载拉取 ver.json(no-store), 版本变化则自动刷新一次(带防循环保护) -->
+<script>
+(function(){
+  try{
+    var K="gt_ver", RK="gt_ver_reloaded";
+    fetch("ver.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(d){
+      var v=d&&d.v; if(!v) return;
+      var last=null; try{last=localStorage.getItem(K);}catch(e){}
+      if(last && last!==v && !sessionStorage.getItem(RK)){
+        try{sessionStorage.setItem(RK,"1");}catch(e){}
+        location.reload(true); return;
+      }
+      try{localStorage.setItem(K,v);}catch(e){}
+    }).catch(function(){});
+  }catch(e){}
+})();
+</script>
 </body>
 </html>

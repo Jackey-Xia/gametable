@@ -56,6 +56,10 @@ if os.path.exists(pyjs):
 sw = os.path.join(BASE, "sw.js")
 if os.path.exists(sw):
     shutil.copyfile(sw, os.path.join(site, "sw.js"))
+# 版本号文件(页面自动刷新机制用): 每次改版必须更新 ver.json 的 v 值
+vj = os.path.join(BASE, "ver.json")
+if os.path.exists(vj):
+    shutil.copyfile(vj, os.path.join(site, "ver.json"))
 av = os.path.join(BASE, "avatar.jpg")
 if os.path.exists(av):
     shutil.copyfile(av, os.path.join(site, "avatar.jpg"))
