@@ -66,6 +66,8 @@ input,select{font:inherit}
 .hero.tplat::before{background:url('banner_plat.jpg') center 58%/cover no-repeat;opacity:1}
 /* 白底彩带图需更重的暗色渐变才不泛白 */
 .hero.tmem .hero-scrim{background:linear-gradient(100deg,rgba(13,20,64,.97) 0%,rgba(13,20,64,.92) 40%,rgba(13,20,64,.55) 78%,rgba(13,20,64,.45) 100%)}
+/* 改115: 「我直接拿下!」标语(改h5的::after图层)仅在 PS游戏封面显示; 会员资费/PS白金封面不显示 */
+.hero.tmem::after,.hero.tplat::after{display:none}
 .hero-inner{position:relative;z-index:1;max-width:1060px;margin:0 auto}
 .brand{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .logo{width:46px;height:46px;border-radius:14px;overflow:hidden;flex:0 0 auto;box-shadow:0 4px 14px rgba(0,0,0,.35)}
