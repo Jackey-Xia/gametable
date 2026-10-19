@@ -1412,9 +1412,9 @@ const vselVer=makeVsel($("#verFilter"),"","租赁版本",
   [{v:"",label:"租赁版本"},{v:"ck",label:"可认证"},{v:"fc",label:"非认证"},{v:"xd",label:"限定版"}],
   v=>{verSel=v?[v]:[];resetLetter();renderPS();},
   (v,mobile)=>mobile?VER_NAME[v]:"租赁版本·"+VER_NAME[v]);
-/* 改67: 排序 —— 删除名称排序, 新增 发售日期(旧→新) 与 价格(高→低/低→高) */
+/* 改67: 排序 —— 删除名称排序, 新增 发售日期(旧→新); 2026-10-20 店主去掉价格(高→低/低→高)两项 */
 const vselSort=makeVsel($("#sortSel"),"src","排序",
-  [{v:"src",label:"排序"},{v:"date",label:"发售日期（新→旧）"},{v:"dateAsc",label:"发售日期（旧→新）"},{v:"priceDesc",label:"价格（高→低）"},{v:"priceAsc",label:"价格（低→高）"}],
+  [{v:"src",label:"排序"},{v:"date",label:"发售日期（新→旧）"},{v:"dateAsc",label:"发售日期（旧→新）"}],
   v=>{sortMode=v;resetLetter();renderPS();});
 /* 改104: 游玩人数多选下拉(2026-09-21 店主需求):
    4个选项=本地双人/本地多人/线上双人/线上多人(与WPS表一致); 最多勾2个, 且只允许 1本地+1线上 的组合,
