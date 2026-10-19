@@ -53,7 +53,7 @@ ns=[
 
 # 会员资费（中）结构化内容
 membership={
- "title":"「夏天Jackey」PS数字游戏 · 会员资费",
+ "title":"「夏天Jackey」PS数字版游戏 · 会员资费",
  "sub":"可认证：买家账号游玩（有存档有奖杯）；非认证：卖家账号游玩（无存档无奖杯）",
  "plans":[
    {"class":"周租会员","scheme":"方案A","cert":"非认证","fee":"78元/年","eligible":"发售满24个月","price":"1元","tenure":"7天（到期可续）"},
