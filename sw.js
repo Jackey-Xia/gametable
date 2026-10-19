@@ -29,7 +29,7 @@ self.addEventListener('activate', e => {
 
 async function precache() {
   const cache = await caches.open(CACHE);
-  let urls = ['avatar.jpg', 'bg.jpg'];
+  let urls = ['avatar.png', 'avatar-og.png', 'bg.jpg'];
   try {
     const res = await fetch('covers/manifest.json', { cache: 'no-store' });
     if (res.ok) {
