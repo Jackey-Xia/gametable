@@ -81,11 +81,11 @@ if os.path.exists(ic):
 bg = os.path.join(BASE, "bg.jpg")
 if os.path.exists(bg):
     shutil.copyfile(bg, os.path.join(site, "bg.jpg"))
-# 改h5: hero 桌面背景 + 标语图层
-for _n in ("bg-d.jpg", "slogan-m.png", "slogan-d.png"):
-    _p = os.path.join(BASE, _n)
-    if os.path.exists(_p):
-        shutil.copyfile(_p, os.path.join(site, _n))
+# 改113: tab 顶部主题横幅(会员资费/PS白金)
+for b in ("banner_mem.jpg", "banner_plat.jpg"):
+    bp = os.path.join(BASE, b)
+    if os.path.exists(bp):
+        shutil.copyfile(bp, os.path.join(site, b))
 # 改68: 封面目录整体同步 (covers/manifest.json + 图片) 到 Pages 站点
 cv_src = os.path.join(BASE, "covers")
 if os.path.isdir(cv_src):

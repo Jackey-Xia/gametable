@@ -52,11 +52,14 @@ input,select{font:inherit}
 /* ---------- 顶部 ---------- */
 .hero{position:relative;background:#0d1440;color:#fff;padding:22px 16px 66px;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background:url('bg.jpg') center/cover no-repeat;opacity:.5}
-/* 改h5: 标语独立图层 —— opacity 1 且压在遮罩之上, 解决手机端文字被压暗 */
-.hero::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:url('slogan-m.png') no-repeat right 2px top 23px/auto 152px}
-@media (max-width:330px){.hero::after{background-position:right 2px top 81px}}
-/* 改h5: 桌面宽幅背景 + 横排标语 */
-@media (min-width:900px){.hero::before{background:url('bg-d.jpg') right center/cover no-repeat}.hero::after{background:url('slogan-d.png') no-repeat right 26px center/auto 62px}}
+/* 改114: 页头封面随 tab 切换 —— 会员资费/PS白金 换主题大图; 文字侧暗色渐变保证标题/活动框可读 */
+.hero::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0;transition:opacity .25s;
+  background:linear-gradient(100deg,rgba(13,20,64,.96) 0%,rgba(13,20,64,.88) 40%,rgba(13,20,64,.32) 78%,rgba(13,20,64,.18) 100%)}
+.hero.tmem::after,.hero.tplat::after{opacity:1}
+.hero.tmem::before{background:url('banner_mem.jpg') center/cover no-repeat;opacity:1}
+.hero.tplat::before{background:url('banner_plat.jpg') center 58%/cover no-repeat;opacity:1}
+/* 白底彩带图需更重的暗色渐变才不泛白 */
+.hero.tmem::after{background:linear-gradient(100deg,rgba(13,20,64,.97) 0%,rgba(13,20,64,.92) 40%,rgba(13,20,64,.55) 78%,rgba(13,20,64,.45) 100%)}
 .hero-inner{position:relative;z-index:1;max-width:1060px;margin:0 auto}
 .brand{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .logo{width:46px;height:46px;border-radius:14px;overflow:hidden;flex:0 0 auto;box-shadow:0 4px 14px rgba(0,0,0,.35)}
@@ -108,7 +111,7 @@ input,select{font:inherit}
 /* 改77: font-size 必须≥16px, 否则 iPhone 上点击搜索框整个页面会被 iOS 自动放大 */
 .search input{width:100%;border:1px solid var(--line);border-radius:10px;padding:8px 12px 8px 34px;background:#fafbfc;color:var(--ink);outline:none;font-size:16px}
 .search input:focus{border-color:#6d85e0;background:#fff}
-.search svg{position:absolute;left:10px;top:50%;transform:translateY(calc(-50% + 1px));opacity:.5;pointer-events:none;display:block}
+.search svg{position:absolute;left:10px;top:10px;opacity:.5}
 .ctrl{display:flex;gap:6px;flex-wrap:nowrap}
 select{border:1px solid var(--line);border-radius:10px;padding:8px 8px;background:#fafbfc;color:var(--ink);outline:none;max-width:150px;width:110px}
 /* 改42: 图例改为多行排版, 每条说明独占一行 */
@@ -1355,6 +1358,9 @@ function renderMEM(){
 let curTab="ps";   /* 改81: 记录当前所在的大分类, 供"返回顶部"回到本分类第一屏 */
 function showTab(name){
   curTab=name;     /* 改81 */
+  /* 改114: 页头封面随 tab 切换 —— PS白金(ns)换奖杯大图, 会员资费(mem)换PS四键彩带图, PS游戏保持 bg.jpg */
+  const hero=document.querySelector(".hero");
+  if(hero){hero.classList.toggle("tmem",name==="mem");hero.classList.toggle("tplat",name==="ns");}
   $("#psView").style.display=name==="ps"?"block":"none";
   $("#nsView").style.display=name==="ns"?"block":"none";
   $("#memView").style.display=name==="mem"?"block":"none";
@@ -1417,9 +1423,9 @@ const vselVer=makeVsel($("#verFilter"),"","租赁版本",
   [{v:"",label:"租赁版本"},{v:"ck",label:"可认证"},{v:"fc",label:"非认证"},{v:"xd",label:"限定版"}],
   v=>{verSel=v?[v]:[];resetLetter();renderPS();},
   (v,mobile)=>mobile?VER_NAME[v]:"租赁版本·"+VER_NAME[v]);
-/* 改67: 排序 —— 删除名称排序, 新增 发售日期(旧→新); 2026-10-20 店主去掉价格(高→低/低→高)两项 */
+/* 改67: 排序 —— 删除名称排序, 新增 发售日期(旧→新) 与 价格(高→低/低→高) */
 const vselSort=makeVsel($("#sortSel"),"src","排序",
-  [{v:"src",label:"排序"},{v:"date",label:"发售日期（新→旧）"},{v:"dateAsc",label:"发售日期（旧→新）"}],
+  [{v:"src",label:"排序"},{v:"date",label:"发售日期（新→旧）"},{v:"dateAsc",label:"发售日期（旧→新）"},{v:"priceDesc",label:"价格（高→低）"},{v:"priceAsc",label:"价格（低→高）"}],
   v=>{sortMode=v;resetLetter();renderPS();});
 /* 改104: 游玩人数多选下拉(2026-09-21 店主需求):
    4个选项=本地双人/本地多人/线上双人/线上多人(与WPS表一致); 最多勾2个, 且只允许 1本地+1线上 的组合,
