@@ -375,10 +375,6 @@ footer b{color:#4b5563}
 .gcover{touch-action:manipulation}
 </style>
 <style id="memfee-css">
-
-
-
-
 #memFee{--bg:#f3f5f9; --card:#ffffff; --ink:#181d27; --sub:#6b7280; --line:#e7eaf0;
   --blue:#1d6fe0; --purple:#7c3aed; --gold:#b7791f; --red:#c0392b;
   --shadow:0 1px 2px rgba(16,24,40,.05),0 1px 3px rgba(16,24,40,.06);}
@@ -636,6 +632,9 @@ footer b{color:#4b5563}
 
 
 #memFee .mf-note > div:last-child{white-space:normal}
+/* 改121-begin: 三卡删掉后，第一张方案卡贴紧 tab 栏(原先由 .mf-meta 的 2px 上边距撑着) */
+#memFee .mf-page > .mf-card:first-child{margin-top:2px}
+/* 改121-end */
 </style>
 <style id="memhead-css">
 
@@ -753,14 +752,7 @@ footer b{color:#4b5563}
   </section>
 
   <!-- 资费 -->
-  <template id="memFeeTpl"><div id="memFee"><div class="mf-page">
-  <div class="mf-meta">
-    <div class="mf-m"><span class="mf-k">租赁数量</span><span class="mf-v">1 个 / 次</span></div>
-    <div class="mf-m"><span class="mf-k">租赁押金</span><span class="mf-v mf-blue">免押</span></div>
-    <div class="mf-m"><span class="mf-k">会费说明</span><span class="mf-v">一经办理不退费</span></div>
-  </div>
-
-  <div class="mf-card mf-t-blue">
+  <template id="memFeeTpl"><div id="memFee"><div class="mf-page"><div class="mf-card mf-t-blue">
     <h2><span class="mf-tag">周租会员</span> <span>方案 A · B · C · D</span> <span class="mf-hl">（限时 7 天，到期可续）</span></h2>
     <div class="mf-lead">按「游戏发售时间」分档，可补差升级。</div>
     <div class="mf-tw">
