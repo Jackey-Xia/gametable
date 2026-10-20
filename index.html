@@ -743,7 +743,7 @@ footer b{color:#4b5563}
 }
 /* 改130-end */
 </style>
-<style id="tbwx-css">/* 改131-begin: 微信内淘宝按钮兜底浮层 —— 微信拦淘宝外链, 改为复制链接+引导去淘宝 App */
+<style id="tbwx-css">/* 改131-begin: 微信内淘宝按钮兜底浮层 —— 淘宝外链被微信拦, 引导打开淘宝 App */
 .tbx-mask{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(12,17,26,.55);
   z-index:99999;display:none;align-items:center;justify-content:center;padding:24px;
   opacity:0;transition:opacity .18s ease;-webkit-tap-highlight-color:transparent}
@@ -2206,7 +2206,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script id="tbwx-js">/* 改131-begin: 微信内淘宝按钮 —— 微信拦截淘宝外链, 改为复制链接+引导打开淘宝 App */
+<script id="tbwx-js">/* 改131-begin: 微信内淘宝按钮 —— 一键唤起淘宝 App, 失败才退回复制链接引导 */
 (function(){
   if(!/MicroMessenger/i.test(navigator.userAgent))return;
   function copy(u){
@@ -2231,8 +2231,9 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
     if(!m){
       m=document.createElement("div");m.id="tbxMask";m.className="tbx-mask";
       m.innerHTML='<div class="tbx-box"><div class="tbx-ico">🛒</div>'+
-        '<div class="tbx-t">淘宝链接已复制</div>'+
-        '<div class="tbx-d">打开 <b>手机淘宝</b> App，会自动弹出这个商品（iOS 首次会问「允许粘贴」，点允许即可）。<br>没弹出，就在淘宝搜索框长按粘贴。</div>'+
+        '<div class="tbx-t">没自动跳到淘宝</div>'+
+        '<div class="tbx-d">链接<b>已复制</b>：打开<b>手机淘宝</b>会自动弹出这个商品（iOS 首次问「允许粘贴」，点允许）。<br>'+
+        '也可以点右上角 <b>⋯</b> → <b>在浏览器打开</b>，再点按钮就直接进淘宝。</div>'+
         '<div class="tbx-u" id="tbxUrl"></div>'+
         '<div class="tbx-act"><button class="tbx-btn ghost" id="tbxClose">关闭</button>'+
         '<button class="tbx-btn main" id="tbxCopy">再复制一次</button></div></div>';
@@ -2251,6 +2252,30 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
     m.style.display="flex";
     requestAnimationFrame(function(){m.className="tbx-mask on";});
   }
+  /* 尝试唤起淘宝 App: 带商品 id 的详情页 scheme 优先, 没 id 才兜底首页(淘宝会读剪贴板弹商品)
+     只试 2 个: 少试少弹错误框, 且第一个成功时页面已切后台, 后面根本不会执行 */
+  function wakeApp(u){
+    var id=((u||"").match(/[?&]id=(\d+)/)||[])[1]||"", list=[];
+    if(id){
+      list.push("tbopen://item.taobao.com/item.htm?id="+id);
+      list.push("taobao://item.taobao.com/item.htm?id="+id);
+    }else{
+      list.push("tbopen://m.taobao.com/index.htm");
+      list.push("taobao://m.taobao.com/index.htm");
+    }
+    list.forEach(function(s,i){
+      setTimeout(function(){
+        try{
+          var f=document.createElement("iframe");
+          f.style.cssText="display:none;width:0;height:0;border:0";
+          f.setAttribute("aria-hidden","true");f.src=s;
+          document.body.appendChild(f);
+          setTimeout(function(){try{document.body.removeChild(f);}catch(e){}},900);
+        }catch(e){}
+      },i*380);
+    });
+    return list.length*380+300;
+  }
   document.addEventListener("click",function(e){
     var n=e.target,a=null;
     while(n&&n!==document&&n.nodeType===1){
@@ -2259,10 +2284,16 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
     }
     if(!a)return;
     var u=a.getAttribute("href")||"";
-    /* 淘宝官方短链(m.tb.cn / e.tb.cn)微信内可直接打开, 不拦 */
+    /* 淘宝官方短链(m.tb.cn / e.tb.cn)属微信白名单, 微信内可直接打开 -> 一键直达 */
     if(/^https?:\/\/(m|e)\.tb\.cn\//i.test(u))return;
     if(e.preventDefault)e.preventDefault();else e.returnValue=false;
-    copy(u);show(u);
+    copy(u);
+    var here=function(){document.removeEventListener("visibilitychange",left);window.removeEventListener("pagehide",left);};
+    var stay=true,left=function(){stay=false;here();};
+    document.addEventListener("visibilitychange",left);
+    window.addEventListener("pagehide",left);
+    var span=wakeApp(u);
+    setTimeout(function(){here();if(stay)show(u);},Math.max(1100,span));
     return false;
   },true);
 })();
