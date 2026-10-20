@@ -1,7 +1,8 @@
 {
- "_说明": "key 用价目表里的游戏英文名(中文名也认), value 是淘宝商品链接; 优先用 e.tb.cn/m.tb.cn 官方短链(微信内一键直达), 只有配了链接的商品才显示按钮",
+ "_说明": "key 用价目表里的游戏英文名(中文名也认), value 是淘宝商品链接; _ids 是商品的永久 id(一次配好永不过期), 有 id 时链接过期也能跳, 优先用 e.tb.cn/m.tb.cn 短链",
  "Valor Mortis": "https://e.tb.cn/h.jXsYFYMhjYNTrYp?tk=RaSITFu82w7",
  "Persona 4 Revival": "https://e.tb.cn/h.jd1lU99MBcDen6g?tk=SGBaTFu9ZF2",
  "Tomb Raider Legacy of Atlantis": "https://e.tb.cn/h.jcqpKPdVhrEg8cH?tk=JVOTTFunOT0",
- "Valheim": "https://e.tb.cn/h.jXsVIYCuuhMXW60?tk=OmX7TFuMa2T"
+ "Valheim": "https://e.tb.cn/h.jXsVIYCuuhMXW60?tk=OmX7TFuMa2T",
+ "_ids": {}
 }
