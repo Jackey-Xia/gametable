@@ -96,6 +96,10 @@ tb = os.path.join(BASE, "data", "taobao.json")
 if os.path.exists(tb):
     shutil.copyfile(tb, os.path.join(site, "taobao.json"))
     print("taobao.json 已同步")
+# 改134: 淘宝中转页(只靠商品id跳转, 不依赖会过期的短链) -> 站点根目录 tb.html
+_tbh = os.path.join(BASE, "tb.html")
+if os.path.exists(_tbh):
+    shutil.copyfile(_tbh, os.path.join(site, "tb.html"))
 # 改68: 封面目录整体同步 (covers/manifest.json + 图片) 到 Pages 站点
 cv_src = os.path.join(BASE, "covers")
 if os.path.isdir(cv_src):
