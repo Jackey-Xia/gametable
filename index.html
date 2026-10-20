@@ -638,17 +638,18 @@ footer b{color:#4b5563}
 #memFee .mf-note > div:last-child{white-space:normal}
 </style>
 <style id="memhead-css">
+
 /* 改118: 会员资费页头 —— 高级会员徽章与店铺名同行；背景沿用 PS 游戏封面 */
 .memhead{display:none}
 .hero.tmem .hero-inner{display:none}
-.hero.tmem .memhead{display:block;position:relative;z-index:3}
+.hero.tmem .memhead{display:flex;flex-direction:column;justify-content:center;position:relative;z-index:3;min-height:151px}
 .memhead-title{display:flex;align-items:center;gap:8px;flex-wrap:nowrap;min-width:0}
 .memhead-lv{display:inline-flex;align-items:center;gap:5px;flex:0 0 auto;padding:3px 10px;border-radius:999px;
   background:linear-gradient(100deg,#f0d493,#ffe9bd);color:#6b4a08;font-size:11.5px;font-weight:800;line-height:1.5}
 .memhead-h1{font-size:17px;font-weight:800;letter-spacing:.3px;line-height:1.32;color:#fff;white-space:nowrap}
-.memhead-sub{margin-top:8px;font-size:12.5px;color:#c9d4ff;line-height:1.7}
-.memhead-perm{margin-top:7px;font-size:12.5px;color:#c9d4ff;line-height:1.7}
-.memhead-chips{display:flex;flex-wrap:nowrap;gap:6px;margin-top:14px}
+.memhead-sub{margin-top:6px;font-size:12.5px;color:#c9d4ff;line-height:1.5}
+.memhead-perm{margin-top:5px;font-size:12.5px;color:#c9d4ff;line-height:1.5}
+.memhead-chips{display:flex;flex-wrap:nowrap;gap:6px;margin-top:11px}
 .memhead-chip{display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:999px;font-size:10.5px;
   white-space:nowrap;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);color:#eaf0ff}
 .memhead-chip b{color:#ffd88a}
@@ -660,6 +661,10 @@ footer b{color:#4b5563}
   #memFee .mf-meta .mf-m .mf-k{font-size:10px}
   #memFee .mf-meta .mf-m .mf-v{font-size:13px}
 }
+/* 改120-begin: 会员资费页头与 PS游戏 / PS白金 页头等高，切换 tab 时封面高度不跳动 */
+@media (min-width:641px){.hero.tmem .memhead{min-height:156px}}
+@media (max-width:359px){.hero.tmem .memhead{min-height:209px}}
+/* 改120-end */
 </style>
 </head>
 <body>
