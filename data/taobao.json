@@ -1,5 +1,5 @@
 {
- "_说明": "key 用价目表里的游戏英文名(中文名也认)。value=淘宝链接; _ids=淘宝永久商品id; _xianyu=闲鱼链接(可留空); _xid=闲鱼永久商品id。有 id 时链接过期也能跳。",
+ "_说明": "key 用价目表里的游戏英文名(中文名也认)。value=淘宝链接; _ids=淘宝商品id; _xianyu=闲鱼链接(决定按钮是否出现); _xid=闲鱼商品id(决定按钮永久地址)。",
  "_ids": {
   "Valor Mortis": "1092456186775",
   "Persona 4 Revival": "1090958275146",
@@ -10,6 +10,16 @@
  "Persona 4 Revival": "https://e.tb.cn/h.jd1lU99MBcDen6g?tk=SGBaTFu9ZF2",
  "Tomb Raider Legacy of Atlantis": "https://e.tb.cn/h.jcqpKPdVhrEg8cH?tk=JVOTTFunOT0",
  "Valheim": "https://e.tb.cn/h.jXsVIYCuuhMXW60?tk=OmX7TFuMa2T",
- "_xianyu": {},
- "_xid": {}
+ "_xianyu": {
+  "Valor Mortis": "https://m.tb.cn/h.jXwZKKe?tk=k4JnTFyhagR",
+  "Persona 4 Revival": "https://m.tb.cn/h.jcu5ral?tk=P7QuTFyhUYi",
+  "Tomb Raider Legacy of Atlantis": "https://m.tb.cn/h.jWGcqDw?tk=uK6VTFySRiM",
+  "Valheim": "https://m.tb.cn/h.jWGdeW3?tk=kVrtTFyicA8"
+ },
+ "_xid": {
+  "Valor Mortis": "1091536543028",
+  "Persona 4 Revival": "1092963441669",
+  "Tomb Raider Legacy of Atlantis": "1094016984429",
+  "Valheim": "1090543383293"
+ }
 }
