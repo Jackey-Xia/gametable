@@ -753,7 +753,7 @@ footer b{color:#4b5563}
   z-index:99999;display:none;align-items:center;justify-content:center;padding:22px;
   opacity:0;transition:opacity .18s ease;-webkit-tap-highlight-color:transparent}
 .tbx-mask.on{opacity:1}
-.tbx-box{width:100%;max-width:330px;background:#fff;border-radius:18px;padding:20px 17px 13px;
+.tbx-box{width:100%;max-width:330px;box-sizing:border-box;background:#fff;border-radius:18px;padding:20px 17px 13px;
   text-align:center;box-shadow:0 18px 48px rgba(0,0,0,.3);
   transform:translateY(10px) scale(.98);transition:transform .18s ease}
 .tbx-mask.on .tbx-box{transform:none}
@@ -1844,6 +1844,7 @@ function tbIdOf(g){
 
 
 
+
 /* 改141-begin: 微信内购买按钮 —— 唤起尝试 + 淘口令式引导(复制→打开App) */
 (function(){
   if(!/MicroMessenger/i.test(navigator.userAgent))return;
@@ -1882,7 +1883,7 @@ function tbIdOf(g){
     var m=document.getElementById("tbxMask");
     if(m)return m;
     m=document.createElement("div");m.id="tbxMask";m.className="tbx-mask";
-    m.innerHTML='<div class="tbx-box"><div class="tbx-ico" id="tbxIco">\U0001F6D2</div>'+
+    m.innerHTML='<div class="tbx-box"><div class="tbx-ico" id="tbxIco">\uD83D\uDED2</div>'+
       '<div class="tbx-t" id="tbxT"></div>'+
       '<div class="tbx-steps" id="tbxSteps"></div>'+
       '<div class="tbx-u" id="tbxUrl"></div>'+
@@ -1922,7 +1923,7 @@ function tbIdOf(g){
   }
   function paint(u,kind,state){
     var m=ensure(),isXY=(kind==="xy"),APP=isXY?"闲鱼":"淘宝";
-    document.getElementById("tbxIco").textContent=isXY?"\U0001F41F":"\U0001F6D2";
+    document.getElementById("tbxIco").textContent=isXY?"\uD83D\uDC1F":"\uD83D\uDED2";
     document.getElementById("tbxUrl").textContent=u;
     document.getElementById("tbxApp").value=kind;
     document.getElementById("tbxId").value=(window.__tbxLastId||"");
