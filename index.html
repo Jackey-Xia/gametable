@@ -764,6 +764,9 @@ footer b{color:#4b5563}
 .tbx-steps b{color:#ff5000;font-weight:800}
 .tbx-steps .n{display:inline-block;width:17px;height:17px;line-height:17px;border-radius:50%;
   background:#ff5000;color:#fff;font-size:11px;text-align:center;margin-right:6px;font-weight:700}
+/* 闲鱼场景：序号底纹与「闲鱼App」文字用闲鱼黄(#ffda00)，与下方按钮同色 */
+.tbx-steps.xy .n{background:#ffda00;color:#3d2f00}
+.tbx-steps.xy b{color:#ffda00}
 .tbx-u{margin-top:9px;font-size:11.5px;line-height:1.5;color:#8b94a3;word-break:break-all;text-align:left;
   background:#fafbfd;border:1px dashed #e2e7f0;border-radius:9px;padding:7px 9px;
   -webkit-user-select:text;user-select:text}
@@ -1845,6 +1848,7 @@ function tbIdOf(g){
 
 
 
+
 /* 改141-begin: 微信内购买按钮 —— 唤起尝试 + 淘口令式引导(复制→打开App) */
 (function(){
   if(!/MicroMessenger/i.test(navigator.userAgent))return;
@@ -1930,6 +1934,7 @@ function tbIdOf(g){
     var T=document.getElementById("tbxT"),S=document.getElementById("tbxSteps"),
         TP=document.getElementById("tbxTip"),O=document.getElementById("tbxOpen"),
         C=document.getElementById("tbxCopy"),A1=document.getElementById("tbxAct1");
+    S.className=isXY?"tbx-steps xy":"tbx-steps";
     if(state==="wait"){
       T.innerHTML='<span class="tbx-spin"></span>正在打开'+APP+'\u2026';
       S.innerHTML='正在唤起'+APP+'App，请稍等\u2026';
