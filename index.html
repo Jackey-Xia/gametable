@@ -678,6 +678,16 @@ footer b{color:#4b5563}
 @media (max-width:359px){.hero.tmem .memhead{min-height:0}}
 /* 改125-end */
 </style>
+<style id="gt-hint-float">/* 改126-begin: 加载提示条改为悬浮胶囊 —— 原来它是普通流、高 37px，会把页头整页顶下来，
+   导致冷缓存首屏「PS 游戏」页头比「会员资费 / PS 白金」低一截（看起来就是不齐）。
+   改 fixed 后不占文档流，页头与 tab 栏位置恒定。 */
+.gt-loadhint{position:fixed;left:10px;right:auto;top:auto;
+  bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:70;
+  border:1px solid #fde9bf;border-radius:999px;padding:7px 12px;
+  font-size:11.5px;line-height:1.35;max-width:calc(100vw - 20px);
+  background:rgba(255,247,230,.97);box-shadow:0 6px 18px rgba(0,0,0,.22)}
+/* 改126-end */
+</style>
 </head>
 <body>
 <!-- 改123a -->
