@@ -730,19 +730,24 @@ footer b{color:#4b5563}
 }
 /* 改128-end */
 </style>
-<style id="tbbtn-css">/* 改130-begin: 商品卡片「去淘宝下单」按钮 —— 名称/信息行下方, 淘宝橙胶囊(手机整行) */
-.gmain .tbbtn{display:inline-flex;align-items:center;justify-content:center;gap:5px;height:32px;padding:0 16px;
-  margin-top:9px;align-self:flex-start;
-  border-radius:999px;background:#ff5000;color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.2px;
-  text-decoration:none;box-shadow:0 3px 10px rgba(255,80,0,.26);
+<style id="tbbtn-css">/* 改137: 购买按钮行 —— 淘宝购买(橙) + 闲鱼购买(闲鱼黄), 同一行矮胶囊, 不占大块 */
+.gmain .tbrow{display:flex;align-items:center;gap:6px;margin-top:9px;align-self:flex-start;max-width:100%}
+.gmain .tbbtn{display:inline-flex;align-items:center;justify-content:center;gap:4px;
+  height:30px;padding:0 13px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.2px;
+  text-decoration:none;white-space:nowrap;flex:0 1 auto;min-width:0;
   -webkit-tap-highlight-color:transparent;transition:transform .12s ease,box-shadow .12s ease}
-.gmain .tbbtn:active{transform:scale(.97);box-shadow:0 1px 5px rgba(255,80,0,.26)}
-.gmain .tbbtn .tbi{font-size:13px;line-height:1;display:inline-block;margin-top:-1px}
+.gmain .tbbtn .tbi{font-size:12.5px;line-height:1;display:inline-block;margin-top:-1px}
+.gmain .tbbtn.tb{background:#ff5000;color:#fff;box-shadow:0 3px 10px rgba(255,80,0,.22)}
+.gmain .tbbtn.xybtn{background:#ffda00;color:#3d2f00;box-shadow:0 2px 8px rgba(214,178,0,.3)}
+.gmain .tbbtn:active{transform:scale(.97)}
 @media (max-width:640px){
-  .gmain .tbbtn{width:100%;height:40px;font-size:14px;padding:0 12px;margin-top:10px}
+  .gmain .tbrow{gap:6px;margin-top:8px;width:100%}
+  .gmain .tbbtn{flex:1 1 0;max-width:150px;height:32px;padding:0 8px;font-size:12.5px}
 }
-/* 改130-end */
-</style>
+@media (max-width:339px){
+  .gmain .tbbtn{height:30px;padding:0 6px;font-size:11.5px;gap:3px}
+  .gmain .tbbtn .tbi{font-size:11.5px}
+}</style>
 <style id="tbwx-css">/* 改131-begin: 微信内淘宝按钮兜底浮层 —— 淘宝外链被微信拦时的最后一道 */
 .tbx-mask{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(12,17,26,.55);
   z-index:99999;display:none;align-items:center;justify-content:center;padding:24px;
@@ -1711,11 +1716,47 @@ function tbHref(u,g){
   try{if(typeof tbIdOf==="function")id=tbIdOf(g);}catch(e){}
   return id?(TB_H5+id):u;
 }
+/* 改137x-begin: 闲鱼购买 —— 与淘宝同一行, 只依赖闲鱼商品 id(永久), 未配置不显示 */
+var TB_XY={},TB_XID={},TB_XH5="https://h5.m.goofish.com/item?id=";
+function xyUrl(g){
+  if(!g)return "";
+  var en=g.en||"",nm=g._disp||g.name||"";
+  var u=TB_XY[tbKey(en)]||TB_XY[tbKey(tbCut(en))]||TB_XY[tbKey(nm)]||TB_XY[tbKey(tbCut(nm))]||"";
+  return /^https?:\/\//i.test(u)?u:"";
+}
+function xyIdOf(g){
+  if(!g)return "";
+  var en=g.en||"",nm=g._disp||g.name||"",k;
+  k=TB_XID[tbKey(en)]||TB_XID[tbKey(tbCut(en))]||TB_XID[tbKey(nm)]||TB_XID[tbKey(tbCut(nm))]||"";
+  if(k)return String(k).replace(/[^\d]/g,"");
+  var mm=xyUrl(g).match(/[?&]id=(\d+)/);
+  return mm?mm[1]:"";
+}
+function xyHref(u,g){
+  var id="";try{if(typeof xyIdOf==="function")id=xyIdOf(g);}catch(e){}
+  return id?(TB_XH5+id):u;
+}
+function xyEl(u,g){
+  var a=document.createElement("a");
+  a.className="tbbtn xybtn";a.href=xyHref(u,g);a.target="_blank";a.rel="noopener noreferrer";
+  a.appendChild(el("span","tbi","🐟"));
+  a.appendChild(document.createTextNode("闲鱼购买"));
+  return a;
+}
+function tbRowFor(g){
+  var ut=tbUrl(g),ux=xyUrl(g);
+  if(!ut&&!ux)return null;
+  var row=el("div","tbrow");
+  if(ut)row.appendChild(tbEl(ut,g));
+  if(ux)row.appendChild(xyEl(ux,g));
+  return row;
+}
+/* 改137x-end */
 function tbEl(u,g){
   var a=document.createElement("a");
-  a.className="tbbtn";a.href=tbHref(u,g);a.target="_blank";a.rel="noopener noreferrer";
+  a.className="tbbtn tb";a.href=tbHref(u,g);a.target="_blank";a.rel="noopener noreferrer";
   a.appendChild(el("span","tbi","🛒"));
-  a.appendChild(document.createTextNode("去淘宝下单"));
+  a.appendChild(document.createTextNode("淘宝购买"));
   return a;
 }
 /* id 表比卡片晚到时, 回填已渲染按钮的 href(短链 -> 永久地址) */
@@ -1726,8 +1767,13 @@ function tbFixHref(){
       var a=list[i],c=a.closest?a.closest(".gcard"):null;if(!c)continue;
       var ix=parseInt(String(c.id||"").replace("gc-",""),10);if(isNaN(ix))continue;
       var g=(typeof curRows!=="undefined"?curRows:[])[ix];if(!g)continue;
-      var id="";try{id=tbIdOf(g);}catch(e){}
-      if(id)a.href=TB_H5+id;
+      if(String(a.className).indexOf("xybtn")>=0){
+        var xid="";try{xid=xyIdOf(g);}catch(e){}
+        if(xid)a.href=TB_XH5+xid;
+      }else{
+        var id="";try{id=tbIdOf(g);}catch(e){}
+        if(id)a.href=TB_H5+id;
+      }
     }
   }catch(e){}
 }
@@ -1737,16 +1783,25 @@ function tbPaint(){
   var list=$("#psList");if(!list)return;
   var cards=list.querySelectorAll(".gcard");
   for(var i=0;i<cards.length;i++){
-    var c=cards[i];if(c.querySelector(".tbbtn"))continue;
+    var c=cards[i];
     var ix=parseInt(String(c.id||"").replace("gc-",""),10);
     var g=(typeof curRows!=="undefined"?curRows:[])[ix];if(!g)continue;
-    var u=tbUrl(g);if(u)(c.querySelector(".gmain")||c).appendChild(tbEl(u,g));
+    var main=c.querySelector(".gmain")||c;
+    var old=main.querySelector(".tbrow"),row=tbRowFor(g);
+    if(old&&row){main.replaceChild(row,old);}
+    else if(old){main.removeChild(old);}
+    else if(row){main.appendChild(row);}
   }
+  try{tbFixHref();}catch(e){}
 }
 (function(){try{
   fetch("taobao.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():{}}).then(function(m){
     var n=0;for(var k in m){if(m[k]&&/^https?:\/\//i.test(String(m[k]))){TB[tbKey(k)]=String(m[k]);n++;}}
-    TB_N=n;tbPaint();
+    TB_N=n;
+    /* 改137: 闲鱼链接表(_xianyu) 与 闲鱼商品 id 表(_xid) */
+    var xy=m._xianyu||{};for(var k2 in xy){if(xy[k2]&&/^https?:\/\//i.test(String(xy[k2])))TB_XY[tbKey(k2)]=String(xy[k2]);}
+    var xi=m._xid||{};for(var k3 in xi){TB_XID[tbKey(k3)]=String(xi[k3]).replace(/[^\d]/g,"");}
+    tbPaint();
   }).catch(function(){});
 }catch(e){}})();
 /* 改136-begin: 淘宝 id 表 + 微信点击处理 —— 必须与 tbKey/tbCut/tbUrl/curRows 同作用域, 否则闭包读不到 */
@@ -1794,13 +1849,13 @@ function tbIdOf(g){
     var m=document.getElementById("tbxMask");if(!m)return;
     m.className="tbx-mask";setTimeout(function(){m.style.display="none";},180);
   }
-  function show(u){
+  function show(u,kind){
     var m=document.getElementById("tbxMask");
     if(!m){
       m=document.createElement("div");m.id="tbxMask";m.className="tbx-mask";
-      m.innerHTML='<div class="tbx-box"><div class="tbx-ico">🛒</div>'+
-        '<div class="tbx-t">没自动跳到淘宝</div>'+
-        '<div class="tbx-d">链接<b>已复制</b>：打开<b>手机淘宝</b>会自动弹出这个商品（iOS 首次问「允许粘贴」，点允许）。<br>'+
+      m.innerHTML='<div class="tbx-box"><div class="tbx-ico" id="tbxIco">🛒</div>'+
+        '<div class="tbx-t" id="tbxT">没自动跳到淘宝</div>'+
+        '<div class="tbx-d" id="tbxD">链接<b>已复制</b>：打开<b>手机淘宝</b>会自动弹出这个商品（iOS 首次问「允许粘贴」，点允许）。<br>'+
         '也可以点右上角 <b>⋯</b> → <b>在浏览器打开</b>，再点按钮就直接进淘宝。</div>'+
         '<div class="tbx-u" id="tbxUrl"></div>'+
         '<div class="tbx-act"><button class="tbx-btn ghost" id="tbxClose">关闭</button>'+
@@ -1817,6 +1872,14 @@ function tbIdOf(g){
       });
     }
     document.getElementById("tbxUrl").textContent=u;
+    /* 改137: 按淘宝/闲鱼切换浮层文案 */
+    var isXY=(kind==="xy");
+    var _ico=document.getElementById("tbxIco"),_tt=document.getElementById("tbxT"),_dd=document.getElementById("tbxD");
+    if(_ico)_ico.textContent=isXY?"🐟":"🛒";
+    if(_tt)_tt.textContent=isXY?"没自动跳到闲鱼":"没自动跳到淘宝";
+    if(_dd)_dd.innerHTML=isXY?
+      '链接<b>已复制</b>：打开<b>闲鱼</b>会自动弹出这个商品（iOS 首次问「允许粘贴」，点允许）。<br>也可以点右上角 <b>⋯</b> → <b>在浏览器打开</b>，再点按钮就直接进闲鱼。':
+      '链接<b>已复制</b>：打开<b>手机淘宝</b>会自动弹出这个商品（iOS 首次问「允许粘贴」，点允许）。<br>也可以点右上角 <b>⋯</b> → <b>在浏览器打开</b>，再点按钮就直接进淘宝。';
     m.style.display="flex";
     requestAnimationFrame(function(){m.className="tbx-mask on";});
   }
@@ -1848,6 +1911,24 @@ function tbIdOf(g){
     });
     return list.length*380+300;
   }
+  /* 改137: 唤起闲鱼 App */
+  function wakeXY(id){
+    var list=[];
+    if(id){list.push("fleamarket://item?id="+id);list.push("goofish://item?id="+id);}
+    else{list.push("fleamarket://");list.push("goofish://");}
+    list.forEach(function(s,i){
+      setTimeout(function(){
+        try{
+          var f=document.createElement("iframe");
+          f.style.cssText="display:none;width:0;height:0;border:0";
+          f.setAttribute("aria-hidden","true");f.src=s;
+          document.body.appendChild(f);
+          setTimeout(function(){try{document.body.removeChild(f);}catch(e){}},900);
+        }catch(e){}
+      },i*380);
+    });
+    return list.length*380+300;
+  }
   document.addEventListener("click",function(e){
     var n=e.target,a=null;
     while(n&&n!==document&&n.nodeType===1){
@@ -1858,6 +1939,25 @@ function tbIdOf(g){
     var u=a.getAttribute("href")||"";
     if(e.preventDefault)e.preventDefault();else e.returnValue=false;
     copy(u);
+    /* 改137: 闲鱼按钮 —— 先唤起闲鱼 App, 失败进本站中转页(带 id), 都被拦才弹浮层 */
+    if(String(a.className).indexOf("xybtn")>=0){
+      var xStay=true,xOff=function(){document.removeEventListener("visibilitychange",xLeft);
+                                     window.removeEventListener("pagehide",xLeft);};
+      var xLeft=function(){xStay=false;xOff();};
+      document.addEventListener("visibilitychange",xLeft);
+      window.addEventListener("pagehide",xLeft);
+      var xid="";try{xid=xyIdOf(rowOf(a));}catch(ex){}
+      if(!xid){var xm=u.match(/[?&]id=(\d+)/);xid=xm?xm[1]:"";}
+      var xspan=wakeXY(xid);
+      setTimeout(function(){
+        xOff();
+        if(!xStay)return;
+        if(xid){location.replace("tb.html?id="+xid+"&s=xy");return;}
+        if(/^https?:\/\/(m|e)\.tb\.cn\//i.test(u)){location.href=u;return;}
+        show(u,"xy");
+      },Math.max(1100,xspan));
+      return false;
+    }
     var stay=true,here=function(){document.removeEventListener("visibilitychange",left);
                                  window.removeEventListener("pagehide",left);};
     var left=function(){stay=false;here();};
@@ -1912,9 +2012,9 @@ function gameCard(g,idx){
     meta.appendChild(hc);
   }
   main.appendChild(meta);
-  /* 改130-begin: 淘宝下单按钮(名称/信息行下方, 未配置链接的商品不显示) */
-  (function(){var u=tbUrl(g);if(u)main.appendChild(tbEl(u,g));})();
-  /* 改130-end */
+  /* 改137b-begin: 购买按钮行(淘宝购买 + 闲鱼购买, 同一行; 未配置链接的商品不显示) */
+  (function(){var r=tbRowFor(g);if(r)main.appendChild(r);})();
+  /* 改137b-end */
     card.appendChild(main);
   /* 价签(改17): 可认证=PS4/PS5 独立库存位; 非认证=共用位; 限定版=独立位 */
   const prices=el("div","gprices");
