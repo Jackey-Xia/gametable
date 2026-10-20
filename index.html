@@ -748,7 +748,7 @@ footer b{color:#4b5563}
   .gmain .tbbtn{height:30px;padding:0 6px;font-size:11.5px;gap:3px}
   .gmain .tbbtn .tbi{font-size:11.5px}
 }</style>
-<style id="tbwx-css">/* 改138-begin: 微信内购买按钮兜底浮层 —— 只用本站页面引导, 绝不自动跳淘宝域(会被微信拦截) */
+<style id="tbwx-css">/* 改139-begin: 微信内购买按钮 —— 只唤起App + 站内引导(绝不跳淘宝URL, 微信会拦) */
 .tbx-mask{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(12,17,26,.55);
   z-index:99999;display:none;align-items:center;justify-content:center;padding:24px;
   opacity:0;transition:opacity .18s ease;-webkit-tap-highlight-color:transparent}
@@ -772,7 +772,11 @@ footer b{color:#4b5563}
 .tbx-btn.sm{height:38px;font-size:13px}
 .tbx-btn.ghost{background:#f1f4f9;color:#5b6472}
 .tbx-btn.main{background:#ff5000;color:#fff;box-shadow:0 4px 12px rgba(255,80,0,.3)}
-/* 改138-end */
+.tbx-btn.wait{opacity:.6}
+.tbx-spin{display:inline-block;width:13px;height:13px;border-radius:50%;vertical-align:-2px;
+  margin-right:6px;border:2px solid #ffd9c4;border-top-color:#ff5000;animation:tbxspin .8s linear infinite}
+@keyframes tbxspin{to{transform:rotate(360deg)}}
+/* 改139-end */
 </style>
 </head>
 <body>
@@ -1832,7 +1836,8 @@ function tbIdOf(g){
 }catch(e){}})();
 /* 改134-end */
 /* 改136-end */
-/* 改138-begin: 微信内购买按钮 —— ①白名单短链直开 ②唤起App ③站内一键复制引导; 绝不自动跳淘宝域 */
+
+/* 改139-begin: 微信内购买按钮 —— 只唤起App(不跳URL, 微信连 e.tb.cn 短链都拦) + 站内引导 */
 (function(){
   if(!/MicroMessenger/i.test(navigator.userAgent))return;
   function copy(u){
@@ -1852,50 +1857,69 @@ function tbIdOf(g){
     var m=document.getElementById("tbxMask");if(!m)return;
     m.className="tbx-mask";setTimeout(function(){m.style.display="none";},180);
   }
-  function show(u,kind){
+  var SCH={
+    tb:function(id){return id?["tbopen://item.taobao.com/item.htm?id="+id,"taobao://item.taobao.com/item.htm?id="+id]
+                            :["tbopen://m.taobao.com/index.htm","taobao://m.taobao.com/index.htm"];},
+    xy:function(id){return id?["fleamarket://item?id="+id,"goofish://item?id="+id]:["fleamarket://","goofish://"];}
+  };
+  function iframe(s){
+    try{
+      var f=document.createElement("iframe");
+      f.style.cssText="display:none;width:0;height:0;border:0";
+      f.setAttribute("aria-hidden","true");f.src=s;
+      document.body.appendChild(f);
+      setTimeout(function(){try{document.body.removeChild(f);}catch(e){}},900);
+    }catch(e){}
+  }
+  function ensure(){
     var m=document.getElementById("tbxMask");
-    if(!m){
-      m=document.createElement("div");m.id="tbxMask";m.className="tbx-mask";
-      m.innerHTML='<div class="tbx-box"><div class="tbx-ico" id="tbxIco">🛒</div>'+
-        '<div class="tbx-t" id="tbxT">没自动跳到淘宝</div>'+
-        '<div class="tbx-d" id="tbxD"></div>'+
-        '<div class="tbx-u" id="tbxUrl"></div>'+
-        '<div class="tbx-act"><button class="tbx-btn main" id="tbxOpen">打开淘宝App</button></div>'+
-        '<div class="tbx-act sub"><button class="tbx-btn ghost sm" id="tbxCopy">复制链接</button>'+
-        '<button class="tbx-btn ghost sm" id="tbxClose">关闭</button></div></div>';
-      document.body.appendChild(m);
-      m.addEventListener("click",function(e){
-        var t=e.target||{};
-        if(t===m||t.id==="tbxClose"){hide();return;}
-        if(t.id==="tbxCopy"){
-          copy(document.getElementById("tbxUrl").textContent||"");
-          t.textContent="已复制 ✓";
-          setTimeout(function(){t.textContent="复制链接";},1500);
-        }
-        if(t.id==="tbxOpen"){
-          var nm=document.getElementById("tbxApp")?document.getElementById("tbxApp").value:"tb";
-          wakeBy(nm,document.getElementById("tbxId")?document.getElementById("tbxId").value:"");
-          t.textContent="正在打开…";
-          setTimeout(function(){t.textContent=(nm==="xy"?"打开闲鱼":"打开淘宝")+"App";},1600);
-        }
-      });
-    }
-    var isXY=(kind==="xy"),APP=isXY?"闲鱼":"淘宝";
-    document.getElementById("tbxUrl").textContent=u;
+    if(m)return m;
+    m=document.createElement("div");m.id="tbxMask";m.className="tbx-mask";
+    m.innerHTML='<div class="tbx-box"><div class="tbx-ico" id="tbxIco">🛒</div>'+
+      '<div class="tbx-t" id="tbxT">正在打开…</div>'+
+      '<div class="tbx-d" id="tbxD"></div>'+
+      '<div class="tbx-u" id="tbxUrl"></div>'+
+      '<div class="tbx-act"><button class="tbx-btn main" id="tbxOpen">打开淘宝App</button></div>'+
+      '<div class="tbx-act sub"><button class="tbx-btn ghost sm" id="tbxCopy">复制链接</button>'+
+      '<button class="tbx-btn ghost sm" id="tbxClose">关闭</button></div>'+
+      '<input type="hidden" id="tbxApp" value="tb"><input type="hidden" id="tbxId" value=""></div>';
+    document.body.appendChild(m);
+    m.addEventListener("click",function(e){
+      var t=e.target||{};
+      if(t===m||t.id==="tbxClose"){hide();return;}
+      if(t.id==="tbxCopy"){
+        copy(document.getElementById("tbxUrl").textContent||"");
+        t.textContent="已复制 ✓";
+        setTimeout(function(){t.textContent="复制链接";},1500);
+      }
+      if(t.id==="tbxOpen"&&String(t.className).indexOf("wait")<0){
+        var k=document.getElementById("tbxApp").value,i=document.getElementById("tbxId").value;
+        var s=SCH[k](i)[0];
+        iframe(s);                                   /* 先静默唤起 */
+        setTimeout(function(){if(!document.hidden){try{location.href=s;}catch(e){}}},700);
+        t.textContent="正在唤起…";
+        setTimeout(function(){t.textContent="打开"+(k==="xy"?"闲鱼":"淘宝")+"App";},1800);
+      }
+    });
+    return m;
+  }
+  function paint(u,kind,state){
+    var m=ensure(),isXY=(kind==="xy"),APP=isXY?"闲鱼":"淘宝";
     document.getElementById("tbxIco").textContent=isXY?"🐟":"🛒";
-    document.getElementById("tbxT").textContent="没自动打开"+APP;
-    document.getElementById("tbxD").innerHTML=
-      '微信里不能直接打开'+APP+'链接。<b>链接已复制</b>：打开'+APP+'会自动弹出这个商品（iOS 首次问「允许粘贴」，点允许）。<br>'+
-      '也可以点右上角 <b>⋯</b> → <b>在浏览器打开</b>。';
-    /* 供「打开App」按钮复用: 记住本次是淘宝还是闲鱼、以及商品 id */
-    if(!document.getElementById("tbxApp")){
-      var h1=document.createElement("input");h1.type="hidden";h1.id="tbxApp";m.appendChild(h1);
-      var h2=document.createElement("input");h2.type="hidden";h2.id="tbxId";m.appendChild(h2);
-    }
-    document.getElementById("tbxApp").value=isXY?"xy":"tb";
+    document.getElementById("tbxUrl").textContent=u;
+    document.getElementById("tbxApp").value=kind;
     document.getElementById("tbxId").value=(window.__tbxLastId||"");
-    var ob=document.getElementById("tbxOpen");
-    ob.textContent="打开"+APP+"App";
+    var T=document.getElementById("tbxT"),D=document.getElementById("tbxD"),
+        O=document.getElementById("tbxOpen");
+    if(state==="wait"){
+      T.innerHTML='<span class="tbx-spin"></span>正在打开'+APP+'…';
+      D.innerHTML='如果没反应，点下面按钮再唤起一次，或复制链接后打开'+APP+'会自动弹出这个商品。';
+      O.className="tbx-btn main wait";O.textContent="正在唤起…";
+    }else{
+      T.textContent="没自动打开"+APP;
+      D.innerHTML='微信里不能直接打开'+APP+'链接。<b>链接已复制</b>：打开'+APP+'会自动弹出这个商品。';
+      O.className="tbx-btn main";O.textContent="打开"+APP+"App";
+    }
     m.style.display="flex";
     requestAnimationFrame(function(){m.className="tbx-mask on";});
   }
@@ -1907,31 +1931,6 @@ function tbIdOf(g){
       return (typeof curRows!=="undefined"?curRows:[])[ix]||null;
     }catch(e){return null;}
   }
-  function wake(list){
-    list.forEach(function(s,i){
-      setTimeout(function(){
-        try{
-          var f=document.createElement("iframe");
-          f.style.cssText="display:none;width:0;height:0;border:0";
-          f.setAttribute("aria-hidden","true");f.src=s;
-          document.body.appendChild(f);
-          setTimeout(function(){try{document.body.removeChild(f);}catch(e){}},900);
-        }catch(e){}
-      },i*320);
-    });
-    return list.length*320+300;
-  }
-  function wakeBy(kind,id){
-    var L;
-    if(kind==="xy"){L=id?["fleamarket://item?id="+id,"goofish://item?id="+id]:["fleamarket://","goofish://"];}
-    else{L=id?["tbopen://item.taobao.com/item.htm?id="+id,"taobao://item.taobao.com/item.htm?id="+id]
-             :["tbopen://m.taobao.com/index.htm","taobao://m.taobao.com/index.htm"];}
-    return wake(L);
-  }
-  /* 微信放行名单: 只有 tb.cn 短链能直接打开淘宝; 闲鱼的 goofish h5 同样放行 */
-  function wxOk(u){
-    return /^https?:\/\/(m|e)\.tb\.cn\//i.test(u||"")||/^https?:\/\/h5\.m\.goofish\.com\//i.test(u||"");
-  }
   document.addEventListener("click",function(e){
     var n=e.target,a=null;
     while(n&&n!==document&&n.nodeType===1){
@@ -1939,39 +1938,30 @@ function tbIdOf(g){
       n=n.parentNode;
     }
     if(!a)return;
-    var isXY=String(a.className).indexOf("xybtn")>=0;
+    var isXY=String(a.className).indexOf("xybtn")>=0,kind=isXY?"xy":"tb";
     var u=a.getAttribute("href")||"";
     if(e.preventDefault)e.preventDefault();else e.returnValue=false;
     var g=rowOf(a);
-    /* 原始链接(App 分享的短链) —— 微信里唯一能直开的入口 */
-    var raw="";
-    try{raw=isXY?(typeof xyUrl==="function"?xyUrl(g):""):(typeof tbUrl==="function"?tbUrl(g):"");}catch(e2){}
-    if(!raw)raw=u;
     var id="";
     try{id=isXY?(typeof xyIdOf==="function"?xyIdOf(g):""):(typeof tbIdOf==="function"?tbIdOf(g):"");}catch(e3){}
     if(!id){var mm=u.match(/[?&]id=(\d+)/);id=mm?mm[1]:"";}
     window.__tbxLastId=id;
-    /* 先复制永久链接: 短链万一过期, 打开 App 也会自动弹出这个商品 */
-    copy(u);
-    /* ① 白名单短链 -> 直接走, 微信放行(真·一键) */
-    if(wxOk(raw)){location.href=raw;return false;}
-    /* ② 唤起 App */
+    copy(u);                       /* 剪贴板放永久链接: 打开 App 会自动弹出这个商品 */
+    var list=SCH[kind](id);
     var stay=true,off=function(){document.removeEventListener("visibilitychange",left);
                                  window.removeEventListener("pagehide",left);};
     var left=function(){stay=false;off();};
     document.addEventListener("visibilitychange",left);
     window.addEventListener("pagehide",left);
-    var span=wakeBy(isXY?"xy":"tb",id);
-    setTimeout(function(){
-      off();
-      if(!stay)return;
-      /* ③ 只在本站页面内引导 —— 绝不自动导航到淘宝/闲鱼域名(微信会弹长按复制拦截页) */
-      show(u,isXY?"xy":"tb");
-    },Math.max(1200,span));
+    /* 第一个 scheme 必须同步执行(用户手势内), 不能用 setTimeout 推迟 —— 否则 iOS 判定为非手势 */
+    iframe(list[0]);
+    setTimeout(function(){if(stay)iframe(list[1]);},300);
+    setTimeout(function(){if(stay)paint(u,kind,"wait");},600);
+    setTimeout(function(){off();if(stay)paint(u,kind,"fail");},1600);
     return false;
   },true);
 })();
-/* 改138-end */
+/* 改139-end */
 
 /* 改130-end */
 function gameCard(g,idx){
