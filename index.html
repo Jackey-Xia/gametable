@@ -2031,5 +2031,29 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
   }catch(e){}
 })();
 </script>
+
+<script id="gt-hint-tabfix">
+/* 改123-begin: 顶部「正在加载封面」提示条只出现在有封面的 PS游戏 tab。
+   会员资费(tmem) / PS白金(tplat) 没有任何封面图, 提示条却要在 12 秒后才自动隐藏,
+   期间这条 37px 高的普通流元素会把整个页头往下顶 —— 切 tab 时背景封面一高一低。
+   这里监听 hero 的 class 变化, 切到这两个 tab 立即隐藏, 保证三个 tab 页头位置一致。 */
+(function(){
+  var hint=document.getElementById("gtLoadHint");
+  var hero=document.querySelector("header.hero");
+  if(!hint||!hero)return;
+  function sync(){
+    if(hero.classList.contains("tmem")||hero.classList.contains("tplat")){
+      hint.classList.add("hide");
+    }
+  }
+  sync();
+  if(window.MutationObserver){
+    new MutationObserver(sync).observe(hero,{attributes:true,attributeFilter:["class"]});
+  }else{
+    setInterval(sync,400);
+  }
+})();
+/* 改123-end */
+</script>
 </body>
 </html>
