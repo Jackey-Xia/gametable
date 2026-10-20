@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>正在打开淘宝…</title>
+<title>正在打开…</title>
 <meta name="robots" content="noindex">
 <style>
-:root{--tb:#ff5000}
+:root{--tb:#ff5000;--ink:#fff}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0;background:#f6f7f9;color:#1a1f2b;
   font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif}
@@ -21,11 +21,11 @@ p.sub{margin:0;color:#6b7280;font-size:13px}
 .id{margin-top:10px;font-size:12px;color:#9aa3b2}
 .btn{display:block;height:46px;line-height:46px;border-radius:999px;font-weight:700;font-size:15px;
   text-decoration:none;margin-top:12px;border:0;width:100%;cursor:pointer;font-family:inherit}
-.main{background:var(--tb);color:#fff;box-shadow:0 6px 16px rgba(255,80,0,.28)}
+.main{background:var(--tb);color:var(--ink);box-shadow:0 6px 16px rgba(255,80,0,.28)}
 .ghost{background:#f1f4f9;color:#4b5563}
 .tip{margin-top:14px;font-size:12px;color:#9aa3b2;line-height:1.75;text-align:left;
   background:#fafbfd;border:1px dashed #e6eaf2;border-radius:10px;padding:9px 11px}
-.tip b{color:#ff5000}
+.tip b{color:var(--tb)}
 #fb{display:none}
 </style>
 </head>
@@ -33,22 +33,32 @@ p.sub{margin:0;color:#6b7280;font-size:13px}
 <div class="wrap">
   <div class="card">
     <div class="sp" id="sp"></div>
-    <h1 id="h1">正在打开淘宝…</h1>
+    <h1 id="h1">正在打开…</h1>
     <p class="sub" id="sub">商品：<span id="pid">-</span></p>
     <div id="fb">
-      <button class="btn main" id="go">打开淘宝商品页</button>
+      <button class="btn main" id="go">打开商品页</button>
       <button class="btn ghost" id="cp">复制链接</button>
-      <div class="tip">微信里没自动打开时：点右上角 <b>⋯</b> → <b>在浏览器打开</b>；或复制链接后打开手机淘宝，会自动弹出这个商品。</div>
+      <div class="tip" id="tip">微信里没自动打开时：点右上角 <b>⋯</b> → <b>在浏览器打开</b>；或复制链接后打开 App，会自动弹出这个商品。</div>
       <a class="btn ghost" href="./">← 回到价目表</a>
     </div>
   </div>
 </div>
 <script>
-/* GameTable 淘宝中转页 (2026-10-20 / 改134)
+/* GameTable 中转页 (2026-10-20 / 改134 淘宝, 改137 增加闲鱼)
    链接里只带商品 id —— id 永不过期，不必再用 App 分享的短链(短链带 tk 令牌会到期)。
-   流程: 1) 唤起淘宝 App -> 2) 自动进淘宝 H5 商品页 -> 3) 都被拦才显示手动入口 */
+   流程: 1) 唤起 App -> 2) 自动进官方 H5 商品页 -> 3) 都被拦才显示手动入口 */
 (function(){
-  var id=((location.search||"").match(/[?&]id=(\d+)/)||[])[1]||"";
+  var q=location.search||"";
+  var id=(q.match(/[?&]id=(\d+)/)||[])[1]||"";
+  var isXY=/[?&]s=xy\b/i.test(q);
+  var APP=isXY?"闲鱼":"淘宝";
+  var H5=isXY?("https://h5.m.goofish.com/item?id="+id):("https://h5.m.taobao.com/awp/core/detail.htm?id="+id);
+  var SCHEMES=isXY?["fleamarket://item?id="+id,"goofish://item?id="+id]
+                  :["tbopen://item.taobao.com/item.htm?id="+id,"taobao://item.taobao.com/item.htm?id="+id];
+  if(isXY){document.documentElement.style.setProperty("--tb","#ffda00");
+           document.documentElement.style.setProperty("--ink","#3d2f00");
+           document.querySelector(".sp").style.borderColor="#fff3b0";}
+  document.title="正在打开"+APP+"…";
   var pid=document.getElementById("pid");
   if(id)pid.textContent=id;
   if(!id){
@@ -59,8 +69,6 @@ p.sub{margin:0;color:#6b7280;font-size:13px}
     document.getElementById("cp").style.display="none";
     return;
   }
-  /* 永久地址: 淘宝官方 H5 商品详情页, 只依赖 id, 无任何时效 token */
-  var H5="https://h5.m.taobao.com/awp/core/detail.htm?id="+id;
   var left=false,t0=Date.now(),shown=false;
   document.addEventListener("visibilitychange",function(){if(document.hidden)left=true;});
   window.addEventListener("pagehide",function(){left=true;});
@@ -73,13 +81,15 @@ p.sub{margin:0;color:#6b7280;font-size:13px}
   function fallback(){
     if(shown)return;shown=true;
     document.getElementById("sp").style.display="none";
-    document.getElementById("h1").textContent="没能自动打开淘宝";
+    document.getElementById("h1").textContent="没能自动打开"+APP;
+    document.getElementById("go").textContent="打开"+APP+"商品页";
+    document.getElementById("tip").innerHTML='微信里没自动打开时：点右上角 <b>⋯</b> → <b>在浏览器打开</b>；或复制链接后打开'+APP+'，会自动弹出这个商品。';
     document.getElementById("fb").style.display="block";
   }
-  /* 1) 优先唤起淘宝 App */
-  iframe("tbopen://item.taobao.com/item.htm?id="+id);
-  setTimeout(function(){if(!left)iframe("taobao://item.taobao.com/item.htm?id="+id);},380);
-  /* 2) 没唤起 -> 自动进淘宝 H5 商品页(浏览器同样有效) */
+  /* 1) 优先唤起 App */
+  iframe(SCHEMES[0]);
+  setTimeout(function(){if(!left)iframe(SCHEMES[1]);},380);
+  /* 2) 没唤起 -> 自动进官方 H5 商品页(浏览器同样有效) */
   setTimeout(function(){if(!left)location.replace(H5);},700);
   /* 3) 仍停留在本页 = 跳转被拦(如微信拦截), 显示手动入口;
         用轮询而非一次性定时器: 用户在微信错误页点「返回」回到本页时也能补上 */
