@@ -743,6 +743,30 @@ footer b{color:#4b5563}
 }
 /* 改130-end */
 </style>
+<style id="tbwx-css">/* 改131-begin: 微信内淘宝按钮兜底浮层 —— 微信拦淘宝外链, 改为复制链接+引导去淘宝 App */
+.tbx-mask{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(12,17,26,.55);
+  z-index:99999;display:none;align-items:center;justify-content:center;padding:24px;
+  opacity:0;transition:opacity .18s ease;-webkit-tap-highlight-color:transparent}
+.tbx-mask.on{opacity:1}
+.tbx-box{width:100%;max-width:320px;background:#fff;border-radius:18px;padding:22px 18px 14px;
+  text-align:center;box-shadow:0 18px 48px rgba(0,0,0,.3);
+  transform:translateY(10px) scale(.98);transition:transform .18s ease}
+.tbx-mask.on .tbx-box{transform:none}
+.tbx-ico{font-size:30px;line-height:1}
+.tbx-t{font-size:16px;font-weight:800;color:#1a1f2b;margin-top:9px}
+.tbx-d{font-size:13px;line-height:1.65;color:#5b6472;margin-top:9px;text-align:left;
+  background:#f6f8fb;border-radius:10px;padding:10px 12px}
+.tbx-d b{color:#ff5000;font-weight:800}
+.tbx-u{margin-top:10px;font-size:11.5px;line-height:1.5;color:#8b94a3;word-break:break-all;text-align:left;
+  background:#fafbfd;border:1px dashed #e2e7f0;border-radius:9px;padding:7px 9px;
+  -webkit-user-select:text;user-select:text}
+.tbx-act{display:flex;gap:9px;margin-top:14px}
+.tbx-btn{flex:1;height:42px;border:0;border-radius:999px;font-size:14px;font-weight:700;
+  cursor:pointer;-webkit-tap-highlight-color:transparent}
+.tbx-btn.ghost{background:#f1f4f9;color:#5b6472}
+.tbx-btn.main{background:#ff5000;color:#fff;box-shadow:0 4px 12px rgba(255,80,0,.3)}
+/* 改131-end */
+</style>
 </head>
 <body>
 <!-- 改123a -->
@@ -2182,5 +2206,67 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
+<script id="tbwx-js">/* 改131-begin: 微信内淘宝按钮 —— 微信拦截淘宝外链, 改为复制链接+引导打开淘宝 App */
+(function(){
+  if(!/MicroMessenger/i.test(navigator.userAgent))return;
+  function copy(u){
+    var ok=0;
+    try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u);ok=1;}}catch(e){}
+    if(!ok){try{
+      var t=document.createElement("textarea");
+      t.value=u;t.setAttribute("readonly","");
+      t.style.cssText="position:fixed;left:-9999px;top:0;opacity:0";
+      document.body.appendChild(t);t.select();
+      if(t.setSelectionRange)t.setSelectionRange(0,u.length);
+      document.execCommand("copy");document.body.removeChild(t);
+    }catch(e){}}
+    return ok;
+  }
+  function hide(){
+    var m=document.getElementById("tbxMask");if(!m)return;
+    m.className="tbx-mask";setTimeout(function(){m.style.display="none";},180);
+  }
+  function show(u){
+    var m=document.getElementById("tbxMask");
+    if(!m){
+      m=document.createElement("div");m.id="tbxMask";m.className="tbx-mask";
+      m.innerHTML='<div class="tbx-box"><div class="tbx-ico">🛒</div>'+
+        '<div class="tbx-t">淘宝链接已复制</div>'+
+        '<div class="tbx-d">打开 <b>手机淘宝</b> App，会自动弹出这个商品（iOS 首次会问「允许粘贴」，点允许即可）。<br>没弹出，就在淘宝搜索框长按粘贴。</div>'+
+        '<div class="tbx-u" id="tbxUrl"></div>'+
+        '<div class="tbx-act"><button class="tbx-btn ghost" id="tbxClose">关闭</button>'+
+        '<button class="tbx-btn main" id="tbxCopy">再复制一次</button></div></div>';
+      document.body.appendChild(m);
+      m.addEventListener("click",function(e){
+        var t=e.target||{};
+        if(t===m||t.id==="tbxClose"){hide();return;}
+        if(t.id==="tbxCopy"){
+          copy(document.getElementById("tbxUrl").textContent||"");
+          t.textContent="已复制 ✓";
+          setTimeout(function(){t.textContent="再复制一次";},1500);
+        }
+      });
+    }
+    document.getElementById("tbxUrl").textContent=u;
+    m.style.display="flex";
+    requestAnimationFrame(function(){m.className="tbx-mask on";});
+  }
+  document.addEventListener("click",function(e){
+    var n=e.target,a=null;
+    while(n&&n!==document&&n.nodeType===1){
+      if(n.tagName==="A"&&n.className&&String(n.className).indexOf("tbbtn")>=0){a=n;break;}
+      n=n.parentNode;
+    }
+    if(!a)return;
+    var u=a.getAttribute("href")||"";
+    /* 淘宝官方短链(m.tb.cn / e.tb.cn)微信内可直接打开, 不拦 */
+    if(/^https?:\/\/(m|e)\.tb\.cn\//i.test(u))return;
+    if(e.preventDefault)e.preventDefault();else e.returnValue=false;
+    copy(u);show(u);
+    return false;
+  },true);
+})();
+/* 改131-end */
+</script>
 </body>
 </html>
