@@ -374,6 +374,84 @@ footer b{color:#4b5563}
 .gcover img{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;-webkit-user-drag:none;user-drag:none;pointer-events:none}
 .gcover{touch-action:manipulation}
 </style>
+<style id="memfee-css">
+#memFee{--bg:#f3f5f9; --card:#ffffff; --ink:#181d27; --sub:#6b7280; --line:#e7eaf0;
+  --blue:#1d6fe0; --purple:#7c3aed; --gold:#b7791f; --red:#c0392b;
+  --shadow:0 1px 2px rgba(16,24,40,.05),0 1px 3px rgba(16,24,40,.06);}
+#memFee, #memFee *{box-sizing:border-box;margin:0;padding:0}
+#memFee{background:var(--bg);color:var(--ink);
+  font:14px/1.6 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",Roboto,sans-serif}
+#memFee .mf-page{max-width:780px;margin:0 auto;padding:0 12px 28px}
+#memFee .mf-hero{position:relative;background:linear-gradient(150deg,#0d1440 0%,#1b2470 55%,#2444c8 100%);
+  color:#fff;padding:26px 20px 30px;overflow:hidden;border-radius:0 0 22px 22px}
+#memFee .mf-glow{position:absolute;right:-60px;top:-70px;width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,214,120,.35),rgba(255,214,120,0) 70%)}
+#memFee .mf-hero h1{position:relative;font-size:20px;font-weight:800;letter-spacing:.5px;line-height:1.35}
+#memFee .mf-hero .mf-sub{position:relative;margin-top:8px;font-size:12.5px;color:#c9d4ff;line-height:1.7}
+#memFee .mf-hero .mf-lv{position:relative;display:inline-flex;align-items:center;gap:5px;margin-bottom:10px;padding:3px 10px;border-radius:999px;
+  background:linear-gradient(100deg,#f0d493,#ffe9bd);color:#6b4a08;font-size:11.5px;font-weight:800}
+#memFee .mf-chips{position:relative;display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+#memFee .mf-chip{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:999px;font-size:11.5px;
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);color:#eaf0ff}
+#memFee .mf-chip b{color:#ffd88a}
+#memFee .mf-meta{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 4px}
+#memFee .mf-meta .mf-m{flex:1 1 150px;background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:10px 12px;box-shadow:var(--shadow);display:flex;align-items:center;gap:10px}
+#memFee .mf-meta .mf-m .mf-k{font-size:11px;color:var(--sub)}
+#memFee .mf-meta .mf-m .mf-v{font-size:15px;font-weight:800;color:var(--gold)}
+#memFee .mf-meta .mf-m .mf-v.mf-blue{color:var(--blue)}
+#memFee .mf-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:14px;box-shadow:var(--shadow)}
+#memFee .mf-card > h2{display:flex;align-items:center;gap:8px;font-size:15px;font-weight:800;margin-bottom:4px;flex-wrap:wrap}
+#memFee .mf-tag{display:inline-block;padding:2px 10px;border-radius:7px;color:#fff;font-size:12px;font-weight:800}
+#memFee .mf-card .mf-lead{font-size:11.5px;color:var(--sub);margin:2px 0 10px}
+#memFee .mf-tw{overflow-x:auto;margin-top:2px}
+#memFee table{width:100%;border-collapse:separate;border-spacing:1px;font-size:12.5px}
+#memFee table th{background:#f6f8fc;color:#4b5563;font-size:11.5px;padding:8px 8px;text-align:center;white-space:nowrap;font-weight:600}
+#memFee table td{position:relative;background:#fff;padding:8px 8px;text-align:center;white-space:nowrap}
+#memFee table td.mf-cert{font-weight:700}
+#memFee table td.mf-fee{font-weight:800}
+#memFee table td.mf-p1{color:var(--red);font-weight:800}
+#memFee .mf-t-blue table{background:rgba(29,111,224,.32)}
+#memFee .mf-t-purple table{background:rgba(124,58,237,.32)}
+#memFee .mf-t-gold table{background:rgba(183,121,31,.34)}
+#memFee .mf-badge{display:inline-block;min-width:36px;text-align:center;border-radius:6px;font-weight:800;padding:2px 7px;color:#fff;font-size:12px}
+#memFee .mf-t-blue .mf-badge{background:var(--blue)}
+#memFee .mf-t-blue .mf-tag{background:var(--blue)}
+#memFee .mf-t-purple .mf-badge{background:var(--purple)}
+#memFee .mf-t-purple .mf-tag{background:var(--purple)}
+#memFee .mf-t-gold .mf-badge{background:var(--gold)}
+#memFee .mf-t-gold .mf-tag{background:var(--gold)}
+#memFee .mf-note{margin-top:10px;background:#fbfcfe;border:1px dashed var(--line);border-radius:10px;padding:9px 11px;
+  font-size:12px;color:#374151;line-height:1.75}
+#memFee .mf-note .mf-t{font-weight:800;font-size:11.5px;margin-bottom:3px}
+#memFee .mf-t-blue .mf-note .mf-t{color:var(--blue)}
+#memFee .mf-t-purple .mf-note .mf-t{color:var(--purple)}
+#memFee .mf-t-gold .mf-note .mf-t{color:var(--gold)}
+#memFee em{font-style:normal;color:var(--red);font-weight:700}
+#memFee .mf-tier{display:inline-block;background:#fff3e0;color:#b05e10;border-radius:5px;padding:0 5px;margin:0 2px;font-weight:700}
+#memFee .mf-list{font-size:12.5px;color:#374151}
+#memFee .mf-list li{margin:7px 0 7px 20px;line-height:1.75}
+#memFee .mf-list li b{color:#c0392b}
+#memFee .mf-warn{margin-top:8px;background:#fff1f0;border:1px solid #f6c9c4;border-radius:10px;padding:9px 11px;
+  font-size:12px;color:#a1261c;line-height:1.7}
+#memFee .mf-notice{background:#fff8ec;border:1px solid #f5dfae}
+#memFee .mf-notice h2{color:#8a5a0b}
+#memFee .mf-foot{margin-top:18px;text-align:center;color:#98a0ab;font-size:11.5px}
+#memFee .mf-foot b{color:#4b5563}
+
+/* ==== 截图版补充（不属于 feestd 原 CSS）==== */
+#memFee .mf-perm{position:relative;margin-top:7px;font-size:12.5px;color:#c9d4ff;line-height:1.7}
+#memFee .mf-perms{margin-top:2px}
+#memFee .mf-hl{font-size:12px;color:#6b7280;font-weight:600}
+#memFee .mf-card{border-width:1px;border-style:solid}
+#memFee .mf-card.mf-t-blue{border-color:rgba(29,111,224,.22)}
+#memFee .mf-card.mf-t-purple{border-color:rgba(124,58,237,.22)}
+#memFee .mf-card.mf-t-gold{border-color:rgba(183,121,31,.28)}
+#memFee .mf-card.mf-notice{border-color:#f5dfae}
+#memFee .mf-card:not(.mf-t-blue):not(.mf-t-purple):not(.mf-t-gold):not(.mf-notice){border-color:#e7eaf0}
+#memFee .mf-note > div:last-child{white-space:normal}
+
+</style>
 </head>
 <body>
 <div id="gtLoadHint" class="gt-loadhint" role="status"><span class="d"></span><span>正在加载封面，请稍候……</span></div>
@@ -447,6 +525,119 @@ footer b{color:#4b5563}
   </section>
 
   <!-- 资费 -->
+  <template id="memFeeTpl"><div id="memFee"><div class="mf-page">
+  <div class="mf-hero">
+    <div class="mf-glow"></div>
+    <div class="mf-lv">👑 高级会员</div>
+    <h1>「夏天Jackey」PS数字版游戏租赁 · 会员资费标准</h1>
+    <div class="mf-sub">全首发游戏 · 全奖杯DLC<br>VX终身售后群，不跑路不Ban机</div>
+    <div class="mf-perms">
+      <div class="mf-perm">◆ 非认证：用卖家账号游玩（无存档无奖杯）</div>
+      <div class="mf-perm">◆ 可认证：用买家账号游玩（有存档有奖杯）</div>
+    </div>
+    <div class="mf-chips">
+      <span class="mf-chip">租赁数量 <b>1 个 / 次</b></span>
+      <span class="mf-chip">租赁押金 <b>免押</b></span>
+      <span class="mf-chip">租赁周期 <b>7 天（到期可续）/ 不限时</b></span>
+    </div>
+  </div>
+
+  <div class="mf-meta">
+    <div class="mf-m"><span class="mf-k">租赁数量</span><span class="mf-v">1 个 / 次</span></div>
+    <div class="mf-m"><span class="mf-k">租赁押金</span><span class="mf-v mf-blue">免押</span></div>
+    <div class="mf-m"><span class="mf-k">会费说明</span><span class="mf-v">一经办理不退费</span></div>
+  </div>
+
+  <div class="mf-card mf-t-blue">
+    <h2><span class="mf-tag">周租会员</span> <span>方案 A · B · C · D</span> <span class="mf-hl">（限时 7 天，到期可续）</span></h2>
+    <div class="mf-lead">按「游戏发售时间」分档，可补差升级。</div>
+    <div class="mf-tw">
+      <table>
+        <tr><th>方案</th><th>租赁版本</th><th>会员费</th><th>可玩游戏</th><th>会员价</th><th>租期</th></tr>
+        <tr><td rowspan="2"><span class="mf-badge">A</span></td><td class="mf-cert">非认证</td><td class="mf-fee">78元/年</td><td>发售 &gt; 24 个月</td><td class="mf-p1">1元</td><td>7 天（到期可续）</td></tr>
+        <tr><td class="mf-cert">可认证</td><td class="mf-fee">128元/年</td><td>发售 &gt; 24 个月</td><td class="mf-p1">2元</td><td>7 天（到期可续）</td></tr>
+        <tr><td rowspan="2"><span class="mf-badge">B</span></td><td class="mf-cert">非认证</td><td class="mf-fee">128元/年</td><td>发售 &gt; 12 个月</td><td class="mf-p1">1元</td><td>7 天（到期可续）</td></tr>
+        <tr><td class="mf-cert">可认证</td><td class="mf-fee">198元/年</td><td>发售 &gt; 12 个月</td><td class="mf-p1">2元</td><td>7 天（到期可续）</td></tr>
+        <tr><td rowspan="2"><span class="mf-badge">C</span></td><td class="mf-cert">非认证</td><td class="mf-fee">258元/年</td><td>发售 &gt; 6 个月</td><td class="mf-p1">1元</td><td>7 天（到期可续）</td></tr>
+        <tr><td class="mf-cert">可认证</td><td class="mf-fee">398元/年</td><td>发售 &gt; 6 个月</td><td class="mf-p1">2元</td><td>7 天（到期可续）</td></tr>
+        <tr><td rowspan="2"><span class="mf-badge">D</span></td><td class="mf-cert">非认证</td><td class="mf-fee">358元/年</td><td>发售 &gt; 3 个月</td><td class="mf-p1">1元</td><td>7 天（到期可续）</td></tr>
+        <tr><td class="mf-cert">可认证</td><td class="mf-fee">498元/年</td><td>发售 &gt; 3 个月</td><td class="mf-p1">2元</td><td>7 天（到期可续）</td></tr>
+      </table>
+    </div>
+    <div class="mf-note">
+      <div class="mf-t">备注</div>
+      <div>1. <em>【会员价 · 限时】</em>持有 1 个游戏；<br>
+      2. 持有的游戏不归还，额外租赁按 <em>【标准价 7 折 · 限时】</em> 收费。</div>
+    </div>
+  </div>
+
+  <div class="mf-card mf-t-purple">
+    <h2><span class="mf-tag">不限时会员</span> <span>方案 E</span> <span class="mf-hl">（会员期内不限时，1 个月以上新游也能玩）</span></h2>
+    <div class="mf-lead">发售 &gt; 1 个月的游戏会员期内不限时持有；<br>发售 &lt; 1 个月的游戏按标准价 7 折限时租赁。</div>
+    <div class="mf-tw">
+      <table>
+        <tr><th>方案</th><th>租赁版本</th><th>会员费</th><th>可玩游戏</th><th>会员价</th><th>租期</th></tr>
+        <tr><td rowspan="2"><span class="mf-badge">E</span></td><td class="mf-cert">非认证</td><td class="mf-fee">458元/年</td><td>发售 &gt; 1 个月</td><td class="mf-p1">1元</td><td>不限时</td></tr>
+        <tr><td class="mf-cert">可认证</td><td class="mf-fee">598元/年</td><td>发售 &gt; 1 个月</td><td class="mf-p1">2元</td><td>不限时</td></tr>
+      </table>
+    </div>
+    <div class="mf-note">
+      <div class="mf-t">备注</div>
+      <div>1. <em>【会员价 · 不限时】</em>持有 1 个发售 &gt; 1 个月的游戏；<br>
+      2. <em>【标准价 7 折 · 限时】</em>持有 1 个发售 &lt; 1 个月的游戏；<br>
+      3. 持有的游戏不归还，额外租赁按发售时间打折：<br>
+      <span class="mf-tier">6 折</span>1 个月 &lt; 发售 ≤ 6 个月<br>
+      <span class="mf-tier">5 折</span>6 个月 &lt; 发售 ≤ 12 个月<br>
+      <span class="mf-tier">4 折</span>12 个月 &lt; 发售 ≤ 24 个月<br>
+      <span class="mf-tier">3 折</span>发售 &gt; 24 个月</div>
+    </div>
+  </div>
+
+  <div class="mf-card mf-t-gold">
+    <h2><span class="mf-tag">终身会员</span> <span>方案 F</span> <span class="mf-hl">（一次付费，终身有效）</span></h2>
+    <div class="mf-lead">所有游戏都能玩，按发售时间打 3–7 折。</div>
+    <div class="mf-tw">
+      <table>
+        <tr><th>方案</th><th>租赁版本</th><th>会员费</th><th>可玩游戏</th><th>会员价</th><th>租期</th></tr>
+        <tr><td rowspan="2"><span class="mf-badge">F</span></td><td class="mf-cert">非认证</td><td class="mf-fee">558元/终身</td><td>所有</td><td class="mf-p1">标准价 3–7 折</td><td>7 天（到期可续）</td></tr>
+        <tr><td class="mf-cert">可认证</td><td class="mf-fee">798元/终身</td><td>所有</td><td class="mf-p1">标准价 3–7 折</td><td>7 天（到期可续）</td></tr>
+      </table>
+    </div>
+    <div class="mf-note">
+      <div class="mf-t">备注</div>
+      <div>1. <em>【标准价打折 · 限时】</em>持有 1 个游戏：<br>
+      <span class="mf-tier">7 折</span>发售 &lt; 1 个月<br>
+      <span class="mf-tier">6 折</span>1 个月 &lt; 发售 ≤ 6 个月<br>
+      <span class="mf-tier">5 折</span>6 个月 &lt; 发售 ≤ 12 个月<br>
+      <span class="mf-tier">4 折</span>12 个月 &lt; 发售 ≤ 24 个月<br>
+      <span class="mf-tier">3 折</span>发售 &gt; 24 个月<br>
+      2. 持有的游戏不归还，额外租赁按 <em>【标准价 · 限时】</em> 收费</div>
+    </div>
+  </div>
+
+  <div class="mf-card">
+    <h2>🎮 游戏说明</h2>
+    <ul class="mf-list">
+      <li><b>会员一经办理，不得以任何理由退费。</b></li>
+      <li><b>非认证：</b>用卖家账号玩游戏，存档 / 进度 / 奖杯保留在卖家账号。<br>
+          <b>可认证：</b>用买家账号玩游戏，存档 / 进度 / 奖杯保留在买家账号。<br>
+          <b>限定版：</b>离线认证 30 天，按标准价计费，不享会员折扣。</li>
+    </ul>
+  </div>
+
+  <div class="mf-card mf-notice">
+    <h2>⚠️ 注意事项</h2>
+    <ul class="mf-list">
+      <li>此服务仅支持<b>会员本人</b>使用，禁止外借或转让、租非认证改认证、登录多台主机 / 手机 APP / 网页、修改账号资料。</li>
+      <li>账号解除认证后必须<b>第一时间联系商家回收账号</b>；私自解除未联系商家导致无法回收的，按续期计费至会员期结束。</li>
+    </ul>
+    <div class="mf-warn">违规使用，本店有权取消会员资格并终止服务。</div>
+  </div>
+
+  <div class="mf-foot">「夏天Jackey」PS数字版游戏租赁　|　资费标准以本页为准</div>
+</div></div>
+</template>
+
   <section id="memView" style="display:none"></section>
 </main>
 
@@ -1282,80 +1473,8 @@ function renderNSComing(){
 const CLSCOLORS={周租会员:"#1d6fe0",不限时会员:"#7c3aed",终身会员:"#b7791f"};
 function renderMEM(){
   const v=$("#memView");v.innerHTML="";
-  const intro=el("div","mcard");
-  intro.appendChild(el("h3",null,MEM.title||"会员资费"));
-  /* 改47: 会员资费说明与PS图例同款式, 按分号分行竖排 */
-  const sub=el("div","gen");(MEM.sub||"").split("；").forEach(s=>{sub.appendChild(el("div",null,s));});
-  intro.appendChild(sub);
-  v.appendChild(intro);
-
-  const groups={};
-  (MEM.plans||[]).forEach(p=>{(groups[p.class]=groups[p.class]||[]).push(p);});
-  Object.keys(groups).forEach(cls=>{
-    const card=el("div","mcard");
-    const h3=el("h3",null);
-    h3.appendChild(el("span","tag",cls)).style.background=CLSCOLORS[cls]||"#666";
-    h3.appendChild(document.createTextNode("（"+cls+"）"));
-    h3.lastChild.remove();
-    card.appendChild(h3);
-    const tbl=el("table","ptable");
-    /* 改67q: 网格线颜色=会员卡主题色(徽章色32%透明度): 周租蓝/不限时紫/终身土黄 */
-    const _c=(CLSCOLORS[cls]||"#666666").replace("#","");
-    tbl.style.background="rgba("+parseInt(_c.substr(0,2),16)+","+parseInt(_c.substr(2,2),16)+","+parseInt(_c.substr(4,2),16)+",.32)";
-    const thead=el("tr",null);
-    /* 改56: 表头文案调整 */
-    /* 改67f: 终身会员卡的会费表头改为（终身）, 其余仍为（年） */
-    const feeHead=cls==="终身会员"?"会费（终身）":"会费（年）";
-    ["方案","版本",feeHead,"可玩游戏","会员价","租期","押金"].forEach(t=>thead.appendChild(el("th",null,t)));
-    tbl.appendChild(thead);
-    /* 改56: 相邻同方案合并单元格居中, 分组加框; 租期去掉"（到期可续）" */
-    const rows=groups[cls];let i=0;
-    while(i<rows.length){
-      let j=i;while(j<rows.length&&rows[j].scheme===rows[i].scheme)j++;
-      for(let k=i;k<j;k++){
-        const tr=el("tr",(k===i?"g-first ":"")+(k===j-1?"g-last ":"")+"g-row");
-        if(k===i){
-          const td0=el("td",null);td0.rowSpan=j-i;
-          const b=el("span","plan-badge",rows[i].scheme);b.style.background=CLSCOLORS[cls]||"#666";
-          td0.appendChild(b);tr.appendChild(td0);
-        }
-        tr.appendChild(el("td","cert",rows[k].cert));
-        /* 改67f: 会费去掉"/终身"后缀(与"/年"同规则) */
-        tr.appendChild(el("td",null,(rows[k].fee||"").replace(/\/(年|终身)/g,"")));
-        tr.appendChild(el("td",null,rows[k].eligible));
-        tr.appendChild(el("td",null,rows[k].price));
-        tr.appendChild(el("td",null,(rows[k].tenure||"").replace(/（到期可续）/g,"")));
-        tr.appendChild(el("td",null,(MEM.common||{}).deposit||"免押"));
-        tbl.appendChild(tr);
-      }
-      i=j;
-    }
-    card.appendChild(tbl);
-    const wrap=el("div");wrap.style.overflowX="auto";wrap.appendChild(tbl);card.appendChild(wrap);
-    /* 改59: 租赁数量改为金色chip(同PS卡片"支持主机"样式) */
-    const rc=el("span","chip host");rc.appendChild(el("i","pre","租赁数量"));rc.appendChild(document.createTextNode(" "+((MEM.common||{}).count||"1个/次")));
-    /* 改67g: 底部一行 = 租赁数量chip + 说明小字(按会员类别配色, 同方案徽章色) */
-    const CLASS_NOTE={
-      "周租会员":{t:"不在可玩范围内的游戏，按非会员标准价租赁",c:"#1d6fe0"},
-      "不限时会员":{t:"发售＜1个月内的游戏，按标准价7折租赁",c:"#7c3aed"},
-      "终身会员":{t:"标准价：指商家在平台上架的商品价，即非会员价格",c:"#b7791f"}
-    };
-    const mfoot=el("div","mfoot");mfoot.appendChild(rc);
-    const cn=CLASS_NOTE[cls];
-    if(cn){
-      /* 改67i: 租赁数量chip底纹/描边/文字 跟随右侧说明文字颜色(浅色底+同色系描边) */
-      rc.style.background=cn.c+"16";
-      rc.style.borderColor=cn.c+"59";
-      rc.style.color=cn.c;
-      const nt=el("div","mnote",cn.t);nt.style.color=cn.c;mfoot.appendChild(nt);
-    }
-    card.appendChild(mfoot);
-    v.appendChild(card);
-  });
-  const nc=el("div","mcard notice-box");
-  nc.appendChild(el("h3",null,"⚠️ 说明与注意事项"));
-  const ul2=el("ul","notes");(MEM.notice||[]).forEach(t=>{const li=el("li",null);t.split("\n").forEach((seg,i)=>{const sp=document.createElement("span");sp.className="seg";sp.textContent=seg;li.appendChild(sp);});ul2.appendChild(li);});nc.appendChild(ul2);
-  v.appendChild(nc);
+  const tp=document.getElementById("memFeeTpl");
+  if(tp){if(tp.content)v.appendChild(tp.content.cloneNode(true));else v.innerHTML=tp.innerHTML;}
 }
 
 /* ---------- Tab 与事件 ---------- */
