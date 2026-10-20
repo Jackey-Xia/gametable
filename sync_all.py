@@ -91,6 +91,11 @@ for _b in ("banner_mem.jpg", "banner_plat.jpg"):
     _bp = os.path.join(BASE, _b)
     if os.path.exists(_bp):
         shutil.copyfile(_bp, os.path.join(site, _b))
+# 改130: 淘宝商品链接表(商品卡片「去淘宝下单」按钮用) -> 站点根目录 taobao.json
+tb = os.path.join(BASE, "data", "taobao.json")
+if os.path.exists(tb):
+    shutil.copyfile(tb, os.path.join(site, "taobao.json"))
+    print("taobao.json 已同步")
 # 改68: 封面目录整体同步 (covers/manifest.json + 图片) 到 Pages 站点
 cv_src = os.path.join(BASE, "covers")
 if os.path.isdir(cv_src):
