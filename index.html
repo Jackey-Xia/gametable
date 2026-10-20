@@ -748,7 +748,7 @@ footer b{color:#4b5563}
   .gmain .tbbtn{height:30px;padding:0 6px;font-size:11.5px;gap:3px}
   .gmain .tbbtn .tbi{font-size:11.5px}
 }</style>
-<style id="tbwx-css">/* 改139-begin: 微信内购买按钮 —— 只唤起App + 站内引导(绝不跳淘宝URL, 微信会拦) */
+<style id="tbwx-css">/* 改140-begin: 微信内购买按钮 —— 只唤起App + 站内引导(绝不跳淘宝URL, 微信会拦) */
 .tbx-mask{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(12,17,26,.55);
   z-index:99999;display:none;align-items:center;justify-content:center;padding:24px;
   opacity:0;transition:opacity .18s ease;-webkit-tap-highlight-color:transparent}
@@ -776,7 +776,7 @@ footer b{color:#4b5563}
 .tbx-spin{display:inline-block;width:13px;height:13px;border-radius:50%;vertical-align:-2px;
   margin-right:6px;border:2px solid #ffd9c4;border-top-color:#ff5000;animation:tbxspin .8s linear infinite}
 @keyframes tbxspin{to{transform:rotate(360deg)}}
-/* 改139-end */
+/* 改140-end */
 </style>
 </head>
 <body>
@@ -1837,7 +1837,8 @@ function tbIdOf(g){
 /* 改134-end */
 /* 改136-end */
 
-/* 改139-begin: 微信内购买按钮 —— 只唤起App(不跳URL, 微信连 e.tb.cn 短链都拦) + 站内引导 */
+
+/* 改140-begin: 微信内购买按钮 —— 只唤起App(不跳URL, 微信连 e.tb.cn 短链都拦) + 站内引导 */
 (function(){
   if(!/MicroMessenger/i.test(navigator.userAgent))return;
   function copy(u){
@@ -1879,8 +1880,8 @@ function tbIdOf(g){
       '<div class="tbx-t" id="tbxT">正在打开…</div>'+
       '<div class="tbx-d" id="tbxD"></div>'+
       '<div class="tbx-u" id="tbxUrl"></div>'+
-      '<div class="tbx-act"><button class="tbx-btn main" id="tbxOpen">打开淘宝App</button></div>'+
-      '<div class="tbx-act sub"><button class="tbx-btn ghost sm" id="tbxCopy">复制链接</button>'+
+      '<div class="tbx-act" id="tbxAct1"><button class="tbx-btn main" id="tbxCopy">复制商品链接</button></div>'+
+      '<div class="tbx-act sub"><button class="tbx-btn ghost sm" id="tbxOpen">打开淘宝App</button>'+
       '<button class="tbx-btn ghost sm" id="tbxClose">关闭</button></div>'+
       '<input type="hidden" id="tbxApp" value="tb"><input type="hidden" id="tbxId" value=""></div>';
     document.body.appendChild(m);
@@ -1890,7 +1891,7 @@ function tbIdOf(g){
       if(t.id==="tbxCopy"){
         copy(document.getElementById("tbxUrl").textContent||"");
         t.textContent="已复制 ✓";
-        setTimeout(function(){t.textContent="复制链接";},1500);
+        setTimeout(function(){t.textContent="复制商品链接";},1500);
       }
       if(t.id==="tbxOpen"&&String(t.className).indexOf("wait")<0){
         var k=document.getElementById("tbxApp").value,i=document.getElementById("tbxId").value;
@@ -1910,15 +1911,17 @@ function tbIdOf(g){
     document.getElementById("tbxApp").value=kind;
     document.getElementById("tbxId").value=(window.__tbxLastId||"");
     var T=document.getElementById("tbxT"),D=document.getElementById("tbxD"),
-        O=document.getElementById("tbxOpen");
+        O=document.getElementById("tbxOpen"),C=document.getElementById("tbxCopy");
+    var A1=document.getElementById("tbxAct1");
     if(state==="wait"){
       T.innerHTML='<span class="tbx-spin"></span>正在打开'+APP+'…';
-      D.innerHTML='如果没反应，点下面按钮再唤起一次，或复制链接后打开'+APP+'会自动弹出这个商品。';
-      O.className="tbx-btn main wait";O.textContent="正在唤起…";
+      D.innerHTML='如果没反应，稍等一下会出现「复制商品链接」，复制后打开'+APP+'就会自动弹出这个商品。';
+      A1.style.display="none";
     }else{
       T.textContent="没自动打开"+APP;
-      D.innerHTML='微信里不能直接打开'+APP+'链接。<b>链接已复制</b>：打开'+APP+'会自动弹出这个商品。';
-      O.className="tbx-btn main";O.textContent="打开"+APP+"App";
+      D.innerHTML='微信会拦住淘宝链接，只能用这招：<b>复制链接 → 打开'+APP+'App</b>，商品会自动弹出。';
+      A1.style.display="flex";A1.style.alignItems="center";A1.style.justifyContent="center";
+      C.textContent="复制商品链接";C.className="tbx-btn main";
     }
     m.style.display="flex";
     requestAnimationFrame(function(){m.className="tbx-mask on";});
@@ -1954,14 +1957,17 @@ function tbIdOf(g){
     document.addEventListener("visibilitychange",left);
     window.addEventListener("pagehide",left);
     /* 第一个 scheme 必须同步执行(用户手势内), 不能用 setTimeout 推迟 —— 否则 iOS 判定为非手势 */
-    iframe(list[0]);
+    iframe(list[0]);                                   /* 同步: 用户手势内 */
     setTimeout(function(){if(stay)iframe(list[1]);},300);
-    setTimeout(function(){if(stay)paint(u,kind,"wait");},600);
-    setTimeout(function(){off();if(stay)paint(u,kind,"fail");},1600);
+    /* iOS 微信里 iframe 常被禁, 但 location.href=scheme 会弹「是否打开淘宝」确认框 ——
+       装了 App 的用户点允许就真跳过去了, 未安装才会弹「无法打开」(关掉即可回到本页) */
+    setTimeout(function(){if(stay){try{location.href=list[0];}catch(e){}}},480);
+    setTimeout(function(){if(stay)paint(u,kind,"wait");},700);
+    setTimeout(function(){off();if(stay)paint(u,kind,"fail");},1700);
     return false;
   },true);
 })();
-/* 改139-end */
+/* 改140-end */
 
 /* 改130-end */
 function gameCard(g,idx){
