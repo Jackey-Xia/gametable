@@ -786,6 +786,27 @@ footer b{color:#4b5563}
 @keyframes tbxspin{to{transform:rotate(360deg)}}
 /* 改141-end */
 </style>
+<style id="gcard144-css">/* 改144-begin: 卡片排版三处调整（按钮下移 / 价格框与封面同高+边框加粗居中 / 手机封面拉伸） */
+@media(min-width:641px){
+  /* ① 两个购买按钮下移，底边与左侧封面底边齐平 */
+  .gcard .gmain .tbrow{margin-top:25px}
+  /* ② 价格框：与封面同高 128px，边框加粗到 2px，内容整体居中 */
+  .gcard .gprices{height:128px}
+  .gcard .gprices .pt{height:100%;padding:0 9px;border-width:2px;
+    justify-content:center;align-items:center;text-align:center}
+  .gcard .gprices .pt.bok,.gcard .gprices .pt.bno,.gcard .gprices .pt.bpart{border-width:2px}
+  .gcard .gprices .pt .s{flex:0 0 auto}
+}
+@media(max-width:640px){
+  /* ③ 封面等比例放大：顶部与中文名齐平，底部与购买按钮齐平（高度随文字块） */
+  .gcard .gcover{width:106px;height:auto;min-height:99px;align-self:stretch}
+  .gcard .gcover img{height:100%;min-height:99px}
+}
+@media(max-width:339px){
+  .gcard .gcover{width:92px}
+}
+/* 改144-end */
+</style>
 </head>
 <body>
 <!-- 改123a -->
