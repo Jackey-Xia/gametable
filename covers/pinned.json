@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1115,
+  "count": 1117,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-20T03:54:40"
+  "updated": "2026-10-20T03:57:32"
  },
  "locks": {
   "p0001": {
@@ -14663,6 +14663,32 @@
    "role": "P",
    "store": "",
    "time": "2026-10-19T02:30:56"
+  },
+  "p1116": {
+   "cn": [
+    "最终幻想：共鸣3"
+   ],
+   "en": "",
+   "file": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rcccc1dfbf08c1.jpg&w=256&q=82&output=jpg",
+   "md5": "",
+   "note": "多库存沿用: 与《最终幻想：共鸣1》同一商品仅增加库存, 直接沿用同款封面",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "FINAL FANTASY RESONANCE (韩语, 简体中文, 繁体中文) PS Store HK",
+   "time": "2026-10-20T03:57:31"
+  },
+  "p1117": {
+   "cn": [
+    "最终幻想：共鸣4"
+   ],
+   "en": "",
+   "file": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rcccc1dfbf08c1.jpg&w=256&q=82&output=jpg",
+   "md5": "",
+   "note": "多库存沿用: 与《最终幻想：共鸣1》同一商品仅增加库存, 直接沿用同款封面",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "FINAL FANTASY RESONANCE (韩语, 简体中文, 繁体中文) PS Store HK",
+   "time": "2026-10-20T03:57:31"
   }
  }
 }
