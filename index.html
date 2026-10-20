@@ -1704,13 +1704,34 @@ function tbUrl(g){
   var u=TB[tbKey(en)]||TB[tbKey(tbCut(en))]||TB[tbKey(nm)]||TB[tbKey(tbCut(nm))]||"";
   return /^https?:\/\//i.test(u)?u:"";
 }
-function tbEl(u){
+/* 改135-begin: href 用「商品 id + 淘宝官方 H5 详情页」—— 永久有效, 不依赖会过期的短链 */
+var TB_H5="https://h5.m.taobao.com/awp/core/detail.htm?id=";
+function tbHref(u,g){
+  var id="";
+  try{if(typeof tbIdOf==="function")id=tbIdOf(g);}catch(e){}
+  return id?(TB_H5+id):u;
+}
+function tbEl(u,g){
   var a=document.createElement("a");
-  a.className="tbbtn";a.href=u;a.target="_blank";a.rel="noopener noreferrer";
+  a.className="tbbtn";a.href=tbHref(u,g);a.target="_blank";a.rel="noopener noreferrer";
   a.appendChild(el("span","tbi","🛒"));
   a.appendChild(document.createTextNode("去淘宝下单"));
   return a;
 }
+/* id 表比卡片晚到时, 回填已渲染按钮的 href(短链 -> 永久地址) */
+function tbFixHref(){
+  try{
+    var list=document.querySelectorAll(".tbbtn");
+    for(var i=0;i<list.length;i++){
+      var a=list[i],c=a.closest?a.closest(".gcard"):null;if(!c)continue;
+      var ix=parseInt(String(c.id||"").replace("gc-",""),10);if(isNaN(ix))continue;
+      var g=(typeof curRows!=="undefined"?curRows:[])[ix];if(!g)continue;
+      var id="";try{id=tbIdOf(g);}catch(e){}
+      if(id)a.href=TB_H5+id;
+    }
+  }catch(e){}
+}
+/* 改135-end */
 /* 链接表一般比列表晚到一步: 给已经渲染出来的卡片补按钮(不重排、不动滚动位置) */
 function tbPaint(){
   var list=$("#psList");if(!list)return;
@@ -1719,7 +1740,7 @@ function tbPaint(){
     var c=cards[i];if(c.querySelector(".tbbtn"))continue;
     var ix=parseInt(String(c.id||"").replace("gc-",""),10);
     var g=(typeof curRows!=="undefined"?curRows:[])[ix];if(!g)continue;
-    var u=tbUrl(g);if(u)(c.querySelector(".gmain")||c).appendChild(tbEl(u));
+    var u=tbUrl(g);if(u)(c.querySelector(".gmain")||c).appendChild(tbEl(u,g));
   }
 }
 (function(){try{
@@ -1760,7 +1781,7 @@ function gameCard(g,idx){
   }
   main.appendChild(meta);
   /* 改130-begin: 淘宝下单按钮(名称/信息行下方, 未配置链接的商品不显示) */
-  (function(){var u=tbUrl(g);if(u)main.appendChild(tbEl(u));})();
+  (function(){var u=tbUrl(g);if(u)main.appendChild(tbEl(u,g));})();
   /* 改130-end */
     card.appendChild(main);
   /* 价签(改17): 可认证=PS4/PS5 独立库存位; 非认证=共用位; 限定版=独立位 */
@@ -2226,6 +2247,7 @@ function tbIdOf(g){
       var mm=String(m[k2]||"").match(/[?&]id=(\d+)/);
       if(mm&&!TB_ID[tbKey(k2)])TB_ID[tbKey(k2)]=mm[1];
     }
+    try{tbFixHref();}catch(e){}
   }).catch(function(){});
 }catch(e){}})();
 /* 改134-end */
