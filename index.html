@@ -779,6 +779,8 @@ footer b{color:#4b5563}
 .tbx-btn.sm{height:38px;font-size:13px}
 .tbx-btn.ghost{background:#f1f4f9;color:#5b6472}
 .tbx-btn.main{background:#ff5000;color:#fff;box-shadow:0 4px 12px rgba(255,80,0,.3)}
+/* 改147: 闲鱼黄用类承载，行内样式不再参与，复制成功后 .ok 的绿色才生效 */
+.tbx-btn.xy{background:#ffda00;color:#3d2f00;box-shadow:0 4px 12px rgba(255,218,0,.45)}
 .tbx-btn.ok{background:#00b578;color:#fff;box-shadow:0 4px 12px rgba(0,181,120,.28)}
 .tbx-btn.wait{opacity:.6}
 .tbx-spin{display:inline-block;width:13px;height:13px;border-radius:50%;vertical-align:-2px;
@@ -1936,6 +1938,7 @@ function tbIdOf(g){
         var k=String(document.getElementById("tbxApp").value);
         if(copy(u)){
           t.textContent="已复制 \u2713";t.className="tbx-btn ok";
+          t.style.background="";t.style.color="";t.style.boxShadow="";   /* 改147: 清行内样式，绿底才生效 */
           document.getElementById("tbxT").textContent="链接已复制 \u2713";
         }else{
           t.textContent="复制失败，请长按上方链接";t.className="tbx-btn main";
@@ -1976,13 +1979,12 @@ function tbIdOf(g){
       T.textContent=ok?("链接已复制 \u2713"):("请复制下面的链接");
       S.innerHTML='<span class="n">1</span>'+(ok?"商品链接已在剪贴板里":"长按上方链接复制")+'<br>'+
                   '<span class="n">2</span>打开 <b>'+APP+'App</b><br>'+
-                  '<span class="n">3</span>这个商品会自动弹出来';
-      TP.innerHTML='想一键直接跳？点微信右上角 <b>\u00B7\u00B7\u00B7</b> \u2192「在浏览器打开」，就能直接进商品页下单。';
+                  '<span class="n">3</span>在 App 顶部搜索框长按「粘贴」→ 点搜索，直达商品页';
+      TP.innerHTML='因微信限制无法直接跳转APP购买页，您可选择复制链接后手动打开APP or 右上角<b>···</b>→「在浏览打开」';
       A1.style.display="flex";A1.style.alignItems="center";A1.style.justifyContent="center";
       C.textContent=ok?"再复制一次":"复制链接";
       C.className=isXY?"tbx-btn xy":"tbx-btn main";
-      if(isXY){C.style.background="#ffda00";C.style.color="#3d2f00";C.style.boxShadow="0 4px 12px rgba(255,218,0,.45)";}
-      else{C.style.background="";C.style.color="";C.style.boxShadow="";}
+      C.style.background="";C.style.color="";C.style.boxShadow="";   /* 改147: 改用 .tbx-btn.xy 类 */
       O.textContent="打开"+APP+"App";
     }
     m.style.display="flex";
