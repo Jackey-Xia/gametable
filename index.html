@@ -1979,7 +1979,7 @@ function tbIdOf(g){
       T.textContent=ok?("链接已复制 \u2713"):("请复制下面的链接");
       S.innerHTML='<span class="n">1</span>'+(ok?"商品链接已在剪贴板里":"长按上方链接复制")+'<br>'+
                   '<span class="n">2</span>打开 <b>'+APP+'App</b><br>'+
-                  '<span class="n">3</span>在 App 顶部搜索框长按「粘贴」→ 点搜索，直达商品页';
+                  '<span class="n">3</span>点右上角···→「在浏览打开」，本页点「淘宝购买/闲鱼购买」自动拉起 App';
       TP.innerHTML='因微信限制无法直接跳转APP购买页，您可选择复制链接后手动打开APP or 右上角<b>···</b>→「在浏览打开」';
       A1.style.display="flex";A1.style.alignItems="center";A1.style.justifyContent="center";
       C.textContent=ok?"再复制一次":"复制链接";
@@ -2014,6 +2014,13 @@ function tbIdOf(g){
     if(!id){var mm=u.match(/[?&]id=(\d+)/);id=mm?mm[1]:"";}
     window.__tbxLastId=id;
     window.__tbxCopyOk=copy(u);        /* 点击瞬间就把永久链接放进剪贴板 */
+    /* 改148: 把待购商品写进 URL，微信内点「在浏览打开」后本页会自动唤起 App 直达商品页 */
+    try{
+      var _nu=location.pathname+location.search;
+      if(_nu.indexOf("?")<0)_nu+="?"; else _nu+="&";
+      _nu+="buy="+kind+"-"+id;
+      history.replaceState(null,"",_nu);
+    }catch(e){}
     var list=SCH[kind](id);
     var stay=true,off=function(){document.removeEventListener("visibilitychange",left);
                                  window.removeEventListener("pagehide",left);};
@@ -2544,6 +2551,26 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
         try{location.replace(u+h);}catch(e){try{location.reload();}catch(e2){}}
       },380);
     }).catch(function(){});
+  }catch(e){}
+})();
+</script>
+<script id="gt-buyjump">/* 改148: 在浏览器打开后自动唤起 App 直达商品页（微信内不处理，交由改141浮层） */
+(function(){
+  try{
+    var m=location.search.match(/[?&]buy=([a-z]+)-(\d+)/i);
+    if(!m)return;
+    if(/MicroMessenger/i.test(navigator.userAgent))return;
+    var kind=m[1], id=m[2];
+    var h5 = kind==='xy' ? 'https://h5.m.goofish.com/item?id='+id : 'https://h5.m.taobao.com/awp/core/detail.htm?id='+id;
+    var sch = kind==='xy' ? ['fleamarket://item?id='+id,'goofish://item?id='+id]
+                          : ['tbopen://item.taobao.com/item.htm?id='+id,'taobao://item.taobao.com/item.htm?id='+id];
+    try{ history.replaceState(null,'', location.pathname + location.search.replace(/[?&]buy=[^&]+/,'')); }catch(e){}
+    var left=false;
+    var fallback=function(){ if(left)return; left=true; try{ location.replace(h5); }catch(e){} };
+    var f=document.createElement('iframe'); f.style.display='none'; f.src=sch[0];
+    document.body.appendChild(f);
+    setTimeout(function(){ try{document.body.removeChild(f);}catch(e){} }, 700);
+    setTimeout(fallback, 1100);
   }catch(e){}
 })();
 </script>
