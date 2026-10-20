@@ -697,6 +697,15 @@ footer b{color:#4b5563}
   gap:0;line-height:1;box-shadow:0 4px 14px rgba(0,0,0,.28)}
 .hero.tmem .memhead-lv .lv-i{font-size:15px;line-height:1;font-weight:400}
 .hero.tmem .memhead-lv .lv-t{font-size:9px;line-height:1.15;letter-spacing:0;font-weight:800;margin-top:1px}
+/* 文字列右移后窄屏可用宽度少了 58px，租赁胶囊行需按屏幕缩一档，否则右侧会被裁掉 */
+@media (max-width:640px){
+  .hero.tmem .memhead-chips{gap:4px}
+  .hero.tmem .memhead-chip{font-size:9.5px;padding:2px 5px}
+}
+@media (max-width:379px){
+  .hero.tmem .memhead-chips{gap:3px}
+  .hero.tmem .memhead-chip{font-size:9px;padding:2px 4px}
+}
 @media (max-width:359px){
   .hero.tmem .memhead-lv{width:38px;height:38px;border-radius:12px}
   .hero.tmem .memhead-lv .lv-i{font-size:13px}
