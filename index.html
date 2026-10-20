@@ -730,6 +730,19 @@ footer b{color:#4b5563}
 }
 /* 改128-end */
 </style>
+<style id="tbbtn-css">/* 改130-begin: 商品卡片「去淘宝下单」按钮 —— 名称/信息行下方, 淘宝橙胶囊(手机整行) */
+.gmain .tbbtn{display:inline-flex;align-items:center;justify-content:center;gap:5px;height:32px;padding:0 16px;
+  margin-top:9px;align-self:flex-start;
+  border-radius:999px;background:#ff5000;color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.2px;
+  text-decoration:none;box-shadow:0 3px 10px rgba(255,80,0,.26);
+  -webkit-tap-highlight-color:transparent;transition:transform .12s ease,box-shadow .12s ease}
+.gmain .tbbtn:active{transform:scale(.97);box-shadow:0 1px 5px rgba(255,80,0,.26)}
+.gmain .tbbtn .tbi{font-size:13px;line-height:1;display:inline-block;margin-top:-1px}
+@media (max-width:640px){
+  .gmain .tbbtn{width:100%;height:40px;font-size:14px;padding:0 12px;margin-top:10px}
+}
+/* 改130-end */
+</style>
 </head>
 <body>
 <!-- 改123a -->
@@ -1655,6 +1668,42 @@ try{
   }).catch(function(){});
 }catch(e){}
 
+/* 改130-begin: 淘宝下单直链 —— 链接表 taobao.json(中文名/英文名为 key), 未配置的不显示按钮 */
+var TB={},TB_N=0;
+function tbKey(s){return String(s||"").toLowerCase().replace(/[\s　]/g,"").replace(/[（）()【】\[\]{}<>：:·•,，.。、;；!！?？'"“”‘’\-—_/\\|+=*#@&$%^~]/g,"");}
+function tbCut(s){return String(s||"").replace(/（[^（）]*）\s*$/g,"").replace(/\([^()]*\)\s*$/g,"");}
+function tbUrl(g){
+  if(!g)return "";
+  var en=g.en||"",nm=g._disp||g.name||"";
+  var u=TB[tbKey(en)]||TB[tbKey(tbCut(en))]||TB[tbKey(nm)]||TB[tbKey(tbCut(nm))]||"";
+  return /^https?:\/\//i.test(u)?u:"";
+}
+function tbEl(u){
+  var a=document.createElement("a");
+  a.className="tbbtn";a.href=u;a.target="_blank";a.rel="noopener noreferrer";
+  a.appendChild(el("span","tbi","🛒"));
+  a.appendChild(document.createTextNode("去淘宝下单"));
+  return a;
+}
+/* 链接表一般比列表晚到一步: 给已经渲染出来的卡片补按钮(不重排、不动滚动位置) */
+function tbPaint(){
+  var list=$("#psList");if(!list)return;
+  var cards=list.querySelectorAll(".gcard");
+  for(var i=0;i<cards.length;i++){
+    var c=cards[i];if(c.querySelector(".tbbtn"))continue;
+    var ix=parseInt(String(c.id||"").replace("gc-",""),10);
+    var g=(typeof curRows!=="undefined"?curRows:[])[ix];if(!g)continue;
+    var u=tbUrl(g);if(u)(c.querySelector(".gmain")||c).appendChild(tbEl(u));
+  }
+}
+(function(){try{
+  fetch("taobao.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():{}}).then(function(m){
+    var n=0;for(var k in m){if(m[k]&&/^https?:\/\//i.test(String(m[k]))){TB[tbKey(k)]=String(m[k]);n++;}}
+    TB_N=n;tbPaint();
+  }).catch(function(){});
+}catch(e){}})();
+/* 改130-end */
+
 function gameCard(g,idx){
   const card=el("div","gcard");
   if(idx!=null)card.id="gc-"+idx;   /* 改76: 联想跳转定位用 */
@@ -1685,6 +1734,9 @@ function gameCard(g,idx){
     meta.appendChild(hc);
   }
   main.appendChild(meta);
+  /* 改130-begin: 淘宝下单按钮(名称/信息行下方, 未配置链接的商品不显示) */
+  (function(){var u=tbUrl(g);if(u)main.appendChild(tbEl(u));})();
+  /* 改130-end */
   card.appendChild(main);
   /* 价签(改17): 可认证=PS4/PS5 独立库存位; 非认证=共用位; 限定版=独立位 */
   const prices=el("div","gprices");
