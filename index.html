@@ -688,6 +688,25 @@ footer b{color:#4b5563}
   background:rgba(255,247,230,.97);box-shadow:0 6px 18px rgba(0,0,0,.22)}
 /* 改126-end */
 </style>
+<style id="memhead-align-css">/* 改127-begin: 会员资费页头文字列与 PS 游戏注释列对齐 ——
+   徽章改成 46×46 方块占「头像位」，文字列整体右移 58px(=46 头像 + 12 间距)，
+   标题 / 注解 / 权限说明 / 租赁胶囊行与 PS 游戏逐像素同一条竖线。 */
+.hero.tmem .memhead{padding-left:calc(16px + 58px)}
+.hero.tmem .memhead-lv{position:absolute;left:16px;top:0;width:46px;height:46px;border-radius:14px;
+  padding:0;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:0;line-height:1;box-shadow:0 4px 14px rgba(0,0,0,.28)}
+.hero.tmem .memhead-lv .lv-i{font-size:15px;line-height:1;font-weight:400}
+.hero.tmem .memhead-lv .lv-t{font-size:9px;line-height:1.15;letter-spacing:0;font-weight:800;margin-top:1px}
+@media (max-width:359px){
+  .hero.tmem .memhead-lv{width:38px;height:38px;border-radius:12px}
+  .hero.tmem .memhead-lv .lv-i{font-size:13px}
+  .hero.tmem .memhead-lv .lv-t{font-size:8px}
+  .hero.tmem .memhead-sub{margin-top:4px;line-height:1.4}
+  .hero.tmem .memhead-perm{margin-top:4px;line-height:1.4}
+  .hero.tmem .memhead-chips{margin-top:5px}
+}
+/* 改127-end */
+</style>
 </head>
 <body>
 <!-- 改123a -->
@@ -702,7 +721,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 <header class="hero">
   <div class="hero-scrim" aria-hidden="true"></div>
   <div class="memhead">
-  <div class="memhead-title"><span class="memhead-lv">👑 高级会员</span><span class="memhead-h1">「夏天Jackey」PS数字版游戏</span></div>
+  <div class="memhead-title"><span class="memhead-lv"><b class="lv-i">👑</b><b class="lv-t">高级会员</b></span><span class="memhead-h1">「夏天Jackey」PS数字版游戏</span></div>
   <div class="memhead-sub">全首发游戏 · 全奖杯DLC<br>VX终身售后群，不跑路不Ban机</div>
   <div class="memhead-perm">◆ 非认证：用卖家账号游玩（无存档无奖杯）</div>
   <div class="memhead-perm">◆ 可认证：用买家账号游玩（有存档有奖杯）</div>
