@@ -1926,8 +1926,6 @@ function tbIdOf(g){
       '<div class="tbx-u" id="tbxUrl"></div>'+
       '<div class="tbx-tip" id="tbxTip"></div>'+
       '<div class="tbx-act" id="tbxAct1"><button class="tbx-btn main" id="tbxCopy">复制商品链接</button></div>'+
-      '<div class="tbx-act sub"><button class="tbx-btn ghost sm" id="tbxOpen">打开淘宝App</button>'+
-      '<button class="tbx-btn ghost sm" id="tbxClose">关闭</button></div>'+
       '<input type="hidden" id="tbxApp" value="tb"><input type="hidden" id="tbxId" value=""></div>';
     document.body.appendChild(m);
     m.addEventListener("click",function(e){
@@ -1966,7 +1964,7 @@ function tbIdOf(g){
     document.getElementById("tbxApp").value=kind;
     document.getElementById("tbxId").value=(window.__tbxLastId||"");
     var T=document.getElementById("tbxT"),S=document.getElementById("tbxSteps"),
-        TP=document.getElementById("tbxTip"),O=document.getElementById("tbxOpen"),
+        TP=document.getElementById("tbxTip"),
         C=document.getElementById("tbxCopy"),A1=document.getElementById("tbxAct1");
     S.className=isXY?"tbx-steps xy":"tbx-steps";
     if(state==="wait"){
@@ -1985,7 +1983,6 @@ function tbIdOf(g){
       C.textContent=ok?"再复制一次":"复制链接";
       C.className=isXY?"tbx-btn xy":"tbx-btn main";
       C.style.background="";C.style.color="";C.style.boxShadow="";   /* 改147: 改用 .tbx-btn.xy 类 */
-      O.textContent="打开"+APP+"App";
     }
     m.style.display="flex";
     requestAnimationFrame(function(){m.className="tbx-mask on";});
