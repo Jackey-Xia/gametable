@@ -1668,6 +1668,7 @@ try{
   }).catch(function(){});
 }catch(e){}
 
+
 /* 改130-begin: 淘宝下单直链 —— 链接表 taobao.json(中文名/英文名为 key), 未配置的不显示按钮 */
 var TB={},TB_N=0;
 function tbKey(s){return String(s||"").toLowerCase().replace(/[\s　]/g,"").replace(/[（）()【】\[\]{}<>：:·•,，.。、;；!！?？'"“”‘’\-—_/\\|+=*#@&$%^~]/g,"");}
@@ -1737,7 +1738,7 @@ function gameCard(g,idx){
   /* 改130-begin: 淘宝下单按钮(名称/信息行下方, 未配置链接的商品不显示) */
   (function(){var u=tbUrl(g);if(u)main.appendChild(tbEl(u));})();
   /* 改130-end */
-  card.appendChild(main);
+    card.appendChild(main);
   /* 价签(改17): 可认证=PS4/PS5 独立库存位; 非认证=共用位; 限定版=独立位 */
   const prices=el("div","gprices");
   /* 改39: 仅支持PS5时, 可认证库存文字显示"库存：有/无"(不带PS5前缀) */
