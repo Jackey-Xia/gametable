@@ -2475,5 +2475,45 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
+<script id="gt-autorefresh">
+/* 改143-begin: 检测到新版本自动刷新一次（绕开 GitHub Pages 10 分钟缓存） */
+(function(){
+  var KEY="gt_ver";
+  function param(n){
+    var m=location.search.match(new RegExp("[?&]"+n+"=([^&]*)"));
+    return m?decodeURIComponent(m[1]):"";
+  }
+  function read(k){try{return localStorage.getItem(k)||"";}catch(e){return "";}}
+  function write(k,v){try{localStorage.setItem(k,v);}catch(e){}}
+  try{
+    fetch("ver.json?t="+Date.now()).then(function(r){return r.json();}).then(function(j){
+      var v=j&&j.v?String(j.v):"";
+      if(!v)return;
+      var ts=Date.parse(v);
+      var mark=ts?String(ts):v;                 /* 用时间戳做短版本号 */
+      var done=read(KEY);
+      if(!done){write(KEY,mark);return;}        /* 首次访问: 只记录, 绝不打扰 */
+      if(mark===done)return;                    /* 版本没变 */
+      write(KEY,mark);
+      if(param("_v")===mark)return;             /* 当前页面已是新版本，不用刷 */
+      var u=location.href.split("#")[0],h=location.hash||"";
+      u+=(u.indexOf("?")>=0?"&":"?")+"_v="+encodeURIComponent(mark);
+      try{
+        var t=document.createElement("div");
+        t.id="gtUpdTip";
+        t.style.cssText="position:fixed;left:50%;top:14px;transform:translateX(-50%);z-index:100000;"+
+          "background:rgba(20,26,38,.92);color:#fff;font-size:12.5px;line-height:1;"+
+          "padding:9px 15px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25)";
+        t.textContent="发现新版本，正在更新\u2026";
+        document.body.appendChild(t);
+      }catch(e){}
+      setTimeout(function(){
+        try{location.replace(u+h);}catch(e){try{location.reload();}catch(e2){}}
+      },380);
+    }).catch(function(){});
+  }catch(e){}
+})();
+</script>
+
 </body>
 </html>
