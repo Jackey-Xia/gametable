@@ -1669,6 +1669,7 @@ try{
 }catch(e){}
 
 
+
 /* 改130-begin: 淘宝下单直链 —— 链接表 taobao.json(中文名/英文名为 key), 未配置的不显示按钮 */
 var TB={},TB_N=0;
 function tbKey(s){return String(s||"").toLowerCase().replace(/[\s　]/g,"").replace(/[（）()【】\[\]{}<>：:·•,，.。、;；!！?？'"“”‘’\-—_/\\|+=*#@&$%^~]/g,"");}
@@ -1704,7 +1705,6 @@ function tbPaint(){
   }).catch(function(){});
 }catch(e){}})();
 /* 改130-end */
-
 function gameCard(g,idx){
   const card=el("div","gcard");
   if(idx!=null)card.id="gc-"+idx;   /* 改76: 联想跳转定位用 */
