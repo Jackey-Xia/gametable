@@ -667,6 +667,14 @@ footer b{color:#4b5563}
 </style>
 </head>
 <body>
+<!-- 改123a -->
+<style id="gt-hint-early">/* 直接带 ?tab=mem / ?tab=ns 打开时, 第一帧就不要显示加载提示条 */
+html.nohint #gtLoadHint{display:none!important}</style>
+<script id="gt-hint-early-js">
+(function(){var m=(location.search.match(/[?&]tab=([A-Za-z]+)/)||[])[1];
+if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
+</script>
+<!-- 改123a-end -->
 <div id="gtLoadHint" class="gt-loadhint" role="status"><span class="d"></span><span>正在加载封面，请稍候……</span></div>
 <header class="hero">
   <div class="hero-scrim" aria-hidden="true"></div>
@@ -2032,8 +2040,9 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 
+<!-- 改123b -->
 <script id="gt-hint-tabfix">
-/* 改123-begin: 顶部「正在加载封面」提示条只出现在有封面的 PS游戏 tab。
+/* 顶部「正在加载封面」提示条只出现在有封面的 PS游戏 tab。
    会员资费(tmem) / PS白金(tplat) 没有任何封面图, 提示条却要在 12 秒后才自动隐藏,
    期间这条 37px 高的普通流元素会把整个页头往下顶 —— 切 tab 时背景封面一高一低。
    这里监听 hero 的 class 变化, 切到这两个 tab 立即隐藏, 保证三个 tab 页头位置一致。 */
@@ -2053,7 +2062,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
     setInterval(sync,400);
   }
 })();
-/* 改123-end */
 </script>
+<!-- 改123b-end -->
 </body>
 </html>
