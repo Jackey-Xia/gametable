@@ -716,6 +716,20 @@ footer b{color:#4b5563}
 }
 /* 改127-end */
 </style>
+<style id="memhead-space-css">/* 改128-begin: 会员资费页头 —— 徽章图标与文字拉开间距、文字块整体下移、
+   每行固定 21px 行距（原来副标 18、说明 23 混着，看起来忽紧忽松）。 */
+.hero.tmem .memhead{top:32px}
+.hero.tmem .memhead-lv .lv-i{font-size:15px;line-height:1.15}
+.hero.tmem .memhead-lv .lv-t{font-size:9.5px;line-height:1.15;margin-top:5px}
+.hero.tmem .memhead-sub,.hero.tmem .memhead-perm{margin-top:0;line-height:21px}
+.hero.tmem .memhead-chips{margin-top:10px}
+@media (max-width:339px){
+  .hero.tmem .memhead{top:24px}
+  .hero.tmem .memhead-sub,.hero.tmem .memhead-perm{line-height:18px}
+  .hero.tmem .memhead-chips{margin-top:6px}
+}
+/* 改128-end */
+</style>
 </head>
 <body>
 <!-- 改123a -->
