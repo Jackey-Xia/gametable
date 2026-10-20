@@ -51,16 +51,11 @@ input,select{font:inherit}
 
 /* ---------- 顶部 ---------- */
 .hero{position:relative;background:#0d1440;color:#fff;padding:22px 16px 66px;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:url('bg.jpg') center/cover no-repeat;opacity:.5}
-/* 改h5: 标语独立图层 —— opacity 1 且压在遮罩之上, 解决手机端文字被压暗 */
-.hero::after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:url('slogan-m.png') no-repeat right 2px top 23px/auto 152px}
-@media (max-width:330px){.hero::after{background-position:right 2px top 81px}}
-/* 改h5: 桌面宽幅背景 + 横排标语 */
-@media (min-width:900px){.hero::before{background:url('bg-d.jpg') right center/cover no-repeat}.hero::after{background:url('slogan-d.png') no-repeat right 26px center/auto 62px}}
+.hero::before{content:"";position:absolute;inset:0;background:url('banner_mem.jpg') center/cover no-repeat;opacity:1}
 /* 改114: 页头封面随 tab 切换 —— 会员资费/PS白金 换主题大图; 文字侧暗色渐变用独立元素(.hero-scrim),
    避开改h5占用的 .hero::after(「我直接拿下!」标语图层, 必须压在遮罩之上不被压暗) */
-.hero-scrim{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0;transition:opacity .25s;
-  background:linear-gradient(100deg,rgba(13,20,64,.96) 0%,rgba(13,20,64,.88) 40%,rgba(13,20,64,.32) 78%,rgba(13,20,64,.18) 100%)}
+.hero-scrim{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:1;transition:opacity .25s;
+  background:linear-gradient(100deg,rgba(13,20,64,.97) 0%,rgba(13,20,64,.92) 40%,rgba(13,20,64,.55) 78%,rgba(13,20,64,.45) 100%)}
 .hero.tmem .hero-scrim,.hero.tplat .hero-scrim{opacity:1}
 .hero.tmem::before{background:url('banner_mem.jpg') center/cover no-repeat;opacity:1}
 .hero.tplat::before{background:url('banner_plat.jpg') center 58%/cover no-repeat;opacity:1}
