@@ -664,6 +664,19 @@ footer b{color:#4b5563}
 @media (min-width:641px){.hero.tmem .memhead{min-height:156px}}
 @media (max-width:359px){.hero.tmem .memhead{min-height:209px}}
 /* 改120-end */
+/* 改125-begin: 页头高度三 tab 严格一致 —— 会员资费不再用 min-height:151 单独把 hero 撑高，
+   改为：① 三 tab 共用同一个 hero 高度地板；② 会员资费的 hero 高度由 PS游戏/PS白金 用的
+   同一份 .hero-inner 撑出(visibility:hidden 占位)，因此任何设备/字体度量下都与另两个 tab
+   逐像素相同；③ .memhead 绝对定位叠在 hero 内，不再参与高度计算。 */
+.hero{min-height:233px}
+.hero.tmem .hero-inner{display:block;visibility:hidden}
+.hero.tmem .memhead{position:absolute;left:0;right:0;top:22px;max-width:1092px;margin:0 auto;
+  padding:0 16px;min-height:0;justify-content:flex-start}
+.hero.tmem .memhead-sub,.hero.tmem .memhead-perm{line-height:1.45}
+.hero.tmem .memhead-chips{margin-top:8px}
+@media (min-width:641px){.hero.tmem .memhead{min-height:0}}
+@media (max-width:359px){.hero.tmem .memhead{min-height:0}}
+/* 改125-end */
 </style>
 </head>
 <body>
