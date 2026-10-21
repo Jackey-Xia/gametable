@@ -1,5 +1,16 @@
 {
- "_ids": {},
+ "_ids": {
+  "Odin's Sphere Leifthrasir": "997076765522",
+  "Icey": "989224184069",
+  "Astalon：Tears of the Earth": "1047928670786",
+  "Forged in Shadow Torch": "1020198324372",
+  "Olliolli World（Rad Edition）": "997463636725",
+  "In Nightmare": "1047593222928",
+  "暗夜长梦（PS5）": "1046158851729",
+  "What Remains of Edith Finch": "947318115200",
+  "Evil West": "989224472458",
+  "Asterix ＆ Obelix：XXL 2": "989229064135"
+ },
  "_xianyu": {
   "Astalon：Tears of the Earth": "https://h5.m.goofish.com/item?id=898254758049",
   "Valor Mortis": "https://h5.m.goofish.com/item?id=1091536543028",
@@ -12,5 +23,15 @@
   "Tomb Raider Legacy of Atlantis": "1094016984429",
   "Persona 4 Revival": "1092963441669"
  },
+ "Odin's Sphere Leifthrasir": "https://h5.m.taobao.com/awp/core/detail.htm?id=997076765522",
+ "Icey": "https://h5.m.taobao.com/awp/core/detail.htm?id=989224184069",
+ "Astalon：Tears of the Earth": "https://h5.m.taobao.com/awp/core/detail.htm?id=1047928670786",
+ "Forged in Shadow Torch": "https://h5.m.taobao.com/awp/core/detail.htm?id=1020198324372",
+ "Olliolli World（Rad Edition）": "https://h5.m.taobao.com/awp/core/detail.htm?id=997463636725",
+ "In Nightmare": "https://h5.m.taobao.com/awp/core/detail.htm?id=1047593222928",
+ "暗夜长梦（PS5）": "https://h5.m.taobao.com/awp/core/detail.htm?id=1046158851729",
+ "What Remains of Edith Finch": "https://h5.m.taobao.com/awp/core/detail.htm?id=947318115200",
+ "Evil West": "https://h5.m.taobao.com/awp/core/detail.htm?id=989224472458",
+ "Asterix ＆ Obelix：XXL 2": "https://h5.m.taobao.com/awp/core/detail.htm?id=989229064135",
  "_说明": "唯一数据源 = WPS 表格 S列(淘宝)/T列(闲鱼)，每次同步全量重建；表格里删掉，前端按钮同步消失。key 用英文名(中文名也认)。value=淘宝链接; _ids=淘宝商品id; _xianyu=闲鱼链接(决定按钮是否出现); _xid=闲鱼商品id(决定按钮永久地址)。由 WPS 同步脚本 v5.5 自动维护。"
 }
