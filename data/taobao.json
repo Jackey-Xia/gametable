@@ -1,41 +1,16 @@
 {
- "_说明": "key 用价目表里的游戏英文名(中文名也认)。value=淘宝链接; _ids=淘宝商品id; _xianyu=闲鱼链接(决定按钮是否出现); _xid=闲鱼商品id(决定按钮永久地址)。由 WPS 同步脚本 v5 自动维护。",
- "_ids": {
-  "Valor Mortis": "1092456186775",
-  "Persona 4 Revival": "1090958275146",
-  "Tomb Raider Legacy of Atlantis": "1092959913333",
-  "Valheim": "1092461749926",
-  "Odin's Sphere Leifthrasir": "997076765522",
-  "Icey": "989224184069"
- },
+ "_ids": {},
  "_xianyu": {
+  "Astalon：Tears of the Earth": "https://h5.m.goofish.com/item?id=898254758049",
   "Valor Mortis": "https://h5.m.goofish.com/item?id=1091536543028",
-  "Persona 4 Revival": "https://h5.m.goofish.com/item?id=1092963441669",
   "Tomb Raider Legacy of Atlantis": "https://h5.m.goofish.com/item?id=1094016984429",
-  "Valheim": "https://m.tb.cn/h.jWGdeW3?tk=kVrtTFyicA8",
-  "Odin's Sphere Leifthrasir": "https://m.tb.cn/h.jXTFnMa?tk=inw1Tv9ZZac",
-  "Icey": "https://m.tb.cn/h.jdHRJ0y?tk=txNFTvPWpYz",
-  "Astalon：Tears of the Earth": "https://h5.m.goofish.com/item?id=898254758049"
+  "Persona 4 Revival": "https://h5.m.goofish.com/item?id=1092963441669"
  },
  "_xid": {
+  "Astalon：Tears of the Earth": "898254758049",
   "Valor Mortis": "1091536543028",
-  "Persona 4 Revival": "1092963441669",
   "Tomb Raider Legacy of Atlantis": "1094016984429",
-  "Valheim": "1090543383293",
-  "Odin's Sphere Leifthrasir": "997081785265",
-  "Icey": "805826625199",
-  "Astalon：Tears of the Earth": "898254758049"
+  "Persona 4 Revival": "1092963441669"
  },
- "Valor Mortis": "https://e.tb.cn/h.jXsYFYMhjYNTrYp?tk=RaSITFu82w7",
- "Persona 4 Revival": "https://e.tb.cn/h.jd1lU99MBcDen6g?tk=SGBaTFu9ZF2",
- "Tomb Raider Legacy of Atlantis": "https://e.tb.cn/h.jcqpKPdVhrEg8cH?tk=JVOTTFunOT0",
- "Valheim": "https://e.tb.cn/h.jXsVIYCuuhMXW60?tk=OmX7TFuMa2T",
- "Odin's Sphere Leifthrasir": "https://item.taobao.com/item.htm?ft=t&id=997076765522",
- "Icey": "https://e.tb.cn/h.j287ZVPe3Dltsn7?tk=h7qjTvPer0k",
- "_auto": [
-  "Astalon：Tears of the Earth",
-  "Valor Mortis",
-  "Tomb Raider Legacy of Atlantis",
-  "Persona 4 Revival"
- ]
+ "_说明": "唯一数据源 = WPS 表格 S列(淘宝)/T列(闲鱼)，每次同步全量重建；表格里删掉，前端按钮同步消失。key 用英文名(中文名也认)。value=淘宝链接; _ids=淘宝商品id; _xianyu=闲鱼链接(决定按钮是否出现); _xid=闲鱼商品id(决定按钮永久地址)。由 WPS 同步脚本 v5.5 自动维护。"
 }
