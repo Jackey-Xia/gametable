@@ -747,7 +747,23 @@ footer b{color:#4b5563}
 @media (max-width:339px){
   .gmain .tbbtn{height:30px;padding:0 6px;font-size:11.5px;gap:3px}
   .gmain .tbbtn .tbi{font-size:11.5px}
-}</style>
+}
+/* 改153-begin: 淘宝+闲鱼都无链接(平台禁售) —— 绿色「联系商家」按钮, 宽度 = 淘宝+闲鱼 两颗之和 */
+.gmain .tbbtn.wxbtn{background:linear-gradient(135deg,#07c160,#06ad56);color:#fff;border:0;
+  font-family:inherit;cursor:pointer;-webkit-appearance:none;-webkit-tap-highlight-color:transparent;
+  box-shadow:0 3px 10px rgba(7,193,96,.3)}
+.gmain .tbbtn .wxi{display:inline-flex;align-items:center;font-size:0;line-height:1}
+.gmain .tbbtn .wxi svg{width:13px;height:13px;fill:#fff;display:block}
+@media(min-width:641px){
+  .gmain .tbbtn.wxbtn{flex:0 0 auto;width:var(--wxbtnw,186px);padding:0 13px}
+}
+@media(max-width:640px){
+  .gmain .tbbtn.wxbtn{flex:1 1 0;max-width:none}
+}
+@media(max-width:339px){
+  .gmain .tbbtn .wxi svg{width:12px;height:12px}
+}
+/* 改153-end */</style>
 <style id="tbwx-css">/* 改141-begin: 微信内购买引导浮层(淘口令式: 复制 → 打开App) */
 .tbx-mask{position:fixed;left:0;top:0;right:0;bottom:0;background:rgba(12,17,26,.55);
   z-index:99999;display:none;align-items:center;justify-content:center;padding:22px;
@@ -1796,12 +1812,55 @@ function xyEl(u,g){
 }
 function tbRowFor(g){
   var ut=tbUrl(g),ux=xyUrl(g);
-  if(!ut&&!ux)return null;
+  if(!ut&&!ux){
+    /* 改153: 淘宝/闲鱼都没配 —— 平台禁售类, 出绿色「联系商家」(宽度=淘宝+闲鱼) */
+    if(!TB_READY)return null;
+    var rw=el("div","tbrow");
+    rw.appendChild(wxEl());
+    return rw;
+  }
   var row=el("div","tbrow");
   if(ut)row.appendChild(tbEl(ut,g));
   if(ux)row.appendChild(xyEl(ux,g));
   return row;
 }
+/* 改153-begin: 无购买链接时的「联系商家」绿色按钮 —— 点击弹微信号(文案: 平台禁售商品, 联系商家购买) */
+var TB_READY=false,WXW=0,WX_SVG='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.4461.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.968.983.976.976 0 0 1-.969-.983c0-.542.433-.982.968-.982z"/></svg>';
+function wxMeasure(){
+  if(WXW)return WXW;                       /* 实测「淘宝购买+闲鱼购买」两颗的总宽, 只测一次 */
+  try{
+    if(!window.matchMedia||!window.matchMedia("(min-width:641px)").matches)return 0;  /* 手机端满行, 不需要 */
+    var host=document.querySelector("#psList .gmain")||document.querySelector(".gmain");
+    if(!host)return 0;
+    var d=document.createElement("div");
+    d.className="tbrow";
+    d.style.cssText="position:absolute;left:-9999px;top:0;visibility:hidden;pointer-events:none;margin-top:0";
+    d.appendChild(tbEl("#",{}));d.appendChild(xyEl("#",{}));
+    host.appendChild(d);
+    WXW=Math.round(d.getBoundingClientRect().width)||0;
+    if(d.parentNode)d.parentNode.removeChild(d);
+    if(WXW)document.documentElement.style.setProperty("--wxbtnw",WXW+"px");
+  }catch(e){}
+  return WXW;
+}
+function wxEl(){
+  var b=document.createElement("button");
+  b.type="button";b.className="tbbtn wxbtn";b.setAttribute("aria-label","联系商家");
+  var s=el("span","tbi wxi");
+  try{
+    var fab=document.querySelector(".cta-fab svg");
+    if(fab){s.appendChild(fab.cloneNode(true));}
+    else{s.innerHTML=WX_SVG;}
+  }catch(e){s.innerHTML=WX_SVG;}
+  b.appendChild(s);
+  b.appendChild(document.createTextNode("联系商家"));
+  b.addEventListener("click",function(ev){
+    ev.preventDefault();ev.stopPropagation();
+    try{openCta("ban");}catch(e){try{openCta();}catch(e2){}}
+  });
+  return b;
+}
+/* 改153-end */
 /* 改137x-end */
 function tbEl(u,g){
   var a=document.createElement("a");
@@ -1852,6 +1911,7 @@ function tbPaint(){
     /* 改137: 闲鱼链接表(_xianyu) 与 闲鱼商品 id 表(_xid) */
     var xy=m._xianyu||{};for(var k2 in xy){if(xy[k2]&&/^https?:\/\//i.test(String(xy[k2])))TB_XY[tbKey(k2)]=String(xy[k2]);}
     var xi=m._xid||{};for(var k3 in xi){TB_XID[tbKey(k3)]=String(xi[k3]).replace(/[^\d]/g,"");}
+    try{TB_READY=true;wxMeasure();}catch(e){TB_READY=true;}   /* 改153: 表到齐了才允许出「联系商家」 */
     tbPaint();
   }).catch(function(){});
 }catch(e){}})();
@@ -2428,13 +2488,19 @@ setTimeout(gtSwStat,3500);
         <div class="cta-id" id="ctaId">Jackey0428</div>
         <button class="cta-copy" onclick="copyWx()">复制</button>
       </div>
-      <div class="cta-welcome">欢迎各位玩家加入交流群，每月免费抽取白金和游戏</div>
+      <div class="cta-welcome" id="ctaWelcome">欢迎各位玩家加入交流群，每月免费抽取白金和游戏</div>
     </div>
   </div>
 
   <div class="cta-toast" id="ctaToast">已复制微信号：Jackey0428</div>
 <script>
-function openCta(){document.getElementById('ctaMask').classList.add('show');}
+/* 改153: mode="ban" = 平台禁售商品场景, 底部文案换成「平台禁售商品，联系商家购买」 */
+var CTA_TXT_DEF="欢迎各位玩家加入交流群，每月免费抽取白金和游戏",CTA_TXT_BAN="平台禁售商品，联系商家购买";
+function openCta(mode){
+  var w=document.getElementById('ctaWelcome');
+  if(w)w.textContent=(mode==="ban")?CTA_TXT_BAN:CTA_TXT_DEF;
+  document.getElementById('ctaMask').classList.add('show');
+}
 function closeCta(){document.getElementById('ctaMask').classList.remove('show');}
 function copyWx(){
   var id="Jackey0428";
