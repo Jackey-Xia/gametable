@@ -1844,6 +1844,7 @@ function wxMeasure(){
   return WXW;
 }
 function wxEl(){
+  if(!WXW){try{wxMeasure();}catch(e){}}      /* 改153b: 极端加载顺序下补测一次, 避免回落 186px */
   var b=document.createElement("button");
   b.type="button";b.className="tbbtn wxbtn";b.setAttribute("aria-label","联系商家");
   var s=el("span","tbi wxi");
@@ -1891,6 +1892,7 @@ function tbFixHref(){
 /* 链接表一般比列表晚到一步: 给已经渲染出来的卡片补按钮(不重排、不动滚动位置) */
 function tbPaint(){
   var list=$("#psList");if(!list)return;
+  try{if(!WXW)wxMeasure();}catch(e){}       /* 改153b: 卡片已就位, 补测绿按钮宽度 */
   var cards=list.querySelectorAll(".gcard");
   for(var i=0;i<cards.length;i++){
     var c=cards[i];
