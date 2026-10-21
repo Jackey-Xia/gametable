@@ -759,11 +759,15 @@ footer b{color:#4b5563}
 .tbx-mask.on .tbx-box{transform:none}
 .tbx-ico{font-size:28px;line-height:1}
 .tbx-t{font-size:17px;font-weight:800;color:#1a1f2b;margin-top:8px}
-.tbx-steps{margin-top:10px;text-align:left;font-size:13px;line-height:2;color:#39414f;
+.tbx-steps{margin-top:10px;text-align:left;font-size:13px;color:#39414f;
   background:#f6f8fb;border-radius:10px;padding:10px 12px}
 .tbx-steps b{color:#ff5000;font-weight:800}
-.tbx-steps .n{display:inline-block;width:17px;height:17px;line-height:17px;border-radius:50%;
-  background:#ff5000;color:#fff;font-size:11px;text-align:center;margin-right:6px;font-weight:700}
+/* 改152: 序号与文字同一水平线（原 inline-block 基线对齐 → 文字偏高） */
+.tbx-st{display:flex;align-items:center;gap:6px;min-height:26px}
+.tbx-st .tx{flex:1 1 auto;min-width:0;line-height:1.65}
+.tbx-steps .n{flex:0 0 auto;display:flex;align-items:center;justify-content:center;
+  width:17px;height:17px;border-radius:50%;background:#ff5000;color:#fff;
+  font-size:11px;font-weight:700;line-height:1;text-align:center}
 /* 闲鱼场景：序号底纹与「闲鱼App」文字用闲鱼黄(#ffda00)，与下方按钮同色 */
 .tbx-steps.xy .n{background:#ffda00;color:#3d2f00}
 .tbx-steps.xy b{color:#ffda00}
@@ -1975,9 +1979,9 @@ function tbIdOf(g){
     }else{
       var ok=window.__tbxCopyOk?1:0;
       T.textContent=ok?("链接已复制 \u2713"):("请复制下面的链接");
-      S.innerHTML='<span class="n">1</span>'+(ok?"商品链接已在剪贴板里":"长按上方链接复制")+'<br>'+
-                  '<span class="n">2</span>打开浏览器粘贴跳转<br>'+
-                  '<span class="n">3</span>或点击右上角···→「在浏览器打开」';
+      S.innerHTML='<div class="tbx-st"><span class="n">1</span><span class="tx">'+(ok?"商品链接已在剪贴板里":"长按上方链接复制")+'</span></div>'+
+                  '<div class="tbx-st"><span class="n">2</span><span class="tx">打开浏览器粘贴跳转</span></div>'+
+                  '<div class="tbx-st"><span class="n">3</span><span class="tx">或点击右上角···→「在浏览器打开」</span></div>';
       TP.innerHTML='链接已复制到剪贴板，打开手机浏览器粘贴即可进入商品页；或点微信右上角<b>···</b>→「在浏览器打开」自动跳转';
       A1.style.display="flex";A1.style.alignItems="center";A1.style.justifyContent="center";
       C.textContent=ok?"再复制一次":"复制链接";
@@ -2406,7 +2410,7 @@ setTimeout(gtSwStat,3500);
 
 <!-- 联系商家 悬浮按钮 -->
   <button class="cta-fab" onclick="openCta()" aria-label="联系商家">
-    <svg viewBox="0 0 24 24"><path d="M12 3C6.9 3 3 6.6 3 11c0 2.3 1.1 4.4 2.9 5.8V21l3.2-1.8c.9.2 1.8.4 2.9.4 5.1 0 9-3.6 9-8s-4-7.6-9-7.6z"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.4461.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.968.983.976.976 0 0 1-.969-.983c0-.542.433-.982.968-.982z"/></svg>
     联系商家
   </button>
 
@@ -2416,7 +2420,7 @@ setTimeout(gtSwStat,3500);
       <button class="cta-close" onclick="closeCta()" aria-label="关闭">×</button>
       <div class="cta-head">
         <div class="ic">
-          <svg viewBox="0 0 24 24"><path d="M12 3C6.9 3 3 6.6 3 11c0 2.3 1.1 4.4 2.9 5.8V21l3.2-1.8c.9.2 1.8.4 2.9.4 5.1 0 9-3.6 9-8s-4-7.6-9-7.6z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.4461.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.03zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 0 1-.969.983.976.976 0 0 1-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 0 1-.968.983.976.976 0 0 1-.969-.983c0-.542.433-.982.968-.982z"/></svg>
         </div>
         <div class="cta-title">微信联系商家</div>
       </div>
