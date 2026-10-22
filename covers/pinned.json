@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1118,
+  "count": 1119,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-22T02:52:13"
+  "updated": "2026-10-22T11:00:38+08:00"
  },
  "locks": {
   "p0001": {
@@ -14704,6 +14704,19 @@
    "role": "M-fill",
    "store": "Valor Mortis (日语, 韩语, 简体中文, 繁体中文, 英语)",
    "time": "2026-10-20T17:07:41+08:00"
+  },
+  "p1119": {
+   "cn": [
+    "动物迷城"
+   ],
+   "en": "Back to The Dawn",
+   "file": "covers/rcfac45aea1b8a.jpg",
+   "md5": "fac45aea1b8a26fbcdee1d90be5f6ad1",
+   "note": "店长指定满铺(去上下留边), 港服PORTRAIT_BANNER 顶对齐裁底 crop34",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "动物迷城 ～Back to the Dawn～ (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "time": "2026-10-22T11:00:38+08:00"
   }
  }
 }
