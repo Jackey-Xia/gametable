@@ -872,11 +872,13 @@ footer b{color:#4b5563}
 .gt-dcover{width:100%;border-radius:12px;display:block;background:#eef1f6}
 .gt-dtitle{font-size:18px;font-weight:800;margin:14px 0 2px;line-height:1.35;word-break:break-word}
 .gt-den{font-size:13px;color:var(--sub);margin-bottom:10px;word-break:break-word}
-.gt-dspec{display:grid;grid-template-columns:auto 1fr;gap:9px 14px;background:#f7f9fc;border:1px solid var(--line);
-  border-radius:12px;padding:14px 16px;margin:6px 0 14px;font-size:13.5px;line-height:1.5}
-.gt-dspec dt{color:var(--sub);font-weight:600;white-space:nowrap}
-.gt-dspec dd{margin:0;color:var(--ink);word-break:break-word}
-.gt-desc{font-size:14px;line-height:1.85;color:#344054;margin:4px 0 14px;white-space:pre-wrap}
+/* 改154e：详情页文字区改为「商品介绍文字卡」七字段格式（游戏名称｜平台｜发售日期｜类型｜容量｜人数｜语言） */
+.gt-dinfo{margin:6px 0 10px;font-size:13px;line-height:1.9}
+.gt-drow{padding:3px 0;word-break:break-word}
+.gt-dk{color:var(--sub);font-weight:600;margin-right:1px}
+.gt-dbar{color:#c2c9d4;margin:0 6px}
+.gt-dv{color:#1f2937}
+.gt-dnote{margin:6px 0 12px;font-size:11.5px;color:#9aa3af;text-align:center;line-height:1.5;word-break:break-word;overflow-wrap:break-word}
 .gt-dgal{display:flex;flex-direction:column;gap:10px}
 .gt-dgal img{width:100%;border-radius:10px;display:block;background:#eef1f6;box-shadow:0 2px 8px rgba(16,24,40,.08)}
 .gt-dempty{text-align:center;color:var(--sub);font-size:14px;padding:30px 10px}
@@ -2284,23 +2286,32 @@ function gtRenderDetail(card,g,cov,e){
   if(cov){var im=document.createElement("img");im.className="gt-dcover";im.src=cov;im.loading="lazy";im.alt="";card.appendChild(im);}
   var t=document.createElement("div");t.className="gt-dtitle";t.textContent=g.name||"";card.appendChild(t);
   if(g.en){var en=document.createElement("div");en.className="gt-den";en.textContent=g.en;card.appendChild(en);}
-  var dl=document.createElement("dl");dl.className="gt-dspec";
-  function row(k,v){if(!v)return;var dt=document.createElement("dt");dt.textContent=k;var dd=document.createElement("dd");dd.textContent=v;dl.appendChild(dt);dl.appendChild(dd);}
-  row("发售日期",g.date);row("游戏版本",g.region);row("支持主机",(g.hs||[]).join(" "));
-  if(e){
-    row("类型",(e.genres||[]).join("、"));row("人数",e.players);row("语言",(e.languages||[]).join("、"));
-    row("发行商",e.publisher);if(e.release&&!g.date)row("发售日期",e.release);
-  }
-  if(dl.children.length)card.appendChild(dl);
-  if(e&&e.desc){var dsc=document.createElement("div");dsc.className="gt-desc";dsc.textContent=e.desc;card.appendChild(dsc);}
+  var info=document.createElement("div");info.className="gt-dinfo";
+  var rows=[
+    ["游戏名称", g.name||(e&&e.name)||"—"],
+    ["游戏平台", (e&&e.platform)||((g.hs||[]).join(" "))||"—"],
+    ["发售日期", (e&&e.release)||g.date||"—"],
+    ["游戏类型", (e&&e.genres&&e.genres.length)?e.genres.join("、"):"—"],
+    ["游戏容量", (e&&e.capacity)||"—"],
+    ["游戏人数", (e&&e.players)||"—"],
+    ["游戏语言", (e&&e.languages&&e.languages.length)?e.languages.join("、"):"—"]
+  ];
+  rows.forEach(function(r){
+    var row=document.createElement("div");row.className="gt-drow";
+    var k=document.createElement("span");k.className="gt-dk";k.textContent=r[0];
+    var bar=document.createElement("span");bar.className="gt-dbar";bar.textContent="｜";
+    var v=document.createElement("span");v.className="gt-dv";v.textContent=r[1];
+    row.appendChild(k);row.appendChild(bar);row.appendChild(v);info.appendChild(row);
+  });
+  card.appendChild(info);
+  var note=document.createElement("div");note.className="gt-dnote";
+  note.textContent="⚡以上信息均来自互联网收集，实际信息以官方数据为准⚡";card.appendChild(note);
   if(e&&e.shots&&e.shots.length){
     var gal=document.createElement("div");gal.className="gt-dgal";
     e.shots.slice(0,12).forEach(function(s){var gi=document.createElement("img");gi.src=s;gi.loading="lazy";gi.alt="";gal.appendChild(gi);});
     card.appendChild(gal);
   }else if(!e){
     var emp=document.createElement("div");emp.className="gt-dempty";emp.textContent="该游戏详情筹备中，敬请期待～";card.appendChild(emp);
-  }else{
-    var emp2=document.createElement("div");emp2.className="gt-dempty";emp2.textContent="游戏截图筹备中～";card.appendChild(emp2);
   }
 }
 /* 改154-end */
