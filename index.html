@@ -2224,7 +2224,7 @@ var __GTDET=null,__GTDET_PEND=null;
 function gtDetLoad(){
   if(__GTDET)return Promise.resolve(__GTDET);
   if(__GTDET_PEND)return __GTDET_PEND;
-  __GTDET_PEND=fetch("data/game_details.json?t="+Date.now()).then(function(r){return r.ok?r.json():{};})
+  __GTDET_PEND=fetch("game_details.json?t="+Date.now()).then(function(r){return r.ok?r.json():{};})
     .then(function(d){__GTDET=d;return d;}).catch(function(){__GTDET={};return {};});
   return __GTDET_PEND;
 }
