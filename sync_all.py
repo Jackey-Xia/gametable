@@ -96,6 +96,11 @@ tb = os.path.join(BASE, "data", "taobao.json")
 if os.path.exists(tb):
     shutil.copyfile(tb, os.path.join(site, "taobao.json"))
     print("taobao.json 已同步")
+# 改154: 游戏详情数据(查看详情弹层图文) -> 站点根目录 game_details.json
+gd = os.path.join(BASE, "data", "game_details.json")
+if os.path.exists(gd):
+    shutil.copyfile(gd, os.path.join(site, "game_details.json"))
+    print("game_details.json 已同步")
 # 改134: 淘宝中转页(只靠商品id跳转, 不依赖会过期的短链) -> 站点根目录 tb.html
 _tbh = os.path.join(BASE, "tb.html")
 if os.path.exists(_tbh):
