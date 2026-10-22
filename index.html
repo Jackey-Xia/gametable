@@ -851,7 +851,7 @@ footer b{color:#4b5563}
 .gact:hover{background:#fff}
 @media(max-width:640px){.gact{width:32px;height:32px}.gact svg{width:17px;height:17px}}
 /* 分享图弹层 */
-.gt-sharecard{display:block;width:100%;max-width:300px;height:auto;border-radius:12px;
+.gt-sharecard{display:block;width:100%;max-width:250px;height:auto;border-radius:12px;
   box-shadow:0 8px 24px rgba(15,23,42,.18);background:#fff}
 .gt-sharehint{margin-top:14px;text-align:center;font-size:13px;line-height:1.7;color:#3d4657}
 .gt-sharehint.wx{color:#07c160;font-weight:600}
@@ -860,8 +860,15 @@ footer b{color:#4b5563}
 .gt-sbtn.prime{background:var(--brand);color:#fff}
 .gt-sbtn.prime:active{background:#1d3aa8}
 .gt-sbtn.ghost{background:#eef1f6;color:#344054}
-/* 详情弹层 */
-.gt-dmodal{max-width:430px;max-height:86vh;overflow:auto;text-align:left}
+/* 改154b：右上角悬浮关闭按钮（有设计感，移到最右上角、不压卡片） */
+.gt-x{position:fixed;top:18px;right:18px;width:38px;height:38px;border-radius:50%;border:none;
+  background:rgba(15,23,42,.5);color:#fff;font-size:22px;cursor:pointer;z-index:80;
+  display:flex;align-items:center;justify-content:center;box-shadow:0 2px 10px rgba(0,0,0,.28);
+  -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);transition:background .12s,transform .12s}
+.gt-x:active{transform:scale(.92);background:rgba(15,23,42,.72)}
+@media(max-width:640px){.gt-x{top:14px;right:14px;width:34px;height:34px;font-size:20px}}
+/* 详情弹层（改154b：整体再缩窄些） */
+.gt-dmodal{max-width:380px;max-height:82vh;overflow:auto;text-align:left}
 .gt-dcover{width:100%;border-radius:12px;display:block;background:#eef1f6}
 .gt-dtitle{font-size:18px;font-weight:800;margin:14px 0 2px;line-height:1.35;word-break:break-word}
 .gt-den{font-size:13px;color:var(--sub);margin-bottom:10px;word-break:break-word}
@@ -2198,11 +2205,11 @@ function showShareCard(cv,g){
   if(!mask){mask=document.createElement("div");mask.id="gtShareMask";mask.className="cta-mask";document.body.appendChild(mask);}
   mask.innerHTML="";
   var card=document.createElement("div");card.className="cta-card";card.style.alignItems="center";
-  var close=document.createElement("button");close.className="cta-close";close.innerHTML="×";
-  close.onclick=function(){mask.className="cta-mask";};card.appendChild(close);
+  var close=document.createElement("button");close.className="gt-x";close.type="button";close.setAttribute("aria-label","关闭");close.innerHTML="×";
+  close.onclick=function(){mask.className="cta-mask";};mask.appendChild(close);
   var img=document.createElement("img");img.className="gt-sharecard";img.src=cv.toDataURL("image/png");card.appendChild(img);
   var hint=document.createElement("div");hint.className="gt-sharehint"+(isWX?" wx":"");
-  hint.textContent=isWX?"长按上方图片保存到相册，再到微信发给好友或群":"点击下方按钮保存或分享这张卡片";card.appendChild(hint);
+  hint.textContent=isWX?"长按上方图片，分享或保存这张卡片":"点击下方按钮，分享或保存这张卡片";card.appendChild(hint);
   if(!isWX){
     var btns=document.createElement("div");btns.className="gt-sharebtns";
     var sh=document.createElement("button");sh.className="gt-sbtn prime";sh.textContent="分享 / 保存";
@@ -2236,6 +2243,7 @@ function openDetail(g){
   var card=document.createElement("div");card.className="cta-card gt-dmodal";
   var loading=document.createElement("div");loading.className="gt-dloading";loading.textContent="加载中…";card.appendChild(loading);
   mask.appendChild(card);mask.className="cta-mask show";
+  mask.onclick=function(e){if(e.target===mask)mask.className="cta-mask";};
   gtDetLoad().then(function(det){
     if(!mask.classList.contains("show"))return;
     var e=det[disp]||det[g.en||""]||null;
@@ -2245,8 +2253,6 @@ function openDetail(g){
 function gtRenderDetail(card,g,cov,e){
   var mask=document.getElementById("gtDetailMask");
   card.innerHTML="";
-  var close=document.createElement("button");close.className="cta-close";close.innerHTML="×";
-  close.onclick=function(){mask.className="cta-mask";};card.appendChild(close);
   if(cov){var im=document.createElement("img");im.className="gt-dcover";im.src=cov;im.loading="lazy";im.alt="";card.appendChild(im);}
   var t=document.createElement("div");t.className="gt-dtitle";t.textContent=g.name||"";card.appendChild(t);
   if(g.en){var en=document.createElement("div");en.className="gt-den";en.textContent=g.en;card.appendChild(en);}
