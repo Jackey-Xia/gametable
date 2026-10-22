@@ -1584,6 +1584,15 @@
   "note": "人工满铺版 · 港服官方竖图居中裁3:4·零裁切填充",
   "en": "Planet Zoo 2"
  },
+ "动物迷城": {
+  "file": "covers/ac47d991339bdfp34.jpg",
+  "source": "store_zh_hk",
+  "role": "P-pad",
+  "store": "动物迷城 ～Back to the Dawn～ (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-10-22T02:52:29",
+  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 裁切带内有文字 SA） · 版本: 标准版(商品名未标注,取标准版)",
+  "en": "Back to The Dawn"
+ },
  "勇敢小骑士": {
   "file": "covers/rcb615d4333cfe.jpg",
   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcd8afa6ce798f.jpg",

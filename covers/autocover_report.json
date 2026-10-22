@@ -1,6 +1,16 @@
 {
- "time": "2026-10-22T02:32:03",
- "added": [],
+ "time": "2026-10-22T02:52:29",
+ "added": [
+  {
+   "name": "动物迷城",
+   "product": "JP5784-PPSA37850_00-BACKTOTHEDAWN000",
+   "storeName": "动物迷城 ～Back to the Dawn～ (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/ac47d991339bdfp34.jpg",
+   "role": "P-pad",
+   "bytes": 102233
+  }
+ ],
  "pending": [
   {
    "name": "猫咪斗恶龙1",
@@ -13,8 +23,8 @@
  ],
  "errors": [],
  "stats": {
-  "total": 1244,
-  "covered": 1301,
+  "total": 1245,
+  "covered": 1302,
   "pending_open": 2
  }
 }
