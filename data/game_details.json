@@ -1,11 +1,12 @@
 {
  "奥丁领域 里普特拉西尔": {
   "genres": [
-   "动作"
+   "横版动作 RPG",
+   "角色扮演"
   ],
-  "players": "",
-  "release": "2016年4月28日",
-  "publisher": "SEGA CORPORATION",
+  "players": "1人",
+  "release": "2016年4月28日（港版）",
+  "publisher": "ATLUS / Vanillaware",
   "shots": [
    "https://image.api.playstation.com/pr/bam-art/233/098/c472dc1e-52c8-4c9a-928f-0eb98b17570a.jpg?w=1200",
    "https://image.api.playstation.com/vulcan/ap/rnd/202610/1422/9cfcc0b899c07bda8331c2494b6455a2ca33c648c180ab51.png?w=1200",
@@ -20,15 +21,25 @@
    "https://image.api.playstation.com/vulcan/img/rnd/202010/1614/YTnuxZGgdr197pizUNLjdGKE.png?w=1200",
    "https://image.api.playstation.com/pr/bam-art/173/731/6187c1ab-73ae-493c-b41a-08cd85786e40.jpg?w=1200"
   ],
-  "_cid": "HP0177-CUSA03873_00-ODINSPHERELE0000"
+  "_cid": "HP0177-CUSA03873_00-ODINSPHERELE0000",
+  "name": "奥丁领域 里普特拉西尔",
+  "platform": "PS4（支持 PS5 向下兼容）",
+  "capacity": "约 3.6 GB（PS4版）",
+  "languages": [
+   "中文（繁体）",
+   "英文",
+   "日文",
+   "韩文"
+  ]
  },
  "Odin's Sphere Leifthrasir": {
   "genres": [
-   "动作"
+   "横版动作 RPG",
+   "角色扮演"
   ],
-  "players": "",
-  "release": "2016年4月28日",
-  "publisher": "SEGA CORPORATION",
+  "players": "1人",
+  "release": "2016年4月28日（港版）",
+  "publisher": "ATLUS / Vanillaware",
   "shots": [
    "https://image.api.playstation.com/pr/bam-art/233/098/c472dc1e-52c8-4c9a-928f-0eb98b17570a.jpg?w=1200",
    "https://image.api.playstation.com/vulcan/ap/rnd/202610/1422/9cfcc0b899c07bda8331c2494b6455a2ca33c648c180ab51.png?w=1200",
@@ -43,6 +54,15 @@
    "https://image.api.playstation.com/vulcan/img/rnd/202010/1614/YTnuxZGgdr197pizUNLjdGKE.png?w=1200",
    "https://image.api.playstation.com/pr/bam-art/173/731/6187c1ab-73ae-493c-b41a-08cd85786e40.jpg?w=1200"
   ],
-  "_cid": "HP0177-CUSA03873_00-ODINSPHERELE0000"
+  "_cid": "HP0177-CUSA03873_00-ODINSPHERELE0000",
+  "name": "奥丁领域 里普特拉西尔",
+  "platform": "PS4（支持 PS5 向下兼容）",
+  "capacity": "约 3.6 GB（PS4版）",
+  "languages": [
+   "中文（繁体）",
+   "英文",
+   "日文",
+   "韩文"
+  ]
  }
 }
