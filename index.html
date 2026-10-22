@@ -2163,39 +2163,67 @@ function loadImg(src){return new Promise(function(res){if(!src)return res(null);
   im.onload=function(){res(im);};im.onerror=function(){res(null);};im.src=src;});}
 function gtRound(x,X,Y,w,h,r){x.beginPath();x.moveTo(X+r,Y);x.arcTo(X+w,Y,X+w,Y+h,r);x.arcTo(X+w,Y+h,X,Y+h,r);
   x.arcTo(X,Y+h,X,Y,r);x.arcTo(X,Y,X+w,Y,r);x.closePath();}
-function gtPriceTile(x,px,py,tw,th,label,val){
-  x.fillStyle="#f5f7fa";gtRound(x,px,py,tw,th,10);x.fill();
-  x.fillStyle="#6b7280";x.font="500 11px -apple-system,system-ui,sans-serif";x.textAlign="center";
-  x.fillText(label,px+tw/2,py+20);
-  x.fillStyle=(val==null?"#9aa3af":"#e4002b");x.font="800 18px -apple-system,system-ui,sans-serif";
-  x.fillText(val==null?"—":("¥"+val),px+tw/2,py+46);x.textAlign="left";
+function gtPill(x,X,Y,h,bg,bd,segs){
+  x.font=segs[0][1];
+  var w=24; segs.forEach(function(s){x.font=s[1];w+=x.measureText(s[2]).width+(s[3]||0);});
+  x.fillStyle=bg;gtRound(x,X,Y,w,h,h/2);x.fill();
+  if(bd){x.lineWidth=1;x.strokeStyle=bd;gtRound(x,X,Y,w,h,h/2);x.stroke();}
+  x.textBaseline="middle";x.textAlign="left";
+  var cx=X+12;
+  segs.forEach(function(s){x.fillStyle=s[0];x.font=s[1];x.fillText(s[2],cx,Y+h/2);cx+=x.measureText(s[2]).width+(s[3]||0);});
+  x.textBaseline="alphabetic";x.textAlign="left";
+  return w;
+}
+function gtPriceTile(x,px,py,tw,th,label,val,stocks){
+  x.fillStyle="#fff";gtRound(x,px,py,tw,th,10);x.fill();
+  x.lineWidth=1.5;x.strokeStyle="#16a34a";gtRound(x,px,py,tw,th,10);x.stroke();
+  x.textAlign="left";x.textBaseline="alphabetic";
+  x.fillStyle="#6b7280";x.font="500 11px -apple-system,system-ui,sans-serif";x.fillText(label,px+12,py+18);
+  var vt=(val==null)?"—":((""+val).indexOf("¥")>=0?(""+val):("¥"+val));
+  x.fillStyle="#111827";x.font="800 20px -apple-system,system-ui,sans-serif";x.fillText(vt,px+12,py+44);
+  var sy=py+64;
+  (stocks||[]).forEach(function(s){
+    x.fillStyle="#16a34a";x.beginPath();x.arc(px+15,sy-4,2.6,0,Math.PI*2);x.fill();
+    x.fillStyle="#374151";x.font="400 11px -apple-system,system-ui,sans-serif";x.fillText(s,px+24,sy);
+    sy+=15;
+  });
+}
+function gtStocks(g){
+  var hs=g.hs||[],has4=hs.indexOf("PS4")>=0,has5=hs.indexOf("PS5")>=0;
+  var fc=["库存："+(g.fc?"有":"无")],xd=["库存："+(g.xd?"有":"无")],ck;
+  if(has4||has5){ck=[];if(has4)ck.push("PS4库存："+(g.ck4?"有":"无"));if(has5)ck.push("PS5库存："+(g.ck5?"有":"无"));}
+  else ck=["库存："+(g.ck4?"有":"无")];
+  return [ck,fc,xd];
 }
 function shareGame(g){
   var disp=g._disp||g.name, cov=coverOf(g,disp);
   loadImg(cov).then(function(im){
-    var W=600,dpr=2,pad=26,coverW=168,coverH=Math.round(coverW*4/3);
-    var infoX=pad+coverW+18, infoW=W-pad-infoX;
+    var W=600,dpr=2,pad=26,coverW=170,coverH=228;
+    var infoX=pad+coverW+24;
     var name=g.name||"", en=g.en||"";
-    var prices=[["可认证·7天",fmtMoney(g.ck7)],["非认证·7天",fmtMoney(g.fc7)],["限定版·30天",fmtMoney(g.xd30)]];
-    var bodyTop=pad+Math.max(coverH,en?118:96);
-    var H=bodyTop+16+70+pad+14;
+    var prices=[["可认证 · 7天",fmtMoney(g.ck7)],["非认证 · 7天",fmtMoney(g.fc7)],["限定版 · 30天",fmtMoney(g.xd30)]];
+    var stocks=gtStocks(g);
+    var pY1=pad+58,pY2=pY1+36,pY3=pY2+36;
+    var infoBottom=pY3+28, coverBottom=pad+coverH;
+    var bodyTop=Math.max(coverBottom,infoBottom);
+    var th=96;
+    var H=bodyTop+16+th+pad;
     var cv=document.createElement("canvas");cv.width=W*dpr;cv.height=H*dpr;
     var x=cv.getContext("2d");x.scale(dpr,dpr);
     x.fillStyle="#fff";gtRound(x,0,0,W,H,18);x.fill();
     x.save();gtRound(x,pad,pad,coverW,coverH,12);x.clip();
     if(im)x.drawImage(im,pad,pad,coverW,coverH);else{x.fillStyle="#eef1f6";x.fillRect(pad,pad,coverW,coverH);}
     x.restore();
-    var yy=pad+4;
-    x.fillStyle="#181d27";x.font="700 23px -apple-system,system-ui,sans-serif";x.textBaseline="alphabetic";
-    x.fillText((name||"").slice(0,16),infoX,yy+22);yy+=22;
-    if(en){x.fillStyle="#6b7280";x.font="400 14px -apple-system,system-ui,sans-serif";x.fillText(en.slice(0,22),infoX,yy+20);yy+=20;}
-    yy+=8;x.fillStyle="#344054";x.font="500 13.5px -apple-system,system-ui,sans-serif";
-    var meta="";if(g.date)meta+=g.date+"  ";if(g.region)meta+="· "+g.region+"  ";if((g.hs||[]).length)meta+="· "+g.hs.join("/");
-    x.fillText(meta.slice(0,26),infoX,yy+14);
-    var py=H-pad-70, tw=(W-pad*2-16)/3;
-    for(var i=0;i<3;i++)gtPriceTile(x,pad+i*(tw+8),py,tw,70,prices[i][0],prices[i][1]);
-    x.fillStyle="#9aa3af";x.font="600 12px -apple-system,system-ui,sans-serif";
-    x.fillText("夏天Jackey · PS数字版游戏租赁",pad,H-pad+2);
+    x.textBaseline="alphabetic";x.textAlign="left";
+    x.fillStyle="#111827";x.font="700 24px -apple-system,system-ui,sans-serif";
+    x.fillText((name||"").slice(0,16),infoX,pad+24);
+    if(en){x.fillStyle="#6b7280";x.font="400 14px -apple-system,system-ui,sans-serif";x.fillText(en.slice(0,24),infoX,pad+48);}
+    var fg="#9aa3af",fb="500 12px -apple-system,system-ui,sans-serif",vb="700 12px -apple-system,system-ui,sans-serif";
+    gtPill(x,infoX,pY1,28,"#f1f3f5",null,[[fg,fb,"发售日期 "],["#1f2937",vb,g.date||"—"]]);
+    gtPill(x,infoX,pY2,28,"#f1f3f5",null,[[fg,fb,"游戏版本 "],["#7c3aed",vb,g.region||"—"]]);
+    gtPill(x,infoX,pY3,28,"#fff8e1","#f5c518",[[fg,fb,"支持主机 "],["#a16207",vb,(g.hs||[]).join(" ")||"—"]]);
+    var py=bodyTop+16, tw=(W-pad*2-16)/3;
+    for(var i=0;i<3;i++)gtPriceTile(x,pad+i*(tw+8),py,tw,th,prices[i][0],prices[i][1],stocks[i]);
     showShareCard(cv,g);
   });
 }
