@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1119,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-23T02:34:26"
+  "updated": "2026-10-23T11:04:03+08:00"
  },
  "locks": {
   "p0001": {
@@ -13242,13 +13242,13 @@
     "零：月蚀的假面"
    ],
    "en": "Fatal Frame: Mask of the Lunar Eclipse",
-   "file": "covers/rcc12f762a9fd9.jpg",
-   "md5": "409cf007059d3a250e0f13affa659241",
-   "note": "店主指认: 港服红框卡(MASTER方图)→留边版",
+   "file": "covers/rc2cac2aa5ff20.jpg",
+   "md5": "2cac2aa5ff20038093089a6638e738c5",
+   "note": "2026-10-23 店主改选满铺(去上下留边): 港服MASTER方图 偏右裁切 crop34, 保人物+右侧logo",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "M-fill",
    "store": "零 ～月蚀的假面～ (PS4 & PS5) (简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-23T11:04:03+08:00"
   },
   "p1009": {
    "cn": [
