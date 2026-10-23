@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1119,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-23T06:02:24"
+  "updated": "2026-10-23T14:27:38+08:00"
  },
  "locks": {
   "p0001": {
@@ -4092,13 +4092,13 @@
     "如龙2 人中之龙：极2（2）"
    ],
    "en": "Yakuza：Kiwami2",
-   "file": "covers/rc4d1adcf510c9.jpg",
-   "md5": "539f14246eadbdc4722e397f2d14e60c",
-   "note": "店主指认红框卡 · 人中之龙 极２ PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait) · 多库存沿用",
+   "file": "covers/rc2373cbbbe62b.jpg",
+   "md5": "2373cbbbe62b92b8fb6d3e9a37efe08e",
+   "note": "2026-10-23 店主B满铺上线: 去左右约28px边框, 内容完整 (自检通过)",
    "platform": "PS",
-   "role": "P-orig",
+   "role": "M-fill",
    "store": "人中之龙 极２ PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-23T14:27:38+08:00"
   },
   "p0312": {
    "cn": [
@@ -4211,13 +4211,13 @@
     "如龙8外传 人中之龙8外传：夏威夷海盗"
    ],
    "en": "Like a Dragon 8：Pirate Yakuza in Hawaii",
-   "file": "covers/rce1a3ab2504b0.jpg",
-   "md5": "159783c845fb86a66bddc27d9a7bbddb",
-   "note": "店主指认红框卡 · 人中之龙８外传 Pirates in Hawaii PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
+   "file": "covers/rc0dece15bc8dc.jpg",
+   "md5": "0dece15bc8dc80b009dac1049ec2241a",
+   "note": "2026-10-23 店主B满铺上线: 去上下边框(T55/B88), 内容完整 (自检通过)",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "M-fill",
    "store": "人中之龙８外传 Pirates in Hawaii PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-23T14:27:38+08:00"
   },
   "p0321": {
    "cn": [
@@ -5166,13 +5166,13 @@
     "异星探险家+巨型科技"
    ],
    "en": "",
-   "file": "covers/rca0030a060f14.jpg",
-   "md5": "e8054516090b2a70a6f030d3ca988513",
-   "note": "店主审核 B34 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 ASTRONEER",
+   "file": "covers/rcaddad765e346.jpg",
+   "md5": "addad765e3460504b14c098b005f96ff",
+   "note": "2026-10-23 店主B满铺上线: 去左右约48px边框, 内容完整 (自检通过)",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "M-fill",
    "store": "Astroneer: Megatech Edition (日语, 韩语, 简体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-23T14:27:38+08:00"
   },
   "p0394": {
    "cn": [
@@ -8320,13 +8320,13 @@
     "汤姆克兰西：全境封锁2（终极版）"
    ],
    "en": "Tom Clancy's The Division 2（Ultimate Edition）",
-   "file": "covers/rceae2a1479b70.jpg",
-   "md5": "43d31cd2486530092ae7b763bf315fcf",
-   "note": "店主指认红框卡 · ULTIMATE EDITION 橙标卡 · 竖图 1440x2160 上下各裁 5.6%, 裁切带内有文字 ULTIMATE EDITION",
+   "file": "covers/rcf7ae6792d7c3.jpg",
+   "md5": "f7ae6792d7c3b194a77e0cd98de9e0cb",
+   "note": "2026-10-23 店主B满铺上线: 去边框(L50/R46/T10/B115), 内容完整 (自检通过)",
    "platform": "PS",
-   "role": "P-pad",
+   "role": "M-fill",
    "store": "全境封锁2 - 终极版 (中日英韩文版)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-23T14:27:38+08:00"
   },
   "p0635": {
    "cn": [
