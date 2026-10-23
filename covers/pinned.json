@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1123,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-23T08:56:44"
+  "updated": "2026-10-23T17:23:34+08:00"
  },
  "locks": {
   "p0001": {
@@ -13681,13 +13681,13 @@
     "魔咒之地（豪华版）"
    ],
    "en": "",
-   "file": "covers/rcb7e44a4bd65e.jpg",
-   "md5": "bf6deedbaf063bba90a76c39b7c90ce8",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 ea520266070f_s.jpg",
+   "file": "covers/rc4ae77192c05c.jpg",
+   "md5": "4ae77192c05c6e215a4aed0dc79dbe79",
+   "note": "2026-10-23 店主满铺上线: 港服竖版居中裁3:4满铺, FORSPOKEN标题+DIGITAL DELUXE EDITION横幅完整(原M-pad留边版更新)",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "M-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-23T17:23:34+08:00"
   },
   "p1042": {
    "cn": [
@@ -13733,13 +13733,13 @@
     "魔戒：咕噜（珍藏版）"
    ],
    "en": "The Lord of the Rings：Gollum（Precious Edition）",
-   "file": "covers/rcf08cdc198164.jpg",
-   "md5": "a04ba87ab8998cf4c65706489ef0ff3a",
-   "note": "店主指认红框卡 · The Lord of the Rings: Gollum™ - Precious Edition (日语, 韩语, 简体中文, 繁体中文, 英语) · form=p(master)（PRECIOUS EDITION横幅保留）",
+   "file": "covers/rcf54b47c32288.jpg",
+   "md5": "f54b47c3228813983bf020f53ee23771",
+   "note": "2026-10-23 店主满铺上线: 港服竖版顶部对齐裁3:4满铺, 顶部PRECIOUS EDITION横幅完整不被裁(原M-pad留边版更新)",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "M-fill",
    "store": "The Lord of the Rings: Gollum™ - Precious Edition (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-23T17:23:34+08:00"
   },
   "p1046": {
    "cn": [
