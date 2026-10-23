@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1125,
+  "count": 1126,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-23T21:31:02+08:00"
+  "updated": "2026-10-23T13:31:56"
  },
  "locks": {
   "p0001": {
@@ -14777,10 +14777,10 @@
    "en": "Duskfade",
    "file": "covers/rcf1929b1eb9f3.jpg",
    "md5": "f1929b1eb9f38da1078c76dc97927309",
-   "role": "M-fill",
    "note": "2026-10-23 店主「改成满铺」上线: 港服官方竖版 PORTRAIT_BANNER cover 居中裁3:4满铺, DUSKFADE 顶部logo完整、男孩居中、右侧机械鸟保留 (原为早期低清直链图, 规范为 rc+weserv 并新增锁)",
-   "time": "2026-10-23T21:31:02+08:00",
-   "platform": "PS"
+   "platform": "PS",
+   "role": "M-fill",
+   "time": "2026-10-23T21:31:02+08:00"
   }
  }
 }
