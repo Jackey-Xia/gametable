@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1119,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-23T03:41:42"
+  "updated": "2026-10-23T11:46:22+08:00"
  },
  "locks": {
   "p0001": {
@@ -8255,26 +8255,26 @@
     "毛线小精灵1+2/崩解1+2（同捆包）（1）"
    ],
    "en": "",
-   "file": "covers/rc7a1f6f9f3fed.jpg",
-   "md5": "7a1f6f9f3fed3c29c0c288098060b29e",
-   "note": "2026-10-23 店主改选满铺: MASTER方图整体缩小+上下边缘延展补边, UNRAVEL/YARNY BUNDLE/TWO 字母完整",
+   "file": "covers/rc2e294df244ad.jpg",
+   "md5": "2e294df244adf0f0c1028d9e018e91e6",
+   "note": "2026-10-23 修复: 满铺版顶部补边仅取纯天空浅蓝白(去红色模糊阴影), 红色 UNRAVEL/YARNY BUNDLE/TWO 标题完整",
    "platform": "PS",
    "role": "M-fill",
    "store": "",
-   "time": "2026-10-23T11:23:37+08:00"
+   "time": "2026-10-23T11:46:22+08:00"
   },
   "p0630": {
    "cn": [
     "毛线小精灵1+2/崩解1+2（同捆包）（2）"
    ],
    "en": "",
-   "file": "covers/rc7a1f6f9f3fed.jpg",
-   "md5": "7a1f6f9f3fed3c29c0c288098060b29e",
-   "note": "2026-10-23 店主改选满铺: MASTER方图整体缩小+上下边缘延展补边, UNRAVEL/YARNY BUNDLE/TWO 字母完整",
+   "file": "covers/rc2e294df244ad.jpg",
+   "md5": "2e294df244adf0f0c1028d9e018e91e6",
+   "note": "2026-10-23 修复: 满铺版顶部补边仅取纯天空浅蓝白(去红色模糊阴影), 红色 UNRAVEL/YARNY BUNDLE/TWO 标题完整",
    "platform": "PS",
    "role": "M-fill",
    "store": "",
-   "time": "2026-10-23T11:23:37+08:00"
+   "time": "2026-10-23T11:46:22+08:00"
   },
   "p0631": {
    "cn": [
