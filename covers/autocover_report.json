@@ -1,6 +1,16 @@
 {
- "time": "2026-10-23T08:16:00",
- "added": [],
+ "time": "2026-10-23T08:33:50",
+ "added": [
+  {
+   "name": "战神：劳菲1",
+   "product": "UP9000-PPSA19249_00-LAUFEY0000000000",
+   "storeName": "God of War Laufey™ (中英韩文版)",
+   "score": 0.85,
+   "file": "covers/ac9dec9b9862a7p34.jpg",
+   "role": "P-pad",
+   "bytes": 111930
+  }
+ ],
  "pending": [
   {
    "name": "猫咪斗恶龙1",
@@ -9,12 +19,17 @@
   {
    "name": "猫咪斗恶龙2",
    "reason": "失败6次, 需人工核对"
+  },
+  {
+   "name": "战神：劳菲2",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
   }
  ],
  "errors": [],
  "stats": {
-  "total": 1245,
-  "covered": 1302,
-  "pending_open": 2
+  "total": 1247,
+  "covered": 1303,
+  "pending_open": 3
  }
 }
