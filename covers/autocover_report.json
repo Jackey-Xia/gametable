@@ -1,16 +1,21 @@
 {
- "time": "2026-10-23T09:43:41",
- "added": [],
- "pending": [
+ "time": "2026-10-23T10:02:24",
+ "added": [
   {
-   "name": "猫咪斗恶龙2",
-   "reason": "失败6次, 需人工核对"
+   "name": "长日将尽",
+   "product": "UP2660-PPSA29264_00-SIEESIEADUSK0000",
+   "storeName": "Duskfade (日语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/acb119a8dfa2d4p34.jpg",
+   "role": "P-pad",
+   "bytes": 111891
   }
  ],
+ "pending": [],
  "errors": [],
  "stats": {
-  "total": 1247,
-  "covered": 1305,
-  "pending_open": 1
+  "total": 1248,
+  "covered": 1307,
+  "pending_open": 0
  }
 }
