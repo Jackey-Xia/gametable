@@ -1,11 +1,7 @@
 {
- "time": "2026-10-23T09:28:07",
+ "time": "2026-10-23T09:39:35",
  "added": [],
  "pending": [
-  {
-   "name": "猫咪斗恶龙1",
-   "reason": "失败6次, 需人工核对"
-  },
   {
    "name": "猫咪斗恶龙2",
    "reason": "失败6次, 需人工核对"
@@ -14,7 +10,7 @@
  "errors": [],
  "stats": {
   "total": 1247,
-  "covered": 1304,
-  "pending_open": 2
+  "covered": 1305,
+  "pending_open": 1
  }
 }
