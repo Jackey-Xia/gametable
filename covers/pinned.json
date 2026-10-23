@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1119,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-23T03:05:46"
+  "updated": "2026-10-23T11:23:37+08:00"
  },
  "locks": {
   "p0001": {
@@ -8255,26 +8255,26 @@
     "毛线小精灵1+2/崩解1+2（同捆包）（1）"
    ],
    "en": "",
-   "file": "covers/rc478e9259515d.jpg",
-   "md5": "478e9259515dc52570a28b6f5682c63d",
-   "note": "满铺 P-fill · 港服 MASTER Unravel Yarny Bundle 1024方图 居中横裁→3:4 (同捆包两行共用)",
+   "file": "covers/rc7a1f6f9f3fed.jpg",
+   "md5": "7a1f6f9f3fed3c29c0c288098060b29e",
+   "note": "2026-10-23 店主改选满铺: MASTER方图整体缩小+上下边缘延展补边, UNRAVEL/YARNY BUNDLE/TWO 字母完整",
    "platform": "PS",
-   "role": "P-fill",
+   "role": "M-fill",
    "store": "",
-   "time": "2026-10-19T22:37:23"
+   "time": "2026-10-23T11:23:37+08:00"
   },
   "p0630": {
    "cn": [
     "毛线小精灵1+2/崩解1+2（同捆包）（2）"
    ],
    "en": "",
-   "file": "covers/rc478e9259515d.jpg",
-   "md5": "478e9259515dc52570a28b6f5682c63d",
-   "note": "满铺 P-fill · 港服 MASTER Unravel Yarny Bundle 1024方图 居中横裁→3:4 (同捆包两行共用)",
+   "file": "covers/rc7a1f6f9f3fed.jpg",
+   "md5": "7a1f6f9f3fed3c29c0c288098060b29e",
+   "note": "2026-10-23 店主改选满铺: MASTER方图整体缩小+上下边缘延展补边, UNRAVEL/YARNY BUNDLE/TWO 字母完整",
    "platform": "PS",
-   "role": "P-fill",
+   "role": "M-fill",
    "store": "",
-   "time": "2026-10-19T22:37:23"
+   "time": "2026-10-23T11:23:37+08:00"
   },
   "p0631": {
    "cn": [
@@ -13785,13 +13785,13 @@
     "魔能2：技能重修（特别版）"
    ],
    "en": "",
-   "file": "covers/rc7751595be1e3.jpg",
-   "md5": "8be18416c339c388509dbb2efd09e43c",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 7eb8b0b7e4cb_s.jpg",
+   "file": "covers/rcb284f0df56a9.jpg",
+   "md5": "b284f0df56a907e47c5d320d3b0f2990",
+   "note": "2026-10-23 店主改选满铺: MASTER方图整体缩小+上下边缘延展补边(标题全宽不可硬裁), 字样完整",
    "platform": "PS",
-   "role": "M-pad",
+   "role": "M-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-23T11:23:37+08:00"
   },
   "p1050": {
    "cn": [
