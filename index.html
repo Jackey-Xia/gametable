@@ -806,6 +806,35 @@ footer b{color:#4b5563}
 .tbx-spin{display:inline-block;width:13px;height:13px;border-radius:50%;vertical-align:-2px;
   margin-right:6px;border:2px solid #ffd9c4;border-top-color:#ff5000;animation:tbxspin .8s linear infinite}
 @keyframes tbxspin{to{transform:rotate(360deg)}}
+/* 改155-begin: 微信内「在浏览器打开」引导层 —— 仅点购买按钮后弹出, 浏览器内永不出现 */
+.gtwg-mask{position:fixed;left:0;top:0;right:0;bottom:0;z-index:100000;display:none;
+  align-items:center;justify-content:center;padding:24px;box-sizing:border-box;
+  background:rgba(9,12,20,.72);opacity:0;transition:opacity .2s ease;
+  -webkit-tap-highlight-color:transparent}
+.gtwg-mask.on{opacity:1}
+.gtwg-box{width:100%;max-width:334px;box-sizing:border-box;background:#fff;border-radius:18px;
+  padding:22px 18px 16px;text-align:center;box-shadow:0 18px 48px rgba(0,0,0,.34);
+  transform:translateY(10px) scale(.98);transition:transform .2s ease}
+.gtwg-mask.on .gtwg-box{transform:none}
+.gtwg-arrow{position:fixed;right:12px;top:4px;width:128px;height:124px;z-index:100002;pointer-events:none}
+.gtwg-tip{position:fixed;right:12px;top:126px;width:118px;text-align:center;z-index:100002;
+  pointer-events:none;font-size:13px;font-weight:800;color:#f5b73d;line-height:1.45;
+  text-shadow:0 1px 4px rgba(0,0,0,.5)}
+.gtwg-t{font-size:18px;font-weight:800;color:#1a1f2b;line-height:1.35}
+.gtwg-s{margin-top:10px;font-size:13.5px;line-height:1.75;color:#5b6472;text-align:left}
+.gtwg-s b{color:#ff5000}
+.gtwg-ok{margin-top:11px;font-size:12.5px;font-weight:700;color:#00b578}
+.gtwg-u{margin-top:9px;font-size:11px;line-height:1.5;color:#8b94a3;word-break:break-all;text-align:left;
+  background:#fafbfd;border:1px dashed #e2e7f0;border-radius:9px;padding:7px 9px;
+  -webkit-user-select:text;user-select:text}
+.gtwg-act{display:flex;gap:9px;margin-top:14px}
+.gtwg-btn{flex:1;height:43px;border:0;border-radius:999px;font-size:14px;font-weight:700;
+  cursor:pointer;font-family:inherit;-webkit-tap-highlight-color:transparent}
+.gtwg-btn.main{background:#ff5000;color:#fff;box-shadow:0 4px 12px rgba(255,80,0,.3)}
+.gtwg-btn.xy{background:#ffda00;color:#3d2f00;box-shadow:0 4px 12px rgba(255,218,0,.45)}
+.gtwg-btn.ghost{background:#f1f4f9;color:#5b6472}
+.gtwg-btn.ok{background:#00b578;color:#fff;box-shadow:0 4px 12px rgba(0,181,120,.28)}
+/* 改155-end */
 /* 改141-end */
 </style>
 <style id="gcard144-css">/* 改144-begin: 卡片排版三处调整（按钮下移 / 价格框与封面同高+边框加粗居中 / 手机封面拉伸） */
@@ -2093,8 +2122,9 @@ function tbIdOf(g){
     iframe(list[0]);                                   /* 同步: 用户手势内 */
     setTimeout(function(){if(stay)iframe(list[1]);},260);
     setTimeout(function(){if(stay){try{location.href=list[0];}catch(e){}}},420);
-    setTimeout(function(){if(stay)paint(u,kind,"wait");},520);
-    setTimeout(function(){off();if(stay)paint(u,kind,"fail");},1150);
+    /* 改155: 微信内 scheme 必然被拦 —— 不再弹旧的「复制→打开App」浮层,
+       改弹「点右上角···→在浏览器打开」引导层(浏览器内本段整体 return, 按钮原样直跳) */
+    setTimeout(function(){off();if(stay&&window.__gtWxGuide){try{window.__gtWxGuide(u,kind,id);}catch(e){paint(u,kind,"fail");}}},520);
     return false;
   },true);
 })();
@@ -2641,6 +2671,85 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
     setTimeout(function(){ try{document.body.removeChild(f);}catch(e){} }, 700);
     setTimeout(fallback, 1100);
   }catch(e){}
+})();
+</script>
+
+<script id="gt-wxguide">/* 改155: 微信内点购买按钮 → 引导「点右上角···→在浏览器打开」。
+  只在微信内注册; 浏览器内本段直接 return, 购买按钮维持原生 <a href> 直跳, 不弹任何层。
+  与改148 联动: 微信内点购买时已把 ?buy=kind-id 写进 URL, 用户在浏览器打开后由 gt-buyjump 自动唤起 App 直达商品页。*/
+(function(){
+  if(!/MicroMessenger/i.test(navigator.userAgent))return;      /* 企业微信/浏览器: 不介入 */
+  var URL_="";
+  function copy(u){
+    try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u);return 1;}}catch(e){}
+    try{
+      var t=document.createElement("textarea");t.value=u;t.setAttribute("readonly","");
+      t.style.cssText="position:fixed;left:-9999px;top:0;opacity:0";
+      document.body.appendChild(t);t.select();
+      if(t.setSelectionRange)t.setSelectionRange(0,u.length);
+      var r=document.execCommand("copy");document.body.removeChild(t);return r?1:0;
+    }catch(e){return 0;}
+  }
+  function hide(){
+    var m=document.getElementById("gtwgMask");if(!m)return;
+    m.className="gtwg-mask";
+    setTimeout(function(){m.style.display="none";},200);
+  }
+  function ensure(){
+    var m=document.getElementById("gtwgMask");
+    if(m)return m;
+    m=document.createElement("div");m.id="gtwgMask";m.className="gtwg-mask";
+    m.innerHTML=
+      '<svg class="gtwg-arrow" viewBox="0 0 128 124" aria-hidden="true">'+
+        '<path d="M30 118 C 76 100, 110 62, 113 20" fill="none" stroke="#f5b73d" stroke-width="4" stroke-linecap="round"/>'+
+        '<polygon points="113,1 124,25 103,23" fill="#f5b73d"/>'+
+      '</svg>'+
+      '<div class="gtwg-tip">点右上角<br>\u00b7\u00b7\u00b7</div>'+
+      '<div class="gtwg-box">'+
+        '<div class="gtwg-t">在浏览器打开<br>才能下单</div>'+
+        '<div class="gtwg-s">微信里打不开<b id="gtwgApp">淘宝</b>，需要换到浏览器。<br>'+
+          '点右上角 <b>\u00b7\u00b7\u00b7</b> \u2192 <b>「在浏览器打开」</b><br>'+
+          '打开后会自动进入商品页，不用再找。</div>'+
+        '<div class="gtwg-ok" id="gtwgOk">商品链接已复制 \u2713</div>'+
+        '<div class="gtwg-u" id="gtwgUrl"></div>'+
+        '<div class="gtwg-act">'+
+          '<button class="gtwg-btn main" id="gtwgCopy" type="button">复制链接</button>'+
+          '<button class="gtwg-btn ghost" id="gtwgClose" type="button">留在微信</button>'+
+        '</div>'+
+      '</div>';
+    document.body.appendChild(m);
+    m.addEventListener("click",function(e){
+      var t=e.target||{};
+      if(t===m||t.id==="gtwgClose"){hide();return;}
+      if(t.id==="gtwgCopy"){
+        var b=document.getElementById("gtwgCopy");
+        if(copy(URL_)){
+          b.textContent="已复制 \u2713";b.className="gtwg-btn ok";
+          var ok=document.getElementById("gtwgOk");if(ok)ok.textContent="商品链接已复制 \u2713";
+        }else{
+          b.textContent="复制失败，长按上方链接";
+        }
+        setTimeout(function(){b.textContent="复制链接";b.className="gtwg-btn main";},1800);
+      }
+    });
+    return m;
+  }
+  window.__gtWxGuide=function(u,kind,id){
+    try{
+      var m=ensure();
+      URL_=u||"";
+      var ap=document.getElementById("gtwgApp");
+      if(ap)ap.textContent=(kind==="xy")?"闲鱼":"淘宝";
+      var ue=document.getElementById("gtwgUrl");
+      if(ue)ue.textContent=u||"";
+      var ok=document.getElementById("gtwgOk");
+      if(ok)ok.textContent=window.__tbxCopyOk?("商品链接已复制 \u2713"):("长按下方链接可复制");
+      var cb=document.getElementById("gtwgCopy");
+      if(cb){cb.textContent="复制链接";cb.className=(kind==="xy")?"gtwg-btn xy":"gtwg-btn main";}
+      m.style.display="flex";
+      requestAnimationFrame(function(){m.className="gtwg-mask on";});
+    }catch(e){}
+  };
 })();
 </script>
 
