@@ -810,7 +810,7 @@ footer b{color:#4b5563}
 .gtwg-mask{position:fixed;left:0;top:0;right:0;bottom:0;z-index:100000;display:none;
   align-items:center;justify-content:center;padding:24px;box-sizing:border-box;
   background:rgba(9,12,20,.72);opacity:0;transition:opacity .2s ease;
-  -webkit-tap-highlight-color:transparent}
+  -webkit-tap-highlight-color:transparent;--gtwg-ac:#ff5000}
 .gtwg-mask.on{opacity:1}
 .gtwg-box{width:100%;max-width:334px;box-sizing:border-box;background:#fff;border-radius:18px;
   padding:22px 18px 16px;text-align:center;box-shadow:0 18px 48px rgba(0,0,0,.34);
@@ -818,12 +818,17 @@ footer b{color:#4b5563}
 .gtwg-mask.on .gtwg-box{transform:none}
 .gtwg-arrow{position:fixed;right:12px;top:4px;width:128px;height:124px;z-index:100002;pointer-events:none}
 .gtwg-tip{position:fixed;right:12px;top:126px;width:118px;text-align:center;z-index:100002;
-  pointer-events:none;font-size:13px;font-weight:800;color:#f5b73d;line-height:1.45;
+  pointer-events:none;font-size:13px;font-weight:800;color:var(--gtwg-ac);line-height:1.45;
   text-shadow:0 1px 4px rgba(0,0,0,.5)}
 .gtwg-t{font-size:18px;font-weight:800;color:#1a1f2b;line-height:1.35}
 .gtwg-s{margin-top:10px;font-size:13.5px;line-height:1.75;color:#5b6472;text-align:left}
-.gtwg-s b{color:#ff5000}
-.gtwg-ok{margin-top:11px;font-size:12.5px;font-weight:700;color:#00b578}
+.gtwg-s b{color:var(--gtwg-ac)}
+.gtwg-ok{margin-top:11px;font-size:12.5px;font-weight:700;color:var(--gtwg-ac)}
+/* 改156: 引导层强调色随平台变化 —— 淘宝橙红(#ff5000) / 闲鱼黄(#ffda00) */
+.gtwg-mask.k-tb{--gtwg-ac:#ff5000}
+.gtwg-mask.k-xy{--gtwg-ac:#ffda00}
+.gtwg-arrow .gtwg-arr-p{stroke:var(--gtwg-ac)}
+.gtwg-arrow .gtwg-arr-h{fill:var(--gtwg-ac)}
 .gtwg-u{margin-top:9px;font-size:11px;line-height:1.5;color:#8b94a3;word-break:break-all;text-align:left;
   background:#fafbfd;border:1px dashed #e2e7f0;border-radius:9px;padding:7px 9px;
   -webkit-user-select:text;user-select:text}
@@ -2690,19 +2695,20 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
       var r=document.execCommand("copy");document.body.removeChild(t);return r?1:0;
     }catch(e){return 0;}
   }
+  var curKind="k-tb";
   function hide(){
     var m=document.getElementById("gtwgMask");if(!m)return;
-    m.className="gtwg-mask";
+    m.className="gtwg-mask "+curKind;
     setTimeout(function(){m.style.display="none";},200);
   }
   function ensure(){
     var m=document.getElementById("gtwgMask");
     if(m)return m;
-    m=document.createElement("div");m.id="gtwgMask";m.className="gtwg-mask";
+    m=document.createElement("div");m.id="gtwgMask";m.className="gtwg-mask k-tb";
     m.innerHTML=
       '<svg class="gtwg-arrow" viewBox="0 0 128 124" aria-hidden="true">'+
-        '<path d="M30 118 C 76 100, 110 62, 113 20" fill="none" stroke="#f5b73d" stroke-width="4" stroke-linecap="round"/>'+
-        '<polygon points="113,1 124,25 103,23" fill="#f5b73d"/>'+
+        '<path class="gtwg-arr-p" d="M30 118 C 76 100, 110 62, 113 20" fill="none" stroke-width="4" stroke-linecap="round"/>'+
+        '<polygon class="gtwg-arr-h" points="113,1 124,25 103,23"/>'+
       '</svg>'+
       '<div class="gtwg-tip">点右上角<br>\u00b7\u00b7\u00b7</div>'+
       '<div class="gtwg-box">'+
@@ -2738,6 +2744,8 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
     try{
       var m=ensure();
       URL_=u||"";
+      curKind=(kind==="xy")?"k-xy":"k-tb";
+      m.className="gtwg-mask "+curKind;
       var ap=document.getElementById("gtwgApp");
       if(ap)ap.textContent=(kind==="xy")?"闲鱼":"淘宝";
       var ue=document.getElementById("gtwgUrl");
@@ -2747,7 +2755,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
       var cb=document.getElementById("gtwgCopy");
       if(cb){cb.textContent="复制链接";cb.className=(kind==="xy")?"gtwg-btn xy":"gtwg-btn main";}
       m.style.display="flex";
-      requestAnimationFrame(function(){m.className="gtwg-mask on";});
+      requestAnimationFrame(function(){m.className="gtwg-mask on "+curKind;});
     }catch(e){}
   };
 })();
