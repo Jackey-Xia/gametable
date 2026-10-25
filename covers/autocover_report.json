@@ -1,11 +1,21 @@
 {
- "time": "2026-10-25T06:02:21",
- "added": [],
+ "time": "2026-10-25T06:20:01",
+ "added": [
+  {
+   "name": "快速约会（夏日版）",
+   "product": "HP0980-PPSA37653_00-0434838895356150",
+   "storeName": "Speed Dates summer edition (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/acba25037f94b7p34.jpg",
+   "role": "P-pad",
+   "bytes": 93383
+  }
+ ],
  "pending": [],
  "errors": [],
  "stats": {
-  "total": 1247,
-  "covered": 1307,
+  "total": 1248,
+  "covered": 1308,
   "pending_open": 0
  }
 }
