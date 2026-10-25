@@ -1,17 +1,11 @@
 {
- "time": "2026-10-25T17:38:47",
+ "time": "2026-10-25T17:50:32",
  "added": [],
- "pending": [
-  {
-   "name": "顶峰Peak",
-   "reason": "匹配有歧义或无命中",
-   "top": "PEAK (日语, 韩语, 简体中文, 繁体中文, 英语) (0.85 vs 0.85)"
-  }
- ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1251,
-  "covered": 1309,
-  "pending_open": 1
+  "covered": 1310,
+  "pending_open": 0
  }
 }
