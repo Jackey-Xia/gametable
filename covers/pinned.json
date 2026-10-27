@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1116,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-27T08:01:57"
+  "updated": "2026-10-27T16:06:47"
  },
  "locks": {
   "p0001": {
@@ -292,13 +292,13 @@
     "NBA 2K26 篮球（2）"
    ],
    "en": "",
-   "file": "covers/rc6b88f5d4e568.jpg",
-   "md5": "a725c489f21c513fc5ca2c85fbf91de8",
+   "file": "covers/rcaa1014822273.jpg",
+   "md5": "aa10148222734819ba703b71dac835d8",
    "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-10-27T12:44:41"
+   "time": "2026-10-27T16:06:47"
   },
   "p0023": {
    "cn": [
@@ -1397,13 +1397,13 @@
     "偶像大师：星耀季节（豪华版）"
    ],
    "en": "The Idolmaster：Starlit Season（Deluxe Edition）",
-   "file": "covers/rce10bc2561558.jpg",
-   "md5": "c270714e9b7bf2464101a10c1260caaf",
+   "file": "covers/rc3ba254277be7.jpg",
+   "md5": "3ba254277be793b7345e9c0a49aa1d7a",
    "note": "偶像大师 STARLIT SEASON 数字豪华版 (韩语, 简体中文, 繁体中文) · 店主指认红框卡 · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
    "platform": "PS",
    "role": "P-pad",
    "store": "偶像大师 STARLIT SEASON 数字豪华版 (韩语, 简体中文, 繁体中文)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-27T16:06:47"
   },
   "p0107": {
    "cn": [
@@ -2194,13 +2194,13 @@
     "十年不晚"
    ],
    "en": "Best Served Cold",
-   "file": "covers/rc54ccf5748f18.jpg",
-   "md5": "4549419bc87a85ca62a83fcf314b54fa",
+   "file": "covers/rc2151b2e2a30e.jpg",
+   "md5": "2151b2e2a30ede85d1b1af85cc937969",
    "note": "店主指认红框卡 · 十年不晚 (日语, 韩语, 简体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait)",
    "platform": "PS",
    "role": "P-pad",
    "store": "十年不晚 (日语, 韩语, 简体中文, 英语)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-27T16:06:47"
   },
   "p0168": {
    "cn": [
@@ -3699,13 +3699,13 @@
     "失落之子"
    ],
    "en": "",
-   "file": "covers/rc9e363b9a3688.jpg",
-   "md5": "0bd0632bdea141a2849676214858d80c",
+   "file": "covers/rc638865a6f057.jpg",
+   "md5": "638865a6f057ad533ba76d0c78e23a94",
    "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 d259c24999ef_s.jpg",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-27T16:06:47"
   },
   "p0284": {
    "cn": [
@@ -4737,13 +4737,13 @@
     "尼尔：机械纪元（尤尔哈版）"
    ],
    "en": "",
-   "file": "covers/rc49e098de3080.jpg",
-   "md5": "82c17ed785c1eeb4a3e53c010c5b6fe5",
+   "file": "covers/rc8d1ee2e78df4.jpg",
+   "md5": "8d1ee2e78df4076556e264c8191488ae",
    "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 134fa8f27b2b_s.jpg",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-27T16:06:47"
   },
   "p0363": {
    "cn": [
@@ -6724,13 +6724,13 @@
     "时空幻境（周年版）"
    ],
    "en": "",
-   "file": "covers/rcd4c7443764a4.jpg",
-   "md5": "10137f7904bb506ccaac19429f39aad8",
+   "file": "covers/rca4d29c284bc2.jpg",
+   "md5": "a4d29c284bc2afa3a62df35a9351afd1",
    "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-27T16:06:47"
   },
   "p0515": {
    "cn": [
@@ -7743,13 +7743,13 @@
     "枪血意大利1"
    ],
    "en": "",
-   "file": "covers/rc362d3fcd2d41.jpg",
-   "md5": "e57bb831a52305cdad368cdfb6fd4a89",
+   "file": "covers/rc7d2f383dc7eb.jpg",
+   "md5": "7d2f383dc7ebb8ddd1cdbde97be44bc0",
    "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 43ce01249afc_s.jpg",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-27T16:06:47"
   },
   "p0594": {
    "cn": [
@@ -8032,13 +8032,13 @@
     "死亡搁浅2：冥滩之上"
    ],
    "en": "",
-   "file": "covers/rcef6040d8ae10.jpg",
-   "md5": "63d2ba06ec7b045be072d2b1f865ced7",
+   "file": "covers/rc8be4bda35705.jpg",
+   "md5": "8be4bda35705befe5e912ad8724d61c2",
    "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 0c97628e22d8_s.jpg",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-27T16:06:47"
   },
   "p0616": {
    "cn": [
@@ -8683,13 +8683,13 @@
     "涅克罗蒙达：赏金猎人"
    ],
    "en": "",
-   "file": "covers/rcf62d060b1515.jpg",
-   "md5": "f5c84e102823e519e9924601acaf7273",
+   "file": "covers/rcb45db133ac33.jpg",
+   "md5": "b45db133ac339ed342dc390d836977b5",
    "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rca4f649a6ed1a.jpg",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-27T16:06:47"
   },
   "p0667": {
    "cn": [
@@ -9178,13 +9178,13 @@
     "热血无赖（决定版）"
    ],
    "en": "",
-   "file": "covers/6bea858e7686_s.jpg",
-   "md5": "48f46b0a00f1e727c6fc1686e2f99885",
+   "file": "covers/rca8025c74b6f5.jpg",
+   "md5": "a8025c74b6f5b18a59c3e2611692d6b2",
    "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc25230082fa5d.jpg",
    "platform": "PS",
    "role": "P",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-27T16:06:47"
   },
   "p0704": {
    "cn": [
@@ -10958,26 +10958,26 @@
     "美女，请别影响我学习（PS5）"
    ],
    "en": "Knowledge, or know Lady（PS5）",
-   "file": "covers/rc40ed6f5b211b.jpg",
-   "md5": "48ff05b27c38f4d8949637cfed6b0de8",
+   "file": "covers/rcb5bfb678f61a.jpg",
+   "md5": "b5bfb678f61a9f83f4224fdfcc04ea04",
    "note": "美女，请别影响我学习 (日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 美女请跳')(portrait)",
    "platform": "PS",
    "role": "P-pad",
    "store": "美女，请别影响我学习 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-27T16:06:47"
   },
   "p0838": {
    "cn": [
     "美女，请别影响我成仙（PS5）"
    ],
    "en": "",
-   "file": "covers/rcff1aad22d1dc.jpg",
-   "md5": "fec997597f7132910f29719d6763f9e9",
+   "file": "covers/rc1ea76bb2a546.jpg",
+   "md5": "1ea76bb2a5461caca1a17a68595431dc",
    "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-27T16:06:47"
   },
   "p0839": {
    "cn": [
@@ -13248,13 +13248,13 @@
     "霓虹深渊1（豪华版）"
    ],
    "en": "Neon Abyss 1（Deluxe Edition）",
-   "file": "covers/rc84daa311d3b3.jpg",
-   "md5": "82a610f4e9e54b175f87d28de20e9986",
+   "file": "covers/rc6de3be116927.jpg",
+   "md5": "6de3be116927e447e2d97f641fa9c995",
    "note": "②店主审核: 采用C满填不留边 · ①港服(英文名) · Neon Abyss (日语, 简体中文, 繁体中文, 英语)",
    "platform": "PS",
    "role": "P",
    "store": "Neon Abyss (日语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-27T16:06:47"
   },
   "p1014": {
    "cn": [
@@ -13274,13 +13274,13 @@
     "面包和年糕"
    ],
    "en": "",
-   "file": "covers/rc62d1b717eacb.jpg",
-   "md5": "43d24c6491c73a42261786cbfac40982",
+   "file": "covers/rc582d8cefc358.jpg",
+   "md5": "582d8cefc3586d91cc96567777ab76c1",
    "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-27T16:06:47"
   },
   "p1016": {
    "cn": [
@@ -13405,13 +13405,13 @@
     "驱灵者：新伊甸的幽灵"
    ],
    "en": "",
-   "file": "covers/rcc1591064bf62.jpg",
-   "md5": "88608ce2c358b6a1edc1b336c9200f60",
+   "file": "covers/rc8f2fd34f0710.jpg",
+   "md5": "8f2fd34f07104f32e23b32ca40972ba9",
    "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 fc77599a3ad1_s.jpg",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-27T16:06:47"
   },
   "p1026": {
    "cn": [
@@ -14599,12 +14599,12 @@
     "猫咪斗恶龙2"
    ],
    "en": "Cat Quest 2",
-   "file": "covers/rcc166892808ec.jpg",
-   "md5": "c166892808ec339849fb4c1d998875f3",
+   "file": "covers/rc6e340f358223.jpg",
+   "md5": "6e340f3582231986765b4d4097be0e19",
    "note": "2026-10-23 店主指认红框卡 收缩版满铺: 港服方图s=0.384居中裁+上下67px边缘模糊延伸补边, CAT QUEST II 标题两端完整不被裁 (港服无竖版, manifest 新增独立key)",
    "platform": "PS",
    "role": "M-fill",
-   "time": "2026-10-23T17:57:52+08:00"
+   "time": "2026-10-27T16:06:47"
   },
   "p1126": {
    "cn": [
