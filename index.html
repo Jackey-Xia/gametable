@@ -915,7 +915,11 @@ footer b{color:#4b5563}
 .gt-drow{display:flex;font-size:13px;padding:6px 0;border-bottom:1px dashed #f0f1f3}
 .gt-drow .k{width:64px;color:#3a5bbf;flex:0 0 auto}
 .gt-drow .v{color:#1f2937;flex:1;word-break:break-word}
-.gt-dintro{font-size:13px;line-height:1.75;color:#444;margin-top:12px;white-space:pre-line;word-break:break-word}
+.gt-dintro{font-size:13px;color:#3f4756;margin-top:12px;word-break:break-word}
+.gt-dintro .gt-dp{margin:0 0 13px;line-height:1.72}
+.gt-dintro .gt-dp:last-child{margin-bottom:0}
+.gt-dintro .gt-dsub{display:block;font-weight:700;color:#1f2937;font-size:13px;margin:2px 0 5px;letter-spacing:.2px}
+.gt-dintro.gt-dempty{color:#9aa3af}
 .gt-dgal{position:relative;margin-top:6px;padding-top:2px}
 .gt-dgal .gt-dwrap{display:flex;gap:8px;overflow-x:auto;padding:10px 18px 4px;margin:0;
   -webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
@@ -2289,6 +2293,14 @@ function openDetail(g){
     gtRenderDetail(card,g,cov,e);
   });
 }
+function gtIntroSub(t){
+  if(!t||t.length>26)return false;
+  if(/[。！？.!?，,]/.test(t.slice(-1)))return false;
+  if(/[：:]/.test(t))return true;
+  var H=["叙事","特色","玩法","系统","故事","角色","世界","模式","关于","简介","概览","背景","音乐","画面","操作","评测","剧情","战斗","探索","生存","建造","多人","单人","流程","设定","体验","要素","机制","冒险","挑战","关卡","内容"];
+  for(var i=0;i<H.length;i++){if(t.indexOf(H[i])===0)return true;}
+  return false;
+}
 function gtRenderDetail(card,g,cov,e){
   card.innerHTML="";
   /* 改157d：× 常驻 —— 挂在 card（不滚动）上，内容滚动放 .gt-dscroll */
@@ -2326,8 +2338,24 @@ function gtRenderDetail(card,g,cov,e){
     var v=document.createElement("span");v.className="v";v.textContent=r[1];
     row.appendChild(k);row.appendChild(v);body.appendChild(row);
   });
-  if(e.intro){
-    var it=document.createElement("div");it.className="gt-dintro";it.textContent=(e.intro&&e.intro.trim())?e.intro:"暂无官方简介";body.appendChild(it);
+  if(e.intro&&e.intro.trim()){
+    var it=document.createElement("div");it.className="gt-dintro";
+    var blks=e.intro.split("\n\n");
+    for(var bi=0;bi<blks.length;bi++){
+      var blk=blks[bi].trim();if(!blk)continue;
+      var p=document.createElement("p");p.className="gt-dp";
+      var lns=blk.split("\n");
+      for(var li=0;li<lns.length;li++){
+        var t=lns[li].trim();if(!t)continue;
+        if(li)p.appendChild(document.createElement("br"));
+        if(gtIntroSub(t)){var b=document.createElement("b");b.className="gt-dsub";b.textContent=t;p.appendChild(b);}
+        else p.appendChild(document.createTextNode(t));
+      }
+      it.appendChild(p);
+    }
+    body.appendChild(it);
+  }else{
+    var em=document.createElement("div");em.className="gt-dintro gt-dempty";em.textContent="暂无官方简介";body.appendChild(em);
   }
   sc.appendChild(body);
   var note=document.createElement("div");note.className="gt-dnote";
@@ -2851,7 +2879,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-10-28T02:12:00+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-10-28T02:35:00+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-autorefresh">
 /* 改157f-begin: 版本自动刷新健壮版 —— 修复改143「空刷一次即锁死」缺陷。
    部署时注入 __GT_PAGE_VER, 与 ver.json(no-store) 对比: 不一致才刷新,
