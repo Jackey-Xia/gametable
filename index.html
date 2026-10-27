@@ -876,13 +876,16 @@ footer b{color:#4b5563}
 <style id="gt-detail-css">
 /* 改157-begin: 卡片右上角「详情 ›」提示 + 详情弹层（仅点按钮进入） */
 .gcard{position:relative}
-.gt-hint{position:absolute;top:9px;right:9px;font-size:11px;color:#b8bec8;cursor:pointer;z-index:6;
+.gt-hint{position:absolute;top:9px;right:9px;font-size:11px;color:#b8bec8;cursor:pointer;z-index:6;display:inline-flex;align-items:center;
   user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 .gt-hint:hover{color:#8a93a3}
 .gt-hint:active{opacity:.7}
+/* 改157g: 详情按钮「›」垂直居中 —— 包裹为 inline-block 并用 vertical-align:middle；
+   基础 .gt-hint 也强制 line-height:1（手机端不再继承卡片大行高导致箭头偏上） */
+.gt-ar{font-style:normal;display:inline-block;vertical-align:middle;margin-left:2px;line-height:1}
 /* 改157e-begin: 电脑端(≥641px)详情入口改为游戏名右侧小胶囊（手机端绝对定位不变） */
 @media (min-width:641px){
-  .gt-hint{position:static;display:inline-block;font-size:12px;line-height:1;font-weight:600;
+  .gt-hint{position:static;display:inline-flex;align-items:center;font-size:12px;line-height:1;font-weight:600;
     color:#7c8698;background:#f1f4f9;border-radius:5px;padding:3px 8px;margin-left:8px;
     vertical-align:2px;z-index:auto}
   .gt-hint:hover{color:#3b74d1;background:#e8f0fb}
@@ -894,7 +897,7 @@ footer b{color:#4b5563}
 .gt-dcov{width:96px;height:128px;flex:0 0 auto;border-radius:8px;overflow:hidden;background:#eef1f6}
 .gt-dcov img{width:100%;height:100%;object-fit:cover;display:block}
 .gt-dhtxt{flex:1;min-width:0;padding-top:2px}
-.gt-dtitle{font-size:17px;font-weight:800;line-height:1.35;word-break:break-word}
+.gt-dtitle{font-size:17px;font-weight:800;line-height:1.35;word-break:break-word;color:#3a5bbf}
 .gt-den{font-size:12px;color:#9aa3af;margin-top:3px;word-break:break-word}
 /* 改157d：× 按钮常驻 —— 挂在不滚动的 .gt-dmodal 上（内容滚动在 .gt-dscroll 里），下拉也不消失；
    flex 居中修「× 不在圆心」 */
@@ -938,7 +941,7 @@ html.nohint #gtLoadHint{display:none!important}</style>
 if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 </script>
 <!-- 改123a-end -->
-<div id="gtLoadHint" class="gt-loadhint" role="status"><span class="d"></span><span>正在加载封面，请稍候……</span></div>
+<div id="gtLoadHint" class="gt-loadhint" role="status"><span class="d"></span><span>发现新版本，正在加载数据，请勿刷新页面……</span></div>
 <header class="hero">
   <div class="hero-scrim" aria-hidden="true"></div>
   <div class="memhead">
@@ -2215,14 +2218,15 @@ function gtLightbox(list,idx){
   var lb=document.getElementById("gtLgBox");
   if(!lb){
     lb=document.createElement("div");lb.className="gt-lg";lb.id="gtLgBox";
-    lb.innerHTML='<button class="gt-lgx" type="button" aria-label="关闭">×</button>'
-      +'<button class="gt-lgp" type="button" aria-label="上一张">‹</button>'
-      +'<button class="gt-lgn" type="button" aria-label="下一张">›</button>'
+    lb.innerHTML='<button class="gt-lgx" type="button" aria-label="关闭"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 6 L18 18 M18 6 L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>'
+      +'<button class="gt-lgp" type="button" aria-label="上一张"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>'
+      +'<button class="gt-lgn" type="button" aria-label="下一张"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>'
       +'<span class="gt-lgct"></span>';
     lb.onclick=function(ev){
-      if(ev.target.classList.contains("gt-lgp")){gtLgShow(__LGS.i-1);return;}
-      if(ev.target.classList.contains("gt-lgn")){gtLgShow(__LGS.i+1);return;}
-      if(ev.target===lb||ev.target.classList.contains("gt-lgx"))lb.classList.remove("show");
+      var b=ev.target.closest?ev.target.closest("button"):ev.target;
+      if(b&&b.classList.contains("gt-lgp")){gtLgShow(__LGS.i-1);return;}
+      if(b&&b.classList.contains("gt-lgn")){gtLgShow(__LGS.i+1);return;}
+      if(ev.target===lb||(b&&b.classList.contains("gt-lgx")))lb.classList.remove("show");
     };
     lb.addEventListener("contextmenu",function(ev){if(ev.target.tagName==="IMG")ev.preventDefault();});
     document.addEventListener("keydown",function(ev){
@@ -2269,7 +2273,7 @@ function gtRenderDetail(card,g,cov,e){
   card.innerHTML="";
   /* 改157d：× 常驻 —— 挂在 card（不滚动）上，内容滚动放 .gt-dscroll */
   var close=document.createElement("button");close.className="gt-dclose";close.type="button";
-  close.setAttribute("aria-label","关闭");close.textContent="×";
+  close.setAttribute("aria-label","关闭");close.innerHTML='<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 6 L18 18 M18 6 L6 18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
   close.onclick=function(){card.parentNode.className="cta-mask";};card.appendChild(close);
   var sc=document.createElement("div");sc.className="gt-dscroll";card.appendChild(sc);
   var head=document.createElement("div");head.className="gt-dhead";
@@ -2377,7 +2381,7 @@ function gameCard(g,idx){
   card.appendChild(prices);
   /* 改157: 右上角「详情 ›」——仅点按钮开详情, 无数据则不显示 */
   gtDetLoad().then(function(det){if(!det[g.name])return;
-    var h=document.createElement("span");h.className="gt-hint";h.textContent="详情 ›";
+    var h=document.createElement("span");h.className="gt-hint";h.innerHTML='详情 <i class="gt-ar">›</i>';
     h.onclick=function(ev){ev.stopPropagation();openDetail(g);};
     nm.appendChild(h);
   });
@@ -2796,7 +2800,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-10-27T17:25:45+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-10-27T19:59:51+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-autorefresh">
 /* 改157f-begin: 版本自动刷新健壮版 —— 修复改143「空刷一次即锁死」缺陷。
    部署时注入 __GT_PAGE_VER, 与 ver.json(no-store) 对比: 不一致才刷新,
