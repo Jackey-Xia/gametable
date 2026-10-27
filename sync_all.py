@@ -101,11 +101,6 @@ gd = os.path.join(BASE, "data", "game_details.json")
 if os.path.exists(gd):
     shutil.copyfile(gd, os.path.join(site, "game_details.json"))
     print("game_details.json 已同步")
-# 改158: 画廊滑动优化预览页(独立审核用, 非线上; 仅文件存在才拷)
-pv = os.path.join(BASE, "preview_gallery.html")
-if os.path.exists(pv):
-    shutil.copyfile(pv, os.path.join(site, "preview_gallery.html"))
-    print("preview_gallery.html 已同步(预览)")
 # 改134: 淘宝中转页(只靠商品id跳转, 不依赖会过期的短链) -> 站点根目录 tb.html
 _tbh = os.path.join(BASE, "tb.html")
 if os.path.exists(_tbh):
