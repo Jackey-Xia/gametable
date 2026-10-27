@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1120,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-27T16:51:24"
+  "updated": "2026-10-28T01:09:24"
  },
  "locks": {
   "p0001": {
@@ -519,13 +519,13 @@
     "三角战略"
    ],
    "en": "",
-   "file": "covers/rc35afc757a9c1.jpg",
-   "md5": "a861291aef9b559decb0db11e6fd4bed",
-   "note": "店主审核 B123 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 TRIANGLE",
+   "file": "covers/rc1844c27ba991.jpg",
+   "md5": "1844c27ba99139bc5f720fb465944a2d",
+   "note": "批量3: B1基础上再下移38px",
    "platform": "PS",
    "role": "P-pad",
    "store": "TRIANGLE STRATEGY (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T01:09:24"
   },
   "p0040": {
    "cn": [
@@ -2012,13 +2012,13 @@
     "勇者斗恶龙 建造者1 创世小玩家 阿雷夫加尔德复仇记"
    ],
    "en": "",
-   "file": "covers/rcd3d24c101181.jpg",
-   "md5": "2ba3ec1e5054f3b52ff84c32c1f6fc14",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 rc05522b791c3e.jpg",
+   "file": "covers/rc01afc31f663a.jpg",
+   "md5": "01afc31f663a9fa116c36cc64922a4e2",
+   "note": "批量3: B1上移36px",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T01:09:24"
   },
   "p0154": {
    "cn": [
@@ -3060,13 +3060,13 @@
     "土豆兄弟+深海魔怪DLC"
    ],
    "en": "",
-   "file": "covers/rc62c186a63173.jpg",
-   "md5": "86220958cf05179f03448e521ca0517f",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 9faf4b66cf29_s.jpg",
+   "file": "covers/rc6c58ca31cdff.jpg",
+   "md5": "6c58ca31cdff2ad67e4605c087e64bad",
+   "note": "批量3: A去上下模糊带满铺",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T01:09:24"
   },
   "p0235": {
    "cn": [
@@ -5000,13 +5000,13 @@
     "幽灵线：东京"
    ],
    "en": "",
-   "file": "covers/rc73a7f69b2403.jpg",
-   "md5": "49413aeb042cb371e14bbc41e69d4771",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 fafb994bc9aa_s.jpg",
+   "file": "covers/rcbf5667800231.jpg",
+   "md5": "bf5667800231f1e9ab8161d1237c7bec",
+   "note": "批量3: A去边满铺下移14px保顶部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T01:09:24"
   },
   "p0383": {
    "cn": [
@@ -5026,13 +5026,13 @@
     "幽灵行者2（残暴版）"
    ],
    "en": "",
-   "file": "covers/rcd806e036e077.jpg",
-   "md5": "75eb03129e503d1be436caed2c61550b",
-   "note": "店主审核 E22 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 T、OITION",
+   "file": "covers/rca0995b49e1c1.jpg",
+   "md5": "a0995b49e1c137bbd3e4bd0f080fa110",
+   "note": "批量3: A去侧边满铺保BRUTAL",
    "platform": "PS",
    "role": "P-pad",
    "store": "Ghostrunner 2 Brutal Edition",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T01:09:24"
   },
   "p0385": {
    "cn": [
@@ -5130,13 +5130,13 @@
     "异星探险家+失错行者"
    ],
    "en": "",
-   "file": "covers/rca9835ffcb3ce.jpg",
-   "md5": "97c784a16e3ccd9f8fff6b4593f6e0f3",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 137dd482b41a_s.jpg",
+   "file": "covers/rc2268f17b0682.jpg",
+   "md5": "2268f17b06823682dde840869c1f98d3",
+   "note": "批量3: B1基础上再下移38px",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T01:09:24"
   },
   "p0393": {
    "cn": [
@@ -5269,13 +5269,13 @@
     "影子战术：爱子的选择"
    ],
    "en": "",
-   "file": "covers/rc49086f819b3a.jpg",
-   "md5": "c4a7674c732c0e88e89aad724cda1aec",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rc3eb00642e90a.jpg",
+   "file": "covers/rceb779a13b15c.jpg",
+   "md5": "eb779a13b15c3bf4da8386fb7025597c",
+   "note": "批量3: A去侧边满铺顶齐保顶部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T01:09:24"
   },
   "p0403": {
    "cn": [
@@ -6464,13 +6464,13 @@
     "文明7 席德·梅尔的文明帝国7（完整版）"
    ],
    "en": "Sid Meier's Civilization 7（Complete Edition）",
-   "file": "covers/rc7efcdb51417b.jpg",
-   "md5": "401405e62e3f4e65c5af72ed8dc782bc",
-   "note": "店主指认红框卡 · 开拓者版 SETTLER'S EDITION 金卡 · 方图 1024x1024, 留边版(前端会左右各裁 63px)",
+   "file": "covers/rc8bf90daf5c44.jpg",
+   "md5": "8bf90daf5c44ad62c827b31574e25c71",
+   "note": "批量3: A去边满铺右移保顶部文字",
    "platform": "PS",
    "role": "M-pad",
    "store": "《席德·梅尔的文明VII》开拓者版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T01:09:24"
   },
   "p0495": {
    "cn": [
@@ -6529,13 +6529,13 @@
     "无主之地3（终极版）"
    ],
    "en": "",
-   "file": "covers/rc0a7a25e64dcb.jpg",
-   "md5": "528bdd43e8d3a84185ff2669030dc554",
-   "note": "②店主审核: 采用C满填不留边 · ①港服(中文名) · 无主之地3：终极版 PS4™ &  PS5™ (日语, 韩语, 简体中文, 繁体",
+   "file": "covers/rce42da9678ad2.jpg",
+   "md5": "e42da9678ad20096878a6dd58be5e544",
+   "note": "批量3: 官方pb重建下移38px零伪影",
    "platform": "PS",
    "role": "P",
    "store": "无主之地3：终极版 PS4™ &  PS5™ (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T01:09:24"
   },
   "p0500": {
    "cn": [
@@ -6737,13 +6737,13 @@
     "时间旅者：重生曙光"
    ],
    "en": "",
-   "file": "covers/rc1612dcd2b21f.jpg",
-   "md5": "51b0615dd64cc8aa7c1bb70fd3639316",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 256x384）",
+   "file": "covers/rc0843194bdd33.jpg",
+   "md5": "0843194bdd33bacd79b0871fabf3e638",
+   "note": "批量3: A上移无痕补底22px",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T01:09:24"
   },
   "p0516": {
    "cn": [
@@ -8058,13 +8058,13 @@
     "死亡细胞（完整版）"
    ],
    "en": "Dead Cells",
-   "file": "covers/rcc8323a11c3ac.jpg",
-   "md5": "377adea07faf48ff8917e09f2af53a79",
-   "note": "店主指认红框卡 · 死亡细胞 Dead Cells: Medley of Pain Bundle (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 DEADS［ELS、nstleonmin')(portrait)",
+   "file": "covers/rcfa1c53a79e4b.jpg",
+   "md5": "fa1c53a79e4b215e82edaef71b396889",
+   "note": "批量3: A去边满铺保标题",
    "platform": "PS",
    "role": "P-pad",
    "store": "死亡细胞 Dead Cells: Medley of Pain Bundle (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T01:09:24"
   },
   "p0618": {
    "cn": [
@@ -9622,13 +9622,13 @@
     "生化危机2+3：重制版（2）"
    ],
    "en": "",
-   "file": "covers/rcdd83dd1d3b6e.jpg",
-   "md5": "44627c379f5245b46c35102f1b55269b",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 ee0f55bf8563_s.jpg",
+   "file": "covers/rc0512935e0080.jpg",
+   "md5": "0512935e0080ad503c2bf4dfd6c3b2db",
+   "note": "批量3: A去上下模糊带满铺",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-10-27T12:44:41"
+   "time": "2026-10-28T01:09:24"
   },
   "p0738": {
    "cn": [
@@ -10588,13 +10588,13 @@
     "索尼克赛车 交叉世界（豪华版）"
    ],
    "en": "",
-   "file": "covers/rc16e403c408af.jpg",
-   "md5": "abde39a266cdcc7034b6ce5ea74a0897",
-   "note": "店主审核 A16 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 数字豪华版、CROSEL VORLDS、扇层泉数率 效文世界",
+   "file": "covers/rcc8929af48bb6.jpg",
+   "md5": "c8929af48bb6bd10cc32b60397011374",
+   "note": "批量3: B1上移38px+数字豪华版黄条",
    "platform": "PS",
    "role": "P-pad",
    "store": "索尼克赛车 交叉世界：数字豪华版 PS4 & PS5 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T01:09:24"
   },
   "p0811": {
    "cn": [
@@ -12397,13 +12397,13 @@
     "足球经理2026"
    ],
    "en": "",
-   "file": "covers/rce2aad73db79f.jpg",
-   "md5": "a6930a17a288a27b8c29d18474908281",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 453x527）",
+   "file": "covers/rca5d0b23d4bbd.jpg",
+   "md5": "a5d0b23d4bbdd0ec82c56ecc74622e31",
+   "note": "批量3: A下移无痕补顶22px",
    "platform": "PS",
    "role": "P-fill",
    "store": "Football Manager 26 Console",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T01:09:24"
   },
   "p0949": {
    "cn": [
