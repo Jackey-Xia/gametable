@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1120,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-27T18:26:07"
+  "updated": "2026-10-28T02:42:19"
  },
  "locks": {
   "p0001": {
@@ -10733,13 +10733,13 @@
     "纸人1+2"
    ],
    "en": "Paper Dolls 1+2",
-   "file": "covers/rc09bfc72c875e.jpg",
-   "md5": "09bfc72c875eb2e88f41d219a8d084fe",
-   "note": "批量3: 店主批复终版",
+   "file": "covers/rcd223ffde97af.jpg",
+   "md5": "33d130c62943d592b64a793de2594112",
+   "note": "回滚: 店主确认保留上线前原图",
    "platform": "PS",
    "role": "M-pad",
    "store": "Paper Dolls + Paper Dolls II (PS Store HK) 双卡合成",
-   "time": "2026-10-28T02:16:02"
+   "time": "2026-10-28T02:42:19"
   },
   "p0822": {
    "cn": [
