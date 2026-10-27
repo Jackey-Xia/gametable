@@ -1127,6 +1127,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 
 <button id="toTop" class="toTop" aria-label="跳到底部" title="跳到底部">↓ 跳到底部</button>
 <script src="pinyin.js?v=20260911"></script>
+<script>window.__GT_DATA_VER="2026-10-27T23:26:47+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
 <!-- 改85: 数据文件改为动态加载(带时间戳)
      原来写死 `<script src="data.js?t=20260909155923">`, URL 恒定不变, 而 GitHub Pages 给
      data.js 的 max-age 是 600s —— 库存改完后 10 分钟内(或更久)URL 相同, 浏览器直接用缓存,
@@ -1135,7 +1136,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 <script>
 (function(){
   var s=document.createElement("script");
-  s.src="data.js?t="+Date.now();
+  s.src="data.js?v="+window.__GT_DATA_VER;
   s.onload=s.onerror=function(){ if(window.__GTBOOT) window.__GTBOOT(); };
   document.head.appendChild(s);
 })();
@@ -2200,7 +2201,7 @@ var __GTDET=null,__GTDET_PEND=null;
 function gtDetLoad(){
   if(__GTDET)return Promise.resolve(__GTDET);
   if(__GTDET_PEND)return __GTDET_PEND;
-  __GTDET_PEND=fetch("game_details.json?t="+Date.now()).then(function(r){return r.ok?r.json():{};})
+  __GTDET_PEND=fetch("game_details.json?v="+window.__GT_DATA_VER).then(function(r){return r.ok?r.json():{};})
     .then(function(d){__GTDET=d;return d;}).catch(function(){__GTDET={};return {};});
   return __GTDET_PEND;
 }
@@ -2307,7 +2308,7 @@ function gtRenderDetail(card,g,cov,e){
     row.appendChild(k);row.appendChild(v);body.appendChild(row);
   });
   if(e.intro){
-    var it=document.createElement("div");it.className="gt-dintro";it.textContent=e.intro;body.appendChild(it);
+    var it=document.createElement("div");it.className="gt-dintro";it.textContent=(e.intro&&e.intro.trim())?e.intro:"暂无官方简介";body.appendChild(it);
   }
   sc.appendChild(body);
   var note=document.createElement("div");note.className="gt-dnote";
@@ -2805,7 +2806,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-10-27T22:39:57+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-10-27T23:26:47+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-autorefresh">
 /* 改157f-begin: 版本自动刷新健壮版 —— 修复改143「空刷一次即锁死」缺陷。
    部署时注入 __GT_PAGE_VER, 与 ver.json(no-store) 对比: 不一致才刷新,
@@ -2815,7 +2816,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
     var MY=String(window.__GT_PAGE_VER||"");
     if(!MY)return;
     fetch("ver.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(j){
-      var v=j&&j.v?String(j.v):"";
+      var v=j&&j.v?String(j.v):"";if(j&&j.data_v)window.__GT_DATA_VER=String(j.data_v);
       if(!v)return;
       if(v===MY){
         try{sessionStorage.removeItem("gt_vn");}catch(e){}
