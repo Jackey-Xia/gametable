@@ -2770,24 +2770,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
   setTimeout(tick,600);
 })();
 </script>
-<!-- 版本自动刷新: GitHub Pages 对 index.html 有 max-age=600 缓存, 老顾客可能看到旧页;
-     每次加载拉取 ver.json(no-store), 版本变化则自动刷新一次(带防循环保护) -->
-<script>
-(function(){
-  try{
-    var K="gt_ver", RK="gt_ver_reloaded";
-    fetch("ver.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(d){
-      var v=d&&d.v; if(!v) return;
-      var last=null; try{last=localStorage.getItem(K);}catch(e){}
-      if(last && last!==v && !sessionStorage.getItem(RK)){
-        try{sessionStorage.setItem(RK,"1");}catch(e){}
-        location.reload(true); return;
-      }
-      try{localStorage.setItem(K,v);}catch(e){}
-    }).catch(function(){});
-  }catch(e){}
-})();
-</script>
+<!-- 改157f: 老简易版自动刷新块已删除(与改143抢 gt_ver 键, 且一次守卫会锁死旧页) -->
 
 <!-- 改123b -->
 <script id="gt-hint-tabfix">
@@ -2813,44 +2796,46 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
+<script>window.__GT_PAGE_VER="2026-10-27T17:25:45+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-autorefresh">
-/* 改143-begin: 检测到新版本自动刷新一次（绕开 GitHub Pages 10 分钟缓存） */
+/* 改157f-begin: 版本自动刷新健壮版 —— 修复改143「空刷一次即锁死」缺陷。
+   部署时注入 __GT_PAGE_VER, 与 ver.json(no-store) 对比: 不一致才刷新,
+   同一会话最多重试3次(首次立即, 之后隔45s), 绝不把旧页误标成新版本。 */
 (function(){
-  var KEY="gt_ver";
-  function param(n){
-    var m=location.search.match(new RegExp("[?&]"+n+"=([^&]*)"));
-    return m?decodeURIComponent(m[1]):"";
-  }
-  function read(k){try{return localStorage.getItem(k)||"";}catch(e){return "";}}
-  function write(k,v){try{localStorage.setItem(k,v);}catch(e){}}
   try{
-    fetch("ver.json?t="+Date.now()).then(function(r){return r.json();}).then(function(j){
+    var MY=String(window.__GT_PAGE_VER||"");
+    if(!MY)return;
+    fetch("ver.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(j){
       var v=j&&j.v?String(j.v):"";
       if(!v)return;
-      var ts=Date.parse(v);
-      var mark=ts?String(ts):v;                 /* 用时间戳做短版本号 */
-      var done=read(KEY);
-      if(!done){write(KEY,mark);return;}        /* 首次访问: 只记录, 绝不打扰 */
-      if(mark===done)return;                    /* 版本没变 */
-      write(KEY,mark);
-      if(param("_v")===mark)return;             /* 当前页面已是新版本，不用刷 */
-      var u=location.href.split("#")[0],h=location.hash||"";
-      u+=(u.indexOf("?")>=0?"&":"?")+"_v="+encodeURIComponent(mark);
-      try{
-        var t=document.createElement("div");
-        t.id="gtUpdTip";
-        t.style.cssText="position:fixed;left:50%;top:14px;transform:translateX(-50%);z-index:100000;"+
-          "background:rgba(20,26,38,.92);color:#fff;font-size:12.5px;line-height:1;"+
-          "padding:9px 15px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25)";
-        t.textContent="发现新版本，正在更新\u2026";
-        document.body.appendChild(t);
-      }catch(e){}
-      setTimeout(function(){
-        try{location.replace(u+h);}catch(e){try{location.reload();}catch(e2){}}
-      },380);
+      if(v===MY){
+        try{sessionStorage.removeItem("gt_vn");}catch(e){}
+        try{localStorage.setItem("gt_ver",v);}catch(e){}
+        return;
+      }
+      var n=0; try{n=sessionStorage.getItem("gt_vn")|0;}catch(e){}
+      if(n>=3)return;                                /* 本会话最多追3次, 防循环 */
+      try{sessionStorage.setItem("gt_vn",String(n+1));}catch(e){}
+      var go=function(){
+        try{
+          var t=document.createElement("div");
+          t.id="gtUpdTip";
+          t.style.cssText="position:fixed;left:50%;top:14px;transform:translateX(-50%);z-index:100000;"+
+            "background:rgba(20,26,38,.92);color:#fff;font-size:12.5px;line-height:1;"+
+            "padding:9px 15px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25)";
+          t.textContent="发现新版本，正在更新\u2026";
+          document.body.appendChild(t);
+        }catch(e){}
+        setTimeout(function(){
+          try{location.replace(location.href.split("#")[0]+(location.hash||""));}
+          catch(e){try{location.reload();}catch(e2){}}
+        },380);
+      };
+      if(n===0){go();}else{setTimeout(go,45000);}
     }).catch(function(){});
   }catch(e){}
 })();
+/* 改157f-end */
 </script>
 <script id="gt-buyjump">/* 改148: 在浏览器打开后自动唤起 App 直达商品页（微信内不处理，交由改141浮层） */
 (function(){
