@@ -876,13 +876,14 @@ footer b{color:#4b5563}
 <style id="gt-detail-css">
 /* 改157-begin: 卡片右上角「详情 ›」提示 + 详情弹层（仅点按钮进入） */
 .gcard{position:relative}
-.gt-hint{position:absolute;top:9px;right:9px;font-size:11px;color:#b8bec8;cursor:pointer;z-index:6;display:inline-flex;align-items:center;
+.gt-hint{position:absolute;top:9px;right:9px;font-size:11px;font-weight:600;color:#7c8698;background:#f1f4f9;border-radius:5px;padding:2px 7px;cursor:pointer;z-index:7;display:inline-flex;align-items:center;
   user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
-.gt-hint:hover{color:#8a93a3}
+.gt-hint:hover{color:#3b74d1;background:#e8f0fb}
 .gt-hint:active{opacity:.7}
 /* 改157g: 详情按钮「›」垂直居中 —— 包裹为 inline-block 并用 vertical-align:middle；
    基础 .gt-hint 也强制 line-height:1（手机端不再继承卡片大行高导致箭头偏上） */
-.gt-ar{font-style:normal;display:inline-block;vertical-align:middle;margin-left:2px;line-height:1}
+.gt-ar{font-style:normal;display:inline-flex;align-items:center;margin-left:3px;line-height:1}
+.gt-ar svg{display:block;width:7px;height:7px;stroke:currentColor}
 /* 改157e-begin: 电脑端(≥641px)详情入口改为游戏名右侧小胶囊（手机端绝对定位不变） */
 @media (min-width:641px){
   .gt-hint{position:static;display:inline-flex;align-items:center;font-size:12px;line-height:1;font-weight:600;
@@ -1127,7 +1128,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 
 <button id="toTop" class="toTop" aria-label="跳到底部" title="跳到底部">↓ 跳到底部</button>
 <script src="pinyin.js?v=20260911"></script>
-<script>window.__GT_DATA_VER="2026-10-27T23:26:47+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
+<script>window.__GT_DATA_VER="2026-10-28T00:48:34+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
 <!-- 改85: 数据文件改为动态加载(带时间戳)
      原来写死 `<script src="data.js?t=20260909155923">`, URL 恒定不变, 而 GitHub Pages 给
      data.js 的 max-age 是 600s —— 库存改完后 10 分钟内(或更久)URL 相同, 浏览器直接用缓存,
@@ -2382,7 +2383,7 @@ function gameCard(g,idx){
   card.appendChild(prices);
   /* 改157: 右上角「详情 ›」——仅点按钮开详情, 无数据则不显示 */
   gtDetLoad().then(function(det){if(!det[g.name])return;
-    var h=document.createElement("span");h.className="gt-hint";h.innerHTML='详情 <i class="gt-ar">›</i>';
+    var h=document.createElement("span");h.className="gt-hint";h.innerHTML='详情 <i class="gt-ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></i>';
     h.onclick=function(ev){ev.stopPropagation();openDetail(g);};
     nm.appendChild(h);
   });
@@ -2806,7 +2807,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-10-27T23:26:47+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-10-28T00:48:34+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-autorefresh">
 /* 改157f-begin: 版本自动刷新健壮版 —— 修复改143「空刷一次即锁死」缺陷。
    部署时注入 __GT_PAGE_VER, 与 ver.json(no-store) 对比: 不一致才刷新,
