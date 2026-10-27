@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1119,
+  "count": 1120,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-27T16:06:50"
+  "updated": "2026-10-28T00:27:05"
  },
  "locks": {
   "p0001": {
@@ -372,13 +372,13 @@
     "WRC10（豪华版）"
    ],
    "en": "",
-   "file": "covers/rccb310ff2cfe0.jpg",
-   "md5": "aa9a843f3c52952db790d995cee288fa",
-   "note": "店主审核 B29 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 DELUXE EDITION",
+   "file": "covers/rcdade60b28149.jpg",
+   "md5": "dade60b28149802218bd6a9958b0081c",
+   "note": "批量3: 官方竖版满铺保顶部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "WRC 10 - Deluxe Edition PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T00:27:05"
   },
   "p0029": {
    "cn": [
@@ -714,13 +714,13 @@
     "主播之心"
    ],
    "en": "The Heart of Influencer",
-   "file": "covers/rce5c821242f96.jpg",
-   "md5": "f064ef3bfb76a9a25bf90e417eadbbde",
-   "note": "店主指认红框卡 · 主播之心 (日语, 韩语, 简体中文, 繁体中文, 英语) · 竖图裁切带无文字原图直上",
+   "file": "covers/rc45c769ee825f.jpg",
+   "md5": "45c769ee825fb5978a6b771352056314",
+   "note": "批量3: 官方竖版满铺保底部字母",
    "platform": "PS",
    "role": "P-orig",
    "store": "主播之心 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T00:27:05"
   },
   "p0055": {
    "cn": [
@@ -858,13 +858,13 @@
     "云端掠影"
    ],
    "en": "",
-   "file": "covers/rc51c80ef940c3.jpg",
-   "md5": "b2fe7b25fc194a040f85aa6c9126318b",
-   "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/c98ff1b514d9_s.jpg",
+   "file": "covers/rcddccdf81d69e.jpg",
+   "md5": "ddccdf81d69ecee850f7da563aa468cd",
+   "note": "批量3: 官方竖版满铺保顶部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T00:27:05"
   },
   "p0067": {
    "cn": [
@@ -1247,13 +1247,13 @@
     "使命召唤20：现代战争3/COD20"
    ],
    "en": "COD 20/Call of Duty 20：Modern Warfare 3",
-   "file": "covers/rcbc5b4dabfe34.jpg",
-   "md5": "493fa5f1aaa7a871a1ffe33b4496a329",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",
+   "file": "covers/rc0db18e322240.jpg",
+   "md5": "0db18e322240049ce4988e89d8a80920",
+   "note": "批量3: 现有图整体左移",
    "platform": "PS",
    "role": "M-fill",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T00:27:05"
   },
   "p0096": {
    "cn": [
@@ -2116,13 +2116,13 @@
     "勇者斗恶龙3 HD-2D Remake"
    ],
    "en": "",
-   "file": "covers/rcb6625c5725eb.jpg",
-   "md5": "6d88e3b776cb84fae775bcadd3982cfe",
-   "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/5e76a8d8d0c1_s.jpg",
+   "file": "covers/rcbc3ace02a56c.jpg",
+   "md5": "bc3ace02a56cf104251a9658aa0bbc04",
+   "note": "批量3: B2 居中满铺",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T00:27:05"
   },
   "p0162": {
    "cn": [
@@ -2207,13 +2207,13 @@
     "午夜之南"
    ],
    "en": "",
-   "file": "covers/rc46375b000688.jpg",
-   "md5": "7f4f6ffaab100677a87ead74d8e38710",
-   "note": "店主审核 B110 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 WEAVER'S EDITION",
+   "file": "covers/rcab0b1e099de8.jpg",
+   "md5": "ab0b1e099de82d6b6d3bc6c2bc888d9d",
+   "note": "批量3: 官方竖版满铺保顶部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "South of Midnight Weaver's Edition (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T00:27:05"
   },
   "p0169": {
    "cn": [
@@ -2510,13 +2510,13 @@
     "只只大冒险2"
    ],
    "en": "",
-   "file": "covers/rc9092b1ef6d5d.jpg",
-   "md5": "aa2137cddcb2e238fa23bec5939f9149",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
+   "file": "covers/rc0e2a7dd2e10e.jpg",
+   "md5": "0e2a7dd2e10e54a19a8e6cb3af040c6f",
+   "note": "批量3: 现有图整体下移",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T00:27:05"
   },
   "p0193": {
    "cn": [
@@ -3008,13 +3008,13 @@
     "四海兄弟123合集"
    ],
    "en": "MaFia（Definitive Edition）",
-   "file": "covers/rcefae0bd6a9e5.jpg",
-   "md5": "7dc8913904bd3e57bd5acc5ad96b70ae",
-   "note": "店主指认红框卡 · 《四海兄弟：三部曲》 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 MAFIA')(portrait)",
+   "file": "covers/rcbe020711d02d.jpg",
+   "md5": "be020711d02d274552483960f1a3fe42",
+   "note": "批量3: 官方竖版满铺保顶部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "《四海兄弟：三部曲》 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T00:27:05"
   },
   "p0231": {
    "cn": [
@@ -4333,13 +4333,13 @@
     "完蛋 我被美女包围了1（PS5）"
    ],
    "en": "Love is All Around 1",
-   "file": "covers/rc092e1a3250cd.jpg",
-   "md5": "7e72ad1f55c9d264325d1b8008f20a41",
-   "note": "店主指认红框卡 · 完蛋！我被美女包围了！ (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('orig', '竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上')(portrait) · 多库存沿用",
+   "file": "covers/rc4d89532a203c.jpg",
+   "md5": "4d89532a203cfb5c8fa8c9f802423bb2",
+   "note": "批量3: 官方竖版满铺保底部字母",
    "platform": "PS",
    "role": "P-orig",
    "store": "完蛋！我被美女包围了！ (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T00:27:05"
   },
   "p0332": {
    "cn": [
@@ -5013,13 +5013,13 @@
     "幽灵行者1（完整版）"
    ],
    "en": "",
-   "file": "covers/rc0933cdc255a4.jpg",
-   "md5": "f12f0827ef4029eeaaf6b477f3decc96",
-   "note": "店主审核 E23 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 XO。e、45.04512、12.47271",
+   "file": "covers/rcb9d29757c176.jpg",
+   "md5": "b9d29757c1767f50e54425c89a512f30",
+   "note": "批量3: 居中满铺",
    "platform": "PS",
    "role": "P-pad",
    "store": "Ghostrunner: Complete Edition",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T00:27:05"
   },
   "p0384": {
    "cn": [
@@ -5091,13 +5091,13 @@
     "异形：火力小队精英1（终极版）"
    ],
    "en": "Aliens：Fireteam Elite 1（Ultimate Edition）",
-   "file": "covers/rc802a6b925a7b.jpg",
-   "md5": "fbef780471a151343fdca17f1a7f2a55",
-   "note": "店主指认红框卡 · ULTIMATE EDITION 金标保留 · 方图源留边",
+   "file": "covers/rcf30247c88dc8.jpg",
+   "md5": "f30247c88dc8f327390cf34318427965",
+   "note": "批量3: 居中满铺",
    "platform": "PS",
    "role": "M-pad",
    "store": "Aliens: Fireteam Elite - Ultimate Edition (PS Store HK)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T00:27:05"
   },
   "p0390": {
    "cn": [
@@ -5169,13 +5169,13 @@
     "异梦迷城（豪华版）"
    ],
    "en": "Mato Anomalies（Deluxe Edition）",
-   "file": "covers/rcc2d5e12f79d7.jpg",
-   "md5": "72ad2d881cc0e409b3cfdb63b0e02167",
-   "note": "店主指认红框卡 · DELUXE EDITION 蓝标保留 · 方图源留边",
+   "file": "covers/rc9b9dbf46c4e0.jpg",
+   "md5": "9b9dbf46c4e0e8d20ce6da9765398f82",
+   "note": "批量3: 官方竖版满铺",
    "platform": "PS",
    "role": "M-pad",
    "store": "Mato Anomalies Digital Deluxe (PS Store HK)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T00:27:05"
   },
   "p0396": {
    "cn": [
@@ -6064,13 +6064,13 @@
     "战锤40K：星际战士2"
    ],
    "en": "",
-   "file": "covers/rc42987af8d170.jpg",
-   "md5": "d8c34e3c3bb78a4c0fcf1be0cda7b86e",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 bd2f94a45616_s.jpg",
+   "file": "covers/rc87236ceb2e13.jpg",
+   "md5": "87236ceb2e130eb4f2212471502e54d7",
+   "note": "批量3: B2 居中满铺",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T00:27:05"
   },
   "p0464": {
    "cn": [
@@ -6116,13 +6116,13 @@
     "战锤40K：混沌之门-恶魔猎人（净化者版）"
    ],
    "en": "",
-   "file": "covers/rc97c32c42bc8f.jpg",
-   "md5": "ee85be1cf1afcfd9c97355e6ee4a632e",
-   "note": "店主审核 E97 · 换成美服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 PURIFIER EDITION",
+   "file": "covers/rcf98445fc024b.jpg",
+   "md5": "f98445fc024b7d63f06186039059435f",
+   "note": "批量3: 官方竖版满铺保顶部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "Warhammer 40,000: Chaos Gate - Daemonhunters - Purifier Edition PS4 & PS5",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T00:27:05"
   },
   "p0468": {
    "cn": [
@@ -6142,13 +6142,13 @@
     "战锤：混沌祸根（杀手版）"
    ],
    "en": "",
-   "file": "covers/rc5fcc0354cada.jpg",
-   "md5": "64685aa961910efc59bffd3d08370c0c",
-   "note": "店主审核 B28 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 SLAYER EDITION",
+   "file": "covers/rcf7268a2e1dc4.jpg",
+   "md5": "f7268a2e1dc4b89475afe23b14556a1e",
+   "note": "批量3: 官方竖版满铺保顶部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "Warhammer: Chaosbane Slayer Edition (韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T00:27:05"
   },
   "p0470": {
    "cn": [
@@ -6246,13 +6246,13 @@
     "挖掘者米娜"
    ],
    "en": "",
-   "file": "covers/rc1e198c501726.jpg",
-   "md5": "04f27d976dfb042edc4f0080f2eb163b",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 e391e6268faf_s.jpg",
+   "file": "covers/rc8f8a9ee14886.jpg",
+   "md5": "8f8a9ee148866f4c739fbee2f7cb5171",
+   "note": "批量3: 官方竖版满铺保底部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T00:27:05"
   },
   "p0478": {
    "cn": [
@@ -6451,13 +6451,13 @@
     "文明6 席德·梅尔的文明帝国6（典藏版）"
    ],
    "en": "",
-   "file": "covers/rcd1fbe38ecb0b.jpg",
-   "md5": "b490f74fdcb6acfd79b35530ea89f5a3",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 747c1dec2be7_s.jpg",
+   "file": "covers/rc0c18f5377acd.jpg",
+   "md5": "0c18f5377acdf7d593a9bf911609ba3a",
+   "note": "批量3: 官方竖版满铺保顶部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T00:27:05"
   },
   "p0494": {
    "cn": [
@@ -6854,13 +6854,13 @@
     "星球大战绝地：陨落的武士团（豪华版）"
    ],
    "en": "",
-   "file": "covers/rcb4008d9dcfeb.jpg",
-   "md5": "308fa025a26755c195e73b2789ed49cb",
-   "note": "店主审核 B64 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 DELUXE EDITION",
+   "file": "covers/rc37e7a34b5244.jpg",
+   "md5": "37e7a34b5244649c2f824f22599dfb9d",
+   "note": "批量3: 官方竖版满铺保顶部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "《星球大战 绝地：陨落的武士团™》豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T00:27:05"
   },
   "p0525": {
    "cn": [
@@ -7901,13 +7901,13 @@
     "武林求生（PS5）"
    ],
    "en": "",
-   "file": "covers/rc176056bfa1ab.jpg",
-   "md5": "eade62a8e30e6f5b820198d97e9dda1c",
-   "note": "店主审核 A28 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 武你水丝",
+   "file": "covers/rcdc8b26f25d89.jpg",
+   "md5": "dc8b26f25d89da30bf1a6e95376685f8",
+   "note": "批量3: 官方竖版顶/底齐满铺保字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "武林求生 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T00:27:05"
   },
   "p0606": {
    "cn": [
@@ -8123,13 +8123,13 @@
     "死神公主与异书馆的怪物"
    ],
    "en": "",
-   "file": "covers/rc25e163d93ddd.jpg",
-   "md5": "bb63ffbfde902d10b2787235d769ab2e",
-   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcd9bb85afd750.jpg",
+   "file": "covers/rcc6492dbd8b02.jpg",
+   "md5": "c6492dbd8b02c681a15e78c98f8b812d",
+   "note": "批量3: 现有图整体下移",
    "platform": "PS",
    "role": "P",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T00:27:05"
   },
   "p0623": {
    "cn": [
@@ -10164,13 +10164,13 @@
     "真女神转生5 复仇（豪华版）"
    ],
    "en": "",
-   "file": "covers/rc954e2d446308.jpg",
-   "md5": "0a531ec6ae35d307ba30b88b2d2d4408",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 0d9b2d26f6ed_s.jpg",
+   "file": "covers/rc53b457843526.jpg",
+   "md5": "53b4578435269bf6f2faf7152570a2da",
+   "note": "批量3: 官方竖版满铺",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T00:27:05"
   },
   "p0779": {
    "cn": [
@@ -10255,13 +10255,13 @@
     "祝你好死（PS5）"
    ],
    "en": "",
-   "file": "covers/rc5ebe1329cd5b.jpg",
-   "md5": "e90c7a39a834a5070bf435ad905e940a",
-   "note": "店主审核 B105 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 HAVE",
+   "file": "covers/rcae2d0e5604e3.jpg",
+   "md5": "ae2d0e5604e337d861db905877a57bdc",
+   "note": "批量3: 官方竖版满铺保顶部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "祝你好死 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T00:27:05"
   },
   "p0786": {
    "cn": [
@@ -11940,13 +11940,13 @@
     "衔尾：龙之铃"
    ],
    "en": "",
-   "file": "covers/rc85e727baf68c.jpg",
-   "md5": "96d2f1b0bd073f129e667eca6d222930",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 d1e47b00b497_s.jpg",
+   "file": "covers/rc6b225bdffb1d.jpg",
+   "md5": "6b225bdffb1d7cdcdb81eb6c14ed81cd",
+   "note": "批量3: 官方竖版满铺保顶部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T00:27:05"
   },
   "p0914": {
    "cn": [
@@ -12005,13 +12005,13 @@
     "装甲核心6 境界天火"
    ],
    "en": "",
-   "file": "covers/rc61d31ccaf7d0.jpg",
-   "md5": "ca40da818c436b688b5436038beab508",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rcfd3438196c62.jpg",
+   "file": "covers/rcd5e12437dcba.jpg",
+   "md5": "d5e12437dcba31f7da4eeb2a09cd1752",
+   "note": "批量3: 官方竖版满铺保顶部字母",
    "platform": "PS",
    "role": "P-pad",
    "store": "HP0700-PPSA06772_00-ARMOREDCORE60000 (zh-Hans-HK)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T00:27:05"
   },
   "p0919": {
    "cn": [
@@ -12228,13 +12228,13 @@
     "赛车计划（年度版）"
    ],
    "en": "",
-   "file": "covers/rcdc2766a3e145.jpg",
-   "md5": "c9aa6424fd595175fd3938aa63fcca27",
-   "note": "店主审核 B151 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上",
+   "file": "covers/rc8eb253ccb58b.jpg",
+   "md5": "8eb253ccb58bd3a90094ea0bc16574f3",
+   "note": "批量3: 现有图整体下移",
    "platform": "PS",
    "role": "P",
    "store": "Project Motor Racing: Year 1 Bundle (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T00:27:05"
   },
   "p0936": {
    "cn": [
@@ -12491,13 +12491,13 @@
     "这是我的战争（完整版）"
    ],
    "en": "This War of Mine：Final Cut",
-   "file": "covers/rcfd0070022bb0.jpg",
-   "md5": "055fd70b22d24be39150e2f4b2dd9de8",
-   "note": "店主指认红框卡 · 方图源留边",
+   "file": "covers/rc804db00def5a.jpg",
+   "md5": "804db00def5a3c3e70a7b2b1f57e27a4",
+   "note": "批量3: 居中满铺",
    "platform": "PS",
    "role": "M-pad",
    "store": "This War of Mine: Complete Edition (PS Store HK)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T00:27:05"
   },
   "p0956": {
    "cn": [
@@ -14710,6 +14710,19 @@
    "role": "P",
    "store": "",
    "time": "2026-10-27T14:41:51"
+  },
+  "p1133": {
+   "cn": [
+    "蠕行的恐惧（完整版）"
+   ],
+   "en": "",
+   "file": "covers/rc772a9e31f824.jpg",
+   "md5": "772a9e31f8241b4cf2b14d1b64dae6b7",
+   "note": "批量3: 居中满铺",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "PS Store HK",
+   "time": "2026-10-28T00:27:05"
   }
  }
 }
