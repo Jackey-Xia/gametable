@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1129,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-27T03:16:05"
+  "updated": "2026-10-27T11:17:38"
  },
  "locks": {
   "p0001": {
@@ -1435,13 +1435,13 @@
     "僵尸部队4：死亡战争（完整版）"
    ],
    "en": "",
-   "file": "covers/rca41c93201c85.jpg",
-   "md5": "9a5873fab67887d55d43ab654f6d18e7",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
+   "file": "covers/rcd233955769fc.jpg",
+   "md5": "d233955769fcaecf1166a09308c2d24e",
+   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756） · 店主审核上线 2026-10-27: 官方竖版满铺·整体下移(crop top_src=0, 保顶部 COMPLETE EDITION 完整)",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-27T11:17:38"
   },
   "p0109": {
    "cn": [
@@ -11531,13 +11531,13 @@
     "荒野枪巫（豪华版）"
    ],
    "en": "",
-   "file": "covers/rcfb625143b7e3.jpg",
-   "md5": "eeb8700c76f3efdaf661eb9e4267fd9a",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x756）",
+   "file": "covers/rc308292282167.jpg",
+   "md5": "30829228216764469b19291b823cf432",
+   "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x756） · 店主审核上线 2026-10-27: 官方竖版满铺·整体下移(crop top_src=40, 保顶部 WIZARD 标志与底部 DELUXE EDITION 完整)",
    "platform": "PS",
    "role": "P-fill",
    "store": "Wizard with a Gun: Deluxe Edition (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-27T11:17:38"
   },
   "p0878": {
    "cn": [
