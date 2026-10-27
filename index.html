@@ -880,6 +880,10 @@ footer b{color:#4b5563}
   user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 .gt-hint:hover{color:#3b74d1;background:#e8f0fb}
 .gt-hint:active{opacity:.7}
+/* 改158: 长中英文名不与详情按钮重叠 —— 手机端给名称区右侧留白, 文本提前换行, 不进按钮区 */
+@media(max-width:640px){
+  .gname,.gen{padding-right:64px}
+}
 /* 改157g: 详情按钮「›」垂直居中 —— 包裹为 inline-block 并用 vertical-align:middle；
    基础 .gt-hint 也强制 line-height:1（手机端不再继承卡片大行高导致箭头偏上） */
 .gt-ar{font-style:normal;display:inline-flex;align-items:center;margin-left:3px;line-height:1}
@@ -909,7 +913,7 @@ footer b{color:#4b5563}
 .gt-dtags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
 .gt-dtag{font-size:12px;background:#eef2fb;color:#3a5bbf;border:1px solid #dbe4f7;border-radius:20px;padding:3px 10px}
 .gt-drow{display:flex;font-size:13px;padding:6px 0;border-bottom:1px dashed #f0f1f3}
-.gt-drow .k{width:64px;color:#9aa3af;flex:0 0 auto}
+.gt-drow .k{width:64px;color:#3a5bbf;flex:0 0 auto}
 .gt-drow .v{color:#1f2937;flex:1;word-break:break-word}
 .gt-dintro{font-size:13px;line-height:1.75;color:#444;margin-top:12px;white-space:pre-line;word-break:break-word}
 .gt-dgal{display:flex;gap:8px;overflow-x:auto;padding:12px 18px 2px;margin-top:4px;-webkit-overflow-scrolling:touch}
@@ -1128,7 +1132,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 
 <button id="toTop" class="toTop" aria-label="跳到底部" title="跳到底部">↓ 跳到底部</button>
 <script src="pinyin.js?v=20260911"></script>
-<script>window.__GT_DATA_VER="2026-10-28T00:48:34+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
+<script>window.__GT_DATA_VER="2026-10-28T01:08:55+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
 <!-- 改85: 数据文件改为动态加载(带时间戳)
      原来写死 `<script src="data.js?t=20260909155923">`, URL 恒定不变, 而 GitHub Pages 给
      data.js 的 max-age 是 600s —— 库存改完后 10 分钟内(或更久)URL 相同, 浏览器直接用缓存,
@@ -2807,7 +2811,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-10-28T00:48:34+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-10-28T01:08:55+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-autorefresh">
 /* 改157f-begin: 版本自动刷新健壮版 —— 修复改143「空刷一次即锁死」缺陷。
    部署时注入 __GT_PAGE_VER, 与 ver.json(no-store) 对比: 不一致才刷新,
