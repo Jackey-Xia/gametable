@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1120,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-27T18:14:32"
+  "updated": "2026-10-28T02:16:02"
  },
  "locks": {
   "p0001": {
@@ -493,13 +493,13 @@
     "三国志14 威力加强版（豪华版）"
    ],
    "en": "Sangokushi 14 Power-up Kit（Deluxe Edition）",
-   "file": "covers/rcc7415ad3d809.jpg",
-   "md5": "0257f88733d7461f0b6f147d96ddc17f",
-   "note": "店主指认红框卡 · 套装卡 + 自数字豪华版卡移植 DIGITAL DELUXE EDITION 缎带 · 方图 1024x1024, 留边版(前端会左右各裁 63px)",
+   "file": "covers/rc6908899295a5.jpg",
+   "md5": "6908899295a5eef32944465cf9ad18a9",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "三国志14 威力加强版套装 (简体中文, 繁体中文)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T02:16:02"
   },
   "p0038": {
    "cn": [
@@ -688,13 +688,13 @@
     "为了吾王1"
    ],
    "en": "",
-   "file": "covers/rc6e662aa28b54.jpg",
-   "md5": "ae815e99ec0097df754aa7f9f24a9f9a",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 7b4a38597e52_s.jpg",
+   "file": "covers/rc076c3d5bd0c2.jpg",
+   "md5": "076c3d5bd0c2cb6543f8a72b52cf8db2",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T02:16:02"
   },
   "p0053": {
    "cn": [
@@ -1163,13 +1163,13 @@
     "使命召唤14：二战（豪华版）"
    ],
    "en": "COD 14/Call of Duty 14：WWII",
-   "file": "covers/rc1697c4154baf.jpg",
-   "md5": "cad200b36c502a36c098c005db1e45d6",
-   "note": "店主指认红框卡 · 《使命召唤®：二战》数字豪华版 (中英韩文版) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+   "file": "covers/rcbbf437e919b6.jpg",
+   "md5": "bbf437e919b66585dcaa91b01745c114",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "《使命召唤®：二战》数字豪华版 (中英韩文版)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T02:16:02"
   },
   "p0090": {
    "cn": [
@@ -1332,13 +1332,13 @@
     "侏罗纪世界：进化2（完整版）"
    ],
    "en": "Jurassic World Evolution 2（Complete Edition）",
-   "file": "covers/rcab4e9fb5a954.jpg",
-   "md5": "f2858c658a0924b8e3a83fe41e5ac39e",
-   "note": "店主指认红框卡 · 金框三联卡 · 方图源留边",
+   "file": "covers/rce81e5d7130d7.jpg",
+   "md5": "e81e5d7130d797deeca79eb21d7f72cc",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "《侏罗纪世界：进化2》捆绑包 (PS Store HK)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T02:16:02"
   },
   "p0102": {
    "cn": [
@@ -1384,13 +1384,13 @@
     "偶像大师：星光舞台"
    ],
    "en": "The Idolmaster：Stella Stage",
-   "file": "covers/rccba80374bb1c.jpg",
-   "md5": "d4422b8cca70a78958d26334ac7963fe",
-   "note": "店主指认红框卡 · 星光舞台 STELLA STAGE · 方图 1024x1024, 留边版(前端会左右各裁 63px)",
+   "file": "covers/rc26ec5060d3e1.jpg",
+   "md5": "26ec5060d3e167657d33286b1fc733e3",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "偶像大师 星光舞台 (中韩文版)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T02:16:02"
   },
   "p0106": {
    "cn": [
@@ -2051,13 +2051,13 @@
     "勇者斗恶龙1"
    ],
    "en": "",
-   "file": "covers/rccdb33bc7360f.jpg",
-   "md5": "12c5cb6702ff59fd639bfafa76d5df3c",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 dcb975b72597_s.jpg",
+   "file": "covers/rc80572cc46f03.jpg",
+   "md5": "80572cc46f03190db0cb48216686aed2",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T02:16:02"
   },
   "p0157": {
    "cn": [
@@ -2129,13 +2129,13 @@
     "勇者斗恶龙7 重制版（豪华版）"
    ],
    "en": "Dragon Quest Ⅶ Remake（Deluxe Edition）",
-   "file": "covers/rc90bb0fae306c.jpg",
-   "md5": "cdc531c898ee0c1ae416bd0ea59d0ad0",
-   "note": "店主指认 · 中文版卡+英文Digital Deluxe Edition顶部缎带移植 · 留边",
+   "file": "covers/rc2e0a4c80ceed.jpg",
+   "md5": "2e0a4c80ceed6d2b92a3efd65455e303",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "P-pad",
    "store": "Dragon Quest VII Reimagined Digital Deluxe (PS Store HK) · EN Digital Deluxe Edition 缎带移植",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T02:16:02"
   },
   "p0163": {
    "cn": [
@@ -2707,13 +2707,13 @@
     "吸血鬼爬行者2"
    ],
    "en": "",
-   "file": "covers/rcd406b7af8690.jpg",
-   "md5": "5dc0c8ea21465e38f5651a6fd1db546e",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 24b1b6289f73_s.jpg",
+   "file": "covers/rc321e9cd66095.jpg",
+   "md5": "321e9cd660953658130f4e31f7f6bfb3",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-10-27T12:44:41"
+   "time": "2026-10-28T02:16:02"
   },
   "p0208": {
    "cn": [
@@ -2955,13 +2955,13 @@
     "嘘，美女拍摄中"
    ],
    "en": "Heroines Through My Lens",
-   "file": "covers/rc5ea2357905df.jpg",
-   "md5": "c25346a1d22eb32aeb189d6320ba6979",
-   "note": "店主指认红框卡 · 嘘, 美女拍摄中 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+   "file": "covers/rcce2e02266000.jpg",
+   "md5": "ce2e0226600001e6b5ed52ce867de5e1",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "嘘, 美女拍摄中 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T02:16:02"
   },
   "p0227": {
    "cn": [
@@ -5764,13 +5764,13 @@
     "我为情狂"
    ],
    "en": "",
-   "file": "covers/rc5e215fbb4c49.jpg",
-   "md5": "77eb04e9c3a0b6d9205724ef4b42e425",
-   "note": "店主审核 A21 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 習甜美美的漆婚麥",
+   "file": "covers/rc3b4ce7466518.jpg",
+   "md5": "3b4ce746651845003123884693111739",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "P-pad",
    "store": "我为情狂 (日语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T02:16:02"
   },
   "p0441": {
    "cn": [
@@ -5869,13 +5869,13 @@
     "战地风云1/战地1（革命版）"
    ],
    "en": "",
-   "file": "covers/rc262fcceeabef.jpg",
-   "md5": "00dd36cb2265503590c9e7f8e13a7cac",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 41a45f1f6e40_s.jpg",
+   "file": "covers/rc85896b806aec.jpg",
+   "md5": "85896b806aecd2d75cd86ab96f149130",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T02:16:02"
   },
   "p0449": {
    "cn": [
@@ -5895,13 +5895,13 @@
     "战地风云4/战地4（高级版）（港版英文）"
    ],
    "en": "",
-   "file": "covers/rc69778eebd74b.jpg",
-   "md5": "b5151f7fa09c4f26da59fc6e69a4cbe5",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 350be32ddf4c_s.jpg",
+   "file": "covers/rcb2693cca9ca0.jpg",
+   "md5": "b2693cca9ca0df8de76432a03c5fc5a5",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T02:16:02"
   },
   "p0451": {
    "cn": [
@@ -5934,52 +5934,52 @@
     "战场女武神1（重制版）"
    ],
    "en": "",
-   "file": "covers/rc12ce2ba03d2e.jpg",
-   "md5": "250acb387e56c601f58d7ff79121cc63",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 64f1fe6c6f3f_s.jpg",
+   "file": "covers/rc36d92aa12c1c.jpg",
+   "md5": "36d92aa12c1ca74ca6ee1d11615894b1",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T02:16:02"
   },
   "p0454": {
    "cn": [
     "战场女武神4"
    ],
    "en": "Valkyria Chronicles 4",
-   "file": "covers/rc90a98abec1d6.jpg",
-   "md5": "de3d4adabb863c5d5121d2fcc1379e42",
-   "note": "店主指认红框卡 · 战场女武神４ (中文版) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+   "file": "covers/rcdd1b86c32280.jpg",
+   "md5": "dd1b86c32280da44298a6a498f294578",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "战场女武神４ (中文版)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T02:16:02"
   },
   "p0455": {
    "cn": [
     "战场的赋格曲1"
    ],
    "en": "Fuga：Melodies of Steel 1",
-   "file": "covers/rc701de503e91f.jpg",
-   "md5": "bded55d92bce3b27372a3c72578e62bf",
-   "note": "店主指认红框卡 · 战场的赋格曲 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+   "file": "covers/rc39359e9bdfc1.jpg",
+   "md5": "39359e9bdfc1ba91e1aa9bbcaf64a2bc",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "战场的赋格曲 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T02:16:02"
   },
   "p0456": {
    "cn": [
     "战场的赋格曲2"
    ],
    "en": "Fuga：Melodies of Steel 2",
-   "file": "covers/rcbcc871fca3bd.jpg",
-   "md5": "d8969f8195d00ade6c068b9894d9b793",
-   "note": "店主指认红框卡 · 战场的赋格曲２ (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+   "file": "covers/rc3ab92c541241.jpg",
+   "md5": "3ab92c5412417643f48dc32b7617d975",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "战场的赋格曲２ (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T02:16:02"
   },
   "p0457": {
    "cn": [
@@ -6423,13 +6423,13 @@
     "数码宝贝 绝境求生"
    ],
    "en": "",
-   "file": "covers/rc6195f15739d1.jpg",
-   "md5": "6474c9b0324863943af39bf4f6f69e8e",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 c9da304c2e79_s.jpg",
+   "file": "covers/rcc8bcb60862dc.jpg",
+   "md5": "c8bcb60862dc41176dfc7741cf60431a",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T02:16:02"
   },
   "p0492": {
    "cn": [
@@ -6477,13 +6477,13 @@
     "新樱花大战"
    ],
    "en": "Shin Sakura Taisen",
-   "file": "covers/rc83172db6594d.jpg",
-   "md5": "d1d52efd7e48ab66c6773dec4513a7de",
-   "note": "店主指认 · 满铺改留边(方图源)",
+   "file": "covers/rce27eacef89c5.jpg",
+   "md5": "e27eacef89c559a7a48aa00637827d50",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "新樱花大战 (中文版) (PS Store HK)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T02:16:02"
   },
   "p0496": {
    "cn": [
@@ -7287,13 +7287,13 @@
     "最终幻想10：HD重制版"
    ],
    "en": "",
-   "file": "covers/rc856864a09048.jpg",
-   "md5": "684d017f0f2df343f53c7414eb00c7dc",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 bcfba4e42491_s.jpg",
+   "file": "covers/rcceac840f9e89.jpg",
+   "md5": "ceac840f9e89c37b03958573ec7e7733",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T02:16:02"
   },
   "p0558": {
    "cn": [
@@ -7875,13 +7875,13 @@
     "正当防卫4（完整版）"
    ],
    "en": "",
-   "file": "covers/rca5eef6d083c2.jpg",
-   "md5": "242f36a07346b7ec752f343e1be29e46",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 cb25f5ba3426_s.jpg",
+   "file": "covers/rcbc18feead193.jpg",
+   "md5": "bc18feead1932d01b23a0c39bad8bf8c",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T02:16:02"
   },
   "p0604": {
    "cn": [
@@ -8084,26 +8084,26 @@
     "死或生6（豪华版）"
    ],
    "en": "Dead or Alive 6（Deluxe Edition）",
-   "file": "covers/rc44d3861cea66.jpg",
-   "md5": "e2eae1fdce5aecfdaab6963737fc7adc",
-   "note": "店主指认红框卡 · DEAD OR ALIVE 6: Core Fighters (中日英韩文版) · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+   "file": "covers/rcbac17b088361.jpg",
+   "md5": "bac17b088361435925f362b807dabdbe",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "DEAD OR ALIVE 6: Core Fighters (中日英韩文版)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T02:16:02"
   },
   "p0620": {
    "cn": [
     "死或生6：最后一战"
    ],
    "en": "",
-   "file": "covers/rc86effec20181.jpg",
-   "md5": "86effec201816815def84e4dc26061a9",
-   "note": "边缘虚化(上下镜像延伸blur10+羽化): logo横贯无法满铺",
+   "file": "covers/rce66b042714d7.jpg",
+   "md5": "e66b042714d7ee2aee324f58501d4247",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-fill",
    "store": "",
-   "time": "2026-10-13T08:04:16"
+   "time": "2026-10-28T02:16:02"
   },
   "p0621": {
    "cn": [
@@ -9608,13 +9608,13 @@
     "生化危机1"
    ],
    "en": "",
-   "file": "covers/rca334baf3bbe0.jpg",
-   "md5": "e251ab4090cd3c86a51aab749b482d4c",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 f3819400ab1e_s.jpg",
+   "file": "covers/rc621969bf7f88.jpg",
+   "md5": "621969bf7f88a067adc5e0a33b1ef2f7",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T02:16:02"
   },
   "p0737": {
    "cn": [
@@ -9756,13 +9756,13 @@
     "生化危机：启示录2（豪华版）"
    ],
    "en": "",
-   "file": "covers/rc23868ff9de05.jpg",
-   "md5": "8f1e6f59d4ac90d0e2e04c321ef214de",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 8c261bf18f4c_s.jpg",
+   "file": "covers/rc8138874971fb.jpg",
+   "md5": "8138874971fb42d93c67b9b561adbd72",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T02:16:02"
   },
   "p0748": {
    "cn": [
@@ -10733,13 +10733,13 @@
     "纸人1+2"
    ],
    "en": "Paper Dolls 1+2",
-   "file": "covers/rcd223ffde97af.jpg",
-   "md5": "33d130c62943d592b64a793de2594112",
-   "note": "店主指认 · 纸人1+纸人2 双卡斜叠合一(并列优先级) · 留边",
+   "file": "covers/rc09bfc72c875e.jpg",
+   "md5": "09bfc72c875eb2e88f41d219a8d084fe",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "Paper Dolls + Paper Dolls II (PS Store HK) 双卡合成",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T02:16:02"
   },
   "p0822": {
    "cn": [
@@ -10838,13 +10838,13 @@
     "维克多弗兰（完整版）"
    ],
    "en": "",
-   "file": "covers/rc611c28179105.jpg",
-   "md5": "2eeeac27e26dc7cc6f01b741b2ee5b71",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 cf7895c54f78_s.jpg",
+   "file": "covers/rc2952058f8c3e.jpg",
+   "md5": "2952058f8c3eb3d7c991ca102dfca945",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T02:16:02"
   },
   "p0830": {
    "cn": [
@@ -11127,13 +11127,13 @@
     "自杀小队：杀死正义联盟（豪华版）"
    ],
    "en": "Suicide Squad: Kill The Justice League（Deluxe Edition）",
-   "file": "covers/rc64a237e88fc5.jpg",
-   "md5": "3e40e2e05a4ab7e4e1c89d8bfd4f9d35",
-   "note": "店主指认红框卡 · DIGITAL DELUXE EDITION 红标保留 · 方图源留边",
+   "file": "covers/rc69b6a37bcfc4.jpg",
+   "md5": "69b6a37bcfc4a8a94e12b0f95c31d712",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "自杀小队：消灭正义联盟 - 数码豪华版 (PS Store HK)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T02:16:02"
   },
   "p0851": {
    "cn": [
@@ -11153,13 +11153,13 @@
     "致命躯壳1（增强版）"
    ],
    "en": "",
-   "file": "covers/rcb151a0953054.jpg",
-   "md5": "0ccadd588f06082efe95fb62a11b6214",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 42f4d87c1d9c_s.jpg",
+   "file": "covers/rca32255a8f8dd.jpg",
+   "md5": "a32255a8f8ddfd039b0a15db983a48f1",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T02:16:02"
   },
   "p0853": {
    "cn": [
@@ -11875,65 +11875,65 @@
     "行尸走肉1（完整版）（美版英文）"
    ],
    "en": "The Walking Dead 1（Complete Edition）",
-   "file": "covers/rc070bbc5ce303.jpg",
-   "md5": "8f5c82a95fe2cef893251585b6c75573",
-   "note": "店主指认红框卡 · 方图源留边",
+   "file": "covers/rc49a5f206f6ba.jpg",
+   "md5": "49a5f206f6ba962d21dc98484831babb",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "The Walking Dead: The Complete First Season (PS Store US)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T02:16:02"
   },
   "p0909": {
    "cn": [
     "行尸走肉2（美版英文）"
    ],
    "en": "The Walking Dead 2",
-   "file": "covers/rc18d5eb7bf6fe.jpg",
-   "md5": "c6c700d26293ceb26ab0c940a6dac420",
-   "note": "店主指认红框卡 · 方图源留边",
+   "file": "covers/rcbc58068818bc.jpg",
+   "md5": "bc58068818bc2da982700b610145a001",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "The Walking Dead: Season Two (PS Store US)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T02:16:02"
   },
   "p0910": {
    "cn": [
     "行尸走肉3"
    ],
    "en": "The Walking Dead 3",
-   "file": "covers/rc1e1323cbc99e.jpg",
-   "md5": "5179b0656a1f35ae1881314d62dec76f",
-   "note": "店主指认红框卡 · 方图源留边",
+   "file": "covers/rc03e8aec6e53a.jpg",
+   "md5": "03e8aec6e53a8ddf3c92f258bd359b51",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "The Walking Dead: A New Frontier - Season Pass (PS Store US)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T02:16:02"
   },
   "p0911": {
    "cn": [
     "行尸走肉4（完整版）"
    ],
    "en": "The Walking Dead 4（Complete Edition）",
-   "file": "covers/rcfe3f06a04976.jpg",
-   "md5": "388b799881fe6e84cd08c4d9312dd626",
-   "note": "店主指认红框卡 · 方图源留边",
+   "file": "covers/rc7803ce29f94f.jpg",
+   "md5": "7803ce29f94f034b175c474ff65daa5a",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "The Walking Dead: The Final Season - Season Pass (PS Store US)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T02:16:02"
   },
   "p0912": {
    "cn": [
     "行尸走肉：米琼恩"
    ],
    "en": "The Walking Dead：Michonne - A Telltale Miniseries",
-   "file": "covers/rc732f8a8e12cc.jpg",
-   "md5": "1b3c0749404a6cc8e281deb3fe289b7b",
-   "note": "店主指认 · 满铺改留边(方图源)",
+   "file": "covers/rcfeb89dedcb0e.jpg",
+   "md5": "feb89dedcb0e6258eab4ef24f603c532",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "The Walking Dead: Michonne - A Telltale Miniseries (PS Store US)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T02:16:02"
   },
   "p0913": {
    "cn": [
@@ -12097,13 +12097,13 @@
     "说谎公主与盲眼王子"
    ],
    "en": "",
-   "file": "covers/rcfd0cbf857390.jpg",
-   "md5": "3c260bb95ba367c797e30938c016db5a",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 bdb60b928838_s.jpg",
+   "file": "covers/rc12756e90bd40.jpg",
+   "md5": "12756e90bd404dd017dc9d22d5cd2d39",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T02:16:02"
   },
   "p0926": {
    "cn": [
@@ -12648,13 +12648,13 @@
     "逃生1（完整版）"
    ],
    "en": "",
-   "file": "covers/rccd0f98da7229.jpg",
-   "md5": "90dc900342d2f99791798360fe9dd8de",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 652536f46bf2_s.jpg",
+   "file": "covers/rc35c27216518b.jpg",
+   "md5": "35c27216518bb84f1652bf09a37b4fbb",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T02:16:02"
   },
   "p0968": {
    "cn": [
@@ -12947,13 +12947,13 @@
     "闪电十一人 英雄们的胜利之路（豪华版）"
    ],
    "en": "Inazuma Eleven：Victory Road（Deluxe Edition）",
-   "file": "covers/rcf143773df678.jpg",
-   "md5": "05c541ba75d3654bd93e95c57734963c",
-   "note": "店主指认改满铺 · 英雄们的胜利之路 豪华版",
+   "file": "covers/rc4fdde0587c2a.jpg",
+   "md5": "4fdde0587c2a8d4a4c98b48714c1af96",
+   "note": "批量3: 店主批复终版",
    "platform": "PS",
    "role": "M-fill",
    "store": "闪电十一人 英雄们的胜利之路 豪华版 (日语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T02:16:02"
   },
   "p0991": {
    "cn": [
