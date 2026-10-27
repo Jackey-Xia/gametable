@@ -880,6 +880,14 @@ footer b{color:#4b5563}
   user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 .gt-hint:hover{color:#8a93a3}
 .gt-hint:active{opacity:.7}
+/* 改157e-begin: 电脑端(≥641px)详情入口改为游戏名右侧小胶囊（手机端绝对定位不变） */
+@media (min-width:641px){
+  .gt-hint{position:static;display:inline-block;font-size:12px;line-height:1;font-weight:600;
+    color:#7c8698;background:#f1f4f9;border-radius:5px;padding:3px 8px;margin-left:8px;
+    vertical-align:2px;z-index:auto}
+  .gt-hint:hover{color:#3b74d1;background:#e8f0fb}
+}
+/* 改157e-end */
 .gt-dmodal{box-sizing:border-box;position:relative;max-width:460px;max-height:86vh;overflow:hidden;display:flex;flex-direction:column;text-align:left;padding:0 0 18px}
 .gt-dscroll{overflow:auto;-webkit-overflow-scrolling:touch}
 .gt-dhead{display:flex;gap:14px;padding:18px 18px 12px;border-bottom:1px solid #eef0f3;position:sticky;top:0;background:#fff;border-radius:18px 18px 0 0}
@@ -2371,7 +2379,7 @@ function gameCard(g,idx){
   gtDetLoad().then(function(det){if(!det[g.name])return;
     var h=document.createElement("span");h.className="gt-hint";h.textContent="详情 ›";
     h.onclick=function(ev){ev.stopPropagation();openDetail(g);};
-    card.appendChild(h);
+    nm.appendChild(h);
   });
   return card;
 }
