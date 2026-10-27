@@ -916,12 +916,24 @@ footer b{color:#4b5563}
 .gt-drow .k{width:64px;color:#3a5bbf;flex:0 0 auto}
 .gt-drow .v{color:#1f2937;flex:1;word-break:break-word}
 .gt-dintro{font-size:13px;line-height:1.75;color:#444;margin-top:12px;white-space:pre-line;word-break:break-word}
-.gt-dgal{display:flex;gap:8px;overflow-x:auto;padding:12px 18px 2px;margin-top:4px;-webkit-overflow-scrolling:touch;
-  scroll-snap-type:x proximity;scroll-behavior:smooth}
-.gt-dgal img{height:110px;border-radius:8px;flex:0 0 auto;object-fit:cover;background:#eef1f6;cursor:pointer;
+/* 改158c：PS 官网风格截图轮播 —— 强制吸附(mandatory) + 左右圆形箭头 + 底部圆点 + 隐藏滚动条 + 去淡入拖影 */
+.gt-dgal{position:relative;margin-top:6px;padding-top:2px}
+.gt-dgal .gt-dwrap{display:flex;gap:8px;overflow-x:auto;padding:10px 18px 4px;margin:0;
+  -webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
+.gt-dgal .gt-dwrap::-webkit-scrollbar{display:none}
+.gt-dgal .gt-dwrap img{height:110px;width:auto;aspect-ratio:16/9;border-radius:8px;flex:0 0 auto;object-fit:cover;background:#eef1f6;cursor:pointer;
   -webkit-touch-callout:none;-webkit-user-select:none;user-select:none;-webkit-user-drag:none;
-  scroll-snap-align:center;opacity:0;transition:opacity .35s ease}
-.gt-dgal img.gt-loaded{opacity:1}
+  scroll-snap-align:start;opacity:1;transition:transform .14s ease;will-change:transform}
+.gt-dgal .gt-dwrap img:active{transform:scale(.97)}
+/* 左右圆形半透明箭头（SVG），滚动到头自动隐藏 */
+.gt-dgal .gt-galp,.gt-dgal .gt-galn{position:absolute;top:50px;transform:translateY(-50%);width:34px;height:34px;border:none;border-radius:50%;background:rgba(20,28,46,.5);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:4;opacity:0;transition:opacity .2s ease,background .2s ease;pointer-events:none}
+.gt-dgal .gt-galp{left:6px}.gt-dgal .gt-galn{right:6px}
+.gt-dgal.has-prev .gt-galp,.gt-dgal.has-next .gt-galn{opacity:1;pointer-events:auto}
+.gt-dgal .gt-galp:active,.gt-dgal .gt-galn:active{background:rgba(20,28,46,.82)}
+/* 底部圆点导航（当前页高亮拉长） */
+.gt-dgal .gt-gadots{display:flex;gap:6px;justify-content:center;padding:4px 0 8px}
+.gt-dgal .gt-gadots b{width:7px;height:7px;border-radius:50%;background:#c8cfdb;cursor:pointer;transition:background .2s,width .2s,border-radius .2s}
+.gt-dgal .gt-gadots b.on{background:#3a5bbf;width:18px;border-radius:4px}
 .gt-dnote{margin:10px 18px 0;font-size:11px;color:#9aa3af;text-align:center}
 .gt-dloading{text-align:center;color:#9aa3af;font-size:13px;padding:26px}
 /* 截图放大灯箱（禁长按保存） */
@@ -936,7 +948,7 @@ footer b{color:#4b5563}
 .gt-lg .gt-lgp{left:12px}.gt-lg .gt-lgn{right:12px}
 .gt-lg .gt-lgp:active,.gt-lg .gt-lgn:active{background:rgba(255,255,255,.3)}
 .gt-lg .gt-lgct{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.85);font-size:13px;background:rgba(0,0,0,.35);border-radius:12px;padding:3px 10px}
-@media(max-width:640px){.gt-dgal img{height:96px}}
+@media(max-width:640px){.gt-dgal .gt-dwrap img{height:96px}.gt-dgal .gt-galp,.gt-dgal .gt-galn{top:43px}}
 /* 改157-end */
 </style>
 
@@ -2329,21 +2341,43 @@ function gtRenderDetail(card,g,cov,e){
   var note=document.createElement("div");note.className="gt-dnote";
   note.textContent="以上信息均来自互联网收集，实际信息以官方数据为准";sc.appendChild(note);
   if(e.shots&&e.shots.length){
-    var gal=document.createElement("div");gal.className="gt-dgal";
-    e.shots.slice(0,12).forEach(function(s){
-      var gi=document.createElement("img");gi.draggable=false;gi.alt="";
-      gi.onload=function(){gi.classList.add("gt-loaded");};
-      gi.src=s;
-      if(gi.complete&&gi.naturalWidth)gi.classList.add("gt-loaded");
-      gal.appendChild(gi);
-    });
-    /* 改157d：灯箱带整组截图，支持左右切换/滑动 */
     var arr=e.shots.slice(0,12);
-    gal.addEventListener("click",function(ev){
-      var im=ev.target.closest("img");if(!im)return;
-      var idx=arr.indexOf(im.src);gtLightbox(arr,idx<0?0:idx);
+    var gal=document.createElement("div");gal.className="gt-dgal";
+    var wrap=document.createElement("div");wrap.className="gt-dwrap";
+    arr.forEach(function(s,idx){
+      var gi=document.createElement("img");gi.draggable=false;gi.alt="";gi.decoding="async";
+      gi.src=s;
+      gi.addEventListener("click",function(){gtLightbox(arr,idx);});
+      wrap.appendChild(gi);
     });
+    gal.appendChild(wrap);
+    /* 左右圆形箭头（SVG） */
+    var bp=document.createElement("button");bp.type="button";bp.className="gt-galp";bp.setAttribute("aria-label","上一张");
+    bp.innerHTML='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M15 5 L8 12 L15 19" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    var bn=document.createElement("button");bn.type="button";bn.className="gt-galn";bn.setAttribute("aria-label","下一张");
+    bn.innerHTML='<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 5 L16 12 L9 19" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    gal.appendChild(bp);gal.appendChild(bn);
+    /* 底部圆点导航 */
+    var dots=document.createElement("div");dots.className="gt-gadots";
+    arr.forEach(function(_,i){var d=document.createElement("b");if(i===0)d.className="on";dots.appendChild(d);});
+    gal.appendChild(dots);
+    function galStep(){var im=wrap.querySelector("img");return im?im.clientWidth+8:200;}
+    function galUpdate(){
+      var imgs=wrap.querySelectorAll("img");if(!imgs.length)return;
+      var max=wrap.scrollWidth-wrap.clientWidth,sl=wrap.scrollLeft;
+      gal.classList.toggle("has-prev",sl>2);
+      gal.classList.toggle("has-next",sl<max-2);
+      var step=galStep();var cur=step>0?Math.round(sl/step):0;
+      if(cur<0)cur=0;if(cur>imgs.length-1)cur=imgs.length-1;
+      dots.querySelectorAll("b").forEach(function(b,i){b.className=i===cur?"on":"";});
+    }
+    wrap.addEventListener("scroll",function(){requestAnimationFrame(galUpdate);},{passive:true});
+    bp.addEventListener("click",function(){wrap.scrollBy({left:-galStep(),behavior:"smooth"});});
+    bn.addEventListener("click",function(){wrap.scrollBy({left:galStep(),behavior:"smooth"});});
+    dots.querySelectorAll("b").forEach(function(b,i){b.addEventListener("click",function(){wrap.scrollTo({left:i*galStep(),behavior:"smooth"});});});
     sc.appendChild(gal);
+    requestAnimationFrame(galUpdate);
+    setTimeout(galUpdate,400);
   }
 }
 /* 改157-end */
