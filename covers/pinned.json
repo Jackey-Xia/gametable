@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1120,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-27T19:53:02"
+  "updated": "2026-10-28T04:13:19"
  },
  "locks": {
   "p0001": {
@@ -5934,13 +5934,13 @@
     "战场女武神1（重制版）"
    ],
    "en": "",
-   "file": "covers/rc36d92aa12c1c.jpg",
-   "md5": "36d92aa12c1ca74ca6ee1d11615894b1",
-   "note": "批量3: 店主批复终版",
+   "file": "covers/rca518964224bb.jpg",
+   "md5": "a518964224bbbb8c39a2cec91e4a12d3",
+   "note": "批量3: E1 右移保中英文标识(店主批复)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-10-28T02:16:02"
+   "time": "2026-10-28T04:13:19"
   },
   "p0454": {
    "cn": [
@@ -6477,13 +6477,13 @@
     "新樱花大战"
    ],
    "en": "Shin Sakura Taisen",
-   "file": "covers/rce27eacef89c5.jpg",
-   "md5": "e27eacef89c559a7a48aa00637827d50",
-   "note": "批量3: 店主批复终版",
+   "file": "covers/rcb116f27960a8.jpg",
+   "md5": "b116f27960a8fc79924b0353fc20fd77",
+   "note": "批量3: E1 右移保中英文标识(店主批复)",
    "platform": "PS",
    "role": "M-pad",
    "store": "新樱花大战 (中文版) (PS Store HK)",
-   "time": "2026-10-28T02:16:02"
+   "time": "2026-10-28T04:13:19"
   },
   "p0496": {
    "cn": [
@@ -8097,13 +8097,13 @@
     "死或生6：最后一战"
    ],
    "en": "",
-   "file": "covers/rce66b042714d7.jpg",
-   "md5": "e66b042714d7ee2aee324f58501d4247",
-   "note": "批量3: 店主批复终版",
+   "file": "covers/rced6cdcd19341.jpg",
+   "md5": "ed6cdcd1934169598046c62ca518bcd4",
+   "note": "批量3: D1 满铺(店主批复)",
    "platform": "PS",
    "role": "M-fill",
    "store": "",
-   "time": "2026-10-28T02:16:02"
+   "time": "2026-10-28T04:13:19"
   },
   "p0621": {
    "cn": [
@@ -11901,39 +11901,39 @@
     "行尸走肉3"
    ],
    "en": "The Walking Dead 3",
-   "file": "covers/rc03e8aec6e53a.jpg",
-   "md5": "03e8aec6e53a8ddf3c92f258bd359b51",
-   "note": "批量3: 店主批复终版",
+   "file": "covers/rc8405525a1f4d.jpg",
+   "md5": "8405525a1f4df11b04aae0431c85b3ca",
+   "note": "批量3: E1 右移保中英文标识(店主批复)",
    "platform": "PS",
    "role": "M-pad",
    "store": "The Walking Dead: A New Frontier - Season Pass (PS Store US)",
-   "time": "2026-10-28T02:16:02"
+   "time": "2026-10-28T04:13:19"
   },
   "p0911": {
    "cn": [
     "行尸走肉4（完整版）"
    ],
    "en": "The Walking Dead 4（Complete Edition）",
-   "file": "covers/rc7803ce29f94f.jpg",
-   "md5": "7803ce29f94f034b175c474ff65daa5a",
-   "note": "批量3: 店主批复终版",
+   "file": "covers/rc4d4381025c00.jpg",
+   "md5": "4d4381025c0080e60218658a2353e867",
+   "note": "批量3: E1 右移保中英文标识(店主批复)",
    "platform": "PS",
    "role": "M-pad",
    "store": "The Walking Dead: The Final Season - Season Pass (PS Store US)",
-   "time": "2026-10-28T02:16:02"
+   "time": "2026-10-28T04:13:19"
   },
   "p0912": {
    "cn": [
     "行尸走肉：米琼恩"
    ],
    "en": "The Walking Dead：Michonne - A Telltale Miniseries",
-   "file": "covers/rcfeb89dedcb0e.jpg",
-   "md5": "feb89dedcb0e6258eab4ef24f603c532",
-   "note": "批量3: 店主批复终版",
+   "file": "covers/rcc036c46535eb.jpg",
+   "md5": "c036c46535eba1a3537e42985b0d13e6",
+   "note": "批量3: E1 右移保中英文标识(店主批复)",
    "platform": "PS",
    "role": "M-pad",
    "store": "The Walking Dead: Michonne - A Telltale Miniseries (PS Store US)",
-   "time": "2026-10-28T02:16:02"
+   "time": "2026-10-28T04:13:19"
   },
   "p0913": {
    "cn": [
