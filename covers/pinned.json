@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1116,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-27T07:07:51"
+  "updated": "2026-10-27T15:09:27"
  },
  "locks": {
   "p0001": {
@@ -331,13 +331,13 @@
     "Rumbral"
    ],
    "en": "",
-   "file": "covers/rc658f7ca26979.jpg",
-   "md5": "39bdf2eb15094d1225bac30cb2f83f7e",
-   "note": "恢复留边版(原图前端裁切带内有文字/字母, 目检确认) · 原图 covers/034edb5df151_s.jpg",
+   "file": "covers/rcfd8ebd104042.jpg",
+   "md5": "fd8ebd104042a7a52e4175ed47c1ce56",
+   "note": "店主指令1: 选B1直接上线",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-27T15:09:27"
   },
   "p0026": {
    "cn": [
@@ -3816,26 +3816,26 @@
     "奇异人生：双重曝光（终极版）"
    ],
    "en": "",
-   "file": "covers/rcf8d6f538e7b3.jpg",
-   "md5": "5aa8ccff5aa7126a0a98cb39cb6e69c2",
-   "note": "店主审核 B157 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 ULTIMATE EDITION",
+   "file": "covers/rc94c5f00c9514.jpg",
+   "md5": "94c5f00c9514992b7c77d2603c069dd1",
+   "note": "店主指令1: 选B1(顶对齐保ULTIMATE)直接上线",
    "platform": "PS",
    "role": "P-pad",
    "store": "奇异人生：双重曝光》终极版 (EN/JP Ver.) (日语, 简体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-27T15:09:27"
   },
   "p0293": {
    "cn": [
     "奇异人生：本色（豪华版）"
    ],
    "en": "Life is Strange：True Colors（Deluxe Edition）",
-   "file": "covers/rc556c49e189ed.jpg",
-   "md5": "2d8a062e53d215dff4e351aa74fed29a",
-   "note": "店主指认红框卡 · 卡面含 DELUXE EDITION · 竖图 1440x2160 上下各裁 5.6%, 裁切带内有文字 DELUXE EDITION",
+   "file": "covers/rc329a7a3d7923.jpg",
+   "md5": "329a7a3d79231803f199e4c155663a16",
+   "note": "店主指令1: 选B1(顶对齐保DELUXE)直接上线",
    "platform": "PS",
    "role": "P-pad",
    "store": "《奇异人生：本色》豪华版 PS4 & PS5 (日语, 简体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-27T15:09:27"
   },
   "p0294": {
    "cn": [
@@ -4013,13 +4013,13 @@
     "如龙 人中之龙 维新！极"
    ],
    "en": "Like a Dragon：Ishin!",
-   "file": "covers/rc543168f9c5fb.jpg",
-   "md5": "388b532b7b5ad2ee780155a935f4ef05",
-   "note": "人中之龙 维新！ 极 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边')(portrait)",
+   "file": "covers/rc35218a420eca.jpg",
+   "md5": "35218a420eca41b2935b1b56248ca5e5",
+   "note": "店主指令1: 选B1(顶对齐保右上logo)直接上线",
    "platform": "PS",
    "role": "P-pad",
    "store": "人中之龙 维新！ 极 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-27T15:09:27"
   },
   "p0308": {
    "cn": [
@@ -4040,13 +4040,13 @@
     "如龙0 人中之龙0：誓约的场所（导演剪辑版）（2）"
    ],
    "en": "Yakuza 0（Director's Cut Edition）",
-   "file": "covers/rc352e431ae0f6.jpg",
-   "md5": "b8110cdc4ccb84ceacceeca9b4f8486b",
-   "note": "人中之龙０ 誓约的场所 导演剪辑版 (日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 导演剪辑版')(portrait)",
+   "file": "covers/rc2c4a3355dbd7.jpg",
+   "md5": "2c4a3355dbd77a81ce87970effde53ff",
+   "note": "店主指令1: 选B1(底对齐保标题)直接上线",
    "platform": "PS",
    "role": "P-pad",
    "store": "人中之龙０ 誓约的场所 导演剪辑版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-27T15:09:27"
   },
   "p0310": {
    "cn": [
@@ -4054,13 +4054,13 @@
     "如龙1 人中之龙：极1（2）"
    ],
    "en": "Yakuza：Kiwami1",
-   "file": "covers/rc1c910140f2ed.jpg",
-   "md5": "2d81c0336e7cdd9b4cb9f4177e577d13",
-   "note": "人中之龙 极 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语) · 店主指认红框卡 · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 人中之龙圾、KIWAMI')(portrait)",
+   "file": "covers/rc533811f5c81a.jpg",
+   "md5": "533811f5c81a78f7cd954cd75f9cd3e5",
+   "note": "店主指令1: 选B1(底对齐保标题)直接上线",
    "platform": "PS",
    "role": "P-pad",
    "store": "人中之龙 极 PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-27T15:09:27"
   },
   "p0311": {
    "cn": [
@@ -4108,13 +4108,13 @@
     "如龙5 人中之龙5：实现梦想者"
    ],
    "en": "",
-   "file": "covers/rc814d821698f7.jpg",
-   "md5": "9030877884ac788e0e110f577d5b5e4d",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",
+   "file": "covers/rc22fa1160f7e7.jpg",
+   "md5": "22fa1160f7e73ffedf28c6da5940acc8",
+   "note": "店主指令1: 选B1(方图居中满铺)直接上线",
    "platform": "PS",
    "role": "M-fill",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-27T15:09:27"
   },
   "p0315": {
    "cn": [
@@ -4385,13 +4385,13 @@
     "审判之逝：湮灭的记忆（豪华版）"
    ],
    "en": "",
-   "file": "covers/rc6abbc09ab404.jpg",
-   "md5": "11ae17531667975006e8224f8ba140ef",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rc1e5f946cc700.jpg",
+   "file": "covers/rc09ebc8d8a3ee.jpg",
+   "md5": "09ebc8d8a3eec152593c860d1cec8ab8",
+   "note": "店主指令1: 选B1(顶对齐保DIGITAL DELUXE)直接上线",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-27T15:09:27"
   },
   "p0336": {
    "cn": [
@@ -4868,13 +4868,13 @@
     "师父/师傅（豪华版）"
    ],
    "en": "SIFU",
-   "file": "covers/rcf16bf8d2daf0.jpg",
-   "md5": "7985fe412f2476b1c521c6677b777134",
-   "note": "店主指认红框卡 · SIFU 橙色主卡 · 方图 1024x1024, 留边版(前端会左右各裁 63px)",
+   "file": "covers/rcc011d8094dc1.jpg",
+   "md5": "c011d8094dc1a0e4c2e312509a3bf3b9",
+   "note": "店主指令1: 选B1直接上线",
    "platform": "PS",
    "role": "M-pad",
    "store": "《师父》 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-27T15:09:27"
   },
   "p0373": {
    "cn": [
@@ -7613,13 +7613,13 @@
     "杀死公主 -原始剪辑-（PS5）"
    ],
    "en": "",
-   "file": "covers/d6cb375d4057_s.jpg",
-   "md5": "187abba6ad2e9477faf3adf4e071f680",
-   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rcb09947629702.jpg",
+   "file": "covers/rc5065d77ac660.jpg",
+   "md5": "5065d77ac6604d2b63e0798b1a87981a",
+   "note": "店主指令1: 选B1(上移)直接上线",
    "platform": "PS",
    "role": "P",
    "store": "",
-   "time": "2026-09-21T00:21:31"
+   "time": "2026-10-27T15:09:27"
   },
   "p0584": {
    "cn": [
@@ -11822,13 +11822,13 @@
     "蠕行的恐惧"
    ],
    "en": "",
-   "file": "covers/rca480dc89cc2f.jpg",
-   "md5": "0104075e9ba4468f4aa27e0cfa5eb725",
-   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rca3bdbb007ab0.jpg",
+   "file": "covers/rc772a9e31f824.jpg",
+   "md5": "772a9e31f8241b4cf2b14d1b64dae6b7",
+   "note": "店主指令1: 选B1(居中满铺)直接上线",
    "platform": "PS",
    "role": "P",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-27T15:09:27"
   },
   "p0905": {
    "cn": [
@@ -12188,26 +12188,26 @@
     "赏金奇兵3（豪华版）"
    ],
    "en": "",
-   "file": "covers/rcf0fa3ea83e01.jpg",
-   "md5": "2fdc70f5405586b45a66586f24916d8d",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",
+   "file": "covers/rc32999125288b.jpg",
+   "md5": "32999125288b005909d2c05936713cf9",
+   "note": "店主指令1: 选B1(方图满铺保DELUXE)直接上线",
    "platform": "PS",
    "role": "M-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-27T15:09:27"
   },
   "p0933": {
    "cn": [
     "赛博暗影"
    ],
    "en": "",
-   "file": "covers/rcb08bc57cf57b.jpg",
-   "md5": "17913d605fdc1a0bd95a9e72536fc75b",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 f9c33b124a79_s.jpg",
+   "file": "covers/rcb958e9774ddb.jpg",
+   "md5": "b958e9774ddbecaa78e0311b7a86dd6f",
+   "note": "店主指令1: 选B1(底对齐保标题)直接上线",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-27T15:09:27"
   },
   "p0934": {
    "cn": [
