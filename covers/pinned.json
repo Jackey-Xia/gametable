@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1116,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-27T08:23:11"
+  "updated": "2026-10-27T16:50:57"
  },
  "locks": {
   "p0001": {
@@ -1645,13 +1645,13 @@
     "冥界清道夫"
    ],
    "en": "",
-   "file": "covers/rc30a758cebd56.jpg",
-   "md5": "83ac3d3a0060f4145219cad327dfa913",
+   "file": "covers/rc132dd07fa377.jpg",
+   "md5": "132dd07fa3775f80c11c2f48fb719d96",
    "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 4c1be1667435_s.jpg",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-27T16:50:57"
   },
   "p0126": {
    "cn": [
@@ -8993,13 +8993,13 @@
     "潜水员戴夫（完整版）"
    ],
    "en": "Dave The Diver（Complete Edition）",
-   "file": "covers/rcb7309aadd665.jpg",
-   "md5": "b7309aadd665aba82cb565fca4548563",
+   "file": "covers/rc813a086d81b1.jpg",
+   "md5": "813a086d81b1610e7e0c0b430444f15e",
    "note": "拼接：现满铺主图+5DLC辅图(丛林/一番的休日/GGST/哥斯拉/渔帆暗涌)",
    "platform": "PS",
    "role": "M-collage",
    "store": "潜水员戴夫 - 丛林 Content Pack (中日英韩文版)",
-   "time": "2026-10-13T08:36:41"
+   "time": "2026-10-27T16:50:57"
   },
   "p0690": {
    "cn": [
@@ -13418,13 +13418,13 @@
     "骑马与砍杀2：霸主"
    ],
    "en": "",
-   "file": "covers/rcac9ba8c24a42.jpg",
-   "md5": "bdaab4d7de9b8223bf99c38716b6b1cd",
+   "file": "covers/rc0586adb2e46c.jpg",
+   "md5": "0586adb2e46cf88d7032c95001d99d39",
    "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 ebca0bcb0c31_s.jpg",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-27T16:50:57"
   },
   "p1027": {
    "cn": [
