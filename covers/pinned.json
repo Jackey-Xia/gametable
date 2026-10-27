@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1129,
+  "count": 1130,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-27T03:18:15"
+  "updated": "2026-10-27T11:43:24"
  },
  "locks": {
   "p0001": {
@@ -9387,13 +9387,13 @@
     "狂野星球复仇记"
    ],
    "en": "",
-   "file": "covers/rc83d3c09e9c52.jpg",
-   "md5": "acc7c7f4d6a6099acb4917036c32b200",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x756）",
+   "file": "covers/rc563a066ecc82.jpg",
+   "md5": "563a066ecc828c8c2401305218472ed6",
+   "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x756） · 店主审核上线 2026-10-27: 官方竖版·整体下移(crop top_src=0, 保 REVENGE OF THE SAVAGE PLANET 大标题完整)",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-27T11:43:24"
   },
   "p0716": {
    "cn": [
@@ -13746,13 +13746,13 @@
     "魔法传送门"
    ],
    "en": "",
-   "file": "covers/rc1a3b49f778d3.jpg",
-   "md5": "933abfff68eb22a39cec70cfd4e9ccb5",
-   "note": "店主审核 B98 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 Saut-&une！",
+   "file": "covers/rc34aa93e5235c.jpg",
+   "md5": "34aa93e5235c8fbd192c2908d28092e0",
+   "note": "店主审核 B98 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内有文字 Saut-&une！ · 店主审核上线 2026-10-27: 官方竖版满铺·顶部对齐(crop top_src=0, 保黄色 Enchanted Portals 标题完整)",
    "platform": "PS",
    "role": "P-pad",
    "store": "Enchanted Portals (日语, 韩语, 简体中文, 英语)",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-27T11:43:24"
   },
   "p1047": {
    "cn": [
@@ -14820,6 +14820,19 @@
    "role": "P-fill",
    "store": "心动恋旅：樱花篇 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
    "time": "2026-10-27T00:43:06"
+  },
+  "p1130": {
+   "cn": [
+    "寂静岭：小镇陷落"
+   ],
+   "en": "Silent Hill: Townfall",
+   "file": "covers/rc24f99bec43dc.jpg",
+   "md5": "24f99bec43dc14202b13e3861617fe8b",
+   "note": "店主审核上线 2026-10-27: 官方竖版满铺·顶部对齐(crop top_src=0, 保 SILENT HILL / townfall 完整)",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "",
+   "time": "2026-10-27T11:43:24"
   }
  }
 }
