@@ -873,6 +873,44 @@ footer b{color:#4b5563}
 }
 /* 改146-end */
 </style>
+<style id="gt-detail-css">
+/* 改157-begin: 卡片右上角「详情 ›」提示 + 详情弹层（仅点按钮进入） */
+.gcard{position:relative}
+.gt-hint{position:absolute;top:9px;right:9px;font-size:11px;color:#b8bec8;cursor:pointer;z-index:6;
+  user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.gt-hint:hover{color:#8a93a3}
+.gt-hint:active{opacity:.7}
+.gt-dmodal{box-sizing:border-box;max-width:460px;max-height:86vh;overflow:auto;text-align:left;padding:0 0 18px}
+.gt-dhead{display:flex;gap:14px;padding:18px 18px 12px;border-bottom:1px solid #eef0f3;position:sticky;top:0;background:#fff;border-radius:18px 18px 0 0}
+.gt-dcov{width:96px;height:128px;flex:0 0 auto;border-radius:8px;overflow:hidden;background:#eef1f6}
+.gt-dcov img{width:100%;height:100%;object-fit:cover;display:block}
+.gt-dhtxt{flex:1;min-width:0;padding-top:2px}
+.gt-dtitle{font-size:17px;font-weight:800;line-height:1.35;word-break:break-word}
+.gt-den{font-size:12px;color:#9aa3af;margin-top:3px;word-break:break-word}
+.gt-dclose{position:absolute;top:12px;right:12px;width:30px;height:30px;border:none;background:#f0f1f3;border-radius:50%;font-size:16px;color:#666;cursor:pointer;line-height:1;padding:0;z-index:8}
+.gt-dclose:active{transform:scale(.92)}
+.gt-dbody{padding:14px 18px 0}
+.gt-dtags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.gt-dtag{font-size:12px;background:#eef2fb;color:#3a5bbf;border:1px solid #dbe4f7;border-radius:20px;padding:3px 10px}
+.gt-drow{display:flex;font-size:13px;padding:6px 0;border-bottom:1px dashed #f0f1f3}
+.gt-drow .k{width:64px;color:#9aa3af;flex:0 0 auto}
+.gt-drow .v{color:#1f2937;flex:1;word-break:break-word}
+.gt-dintro{font-size:13px;line-height:1.75;color:#444;margin-top:12px;white-space:pre-line;word-break:break-word}
+.gt-dgal{display:flex;gap:8px;overflow-x:auto;padding:12px 18px 2px;margin-top:4px;-webkit-overflow-scrolling:touch}
+.gt-dgal img{height:110px;border-radius:8px;flex:0 0 auto;object-fit:cover;background:#eef1f6;cursor:pointer;
+  -webkit-touch-callout:none;-webkit-user-select:none;user-select:none;-webkit-user-drag:none}
+.gt-dnote{margin:10px 18px 0;font-size:11px;color:#9aa3af;text-align:center}
+.gt-dloading{text-align:center;color:#9aa3af;font-size:13px;padding:26px}
+/* 截图放大灯箱（禁长按保存） */
+.gt-lg{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:90;padding:20px}
+.gt-lg.show{display:flex}
+.gt-lg img{max-width:94vw;max-height:90vh;object-fit:contain;border-radius:6px;
+  -webkit-touch-callout:none;-webkit-user-select:none;user-select:none;-webkit-user-drag:none}
+.gt-lg .gt-lgx{position:absolute;right:16px;top:14px;width:36px;height:36px;border:none;border-radius:50%;background:rgba(255,255,255,.16);color:#fff;font-size:20px;cursor:pointer;line-height:1;padding:0}
+@media(max-width:640px){.gt-dgal img{height:96px}}
+/* 改157-end */
+</style>
+
 </head>
 <body>
 <!-- 改123a -->
@@ -2136,6 +2174,98 @@ function tbIdOf(g){
 /* 改141-end */
 
 /* 改130-end */
+
+/* 改157-begin: 卡片右上角「详情 ›」+ 详情弹层（仅点按钮进入, 整卡不可点） */
+var __GTDET=null,__GTDET_PEND=null;
+function gtDetLoad(){
+  if(__GTDET)return Promise.resolve(__GTDET);
+  if(__GTDET_PEND)return __GTDET_PEND;
+  __GTDET_PEND=fetch("game_details.json?t="+Date.now()).then(function(r){return r.ok?r.json():{};})
+    .then(function(d){__GTDET=d;return d;}).catch(function(){__GTDET={};return {};});
+  return __GTDET_PEND;
+}
+function gtLightbox(src){
+  var lb=document.getElementById("gtLgBox");
+  if(!lb){
+    lb=document.createElement("div");lb.className="gt-lg";lb.id="gtLgBox";
+    lb.innerHTML='<button class="gt-lgx" type="button" aria-label="关闭">×</button>';
+    lb.onclick=function(ev){if(ev.target===lb||ev.target.classList.contains("gt-lgx"))lb.classList.remove("show");};
+    lb.addEventListener("contextmenu",function(ev){if(ev.target.tagName==="IMG")ev.preventDefault();});
+    document.addEventListener("keydown",function(ev){if(ev.key==="Escape")lb.classList.remove("show");});
+    document.body.appendChild(lb);
+  }
+  var im=lb.querySelector("img");
+  if(!im){im=document.createElement("img");im.draggable=false;im.alt="";lb.appendChild(im);}
+  im.src=src;lb.classList.add("show");
+}
+function openDetail(g){
+  var cov=coverOf(g,g._disp||g.name);
+  var mask=document.getElementById("gtDetailMask");
+  if(!mask){mask=document.createElement("div");mask.id="gtDetailMask";mask.className="cta-mask";document.body.appendChild(mask);}
+  mask.innerHTML="";
+  var card=document.createElement("div");card.className="cta-card gt-dmodal";
+  var loading=document.createElement("div");loading.className="gt-dloading";loading.textContent="加载中…";card.appendChild(loading);
+  mask.appendChild(card);mask.className="cta-mask show";
+  mask.onclick=function(e){if(e.target===mask)mask.className="cta-mask";};
+  card.addEventListener("contextmenu",function(ev){if(ev.target.tagName==="IMG")ev.preventDefault();});
+  gtDetLoad().then(function(det){
+    if(!mask.classList.contains("show"))return;
+    var e=det[g.name]||null;
+    gtRenderDetail(card,g,cov,e);
+  });
+}
+function gtRenderDetail(card,g,cov,e){
+  card.innerHTML="";
+  var close=document.createElement("button");close.className="gt-dclose";close.type="button";
+  close.setAttribute("aria-label","关闭");close.textContent="×";
+  close.onclick=function(){card.parentNode.className="cta-mask";};card.appendChild(close);
+  var head=document.createElement("div");head.className="gt-dhead";
+  var covBox=document.createElement("div");covBox.className="gt-dcov";
+  if(cov){var ci=document.createElement("img");ci.src=cov;ci.alt="";covBox.appendChild(ci);}
+  head.appendChild(covBox);
+  var ht=document.createElement("div");ht.className="gt-dhtxt";
+  var t=document.createElement("div");t.className="gt-dtitle";
+  t.textContent=(e&&e.display_name)||(g._disp||g.name||"");ht.appendChild(t);
+  var en=(e&&e.en)||(g.en||"");
+  if(en){var enEl=document.createElement("div");enEl.className="gt-den";enEl.textContent=en;ht.appendChild(enEl);}
+  head.appendChild(ht);card.appendChild(head);
+  if(!e)return;
+  var body=document.createElement("div");body.className="gt-dbody";
+  if(e.genres&&e.genres.length){
+    var tags=document.createElement("div");tags.className="gt-dtags";
+    e.genres.forEach(function(gg){var s=document.createElement("span");s.className="gt-dtag";s.textContent=gg;tags.appendChild(s);});
+    body.appendChild(tags);
+  }
+  var rows=[
+    ["人数", e.players||"—"],
+    ["容量", e.capacity||"—"],
+    ["语言", (e.languages&&e.languages.length)?e.languages.join(" / "):"—"],
+    ["发售", e.release||g.date||"—"],
+    ["平台", e.platforms||((g.hs||[]).join(" "))||"—"]
+  ];
+  rows.forEach(function(r){
+    var row=document.createElement("div");row.className="gt-drow";
+    var k=document.createElement("span");k.className="k";k.textContent=r[0];
+    var v=document.createElement("span");v.className="v";v.textContent=r[1];
+    row.appendChild(k);row.appendChild(v);body.appendChild(row);
+  });
+  if(e.intro){
+    var it=document.createElement("div");it.className="gt-dintro";it.textContent=e.intro;body.appendChild(it);
+  }
+  card.appendChild(body);
+  var note=document.createElement("div");note.className="gt-dnote";
+  note.textContent="以上信息均来自互联网收集，实际信息以官方数据为准";card.appendChild(note);
+  if(e.shots&&e.shots.length){
+    var gal=document.createElement("div");gal.className="gt-dgal";
+    e.shots.slice(0,12).forEach(function(s){
+      var gi=document.createElement("img");gi.src=s;gi.loading="lazy";gi.draggable=false;gi.alt="";gal.appendChild(gi);
+    });
+    gal.addEventListener("click",function(ev){var im=ev.target.closest("img");if(im)gtLightbox(im.src);});
+    card.appendChild(gal);
+  }
+}
+/* 改157-end */
+
 function gameCard(g,idx){
   const card=el("div","gcard");
   if(idx!=null)card.id="gc-"+idx;   /* 改76: 联想跳转定位用 */
@@ -2187,6 +2317,12 @@ function gameCard(g,idx){
   prices.appendChild(priceTile("非认证 · 7天",fmtMoney(g.fc7),[stockLight("库存："+(g.fc?"有":"无"),g.fc)],[g.fc]));
   prices.appendChild(priceTile("限定版 · 30天",fmtMoney(g.xd30),[stockLight("库存："+(g.xd?"有":"无"),g.xd)],[g.xd]));
   card.appendChild(prices);
+  /* 改157: 右上角「详情 ›」——仅点按钮开详情, 无数据则不显示 */
+  gtDetLoad().then(function(det){if(!det[g.name])return;
+    var h=document.createElement("span");h.className="gt-hint";h.textContent="详情 ›";
+    h.onclick=function(ev){ev.stopPropagation();openDetail(g);};
+    card.appendChild(h);
+  });
   return card;
 }
 
