@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1120,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-28T02:59:11"
+  "updated": "2026-10-28T11:04:41"
  },
  "locks": {
   "p0001": {
@@ -493,13 +493,13 @@
     "三国志14 威力加强版（豪华版）"
    ],
    "en": "Sangokushi 14 Power-up Kit（Deluxe Edition）",
-   "file": "covers/rc6908899295a5.jpg",
-   "md5": "6908899295a5eef32944465cf9ad18a9",
-   "note": "批量3: 店主批复终版",
+   "file": "covers/rc373f568566a7.jpg",
+   "md5": "373f568566a7b8a29f0d5127b605c595",
+   "note": "批量3: 官方方图源满铺 E1基础上再右移30px(店主选定)",
    "platform": "PS",
    "role": "M-pad",
    "store": "三国志14 威力加强版套装 (简体中文, 繁体中文)",
-   "time": "2026-10-28T02:16:02"
+   "time": "2026-10-28T11:04:41"
   },
   "p0038": {
    "cn": [
@@ -1332,13 +1332,13 @@
     "侏罗纪世界：进化2（完整版）"
    ],
    "en": "Jurassic World Evolution 2（Complete Edition）",
-   "file": "covers/rce81e5d7130d7.jpg",
-   "md5": "e81e5d7130d797deeca79eb21d7f72cc",
-   "note": "批量3: 店主批复终版",
+   "file": "covers/rcc4c92459d225.jpg",
+   "md5": "c4c92459d2253c23a1deb40b29684198",
+   "note": "批量3: E1+底部文字放大至不裁最大字号46px(店主选定)",
    "platform": "PS",
    "role": "M-pad",
    "store": "《侏罗纪世界：进化2》捆绑包 (PS Store HK)",
-   "time": "2026-10-28T02:16:02"
+   "time": "2026-10-28T11:04:41"
   },
   "p0102": {
    "cn": [
@@ -5869,13 +5869,13 @@
     "战地风云1/战地1（革命版）"
    ],
    "en": "",
-   "file": "covers/rc85896b806aec.jpg",
-   "md5": "85896b806aecd2d75cd86ab96f149130",
-   "note": "批量3: 店主批复终版",
+   "file": "covers/rc5b8c6abe9469.jpg",
+   "md5": "5b8c6abe9469366562df1c318f2da71c",
+   "note": "批量3: 恢复上线前A主体+上下留边自然衔接(店主选定)",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-10-28T02:16:02"
+   "time": "2026-10-28T11:04:41"
   },
   "p0449": {
    "cn": [
@@ -5960,13 +5960,13 @@
     "战场的赋格曲1"
    ],
    "en": "Fuga：Melodies of Steel 1",
-   "file": "covers/rc39359e9bdfc1.jpg",
-   "md5": "39359e9bdfc1ba91e1aa9bbcaf64a2bc",
-   "note": "批量3: 店主批复终版",
+   "file": "covers/rc818531b0326a.jpg",
+   "md5": "818531b0326aacaeb3fb26f826fd08be",
+   "note": "批量3: 恢复上线前A主体+上下留边自然衔接(店主选定)",
    "platform": "PS",
    "role": "M-pad",
    "store": "战场的赋格曲 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-10-28T02:16:02"
+   "time": "2026-10-28T11:04:41"
   },
   "p0456": {
    "cn": [
