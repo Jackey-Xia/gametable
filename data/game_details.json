@@ -9573,34 +9573,38 @@
   "warn": ""
  },
  "异形：火力小队精英2": {
-  "_cid": "HP4312-CUSA52595_00-0476842367256208",
-  "store_name": "Aliens Revenge",
-  "platforms": "PS5/PS4",
-  "release": "2026年8月26日",
+  "_cid": "UP0017-PPSA29920_00-0533005510215681",
+  "store_name": "Aliens: Fireteam Elite 2",
+  "platforms": "PS5",
+  "release": "2026年8月25日",
   "genres": [
-   "街机",
-   "休闲治愈",
-   "单人游玩",
-   "街机复刻"
+   "射击"
   ],
-  "capacity": "165 MB",
+  "capacity": "",
   "players_local": "1",
-  "players_online": "",
-  "players": "1位玩家",
-  "languages": [],
-  "intro": "《Aliens Revenge》是一款充满动作感的自由移动射击游戏，玩家控制外星飞船，在动态的360°战场上与敌人作战。穿越充满挑战的关卡，击败对手，在这场刺激的街机体验中赢得胜利！",
+  "players_online": "1-4",
+  "players": "1-4位玩家",
+  "languages": [
+   "简体中文",
+   "繁体中文",
+   "日语",
+   "韩语",
+   "英语"
+  ],
+  "intro": "《Aliens: Fireteam Elite 2》将最多四名玩家投入殖民陆战队的角色之中，奉命奔赴《Aliens》宇宙中最险恶的角落。这不是救援任务，而是一场生死之战。异形在走廊中潜行，从暗处伏击，蜂拥而至。每一个房间都可能是最后的葬身之地。与你的火力小队紧密协作，发挥每个职业的独特技能，并在战况从紧张对峙升级为全面战争的过程中随机应变。《Aliens: Fireteam Elite 2》拥有更深入的小队协作机制、更聪明的敌人以及可完全自定义的专家职业，将带来最纯正的《Aliens》多人合作体验。\n\n4人合作小队战斗\n小队人数从三人增加至四人，《Aliens: Fireteam Elite 2》引入了更深入的团队机制，奖励战术配合与职业组合策略。全新设计及改良的职业都拥有独特鲜明的玩法和战术技能，使每种小队搭配都有截然不同的战斗体验。\n难以招架的异形攻势\n经典异形比以往更为凶残狂暴。《Aliens: Fireteam Elite 2》中种类繁多的全新异形，迫使玩家保持机动、时刻警觉战场态势，并动用所有可用手段。绝境之下，你可以挥舞电击棒近身搏杀；在你和小队被异形大军吞没之前，也可以用燃烧弹药和电击弹药削弱其不间断推进的攻势。战局可能在数秒内从精心策划的紧张对峙，骤变为绝望的最后一搏。\n专家职业——随心定制的玩法\n除了更丰富的武器和装备自定义内容，《Aliens: Fireteam Elite 2》还引入了专家职业——这一完全可自定义的职业允许玩家自由搭配所有可用职业的主技能与副技能。根据你独特的玩法风格量身打造装备配置，填补小队所需的任何角色空缺。\n群袭模式——在虫群中求生\n《Aliens: Fireteam Elite 2》首发即包含多张专门打造的群袭地图，将小队推向极限。在一波强过一波的异形与其他致命敌人的进攻中浴血奋战，随着你在猛攻中存活得越久，获得的奖励越丰厚。这里，正是对团队合作与技能的终极考验",
   "shots": [
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/0518/ff28e812317049e3c085cd5718033592337c98db45b29009.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/0518/cbd2f176193b2026f9cec1302de3488615dd34a9f06a6e38.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/0518/b37658d2149bbc4987d92aebe30f29cbf8246a8ecbcf26eb.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/0518/999fae72eaf7b36d0c6ca98acd53c08b45a415f0a1288ad0.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/0518/27334fdfaefcfda560b9604120578a65757dc82f2ac7f69b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/0518/d5f3e9b76c9a5c7ec12299b35603b1686aa1d7d51199bdd4.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/0518/47c1e2d4a053db020bd3080af140dbcd805485cf5a2d75ce.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/0518/e51b4d09fd5ac38403a34b76d909181f157c0a93176fda7f.jpg"
+   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/393c52e060d28f2464b87b94fdb312cde8d8f1f807f951a3.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0522/e3dbd82b2aa8acf30ba33e0ca3bc3974dbc3bdc6a2c58d29.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/cdb9320e0dd952aa8d5fee895bc005d03c3280687c424058.png",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/887c5fde2171bd8dc93632ca8b237fae862364261688ef58.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/71e0a2b62c7c746e0e2bf5b19d0fd189e221dc906298a6f2.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/c3d55365f7c2e25d3aca74afb56da5bd5b591989e34d2061.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/1f768e9d9f7a3bef0d877290727dcef0a0139602b6df980a.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/2ddf0dfe8941f505a62d22aa9c3f539d055b5a1abfcf430b.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0121/3ec0cc60caf50c28eaacd3c9d0cd9f6ba4f9887b8bbedc52.png"
   ],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc3b27ddc29113.jpg&w=512&q=82&output=jpg",
-  "en": "Aliens：Fireteam Elite 2",
+  "en": "Aliens: Fireteam Elite 2",
   "display_name": "异形：火力小队精英2",
   "warn": ""
  },
