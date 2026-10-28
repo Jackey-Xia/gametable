@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1120,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-28T04:28:01"
+  "updated": "2026-10-28T12:35:31"
  },
  "locks": {
   "p0001": {
@@ -1057,13 +1057,13 @@
     "伊苏10：诺曼荣光"
    ],
    "en": "",
-   "file": "covers/70b16d5f61f0_s.jpg",
-   "md5": "df020fac76a76efc71150f7429e5e5e6",
-   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc85139b5809c9.jpg",
+   "file": "covers/rc0781b76ecaf4.jpg",
+   "md5": "0781b76ecaf455a2fd772333a0643672",
+   "note": "2:3转3:4满铺+下移",
    "platform": "PS",
    "role": "P",
    "store": "",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T12:35:31"
   },
   "p0082": {
    "cn": [
@@ -2116,13 +2116,13 @@
     "勇者斗恶龙3 HD-2D Remake"
    ],
    "en": "",
-   "file": "covers/rcbc3ace02a56c.jpg",
-   "md5": "bc3ace02a56cf104251a9658aa0bbc04",
-   "note": "批量3: B2 居中满铺",
+   "file": "covers/rc51ebf7bd367c.jpg",
+   "md5": "51ebf7bd367c395be1234f9791ab7696",
+   "note": "官方竖版满铺+上移保底部标识",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-10-28T00:27:05"
+   "time": "2026-10-28T12:35:31"
   },
   "p0162": {
    "cn": [
@@ -2220,13 +2220,13 @@
     "南瓜先生2：九龙城寨"
    ],
    "en": "Mr. Pumpkin 2：Kowloon Walled City",
-   "file": "covers/rca0d88f5e0410.jpg",
-   "md5": "4995bf5b6514f3cdff18b46aab3aa460",
-   "note": "店主指认红框卡 · PS国服 · 方图留边版",
+   "file": "covers/rc2d7665347144.jpg",
+   "md5": "2d7665347144e1a6c2f44eaf0addcf13",
+   "note": "去上下留边满铺",
    "platform": "PS",
    "role": "M-pad",
    "store": "PS 国服商城 南瓜先生2 九龙城寨 (中文版)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-10-28T12:35:31"
   },
   "p0170": {
    "cn": [
@@ -3712,13 +3712,13 @@
     "失落之魂"
    ],
    "en": "",
-   "file": "covers/rc81331fa804db.jpg",
-   "md5": "b9208f300d9b60d4dc2949ec12432349",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rc09f87cebe378.jpg",
+   "file": "covers/rcd2ffbed8ccbf.jpg",
+   "md5": "d2ffbed8ccbfd631750ff000ecbb6c3f",
+   "note": "官方竖版满铺+下移保顶部中文标识",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T12:35:31"
   },
   "p0285": {
    "cn": [
@@ -3921,13 +3921,13 @@
     "女神异闻录5/P5（PS4）"
    ],
    "en": "",
-   "file": "covers/rceee9182def9d.jpg",
-   "md5": "4813f7c274b422773ee47f667597e359",
-   "note": "全库批量改留边版(方图上下补边, 3:4 零裁切), 源 0b1b833b0ba6_s.jpg",
+   "file": "covers/rce7e1c3c17cea.jpg",
+   "md5": "e7e1c3c17cea6ed6fa5feee43c378aee",
+   "note": "上下留边改纯黑",
    "platform": "PS",
    "role": "M-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T12:35:31"
   },
   "p0301": {
    "cn": [
@@ -4148,13 +4148,13 @@
     "如龙7 人中之龙7：光与暗的去向（国际版）（1）"
    ],
    "en": "Yakuza 7（International Edition）",
-   "file": "covers/rced9eeb7fdb97.jpg",
-   "md5": "34f6798fb10d50eee87c8df3391b5cc1",
-   "note": "店主指认红框卡 · 人中之龙7　光与暗的去向　国际版 (日语, 韩语, 简体中文, 繁体中文, 英语) · form=('pad', '竖图 504x756 上下各裁 5.6%, 裁切带内有文字 国际版')(portrait)",
+   "file": "covers/rcb50594da4ab6.jpg",
+   "md5": "b50594da4ab6bef3ee699170433fd786",
+   "note": "官方竖版满铺+上移保底部中文标识",
    "platform": "PS",
    "role": "P-pad",
    "store": "人中之龙7　光与暗的去向　国际版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-10-27T12:44:41"
+   "time": "2026-10-28T12:35:31"
   },
   "p0318": {
    "cn": [
@@ -4502,13 +4502,13 @@
     "小人物拯救世界 无名小卒拯救世界（完整版）"
    ],
    "en": "",
-   "file": "covers/rc11df12d9aaba.jpg",
-   "md5": "b58ed439f04839d6e7a7906e386e5297",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
+   "file": "covers/rc4a7fc6757a73.jpg",
+   "md5": "4a7fc6757a735f27f062cbe9bc514f17",
+   "note": "按店主红框图满铺(捆绑包封面)",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T12:35:31"
   },
   "p0345": {
    "cn": [
@@ -4581,13 +4581,13 @@
     "小岛"
    ],
    "en": "",
-   "file": "covers/rc22d6fce8d60e.jpg",
-   "md5": "03f925b388050048c033938a13e36c8f",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
+   "file": "covers/rcd4d6341b79fe.jpg",
+   "md5": "d4d6341b79fe8fd4914d3136ba84be9a",
+   "note": "官方竖版满铺+上移(ISLETS 完整)",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T12:35:31"
   },
   "p0351": {
    "cn": [
@@ -6568,13 +6568,13 @@
     "无人深空"
    ],
    "en": "",
-   "file": "covers/rcbadad72a5397.jpg",
-   "md5": "23d5effd3d4a1c1e03b448fa92b37598",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 a3dfcf0b0e1a_s.jpg",
+   "file": "covers/rcb76c380dc113.jpg",
+   "md5": "b76c380dc11342a90c5521cb658213dc",
+   "note": "官方竖版满铺+上移保底部英文标识",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T12:35:31"
   },
   "p0503": {
    "cn": [
@@ -6789,13 +6789,13 @@
     "星之海"
    ],
    "en": "",
-   "file": "covers/rc51f7e34f76df.jpg",
-   "md5": "1976cb54bc76a3218bb5621ffef80a43",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
+   "file": "covers/rcd4c86f8d7535.jpg",
+   "md5": "d4c86f8d75358b1cb83b23a3da341c04",
+   "note": "官方竖版满铺+下移(SEA OF STARS 完整)",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-10-28T12:35:31"
   },
   "p0520": {
    "cn": [
@@ -7835,13 +7835,13 @@
     "模拟山羊1（年度版）"
    ],
    "en": "Goat Simulator 1（Game of the Year Edition）",
-   "file": "covers/rc8ce08f88cd34.jpg",
-   "md5": "d23615c5d5e9636c05a9e6fcda57f267",
-   "note": "Goat Simulator: The GOATY (中日英韩文版) · 店主指认红框卡 · form=('pad', '方图 504x504, 留边版(前端会左右各裁 63px)')(master)",
+   "file": "covers/rcae8ba6538fb3.jpg",
+   "md5": "ae8ba6538fb3a6b97947312a70d48159",
+   "note": "去上下留边满铺",
    "platform": "PS",
    "role": "M-pad",
    "store": "Goat Simulator: The GOATY (中日英韩文版)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T12:35:31"
   },
   "p0601": {
    "cn": [
@@ -7914,13 +7914,13 @@
     "武装原型"
    ],
    "en": "",
-   "file": "covers/rc0cb04e036e88.jpg",
-   "md5": "928b249ad9b1c280d151337f802e9a1a",
-   "note": "店主审核 B43 · 换成港服页面图 · 方图 504x504, 留边版(前端会左右各裁 63px)",
+   "file": "covers/rc4bd514467b83.jpg",
+   "md5": "4bd514467b838f8d26d15b42fb2b6a4c",
+   "note": "上下留边重做扩图自然衔接",
    "platform": "PS",
    "role": "M-pad",
    "store": "Broforce (日语, 韩语, 英语)",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T12:35:31"
   },
   "p0607": {
    "cn": [
@@ -8240,13 +8240,13 @@
     "永世必死"
    ],
    "en": "",
-   "file": "covers/rcfe00d1b2ad5a.jpg",
-   "md5": "2c99ec1c341fd4006f97bc186ab68e9e",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
+   "file": "covers/rce48d8f07c05a.jpg",
+   "md5": "e48d8f07c05af39ccce957506d645279",
+   "note": "官方竖版满铺+下移",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T12:35:31"
   },
   "p0632": {
    "cn": [
@@ -8709,13 +8709,13 @@
     "消逝的光芒1（决定版）"
    ],
    "en": "",
-   "file": "covers/rc72c601962ea9.jpg",
-   "md5": "2b47ff4d4afcf3ab841168e9e5523f1b",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
+   "file": "covers/rc8f5d649e39fc.jpg",
+   "md5": "8f5d649e39fc34e1256386ceae63ba58",
+   "note": "按店主红框换港服决定版官方图满铺",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T12:35:31"
   },
   "p0669": {
    "cn": [
@@ -9204,13 +9204,13 @@
     "燧石枪：黎明之围"
    ],
    "en": "",
-   "file": "covers/rc75f7f1075595.jpg",
-   "md5": "a4120c8bc2d76c07375f467c5624b734",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 b768f6aa6fcd_s.jpg",
+   "file": "covers/rcbbde4e5ae85c.jpg",
+   "md5": "bbde4e5ae85c470e60f625dba0d39d24",
+   "note": "左右留边改纯黑(画面零改动)",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T12:35:31"
   },
   "p0706": {
    "cn": [
@@ -9913,13 +9913,13 @@
     "瘟疫传说2：安魂曲"
    ],
    "en": "",
-   "file": "covers/rc412792215785.jpg",
-   "md5": "3225bd6587febc3fe6329aafa5af124a",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
+   "file": "covers/rcb59b4983fe24.jpg",
+   "md5": "b59b4983fe24ff91ca70f9f943697555",
+   "note": "官方竖版满铺+下移(顶部标题不再被裁)",
    "platform": "PS",
    "role": "P-fill",
    "store": "",
-   "time": "2026-09-20T10:23:42"
+   "time": "2026-10-28T12:35:31"
   },
   "p0760": {
    "cn": [
@@ -11140,13 +11140,13 @@
     "自由锁链"
    ],
    "en": "",
-   "file": "covers/rc67ef57443feb.jpg",
-   "md5": "1fc61e1e0a094438e4aefe7725b1d5a4",
-   "note": "全库批量改留边版(整图保留+补边, 3:4 零裁切), 源 rc69c42fad3c9b.jpg",
+   "file": "covers/rcb013f1148074.jpg",
+   "md5": "b013f1148074dd6744fcdceb8b7ba4cc",
+   "note": "官方竖版满铺+下移保顶部中文标识",
    "platform": "PS",
    "role": "P-pad",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-10-28T12:35:31"
   },
   "p0852": {
    "cn": [
