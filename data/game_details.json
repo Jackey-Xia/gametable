@@ -174,7 +174,7 @@
   "warn": ""
  },
  "FIFA25/FC25/EA SPORTS 足球25": {
-  "_cid": "EP0006-CUSA46399_00-FC2025SCAUDIO000",
+  "_cid": "EP0006-PPSA20050_00-25STANDARDBUNDLE",
   "store_name": "《EA SPORTS FC™ 25》简体中文 - 游戏内解说",
   "platforms": "PS5/PS4",
   "release": "2024年4月25日",
@@ -183,7 +183,7 @@
    "体育竞技",
    "多人同屏"
   ],
-  "capacity": "",
+  "capacity": "58.5 GB",
   "players_local": "1-4",
   "players_online": "1-22",
   "players": "本地1-4人，线上1-22人",
@@ -215,7 +215,7 @@
    "英文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "由《直到黎明》和《采石场惊魂》制作团队倾情打造的全新电影式科幻恐怖冒险游戏，将紧张刺激的生存游戏玩法、影响故事走向的选择，以及多分支故事情节融为一体。\n\n地球正在走向终结，人类的时间已所剩无几。距离地球12光年的天仓五f星是最后一线希望。当殖民飞船仙后号在这颗星球紧急着陆后，他们很快就发现自己不是唯一的访客。\n\n一种能够模仿受害者的外星生物体入侵了仙后号，只有识破狡猾的狩猎者，船员们才能活着回家。在为生存而战时，他们面临着最艰难的抉择：想要活命，就会威胁到全人类的存亡。\n\n游戏特色：\n\n次世代电影式生存恐怖游戏\n\n好莱坞演员拉什娜·林奇（代表作《鲍勃·马利：一份爱 》《达荷美女战士》）扮演成就卓越的宇航员“杨”，在拯救人类的深空任务中，体验身临其境的电影叙事，以及扣人心悬的紧张剧情。\n\n实时外星生物威胁\n\n外星生物就潜藏在飞船黑暗的角落中，意图消灭人类生命。你必须躲避无处不在的致命威胁，使用简易的武器、迅速的反应以及高超的潜行技术战胜敌人。\n\n无人可信\n\n遭遇能够完美模仿受害者的外星生命体。当敌人就隐藏在众目睽睽之下时，船员们多年的训练和信任将瞬间瓦解。到底谁才是人类？你的选择比任何时候都更加重要！\n\n倒转决定\n\n使用我们全新的转折点故事树，改写你的命运，改变故事走向，揭开多重结局，解锁隐藏路径，并从悲惨的死亡中夺回你的船员。\n\n何必独自游玩\n\n在本地合作电影之夜模式中，招募最多五名玩家加入你的任务。选择要控制的船员，与好友合作，从外星入侵者、致命困境和灾难性的系统故障中死里逃生。在线多人模式将在后续更新中推出。\n\n在太空中，死亡有许多形式。\n\n离线多人游戏（2-5名玩家）",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202602/1014/e9a87e45327d556aadc6d95ba30f8f778d469a67046e062e.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202508/1912/276caf3be792488e9d57563feedddec11695994db60b5519.jpg",
@@ -841,7 +841,7 @@
   "warn": ""
  },
  "一步一脚印1": {
-  "_cid": "JP0110-PPSA30161_00-0562011220104575",
+  "_cid": "UP7605-CUSA49926_00-0484007126628122",
   "store_name": "Baby Steps",
   "platforms": "PS5",
   "release": "2025年9月24日",
@@ -850,7 +850,7 @@
    "模拟经营",
    "单人游玩"
   ],
-  "capacity": "",
+  "capacity": "3.1 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -929,7 +929,7 @@
   "warn": ""
  },
  "一步一脚印2": {
-  "_cid": "JP0110-PPSA30161_00-0562011220104575",
+  "_cid": "UP7605-PPSA24391_00-0861239830347944",
   "store_name": "Baby Steps",
   "platforms": "PS5",
   "release": "2025年9月24日",
@@ -938,7 +938,7 @@
    "模拟经营",
    "单人游玩"
   ],
-  "capacity": "",
+  "capacity": "9.6 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -959,7 +959,7 @@
   "warn": ""
  },
  "一步一脚印3": {
-  "_cid": "JP0110-PPSA30161_00-0562011220104575",
+  "_cid": "UP7605-PPSA24391_00-0861239830347944",
   "store_name": "Baby Steps",
   "platforms": "PS5",
   "release": "2025年9月24日",
@@ -968,7 +968,7 @@
    "模拟经营",
    "单人游玩"
   ],
-  "capacity": "",
+  "capacity": "9.6 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -1319,7 +1319,7 @@
   "warn": ""
  },
  "不朽遗志": {
-  "_cid": "EB2076-PPSA32793_00-VALORMORTIS00000",
+  "_cid": "HP1792-CUSA49728_00-SYPS4MORTISOMEM0",
   "store_name": "Valor Mortis",
   "platforms": "PS5",
   "release": "2026年10月14日",
@@ -1329,7 +1329,7 @@
    "生存冒险",
    "恐怖惊悚"
   ],
-  "capacity": "",
+  "capacity": "918 MB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -1601,7 +1601,7 @@
   "warn": ""
  },
  "乐高 哈利波特合集（1-7）": {
-  "_cid": "UP1018-CUSA05954_00-ASIA000000000000",
+  "_cid": "EP1018-PPSA22946_00-HARRYPOTTER17000",
   "store_name": "《LEGO® Harry Potter™合集》",
   "platforms": "PS5/PS4",
   "release": "2016年10月21日",
@@ -1615,7 +1615,7 @@
   "players_online": "",
   "players": "本地1-2人",
   "languages": [],
-  "intro": "",
+  "intro": "《LEGO® Harry Potter™: Collection》将《LEGO® Harry Potter™: Years 1-4》和《LEGO® Harry Potter™: Years 5-7》整合到一个游戏中，现已针对 PlayStation®5 进行了重制，并增强了图形品质。\n\n该合集将乐高的创造力和广阔的《哈利·波特》世界结合在一起，旨在为所有年龄段的玩家带来一段充满咒语、魔药制作、解谜、课程和决斗等精彩内容的奇妙旅程。",
   "shots": [],
   "cover": "covers/98095258999d_s.jpg",
   "en": "Lego Harry Potter Collection",
@@ -2284,7 +2284,7 @@
   "warn": ""
  },
  "使命召唤15：黑色行动4": {
-  "_cid": "HP0002-CUSA12467_00-CODBO4PASS000001",
+  "_cid": "UP0002-PPSA34501_00-CODBO1GAME000001",
   "store_name": "《使命召唤®：黑色行动4》- 黑色行动通行证",
   "platforms": "PS5/PS4",
   "release": "2019年10月25日",
@@ -2293,7 +2293,7 @@
    "多人联机",
    "末日废土"
   ],
-  "capacity": "",
+  "capacity": "24.4 GB",
   "players_local": "1",
   "players_online": "1-88",
   "players": "本地1人，线上1-88人",
@@ -2375,7 +2375,7 @@
   "warn": ""
  },
  "使命召唤20：现代战争3": {
-  "_cid": "HP0002-CUSA34032_00-CODMW3PROPACK004",
+  "_cid": "HP0002-CUSA15556_00-CODMWSTANDARD001",
   "store_name": "《使命召唤®：现代战争® III 2023》翡翠：精英包",
   "platforms": "PS5/PS4",
   "release": "2023年11月3日",
@@ -2384,7 +2384,7 @@
    "双人同屏",
    "多人联机"
   ],
-  "capacity": "",
+  "capacity": "11.0 GB",
   "players_local": "1-2",
   "players_online": "1-64",
   "players": "本地1-2人，线上1-64人",
@@ -2697,7 +2697,7 @@
   "warn": ""
  },
  "侏罗纪世界：进化3": {
-  "_cid": "EP2377-PPSA25153_00-JWEVOLUTION30000",
+  "_cid": "EP2377-PPSA03286_00-JWEVOLUTION2AAAA",
   "store_name": "侏罗纪世界：进化 3",
   "platforms": "PS5",
   "release": "2025年10月21日",
@@ -2707,7 +2707,7 @@
    "单人游玩",
    "沙盒建造"
   ],
-  "capacity": "",
+  "capacity": "11.1 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -2924,7 +2924,7 @@
    "中文",
    "英文"
   ],
-  "intro": "",
+  "intro": "生存下去只是一切的前提条件，人类要想拥有未来，就要回到繁星之间，直面一切艰险。不过，只有运用极大的智慧与才智，获得充分的协助，才能找回人类所失去的一切，而后面对一个更为广阔的世界……\n\n《劫后余生》（Aground）作为一款开采/制造类角色扮演游戏，整个游戏的终极目的、剧情和驱动都是为了制造和建造。随着游戏不断推进，你会遇到各种NPC，解锁新的技术乃至魔法。你能否驾驭恶龙？能否飞入太空？在这个世界，天空绝对不是极限。这款游戏看似简单，内容其实颇具深度，且会频频出乎你的意料，总会给你惊喜，让你发出一次又一次的赞叹。",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202101/1222/iWYykDrIaVFUYebdshZpHWJv.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202101/1222/Hzh1tm3Vbf2tINj8Z5YLe88p.jpg",
@@ -2972,7 +2972,7 @@
   "warn": ""
  },
  "光与影：33号远征队": {
-  "_cid": "EP7579-PPSA17599_00-EXP33000000PS5EU",
+  "_cid": "EP4697-PPSA14313_00-0894432012665778",
   "store_name": "光与影：33号远征队",
   "platforms": "PS5",
   "release": "2025年4月24日",
@@ -2982,7 +2982,7 @@
    "单人游玩",
    "战棋回合"
   ],
-  "capacity": "",
+  "capacity": "4.6 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -3189,7 +3189,7 @@
    "韩文",
    "泰文"
   ],
-  "intro": "",
+  "intro": "“岁至，命陨。”\n\n每一年，沉睡的绘母都会苏醒一次，在纪石上画下一个新的数字，所有年龄大于该数字的人，都会烟消云散。石头上的数字逐年变小，生者逐年减少。明天，她将再次醒来，画上数字“33”。明天，我们也将启程，执行最后的任务——消灭绘母，让她无法继续绘就死亡。\n\n我们是第33号远征队。\n\n《光与影：33号远征队》这款回合制角色扮演游戏采用了特别的即时机制，开创了品类先河，战斗将带来前所未有的沉浸体验，必定让玩家欲罢不能。探索奇妙世界，感受法兰西19世纪末“美好年代”时期的风采，与强大的敌人展开殊死战斗。\n\n互动式回合制战斗\n在这款开拓创新的日式角色扮演游戏中，即时行动将令回合制战斗更加激烈。根据自己的游戏风格，调整装备、属性、技能以及角色之间的协同配合，为你的远征队员设计只属于你的构筑。挑战瞬息万变的战斗系统：看准时机及时闪避、格挡、反击，掌握攻击节奏，发动连锁打击，善用自由瞄准系统，精准打击敌人的弱点部位。\n\n“明日将至。”\n大家只剩下一年的寿命，跟随古斯塔夫、玛埃尔以及其他远征队员背水一战，踏上征途，无论如何都要打破绘母的死亡循环。追寻其他远征队的踪迹，了解他们最后的命运。逐渐认识33号远征队的成员，看他们最终能够携手并进，战胜绝望的命运。\n\n这个世界凄凉而又美妙\n探索迷人的世界，面对奇形怪状的敌人。走过壮美的土地，从千面之岛到遗落的战场，一路发掘秘密和隐蔽的任务。结识传奇生物，结交忠诚的战友，招募特殊的伙伴，发现全新的跋涉方式，探索世界地图的秘密区域。\n\n感受Sandfall Interactive完全通过Unreal Engine 5打造的处女作，欣赏让人叹为观止的精美画面和动人心弦的原声音轨。",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202406/0917/579b7631b1c274b411a82acdd7610148530da6a3bef83c78.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202406/0917/fb1a6de55863df9c72d8da7325ce9785bb6d5623b3333655.jpg",
@@ -3208,7 +3208,7 @@
   "warn": "⚠️ 港服未找到该商品精确匹配的页面，参数取自同系列商品，简介已留空以防误导"
  },
  "共鸣：瘟疫传说传承2": {
-  "_cid": "EP4133-PPSA30601_00-RESONANCEAPLAGUE",
+  "_cid": "EP4133-PPSA02387_00-APLAGUETALEGAME0",
   "store_name": "共鸣：瘟疫传说传承",
   "platforms": "PS5",
   "release": "2026年8月28日",
@@ -3218,7 +3218,7 @@
    "休闲解谜",
    "剧情探索"
   ],
-  "capacity": "",
+  "capacity": "37.3 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -3241,7 +3241,7 @@
   "warn": ""
  },
  "共鸣：瘟疫传说传承1": {
-  "_cid": "EP4133-PPSA30601_00-RESONANCEAPLAGUE",
+  "_cid": "EP4133-PPSA02387_00-APLAGUETALEGAME0",
   "store_name": "共鸣：瘟疫传说传承",
   "platforms": "PS5",
   "release": "2026年8月28日",
@@ -3251,7 +3251,7 @@
    "休闲解谜",
    "剧情探索"
   ],
-  "capacity": "",
+  "capacity": "37.3 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -3370,7 +3370,7 @@
   "warn": ""
  },
  "冥河：贪婪之刃": {
-  "_cid": "EP6665-PPSA28835_00-STYX300000000000",
+  "_cid": "EP6665-PPSA28835_00-STYX3DELUXE00001",
   "store_name": "Styx: Blades of Greed",
   "platforms": "PS5",
   "release": "2026年2月19日",
@@ -3380,7 +3380,7 @@
    "潜行暗杀",
    "休闲解谜"
   ],
-  "capacity": "",
+  "capacity": "21.0 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -3399,7 +3399,7 @@
   "warn": ""
  },
  "冲就完事模拟器2": {
-  "_cid": "UP0082-CUSA29983_00-0820095852185456",
+  "_cid": "UP0082-PPSA04987_00-3528315769842001",
   "store_name": "《冲就完事模拟器》 万圣节屋子 2024年万圣节",
   "platforms": "PS5/PS4",
   "release": "2025年10月23日",
@@ -3408,7 +3408,7 @@
    "多人联机",
    "恐怖惊悚"
   ],
-  "capacity": "",
+  "capacity": "8.2 GB",
   "players_local": "1",
   "players_online": "1-6",
   "players": "本地1人，线上1-6人",
@@ -4010,7 +4010,7 @@
   "warn": ""
  },
  "动物迷城": {
-  "_cid": "JP5784-PPSA37850_00-BACKTOTHEDAWN000",
+  "_cid": "UP1845-CUSA13800_00-BSTUBCUSA1380000",
   "store_name": "动物迷城 ～Back to the Dawn～",
   "platforms": "PS5",
   "release": "2026年10月22日",
@@ -4020,7 +4020,7 @@
    "单人游玩",
    "生存冒险"
   ],
-  "capacity": "",
+  "capacity": "1.8 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -4298,7 +4298,7 @@
   "warn": ""
  },
  "匹诺曹的谎言（完整版）": {
-  "_cid": "HP1804-PPSA10623_00-0000000000000DLC",
+  "_cid": "HP1804-PPSA10623_00-6700122691247574",
   "store_name": "Lies of P: Overture",
   "platforms": "PS5/PS4",
   "release": "2025年6月7日",
@@ -4308,7 +4308,7 @@
    "单人游玩",
    "剧情探索"
   ],
-  "capacity": "",
+  "capacity": "52.3 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -4380,7 +4380,7 @@
   "warn": ""
  },
  "午夜之南": {
-  "_cid": "UP9000-PPSA26676_00-MIDNIGHTMURDERCL",
+  "_cid": "HP4801-PPSA09853_00-SOUTHOFTHECIRCLE",
   "store_name": "《Midnight Murder Club》",
   "platforms": "PS5",
   "release": "2026年4月1日",
@@ -4390,7 +4390,7 @@
    "多人联机",
    "推理悬疑"
   ],
-  "capacity": "",
+  "capacity": "2.9 GB",
   "players_local": "",
   "players_online": "1-6",
   "players": "线上1-6人",
@@ -4492,7 +4492,7 @@
   "languages": [
    "中文"
   ],
-  "intro": "",
+  "intro": "化身为爱德华．肯威，回到 1715 年的海盗黄金年代！\n\n一般版内含：\n- 艾芙琳任务\n- 隐藏之秘关卡\n- 献祭之秘关卡\n- 肯威船长的传世宝\n\n(不兼容于AC4英文版DLC/ULC)",
   "shots": [],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc9493ef1c3daa.jpg&w=512&q=82&output=jpg",
   "en": "Assassin's Creed Black Flag（Deluxe Edition）",
@@ -4842,7 +4842,7 @@
   "warn": ""
  },
  "受折磨的灵魂1（PS4）": {
-  "_cid": "JP6375-CUSA26697_00-1312147723683918",
+  "_cid": "JP4236-CUSA18928_00-ASIAREMOTHEREDTF",
   "store_name": "Bleach: Brave Souls - 149 Spirit Orbs",
   "platforms": "PS5/PS4",
   "release": "2022年9月22日",
@@ -4852,7 +4852,7 @@
    "单人游玩",
    "多人联机"
   ],
-  "capacity": "",
+  "capacity": "7.7 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -4865,7 +4865,7 @@
   "warn": ""
  },
  "受折磨的灵魂2": {
-  "_cid": "JP6375-CUSA26697_00-0875403888817411",
+  "_cid": "JP5905-CUSA35137_00-0000000000000000",
   "store_name": "Bleach: Brave Souls - Beginner's Pack 2026",
   "platforms": "PS5/PS4",
   "release": "2025年10月23日",
@@ -4875,7 +4875,7 @@
    "单人游玩",
    "多人联机"
   ],
-  "capacity": "",
+  "capacity": "5.9 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -4888,7 +4888,7 @@
   "warn": ""
  },
  "受折磨的灵魂1（PS5）": {
-  "_cid": "JP6375-CUSA26697_00-1312147723683918",
+  "_cid": "JP4236-CUSA18928_00-ASIAREMOTHEREDTF",
   "store_name": "Bleach: Brave Souls - 149 Spirit Orbs",
   "platforms": "PS5/PS4",
   "release": "2022年9月22日",
@@ -4898,7 +4898,7 @@
    "单人游玩",
    "多人联机"
   ],
-  "capacity": "",
+  "capacity": "7.7 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -4931,7 +4931,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "Ultimate Edition包含《原子之心》游戏本体、Atomic Pass、Golden Age和Labor & Science武器皮肤包，以及一份数字版画集。 畅享《原子之心》完整体验，解锁所有精彩内容。\n《原子之心》全球玩家人数突破千万，斩获杰出视觉风格、最佳原创动作游戏等重磅大奖，同时入围多项荣誉提名——现在，《原子之心》Ultimate Edition震撼登场，邀你体验全剧情及内容DLC！\n\n在这个架空历史背景下的复古未来世界里，科技狂潮催生出一批批骇人机械和变异生物，而它们竟在骤然间反噬人类。曾经光鲜完美的理想国不过是金玉其外的假象。在3826号设施深处，潜藏着无数阴暗秘辛。\n\n化身P-3少校，与机器人芭蕾舞者双生舞伶、谜一般的季娜婆婆，以及AI维修柜诺拉等经典人气角色并肩作战，一同揭开这场科技灾难背后的真相。借助实验级聚合物手套的战斗能力和手中的尖端武器库，在激烈狂乱的交锋中杀出一条生路。\n\n开启四大追加章节，延续主游戏故事的衍生剧情，挑战疯魔的新首领，掌控能毁天灭地的新武器：对抗门捷列夫综合体的变形机械，协助P-3逃离扭曲的灵薄域世界，探索水下海神科学中心的奥秘。《原子之心》将在令人心悸的水晶综合体中上演一场悲壮决绝的终局之战，而这场血战也将为《The CUBE》和《原子之心2》的全新篇章揭开恢弘序章。\n• 美妙而又疯狂的乌托邦世界\n• 棘手的战斗难度，恢弘壮观的战斗场面，满屏都是血浆\n• 用各种技能和尖端武器暴揍高大的机器和变异体\n• 升级武器库和装备\n• 尊享Atomic Pass和4个剧情DLC\n• 装备5款黄金武器和手套皮肤\n• 鉴赏精美数字版画集",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202604/0713/c5d8a7e41486ee0791f323312d4f4f35bea8d39920d551d9.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202604/0713/d83c5a2e4e8c67d2c2859bcb27a850a9f6a7f7a3569d3874.jpg",
@@ -5370,7 +5370,7 @@
   "warn": ""
  },
  "吸血鬼幸存者（完整版）": {
-  "_cid": "UB0134-PPSA30703_00-0033478242037726",
+  "_cid": "EB0324-PPSA21703_00-0027916840515656",
   "store_name": "Vampire Crawlers: The Turbo Wildcard from Vampire Survivors",
   "platforms": "PS5/PS4",
   "release": "2026年8月28日",
@@ -5380,7 +5380,7 @@
    "卡牌构筑",
    "砍杀动作"
   ],
-  "capacity": "",
+  "capacity": "1.0 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -5402,7 +5402,7 @@
   "warn": ""
  },
  "吸血鬼爬行者1": {
-  "_cid": "UB0134-PPSA30703_00-0033478242037726",
+  "_cid": "EB0324-PPSA21703_00-0027916840515656",
   "store_name": "Vampire Crawlers: The Turbo Wildcard from Vampire Survivors",
   "platforms": "PS5",
   "release": "2026年4月22日",
@@ -5412,7 +5412,7 @@
    "卡牌构筑",
    "砍杀动作"
   ],
-  "capacity": "",
+  "capacity": "1.0 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -5434,7 +5434,7 @@
   "warn": ""
  },
  "吸血鬼爬行者2": {
-  "_cid": "UB0134-PPSA30703_00-0033478242037726",
+  "_cid": "EB0324-PPSA21703_00-0027916840515656",
   "store_name": "Vampire Crawlers: The Turbo Wildcard from Vampire Survivors",
   "platforms": "PS5",
   "release": "2026年4月22日",
@@ -5444,7 +5444,7 @@
    "卡牌构筑",
    "砍杀动作"
   ],
-  "capacity": "",
+  "capacity": "1.0 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -5531,7 +5531,7 @@
   "warn": ""
  },
  "吸血鬼：避世血族2": {
-  "_cid": "EP4139-PPSA15185_00-VTMB2BASEGAME000",
+  "_cid": "EP6665-CUSA33241_00-VTMS000000000000",
   "store_name": "Vampire: The Masquerade® - Bloodlines™ 2",
   "platforms": "PS5",
   "release": "2025年10月22日",
@@ -5541,7 +5541,7 @@
    "单人游玩",
    "潜行暗杀"
   ],
-  "capacity": "",
+  "capacity": "12.9 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -6092,7 +6092,7 @@
   "warn": ""
  },
  "圣歌Anthem（黎明军团版）": {
-  "_cid": "JP0700-CUSA07515_00-TAIKO01DLC000155",
+  "_cid": "UP2844-CUSA10592_00-HAZEROEPISODE001",
   "store_name": "HYPNOSISMIC -Division Battle Anthem-",
   "platforms": "PS5/PS4",
   "release": "2019年2月22日",
@@ -6101,7 +6101,7 @@
    "双人同屏",
    "多人联机"
   ],
-  "capacity": "",
+  "capacity": "625 MB",
   "players_local": "1-2",
   "players_online": "",
   "players": "本地1-2人",
@@ -6273,7 +6273,7 @@
   "warn": ""
  },
  "地狱即我们": {
-  "_cid": "EP6665-PPSA09259_00-HIU0000000000000",
+  "_cid": "EP0782-PPSA31748_00-0547561754154973",
   "store_name": "Hell is Us",
   "platforms": "PS5",
   "release": "2025年9月4日",
@@ -6283,7 +6283,7 @@
    "剧情探索",
    "第三人称视角"
   ],
-  "capacity": "",
+  "capacity": "694 MB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -6521,7 +6521,7 @@
   "warn": ""
  },
  "埃里克斯霍姆：被偷走的梦": {
-  "_cid": "EB0757-PPSA20548_00-0286086241569047",
+  "_cid": "UP2035-CUSA35522_00-8184281401245328",
   "store_name": "埃里克斯霍姆：被偷走的梦",
   "platforms": "PS5",
   "release": "2025年7月15日",
@@ -6531,7 +6531,7 @@
    "休闲解谜",
    "剧情探索"
   ],
-  "capacity": "",
+  "capacity": "139 MB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -6899,7 +6899,7 @@
   "warn": ""
  },
  "天命重启：心跳的抉择": {
-  "_cid": "EP0900-CUSA29547_00-ASHESOFELRANTEUR",
+  "_cid": "EP0900-CUSA29547_00-4103461541053748",
   "store_name": "Chained Echoes: Ashes of Elrant",
   "platforms": "PS5/PS4",
   "release": "2026年8月21日",
@@ -6908,7 +6908,7 @@
    "角色扮演",
    "单人游玩"
   ],
-  "capacity": "",
+  "capacity": "768 MB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -7017,7 +7017,7 @@
   "warn": ""
  },
  "失落之魂": {
-  "_cid": "HP9000-PPSA26358_00-LOSTSOULASIDE000",
+  "_cid": "HP6885-CUSA49478_00-SOULSTALKERASIA4",
   "store_name": "《失落之魂》",
   "platforms": "PS5",
   "release": "2025年8月29日",
@@ -7027,7 +7027,7 @@
    "单人游玩",
    "生存冒险"
   ],
-  "capacity": "",
+  "capacity": "2.2 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -7112,7 +7112,7 @@
   "warn": ""
  },
  "失落星船：马拉松": {
-  "_cid": "JP9200-PPSA24487_00-VIRCUR000000000G",
+  "_cid": "JP0036-CUSA14065_00-ASIA000000000000",
   "store_name": "《失落星船：马拉松》500奢享币",
   "platforms": "PS5",
   "release": "2026年3月6日",
@@ -7121,7 +7121,7 @@
    "多人联机",
    "动作"
   ],
-  "capacity": "",
+  "capacity": "3.3 GB",
   "players_local": "",
   "players_online": "1-18",
   "players": "线上1-18人",
@@ -7253,7 +7253,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "在前往银河系最遥远边陲的殖民船上昏迷后，你比预期晚了几十年后才醒来，却发现自己竟置身于一场或将摧毁神翠殖民地的阴谋之中。当你探索太空的最深处，遭遇众多竭尽所能争权夺势的派系时，你决定要成为什么样的人，将左右神翠所有人的命运。在这个殖民地的企业方程中，你是计划外的未知变量。\n\n欢迎来到未来世界，请尽量别把未来给毁了。\n\n• 在这部扣人心弦的单人第一人称RPG游戏打造任何你想要的角色，包括基于你自身游戏经验的可选缺陷。\n• 率领一群拥有独特能力，各有各的使命、动机和理想的同伴。\n• 找到你的飞船，探索位于神翠殖民地的定居点、空间站和其他各种地方。",
   "shots": [
    "https://vulcan.dl.playstation.net/img/cfn/11307N36FJWQ34yB4iWUs25QQD8C72i4Cq9s01vyuIqXF5-o66PKiRoENU-K8r0xZ4fkaiTJy1uQJl4XPQ0KyEnjs8k7CiJb.jpg",
    "https://vulcan.dl.playstation.net/img/cfn/11307X7_P88_tMB_nqx6NpJwSNzaGhq5hWYuUl-6HyqakK5U_HVdxTW2NUeXRTGXnlqOhZ0BwgOMUGrO-VqDiWmOUwoKCQO4.jpg",
@@ -7374,7 +7374,7 @@
    "探索冒险",
    "任务战役"
   ],
-  "capacity": "",
+  "capacity": "21.0 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -7383,7 +7383,7 @@
    "英文",
    "日文"
   ],
-  "intro": "",
+  "intro": "麦珂茜·考尔菲德——知名学府卡利登大学驻场摄影师——发现新交的好友萨菲死在雪地里。\n\n惨遭谋杀。\n\n为了救她回来，麦珂茜尝试重启多年未用的超能力，回溯时间……结果，却打开了前往平行时间线的通路，那里的萨菲还活着，但也身陷险境！\n\n麦珂茜意识到，凶手很快就会再度行凶——在两条时间线上。\n\n凭借穿梭两条时间线的新能力，麦珂茜能否理清真相，阻止同样的悲剧？\n\n平凡的女孩，非凡的力量\n麦珂茜被卷入了一场毛骨悚然的超自然谋杀案，险象环生，远超从前！\n\n横跨两个时空\n在双重现实中，结交盟友，追查嫌犯，做出难忘抉择，引导双线轨迹。\n\n与时间赛跑\n一名铁腕警探已经盯上了麦珂茜，杀害萨菲的凶手也随着抽丝剥茧逐渐逼近。麦珂茜能撑到最后，完成不可能完成的任务吗？\n\n决定卡利登的命运\n探索两个版本的冬日校园，迎接扑面而来的线索、秘密和艰难抉择。\n\n独家原声音乐\n丰富的原创配乐、新歌，和惊艳的授权曲目！",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202405/3016/107f47950e9bfc09a39711fd98d0da290410f580561070bc.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202405/3016/77c689a1e8e30ea8d5e8029fd0a69f51b850b8bcc04f30c9.jpg",
@@ -7431,7 +7431,7 @@
   "warn": ""
  },
  "女神异闻录3：Reload+后日谈DLC/P3R": {
-  "_cid": "HP0177-PPSA09730_00-ADDCONTENT100012",
+  "_cid": "UP0177-CUSA52887_00-ADDCONTENT100013",
   "store_name": "女神异闻录３ Reload: Episode Aegis",
   "platforms": "PS5/PS4",
   "release": "2024年3月12日",
@@ -7440,7 +7440,7 @@
    "角色扮演",
    "单人游玩"
   ],
-  "capacity": "",
+  "capacity": "9.8 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -7605,7 +7605,7 @@
    "韩文",
    "泰文"
   ],
-  "intro": "",
+  "intro": "※本商品预计于2027年5月之后转为单机游戏，敬请见谅。\n※因应单机化，本商品“数字终极版”也预计于12月17日停止贩售，敬请见谅。\n※本游戏只有在线模式，游玩时需要一直连接网络。\n\n数字终极版内容\n- “奇异贤伴 爱达之歌”（游戏本体）\n- 数字终极版特典\n\n▼数字终极版特典内容\n・终极漂泊者通票兑换券\n・贤士重制券\n・Mystere型贤士制造票券\n能获得贤士“奥秘士”的票券\n・学园风服装\n・学园风服装（紫）\n\n※内容、样式可能未经告知有部分变更。\n※特典有可能于日后另行发布。\n\n“奇异贤伴 爱达之歌”是款让玩家驾驶机人，成为以搜集地球上稀有资源“AO结晶”为业的漂泊者。与贤士搭档AI一同对抗名为“终结者”的异形生物，并带回资源的撤离射击游戏。",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202409/1111/7f4f8b3fcd1605873cbe81f416071ba540ae6792d14fc2dd.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202409/1111/561d7a3a49919d1f371bde184d1615d3e6dd9d18134263a3.jpg",
@@ -7657,7 +7657,7 @@
   "warn": ""
  },
  "如龙1 人中之龙：极1（2）": {
-  "_cid": "HP0177-CUSA09614_00-EX00000000000010",
+  "_cid": "JP0177-PPSA30223_00-MAINGAME00000000",
   "store_name": "人中之龙　极2 帮派创造者特别员工　狭山薰（SSR）",
   "platforms": "PS5/PS4",
   "release": "2016年1月21日",
@@ -7666,7 +7666,7 @@
    "单人游玩",
    "沙盒建造"
   ],
-  "capacity": "",
+  "capacity": "40.2 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -7679,7 +7679,7 @@
   "warn": ""
  },
  "如龙1 人中之龙：极1（1）": {
-  "_cid": "HP0177-CUSA09614_00-EX00000000000010",
+  "_cid": "JP0177-PPSA30223_00-MAINGAME00000000",
   "store_name": "人中之龙　极2 帮派创造者特别员工　狭山薰（SSR）",
   "platforms": "PS5/PS4",
   "release": "2016年1月21日",
@@ -7688,7 +7688,7 @@
    "单人游玩",
    "沙盒建造"
   ],
-  "capacity": "",
+  "capacity": "40.2 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -7701,7 +7701,7 @@
   "warn": ""
  },
  "如龙2 人中之龙：极2（1）": {
-  "_cid": "EP4040-CUSA01761_00-ASIA000000000004",
+  "_cid": "JP0177-PPSA31334_00-MAINGAME000000AS",
   "store_name": "Payday 2 Crimewave Edition- The Yakuza Character Pack",
   "platforms": "PS5/PS4",
   "release": "2017年12月7日",
@@ -7710,7 +7710,7 @@
    "单人游玩",
    "卡牌构筑"
   ],
-  "capacity": "",
+  "capacity": "20.7 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -7791,7 +7791,7 @@
   "warn": ""
  },
  "如龙2 人中之龙：极2（2）": {
-  "_cid": "EP4040-CUSA01761_00-ASIA000000000004",
+  "_cid": "JP0177-PPSA30223_00-MAINGAME00000000",
   "store_name": "Payday 2 Crimewave Edition- The Yakuza Character Pack",
   "platforms": "PS5/PS4",
   "release": "2017年12月7日",
@@ -7800,7 +7800,7 @@
    "单人游玩",
    "卡牌构筑"
   ],
-  "capacity": "",
+  "capacity": "40.2 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -8374,7 +8374,7 @@
   "warn": ""
  },
  "寂静岭：小镇陷落1": {
-  "_cid": "HP1792-PPSA30448_00-SYPS5HILLBILLYDO",
+  "_cid": "EP8923-CUSA34491_00-2223556274342468",
   "store_name": "Hillbilly Doomsday",
   "platforms": "PS5",
   "release": "2026年9月24日",
@@ -8384,7 +8384,7 @@
    "单人游玩",
    "生存冒险"
   ],
-  "capacity": "",
+  "capacity": "5.8 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -8439,7 +8439,7 @@
   "warn": ""
  },
  "寂静岭：小镇陷落2": {
-  "_cid": "HP1792-PPSA30448_00-SYPS5HILLBILLYDO",
+  "_cid": "EP8923-PPSA08687_00-XXXXXXXXXXXXXXXX",
   "store_name": "Hillbilly Doomsday",
   "platforms": "PS5",
   "release": "2026年9月24日",
@@ -8449,7 +8449,7 @@
    "单人游玩",
    "生存冒险"
   ],
-  "capacity": "",
+  "capacity": "5.8 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -8473,7 +8473,7 @@
   "warn": ""
  },
  "寂静岭：小镇陷落3": {
-  "_cid": "HP1792-PPSA30448_00-SYPS5HILLBILLYDO",
+  "_cid": "EP8923-CUSA34491_00-2223556274342468",
   "store_name": "Hillbilly Doomsday",
   "platforms": "PS5",
   "release": "2026年9月24日",
@@ -8483,7 +8483,7 @@
    "单人游玩",
    "生存冒险"
   ],
-  "capacity": "",
+  "capacity": "5.8 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -9185,7 +9185,7 @@
   "warn": ""
  },
  "师父/师傅（豪华版）": {
-  "_cid": "UP2703-CUSA30202_00-DELUXE0000000000",
+  "_cid": "UP2703-PPSA05132_00-4856299050197748",
   "store_name": "Sifu - Deluxe Exclusive Outfits",
   "platforms": "PS5/PS4",
   "release": "2022年2月6日",
@@ -9194,7 +9194,7 @@
    "单人游玩",
    "收集养成"
   ],
-  "capacity": "",
+  "capacity": "10.2 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -9241,7 +9241,7 @@
   "warn": ""
  },
  "幻想大陆战记 深渊": {
-  "_cid": "HP1597-PPSA25717_00-ENDOFABYSS000000",
+  "_cid": "JP0530-CUSA20524_00-BRIGANDINETLORDM",
   "store_name": "End of Abyss",
   "platforms": "PS5",
   "release": "2026年8月27日",
@@ -9251,7 +9251,7 @@
    "恐怖惊悚",
    "生存冒险"
   ],
-  "capacity": "",
+  "capacity": "3.6 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -9400,7 +9400,7 @@
   "warn": ""
  },
  "幽浮2（典藏合辑）": {
-  "_cid": "UP1001-CUSA04552_00-ASIA000000000009",
+  "_cid": "UP1001-CUSA04552_00-ASIA000000000012",
   "store_name": "XCOM® 2 天选者之战",
   "platforms": "PS5/PS4",
   "release": "2018年2月21日",
@@ -9410,7 +9410,7 @@
    "单人游玩",
    "多人联机"
   ],
-  "capacity": "",
+  "capacity": "20.3 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -9573,14 +9573,14 @@
   "warn": ""
  },
  "异形：火力小队精英2": {
-  "_cid": "UP0017-PPSA29920_00-0533005510215681",
+  "_cid": "EP4133-PPSA03544_00-ALIENSFIRETEAMEU",
   "store_name": "Aliens: Fireteam Elite 2",
   "platforms": "PS5",
   "release": "2026年8月25日",
   "genres": [
    "射击"
   ],
-  "capacity": "",
+  "capacity": "18.1 GB",
   "players_local": "1",
   "players_online": "1-4",
   "players": "1-4位玩家",
@@ -9593,15 +9593,11 @@
   ],
   "intro": "《Aliens: Fireteam Elite 2》将最多四名玩家投入殖民陆战队的角色之中，奉命奔赴《Aliens》宇宙中最险恶的角落。这不是救援任务，而是一场生死之战。异形在走廊中潜行，从暗处伏击，蜂拥而至。每一个房间都可能是最后的葬身之地。与你的火力小队紧密协作，发挥每个职业的独特技能，并在战况从紧张对峙升级为全面战争的过程中随机应变。《Aliens: Fireteam Elite 2》拥有更深入的小队协作机制、更聪明的敌人以及可完全自定义的专家职业，将带来最纯正的《Aliens》多人合作体验。\n\n4人合作小队战斗\n小队人数从三人增加至四人，《Aliens: Fireteam Elite 2》引入了更深入的团队机制，奖励战术配合与职业组合策略。全新设计及改良的职业都拥有独特鲜明的玩法和战术技能，使每种小队搭配都有截然不同的战斗体验。\n难以招架的异形攻势\n经典异形比以往更为凶残狂暴。《Aliens: Fireteam Elite 2》中种类繁多的全新异形，迫使玩家保持机动、时刻警觉战场态势，并动用所有可用手段。绝境之下，你可以挥舞电击棒近身搏杀；在你和小队被异形大军吞没之前，也可以用燃烧弹药和电击弹药削弱其不间断推进的攻势。战局可能在数秒内从精心策划的紧张对峙，骤变为绝望的最后一搏。\n专家职业——随心定制的玩法\n除了更丰富的武器和装备自定义内容，《Aliens: Fireteam Elite 2》还引入了专家职业——这一完全可自定义的职业允许玩家自由搭配所有可用职业的主技能与副技能。根据你独特的玩法风格量身打造装备配置，填补小队所需的任何角色空缺。\n群袭模式——在虫群中求生\n《Aliens: Fireteam Elite 2》首发即包含多张专门打造的群袭地图，将小队推向极限。在一波强过一波的异形与其他致命敌人的进攻中浴血奋战，随着你在猛攻中存活得越久，获得的奖励越丰厚。这里，正是对团队合作与技能的终极考验",
   "shots": [
-   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/393c52e060d28f2464b87b94fdb312cde8d8f1f807f951a3.jpg",
-   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0522/e3dbd82b2aa8acf30ba33e0ca3bc3974dbc3bdc6a2c58d29.jpg",
-   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/cdb9320e0dd952aa8d5fee895bc005d03c3280687c424058.png",
    "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/887c5fde2171bd8dc93632ca8b237fae862364261688ef58.jpg",
    "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/71e0a2b62c7c746e0e2bf5b19d0fd189e221dc906298a6f2.jpg",
    "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/c3d55365f7c2e25d3aca74afb56da5bd5b591989e34d2061.jpg",
    "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/1f768e9d9f7a3bef0d877290727dcef0a0139602b6df980a.jpg",
-   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/2ddf0dfe8941f505a62d22aa9c3f539d055b5a1abfcf430b.jpg",
-   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0121/3ec0cc60caf50c28eaacd3c9d0cd9f6ba4f9887b8bbedc52.png"
+   "https://image.api.playstation.com/vulcan/ap/rnd/202605/0519/2ddf0dfe8941f505a62d22aa9c3f539d055b5a1abfcf430b.jpg"
   ],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc3b27ddc29113.jpg&w=512&q=82&output=jpg",
   "en": "Aliens: Fireteam Elite 2",
@@ -9735,7 +9731,7 @@
   "warn": ""
  },
  "归零地": {
-  "_cid": "EB1792-PPSA38190_00-0529742228924667",
+  "_cid": "JP5134-PPSA15390_00-SLAVEZEROXBEEP03",
   "store_name": "Ground Zero Hero",
   "platforms": "PS5",
   "release": "2026年4月17日",
@@ -9745,7 +9741,7 @@
    "肉鸽试炼",
    "生存冒险"
   ],
-  "capacity": "",
+  "capacity": "4.0 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -9808,33 +9804,36 @@
   "warn": ""
  },
  "影之刃零1": {
-  "_cid": "UP8674-CUSA50625_00-0502770653313472",
-  "store_name": "The Phantom",
-  "platforms": "PS5/PS4",
+  "_cid": "UB2134-PPSA34579_00-0622032276386943",
+  "store_name": "影之刃零 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "platforms": "PS5",
   "release": "2026年10月29日",
   "genres": [
-   "格斗对战",
-   "双人同屏",
-   "多人联机",
-   "街机复刻"
+   "动作战斗",
+   "单人游玩",
+   "动作"
   ],
-  "capacity": "2.0 GB",
-  "players_local": "1-2",
-  "players_online": "",
-  "players": "本地1-2人",
-  "languages": [],
-  "intro": "漫画中第一位身着戏服的英雄已经登陆游戏机，他仅凭着自己的体力、武器技能和打击犯罪的可怕名声就做到了！\n\n《幻影》是一款街机风格的打斗游戏，即将登陆 PC 和游戏机。在这场 14 级冒险中，扮演幻影或他的搭档戴安娜·帕尔默。辛格兄弟会令人恐惧的海盗正在争夺权力，威胁着幻影的遗产，而阻止他们的重任就落在了你的身上。使用你的徒手搏击技能和可靠的武器来消灭这个恶魔，并向你的动物朋友猎鹰弗拉卡和狼魔鬼寻求帮助。《幻影》讲述了一个由 King Features 批准的全新故事。通过全屏场景和迷人的游戏内视觉效果体验这一经典作品，这些视觉效果由经验丰富的漫画家和 Art Of Play 专门的内部 2D 创意团队手绘和逐帧动画。\n\n离线多人游玩（2名玩家）",
+  "capacity": "",
+  "players": "1位玩家",
+  "languages": [
+   "泰语",
+   "日语",
+   "韩语",
+   "简体中文",
+   "繁体中文",
+   "英语"
+  ],
+  "intro": "现在预购即可提前获得以下内容：\n\n• 饰品\n- 聚宝盆（意识尘埃掉落率 +10%）\n• 外观\n- 传承\n\n* 提前获得：上述内容也可通过游戏进程在游戏内获得。\n\n由灵游坊自主研发及发行，虚幻5引擎打造的暗黑武侠动作冒险游戏。\n你将化身心脏遭受重创的剑客，在仅余六十六天的生命里，逃亡于刀光剑影和腥风血雨之间，并粉碎一桩笼罩在整个武林上方的惊天阴谋。在失序末法的武林中以身证道，以命寻心。",
   "shots": [
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/00d33d2af0384bbf28d91353bb346a35c884afd07c0921d8.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/2101116fbf1b007a940882b2d01a12373daaa5305e67119b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/9830f54b52d5e4eb74d81adbe42d4919fced4d6ed8a5cd7b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/8cf7c2e74b5bb582c5a5b1f8794f358224abff22b5a96246.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/bb851f731348d78493aedc84ad9e7bcf897f5b65ee0e7489.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/ff9ca1c6a599de5bc8e17821cd1abf50ed35b76b9dec067e.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/06dfa490d94a8df6fe314c0cd769b774d61da6e4c4a9729d.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/10fe81d4ad1de17874e1ed22478af975388ff5f40e292768.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/b1b7392656d578019679f2aac52f578be0a41a5bacd79ca9.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/c17de79edee87b0e7b0b2b854e0d4eacff5a463c4cf7cd98.jpg"
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/011f08e66b4b506f77eb1dcebe50a80ccef09b97b6c263ff.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/40122ba1342de4ec9f6b9213dffd7f22685bdc587d284474.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/0d0cf324c8b9941095f1c1f70844159856d5c07b46abb46e.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/86aea06eda1f27782a5a513901a042f471182e0f87cd1c30.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/c743238bb55da525885b595ae98caa7aa3c0699885a20b25.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/f74706abc4b73fc58e88d035b2940513863bd44fb312a460.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/ee961c66a2cfbc7e738b1b863d54934d52bd2c700a2130aa.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/e9320163ce91523840881aeaf99be45b343e7a0dc57677d4.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/210537e44a9e9c00d8c9b8b7e3f69b9a89d9ac165e26b4a0.jpg"
   ],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=512&q=82&output=jpg",
   "en": "Phantom Blade Zero",
@@ -9842,33 +9841,36 @@
   "warn": ""
  },
  "影之刃零3": {
-  "_cid": "UP8674-CUSA50625_00-0502770653313472",
-  "store_name": "The Phantom",
-  "platforms": "PS5/PS4",
+  "_cid": "UB2134-PPSA34579_00-0622032276386943",
+  "store_name": "影之刃零 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "platforms": "PS5",
   "release": "2026年10月29日",
   "genres": [
-   "格斗对战",
-   "双人同屏",
-   "多人联机",
-   "街机复刻"
+   "动作战斗",
+   "单人游玩",
+   "动作"
   ],
-  "capacity": "2.0 GB",
-  "players_local": "1-2",
-  "players_online": "",
-  "players": "本地1-2人",
-  "languages": [],
-  "intro": "漫画中第一位身着戏服的英雄已经登陆游戏机，他仅凭着自己的体力、武器技能和打击犯罪的可怕名声就做到了！\n\n《幻影》是一款街机风格的打斗游戏，即将登陆 PC 和游戏机。在这场 14 级冒险中，扮演幻影或他的搭档戴安娜·帕尔默。辛格兄弟会令人恐惧的海盗正在争夺权力，威胁着幻影的遗产，而阻止他们的重任就落在了你的身上。使用你的徒手搏击技能和可靠的武器来消灭这个恶魔，并向你的动物朋友猎鹰弗拉卡和狼魔鬼寻求帮助。《幻影》讲述了一个由 King Features 批准的全新故事。通过全屏场景和迷人的游戏内视觉效果体验这一经典作品，这些视觉效果由经验丰富的漫画家和 Art Of Play 专门的内部 2D 创意团队手绘和逐帧动画。\n\n离线多人游玩（2名玩家）",
+  "capacity": "",
+  "players": "1位玩家",
+  "languages": [
+   "泰语",
+   "日语",
+   "韩语",
+   "简体中文",
+   "繁体中文",
+   "英语"
+  ],
+  "intro": "现在预购即可提前获得以下内容：\n\n• 饰品\n- 聚宝盆（意识尘埃掉落率 +10%）\n• 外观\n- 传承\n\n* 提前获得：上述内容也可通过游戏进程在游戏内获得。\n\n由灵游坊自主研发及发行，虚幻5引擎打造的暗黑武侠动作冒险游戏。\n你将化身心脏遭受重创的剑客，在仅余六十六天的生命里，逃亡于刀光剑影和腥风血雨之间，并粉碎一桩笼罩在整个武林上方的惊天阴谋。在失序末法的武林中以身证道，以命寻心。",
   "shots": [
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/00d33d2af0384bbf28d91353bb346a35c884afd07c0921d8.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/2101116fbf1b007a940882b2d01a12373daaa5305e67119b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/9830f54b52d5e4eb74d81adbe42d4919fced4d6ed8a5cd7b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/8cf7c2e74b5bb582c5a5b1f8794f358224abff22b5a96246.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/bb851f731348d78493aedc84ad9e7bcf897f5b65ee0e7489.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/ff9ca1c6a599de5bc8e17821cd1abf50ed35b76b9dec067e.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/06dfa490d94a8df6fe314c0cd769b774d61da6e4c4a9729d.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/10fe81d4ad1de17874e1ed22478af975388ff5f40e292768.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/b1b7392656d578019679f2aac52f578be0a41a5bacd79ca9.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/c17de79edee87b0e7b0b2b854e0d4eacff5a463c4cf7cd98.jpg"
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/011f08e66b4b506f77eb1dcebe50a80ccef09b97b6c263ff.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/40122ba1342de4ec9f6b9213dffd7f22685bdc587d284474.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/0d0cf324c8b9941095f1c1f70844159856d5c07b46abb46e.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/86aea06eda1f27782a5a513901a042f471182e0f87cd1c30.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/c743238bb55da525885b595ae98caa7aa3c0699885a20b25.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/f74706abc4b73fc58e88d035b2940513863bd44fb312a460.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/ee961c66a2cfbc7e738b1b863d54934d52bd2c700a2130aa.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/e9320163ce91523840881aeaf99be45b343e7a0dc57677d4.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/210537e44a9e9c00d8c9b8b7e3f69b9a89d9ac165e26b4a0.jpg"
   ],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=512&q=82&output=jpg",
   "en": "Phantom Blade Zero",
@@ -9876,33 +9878,36 @@
   "warn": ""
  },
  "影之刃零4": {
-  "_cid": "UP8674-CUSA50625_00-0502770653313472",
-  "store_name": "The Phantom",
-  "platforms": "PS5/PS4",
+  "_cid": "UB2134-PPSA34579_00-0622032276386943",
+  "store_name": "影之刃零 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "platforms": "PS5",
   "release": "2026年10月29日",
   "genres": [
-   "格斗对战",
-   "双人同屏",
-   "多人联机",
-   "街机复刻"
+   "动作战斗",
+   "单人游玩",
+   "动作"
   ],
-  "capacity": "2.0 GB",
-  "players_local": "1-2",
-  "players_online": "",
-  "players": "本地1-2人",
-  "languages": [],
-  "intro": "漫画中第一位身着戏服的英雄已经登陆游戏机，他仅凭着自己的体力、武器技能和打击犯罪的可怕名声就做到了！\n\n《幻影》是一款街机风格的打斗游戏，即将登陆 PC 和游戏机。在这场 14 级冒险中，扮演幻影或他的搭档戴安娜·帕尔默。辛格兄弟会令人恐惧的海盗正在争夺权力，威胁着幻影的遗产，而阻止他们的重任就落在了你的身上。使用你的徒手搏击技能和可靠的武器来消灭这个恶魔，并向你的动物朋友猎鹰弗拉卡和狼魔鬼寻求帮助。《幻影》讲述了一个由 King Features 批准的全新故事。通过全屏场景和迷人的游戏内视觉效果体验这一经典作品，这些视觉效果由经验丰富的漫画家和 Art Of Play 专门的内部 2D 创意团队手绘和逐帧动画。\n\n离线多人游玩（2名玩家）",
+  "capacity": "",
+  "players": "1位玩家",
+  "languages": [
+   "泰语",
+   "日语",
+   "韩语",
+   "简体中文",
+   "繁体中文",
+   "英语"
+  ],
+  "intro": "现在预购即可提前获得以下内容：\n\n• 饰品\n- 聚宝盆（意识尘埃掉落率 +10%）\n• 外观\n- 传承\n\n* 提前获得：上述内容也可通过游戏进程在游戏内获得。\n\n由灵游坊自主研发及发行，虚幻5引擎打造的暗黑武侠动作冒险游戏。\n你将化身心脏遭受重创的剑客，在仅余六十六天的生命里，逃亡于刀光剑影和腥风血雨之间，并粉碎一桩笼罩在整个武林上方的惊天阴谋。在失序末法的武林中以身证道，以命寻心。",
   "shots": [
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/00d33d2af0384bbf28d91353bb346a35c884afd07c0921d8.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/2101116fbf1b007a940882b2d01a12373daaa5305e67119b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/9830f54b52d5e4eb74d81adbe42d4919fced4d6ed8a5cd7b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/8cf7c2e74b5bb582c5a5b1f8794f358224abff22b5a96246.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/bb851f731348d78493aedc84ad9e7bcf897f5b65ee0e7489.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/ff9ca1c6a599de5bc8e17821cd1abf50ed35b76b9dec067e.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/06dfa490d94a8df6fe314c0cd769b774d61da6e4c4a9729d.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/10fe81d4ad1de17874e1ed22478af975388ff5f40e292768.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/b1b7392656d578019679f2aac52f578be0a41a5bacd79ca9.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/c17de79edee87b0e7b0b2b854e0d4eacff5a463c4cf7cd98.jpg"
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/011f08e66b4b506f77eb1dcebe50a80ccef09b97b6c263ff.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/40122ba1342de4ec9f6b9213dffd7f22685bdc587d284474.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/0d0cf324c8b9941095f1c1f70844159856d5c07b46abb46e.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/86aea06eda1f27782a5a513901a042f471182e0f87cd1c30.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/c743238bb55da525885b595ae98caa7aa3c0699885a20b25.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/f74706abc4b73fc58e88d035b2940513863bd44fb312a460.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/ee961c66a2cfbc7e738b1b863d54934d52bd2c700a2130aa.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/e9320163ce91523840881aeaf99be45b343e7a0dc57677d4.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/210537e44a9e9c00d8c9b8b7e3f69b9a89d9ac165e26b4a0.jpg"
   ],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=512&q=82&output=jpg",
   "en": "Phantom Blade Zero",
@@ -9910,33 +9915,36 @@
   "warn": ""
  },
  "影之刃零5": {
-  "_cid": "UP8674-CUSA50625_00-0502770653313472",
-  "store_name": "The Phantom",
-  "platforms": "PS5/PS4",
+  "_cid": "UB2134-PPSA34579_00-0622032276386943",
+  "store_name": "影之刃零 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "platforms": "PS5",
   "release": "2026年10月29日",
   "genres": [
-   "格斗对战",
-   "双人同屏",
-   "多人联机",
-   "街机复刻"
+   "动作战斗",
+   "单人游玩",
+   "动作"
   ],
-  "capacity": "2.0 GB",
-  "players_local": "1-2",
-  "players_online": "",
-  "players": "本地1-2人",
-  "languages": [],
-  "intro": "漫画中第一位身着戏服的英雄已经登陆游戏机，他仅凭着自己的体力、武器技能和打击犯罪的可怕名声就做到了！\n\n《幻影》是一款街机风格的打斗游戏，即将登陆 PC 和游戏机。在这场 14 级冒险中，扮演幻影或他的搭档戴安娜·帕尔默。辛格兄弟会令人恐惧的海盗正在争夺权力，威胁着幻影的遗产，而阻止他们的重任就落在了你的身上。使用你的徒手搏击技能和可靠的武器来消灭这个恶魔，并向你的动物朋友猎鹰弗拉卡和狼魔鬼寻求帮助。《幻影》讲述了一个由 King Features 批准的全新故事。通过全屏场景和迷人的游戏内视觉效果体验这一经典作品，这些视觉效果由经验丰富的漫画家和 Art Of Play 专门的内部 2D 创意团队手绘和逐帧动画。\n\n离线多人游玩（2名玩家）",
+  "capacity": "",
+  "players": "1位玩家",
+  "languages": [
+   "泰语",
+   "日语",
+   "韩语",
+   "简体中文",
+   "繁体中文",
+   "英语"
+  ],
+  "intro": "现在预购即可提前获得以下内容：\n\n• 饰品\n- 聚宝盆（意识尘埃掉落率 +10%）\n• 外观\n- 传承\n\n* 提前获得：上述内容也可通过游戏进程在游戏内获得。\n\n由灵游坊自主研发及发行，虚幻5引擎打造的暗黑武侠动作冒险游戏。\n你将化身心脏遭受重创的剑客，在仅余六十六天的生命里，逃亡于刀光剑影和腥风血雨之间，并粉碎一桩笼罩在整个武林上方的惊天阴谋。在失序末法的武林中以身证道，以命寻心。",
   "shots": [
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/00d33d2af0384bbf28d91353bb346a35c884afd07c0921d8.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/2101116fbf1b007a940882b2d01a12373daaa5305e67119b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/9830f54b52d5e4eb74d81adbe42d4919fced4d6ed8a5cd7b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/8cf7c2e74b5bb582c5a5b1f8794f358224abff22b5a96246.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/bb851f731348d78493aedc84ad9e7bcf897f5b65ee0e7489.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/ff9ca1c6a599de5bc8e17821cd1abf50ed35b76b9dec067e.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/06dfa490d94a8df6fe314c0cd769b774d61da6e4c4a9729d.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/10fe81d4ad1de17874e1ed22478af975388ff5f40e292768.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/b1b7392656d578019679f2aac52f578be0a41a5bacd79ca9.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/c17de79edee87b0e7b0b2b854e0d4eacff5a463c4cf7cd98.jpg"
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/011f08e66b4b506f77eb1dcebe50a80ccef09b97b6c263ff.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/40122ba1342de4ec9f6b9213dffd7f22685bdc587d284474.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/0d0cf324c8b9941095f1c1f70844159856d5c07b46abb46e.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/86aea06eda1f27782a5a513901a042f471182e0f87cd1c30.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/c743238bb55da525885b595ae98caa7aa3c0699885a20b25.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/f74706abc4b73fc58e88d035b2940513863bd44fb312a460.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/ee961c66a2cfbc7e738b1b863d54934d52bd2c700a2130aa.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/e9320163ce91523840881aeaf99be45b343e7a0dc57677d4.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/210537e44a9e9c00d8c9b8b7e3f69b9a89d9ac165e26b4a0.jpg"
   ],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=512&q=82&output=jpg",
   "en": "Phantom Blade Zero",
@@ -9944,33 +9952,36 @@
   "warn": ""
  },
  "影之刃零2": {
-  "_cid": "UP8674-CUSA50625_00-0502770653313472",
-  "store_name": "The Phantom",
-  "platforms": "PS5/PS4",
+  "_cid": "UB2134-PPSA34579_00-0622032276386943",
+  "store_name": "影之刃零 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "platforms": "PS5",
   "release": "2026年10月29日",
   "genres": [
-   "格斗对战",
-   "双人同屏",
-   "多人联机",
-   "街机复刻"
+   "动作战斗",
+   "单人游玩",
+   "动作"
   ],
-  "capacity": "2.0 GB",
-  "players_local": "1-2",
-  "players_online": "",
-  "players": "本地1-2人",
-  "languages": [],
-  "intro": "漫画中第一位身着戏服的英雄已经登陆游戏机，他仅凭着自己的体力、武器技能和打击犯罪的可怕名声就做到了！\n\n《幻影》是一款街机风格的打斗游戏，即将登陆 PC 和游戏机。在这场 14 级冒险中，扮演幻影或他的搭档戴安娜·帕尔默。辛格兄弟会令人恐惧的海盗正在争夺权力，威胁着幻影的遗产，而阻止他们的重任就落在了你的身上。使用你的徒手搏击技能和可靠的武器来消灭这个恶魔，并向你的动物朋友猎鹰弗拉卡和狼魔鬼寻求帮助。《幻影》讲述了一个由 King Features 批准的全新故事。通过全屏场景和迷人的游戏内视觉效果体验这一经典作品，这些视觉效果由经验丰富的漫画家和 Art Of Play 专门的内部 2D 创意团队手绘和逐帧动画。\n\n离线多人游玩（2名玩家）",
+  "capacity": "",
+  "players": "1位玩家",
+  "languages": [
+   "泰语",
+   "日语",
+   "韩语",
+   "简体中文",
+   "繁体中文",
+   "英语"
+  ],
+  "intro": "现在预购即可提前获得以下内容：\n\n• 饰品\n- 聚宝盆（意识尘埃掉落率 +10%）\n• 外观\n- 传承\n\n* 提前获得：上述内容也可通过游戏进程在游戏内获得。\n\n由灵游坊自主研发及发行，虚幻5引擎打造的暗黑武侠动作冒险游戏。\n你将化身心脏遭受重创的剑客，在仅余六十六天的生命里，逃亡于刀光剑影和腥风血雨之间，并粉碎一桩笼罩在整个武林上方的惊天阴谋。在失序末法的武林中以身证道，以命寻心。",
   "shots": [
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/00d33d2af0384bbf28d91353bb346a35c884afd07c0921d8.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/2101116fbf1b007a940882b2d01a12373daaa5305e67119b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/9830f54b52d5e4eb74d81adbe42d4919fced4d6ed8a5cd7b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/8cf7c2e74b5bb582c5a5b1f8794f358224abff22b5a96246.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/bb851f731348d78493aedc84ad9e7bcf897f5b65ee0e7489.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/ff9ca1c6a599de5bc8e17821cd1abf50ed35b76b9dec067e.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/06dfa490d94a8df6fe314c0cd769b774d61da6e4c4a9729d.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/10fe81d4ad1de17874e1ed22478af975388ff5f40e292768.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/b1b7392656d578019679f2aac52f578be0a41a5bacd79ca9.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/c17de79edee87b0e7b0b2b854e0d4eacff5a463c4cf7cd98.jpg"
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/011f08e66b4b506f77eb1dcebe50a80ccef09b97b6c263ff.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/40122ba1342de4ec9f6b9213dffd7f22685bdc587d284474.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/0d0cf324c8b9941095f1c1f70844159856d5c07b46abb46e.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/86aea06eda1f27782a5a513901a042f471182e0f87cd1c30.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/c743238bb55da525885b595ae98caa7aa3c0699885a20b25.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/f74706abc4b73fc58e88d035b2940513863bd44fb312a460.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/ee961c66a2cfbc7e738b1b863d54934d52bd2c700a2130aa.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/e9320163ce91523840881aeaf99be45b343e7a0dc57677d4.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/210537e44a9e9c00d8c9b8b7e3f69b9a89d9ac165e26b4a0.jpg"
   ],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=512&q=82&output=jpg",
   "en": "Phantom Blade Zero",
@@ -9978,33 +9989,36 @@
   "warn": ""
  },
  "影之刃零8": {
-  "_cid": "UP8674-CUSA50625_00-0502770653313472",
-  "store_name": "The Phantom",
-  "platforms": "PS5/PS4",
+  "_cid": "UB2134-PPSA34579_00-0622032276386943",
+  "store_name": "影之刃零 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "platforms": "PS5",
   "release": "2026年10月29日",
   "genres": [
-   "格斗对战",
-   "双人同屏",
-   "多人联机",
-   "街机复刻"
+   "动作战斗",
+   "单人游玩",
+   "动作"
   ],
-  "capacity": "2.0 GB",
-  "players_local": "1-2",
-  "players_online": "",
-  "players": "本地1-2人",
-  "languages": [],
-  "intro": "漫画中第一位身着戏服的英雄已经登陆游戏机，他仅凭着自己的体力、武器技能和打击犯罪的可怕名声就做到了！\n\n《幻影》是一款街机风格的打斗游戏，即将登陆 PC 和游戏机。在这场 14 级冒险中，扮演幻影或他的搭档戴安娜·帕尔默。辛格兄弟会令人恐惧的海盗正在争夺权力，威胁着幻影的遗产，而阻止他们的重任就落在了你的身上。使用你的徒手搏击技能和可靠的武器来消灭这个恶魔，并向你的动物朋友猎鹰弗拉卡和狼魔鬼寻求帮助。《幻影》讲述了一个由 King Features 批准的全新故事。通过全屏场景和迷人的游戏内视觉效果体验这一经典作品，这些视觉效果由经验丰富的漫画家和 Art Of Play 专门的内部 2D 创意团队手绘和逐帧动画。\n\n离线多人游玩（2名玩家）",
+  "capacity": "",
+  "players": "1位玩家",
+  "languages": [
+   "泰语",
+   "日语",
+   "韩语",
+   "简体中文",
+   "繁体中文",
+   "英语"
+  ],
+  "intro": "现在预购即可提前获得以下内容：\n\n• 饰品\n- 聚宝盆（意识尘埃掉落率 +10%）\n• 外观\n- 传承\n\n* 提前获得：上述内容也可通过游戏进程在游戏内获得。\n\n由灵游坊自主研发及发行，虚幻5引擎打造的暗黑武侠动作冒险游戏。\n你将化身心脏遭受重创的剑客，在仅余六十六天的生命里，逃亡于刀光剑影和腥风血雨之间，并粉碎一桩笼罩在整个武林上方的惊天阴谋。在失序末法的武林中以身证道，以命寻心。",
   "shots": [
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/00d33d2af0384bbf28d91353bb346a35c884afd07c0921d8.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/2101116fbf1b007a940882b2d01a12373daaa5305e67119b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/9830f54b52d5e4eb74d81adbe42d4919fced4d6ed8a5cd7b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/8cf7c2e74b5bb582c5a5b1f8794f358224abff22b5a96246.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/bb851f731348d78493aedc84ad9e7bcf897f5b65ee0e7489.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/ff9ca1c6a599de5bc8e17821cd1abf50ed35b76b9dec067e.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/06dfa490d94a8df6fe314c0cd769b774d61da6e4c4a9729d.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/10fe81d4ad1de17874e1ed22478af975388ff5f40e292768.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/b1b7392656d578019679f2aac52f578be0a41a5bacd79ca9.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/c17de79edee87b0e7b0b2b854e0d4eacff5a463c4cf7cd98.jpg"
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/011f08e66b4b506f77eb1dcebe50a80ccef09b97b6c263ff.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/40122ba1342de4ec9f6b9213dffd7f22685bdc587d284474.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/0d0cf324c8b9941095f1c1f70844159856d5c07b46abb46e.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/86aea06eda1f27782a5a513901a042f471182e0f87cd1c30.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/c743238bb55da525885b595ae98caa7aa3c0699885a20b25.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/f74706abc4b73fc58e88d035b2940513863bd44fb312a460.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/ee961c66a2cfbc7e738b1b863d54934d52bd2c700a2130aa.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/e9320163ce91523840881aeaf99be45b343e7a0dc57677d4.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/210537e44a9e9c00d8c9b8b7e3f69b9a89d9ac165e26b4a0.jpg"
   ],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=512&q=82&output=jpg",
   "en": "Phantom Blade Zero",
@@ -10012,33 +10026,36 @@
   "warn": ""
  },
  "影之刃零7": {
-  "_cid": "UP8674-CUSA50625_00-0502770653313472",
-  "store_name": "The Phantom",
-  "platforms": "PS5/PS4",
+  "_cid": "UB2134-PPSA34579_00-0622032276386943",
+  "store_name": "影之刃零 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "platforms": "PS5",
   "release": "2026年10月29日",
   "genres": [
-   "格斗对战",
-   "双人同屏",
-   "多人联机",
-   "街机复刻"
+   "动作战斗",
+   "单人游玩",
+   "动作"
   ],
-  "capacity": "2.0 GB",
-  "players_local": "1-2",
-  "players_online": "",
-  "players": "本地1-2人",
-  "languages": [],
-  "intro": "漫画中第一位身着戏服的英雄已经登陆游戏机，他仅凭着自己的体力、武器技能和打击犯罪的可怕名声就做到了！\n\n《幻影》是一款街机风格的打斗游戏，即将登陆 PC 和游戏机。在这场 14 级冒险中，扮演幻影或他的搭档戴安娜·帕尔默。辛格兄弟会令人恐惧的海盗正在争夺权力，威胁着幻影的遗产，而阻止他们的重任就落在了你的身上。使用你的徒手搏击技能和可靠的武器来消灭这个恶魔，并向你的动物朋友猎鹰弗拉卡和狼魔鬼寻求帮助。《幻影》讲述了一个由 King Features 批准的全新故事。通过全屏场景和迷人的游戏内视觉效果体验这一经典作品，这些视觉效果由经验丰富的漫画家和 Art Of Play 专门的内部 2D 创意团队手绘和逐帧动画。\n\n离线多人游玩（2名玩家）",
+  "capacity": "",
+  "players": "1位玩家",
+  "languages": [
+   "泰语",
+   "日语",
+   "韩语",
+   "简体中文",
+   "繁体中文",
+   "英语"
+  ],
+  "intro": "现在预购即可提前获得以下内容：\n\n• 饰品\n- 聚宝盆（意识尘埃掉落率 +10%）\n• 外观\n- 传承\n\n* 提前获得：上述内容也可通过游戏进程在游戏内获得。\n\n由灵游坊自主研发及发行，虚幻5引擎打造的暗黑武侠动作冒险游戏。\n你将化身心脏遭受重创的剑客，在仅余六十六天的生命里，逃亡于刀光剑影和腥风血雨之间，并粉碎一桩笼罩在整个武林上方的惊天阴谋。在失序末法的武林中以身证道，以命寻心。",
   "shots": [
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/00d33d2af0384bbf28d91353bb346a35c884afd07c0921d8.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/2101116fbf1b007a940882b2d01a12373daaa5305e67119b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/9830f54b52d5e4eb74d81adbe42d4919fced4d6ed8a5cd7b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/8cf7c2e74b5bb582c5a5b1f8794f358224abff22b5a96246.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/bb851f731348d78493aedc84ad9e7bcf897f5b65ee0e7489.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/ff9ca1c6a599de5bc8e17821cd1abf50ed35b76b9dec067e.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/06dfa490d94a8df6fe314c0cd769b774d61da6e4c4a9729d.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/10fe81d4ad1de17874e1ed22478af975388ff5f40e292768.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/b1b7392656d578019679f2aac52f578be0a41a5bacd79ca9.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/c17de79edee87b0e7b0b2b854e0d4eacff5a463c4cf7cd98.jpg"
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/011f08e66b4b506f77eb1dcebe50a80ccef09b97b6c263ff.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/40122ba1342de4ec9f6b9213dffd7f22685bdc587d284474.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/0d0cf324c8b9941095f1c1f70844159856d5c07b46abb46e.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/86aea06eda1f27782a5a513901a042f471182e0f87cd1c30.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/c743238bb55da525885b595ae98caa7aa3c0699885a20b25.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/f74706abc4b73fc58e88d035b2940513863bd44fb312a460.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/ee961c66a2cfbc7e738b1b863d54934d52bd2c700a2130aa.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/e9320163ce91523840881aeaf99be45b343e7a0dc57677d4.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/210537e44a9e9c00d8c9b8b7e3f69b9a89d9ac165e26b4a0.jpg"
   ],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=512&q=82&output=jpg",
   "en": "Phantom Blade Zero",
@@ -10046,33 +10063,36 @@
   "warn": ""
  },
  "影之刃零6": {
-  "_cid": "UP8674-CUSA50625_00-0502770653313472",
-  "store_name": "The Phantom",
-  "platforms": "PS5/PS4",
+  "_cid": "UB2134-PPSA34579_00-0622032276386943",
+  "store_name": "影之刃零 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "platforms": "PS5",
   "release": "2026年10月29日",
   "genres": [
-   "格斗对战",
-   "双人同屏",
-   "多人联机",
-   "街机复刻"
+   "动作战斗",
+   "单人游玩",
+   "动作"
   ],
-  "capacity": "2.0 GB",
-  "players_local": "1-2",
-  "players_online": "",
-  "players": "本地1-2人",
-  "languages": [],
-  "intro": "漫画中第一位身着戏服的英雄已经登陆游戏机，他仅凭着自己的体力、武器技能和打击犯罪的可怕名声就做到了！\n\n《幻影》是一款街机风格的打斗游戏，即将登陆 PC 和游戏机。在这场 14 级冒险中，扮演幻影或他的搭档戴安娜·帕尔默。辛格兄弟会令人恐惧的海盗正在争夺权力，威胁着幻影的遗产，而阻止他们的重任就落在了你的身上。使用你的徒手搏击技能和可靠的武器来消灭这个恶魔，并向你的动物朋友猎鹰弗拉卡和狼魔鬼寻求帮助。《幻影》讲述了一个由 King Features 批准的全新故事。通过全屏场景和迷人的游戏内视觉效果体验这一经典作品，这些视觉效果由经验丰富的漫画家和 Art Of Play 专门的内部 2D 创意团队手绘和逐帧动画。\n\n离线多人游玩（2名玩家）",
+  "capacity": "",
+  "players": "1位玩家",
+  "languages": [
+   "泰语",
+   "日语",
+   "韩语",
+   "简体中文",
+   "繁体中文",
+   "英语"
+  ],
+  "intro": "现在预购即可提前获得以下内容：\n\n• 饰品\n- 聚宝盆（意识尘埃掉落率 +10%）\n• 外观\n- 传承\n\n* 提前获得：上述内容也可通过游戏进程在游戏内获得。\n\n由灵游坊自主研发及发行，虚幻5引擎打造的暗黑武侠动作冒险游戏。\n你将化身心脏遭受重创的剑客，在仅余六十六天的生命里，逃亡于刀光剑影和腥风血雨之间，并粉碎一桩笼罩在整个武林上方的惊天阴谋。在失序末法的武林中以身证道，以命寻心。",
   "shots": [
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/00d33d2af0384bbf28d91353bb346a35c884afd07c0921d8.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/2101116fbf1b007a940882b2d01a12373daaa5305e67119b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/9830f54b52d5e4eb74d81adbe42d4919fced4d6ed8a5cd7b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/8cf7c2e74b5bb582c5a5b1f8794f358224abff22b5a96246.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/bb851f731348d78493aedc84ad9e7bcf897f5b65ee0e7489.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/ff9ca1c6a599de5bc8e17821cd1abf50ed35b76b9dec067e.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/06dfa490d94a8df6fe314c0cd769b774d61da6e4c4a9729d.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/10fe81d4ad1de17874e1ed22478af975388ff5f40e292768.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/b1b7392656d578019679f2aac52f578be0a41a5bacd79ca9.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/c17de79edee87b0e7b0b2b854e0d4eacff5a463c4cf7cd98.jpg"
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/011f08e66b4b506f77eb1dcebe50a80ccef09b97b6c263ff.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/40122ba1342de4ec9f6b9213dffd7f22685bdc587d284474.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/0d0cf324c8b9941095f1c1f70844159856d5c07b46abb46e.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/86aea06eda1f27782a5a513901a042f471182e0f87cd1c30.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/c743238bb55da525885b595ae98caa7aa3c0699885a20b25.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/f74706abc4b73fc58e88d035b2940513863bd44fb312a460.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/ee961c66a2cfbc7e738b1b863d54934d52bd2c700a2130aa.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/e9320163ce91523840881aeaf99be45b343e7a0dc57677d4.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/210537e44a9e9c00d8c9b8b7e3f69b9a89d9ac165e26b4a0.jpg"
   ],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=512&q=82&output=jpg",
   "en": "Phantom Blade Zero",
@@ -10080,33 +10100,36 @@
   "warn": ""
  },
  "影之刃零9": {
-  "_cid": "UP8674-CUSA50625_00-0502770653313472",
-  "store_name": "The Phantom",
-  "platforms": "PS5/PS4",
+  "_cid": "UB2134-PPSA34579_00-0622032276386943",
+  "store_name": "影之刃零 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "platforms": "PS5",
   "release": "2026年10月29日",
   "genres": [
-   "格斗对战",
-   "双人同屏",
-   "多人联机",
-   "街机复刻"
+   "动作战斗",
+   "单人游玩",
+   "动作"
   ],
-  "capacity": "2.0 GB",
-  "players_local": "1-2",
-  "players_online": "",
-  "players": "本地1-2人",
-  "languages": [],
-  "intro": "漫画中第一位身着戏服的英雄已经登陆游戏机，他仅凭着自己的体力、武器技能和打击犯罪的可怕名声就做到了！\n\n《幻影》是一款街机风格的打斗游戏，即将登陆 PC 和游戏机。在这场 14 级冒险中，扮演幻影或他的搭档戴安娜·帕尔默。辛格兄弟会令人恐惧的海盗正在争夺权力，威胁着幻影的遗产，而阻止他们的重任就落在了你的身上。使用你的徒手搏击技能和可靠的武器来消灭这个恶魔，并向你的动物朋友猎鹰弗拉卡和狼魔鬼寻求帮助。《幻影》讲述了一个由 King Features 批准的全新故事。通过全屏场景和迷人的游戏内视觉效果体验这一经典作品，这些视觉效果由经验丰富的漫画家和 Art Of Play 专门的内部 2D 创意团队手绘和逐帧动画。\n\n离线多人游玩（2名玩家）",
+  "capacity": "",
+  "players": "1位玩家",
+  "languages": [
+   "泰语",
+   "日语",
+   "韩语",
+   "简体中文",
+   "繁体中文",
+   "英语"
+  ],
+  "intro": "现在预购即可提前获得以下内容：\n\n• 饰品\n- 聚宝盆（意识尘埃掉落率 +10%）\n• 外观\n- 传承\n\n* 提前获得：上述内容也可通过游戏进程在游戏内获得。\n\n由灵游坊自主研发及发行，虚幻5引擎打造的暗黑武侠动作冒险游戏。\n你将化身心脏遭受重创的剑客，在仅余六十六天的生命里，逃亡于刀光剑影和腥风血雨之间，并粉碎一桩笼罩在整个武林上方的惊天阴谋。在失序末法的武林中以身证道，以命寻心。",
   "shots": [
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/00d33d2af0384bbf28d91353bb346a35c884afd07c0921d8.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/2101116fbf1b007a940882b2d01a12373daaa5305e67119b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/9830f54b52d5e4eb74d81adbe42d4919fced4d6ed8a5cd7b.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/8cf7c2e74b5bb582c5a5b1f8794f358224abff22b5a96246.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/bb851f731348d78493aedc84ad9e7bcf897f5b65ee0e7489.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/ff9ca1c6a599de5bc8e17821cd1abf50ed35b76b9dec067e.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/06dfa490d94a8df6fe314c0cd769b774d61da6e4c4a9729d.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/10fe81d4ad1de17874e1ed22478af975388ff5f40e292768.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/b1b7392656d578019679f2aac52f578be0a41a5bacd79ca9.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202502/2410/c17de79edee87b0e7b0b2b854e0d4eacff5a463c4cf7cd98.jpg"
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/011f08e66b4b506f77eb1dcebe50a80ccef09b97b6c263ff.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/40122ba1342de4ec9f6b9213dffd7f22685bdc587d284474.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/0d0cf324c8b9941095f1c1f70844159856d5c07b46abb46e.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/86aea06eda1f27782a5a513901a042f471182e0f87cd1c30.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/c743238bb55da525885b595ae98caa7aa3c0699885a20b25.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/f74706abc4b73fc58e88d035b2940513863bd44fb312a460.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/ee961c66a2cfbc7e738b1b863d54934d52bd2c700a2130aa.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/e9320163ce91523840881aeaf99be45b343e7a0dc57677d4.jpg",
+   "https://image.api.playstation.com/vulcan/ap/rnd/202512/1416/210537e44a9e9c00d8c9b8b7e3f69b9a89d9ac165e26b4a0.jpg"
   ],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc17b3f2f2ffe4.jpg&w=512&q=82&output=jpg",
   "en": "Phantom Blade Zero",
@@ -10244,7 +10267,7 @@
   "warn": ""
  },
  "往日不再（重制版）": {
-  "_cid": "HP9000-PPSA28184_00-DAYSGONEREMASTER",
+  "_cid": "HP9000-CUSA09115_00-ASIAFULLGAME0000",
   "store_name": "Days Gone Remastered",
   "platforms": "PS5/PS4",
   "release": "2025年4月25日",
@@ -10254,7 +10277,7 @@
    "动作",
    "冒险"
   ],
-  "capacity": "",
+  "capacity": "34.2 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -10602,7 +10625,7 @@
    "休闲解谜",
    "剧情探索"
   ],
-  "capacity": "",
+  "capacity": "29.8 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -10612,7 +10635,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "一系列仪式谋杀案正威胁着亮瀑镇这个位于太平洋西北部，被荒野包围的小镇社区。 作为以解决悬案而闻名的联邦调查局资深警探，萨贾·安德森为调查谋杀案而来到此地。 当安德森发现一页页恐怖故事开始在身边化为现实时，她的案件陷入了一场噩梦。\n\n艾伦·韦克是一位迷失的作家，他正被困在我们世界以外的噩梦之中。而他写下了一篇黑暗故事，试图借此塑造自己周围的现实并逃离困境。 虽然某种黑暗恐怖正在追捕他，但韦克正努力保持自己的理智，试图掌控局面并击败魔鬼。\n\n安德森和韦克这两位英雄，在两场截然不同的现实中分别踏上了倾尽全力的旅程，以他们自己都无法理解的方式在心灵上产生了联系：他们相互映照与呼应，并用这种方式对周围的世界产生影响。\n\n在恐怖故事的推动下，超自然的黑暗力量侵入了亮瀑镇，腐化了当地居民并威胁着安德森和韦克的亲人。 他们只能依靠光明作为武器与避风港，来抵御自己面对的黑暗。 被困在一个只有牺牲者和怪物、危险而恐怖的故事之中，他们能激发自己的力量，成为命中注定的英雄吗？\n\n解决致命谜题\n从一桩小镇谋杀案开始的调查，迅速演变成了一场噩梦。 在这个充满紧张悬念和意外发展的心理恐怖故事中，揭开超自然黑暗力量的来源。\n\n扮演两位角色\n参与艾伦·韦克与萨贾·安德森的故事，从不同的角度观察事态发展。 为了解决案件而陷入生死竞赛的安德森，以及拼命尝试改写现实、逃离黑暗之地深处的韦克。你可以在游戏中切换这两位主角推进剧情。\n\n探索两个世界\n在两个美丽而可怖的世界中冒险，每个世界都拥有独特的丰富角色阵容和致命威胁。 体验太平洋西北部巨釜湖的壮丽景观以及亮瀑镇和富水镇的田园风情。 而与之形成鲜明对比的，则是你尝试逃离黑暗之地噩梦般城市景色的过程。\n\n趋光求生\n在资源有限的情况下，拼尽全力与强大的超自然敌人展开近距离战斗。 只靠一把枪无法保住你的命：光明是对抗黑暗的终极武器，当敌人即将击溃你时，光明将成为你的避难所。\n\nPlayers can enjoy game improvements with enhanced graphics",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202310/2703/2a33358df3bb88ad0ad64b909ebbadd83606357e95d5ad2c.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202310/2703/5b1101cf2452895fbd304a9547e8abe2f8d211dd6aeb7257.jpg",
@@ -10776,7 +10799,7 @@
   "warn": ""
  },
  "怪物猎人：崛起/曙光": {
-  "_cid": "HP0102-PPSA08038_00-MASSIVEEXPANSION",
+  "_cid": "HP1447-CUSA26199_00-0608393498565955",
   "store_name": "Monster Hunter Rise: Sunbreak",
   "platforms": "PS5/PS4",
   "release": "2023年4月28日",
@@ -10786,7 +10809,7 @@
    "多人联机",
    "沙盒建造"
   ],
-  "capacity": "",
+  "capacity": "3.2 GB",
   "players_local": "1",
   "players_online": "1-4",
   "players": "本地1人，线上1-4人",
@@ -10807,7 +10830,7 @@
   "warn": ""
  },
  "怪物猎人：荒野1": {
-  "_cid": "UP3501-CUSA08661_00-THCOWTLSASEKADLC",
+  "_cid": "HP1447-CUSA26199_00-0608393498565955",
   "store_name": "theHunter: Call of the Wild - Saseka Safari Trophy Lodge",
   "platforms": "PS5/PS4",
   "release": "2025年2月28日",
@@ -10817,7 +10840,7 @@
    "多人联机",
    "刷宝装备"
   ],
-  "capacity": "",
+  "capacity": "3.2 GB",
   "players_local": "1",
   "players_online": "1-8",
   "players": "本地1人，线上1-8人",
@@ -10836,7 +10859,7 @@
   "warn": ""
  },
  "怪物猎人：荒野2": {
-  "_cid": "UP3501-CUSA08661_00-THCOWTLSASEKADLC",
+  "_cid": "HP1447-CUSA26199_00-0608393498565955",
   "store_name": "theHunter: Call of the Wild - Saseka Safari Trophy Lodge",
   "platforms": "PS5/PS4",
   "release": "2025年2月28日",
@@ -10846,7 +10869,7 @@
    "多人联机",
    "刷宝装备"
   ],
-  "capacity": "",
+  "capacity": "3.2 GB",
   "players_local": "1",
   "players_online": "1-8",
   "players": "本地1人，线上1-8人",
@@ -10885,7 +10908,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "横版卷轴《忍者龙剑传》系列体验的新篇章\n\n由备受赞誉的《神之亵渎 Blasphemous》开发团队倾力打造，《NINJA GAIDEN: Ragebound（忍者外传：怒之羁绊）》成功融合了由特库摩（Tecmo）（现为光荣特库摩 KOEI TECMO GAMES）Z在红白机经典时代创立的《忍者龙剑传》系列的世界观与玩法，以及现代3D版本《NINJA GAIDEN》的深度与紧张感。跨越时代的精华在此交汇，创造出一场史诗级且扣人心弦的冒险之旅。\n\n深入探索《NINJA GAIDEN》中未曾讲述的篇章\n\n我们的故事开始于隼龙为遵循父亲的遗愿而前往美国之时。在他离开的期间，人界与魔界之间的屏障突然崩塌，一支恐怖的魔军席卷隼之村，让整个村庄在隼龙缺席时面临前所未有的威胁。\n\n为对抗这一新的威胁，来自隼之村的年轻忍者——百舌鸟 贤二挺身而出！凭借隼龙训练出来的身手，他奋力投入作战，但不久就落入下风命悬一线。值此危亡之机，贤二被迫做出了一个艰难的决定：必须放下与\"地蜘蛛\"组织数百年的世仇，在结盟后融合双方的灵魂与能力，方有机会击败魔神拯救世界。\n\n源自经典的新世代呈现\n\n《NINJA GAIDEN: Ragebound（忍者外传：怒之羁绊）》融合了复古的情怀与新时代的手感，在保留了红白机时代系列引人入胜的经典动作体验的基础上，成功地增加了时代变迁后的新世纪游戏内容和体验。\n\n本作可以同时操控两位强大的忍者 -- 本作新主角百舌鸟贤二和技艺高超的刺客 -- 九守。随着剧情推进，玩家将沉浸式感受两位忍者看似独立却紧密交织的命运轨迹，最终见证他们殊途同归、共同面对终极挑战的精彩历程。\n\n在《NINJA GAIDEN: Ragebound（忍者外传：怒之羁绊）》中，玩家可以通过独特的\"忍者融合\"系统释放毁灭性的强力攻击，彻底击溃敌人。本作精心打造了既容易上手又极具深度的战斗机制。即便是最资深的经典《忍者龙剑传》系列老玩家，也将在这款作品中面临前所未有的挑战！\n\n极致畅爽的像素风动作体验\n\n在这个全新打造的《忍者龙剑传》宇宙中，玩家将沉浸于精心制作的生动视觉盛宴，每一个敌人都展现出以往受技术限制而无法实现的精致细节，带来前所未有的2D动作游戏体验。\n\n《NINJA GAIDEN: Ragebound（忍者外传：怒之羁绊）》以充满野性张力和复古情怀的美学风格，做到了致敬经典的同时重新定义了现代像素艺术的极限，将每场战斗都升华成令人屏息的视觉奇观。\n\n忍者宗师之名，你当得起么？",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202501/2216/3d66a43a437e41a14b7a440829bc3164cfef8e4d3223b835.jpeg",
    "https://vulcan.dl.playstation.net/ap/rnd/202501/2216/e06abeee1c195fb424cb36078daa8ae1693f821b178ad8d6.jpeg",
@@ -11885,7 +11908,7 @@
   "warn": ""
  },
  "战锤40K：机械神教2": {
-  "_cid": "UP3643-PPSA33779_00-0036248476329215",
+  "_cid": "EP4122-PPSA21255_00-0983604093966672",
   "store_name": "Warhammer 40,000: Boltgun 2",
   "platforms": "PS5",
   "release": "2026年5月21日",
@@ -11895,7 +11918,7 @@
    "第一人称射击",
    "治愈休闲"
   ],
-  "capacity": "",
+  "capacity": "87.6 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -12167,7 +12190,7 @@
    "韩文",
    "泰文"
   ],
-  "intro": "",
+  "intro": "跟随年轻的斯巴达之子奎托斯与戴莫斯的脚步，踏上希腊奥德赛之旅，探寻责任与荣誉的真谛。\n\n传奇之始\n每段传奇都有起源——在成神之前，在为父之前，奎托斯曾是年轻的斯巴达人！\n揭开奎托斯人生旅途中不为人知篇章，与弟弟戴莫斯亲历斯巴达艰苦卓绝的训练。历经不计其数的磨炼后，他们在思想、身体与心灵上都已成为合格的斯巴达士兵，将责任与荣誉视为重中之重。\n一位军校营学员神秘失踪，奎托斯与戴莫斯决心找到昔日同伴，自此踏上了考验训练成果与斯巴达精神的冒险征程。\n\n责任与荣誉\n指引奎托斯与戴莫斯穿梭于鲜明多元的2D地形中，在不同关卡中磨砺战斗技巧与解谜智慧，寻找他们失踪的好友。解开环境谜题，直面新老强敌，与神话中那些挑战斯巴达训练之极限的首领展开殊死搏斗。在逆境与合作中，他们终将领悟真正成为斯巴达人、兄弟与挚友的奥义所在。\n\n复古风格邂逅战神传奇\nMega Cat Studios以精湛的像素风格匠心打造这款精彩刺激的2D动作冒险游戏。体验经典复古的游戏玩法，感受《God of War》标志性的壮观场面、激烈对战与动人叙事。\n\n单人游玩或线下双人合作游玩\n\n离线多人游玩（2名玩家）",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202602/1919/f7c2ebeb3f6918e4ab9ca37155647625491ae75ec9657744.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202602/1919/4d2efa56cd47b76cedf2bc34cd90992c358f316ae2842965.jpg",
@@ -12949,7 +12972,7 @@
    "多人联机",
    "开放世界"
   ],
-  "capacity": "",
+  "capacity": "52.9 GB",
   "players_local": "1-2",
   "players_online": "1-4",
   "players": "本地1-2人，线上1-4人",
@@ -12960,7 +12983,7 @@
    "韩文",
    "泰文"
   ],
-  "intro": "",
+  "intro": "《无主之地4》中有激烈的战斗、凶狠的秘藏猎人，以及数十亿件狂野致命的武器，全都充斥在一个残酷暴君统治的全新星球中。\n\n化身四位秘藏猎人之一，横扫凯洛斯星球，追寻财富和荣耀。掌握强大的主动技能，通过深度技能树自定义你的角色，并利用多样的移动能力主宰战场。\n\n从高高在上、支配众生的残酷独裁者“时间尊者”的压迫中挣脱出来。团结凯洛斯的人民，在这场酣畅淋漓的《无主之地》体验中点燃革命之火。\n\n化身恶棍\n成为势不可挡的战斗力量，利用令人胆寒的全新武器库摧毁敌人。以前所未有的方式穿越无主之地\n- 二段跳、滑翔、闪避、抓握等，从各个方位向敌人发动致命打击。释放秘藏猎人的独特能力，用毁灭性的主动技能引爆每场战斗，利用分支技能树打造你的终极角色，在充满爆炸武器与强力装备的深度战利品追逐中收获满满。\n\n单打独斗或团结合作\n在凯洛斯肆意破坏，独自爽快，或叫上朋友一起狂嗨！支持2人分屏或最多4人在线合作！*无论是搜刮战利品、完成任务，还是自由探索，等级调整和个人难度设定都会让队伍始终并肩作战，乐趣不断！\n\n天高地阔，无主无畏\n自由探索这片广阔而危险的世界，体验交战派系间的激烈冲突。跨上你的悬浮摩托，驰骋在葱郁原野、巍峨山峰与致命荒漠之间，迎战可怕敌人，参与动态事件，踏上充满难忘角色的精彩任务旅程。\n\n*联机游玩须有互联网连接，跨平台游玩须有SHiFT账号。主机在线游戏需要单独付费订阅。条款适用。\n\n离线多人游玩（2名玩家）",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202508/2020/fa8a80b306b61d3c2b84dd6ad3b999a78a1dc4be56a19350.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202508/2020/ed412106bc0cfe939a155acbdb66e185bd39c8661b44a75e.jpg",
@@ -13173,7 +13196,7 @@
   "warn": ""
  },
  "时间旅者：重生曙光": {
-  "_cid": "HP5028-PPSA02330_00-GGSTDATASTAGE301",
+  "_cid": "UP0001-CUSA13917_00-FARCRYBOWMORE000",
   "store_name": "GGST追加战斗场地「New Dawn, A Future Unfolding」",
   "platforms": "PS5",
   "release": "2025年9月5日",
@@ -13182,7 +13205,7 @@
    "双人同屏",
    "多人联机"
   ],
-  "capacity": "",
+  "capacity": "22.7 GB",
   "players_local": "1-2",
   "players_online": "1-32",
   "players": "本地1-2人，线上1-32人",
@@ -13233,7 +13256,7 @@
   "warn": ""
  },
  "星之海": {
-  "_cid": "UP3463-PPSA07586_00-0454556159438633",
+  "_cid": "UP3463-PPSA07586_00-8119804844737273",
   "store_name": "Sea of Stars: Throes of the Watchmaker",
   "platforms": "PS5/PS4",
   "release": "2025年5月20日",
@@ -13243,7 +13266,7 @@
    "多人同屏",
    "休闲解谜"
   ],
-  "capacity": "",
+  "capacity": "5.1 GB",
   "players_local": "1-3",
   "players_online": "",
   "players": "本地1-3人",
@@ -13443,7 +13466,7 @@
   "languages": [
    "英文"
   ],
-  "intro": "",
+  "intro": "鸟儿和猫儿又回到了全新的解谜冒险中，它们将飞越银河系，寻找新家园！当僵尸大灾难摧毁它们的家园时，鸟儿们启程前往星空。但它们并不孤单。它们永恒的对手猫儿偷偷溜上船，会尽一切努力让旅程变得不愉快！谁会获胜？挑战数十个色彩缤纷的关卡，享受简单易学但难以精通的游戏，并享受拯救羽毛丰满的朋友的乐趣！主要特点：\n\n超过 60 个全新关卡\n新鲜的匹配挑战\n搞笑对话和有趣的故事\n明亮、多彩的图形\n简单的学习曲线",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202404/2612/412a1f7f1c0286a320c82cff659bdf2162789a29c74f8179.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202404/2612/1b5cb0cd0d0d6b93db7509f4c97ee76478a4379f7081f271.jpg",
@@ -13671,7 +13694,7 @@
   "warn": ""
  },
  "春逝百年抄": {
-  "_cid": "JP0082-PPSA05644_00-SHIJIMASTORY0002",
+  "_cid": "JP0082-CUSA31699_00-SHIJIMASTORYDEMO",
   "store_name": "春逝百年抄 幕后花絮",
   "platforms": "PS5/PS4",
   "release": "2022年5月12日",
@@ -13680,7 +13703,7 @@
    "单人游玩",
    "冒险"
   ],
-  "capacity": "",
+  "capacity": "3.2 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -15376,7 +15399,7 @@
   "warn": ""
  },
  "死亡搁浅2：冥滩之上": {
-  "_cid": "JP9000-PPSA02015_00-DS2OTB0000000001",
+  "_cid": "HP0700-PPSA18707_00-DNOTESPEDITION00",
   "store_name": "DEATH STRANDING 2: ON THE BEACH",
   "platforms": "PS5",
   "release": "2025年6月26日",
@@ -15385,7 +15408,7 @@
    "单人游玩",
    "动作"
   ],
-  "capacity": "",
+  "capacity": "1.8 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -15476,7 +15499,7 @@
    "银河恶魔城",
    "剧情探索"
   ],
-  "capacity": "",
+  "capacity": "2.1 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -15485,7 +15508,7 @@
    "英文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "制作组将在《死亡细胞》的2D场景中，重现游戏最重要的创作灵感来源！在这次史无前例的联动合作中，《恶魔城》系列的经典角色、独特别致的哥特风设定，将与《死亡细胞》的快节奏战斗进行融合。\n\n一道通向威严城堡的传送门突然开启，一位名叫里希达的威猛战士突然现身，请求你帮助他消灭城中的邪恶存在。\n\n与正义感无关，你在新财宝与战利品的引诱下，大踏步迈入了这座哥特风的古堡，试图杀死这个神秘的德古拉……\n\n在这款我们迄今为止体量最大的DLC中，你可以大杀特杀德古拉的超自然妖魔大军，内含两个大关卡、三个头目和一条全新的剧情线！\n\n拿起经典的《恶魔城》武器\n解锁14款标志性的武器，例如吸血鬼杀手、投斧和圣水，来烧杀劈砍德古拉手下种类繁多的魔物大军，并最终击败魔王本人。在保留设计精华的基础上，每一件物品都根据《死亡细胞》快节奏的战斗进行了融合。\n\n探索恶魔城的每个角落\n你将在恶魔城中体验秘密的房间、灯火通明的回廊、阴森的坟墓、华美的画作、墙壁里隐藏着的食物。同时，《恶魔城》系列中大量的原创怪物也将悉数登场，例如哈耳庇厄、狼人和活动铠甲；而将你带到这个哥特奇幻国度的，也将是恶魔城中的代表性角色。\n\n享受经典与重现版音乐\n我们为你提供了可选择的51首《恶魔城》原曲音轨，可以在游戏全程中听到，没错，整整51首！\n除此之外，我们还挑选了12首最有代表性的音乐，例如《Vampire Killer》、《Bloody Tears》和西蒙·贝尔蒙特的主题曲等等，将他们以《死亡细胞》的风格重现之后制成了本款DLC中的音乐，当然同时也保留了《恶魔城》的氛围。\n\n发现全新的剧情线\n里希达·贝尔蒙特和阿鲁卡多将会在你消灭德古拉的冒险中全程陪伴着你，帮助你穿行恶魔城的迷宫，并为你提供强大的武器（当然，并不是每次都是出于自愿）。可是，有善必有恶，因此请时刻警惕那些强大的敌人，他们将不择一切手段，只为阻止你靠近魔王的邪恶王座。\n\n精通三场史诗级的头目战\n在华丽背景下，你将依次与死神和德古拉进行较量，与纯粹邪恶的化身为敌。假如你能突破这两道难关，那还有我们至今为止最有野心的一场头目决战在等待着你……\n\n解锁恶魔城角色装束\n在城堡探险的途中，解锁多达20种不同装束，扮演你最喜欢的各种角色：阿鲁卡多、里希达·贝尔蒙特、西蒙·贝尔蒙特、玛莉亚·里纳德、拉尔夫·贝尔蒙特、赛法·贝尔南堤斯等等，甚至还有德古拉本人！",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202302/0315/687b9271a329cce3e8a9bfacb5a2f5febebbdcaa6884af51.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202302/0315/84e097130043570959cac3b22b4ca2080b794fdf38430dbf.jpg",
@@ -15573,7 +15596,7 @@
    "双人同屏",
    "格斗"
   ],
-  "capacity": "",
+  "capacity": "12.4 GB",
   "players_local": "1-2",
   "players_online": "1-2",
   "players": "本地1-2人，线上1-2人",
@@ -15583,7 +15606,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "安裝本产品即可无限期使用「女天狗」。\n（或有可能实施期间限定的免费试用活动。）\n\n※欲使用本下载内容须先更新至最新版本。\n※本下载内容或有可能于日后以付费形式提供。敬请理解。\n\n若要使用本追加内容，需先购买个别发售的制品版游戏光碟或先从PlayStation™Store购买游戏的制品版及完成最新的在线更新。\n本追加内容、数据或软件仅与SIE或其他正式代理商发行的亚洲版游戏软件（行货）相容。不保证其他地区发售的游戏软件与此追加内容的相容性。",
   "shots": [],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc44d3861cea66.jpg&w=512&q=82&output=jpg",
   "en": "Dead or Alive 6（Deluxe Edition）",
@@ -16023,7 +16046,7 @@
   "warn": ""
  },
  "沉星之序": {
-  "_cid": "EP5205-PPSA18543_00-TSC2000000000PS5",
+  "_cid": "EP4008-CUSA13152_00-TSCSIEENECROBUN0",
   "store_name": "《The Sinking City 2》",
   "platforms": "PS5",
   "release": "2026年10月9日",
@@ -16033,7 +16056,7 @@
    "单人游玩",
    "生存冒险"
   ],
-  "capacity": "",
+  "capacity": "12.4 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -16195,7 +16218,7 @@
   "warn": ""
  },
  "波与月夜之青莲": {
-  "_cid": "UP2500-PPSA31650_00-0000040000000000",
+  "_cid": "UP2136-CUSA51993_00-0376675790038979",
   "store_name": "Full Restore - Bonds of the Skies",
   "platforms": "PS5",
   "release": "2024年7月18日",
@@ -16205,7 +16228,7 @@
    "单人游玩",
    "治愈休闲"
   ],
-  "capacity": "",
+  "capacity": "347 MB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -16396,7 +16419,7 @@
   "warn": ""
  },
  "流放之路2": {
-  "_cid": "EP6138-CUSA53278_00-0569748438836930",
+  "_cid": "UP2136-CUSA51993_00-0376675790038979",
   "store_name": "Path Of Success",
   "platforms": "PS5/PS4",
   "release": "2024年12月6日",
@@ -16405,7 +16428,7 @@
    "单人游玩",
    "奇幻魔法"
   ],
-  "capacity": "",
+  "capacity": "347 MB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -16528,7 +16551,7 @@
   "warn": ""
  },
  "海绵宝宝：潮汐巨神": {
-  "_cid": "EB0324-PPSA21703_00-0850097983733846",
+  "_cid": "EP4389-PPSA16527_00-THECOSMICSHAKPS5",
   "store_name": "Vampire Survivors: Tides of the Foscari",
   "platforms": "PS5",
   "release": "2025年11月18日",
@@ -16538,7 +16561,7 @@
    "多人同屏",
    "奇幻魔法"
   ],
-  "capacity": "",
+  "capacity": "7.8 GB",
   "players_local": "1-4",
   "players_online": "",
   "players": "本地1-4人",
@@ -16906,7 +16929,7 @@
   "warn": ""
  },
  "深渊尽头": {
-  "_cid": "HP1597-PPSA25717_00-ENDOFABYSS000000",
+  "_cid": "JP0281-CUSA53325_00-0519196094680160",
   "store_name": "End of Abyss",
   "platforms": "PS5",
   "release": "2026年10月1日",
@@ -16916,7 +16939,7 @@
    "恐怖惊悚",
    "生存冒险"
   ],
-  "capacity": "",
+  "capacity": "761 MB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -17293,7 +17316,7 @@
   "warn": ""
  },
  "漫威斗魂（终极版）": {
-  "_cid": "JP9000-PPSA15595_00-MTFS000000PSPLUS",
+  "_cid": "JP9000-PPSA15595_00-MTFSUE0000000000",
   "store_name": "《MARVEL Tōkon: Fighting Souls》PlayStation® Plus包",
   "platforms": "PS5",
   "release": "2026年8月6日",
@@ -17302,7 +17325,7 @@
    "双人同屏",
    "多人联机"
   ],
-  "capacity": "",
+  "capacity": "71.5 GB",
   "players_local": "1-2",
   "players_online": "1-64",
   "players": "本地1-2人，线上1-64人",
@@ -17312,7 +17335,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "此版本包含：\n• 《MARVEL Tōkon: Fighting Souls》\n• 首年角色和场地通行证¹（发售后包含一套结算界面角色姿势、四个角色、一个场地）\n• 霍华德怪鸭（大厅虚拟形象）\n• 科斯莫（大厅宠物）\n• 蜘蛛侠“高级战衣2.0”服装\n• 暴风女朋克摇滚服装\n• 钢铁侠经典服装\n• 美国队长经典服装\n• 毁灭博士至高统治者服装\n• 解锁¹全部二十位首发角色的动画炫彩。\n\n集结传奇漫威角色组建战队，激战终极4v4团队格斗游戏——由PlayStation Studios、Arc System Works与Marvel Games倾情奉上。\n\n快来打造你的梦之队，在激烈的4v4格斗中点燃战魂。首发即可从20位经典漫威角色中挑选队员，每位角色均以全新动漫风格精心塑造，并各自隶属于独特的超级英雄或超级反派队。\n\n尝试不同组合，探索全新连招、协同效应与对战策略。在基于漫威宇宙经典场景的动态场地中激战，部分场地更是包含了可互动的场地切换效果。\n\n战斗体验沉浸直观，海量招式、连招与策略，值得你反复钻研。支持传统输入与快捷键自定义，配合简单连招，入门轻松流畅。\n\n与好友本地对战，或进入最多可容纳64名玩家的在线²大厅参与乱斗，包含标准对战模式。此外，更可通过单人剧情模式深入探索每支队伍的战斗配合与背景故事。",
   "shots": [],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rcf93662cf46bf.jpg&w=512&q=82&output=jpg",
   "en": "Marvel Tōkon: Fighting Souls（Ultimate Edition）",
@@ -17374,7 +17397,7 @@
    "韩文",
    "泰文"
   ],
-  "intro": "",
+  "intro": "此版本包含：\n•\t《漫威金刚狼》\n•\t5套专属战衣：非凡、狂野、夜狩、新版皮衣、天启时代。\n•\t5套专属爪子：光刃爪、空刃爪、锯齿刺爪、锥刃爪、厚刃爪。\n•\t4个技能点数\n•\t抢先解锁经典棕战衣和反光利爪、4个PlayStation®虚拟形象\n\n《漫威金刚狼》是由《漫威蜘蛛侠》系列开发商Insomniac Games打造的热血动作冒险游戏。作品与Marvel Games强强联手，呈现一段围绕传奇漫画角色金刚狼展开的全新原创故事。\n\n罗根以为自己已经与“金刚狼”这个身份告别，可他的过去仍不肯放过他。\n三年前，他离开了变种人特别行动X小队。如今，在X小队最黑暗的时刻，金刚狼归队。\n\n一心奉行人类至上理念的玻利瓦尔·特拉斯克开始大肆绑架变种人。能救他们的，只有金刚狼。\n为了变种人的未来，金刚狼必须与世界各地的变种人并肩作战，足迹遍及加拿大、日本，以及漫威宇宙中的岛国马德里坡。\n人类与变种人的命运悬于一线。罗根知道，这个世界需要一位英雄。可惜他们只能将就一下，指望金刚狼了。\n\n化身金刚狼\n释放金刚狼炸裂凶狠的战斗本能，以锋利无比的艾德曼合金爪撕碎敌人，用迅猛流畅的连击突破不可能的绝境。借助独特且可切换的技能与异能，迎战玻利瓦尔·特拉斯克手下的雇佣兵掠夺者，以及红色欧米伽这类粗暴蛮横的经典反派。追踪、潜伏，或是以绝对力量碾碎他们！保持攻势，积累怒气，把敌人撕成碎片。\n\n全新原创故事，情绪张力十足\n在粗粝外表与暴躁脾气之下，金刚狼还是一个会为了更大使命而战的男人。直面黑暗过往，体验一段围绕身份、忠诚与自我挣扎展开的动人故事，追寻金刚狼失落记忆背后的真相。\n\n横跨全球的高燃旅程\n从冰封的加拿大荒野，到东京狭窄的街巷，再到岛国马德里坡上下城区。金刚狼挥舞利爪，杀穿一处处细节丰富的战场。亲身参与这场横跨全球、关乎变种人生死存亡的战斗。",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/9b387e37047248ce953f92db711dc8badcb838e6cc9f8aca.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/b0026f6649e9845df11747b6804548f572ba90a26f63889f.jpg",
@@ -17414,7 +17437,7 @@
    "韩文",
    "泰文"
   ],
-  "intro": "",
+  "intro": "此版本包含：\n•\t《漫威金刚狼》\n•\t5套专属战衣：非凡、狂野、夜狩、新版皮衣、天启时代。\n•\t5套专属爪子：光刃爪、空刃爪、锯齿刺爪、锥刃爪、厚刃爪。\n•\t4个技能点数\n•\t抢先解锁经典棕战衣和反光利爪、4个PlayStation®虚拟形象\n\n《漫威金刚狼》是由《漫威蜘蛛侠》系列开发商Insomniac Games打造的热血动作冒险游戏。作品与Marvel Games强强联手，呈现一段围绕传奇漫画角色金刚狼展开的全新原创故事。\n\n罗根以为自己已经与“金刚狼”这个身份告别，可他的过去仍不肯放过他。\n三年前，他离开了变种人特别行动X小队。如今，在X小队最黑暗的时刻，金刚狼归队。\n\n一心奉行人类至上理念的玻利瓦尔·特拉斯克开始大肆绑架变种人。能救他们的，只有金刚狼。\n为了变种人的未来，金刚狼必须与世界各地的变种人并肩作战，足迹遍及加拿大、日本，以及漫威宇宙中的岛国马德里坡。\n人类与变种人的命运悬于一线。罗根知道，这个世界需要一位英雄。可惜他们只能将就一下，指望金刚狼了。\n\n化身金刚狼\n释放金刚狼炸裂凶狠的战斗本能，以锋利无比的艾德曼合金爪撕碎敌人，用迅猛流畅的连击突破不可能的绝境。借助独特且可切换的技能与异能，迎战玻利瓦尔·特拉斯克手下的雇佣兵掠夺者，以及红色欧米伽这类粗暴蛮横的经典反派。追踪、潜伏，或是以绝对力量碾碎他们！保持攻势，积累怒气，把敌人撕成碎片。\n\n全新原创故事，情绪张力十足\n在粗粝外表与暴躁脾气之下，金刚狼还是一个会为了更大使命而战的男人。直面黑暗过往，体验一段围绕身份、忠诚与自我挣扎展开的动人故事，追寻金刚狼失落记忆背后的真相。\n\n横跨全球的高燃旅程\n从冰封的加拿大荒野，到东京狭窄的街巷，再到岛国马德里坡上下城区。金刚狼挥舞利爪，杀穿一处处细节丰富的战场。亲身参与这场横跨全球、关乎变种人生死存亡的战斗。",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/9b387e37047248ce953f92db711dc8badcb838e6cc9f8aca.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/b0026f6649e9845df11747b6804548f572ba90a26f63889f.jpg",
@@ -17454,7 +17477,7 @@
    "韩文",
    "泰文"
   ],
-  "intro": "",
+  "intro": "此版本包含：\n•\t《漫威金刚狼》\n•\t5套专属战衣：非凡、狂野、夜狩、新版皮衣、天启时代。\n•\t5套专属爪子：光刃爪、空刃爪、锯齿刺爪、锥刃爪、厚刃爪。\n•\t4个技能点数\n•\t抢先解锁经典棕战衣和反光利爪、4个PlayStation®虚拟形象\n\n《漫威金刚狼》是由《漫威蜘蛛侠》系列开发商Insomniac Games打造的热血动作冒险游戏。作品与Marvel Games强强联手，呈现一段围绕传奇漫画角色金刚狼展开的全新原创故事。\n\n罗根以为自己已经与“金刚狼”这个身份告别，可他的过去仍不肯放过他。\n三年前，他离开了变种人特别行动X小队。如今，在X小队最黑暗的时刻，金刚狼归队。\n\n一心奉行人类至上理念的玻利瓦尔·特拉斯克开始大肆绑架变种人。能救他们的，只有金刚狼。\n为了变种人的未来，金刚狼必须与世界各地的变种人并肩作战，足迹遍及加拿大、日本，以及漫威宇宙中的岛国马德里坡。\n人类与变种人的命运悬于一线。罗根知道，这个世界需要一位英雄。可惜他们只能将就一下，指望金刚狼了。\n\n化身金刚狼\n释放金刚狼炸裂凶狠的战斗本能，以锋利无比的艾德曼合金爪撕碎敌人，用迅猛流畅的连击突破不可能的绝境。借助独特且可切换的技能与异能，迎战玻利瓦尔·特拉斯克手下的雇佣兵掠夺者，以及红色欧米伽这类粗暴蛮横的经典反派。追踪、潜伏，或是以绝对力量碾碎他们！保持攻势，积累怒气，把敌人撕成碎片。\n\n全新原创故事，情绪张力十足\n在粗粝外表与暴躁脾气之下，金刚狼还是一个会为了更大使命而战的男人。直面黑暗过往，体验一段围绕身份、忠诚与自我挣扎展开的动人故事，追寻金刚狼失落记忆背后的真相。\n\n横跨全球的高燃旅程\n从冰封的加拿大荒野，到东京狭窄的街巷，再到岛国马德里坡上下城区。金刚狼挥舞利爪，杀穿一处处细节丰富的战场。亲身参与这场横跨全球、关乎变种人生死存亡的战斗。",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/9b387e37047248ce953f92db711dc8badcb838e6cc9f8aca.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/b0026f6649e9845df11747b6804548f572ba90a26f63889f.jpg",
@@ -17494,7 +17517,7 @@
    "韩文",
    "泰文"
   ],
-  "intro": "",
+  "intro": "此版本包含：\n•\t《漫威金刚狼》\n•\t5套专属战衣：非凡、狂野、夜狩、新版皮衣、天启时代。\n•\t5套专属爪子：光刃爪、空刃爪、锯齿刺爪、锥刃爪、厚刃爪。\n•\t4个技能点数\n•\t抢先解锁经典棕战衣和反光利爪、4个PlayStation®虚拟形象\n\n《漫威金刚狼》是由《漫威蜘蛛侠》系列开发商Insomniac Games打造的热血动作冒险游戏。作品与Marvel Games强强联手，呈现一段围绕传奇漫画角色金刚狼展开的全新原创故事。\n\n罗根以为自己已经与“金刚狼”这个身份告别，可他的过去仍不肯放过他。\n三年前，他离开了变种人特别行动X小队。如今，在X小队最黑暗的时刻，金刚狼归队。\n\n一心奉行人类至上理念的玻利瓦尔·特拉斯克开始大肆绑架变种人。能救他们的，只有金刚狼。\n为了变种人的未来，金刚狼必须与世界各地的变种人并肩作战，足迹遍及加拿大、日本，以及漫威宇宙中的岛国马德里坡。\n人类与变种人的命运悬于一线。罗根知道，这个世界需要一位英雄。可惜他们只能将就一下，指望金刚狼了。\n\n化身金刚狼\n释放金刚狼炸裂凶狠的战斗本能，以锋利无比的艾德曼合金爪撕碎敌人，用迅猛流畅的连击突破不可能的绝境。借助独特且可切换的技能与异能，迎战玻利瓦尔·特拉斯克手下的雇佣兵掠夺者，以及红色欧米伽这类粗暴蛮横的经典反派。追踪、潜伏，或是以绝对力量碾碎他们！保持攻势，积累怒气，把敌人撕成碎片。\n\n全新原创故事，情绪张力十足\n在粗粝外表与暴躁脾气之下，金刚狼还是一个会为了更大使命而战的男人。直面黑暗过往，体验一段围绕身份、忠诚与自我挣扎展开的动人故事，追寻金刚狼失落记忆背后的真相。\n\n横跨全球的高燃旅程\n从冰封的加拿大荒野，到东京狭窄的街巷，再到岛国马德里坡上下城区。金刚狼挥舞利爪，杀穿一处处细节丰富的战场。亲身参与这场横跨全球、关乎变种人生死存亡的战斗。",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/9b387e37047248ce953f92db711dc8badcb838e6cc9f8aca.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/b0026f6649e9845df11747b6804548f572ba90a26f63889f.jpg",
@@ -17534,7 +17557,7 @@
    "韩文",
    "泰文"
   ],
-  "intro": "",
+  "intro": "此版本包含：\n•\t《漫威金刚狼》\n•\t5套专属战衣：非凡、狂野、夜狩、新版皮衣、天启时代。\n•\t5套专属爪子：光刃爪、空刃爪、锯齿刺爪、锥刃爪、厚刃爪。\n•\t4个技能点数\n•\t抢先解锁经典棕战衣和反光利爪、4个PlayStation®虚拟形象\n\n《漫威金刚狼》是由《漫威蜘蛛侠》系列开发商Insomniac Games打造的热血动作冒险游戏。作品与Marvel Games强强联手，呈现一段围绕传奇漫画角色金刚狼展开的全新原创故事。\n\n罗根以为自己已经与“金刚狼”这个身份告别，可他的过去仍不肯放过他。\n三年前，他离开了变种人特别行动X小队。如今，在X小队最黑暗的时刻，金刚狼归队。\n\n一心奉行人类至上理念的玻利瓦尔·特拉斯克开始大肆绑架变种人。能救他们的，只有金刚狼。\n为了变种人的未来，金刚狼必须与世界各地的变种人并肩作战，足迹遍及加拿大、日本，以及漫威宇宙中的岛国马德里坡。\n人类与变种人的命运悬于一线。罗根知道，这个世界需要一位英雄。可惜他们只能将就一下，指望金刚狼了。\n\n化身金刚狼\n释放金刚狼炸裂凶狠的战斗本能，以锋利无比的艾德曼合金爪撕碎敌人，用迅猛流畅的连击突破不可能的绝境。借助独特且可切换的技能与异能，迎战玻利瓦尔·特拉斯克手下的雇佣兵掠夺者，以及红色欧米伽这类粗暴蛮横的经典反派。追踪、潜伏，或是以绝对力量碾碎他们！保持攻势，积累怒气，把敌人撕成碎片。\n\n全新原创故事，情绪张力十足\n在粗粝外表与暴躁脾气之下，金刚狼还是一个会为了更大使命而战的男人。直面黑暗过往，体验一段围绕身份、忠诚与自我挣扎展开的动人故事，追寻金刚狼失落记忆背后的真相。\n\n横跨全球的高燃旅程\n从冰封的加拿大荒野，到东京狭窄的街巷，再到岛国马德里坡上下城区。金刚狼挥舞利爪，杀穿一处处细节丰富的战场。亲身参与这场横跨全球、关乎变种人生死存亡的战斗。",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/9b387e37047248ce953f92db711dc8badcb838e6cc9f8aca.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/b0026f6649e9845df11747b6804548f572ba90a26f63889f.jpg",
@@ -17608,7 +17631,7 @@
    "韩文",
    "泰文"
   ],
-  "intro": "",
+  "intro": "此版本包含：\n•\t《漫威金刚狼》\n•\t5套专属战衣：非凡、狂野、夜狩、新版皮衣、天启时代。\n•\t5套专属爪子：光刃爪、空刃爪、锯齿刺爪、锥刃爪、厚刃爪。\n•\t4个技能点数\n•\t抢先解锁经典棕战衣和反光利爪、4个PlayStation®虚拟形象\n\n《漫威金刚狼》是由《漫威蜘蛛侠》系列开发商Insomniac Games打造的热血动作冒险游戏。作品与Marvel Games强强联手，呈现一段围绕传奇漫画角色金刚狼展开的全新原创故事。\n\n罗根以为自己已经与“金刚狼”这个身份告别，可他的过去仍不肯放过他。\n三年前，他离开了变种人特别行动X小队。如今，在X小队最黑暗的时刻，金刚狼归队。\n\n一心奉行人类至上理念的玻利瓦尔·特拉斯克开始大肆绑架变种人。能救他们的，只有金刚狼。\n为了变种人的未来，金刚狼必须与世界各地的变种人并肩作战，足迹遍及加拿大、日本，以及漫威宇宙中的岛国马德里坡。\n人类与变种人的命运悬于一线。罗根知道，这个世界需要一位英雄。可惜他们只能将就一下，指望金刚狼了。\n\n化身金刚狼\n释放金刚狼炸裂凶狠的战斗本能，以锋利无比的艾德曼合金爪撕碎敌人，用迅猛流畅的连击突破不可能的绝境。借助独特且可切换的技能与异能，迎战玻利瓦尔·特拉斯克手下的雇佣兵掠夺者，以及红色欧米伽这类粗暴蛮横的经典反派。追踪、潜伏，或是以绝对力量碾碎他们！保持攻势，积累怒气，把敌人撕成碎片。\n\n全新原创故事，情绪张力十足\n在粗粝外表与暴躁脾气之下，金刚狼还是一个会为了更大使命而战的男人。直面黑暗过往，体验一段围绕身份、忠诚与自我挣扎展开的动人故事，追寻金刚狼失落记忆背后的真相。\n\n横跨全球的高燃旅程\n从冰封的加拿大荒野，到东京狭窄的街巷，再到岛国马德里坡上下城区。金刚狼挥舞利爪，杀穿一处处细节丰富的战场。亲身参与这场横跨全球、关乎变种人生死存亡的战斗。",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/9b387e37047248ce953f92db711dc8badcb838e6cc9f8aca.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/b0026f6649e9845df11747b6804548f572ba90a26f63889f.jpg",
@@ -17648,7 +17671,7 @@
    "韩文",
    "泰文"
   ],
-  "intro": "",
+  "intro": "此版本包含：\n•\t《漫威金刚狼》\n•\t5套专属战衣：非凡、狂野、夜狩、新版皮衣、天启时代。\n•\t5套专属爪子：光刃爪、空刃爪、锯齿刺爪、锥刃爪、厚刃爪。\n•\t4个技能点数\n•\t抢先解锁经典棕战衣和反光利爪、4个PlayStation®虚拟形象\n\n《漫威金刚狼》是由《漫威蜘蛛侠》系列开发商Insomniac Games打造的热血动作冒险游戏。作品与Marvel Games强强联手，呈现一段围绕传奇漫画角色金刚狼展开的全新原创故事。\n\n罗根以为自己已经与“金刚狼”这个身份告别，可他的过去仍不肯放过他。\n三年前，他离开了变种人特别行动X小队。如今，在X小队最黑暗的时刻，金刚狼归队。\n\n一心奉行人类至上理念的玻利瓦尔·特拉斯克开始大肆绑架变种人。能救他们的，只有金刚狼。\n为了变种人的未来，金刚狼必须与世界各地的变种人并肩作战，足迹遍及加拿大、日本，以及漫威宇宙中的岛国马德里坡。\n人类与变种人的命运悬于一线。罗根知道，这个世界需要一位英雄。可惜他们只能将就一下，指望金刚狼了。\n\n化身金刚狼\n释放金刚狼炸裂凶狠的战斗本能，以锋利无比的艾德曼合金爪撕碎敌人，用迅猛流畅的连击突破不可能的绝境。借助独特且可切换的技能与异能，迎战玻利瓦尔·特拉斯克手下的雇佣兵掠夺者，以及红色欧米伽这类粗暴蛮横的经典反派。追踪、潜伏，或是以绝对力量碾碎他们！保持攻势，积累怒气，把敌人撕成碎片。\n\n全新原创故事，情绪张力十足\n在粗粝外表与暴躁脾气之下，金刚狼还是一个会为了更大使命而战的男人。直面黑暗过往，体验一段围绕身份、忠诚与自我挣扎展开的动人故事，追寻金刚狼失落记忆背后的真相。\n\n横跨全球的高燃旅程\n从冰封的加拿大荒野，到东京狭窄的街巷，再到岛国马德里坡上下城区。金刚狼挥舞利爪，杀穿一处处细节丰富的战场。亲身参与这场横跨全球、关乎变种人生死存亡的战斗。",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/9b387e37047248ce953f92db711dc8badcb838e6cc9f8aca.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/b0026f6649e9845df11747b6804548f572ba90a26f63889f.jpg",
@@ -17667,7 +17690,7 @@
   "warn": "⚠️ 港服未找到该商品精确匹配的页面，参数取自同系列商品，简介已留空以防误导"
  },
  "潜行者2：切尔诺贝利之心": {
-  "_cid": "EB0236-PPSA28336_00-STALKER2UA000000",
+  "_cid": "UP2500-PPSA30748_00-US0SEEKH00000PS5",
   "store_name": "潜行者2：切尔诺贝利之心",
   "platforms": "PS5",
   "release": "2025年11月20日",
@@ -17677,7 +17700,7 @@
    "单人游玩",
    "潜行暗杀"
   ],
-  "capacity": "",
+  "capacity": "1.1 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -18091,7 +18114,7 @@
   "warn": ""
  },
  "灵魂石幸存者（完整版）": {
-  "_cid": "UB0313-CUSA51389_00-0374883672293481",
+  "_cid": "UP2339-CUSA48159_00-0320159258304250",
   "store_name": "Vagrus - The Riven Realms Cultured Supporter Pack",
   "platforms": "PS5/PS4",
   "release": "2025年7月31日",
@@ -18101,7 +18124,7 @@
    "单人游玩",
    "剧情探索"
   ],
-  "capacity": "",
+  "capacity": "232 MB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -18162,7 +18185,7 @@
    "双人同屏",
    "多人联机"
   ],
-  "capacity": "",
+  "capacity": "15.6 GB",
   "players_local": "1-2",
   "players_online": "1-2",
   "players": "本地1-2人，线上1-2人",
@@ -18172,7 +18195,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "在冒险家的路上不只有毁灭，更有重生。重建的时候到了！\n\n在欧鲁拉的大事纪上，您会扮演一个非常重要的角色：参与旧塞洛克难民营的重建工作，为可怜的乡民们建造新的家园——新塞洛克。\n全新武器、技能和无数其他组件，帮助您在不确定的旅途上走向未知。\n大门即将敞开，迈向通往《物质世界》新区域：“卡尔德拉”的路。新的冒险、危机和秘密等您去探索！\n\n•\t城市建设机制：重建塞洛克：\n在这个残酷的世界里，协助人民生存，在欧鲁拉创造属于自己的地标！有了新的城市建设机制，将难民营重建成新塞洛克的伟大工作，您也将参与其中。\n\n•\t新区域：卡尔德拉\n欧鲁拉在不断扩张，卡尔德拉已经不仅仅是一片新土。这里加入了新的地下城、任务和地点，是每个冒险家梦寐以求的宝库！\n\n•\t技能树：高阶祭司：\n携强力图腾杀入战场，在混战开始前就获得优势！\n\n•\t手榴弹和元素箭\n您可以使用手榴弹和元素箭让自己的战力更上一层楼。在您的远征战斗中，有无数新的可能性，可以发挥自己的创造力！\n\n•\t觉醒武器：\n这些传奇武器来之不易，但值得为之流汗流血！武器独特的属性会让您在各类危险情况中抢占必要先机，获得优势！\n\n《三兄弟浩劫》DLC 为您带来一众新冒险、技能、武器、配方和宠物，引您走上欧鲁拉独特天地中的崭新旅程！\n\n离线多人游玩（2名玩家）",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202102/2609/0QzBrqEe4mOlFPk5Pl78bBob.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202102/2609/5ChoOEMazJJjEqxjrBHrCYqh.jpg",
@@ -18505,7 +18528,7 @@
   "warn": ""
  },
  "猎杀对决1896": {
-  "_cid": "EP4291-CUSA15859_00-THEHUNTGAME00004",
+  "_cid": "EP4291-PPSA16357_00-PREMIUMEDITION00",
   "store_name": "Hunt: Showdown 1896 - 3150 Blood Bonds",
   "platforms": "PS5/PS4",
   "release": "2025年9月24日",
@@ -18514,7 +18537,7 @@
    "多人联机",
    "射击"
   ],
-  "capacity": "",
+  "capacity": "90.6 GB",
   "players_local": "",
   "players_online": "1-12",
   "players": "线上1-12人",
@@ -18803,7 +18826,7 @@
   "players_online": "",
   "players": "1位玩家",
   "languages": [],
-  "intro": "",
+  "intro": "《瑞奇与叮当》首次勇闯PlayStation®4！《瑞奇与叮当》(PS4™)是以原作《瑞奇与叮当》(PS2™)为蓝本重新制作的全新游戏，将会更深入描绘原作故事里登场的角色，并让原本的游玩操作焕然一新。游戏收录多个新的星球、头目角色和叮当的游玩部分，更有新的飞行驾驶等游玩要素，图像亦是运用了PS4™强大机能而重新制作而成的。",
   "shots": [],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rce0b7a4cf2c03.jpg&w=512&q=82&output=jpg",
   "en": "Ratchet & Clank",
@@ -19778,7 +19801,7 @@
   "warn": ""
  },
  "皇牌空战8：希孚之翼": {
-  "_cid": "JP0700-PPSA24913_00-ACEC8PVCAC000001",
+  "_cid": "JP0700-PPSA24913_00-ACEC8DLXEDITION0",
   "store_name": "ACE COMBAT 8 - 500 ACE COINS",
   "platforms": "PS5",
   "release": "2026年10月2日",
@@ -19788,7 +19811,7 @@
    "动作",
    "射击"
   ],
-  "capacity": "",
+  "capacity": "108.7 GB",
   "players_local": "1",
   "players_online": "1-8",
   "players": "本地1人，线上1-8人",
@@ -19835,7 +19858,7 @@
   "warn": ""
  },
  "直到黎明（复刻版）": {
-  "_cid": "UP4735-PPSA06470_00-UNTILTHEN00PS5EA",
+  "_cid": "JP8394-PPSA31878_00-LOKDRDELUXE00000",
   "store_name": "Until Then",
   "platforms": "PS5",
   "release": "2024年10月4日",
@@ -19845,7 +19868,7 @@
    "剧情探索",
    "治愈休闲"
   ],
-  "capacity": "",
+  "capacity": "13.3 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -19967,7 +19990,7 @@
   "warn": ""
  },
  "真·三国无双 起源（1）": {
-  "_cid": "UP4108-PPSA25843_00-WABYSSDLCCHA0016",
+  "_cid": "JP0106-CUSA26210_00-SM8EMPIRESTRIAL0",
   "store_name": "无双深渊 《真·三国无双 起源》联动“新增可操作角色组合”",
   "platforms": "PS5",
   "release": "2026年1月22日",
@@ -19976,7 +19999,7 @@
    "角色扮演游戏",
    "单人游玩"
   ],
-  "capacity": "",
+  "capacity": "11.0 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -19993,7 +20016,7 @@
   "warn": ""
  },
  "真·三国无双 起源（豪华版）（2）": {
-  "_cid": "UP4108-PPSA25843_00-WABYSSDLCCOS0020",
+  "_cid": "HP0106-PPSA15973_00-DWORIGINSDDX0000",
   "store_name": "无双深渊 《真·三国无双 起源》联动“新增异化角色组合·其他”",
   "platforms": "PS5",
   "release": "2026年1月22日",
@@ -20002,7 +20025,7 @@
    "角色扮演游戏",
    "单人游玩"
   ],
-  "capacity": "",
+  "capacity": "11.0 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -20012,7 +20035,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "如临真实战场，畅享爽快的一骑当千动作！无名英雄闯荡三国乱世的‘真・三国无双’系列新作。\n\n■系列史上最极致的爽快感\n在充满紧张气氛的战场上，玩家将与铺天盖地的敌军展开殊死搏斗。该如何抵挡汹涌而来的敌人？除了凭借自己的实力，还可以与盟军协同作战，挑战“真・三国无双”系列独有的战术战役，畅享该系列史上最极致的爽快感。\n\n■以原创主角的视角展现全新的三国故事\n三国故事发生在广袤的中华大地上，英雄们的信念在这里交汇。本作将从原创主人公“无名英雄”的视角出发，全新描绘这个壮丽世界的魅力。\n\n※《真・三国无双 起源 数字豪华版》除游戏本篇外还附带以下超值内容。\n\n・数字官方资料集＆数字音乐精选辑\n可在游戏内鉴赏的官方资料集以及音乐精选辑。\n数字官方资料集以主人公视角所描绘的全新“真・三国无双”壮丽故事为中心，涵盖了三国志经典历史事件的原创新绘插画、人物关系图以及角色设定等独一无二的珍贵情报。\n数字音乐精选辑则收录了本作中出现的20首改编曲的原曲。\n\n・书信\n通过书信可以领取购买武器或携带品所需的“金钱”，以及生成宝玉所需的“辉石”。\n选择“从头开始”并推进故事后，书信将被送至“旅店”。\n可领取辉石的书信将在游戏中解锁生成宝玉的功能后送达。\n\n※ 另有《真・三国无双 起源》一般版贩售。请在购买时根据所需内容选择购买版本。\n※ 数字官方资料集＆数字音乐精选辑是仅在一部分地区贩售的实体“典藏版”中包含的官方资料集（日语）以及音乐精选辑（英语, 日语）的数字版。\n※ 各项内容无法以其他形式（PDF或MP3等）单独下载。\n※ 各项内容无法在游戏之外鉴赏或阅览。\n※ 特典与同捆内容有可能在日后提供免费或付费下载，敬请谅解。\n※ 游戏画面取自开发中版本，和实际游戏内容可能有差异。\n\n屏幕语言:\n- 真・三国无双 起源\n日语, 简体中文, 繁体中文\n- 数字官方资料集\n日语\n- 数字音乐精选辑\n日语, 英语",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202601/2305/054f0b907f006b645dce725e1997ed1e2131ea0a225fb9d9.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202601/2305/8fbf84c745ef3f41e0bf84f8475ff32a28a3ffb6d6fd62a5.jpg"
@@ -20023,7 +20046,7 @@
   "warn": "⚠️ 港服未找到该商品精确匹配的页面，参数取自同系列商品，简介已留空以防误导"
  },
  "真·三国无双 起源（豪华版）（3）": {
-  "_cid": "UP4108-PPSA25843_00-WABYSSDLCCOS0017",
+  "_cid": "HP0106-PPSA15973_00-DWORIGINSDDX0000",
   "store_name": "无双深渊 《真·三国无双 起源》联动“新增异化角色组合·魏”",
   "platforms": "PS5",
   "release": "2026年1月22日",
@@ -20032,7 +20055,7 @@
    "角色扮演游戏",
    "单人游玩"
   ],
-  "capacity": "",
+  "capacity": "11.0 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -20042,7 +20065,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "如临真实战场，畅享爽快的一骑当千动作！无名英雄闯荡三国乱世的‘真・三国无双’系列新作。\n\n■系列史上最极致的爽快感\n在充满紧张气氛的战场上，玩家将与铺天盖地的敌军展开殊死搏斗。该如何抵挡汹涌而来的敌人？除了凭借自己的实力，还可以与盟军协同作战，挑战“真・三国无双”系列独有的战术战役，畅享该系列史上最极致的爽快感。\n\n■以原创主角的视角展现全新的三国故事\n三国故事发生在广袤的中华大地上，英雄们的信念在这里交汇。本作将从原创主人公“无名英雄”的视角出发，全新描绘这个壮丽世界的魅力。\n\n※《真・三国无双 起源 数字豪华版》除游戏本篇外还附带以下超值内容。\n\n・数字官方资料集＆数字音乐精选辑\n可在游戏内鉴赏的官方资料集以及音乐精选辑。\n数字官方资料集以主人公视角所描绘的全新“真・三国无双”壮丽故事为中心，涵盖了三国志经典历史事件的原创新绘插画、人物关系图以及角色设定等独一无二的珍贵情报。\n数字音乐精选辑则收录了本作中出现的20首改编曲的原曲。\n\n・书信\n通过书信可以领取购买武器或携带品所需的“金钱”，以及生成宝玉所需的“辉石”。\n选择“从头开始”并推进故事后，书信将被送至“旅店”。\n可领取辉石的书信将在游戏中解锁生成宝玉的功能后送达。\n\n※ 另有《真・三国无双 起源》一般版贩售。请在购买时根据所需内容选择购买版本。\n※ 数字官方资料集＆数字音乐精选辑是仅在一部分地区贩售的实体“典藏版”中包含的官方资料集（日语）以及音乐精选辑（英语, 日语）的数字版。\n※ 各项内容无法以其他形式（PDF或MP3等）单独下载。\n※ 各项内容无法在游戏之外鉴赏或阅览。\n※ 特典与同捆内容有可能在日后提供免费或付费下载，敬请谅解。\n※ 游戏画面取自开发中版本，和实际游戏内容可能有差异。\n\n屏幕语言:\n- 真・三国无双 起源\n日语, 简体中文, 繁体中文\n- 数字官方资料集\n日语\n- 数字音乐精选辑\n日语, 英语",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202601/2305/701cbddb6bc373b62e446d26631f90a52abe003e7bcf56b4.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202601/2305/d4326114413927c60d4f8d7b15d3281c12cc5e961e116e38.jpg",
@@ -20119,7 +20142,7 @@
   "warn": ""
  },
  "真·三国无双 起源（豪华版）（4）": {
-  "_cid": "UP4108-PPSA25843_00-WABYSSDLCCOS0017",
+  "_cid": "HP0106-PPSA15973_00-DWORIGINSDDX0000",
   "store_name": "无双深渊 《真·三国无双 起源》联动“新增异化角色组合·魏”",
   "platforms": "PS5",
   "release": "2026年1月22日",
@@ -20128,7 +20151,7 @@
    "角色扮演游戏",
    "单人游玩"
   ],
-  "capacity": "",
+  "capacity": "11.0 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -20138,7 +20161,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "如临真实战场，畅享爽快的一骑当千动作！无名英雄闯荡三国乱世的‘真・三国无双’系列新作。\n\n■系列史上最极致的爽快感\n在充满紧张气氛的战场上，玩家将与铺天盖地的敌军展开殊死搏斗。该如何抵挡汹涌而来的敌人？除了凭借自己的实力，还可以与盟军协同作战，挑战“真・三国无双”系列独有的战术战役，畅享该系列史上最极致的爽快感。\n\n■以原创主角的视角展现全新的三国故事\n三国故事发生在广袤的中华大地上，英雄们的信念在这里交汇。本作将从原创主人公“无名英雄”的视角出发，全新描绘这个壮丽世界的魅力。\n\n※《真・三国无双 起源 数字豪华版》除游戏本篇外还附带以下超值内容。\n\n・数字官方资料集＆数字音乐精选辑\n可在游戏内鉴赏的官方资料集以及音乐精选辑。\n数字官方资料集以主人公视角所描绘的全新“真・三国无双”壮丽故事为中心，涵盖了三国志经典历史事件的原创新绘插画、人物关系图以及角色设定等独一无二的珍贵情报。\n数字音乐精选辑则收录了本作中出现的20首改编曲的原曲。\n\n・书信\n通过书信可以领取购买武器或携带品所需的“金钱”，以及生成宝玉所需的“辉石”。\n选择“从头开始”并推进故事后，书信将被送至“旅店”。\n可领取辉石的书信将在游戏中解锁生成宝玉的功能后送达。\n\n※ 另有《真・三国无双 起源》一般版贩售。请在购买时根据所需内容选择购买版本。\n※ 数字官方资料集＆数字音乐精选辑是仅在一部分地区贩售的实体“典藏版”中包含的官方资料集（日语）以及音乐精选辑（英语, 日语）的数字版。\n※ 各项内容无法以其他形式（PDF或MP3等）单独下载。\n※ 各项内容无法在游戏之外鉴赏或阅览。\n※ 特典与同捆内容有可能在日后提供免费或付费下载，敬请谅解。\n※ 游戏画面取自开发中版本，和实际游戏内容可能有差异。\n\n屏幕语言:\n- 真・三国无双 起源\n日语, 简体中文, 繁体中文\n- 数字官方资料集\n日语\n- 数字音乐精选辑\n日语, 英语",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202601/2305/701cbddb6bc373b62e446d26631f90a52abe003e7bcf56b4.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202601/2305/d4326114413927c60d4f8d7b15d3281c12cc5e961e116e38.jpg",
@@ -20151,7 +20174,7 @@
   "warn": "⚠️ 港服未找到该商品精确匹配的页面，参数取自同系列商品，简介已留空以防误导"
  },
  "真人快打XL": {
-  "_cid": "UP1018-CUSA00967_00-ASIA000000000039",
+  "_cid": "UP1018-CUSA03589_00-ASIA000000000000",
   "store_name": "真人快打 XL - XL Pack",
   "platforms": "PS5/PS4",
   "release": "2016年3月2日",
@@ -20160,7 +20183,7 @@
    "双人同屏",
    "多人联机"
   ],
-  "capacity": "",
+  "capacity": "40.9 GB",
   "players_local": "1-2",
   "players_online": "1-10",
   "players": "本地1-2人，线上1-10人",
@@ -20209,7 +20232,7 @@
   "warn": ""
  },
  "真人快打1（终极版）（1）": {
-  "_cid": "UP1018-PPSA07570_00-CURRENCYPACK0004",
+  "_cid": "UP1018-PPSA07570_00-MKONE00000000000",
   "store_name": "《真人快打 1》：5900 龙晶",
   "platforms": "PS5",
   "release": "2023年9月19日",
@@ -20218,7 +20241,7 @@
    "双人同屏",
    "多人联机"
   ],
-  "capacity": "",
+  "capacity": "85.4 GB",
   "players_local": "1-2",
   "players_online": "1-8",
   "players": "本地1-2人，线上1-8人",
@@ -20226,7 +20249,7 @@
    "中文",
    "英文"
   ],
-  "intro": "",
+  "intro": "我们生来如此！\n\n探索由火神刘康打造，并重生后的“真人快打™”宇宙。《真人快打™ 1》将以全新的战斗系统、游戏模式和必杀终结，开启本系列的新纪元！",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202305/1918/593e02c3500e5746bf667da7298bc5f731384f5db7c2e3bf.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202305/1918/77485d05868692a499de90a718d35435d2e7760a7a1d91e8.jpg",
@@ -20240,7 +20263,7 @@
   "warn": "⚠️ 港服未找到该商品精确匹配的页面，参数取自同系列商品，简介已留空以防误导"
  },
  "真人快打1（终极版）（2）": {
-  "_cid": "UP1018-PPSA07570_00-CURRENCYPACK0004",
+  "_cid": "UP1018-PPSA07570_00-MKONE00000000000",
   "store_name": "《真人快打 1》：5900 龙晶",
   "platforms": "PS5",
   "release": "2023年9月19日",
@@ -20249,7 +20272,7 @@
    "双人同屏",
    "多人联机"
   ],
-  "capacity": "",
+  "capacity": "85.4 GB",
   "players_local": "1-2",
   "players_online": "1-8",
   "players": "本地1-2人，线上1-8人",
@@ -20257,7 +20280,7 @@
    "中文",
    "英文"
   ],
-  "intro": "",
+  "intro": "我们生来如此！\n\n探索由火神刘康打造，并重生后的“真人快打™”宇宙。《真人快打™ 1》将以全新的战斗系统、游戏模式和必杀终结，开启本系列的新纪元！",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202305/1918/593e02c3500e5746bf667da7298bc5f731384f5db7c2e3bf.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202305/1918/77485d05868692a499de90a718d35435d2e7760a7a1d91e8.jpg",
@@ -20551,7 +20574,7 @@
   "warn": ""
  },
  "破碎怪谈：恶意取关（豪华版）": {
-  "_cid": "UP8251-CUSA55785_00-0635282462590449",
+  "_cid": "UP8251-PPSA30591_00-0306310001929995",
   "store_name": "破碎怪谈：切勿直视",
   "platforms": "PS5/PS4",
   "release": "2026年1月15日",
@@ -20571,7 +20594,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "在《破碎怪谈：恶意取关》中，你将深入安妮的内心世界，经历她的恐怖之旅。她被困在一个噩梦般的世界里，周围游荡着象征她创伤的恐怖生物。\n\n你的任务是帮助安妮逃脱这些噩梦般的追踪者，同时揭开隐藏在黑暗中的秘密。\n\n你的每一个决定都会影响故事的发展，带来多个可能的结局。你将面对艰难的选择，每一个决定都将深刻影响安妮的命运和她周围的世界。\n\n你可以选择帮助安妮面对她的内心恐惧，或是让她逃避现实的痛苦。这些选择不仅会改变故事的走向，还会解锁不同的结局。\n\n游戏中充满了象征安妮创伤的怪物，这些生物不仅令人毛骨悚然，还代表了她内心最深处的痛苦和恐惧。\n\n你将直面这些恐怖的怪物，在紧张与惊悚中挣扎求生。它们无处不在，时刻威胁着你的安全，每一个角落都可能隐藏着致命的危险。\n\n踏上《破碎怪谈：恶意取关》的旅程，面对内心的恐惧，揭开隐藏的秘密，体验前所未有的超现实恐怖冒险。准备好迎接这场心跳加速的恐怖之旅吧！",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202504/0703/ca5a453b09b5c540d309ae61f5e10d53724bb38b5cd21c04.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202504/0703/44c547580a747085848ac37d3236effe86672ca0a91b2513.jpg",
@@ -20889,7 +20912,7 @@
   "warn": ""
  },
  "笠鬼": {
-  "_cid": "UP7571-PPSA25287_00-0824912742127723",
+  "_cid": "UP1003-CUSA00203_00-ASIAFULLGAME0000",
   "store_name": "笠鬼",
   "platforms": "PS5",
   "release": "2024年11月21日",
@@ -20898,7 +20921,7 @@
    "单人游玩",
    "动作"
   ],
-  "capacity": "",
+  "capacity": "37.2 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -20922,7 +20945,7 @@
   "warn": ""
  },
  "秘影曼德拉": {
-  "_cid": "UP3501-CUSA08661_00-THCOTWEQPPCK2DLC",
+  "_cid": "HP2005-PPSA04603_00-DEADTREERANCH000",
   "store_name": "theHunter: Call of the Wild - Treestand & Tripod Pack",
   "platforms": "PS5/PS4",
   "release": "2025年9月4日",
@@ -20931,7 +20954,7 @@
    "体育竞技",
    "多人联机"
   ],
-  "capacity": "",
+  "capacity": "5.0 GB",
   "players_local": "1",
   "players_online": "1-8",
   "players": "本地1人，线上1-8人",
@@ -22254,7 +22277,7 @@
   "warn": ""
  },
  "致命躯壳2（虔诚版）（1）": {
-  "_cid": "EP3495-PPSA34008_00-0114153686334597",
+  "_cid": "UP3639-PPSA02868_00-6737177636262712",
   "store_name": "《致命躯壳 II》",
   "platforms": "PS5",
   "release": "2026年8月17日",
@@ -22264,7 +22287,7 @@
    "开放世界",
    "类魂挑战"
   ],
-  "capacity": "",
+  "capacity": "4.9 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -22331,7 +22354,7 @@
   "warn": ""
  },
  "致命躯壳2（虔诚版）（2）": {
-  "_cid": "EP3495-PPSA34008_00-0114153686334597",
+  "_cid": "UP3639-PPSA02868_00-6737177636262712",
   "store_name": "《致命躯壳 II》",
   "platforms": "PS5",
   "release": "2026年8月17日",
@@ -22341,7 +22364,7 @@
    "开放世界",
    "类魂挑战"
   ],
-  "capacity": "",
+  "capacity": "4.9 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -22474,7 +22497,7 @@
   "warn": ""
  },
  "艾恩格朗特 回荡新声1": {
-  "_cid": "EP0900-CUSA29547_00-ASHESOFELRANTEUR",
+  "_cid": "UP8616-CUSA55186_00-0006109821278684",
   "store_name": "Chained Echoes: Ashes of Elrant",
   "platforms": "PS5/PS4",
   "release": "2026年7月9日",
@@ -22483,7 +22506,7 @@
    "角色扮演",
    "单人游玩"
   ],
-  "capacity": "",
+  "capacity": "5.9 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -22642,7 +22665,7 @@
    "多人联机",
    "肉鸽试炼"
   ],
-  "capacity": "",
+  "capacity": "43.0 GB",
   "players_local": "1-2",
   "players_online": "1-2",
   "players": "本地1-2人，线上1-2人",
@@ -22652,7 +22675,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "【游戏说明】\n本作为《BLAZBLUE》系列衍生的 Roguelite 动作游戏，拥有精美的 2D 画面、多样化的动作表现，以及注重用户体验的出色操控手感。\n操控来自《BLAZBLUE》系列和其他世界共 16 位个性鲜明的角色，尽享酣畅淋漓的巅峰动作体验。\n\n需要推进游戏进度后才能进行2人离线游玩。\n\n【故事】\n这里是为拯救濒临毁灭的世界而开展研究的异空间——“实验室（Lab）”。研究所负责人“Dr.Mercurius”诉说着世界的终焉。\n为了阻止世界的崩坏，“可能性”的研究刻不容缓，而这项研究需要“可能性碎片”。\n“可能性碎片”长眠之处，被称为“可能性之海”。那是一个不属于现存任何世界、位于世界与世界夹缝之间的所在。\n唯有主角“ACE”能够“下潜”至这片“可能性之海”\n\n……“苍之力”\n\n为拯救世界，ACE不断进行下潜，无数记忆和不可思议的影像涌入他的脑海，世界尽头亦逐步走向崩坏\n——研究的真相，正逐渐浮出水面……\n\n离线多人游玩（2名玩家）",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202510/0915/ece3e2b6a8224b25363344b6f8c84ded757e18d768546e61.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202510/0915/dbc933fd57d0c3802eaffa0afbe2b26b9ee8ef9224ed792d.jpg",
@@ -22670,7 +22693,7 @@
   "warn": "⚠️ 港服未找到该商品精确匹配的页面，参数取自同系列商品，简介已留空以防误导"
  },
  "英灵神殿": {
-  "_cid": "EP4837-PPSA28824_00-0VALHEIMBASEGAME",
+  "_cid": "JP0001-CUSA16606_00-ASIA000000000009",
   "store_name": "英灵神殿",
   "platforms": "PS5",
   "release": "2026年9月9日",
@@ -22680,7 +22703,7 @@
    "沙盒建造",
    "生存冒险"
   ],
-  "capacity": "",
+  "capacity": "391 MB",
   "players_local": "1",
   "players_online": "1-10",
   "players": "本地1人，线上1-10人",
@@ -23347,7 +23370,7 @@
   "warn": ""
  },
  "虐杀原形1": {
-  "_cid": "EP4356-CUSA02021_00-ASIA000000000003",
+  "_cid": "JP0078-CUSA14451_00-SOLDNERX2FINALPR",
   "store_name": "Sébastien Loeb Rally EVO - Class S The Prototypes",
   "platforms": "PS5/PS4",
   "release": "2015年8月11日",
@@ -23357,7 +23380,7 @@
    "单人游玩",
    "历史战争"
   ],
-  "capacity": "",
+  "capacity": "2.3 GB",
   "players_local": "",
   "players_online": "1",
   "players": "线上1人",
@@ -23372,7 +23395,7 @@
   "warn": ""
  },
  "虐杀原形2": {
-  "_cid": "EP4356-CUSA02021_00-ASIA000000000003",
+  "_cid": "JP0078-CUSA14451_00-SOLDNERX2FINALPR",
   "store_name": "Sébastien Loeb Rally EVO - Class S The Prototypes",
   "platforms": "PS5/PS4",
   "release": "2015年8月11日",
@@ -23382,7 +23405,7 @@
    "单人游玩",
    "历史战争"
   ],
-  "capacity": "",
+  "capacity": "2.3 GB",
   "players_local": "",
   "players_online": "1",
   "players": "线上1人",
@@ -23834,7 +23857,7 @@
   "warn": ""
  },
  "让它去死：地狱": {
-  "_cid": "JP0747-PPSA19053_00-0737991246477849",
+  "_cid": "JP0747-PPSA19053_00-0155802578228805",
   "store_name": "《LET IT DIE: INFERNO》2250 死神金属",
   "platforms": "PS5",
   "release": "2025年12月4日",
@@ -23843,7 +23866,7 @@
    "多人联机",
    "动作"
   ],
-  "capacity": "",
+  "capacity": "34.0 GB",
   "players_local": "",
   "players_online": "1-8",
   "players": "线上1-8人",
@@ -24088,7 +24111,7 @@
   "warn": ""
  },
  "贪婪之秋2：垂死世界": {
-  "_cid": "EP6665-PPSA21840_00-GF20000000000000",
+  "_cid": "EP4133-PPSA02981_00-GREEDFALLGOLDEDI",
   "store_name": "GreedFall: The Dying World",
   "platforms": "PS5",
   "release": "2026年3月12日",
@@ -24098,7 +24121,7 @@
    "单人游玩",
    "剧情探索"
   ],
-  "capacity": "",
+  "capacity": "20.6 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -24357,7 +24380,7 @@
   "warn": ""
  },
  "超级炸弹人合集": {
-  "_cid": "EP4908-PPSA02829_00-5000SAWTICKETS00",
+  "_cid": "UP0101-CUSA10667_00-ASIAPLACEHOLDER0",
   "store_name": "SUPER ANIMAL ROYALE: 5000 SAW TICKETS",
   "platforms": "PS5",
   "release": "2026年2月5日",
@@ -24367,7 +24390,7 @@
    "模拟经营",
    "大逃杀"
   ],
-  "capacity": "",
+  "capacity": "6.4 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -24403,7 +24426,7 @@
    "英文",
    "日文"
   ],
-  "intro": "",
+  "intro": "Trash Raccoon 是一款快节奏、多汁又混乱的 rogue-lite 街机游戏，你需要赶在水果变成爆炸炸弹之前将它们收入囊中！\n\n收集水果可以为强大的“水果冲刺”充能，它能撞碎一切！\n\n尽可能生存下去，赚取“罐头盖”并用它们购买升级。多多尝试，直到解锁下一关！\n\n你可以期待：\n- 9 个充满趣味机制和精彩事件的关卡\n- 大量可收集、可穿戴的装扮物品\n- rogue-lite 成长系统\n- 惊艳的美术风格和动画\n- 带感的原声音乐\n- 一款老少皆宜又不失深度的游戏",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202607/1003/5da91941f383d2e28826104d0449ba25da0caec287b11655.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202607/1003/be2c374ae5f588787b8db65fd94aca239462a2a7f4dd2342.jpg",
@@ -24547,7 +24570,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "幻想变身一匹会反弹跳、闪躲弓箭和设陷阱的小马，打败您的动物伙伴们，顺利闯过大家一起设置的障碍冒险关卡？\n\n愿望实现了！\n\n超级鸡马是一款玩家不断制造陷阱来妨碍对手到达终点的互动游戏，其中的关卡由您和好友一道设置。若您闯关成功而好友却未能通关，那么您将得分！无论是联机还是单机游戏，都能和您的动物朋友们一起挑战不同地点的各种关卡，与好友共同寻找开心玩乐的新方式。\n\n- 联机和单机游戏\n\n- 从脑洞大开的障碍设置到千方百计地顺利通关，游戏的每一步都充满独特的乐趣\n\n- 各式各样的障碍物搭建出花样无限的关卡\n\n- 发现各种各样的地点，例如农场、冰山、舞会和金字塔等等\n\n- 创建、保存和分享自定义关卡\n\n- 在挑战模式下向好友发起挑战，邀请他们尝试通过您的关卡，登上全球排行榜！\n\n- 尝试小鸡、小马、绵羊和其他奇妙的动物角色\n\n- 欢乐无限的卡通风格\n\n- 不容错过的超酷配乐",
   "shots": [
    "https://apollo2.dl.playstation.net/cdn/UP1665/CUSA08580_00/FREE_CONTENTwiPSMfDUhlIwFETYxjN6/1.jpg",
    "https://apollo2.dl.playstation.net/cdn/UP1665/CUSA08580_00/FREE_CONTENTUVONYNEcWcoJZ3NTUPiK/2.jpg",
@@ -25237,7 +25260,7 @@
   "languages": [
    "英文"
   ],
-  "intro": "",
+  "intro": "“───你的愿望，由我来斩断。 ”江户的圣杯战争，就此开幕。\n\nTYPE-MOON × 光荣特库摩，全新的“Fate”正式开幕\n\n【组合内容】\n·游戏本篇\n·数字美术画集\n·原声碟\n·季票（追加剧情1〜3）\n※季票购入特典“特典装备：上古宝剑装具”\n\n※商品包含的各项内容及预定发布日等有可能在没有预告的情况下变更。详情请参阅官方网站（https://www.gamecity.com.tw/fate-sr/）\n※季票购入特典将与游戏本篇同日开放下载。追加剧情1～3分别预定于2024年4月30日、2024年7月31日、2024年9月30日前开放下载。\n※季票中的各项内容需在游戏本篇剧情到达特定进度后方可游玩。",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202307/1101/47911750eb1e880325d239ece9374fbdc23ddbfe82efeef4.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202307/1101/e1b11eda97b39b8d0c580be8b9d666ccb208b8b29d182bb4.jpg",
@@ -25511,7 +25534,7 @@
   "warn": ""
  },
  "铁甲少女": {
-  "_cid": "HP5846-PPSA31105_00-MACHINEGIRL00000",
+  "_cid": "UP8193-CUSA47022_00-0089373910404002",
   "store_name": "铁甲少女",
   "platforms": "PS5",
   "release": "2025年10月23日",
@@ -25521,7 +25544,7 @@
    "竞技对战",
    "科幻未来"
   ],
-  "capacity": "",
+  "capacity": "179 MB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -26115,7 +26138,7 @@
    "日文",
    "韩文"
   ],
-  "intro": "",
+  "intro": "《雾影猎人-豪华版》包括游戏本体和以下额外奖励：\n-专属时装【猎魔骸骨】\n-专属背景【沉船海岸】\n-专属耳饰【命运之网】\n-专属站姿【正义】\n-专属表情【皮皮日常表情包】\n-专属头像【露】\n-专属头像框【轻羽】\n-命运铸币*2500\n\n命运铸币可用于在游戏内购买各种外观道具。",
   "shots": [
    "https://vulcan.dl.playstation.net/ap/rnd/202608/1704/ea3714190a7ebee442cb009def89df0520e741cc6b5c8086.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202606/1612/0bd6e33466639de389f7d03ad513a73214ac9fa010c21c96.jpg",
@@ -26190,7 +26213,7 @@
   "warn": ""
  },
  "静谧田园": {
-  "_cid": "HP5846-PPSA35669_00-0000000000000000",
+  "_cid": "EP6985-CUSA57625_00-0613443265474999",
   "store_name": "静谧田园",
   "platforms": "PS5",
   "release": "2026年7月30日",
@@ -26200,7 +26223,7 @@
    "单人游玩",
    "街机复刻"
   ],
-  "capacity": "",
+  "capacity": "681 MB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
@@ -26275,7 +26298,7 @@
    "英文",
    "日文"
   ],
-  "intro": "",
+  "intro": "结合了激烈的跑动射击和深度 Roguelike 机制，在《Neon Abyss》中您将化身“Grim Squad”的一员，这支由 Hades 亲自组成的特遣部队身负潜入深渊并击败 New Gods 的任务。您觉得自己有本事成为王者吗？那就快利用《Neon Abyss》数字豪华版投入战斗吧！\n\n豪华版包含以下内容：\n《Neon Abyss》游戏\n《The Lovable Rogues》包：操控另外两名因 Titan 实验失败而诞生的角色：武士刀战士 Saya 和使用念力的 Amir。\n\n《Alter Ego》 可下载内容包 : 准备好以游戏角色一系列的“另一个自我”面对 New Gods 的挑战。\n\nChrono Trap: 拥有【时空陷阱】DLC，可以解锁一个全新的无尽模式，以及全新的泰坦BOSS\n- 克洛诺斯！",
   "shots": [],
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc6de3be116927.jpg&w=512&q=82&output=jpg",
   "en": "Neon Abyss 1（Deluxe Edition）",
@@ -26558,7 +26581,7 @@
   "warn": ""
  },
  "驱灵者：新伊甸的幽灵": {
-  "_cid": "EP0001-CUSA05264_00-Y9HSBU0000000000",
+  "_cid": "HP0743-CUSA28028_00-PJEDEN2000000000",
   "store_name": "Yokai Banishers - 英雄皮肤同捆包 -《荣耀战魂》",
   "platforms": "PS5/PS4",
   "release": "2024年2月13日",
@@ -26568,7 +26591,7 @@
    "单人游玩",
    "和风日式"
   ],
-  "capacity": "",
+  "capacity": "1.7 GB",
   "players_local": "1",
   "players_online": "",
   "players": "1位玩家",
