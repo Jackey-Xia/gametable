@@ -1,11 +1,17 @@
 {
- "time": "2026-10-28T13:26:15",
+ "time": "2026-10-28T13:54:24",
  "added": [],
- "pending": [],
+ "pending": [
+  {
+   "name": "星之海洋6：神圣力量（豪华版）",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  }
+ ],
  "errors": [],
  "stats": {
   "total": 1256,
   "covered": 1315,
-  "pending_open": 0
+  "pending_open": 1
  }
 }
