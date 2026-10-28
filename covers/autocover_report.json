@@ -1,11 +1,21 @@
 {
- "time": "2026-10-28T06:36:57",
- "added": [],
+ "time": "2026-10-28T07:17:35",
+ "added": [
+  {
+   "name": "星球大战：银河赛车手",
+   "product": "UP8737-PPSA28416_00-SWGALACTICRACER1",
+   "storeName": "星球大战：银河赛车手™ (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/ac4dff4744378do.jpg",
+   "role": "P",
+   "bytes": 59849
+  }
+ ],
  "pending": [],
  "errors": [],
  "stats": {
-  "total": 1255,
-  "covered": 1314,
+  "total": 1256,
+  "covered": 1315,
   "pending_open": 0
  }
 }
