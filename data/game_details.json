@@ -13318,35 +13318,6 @@
   "display_name": "星之海洋2：第二个故事R",
   "warn": ""
  },
- "星之海洋6：神圣力量": {
-  "_cid": "HP0082-PPSA06262_00-STAROCEAN6PS5000",
-  "store_name": "STAR OCEAN THE DIVINE FORCE",
-  "platforms": "PS5/PS4",
-  "release": "2022年10月27日",
-  "genres": [
-   "角色扮演游戏",
-   "角色扮演",
-   "单人游玩"
-  ],
-  "capacity": "63.8 GB",
-  "players_local": "1",
-  "players_online": "",
-  "players": "1位玩家",
-  "languages": [],
-  "intro": "“本作可以在空间中自由翱翔”\n本作中各角色可以360°自由地活动，还可以在空中飞翔。\n\n“立体的移动与探索 视线可及之处皆为冒险范围”\n本作拥有有史以来最大的地图，玩家可以借由飞上空中，在三度空间中移动。\n例如在岩壁或城镇的屋顶间来回飞翔探索，或是跳下悬崖后无缝地进入战斗，\n无论是冒险还是战斗，都将带来前所未有的自由体验。\n\n“拥有系列作中最快、最强动作系统的STAR OCEAN”\n无拘无束的游戏体验也将强化战斗。\n角色能够在超高速移动后突击、使用从敌人面前瞬间消失的动作，\n还可以运用一击必杀的技能一网打尽大量敌人。\n玩家在天地间自由翱翔的同时还可享受爽快且富有挑战性的战斗体验。",
-  "shots": [
-   "https://vulcan.dl.playstation.net/ap/rnd/202206/2312/4fyU9u2de2eluCEXzRizFuoO.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202206/1306/x77cnkcNOaCoNnPtQxKULv4c.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202206/2312/9CvetnEaM4RhTOfauI7TTUEJ.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202206/1306/7MOycmTJSh7feLYZ1xiZub1M.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202206/1306/p0vdx2yYfjb90fKvHkWMFNhv.jpg",
-   "https://vulcan.dl.playstation.net/ap/rnd/202206/1306/vGIUR8y4gbUiINfjdA8DEPxC.jpg"
-  ],
-  "cover": "covers/acc41c2b4566_s.jpg",
-  "en": "Star Ocean 6： The Divine Force",
-  "display_name": "星之海洋6：神圣力量",
-  "warn": ""
- },
  "星球大战绝地：幸存者": {
   "_cid": "UP0006-PPSA07783_00-APPLEJACKGAME000",
   "store_name": "星球大战 绝地：幸存者™",
@@ -28428,6 +28399,35 @@
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rcf640dcc387cb.jpg&w=512&q=82&output=jpg",
   "en": "Dragon Age：Inquisition（Game of the Year Edition）",
   "display_name": "龙腾世纪：审判（年度版）",
+  "warn": ""
+ },
+ "星之海洋6：神圣力量（豪华版）": {
+  "_cid": "HP0082-PPSA06262_00-STAROCEAN6PS5000",
+  "store_name": "STAR OCEAN THE DIVINE FORCE",
+  "platforms": "PS5/PS4",
+  "release": "2022年10月27日",
+  "genres": [
+   "角色扮演游戏",
+   "角色扮演",
+   "单人游玩"
+  ],
+  "capacity": "63.8 GB",
+  "players_local": "1",
+  "players_online": "",
+  "players": "1位玩家",
+  "languages": [],
+  "intro": "“本作可以在空间中自由翱翔”\n本作中各角色可以360°自由地活动，还可以在空中飞翔。\n\n“立体的移动与探索 视线可及之处皆为冒险范围”\n本作拥有有史以来最大的地图，玩家可以借由飞上空中，在三度空间中移动。\n例如在岩壁或城镇的屋顶间来回飞翔探索，或是跳下悬崖后无缝地进入战斗，\n无论是冒险还是战斗，都将带来前所未有的自由体验。\n\n“拥有系列作中最快、最强动作系统的STAR OCEAN”\n无拘无束的游戏体验也将强化战斗。\n角色能够在超高速移动后突击、使用从敌人面前瞬间消失的动作，\n还可以运用一击必杀的技能一网打尽大量敌人。\n玩家在天地间自由翱翔的同时还可享受爽快且富有挑战性的战斗体验。",
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/2312/4fyU9u2de2eluCEXzRizFuoO.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/1306/x77cnkcNOaCoNnPtQxKULv4c.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/2312/9CvetnEaM4RhTOfauI7TTUEJ.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/1306/7MOycmTJSh7feLYZ1xiZub1M.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/1306/p0vdx2yYfjb90fKvHkWMFNhv.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/1306/vGIUR8y4gbUiINfjdA8DEPxC.jpg"
+  ],
+  "cover": "covers/acc41c2b4566_s.jpg",
+  "en": "Star Ocean 6： The Divine Force",
+  "display_name": "星之海洋6：神圣力量",
   "warn": ""
  }
 }
