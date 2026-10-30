@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1120,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-10-30T04:02:13"
+  "updated": "2026-10-30T12:09:11"
  },
  "locks": {
   "p0001": {
@@ -9979,13 +9979,13 @@
     "皇牌空战7：未知空域（豪华版）"
    ],
    "en": "",
-   "file": "covers/rc492e98b4401a.jpg",
-   "md5": "492e98b4401a7b4f958e63e5e4974c86",
-   "note": "店主审核: Batch9 全9项改满铺/移位 一并上线",
+   "file": "covers/rc9d135b488ac1.jpg",
+   "md5": "9d135b488ac137a4a45689cf4b09515c",
+   "note": "批量: 皇牌空战7 换 PS 港服 TOP GUN: MAVERICK 终极版(数字豪华版) 官方方图(无竖版,1024方图) 等比缩小+天蓝/海蓝渐变羽化保标题(ID HP0700-CUSA07163_00-ACE7TOPGUNMEUE22)",
    "platform": "PS",
    "role": "M-pad",
    "store": "HP0700-CUSA07163_00-ACE7TOPGUNMEUE22 (zh-Hans-HK)",
-   "time": "2026-10-19T01:46:06"
+   "time": "2026-10-30T12:09:11"
   },
   "p0765": {
    "cn": [
