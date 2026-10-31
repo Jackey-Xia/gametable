@@ -1,7 +1,8 @@
 {
  "_meta": {
   "count": 1120,
-  "updated": "2026-10-31T16:51:04"
+  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
+  "updated": "2026-10-31T17:42:30"
  },
  "locks": {
   "p0001": {
@@ -9247,7 +9248,7 @@
    "en": "Outward（Definitive Edition）",
    "file": "covers/01bd11ac5f96_s.jpg",
    "md5": "02fb459ea77d7db31553b6969142c0b4",
-   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc4225d7fb1f98.jpg",
+   "note": "★人工锁死沿用(锁p0708, 中文名一致)",
    "platform": "PS",
    "role": "P",
    "store": "",
