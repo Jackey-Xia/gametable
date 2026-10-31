@@ -1,6 +1,16 @@
 {
- "time": "2026-10-31T06:57:44",
- "added": [],
+ "time": "2026-10-31T06:58:36",
+ "added": [
+  {
+   "name": "纸人2",
+   "product": "HP2790-PPSA03881_00-PAPERDOLLS2ASIA5",
+   "storeName": "纸人2 (日语, 简体中文, 繁体中文, 英语)",
+   "score": 0.8,
+   "file": "covers/ac005a371cc5a0p34.jpg",
+   "role": "M-pad",
+   "bytes": 37995
+  }
+ ],
  "pending": [
   {
    "name": "质量效应123（传奇版）（港版日英文）",
@@ -11,17 +21,12 @@
    "name": "纸人1",
    "reason": "匹配有歧义或无命中",
    "top": ""
-  },
-  {
-   "name": "纸人2",
-   "reason": "匹配有歧义或无命中",
-   "top": ""
   }
  ],
  "errors": [],
  "stats": {
   "total": 1254,
-  "covered": 1319,
-  "pending_open": 3
+  "covered": 1320,
+  "pending_open": 2
  }
 }
