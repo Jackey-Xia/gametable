@@ -1,11 +1,27 @@
 {
- "time": "2026-10-31T06:40:28",
+ "time": "2026-10-31T06:57:44",
  "added": [],
- "pending": [],
+ "pending": [
+  {
+   "name": "质量效应123（传奇版）（港版日英文）",
+   "reason": "匹配有歧义或无命中",
+   "top": "《Mass Effect™: Andromeda》 – 标准新兵版 (英文版) (0.85 vs 0.85)"
+  },
+  {
+   "name": "纸人1",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  },
+  {
+   "name": "纸人2",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  }
+ ],
  "errors": [],
  "stats": {
-  "total": 1253,
+  "total": 1254,
   "covered": 1319,
-  "pending_open": 0
+  "pending_open": 3
  }
 }
