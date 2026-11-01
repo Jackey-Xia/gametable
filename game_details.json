@@ -1,13 +1,33 @@
 {
  "奥丁领域 里普特拉西尔": {
   "genres": [
-   "动作"
+   "动作战斗",
+   "剧情探索",
+   "治愈休闲",
+   "末日废土"
   ],
-  "players": "",
+  "players": "1位玩家",
   "release": "2016年4月28日",
   "publisher": "SEGA CORPORATION",
-  "shots": [],
-  "_cid": "HP0177-CUSA03873_00-ODINSPHERELE0000"
+  "shots": [
+   "https://apollo2.dl.playstation.net/cdn/HP0177/CUSA03873_00/FREE_CONTENTK1JYtvSomO3AHVQQYlR1/160114odinsphere_leifthrasir_screenshot_PS4_2.jpg",
+   "https://apollo2.dl.playstation.net/cdn/HP0177/CUSA03873_00/FREE_CONTENTbdHOvMC9aFbjroz0Ba5A/160114odinsphere_leifthrasir_screenshot_PS4_3.jpg"
+  ],
+  "_cid": "HP0177-CUSA03873_00-ODINSPHERELE0000",
+  "store_name": "Odin Sphere Leifthrasir",
+  "platforms": "PS5/PS4",
+  "capacity": "2.7 GB",
+  "players_local": "1",
+  "players_online": "",
+  "languages": [
+   "中文"
+  ],
+  "intro": "在北欧神话世界的故事舞台中，由5位主人公展开的剧情错综交织而成一篇壮阔史诗的2D动作RPG作品。\n预言中所指的末日，真相究竟是…？\n\nAtlus×Vanillaware联手打造2D动作RPG，登峰造极之作「Odin Sphere Leifthrasir」堂堂登场！更加精致淬炼的「令人屏息的美丽世界」与「细腻的角色感情表现」，交织发展成的壮阔史诗故事。而在游戏系统方面也大幅超越了以往2D动作RPG作品。简单的操作方式与最佳化的系统，让玩家能轻松享受游戏爽快感的同时，也能逐渐在熟练过程中获得越加深刻的游戏性体验！",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fapollo2.dl.playstation.net%2Fcdn%2FHP0177%2FCUSA03873_00%2FtY411UJBAtn8YqiiQAGgRZe5BR7DfGalGCPIR5qQA8dhuotWCpoakdivnEnQFKsV.png&w=512&output=jpg",
+  "en": "Odin's Sphere Leifthrasir",
+  "display_name": "奥丁领域 里普特拉西尔",
+  "warn": "",
+  "_cn": "奥丁领域 里普特拉西尔"
  },
  "Odin's Sphere Leifthrasir": {
   "genres": [
@@ -21,13 +41,33 @@
  },
  "艾希ICEY": {
   "genres": [
-   "动作"
+   "动作战斗",
+   "探索冒险",
+   "2D横版卷轴"
   ],
-  "players": "",
+  "players": "1位玩家",
   "release": "2016年11月18日",
   "publisher": "X.D. Network Inc.",
-  "shots": [],
-  "_cid": "HP1637-CUSA05660_00-0000000000000001"
+  "shots": [
+   "https://apollo2.dl.playstation.net/cdn/HP1637/CUSA05660_00/FREE_CONTENT9bEPgVMb9io6OO4oWBg5/ICEY_Screenshot1.jpg",
+   "https://apollo2.dl.playstation.net/cdn/HP1637/CUSA05660_00/FREE_CONTENT1OsUXjPuGq8qOq0nl5l9/ICEY_Screenshot2.jpg",
+   "https://apollo2.dl.playstation.net/cdn/HP1637/CUSA05660_00/FREE_CONTENTfRw2fZ6hNE3zZKe2drwG/ICEY_Screenshot3.jpg"
+  ],
+  "_cid": "HP1637-CUSA05660_00-0000000000000001",
+  "store_name": "艾希",
+  "platforms": "PS5/PS4",
+  "capacity": "1.4 GB",
+  "players_local": "1",
+  "players_online": "",
+  "languages": [
+   "中文"
+  ],
+  "intro": "《ICEY》是一款2D横版ACT+META游戏，跟随旁白的指示，你将会通过ICEY的眼睛去看，去战斗并发掘在游戏中世界的真相。但其实，这也根本不是一款2D横版动作游戏，你也不会通过ICEY的眼睛去看，你也不会去探寻这个世界的真相。\n\n本质上说还是一款META游戏，玩家需要通过对抗旁白的指示，思考何为游戏、何为真相等等命题。在《ICEY》中，你扮演的是ICEY，而非“你自己”。当然你也可以扮演“你自己”，而非ICEY。这是一个包裹着动作游戏外衣的陷阱。\n\n现在，就是你发掘其真正故事的时刻。\n\nICEY，I SEE。",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fapollo2.dl.playstation.net%2Fcdn%2FHP1637%2FCUSA05660_00%2Fek4LPMRdl00cP9GwK6OCKlUCWru0qjo60SZDKYiqeqi0uQGBQ1b4qE7xeKmzj3WJ.png&w=512&output=jpg",
+  "en": "Icey",
+  "display_name": "艾希ICEY",
+  "warn": "",
+  "_cn": "艾希ICEY"
  },
  "Icey": {
   "genres": [
@@ -40,12 +80,40 @@
   "_cid": "HP1637-CUSA05660_00-0000000000000001"
  },
  "阿斯达伦：地球之泪": {
-  "genres": [],
-  "players": "",
-  "release": "",
+  "genres": [
+   "动作冒险",
+   "休闲解谜",
+   "类魂挑战"
+  ],
+  "players": "1位玩家",
+  "release": "2021年6月3日",
   "publisher": "",
-  "shots": [],
-  "_cid": "10008704"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202104/2308/52UplTmUVt93PIUjdRKuwfcp.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202104/2308/4ZagtHJgqgckkeNf1sItDNY0.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202104/2308/qCWgFi9Jv9XxgkQa8XYAtvEp.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202104/2308/5Snx5OPeso4iMHyKGdS3z5Pt.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202104/2308/aGYHDfDlLHQ43avfoyx9n979.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202104/2308/VAZyvNEIksRYrfB5Ma1DhVfI.jpg"
+  ],
+  "_cid": "JP4108-CUSA25972_00-ASTALONJP0000000",
+  "store_name": "阿斯达伦: 地球之泪",
+  "platforms": "PS5/PS4",
+  "capacity": "298 MB",
+  "players_local": "1",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文",
+   "日文"
+  ],
+  "intro": "遵守你和死亡之提坦-厄毗米修斯的约定！化身为三名英勇的冒险家，在邪恶之塔里攀爬战斗，闯过一个又一个关卡，把他们的村子从厄运中救出来！\n\n三名英勇的探险家在劫后的沙漠里游走，誓要把村子从绝望中救出来。他们很快找到一座黑暗扭曲的塔，塔身从星球深处冒出来，似乎隐藏了掌控他们生存的秘密。为了确保胜利，其中一人与死亡之提坦-厄毗米修斯签订了秘密协议。他们将可以无限重生，直到完成任务。探险家和他们的村庄将面临怎样的命运？\n\n阿斯达伦：地球之泪是一款动作平台游戏，以残酷的垂死世界为背景，死亡成为了胜利的垫脚石！利用战士阿里亚斯、盗匪奎利和巫师阿尔格斯的技能和武器，您将登上神秘的高塔，寻找他们生存的答案。消灭可怕的怪物、寻找强大的道具、解决棘手的谜题，在提坦巨人的帮助下，您将通过重重考验到达塔顶。展开一个关于友谊和牺牲的故事，鼓起勇气，打倒巨人，保护弱小吧！勇敢拥抱死亡，让你的队友变强，改写他们的命运。隐藏在蛇塔的秘密，等待您一一揭开！\n\n・在黑暗奇幻的世界里，通过精致真实的像素艺术再现8元位动作冒险的辉煌岁月！您将在紧密相联的地下迷宫展开探索，享受高速紧凑的闯关体验。\n・游戏角色由世界著名漫画《半龙少女》作家见田龙介亲手设计！\n・以您喜欢的速度进行游戏—您可以在塔里仔细探索，逐渐培养角色的力量，或使用冒险的方法迅速攻上塔顶！\n・随意变更您的英雄，善用战士、弓箭手和巫师的独特技能挑战各个关卡。\n・与各式各样的敌人、巨型怪物和头目进行战斗！选择合适的英雄，找出怪物的弱点并消灭牠们！\n・与死亡之提坦-厄毗米修斯进行交易，让角色变得更强大，改写他们的命运。\n・通过收集「镜子之剑」等各种强大的道具，赋予角色新的技能，开拓更多可能性。\n・善用营火保存游戏进度，更换角色和了解他们的过去。\n・多达数百个房间等待您去发掘——长时间的高难度探索，加上大量的关卡和秘密，好奇心旺盛的玩家非挑战不可！\n・感受由Matt Kap创作的扣人心弦的配乐-合共30多首原创芯片音乐！",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202104%2F2308%2FtBGpMyA8Qqg07LYJysKua3oG.png&w=512&output=jpg",
+  "en": "Astalon：Tears of the Earth",
+  "display_name": "阿斯达伦：地球之泪",
+  "warn": "",
+  "_cn": "阿斯达伦：地球之泪"
  },
  "Astalon：Tears of the Earth": {
   "genres": [],
@@ -57,13 +125,38 @@
  },
  "暗影火炬城": {
   "genres": [
-   "动作"
+   "动作战斗",
+   "休闲解谜",
+   "剧情探索",
+   "平台跳跃"
   ],
-  "players": "1人",
+  "players": "1位玩家",
   "release": "2021年9月6日",
   "publisher": "Astrolabe Games",
-  "shots": [],
-  "_cid": "HP6808-PPSA03970_00-FISTASIAPS5HK003"
+  "shots": [
+   "https://vulcan.dl.playstation.net/img/rnd/202107/0611/STZp6omOHkxuAMh2291ivIZh.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202107/0611/xBgKmHRuWDimPbLrBdRQmGfK.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202107/0611/gtEvacx7qB8uIybP23STY6OP.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202107/0611/yxl8sVZhe8d3Cg4dAKoXJd7p.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202107/0611/QtSVKK4KJOBi6PuSYmY1pugx.jpg"
+  ],
+  "_cid": "HP6808-PPSA03970_00-FISTASIAPS5HK003",
+  "store_name": "暗影火炬城",
+  "platforms": "PS5/PS4",
+  "capacity": "20.2 GB",
+  "players_local": "1",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "英文",
+   "日文"
+  ],
+  "intro": "六年前，由动物自治的火炬城被军团入侵，抵抗战争败北后，身为前抵抗军战士的兔子雷德文一直过着隐居生活。随着他的朋友被无端逮捕，他不得已重新挥舞起巨大的金属铁拳，踏上反击的旅程。然而他并不知道，他即将被卷入由军团、抵抗军、地下鼠帮所共同交织出的复杂阴谋之中。\n\n●充满探索和挑战要素的无缝游戏地图\n\n在横版平台动作式的游戏地图中，探索十几个设计迥异的区域。无数隐藏的房间、密道、捷径，搭配战斗、解谜和平台跳跃等多种核心玩法，需要完成大大小小的挑战才能赢得奖励。\n游戏实现全程自动载入地图，摆脱画面的频繁切换，让宏大而充满细节的火炬城变得更加真实和细腻。\n\n●三种武器无缝切换的街机风战斗系统\n\n利用铁拳、钻头和电鞭三种战斗优势截然不同的武器，实现高连击、高伤害和长距离之间无缝切换，根据战场局势随时选择最适当的攻击方式，让敌人毫无招架之力。\n数十种形态各异的敌人，掌握不同的武器及战斗方式，并以精妙的配合战术向玩家提出挑战。多样化的boss各自拥有独特的战斗风格，提供绝不重复的游戏体验。\n\n●基于虚幻引擎 4 打造的柴油朋克美学\n\n游戏选取了以柴油内燃机为核心元素的柴油朋克美学，融合具有年代感的东方城市景观，呈现了火炬城独一无二的视觉标签。毛茸茸的动物和冰冷的机械士兵构成强烈反差，揭示着游戏内在戏剧冲突。\n使用虚幻引擎 4 开发的写实主义 3D 画面，搭配基于物理的渲染，将横版平台动作类型推向顶级画质表现。",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202105%2F1711%2Frdd4pMPCuRetmvAgvay0YMLu.png&w=512&output=jpg",
+  "en": "Forged in Shadow Torch",
+  "display_name": "暗影火炬城",
+  "warn": "",
+  "_cn": "暗影火炬城"
  },
  "Forged in Shadow Torch": {
   "genres": [
@@ -77,15 +170,43 @@
  },
  "奥力奥力世界（拉德版）": {
   "genres": [
-   "ARCADE",
-   "动作",
-   "体育"
+   "街机",
+   "动作战斗",
+   "关卡挑战",
+   "收集养成"
   ],
-  "players": "1人",
+  "players": "1位玩家",
   "release": "2022年2月8日",
   "publisher": "Take-Two",
-  "shots": [],
-  "_cid": "UP4581-PPSA02304_00-OLLIOLLIWORLDRAD"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202210/0712/9cLEmRvVE523aiNF4CVLVMRY.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202210/0712/NUCfpExywfKRsUnIuIrLDq3n.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202210/0712/mvc7626bJ3glTkzSVbP98AJ3.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202210/0712/64fjWpP7QE0PwskhuGq9DlA6.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202210/0712/xIPIhz7JBzQIKIYijYrnP8fN.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202210/0712/QWiFwwfkanimkv7JKjkeFXVW.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202210/0712/U3f5IzkBVx5BTYqDGcAcPDEj.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202210/0712/J0xBG7JzpRQLXhYj4PWgc8ir.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202210/0712/XJ18bEo77EDHSJ4heNOGP5wy.jpg"
+  ],
+  "_cid": "UP4581-PPSA02304_00-OLLIOLLIWORLDRAD",
+  "store_name": "奥力奥力世界Rad版 (PS4/PS5)",
+  "platforms": "PS5/PS4",
+  "capacity": "3.1 GB",
+  "players_local": "1",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文",
+   "日文"
+  ],
+  "intro": "《奥力奥力世界》扩展包通行证包括：\n• 第一个故事扩展包“虚空滑手”，包含全新的生物群落区、关卡、角色、游戏玩法和自定义解锁物品。\n• 第二个故事扩展包，包含全新的生物群落区、关卡、角色、游戏玩法和自定义解锁物品。\n• “近身遭遇战滑板板面”\n\n《奥力奥力世界》是一款充满个性的创新滑板动作平台游戏。在惟妙惟肖、活力满满的“酷乐滑板岛”翻转、腾空，以技会友，在炫技的同时与形形色色的动画角色相遇，呲桥、起跳、翻转都不在话下，还可在前往“涅槃乐园”的途中发现神秘的滑板大神。\n\n你将进入一个愉快而奇异的世界，在旅途中需要接受任务、挑战和结交新朋友。自定义你的角色外观、技巧和风格，同时你将体验多路径的可探索关卡，并为玩家提供一系列炫技机会。尽情享受《奥力奥力世界》的流畅型游戏玩法，你会惊叹此款游戏的易用性、全方位实现玩家自由。\n\n《奥力奥力世界》是备受好评的滑板游戏系列中的第三个作品，由荣获BAFTA及多项大奖肯定的Roll7团队打造。\n\n游戏主要特点：\n\n•\t欢迎来到“酷乐滑板岛”！：在郁郁葱葱的滑板乌托邦开始一段征程，这个世界充满了各式怪诞的动画人物，奇情异致的地图待你挖掘。在“充气小径”找到自己的绝杀技；或在“金塔城”大放异彩，发现新的路径，新的支线任务，酷乐奖励和经典炫技机会。更有精心挑选的IDM智能舞曲和电子乐汇编让游戏体验达到极致。\n\n•\t充分发挥玩家水平：严密的控制与精致的游戏设置相结合，炫技游乐如丝般顺滑。不是专业玩家？别担心——《奥力奥力世界》为玩家提供无限可能，新手玩家也能在街道无拘无束自由发挥，用最刁钻的方式抓板，而不必担心摔个狗吃屎。\n\n•\t自由炫技：在“酷乐滑板岛”史诗般的滑板乐园自在遨游，证明你的技能以解锁特殊奖励，可定制你的角色的外观、技巧和风格。想穿着拖鞋滑板……没问题。想穿大黄蜂外套……也好……废话不多说，安排。在《奥力奥力世界》，只有想不到，没有做不到！",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202111%2F2414%2FQcG9GUKsnpLq1HIIf45v2mud.png&w=512&output=jpg",
+  "en": "Olliolli World（Rad Edition）",
+  "display_name": "奥力奥力世界（拉德版）",
+  "warn": "",
+  "_cn": "奥力奥力世界（拉德版）"
  },
  "Olliolli World（Rad Edition）": {
   "genres": [
@@ -101,13 +222,36 @@
  },
  "暗夜长梦（PS4）": {
   "genres": [
-   "恐怖"
+   "恐怖惊悚",
+   "休闲解谜",
+   "剧情探索",
+   "奇幻魔法"
   ],
-  "players": "1人",
+  "players": "1位玩家",
   "release": "2022年3月29日",
   "publisher": "Maximum Entertainment",
-  "shots": [],
-  "_cid": "UP2080-CUSA28257_00-INNIGHTMARE00000"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202502/0821/7917e9fcca1a6ca6ae6f6bb7aef43060a1745990253e339a.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202502/0821/86c14d9d7fd5926805ba1dd1e8f9bb87be30aeecf1f15eb1.jpg"
+  ],
+  "_cid": "UP2080-CUSA28257_00-INNIGHTMARE00000",
+  "store_name": "暗夜长梦",
+  "platforms": "PS5/PS4",
+  "capacity": "9.8 GB",
+  "players_local": "1",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文",
+   "日文"
+  ],
+  "intro": "进入惊悚骇人的异想梦境\n\n我们的主角对现实世界关上了心扉，陷入深度睡眠，并在梦魇般的梦境中醒来。《In Nightmare》是一款旁白叙事型惊悚冒险游戏，融入了潜入行动和各种谜题。故事围绕着一个正在寻找最后爱的希望的小男孩而展开，主角计划通过探索自己内心的恐惧世界实行自我救赎。\n\n在经历了家庭破裂及其带来的悲痛后，一个小男孩逃离现实世界，遁入一个由他自己的记忆创造的黑暗异想世界。这使他踏上了探寻其中真相的旅程。过往在现实世界中经历的苦痛变成了令人恐惧的怪物，它们想把我们的主角困在无尽的梦魇之中。在梦境精灵的帮助下，小男孩将设法躲过敌人，解开错综复杂的谜题，欣然接受自己的恐惧和揭开真相，从而净化由他的过往记忆所创造的怪物，并最终醒来。\n\n你会克服自己的恐惧还是深陷梦魇？",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202111%2F1200%2FSJzDQq3ZENdsWG2M6Ux64S5W.png&w=512&output=jpg",
+  "en": "In Nightmare",
+  "display_name": "暗夜长梦（PS4）",
+  "warn": "",
+  "_cn": "暗夜长梦（PS4）"
  },
  "In Nightmare": {
   "genres": [
@@ -121,24 +265,75 @@
  },
  "暗夜长梦（PS5）": {
   "genres": [
-   "恐怖"
+   "恐怖惊悚",
+   "休闲解谜",
+   "剧情探索",
+   "奇幻魔法"
   ],
-  "players": "1人",
+  "players": "1位玩家",
   "release": "2022年3月29日",
   "publisher": "Maximum Entertainment",
-  "shots": [],
-  "_cid": "UP2080-CUSA28257_00-INNIGHTMARE00000"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202502/0821/7917e9fcca1a6ca6ae6f6bb7aef43060a1745990253e339a.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202502/0821/86c14d9d7fd5926805ba1dd1e8f9bb87be30aeecf1f15eb1.jpg"
+  ],
+  "_cid": "UP2080-PPSA06108_00-INNIGHTMARE00000",
+  "store_name": "暗夜长梦 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "platforms": "PS5",
+  "capacity": "9.8 GB",
+  "players_local": "1位玩家",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "intro": "进入惊悚骇人的异想梦境\n\n我们的主角对现实世界关上了心扉，陷入深度睡眠，并在梦魇般的梦境中醒来。《In Nightmare》是一款旁白叙事型惊悚冒险游戏，融入了潜入行动和各种谜题。故事围绕着一个正在寻找最后爱的希望的小男孩而展开，主角计划通过探索自己内心的恐惧世界实行自我救赎。\n\n在经历了家庭破裂及其带来的悲痛后，一个小男孩逃离现实世界，遁入一个由他自己的记忆创造的黑暗异想世界。这使他踏上了探寻其中真相的旅程。过往在现实世界中经历的苦痛变成了令人恐惧的怪物，它们想把我们的主角困在无尽的梦魇之中。在梦境精灵的帮助下，小男孩将设法躲过敌人，解开错综复杂的谜题，欣然接受自己的恐惧和揭开真相，从而净化由他的过往记忆所创造的怪物，并最终醒来。\n\n你会克服自己的恐惧还是深陷梦魇？",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202111%2F1200%2FSJzDQq3ZENdsWG2M6Ux64S5W.png&w=512&output=jpg",
+  "en": "In Nightmare",
+  "display_name": "暗夜长梦（PS5）",
+  "warn": "官方容器204，已用商店页补齐官方数据；容量待补（商店页无容量字段）",
+  "_via": "storefront",
+  "_cn": "暗夜长梦（PS5）"
  },
  "艾迪芬奇的记忆": {
   "genres": [
-   "冒险",
-   "恐怖"
+   "剧情探索",
+   "碎片化叙事",
+   "高分神作"
   ],
-  "players": "1人",
+  "players": "1位玩家",
   "release": "2022年7月29日",
   "publisher": "Annapurna Interactive",
-  "shots": [],
-  "_cid": "UP2470-PPSA06207_00-EFINCHPS5SIEA000"
+  "shots": [
+   "https://apollo2.dl.playstation.net/cdn/UP2470/CUSA06886_00/FREE_CONTENTEgIJfeoME5NP8HlfeBMo/2.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP2470/CUSA06886_00/FREE_CONTENTroCnofKa4HQuitSDIiJT/PREVIEW_SCREENSHOT4_141666.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP2470/CUSA06886_00/FREE_CONTENT4j6qFrMzg2fICEWifZsG/PREVIEW_SCREENSHOT2_141666.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP2470/CUSA06886_00/FREE_CONTENTtDElT3N4FgF2RtAn3Ima/PREVIEW_SCREENSHOT3_141666.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP2470/CUSA06886_00/FREE_CONTENTOnAEc0u02I6DhGIvktv9/PREVIEW_SCREENSHOT1_141666.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP2470/CUSA06886_00/FREE_CONTENTzDBH7Mj44vkUYHdidl4L/3.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP2470/CUSA06886_00/FREE_CONTENTuRzqk2MON3vdjedphQWs/2.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP2470/CUSA06886_00/FREE_CONTENTqO6HkJaPXIj65vBgW7qS/1.jpg"
+  ],
+  "_cid": "UP2470-PPSA06207_00-EFINCHPS5SIEA000",
+  "store_name": "What Remains of Edith Finch",
+  "platforms": "PS5/PS4",
+  "capacity": "2.9 GB",
+  "players_local": "1",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "韩文",
+   "英文",
+   "日文"
+  ],
+  "intro": "《What Remains of Edith Finch》是一系列诡异的故事，讲述了华盛顿州一个家族的种种怪谈。\n\n玩家扮演的 Edith 将进入 Finch 家族的大宅调查家族历史，试图弄明白为什么她是这个家族最后一个活着的人。在这个过程中，一个又一个故事被揭开。这些故事的年代从遥远的过去跨越至今，每揭开一个故事，玩家都会体验到一名新的家族成员在死亡当日的生活。\n\n该游戏的玩法和故事格调非常多变，每次变换一名家族成员，就变换一种风格。唯一不变的是第一人称视角，而且每个故事都以家族成员死亡收尾。\n\n最终，游戏会让玩家体验到，被我们周围广阔的未知世界所折服和震惊是怎样一种感受。\n\n本作由 Giant Sparrow 出品，该团队也是第一人称绘画游戏《The Unfinished Swan》的开发者。",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fapollo2.dl.playstation.net%2Fcdn%2FUP2470%2FCUSA06886_00%2F0CwzEsHOogTAXTYmXERXEIktPEqSed7c.png&w=512&output=jpg",
+  "en": "What Remains of Edith Finch",
+  "display_name": "艾迪芬奇的记忆",
+  "warn": "",
+  "_cn": "艾迪芬奇的记忆"
  },
  "What Remains of Edith Finch": {
   "genres": [
@@ -153,13 +348,43 @@
  },
  "暗邪西部": {
   "genres": [
-   "射击"
+   "枪战射击",
+   "剧情探索",
+   "竞技对战",
+   "收集养成"
   ],
-  "players": "1人",
+  "players": "本地1人，线上1-2人",
   "release": "2022年11月22日",
   "publisher": "Focus Entertainment",
-  "shots": [],
-  "_cid": "EP4133-PPSA02371_00-EVILWESTGAME0000"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/0810/hiGynXBdOZjWMAnQBT7VnZvX.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/0810/IrAQIN1KdCz1bz0jsx6RWHax.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/0810/l0vtt81Dv4jtZQ1aKqt6zhRY.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/0810/JWr6V5ciOtrTkLP58xSPxQx5.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/0810/wPCPuW9jPVb5KGgGaJ1N7LXr.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/0810/13sTtki25IJ8oCic6zWREX53.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/0810/wsII0q6gtuJUH0aueokgBw3i.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/0810/8G7dMpPFwoGKtzm0hPnRHLRf.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/0810/M7cFi8nzqhhxJh6ClRujrOcJ.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202206/0810/zUZpTgzgyTzE1KFleAOmL7uP.jpg"
+  ],
+  "_cid": "EP4133-PPSA02371_00-EVILWESTGAME0000",
+  "store_name": "Evil West",
+  "platforms": "PS5/PS4",
+  "capacity": "33.9 GB",
+  "players_local": "1",
+  "players_online": "1-2",
+  "languages": [
+   "中文",
+   "韩文",
+   "英文"
+  ],
+  "intro": "一股暗黑势力吞噬了美国边境。作为最高机密吸血鬼狩猎机构的仅存特工，你是人类与那些黑暗邪恶怪物之间的最后一道防线。挺身而出，成为‘西大荒超级英雄’，根除吸血鬼的威胁，拯救美国！\n\n在血腥激烈对战中，无所不用其极，利用电闪充能护手和装备大杀四方。以孤狼模式或和朋友合作，杀死嗜血怪物。在以叙事形式拉开的游戏旅程中，探索并对战恶魔，同时升级你的武器和狩猎工具。解锁新技能，进化杀怪本领；打造专属游戏风格，击败可怖的鬼怪。\n\n• 单打独斗或组团奇袭，血腥对战\n• 构架于怪异的西部蛮荒世界，重新诠释古老神话\n• 获取新技能、升级武器和工具以进化杀怪本领\n• 在叙事形式拉开的旅程中，探索并对战恶魔，拯救美国",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202210%2F2510%2FxG28HIMhPKGEtaIN4KqrrJ4S.png&w=512&output=jpg",
+  "en": "Evil West",
+  "display_name": "暗邪西部",
+  "warn": "",
+  "_cn": "暗邪西部"
  },
  "Evil West": {
   "genres": [
@@ -173,13 +398,35 @@
  },
  "阿斯泰利克斯历险记：幻想新国度2": {
   "genres": [
-   "动作"
+   "动作战斗",
+   "沙盒建造",
+   "任务战役"
   ],
-  "players": "",
+  "players": "1位玩家",
   "release": "2018年11月30日",
   "publisher": "H2 Interactive Co., Ltd.",
-  "shots": [],
-  "_cid": "EP4295-CUSA13367_00-ASIARIXXXL2EUR00"
+  "shots": [
+   "https://apollo2.dl.playstation.net/cdn/EP4295/CUSA13367_00/FREE_CONTENTq00ilu1X4UM2IpRvBRVp/1.jpg",
+   "https://apollo2.dl.playstation.net/cdn/EP4295/CUSA13367_00/FREE_CONTENTKjOrmTkZ3wRD5OEa05zl/2.jpg",
+   "https://apollo2.dl.playstation.net/cdn/EP4295/CUSA13367_00/FREE_CONTENTwCc1ZJTitBd3GmU2GvBO/3.jpg"
+  ],
+  "_cid": "EP4295-CUSA13367_00-ASIARIXXXL2EUR00",
+  "store_name": "Asterix ＆ Obelix XXL 2",
+  "platforms": "PS5/PS4",
+  "capacity": "3.5 GB",
+  "players_local": "1",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "韩文",
+   "英文"
+  ],
+  "intro": "Asterix & Obelix10您钱发售主机和PC游戏已经十多年了，现在它们又回来了，而且比以前的游戏变成更健康！Asterix＆Obelix XXL 2是一个出色的混合行动和冒险游戏，全年龄都能享受胜利的组合喜剧和游戏的争吵。\n但是 Getafix 哪里去了？长胡子的 druid 在为Julius Caesar出卖自己的人民后失踪了！高卢村在喧嚣中！他们必须查明真相！随时准备战斗， Asterix和Obelix被派往罗马的任务由他们的首席Vitalstatistix。在那里，他们发现了一个新的游乐园 Las Vegum ，由著名的罗马皇帝建造。目的是什么？Getafix藏什么？",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fapollo2.dl.playstation.net%2Fcdn%2FEP4295%2FCUSA13367_00%2FZi3lvo4VApTN6TVqiogupPtFvJBbMRftjmoBKICDUC6d3Zs1iHXjw9tbmSXKzzhG.png&w=512&output=jpg",
+  "en": "Asterix ＆ Obelix：XXL 2",
+  "display_name": "阿斯泰利克斯历险记：幻想新国度2",
+  "warn": "",
+  "_cn": "阿斯泰利克斯历险记：幻想新国度2"
  },
  "Asterix ＆ Obelix：XXL 2": {
   "genres": [
@@ -1771,14 +2018,36 @@
  },
  "重生之旅：平凡故事（决定版）": {
   "genres": [
-   "动作",
-   "冒险"
+   "动作冒险",
+   "解谜",
+   "平台跳跃",
+   "剧情探索"
   ],
-  "players": "2人",
+  "players": "本地1-2人",
   "release": "2023年3月16日",
   "publisher": "Untold Tales S.A.",
-  "shots": [],
-  "_cid": "EP2911-CUSA12772_00-0713248542971282"
+  "shots": [
+   "https://vulcan.dl.playstation.net/img/cfn/11307jZiHV9RTy9R3VXRmLgiyy2NqjTO2Q_R8xSAsRCH59ugSFEwLlYmA0kHz_vSB1IY0S8Bi9Vvaft_nlAeYH1UbZcCGVSf.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307h0tosMZUh1ubyllcfST30W60IKeytugswsAhm5p3OzEMs2UAb_hfsNIgZ548CH4CW_xbIYESKmfOpd-ij2cKjU1Ukhk.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307-dHN2vSxtgamz0wbZGT7Fa5aNJ9SC5VVvK0678MufgsS1Fq7YtdfkGvY9sgaTxewemMt10p8N_IkRMj5qYdQ586843a.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307h2r8bzWSURexaHq_0fhWoT6hdImqX6cV8hepXK7HRVYSZyt39nlM-3uWFLOACUM7z--Tkg4fPyZ_kRCCMbozIcPXUBb.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307DwLqDy-o-BZRvdllQbR4pG-dd1FSu_eHg95SK5pSHpMQdTUaNiQPNa8FvrOp4D7V5yOpYCRs2le941u_889Im8_SkaA.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307OdVJOGblYUwwsNns30X9DcECO6185d3O4DeevyMP7BAW5SEJr84TJyFX5EHhxLwb9TJkWqUVd5FLVqfMsparFIF8hDP.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307zOLhbUKrHSDXNDwP2sqPnJIwNCVrEUh3bd4DWPFWtKwyOWFp4YGG37pQ6q2m2SLcNETko2FHvU3CcZxmSUmIrsAISrp.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307G1gEcA7CZnTd4Nx3ydzLqo5pFUmK46khhw7oPFlKkPQ0SSoWQ5TSW5eILNCZx9Tc47qxm8uW88QgNd02sgbDnsMLf2p.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307opd1x9yCq-dnFy8d7Sqgz4mHIdEvMhAO3CR06ckwgT4DNcgh_SGFWm60v5ym_aJEpHWVyCKAbl4_S5BaIRZmoAeKzM5.jpg"
+  ],
+  "_cid": "EP2911-CUSA12772_00-0713248542971282",
+  "capacity": "5.1 GB",
+  "languages": [
+   "中文",
+   "英文",
+   "日文",
+   "韩文"
+  ],
+  "intro": "Arise 是一段穿越两个人苦乐参半的生活的旅程，记忆在其中栩栩如生，时间随心所欲。\n\n你的爱与失落的冒险\n踏上情绪化的过山车之旅，穿越充满爱与失落感的不断变化的记忆景观。\n\n随着时间的推移掌握\n控制时间的流动，改变你周围的环境，从几秒钟的变化到整个季节的变化。\n\n灵感艺术风格\n进入由 Piccolo Studio 的才华横溢的艺术家带来的美好回忆和感受世界。\n\n一起玩\n邀请第二位玩家来帮助您控制时间并一起享受旅程。",
+  "en": "Arise：A Simple Story（Definitive Edition）",
+  "platforms": "PS5/PS4"
  },
  "Arise：A Simple Story（Definitive Edition）": {
   "genres": [
@@ -2068,12 +2337,26 @@
   "_cid": "UP1665-CUSA08580_00-ASIA000000000000"
  },
  "超级浣熊羊": {
-  "genres": [],
+  "genres": [
+   "竞速派对",
+   "关卡建造",
+   "搞笑物理",
+   "派对游戏"
+  ],
   "players": "",
-  "release": "",
+  "release": "2026年1月28日",
   "publisher": "",
   "shots": [],
-  "_cid": "HP1782-PPSA29645_00-0161391443657215"
+  "_cid": "HP1782-PPSA29645_00-0161391443657215",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "intro": "在和朋友们一起打造的混乱赛道上，挑战危险的陷阱和障碍物，尽情施展炫酷特技，赢得比赛！\n\nUltimate Sheep Raccoon 是一款自行车竞速派对游戏！您和朋友可以一起建造充满坡道、障碍物和陷阱的赛道。避开危险，表演疯狂特技，使用强化道具取得领先。支持最多 8 名玩家在本地、线上或跨平台共同竞速，乐趣无穷！\n\n骑行冲向胜利\n骑上自行车，冲向终点！简单直观的操作让每个人都能轻松上手。\n\n强化道具\n使用强化道具取得领先！用喷气背包飞向天空，用降落伞安全避开障碍，用弹跳地雷炸飞对手，或用黏黏的蜂蜜陷阱让对手减速！\n\n障碍物和陷阱\n与朋友一起建造赛道，添加轨道、坡道、弹跳板、加速区域和其他障碍物。还可以增加摆锤、旋转装置、尖刺和发射激光的电视等来提高难度！\n\n炫酷特技\n施展特技，表演后空翻和翘轮技巧，获取额外积分！\n\n经典角色\n小鸡、小马、绵羊和浣熊从 《超级鸡马》中回归！全新的农场好友也加入到冒险中。\n\n支持 8 名玩家\n因为 4 人游戏已经不够热闹了！\n\n本地、线上与跨平台多人模式\n支持所有平台，随时与朋友一起畅玩！\n\n自定义关卡编辑器与关卡列表\n制作并分享您设计的独特关卡！创建挑战关卡，与玩家竞争最快通关时间，也可以组合关卡制作“战役模式”般的体验。",
+  "en": "Ultimate Sheep Raccoon",
+  "platforms": "PS5"
  },
  "Ultimate Sheep Raccoon": {
   "genres": [],
@@ -3635,13 +3918,32 @@
  },
  "恶魔之魂（重制版）": {
   "genres": [
-   "动作"
+   "动作角色扮演",
+   "类魂挑战",
+   "奇幻魔法"
   ],
-  "players": "1人",
+  "players": "1位玩家",
   "release": "2020年11月12日",
   "publisher": "Sony Interactive Entertainment",
-  "shots": [],
-  "_cid": "HP9000-PPSA01340_00-DEMONSSOULSDX000"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202010/0821/OtTU8V9BfVqiy4jp0QhHp8ad.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202010/0821/NE92EYZjGR8hU8ZcNDgEYEX1.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202010/0821/lK4tpxDNLfOxHly1yE5ceKNt.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202010/0821/s1gIFpXqw8t18gzshEHkv8r2.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202010/0821/qZUNNzWOxkdhay3pp6HzRSQ3.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202010/0821/p3BNVCDOeLpb3bWAptk2Hi2t.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202010/0821/sYFQ266gczqGyso9d8PjJ1Al.jpg"
+  ],
+  "_cid": "HP9000-PPSA01340_00-DEMONSSOULSDX000",
+  "capacity": "53.8 GB",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文"
+  ],
+  "intro": "PlayStation Studios 与 Bluepoint Games 联手推出 PlayStation 经典游戏 Demon's Souls 的重制版。经过全面的重新设计和精妙的改动，新世代玩家们可以重新体验那片被浓雾笼罩的黑暗幻想之地的重重恐惧。曾经历试炼与磨难的玩家，亦可在惊人的画面质量与完美的视觉效果下，再次向黑暗发起挑战。\n\n源于对力量的渴求，柏雷塔尼亚的阿兰特十二世国王施展古老的灵魂之术，唤醒了创世之初即已存在的恶魔——古兽。\n随着古兽的降临，一片无色浓雾席卷了这片土地。恶魔们随之而来，以人类的灵魂为食。被夺去灵魂之人，也失去了理智，仅剩下对理智尚存者的攻击欲。\n\n如今，柏雷塔尼亚与外界的联系已经断绝。那些胆敢踏入浓雾，企图拯救柏雷塔尼亚的骑士们，没有一个平安归来。作为敢于踏入浓雾的孤胆勇士，你必须面对最艰难的挑战，来赢得“弑魔者”的称号，并让古兽再次沉睡。",
+  "en": "Demon's Souls",
+  "platforms": "PS5"
  },
  "Demon's Souls": {
   "genres": [
@@ -3716,5 +4018,178 @@
   "publisher": "FABRICE BRETON",
   "shots": [],
   "_cid": "EP1762-PPSA32853_00-BROKTBRAWLBARPS5"
+ },
+ "漫威金刚狼": {
+  "genres": [
+   "热血动作",
+   "超级英雄",
+   "剧情冒险",
+   "漫画改编"
+  ],
+  "players": "1",
+  "release": "2026-09-15",
+  "languages": [
+   "中文",
+   "泰文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "intro": "此版本包含：\n•\t《漫威金刚狼》\n\n《漫威金刚狼》是由《漫威蜘蛛侠》系列开发商Insomniac Games打造的热血动作冒险游戏。作品与Marvel Games强强联手，呈现一段围绕传奇漫画角色金刚狼展开的全新原创故事。\n\n罗根以为自己已经与“金刚狼”这个身份告别，可他的过去仍不肯放过他。\n\n三年前，他离开了变种人特别行动X小队。如今，在X小队最黑暗的时刻，金刚狼归队。\n\n一心奉行人类至上理念的玻利瓦尔·特拉斯克开始大肆绑架变种人。能救他们的，只有金刚狼。\n\n为了变种人的未来，金刚狼必须与世界各地的变种人并肩作战，足迹遍及加拿大、日本，以及漫威宇宙中的岛国马德里坡。\n\n人类与变种人的命运悬于一线。罗根知道，这个世界需要一位英雄。可惜他们只能将就一下，指望金刚狼了。\n\n化身金刚狼\n释放金刚狼炸裂凶狠的战斗本能，以锋利无比的艾德曼合金利爪撕碎敌人，用迅猛流畅的连击突破不可能的绝境。借助独特且可切换的技能与异能，迎战玻利瓦尔·特拉斯克手下的雇佣兵掠夺者，以及红色欧米伽这类粗暴蛮横的经典反派。追踪、潜伏，或是以绝对力量碾碎他们！保持攻势，积累怒气，把敌人撕成碎片。因为金刚狼做事从来不讲温柔。\n\n全新原创故事，情绪张力十足\n在粗粝外表与暴躁脾气之下，金刚狼还是一个会为了更大使命而战的男人。变种人正遭遇灭顶之灾，而能为他们杀出一线生机的，只有他。直面黑暗过往，体验一段围绕身份、忠诚与自我挣扎展开的动人故事，追寻金刚狼失落记忆背后的真相。\n\n横跨全球的高燃旅程\n从冰封的加拿大荒野，到东京狭窄的街巷，再到岛国马德里坡上下城区。金刚狼挥舞利爪，杀穿一处处细节丰富的战场。在这场横跨全球、关乎变种人生死存亡的战斗中，见证金刚狼一路上的震撼时刻。",
+  "en": "Marvel Wolverine",
+  "platforms": "PS5",
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/9b387e37047248ce953f92db711dc8badcb838e6cc9f8aca.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/b0026f6649e9845df11747b6804548f572ba90a26f63889f.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/4e645de64784f14d749215a3c479e31f05ce59b1c5d9f831.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/a62998669c21c8250ae861eb1b048297e192b4acd9cadc83.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/1604dd48ca1a2c5592092bb5de969cd3d876827688708397.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/72ffe47f5552fc77ca4b227fbb46c041fdac3d91e6636d2c.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/7d60c6dcb3f95910786bca55c54147edc80142a3c39d99f8.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/19edb5f9d28d2b0038a71313347a8f98d7f341723e125461.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/3778048484ad27095e8aa04be71254582d86b153ceadc314.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/b3010de3b9a5b23818bc3b30289afb3481ce4b769fb2a855.jpg"
+  ]
+ },
+ "蔚蓝反射 少女们的奇迹": {
+  "genres": [
+   "角色扮演"
+  ],
+  "players": "1",
+  "release": "2026-07-30",
+  "languages": [
+   "中文",
+   "日文",
+   "英文"
+  ],
+  "intro": "我们的泪水，让世界染上了一点蓝——\n\n关于 BLUE REFLECTION\n以少女们细腻情感与深厚情谊为主线的《BLUE REFLECTION》系列，由岸田梅尔担纲角色设计与监修，并衍生至多种媒体平台。\n如今，汇聚所有少女情感的系列四部作品尽数收录于此！\n\n本作搭载了多种便利功能，相较原版大幅优化游玩体验。即使是新玩家也能轻松理解游戏世界观，老玩家亦能进一步加深对“BLUE REFLECTION”世界的理解。\n\nBLUE REFLECTION 幻舞少女之剑\n系列的第一部作品，讲述一名受伤少女在与他人相遇中收获情谊，以魔法少女“反像者”的力量对抗世界威胁的单机游戏。\n\n本作中，水波光影等世界观的视觉表现全面升级，贴图纹理高清重制。同时新增自动存档等原版没有的多项实用功能。\n\nBLUE REFLECTION: 澪\n讲述各怀心事的少女们，在摩擦与碰撞中依然选择相信彼此，最终寻得光明的动画故事。\n\n本作中动画剧情经过重新编排，主要角色以3D模型呈现！\n两名少女穿梭于名为“可梦”的世界，在接触少女们情感的同时，一步步走向企图改变世界的少女。\n\n新增可深入了解《澪》的短篇故事，以及描绘系列作品之间关联的序章与终章。\n\nBLUE REFLECTION: 灿\n讲述在逐步走向终结的世界里，少女们依然相信希望、编织未来的手机/PC游戏。\n\n《灿》的故事以全新形态在家用机上重现！\n玩家可在校园中移动并与少女们交流互动。战斗部分则沿用《帝》的系统，还原《灿》中令人印象深刻的战斗场面！\n本作还全新创作了24话的角色剧情，并收录描绘系列作品之间关联的序章与终章。\n\nBLUE REFLECTION: 帝\n讲述失去记忆的少女们在直面内心的过程中寻回记忆，逐步逼近世界真相的单机游戏。\n\n本作中来自《灿》《澪》的八位少女加入战斗阵容！\n不仅如此，新增角色以及夕月、来梦还可以在拍照模式中使用！\n本作还搭载了剧情快进等多项便利功能，带来更加流畅的游戏体验。\n\nREFERENCE\n本作搭载能让玩家更深入了解“BLUE REFLECTION”世界的数据库“REFERENCE”！\n世界图谱按时间顺序清晰呈现，还可以查阅系列全作的人物关系图。\n玩家能更深入地理解角色的背景故事和系列整体的世界观，进一步感受“BLUE REFLECTION”的魅力！\n此外新增“GALLERY”功能，可以欣赏岸田梅尔的插画。\n\n※图片为开发中版本，与实际游戏内容可能存在差异。",
+  "en": "Blue Reflection Quartet",
+  "platforms": "PS5"
+ },
+ "诡野西部（决定版）": {
+  "genres": [
+   "动作角色扮演",
+   "沙盒建造",
+   "剧情探索",
+   "奇幻魔法"
+  ],
+  "players": "1位玩家",
+  "release": "2023年5月9日",
+  "capacity": "4.6 GB",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文",
+   "日文"
+  ],
+  "intro": "本作开发团队曾共同创作了《耻辱》(Dishonored)与《掠食》(Prey)两款知名游戏，如今又为大家带来一款动作角色冒险（ARPG）游戏，让玩家在经历不寻常的主角英雄命运的过程中，一步步揭示诡野西部的神秘面纱。\n\n来探索诡野西部这部重构现实的暗黑幻想史诗吧，在这里，执法人员和西部枪侠与各类奇幻生物同处西部边境。玩家要历经一系列非典型英雄主角的原创故事，在这片无情土地上做的每一个决定都会变成你的传奇的注脚。每段经历都独一无二，根据你的一举一动量身定制——每个故事都伴随着超高风险，没有哪个选择能掉以轻心，因为这世界会对每个选项做出反应。你可结伴而行，亦可孤身冒险，在诡野西部的异世领域中，每段故事都是你独有的传奇。\n\n诡野的西部：这是对狂野西部世界的暗黑幻想重构，在这里执法人员和西部枪侠与各类奇幻生物同处西部边境，人人都有自己遵守的规则和独特的行事动机。\n\n交织的命运：来通过一系列主角的原创故事解开这个世界的奥秘吧，各个人物的故事环环相扣，汇聚于华丽的最终章。\n\n独特的体验：每一次游玩都是独特的体验，因为游戏会根据玩家的行动和决定变更故事的发展，打造完美的剧情弧光。\n\n沉浸的模拟：《诡野西部》是一款模拟沙盒游戏，允许玩家用各种风格游玩，这个世界中的角色、帮派甚至各个地点都会对玩家的决定做出反应。\n\n极高的风险：每走一步，玩家都面临着极为严重的后果，不可挽回——其中也包括死亡。",
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202209/3023/CwHUDgv1JZHtkeBkaYQ7FD5g.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202209/3023/LjYfRpgBNHVSFNQxMFaIL6TO.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202209/3023/fLpMUlAyPgXwPdnvOAa7eIiY.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202209/3023/xFjqsIGLfuQ7D4Sz23wlZtfW.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202209/3023/TEzzqFfbVJN57TGxlynkl4dq.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202209/3023/i1gbiHeaN7D7uWPOFCZSwRZS.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202209/3023/empd1Y1LTm6h4A1z7yrNDxeW.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202209/3023/JWMti9gA38aVfSDwwFy9mRnS.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202209/3023/28gm6JBkMt7cKrrIsxr5f8xD.jpg"
+  ],
+  "en": "Weird West（Definitive Edition）",
+  "platforms": "PS5/PS4"
+ },
+ "天命奇御2": {
+  "release": "2024年7月4日",
+  "languages": [
+   "中文",
+   "英文"
+  ],
+  "intro": "《天命奇御二》游戏内容描写了不羁少年诸葛羽成长的故事。诸葛羽自小双亲早逝，长大后得知双亲对抗权臣亡故的事蹟后，便早早立下志向要让陷害双亲之人负起应得之罪，并继承双亲剷除贪官、奸臣的遗志。\n\n• 墨染判官笔 仗剑少年行\n在游戏中玩家将扮演诸葛羽，体验扣人心弦的主线剧情和众多引人入胜的支线任务同时，更需倚靠你悉心搜集线索，寻找出各种蛛丝马迹，通过缜密的思考推理出关键线索，破解一桩桩情节扑朔迷离的奇案。并于最终时刻与各路人马互动推敲辩论，揭开案件谜底，找出真正的幕后黑手。\n除此之外，在江湖历险观察探索，善用「出示」、「运劲」、「点燃」、「破坏」，将可挖掘出大量的传闻任务，不同的方式都可能衍生出的不同结果，这些结果将带给你脑洞大开的无限惊奇，更加激发你隐匿的冒险精神与童趣之心。\n• 招式任意搭 武学创巅峰\n高灵活高自由度的武学与养成模式，20余种心法，结合八卦加点养成独特天赋线，上百种招式技能自由搭配与切换，延伸出数千种武林绝学玩法，开拓出属于你的武学巅峰之路！即时战斗机制融合自由配招与武学套路切换，让你在面对敌人时有了更多的战术选择，酷炫的招式和良好的打击手感带来酣畅淋漓，爽快十足的战斗体验！\n• 恣意江湖游 快意解恩仇\n高自由度的世界赋予更多探索的可能性，无接缝的地图设计，过场载入不费时，在开放的武侠世界自在遨游、自由探索、恣意解恩仇。行经古色古香的亭臺楼阁，人声鼎沸的市井小巷，景色壮丽的山河湖海，结交江湖豪杰红颜知己，勾勒出一个宏大自由的武侠世界。行走江湖时，还可以在野外钓鱼，同棋手对弈围棋，或是在炉火旁烹饪菜肴。甚至于还可以向商队购买建筑，过上安逸舒适的田园收租生活。",
+  "en": "Fate Seeker 2",
+  "platforms": "PS5",
+  "genres": [
+   "推理冒险",
+   "武侠动作",
+   "解谜探索",
+   "剧情驱动"
+  ],
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202404/2203/bb95bfdd5d5bd87d135987a3d472d0d59279876892076b49.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202404/2203/c25ea342de7caa8522da8eb1639e1fe6c586f265ebb3c435.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202404/2203/2fd4d9dbd4940a8cf79ebe6c43283eb4f80a2cce3170f82d.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202404/2203/a75442f97b5bdc654e9d7ebe069cb6acb87f4b75df1352f7.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202404/2203/1223820c435216d47ce46319fe9aadea7b68f246c17d2fa1.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202404/2203/49f4f53359361fb39efa600c95ce36e2e8dbeb902aec5b77.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202404/2203/89608b37389dbbfc0f706524fb7f9a1bf10b47e25bd8d53c.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202404/2203/d5efeaf5f6a33497940cc6365527c2b294db0e3329691a92.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202404/2203/cb21d76dc9819f84bfc8ecb8a915fd4f46dcb61106cd4eed.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202404/2203/cdf6e63594d4479d5f37286ad6ebde6919f47e0d81d1ae75.jpg"
+  ],
+  "players": "1"
+ },
+ "长日将尽": {
+  "genres": [
+   "动作"
+  ],
+  "players": "1",
+  "release": "2026-08-13",
+  "languages": [
+   "中文",
+   "日文",
+   "英文"
+  ],
+  "intro": "《长日将尽》仿佛一封写给经典3D动作平台游戏的情书。你将冲破时间的枷锁，通过跳跃、摆荡、劈砍等各种操作，在一个奇幻壮美的世界展开冒险。游戏主人公齐里安必须在机械助手“咕咕”的陪伴下，从一座使大地陷入永恒黑夜的神秘钟塔中拯救他的妹妹。\n\n在惊险刺激的平台跳跃与快节奏战斗的无缝衔接中，练就一身本领。通过跳跃、冲刺、抓钩和滑翔等动作，迎接扣人心弦的挑战，重新唤醒经典动作平台游戏的魔力。",
+  "en": "Duskfade",
+  "platforms": "PS5"
+ },
+ "洛克人 遗产收藏版2": {
+  "genres": [
+   "动作射击",
+   "关卡挑战",
+   "像素复古"
+  ],
+  "players": "1位玩家",
+  "release": "2017年8月9日",
+  "capacity": "5.0 GB",
+  "languages": [
+   "中文"
+  ],
+  "intro": "Mega Man Legacy Collection 第2弹登场！除了不失原版本色彩而重制的Mega Man 7至Mega Man 10外，此游戏加入更多的新增内容，包括限时考验及挑战、音乐播放器及内含大量的罕有插图的画廊。而原本为Mega Man 9、10的DLC内容将以追加模式呈现，此游戏配备了一个选项，如果玩家觉得游戏太因难，可以把敌人对你的伤害减半。于原版本因难度而放弃的关卡，玩家可重新体验。",
+  "shots": [
+   "https://apollo2.dl.playstation.net/cdn/UP0102/CUSA08268_00/FREE_CONTENTClBC1a6SYOOiukKmhCig/1.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP0102/CUSA08268_00/FREE_CONTENT5LVJiJnPVmj5vWsbVjXj/2.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP0102/CUSA08268_00/FREE_CONTENTidcIjrAjW0TuboMVaE1Q/3.jpg"
+  ],
+  "en": "Mega Man Legacy Collection 2",
+  "platforms": "PS5/PS4"
+ },
+ "虐杀原形1": {
+  "genres": [
+   "跑酷动作",
+   "开放世界",
+   "恐怖惊悚",
+   "科幻未来"
+  ],
+  "players": "1位玩家",
+  "release": "2015年8月11日",
+  "capacity": "7.7 GB",
+  "languages": [
+   "中文",
+   "英文"
+  ],
+  "intro": "你是“原型”亚历克斯·墨瑟，一个失去记忆、却拥有惊人变形能力的男人。你正循着将自己创造出来的那场阴谋的核心追踪而去，要让幕后黑手付出代价。\n\n极速致命的变形战斗：根据眼前局势重组你的躯体。从利爪到利刃，从巨锤到长鞭，为每种状况选择最合适的武器。\n\n夸张的机动与敏捷：从一栋栋楼宇间流畅跃迁，攀爬墙壁，弹离车辆与你路径上的一切。自适应跑酷让你在纽约市的开放世界环境中自由穿行。\n\n独一无二的伪装能力：随时吞噬任何人，夺取他们的外貌，继承他们的记忆与特殊能力。\n\n深刻而充满阴谋的剧情：当你醒来时已不记得过去……只剩神秘的力量，以及和爱达荷州一座小镇的隐秘联系。深入探究你的身世之谜、力量的真正本质，以及你在那场延续四十年的阴谋中所扮演的角色。",
+  "shots": [
+   "https://apollo2.dl.playstation.net/cdn/UP0002/CUSA01654_00/FREE_CONTENTYdsmRcxY34haAipiN2Vs/PREVIEW_SCREENSHOT1_88723.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP0002/CUSA01654_00/FREE_CONTENTnGyQEDlCBK6UAxLNO6h1/PREVIEW_SCREENSHOT2_88723.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP0002/CUSA01654_00/FREE_CONTENTy2HIf4JsERdSULwPt0Ur/PREVIEW_SCREENSHOT3_88723.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP0002/CUSA01654_00/FREE_CONTENTgCzOQbfWBH7flFy3Nobi/PREVIEW_SCREENSHOT4_88723.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP0002/CUSA01654_00/FREE_CONTENTwqjKqMNIZBDB0FpqsMK0/PREVIEW_SCREENSHOT5_88723.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP0002/CUSA01654_00/FREE_CONTENTC6Sj8CrGc3jJY8OYEOX6/PREVIEW_SCREENSHOT6_88723.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP0002/CUSA01654_00/FREE_CONTENTgGdlr5hJOmhHOgwibyD1/PREVIEW_SCREENSHOT7_88723.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP0002/CUSA01654_00/FREE_CONTENTGq3RJN06OuHht50Vtt3Q/PREVIEW_SCREENSHOT8_88723.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP0002/CUSA01654_00/FREE_CONTENTdEPmHDiieSqmc6iT9UBF/PREVIEW_SCREENSHOT9_88723.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP0002/CUSA01654_00/FREE_CONTENTiw91qQuyg2dO41hk0KfQ/PREVIEW_SCREENSHOT10_88723.jpg"
+  ],
+  "en": "Prototype 1",
+  "platforms": "PS5/PS4"
  }
 }
