@@ -918,7 +918,7 @@ footer b{color:#4b5563}
 .gt-dintro{font-size:13px;color:#3f4756;margin-top:12px;word-break:break-word}
 .gt-dintro .gt-dp{margin:0 0 13px;line-height:1.72}
 .gt-dintro .gt-dp:last-child{margin-bottom:0}
-.gt-dintro .gt-dsub{display:block;font-weight:700;color:#1f2937;font-size:13px;margin:12px 0 5px;letter-spacing:.2px}
+.gt-dintro .gt-dsub{display:block;font-weight:700;color:#1f2937;font-size:13px;margin:12px 0 0;letter-spacing:.2px}
 .gt-dintro.gt-dempty{color:#9aa3af}
 .gt-dgal{position:relative;margin-top:6px;padding-top:2px}
 .gt-dgal .gt-dwrap{display:flex;gap:8px;overflow-x:auto;padding:10px 18px 4px;margin:0;
@@ -2297,6 +2297,8 @@ function gtIntroSub(t){
   if(!t)return false;
   /* 列表项（• / - / * / ・ / 制表符开头）一律不当标题（含 •/・ 短行），店主2026-11-01修正 */
   if(/^[•\-*・\t]/.test(t))return false;
+  /* 【店主2026-11-01】行首 ▽▼▷►▶◆◇■□ 为分段符号 → 一律视为分段标题加粗，不限长度、不因句号收尾降级 */
+  if(/^[▽▼▷►▶◆◇■□※]/.test(t))return true;
   /* 方括号标题（如【关于 BLUE REFLECTION】）—— 不限长度 */
   if(t.charAt(0)==="【"||t.charAt(0)==="[")return true;
   /* 引述短句：行尾 ：/ : */
@@ -2325,7 +2327,7 @@ function gtIntroSub(t){
   return false;
 }
 /* 简介逐行渲染：行内「短标题：解释」仅标题加粗，解释保持正常（店主 2026-11-01 裁定） */
-function gtIntroEmit(p,t){
+function gtIntroEmit(p,t,e){
   /* 仅当「≤10字短标题 + ：/ : + 解释」在同一行时，把标题部分加粗，解释作普通文本 */
   var ci=t.indexOf("："), ci2=t.indexOf(":"), cpos;
   if(ci<0)cpos=ci2; else if(ci2<0)cpos=ci; else cpos=Math.min(ci,ci2);
@@ -2340,7 +2342,15 @@ function gtIntroEmit(p,t){
       return;
     }
   }
-  if(gtIntroSub(t)){var b2=document.createElement("b");b2.className="gt-dsub";b2.textContent=t;p.appendChild(b2);}
+  if(e&&e.intro_nobold&&e.intro_nobold.indexOf(t)>=0){p.appendChild(document.createTextNode(t));return;}
+  /* 【店主2026-11-01】逐商品强制加粗行（intro_boldlines：整行精确匹配） */
+  if(e&&e.intro_boldlines&&e.intro_boldlines.indexOf(t)>=0){
+    var b4=document.createElement("b");b4.className="gt-dsub";b4.textContent=t;p.appendChild(b4);return;
+  }
+  if(gtIntroSub(t)){
+    var b2=document.createElement("b");b2.className="gt-dsub";
+    b2.textContent=t;p.appendChild(b2);
+  }
   else p.appendChild(document.createTextNode(t));
 }
 /* 游玩人数类标签：与「人数」字段重复，渲染时一律剔除（店主 2026-11-01 裁定） */
@@ -2369,6 +2379,13 @@ function gtFmtPlayers(p){
   var t=String(p).trim();
   if(/^\d+(\-\d+)?$/.test(t))return t==="1"?"1位玩家":"本地"+t+"人";
   return p;
+}
+/* 发售日期统一为「年月日」展示（店主 2026-11-01 规则：所有商品均用年月日，禁用 "-" 代替） */
+function gtNormDate(s){
+  if(!s)return s;
+  var m=/^(\d{4})[-/.年](\d{1,2})[-/.月](\d{1,2})/.exec(s);
+  if(m)return m[1]+"年"+parseInt(m[2],10)+"月"+parseInt(m[3],10)+"日";
+  return s;
 }
 function gtRenderDetail(card,g,cov,e){
   card.innerHTML="";
@@ -2399,7 +2416,7 @@ function gtRenderDetail(card,g,cov,e){
     ["人数", gtFmtPlayers(e.players)],
     ["容量", e.capacity||"—"],
     ["语言", (e.languages&&e.languages.length)?gtLangCNFirst(e.languages).join(" / "):"—"],
-    ["发售", e.release||g.date||"—"],
+    ["发售", gtNormDate(e.release||g.date||"")],
     ["平台", e.platforms||((g.hs||[]).join(" "))||"—"]
   ];
   rows.forEach(function(r){
@@ -2415,10 +2432,26 @@ function gtRenderDetail(card,g,cov,e){
       var blk=blks[bi].trim();if(!blk)continue;
       var p=document.createElement("p");p.className="gt-dp";
       var lns=blk.split("\n");
-      for(var li=0;li<lns.length;li++){
-        var t=lns[li].trim();if(!t)continue;
-        if(li)p.appendChild(document.createElement("br"));
-        gtIntroEmit(p,t);
+      if(e.intro_bold1 && bi===0){
+        var bb=document.createElement("b");bb.className="gt-dsub";
+        for(var li3=0;li3<lns.length;li3++){var t3=lns[li3].trim();if(!t3)continue;if(li3)bb.appendChild(document.createElement("br"));bb.appendChild(document.createTextNode(t3));}
+        p.appendChild(bb);
+      }else{
+        for(var li=0;li<lns.length;li++){
+          var t=lns[li].trim();if(!t)continue;
+          if(li)p.appendChild(document.createElement("br"));
+          if(e.intro_plain)p.appendChild(document.createTextNode(t));
+          else gtIntroEmit(p,t,e);
+        }
+      }
+      /* 分段加粗标题为块级：去掉紧邻的 <br>（否则会多出一个空行，且间隔落到标题下方）；
+         间距统一由 .gt-dsub 的 margin-top 提供 = 间隔在标题「上方」（店主2026-11-01裁定） */
+      var subsB=p.querySelectorAll(".gt-dsub");
+      for(var q=0;q<subsB.length;q++){
+        var elB=subsB[q],pv=elB.previousSibling;
+        while(pv&&pv.nodeName==="BR"){var pv2=pv.previousSibling;p.removeChild(pv);pv=pv2;}
+        var nxB=elB.nextSibling;
+        while(nxB&&nxB.nodeName==="BR"){var nx2=nxB.nextSibling;p.removeChild(nxB);nxB=nx2;}
       }
       it.appendChild(p);
     }
@@ -2949,7 +2982,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-11-01T14:50:16+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-11-01T16:21:54+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-autorefresh">
 /* 改157f-begin: 版本自动刷新健壮版 —— 修复改143「空刷一次即锁死」缺陷。
    部署时注入 __GT_PAGE_VER, 与 ver.json(no-store) 对比: 不一致才刷新,
