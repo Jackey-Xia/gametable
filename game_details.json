@@ -1446,15 +1446,54 @@
   "_cid": "EP8923-CUSA17658_00-EDNABUNDLEPS4EU0"
  },
  "暗黑破坏神2：浴火重生（重制版）": {
+  "_cid": "UP0002-PPSA02443_00-D2RBUNDLE0000000",
+  "store_name": "《暗黑破坏神2》重制版 - 终极包",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "暗黑破坏神2：浴火重生（重制版）",
+  "display_name": "暗黑破坏神2：浴火重生（重制版）",
+  "en": "Diablo Ⅱ",
   "genres": [
-   "动作",
-   "角色扮演"
+   "动作角色扮演",
+   "剧情冒险",
+   "卡牌构筑"
   ],
-  "players": "4人",
-  "release": "2017年6月27日",
-  "publisher": "Blizzard Entertainment, Inc.",
-  "shots": [],
-  "_cid": "UP0002-CUSA00242_00-ASIAERNALCOLL000"
+  "capacity": "42.1 GB",
+  "players": "本地1人，线上1-8人",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文",
+   "日文"
+  ],
+  "release": "2026年2月12日",
+  "platforms": "PS5/PS4",
+  "intro": "动作角色扮演游戏标杆，再登巅峰\n\n《暗黑破坏神2》重制版\n内含广受好评的《暗黑破坏神2》重制版及其扩展内容“毁灭之王”，并加入了全新的“术士君临”扩展内容。\n\n八大职业，八人联机，无限重玩价值\n亲历被天堂与地狱力量的永恒冲突蹂躏的世界。获取强力物品，精通八大职业，掌握超过200个震撼人心的技能，并通过暴雪娱乐的免费在线游戏服务，在战网上8人合作游戏，踏平烈焰地狱的爪牙。\n\n全新职业-术士\n术士降临《暗黑破坏神2》重制版，这位掌控禁忌力量的大师拥有三条独特的技能路径：\n• “恶魔”专注于奴役地狱爪牙，并将其转化为忠心耿耿的强大盟友，听候你的差遣。\n• “异端”将灼热的心灵魔力注入寻常兵刃，使其成为释放毁灭性威力的魔法媒介。\n• “混沌”释放地狱最原始的烈焰与暗影元素，从远距离降下大范围的毁灭打击。\n\n全新挑战，全新流派\n收集全新的暗金物品、套装与符文之语，为经典职业开发更强力的进阶构筑。\n迎接全面进化的终局挑战：恐惧区域更新、巨型先祖对决、经过调整的敌人难度动态缩放，以及更加侧重策略运用与职业理解的新机制。\n通过全新的“编年史”系统实时追踪成就，该系统将记录你全账号收集的所有宝物，并为完美主义者准备了丰厚的专属回馈。\n\n精益求精，传承经典-《暗黑破坏神2》重制版\n在不牺牲《暗黑破坏神2》标志性操作体感的前提下，引入了多项强力的优化提升更新。新加入的可自定义“战利品过滤器”将大幅减少屏幕干扰，助你精准定位核心装备。升级后的储藏箱页让多角色间的物资管理变得得心应手，新增的宝石、材料和符文专属栏位，让快速分类触手可及。",
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202106/0202/L1Q2m4aunnOz7pxvsq0iOXUl.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202106/0202/0awdEoFk78Wsqcwqk4relhRR.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202106/0202/EZ4dJxveDFKdc7QVNPs3cDkH.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/0223/46bedfbf039620ef752d8976f659eef299f76859132befcb.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/0223/d3bffeaf4daf64e2f88dfab4b73a03ed96155e20ff3423d8.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/0223/a6bb945bca8c6373e47b1c73c0505748e7648fe30517bd6b.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/0223/cb32ff2274ce3ed1489c277d5b9ed1f997f610cb05e369d3.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/0223/56c501a64f4cdc8555237894098b337e3d6eb643387cf580.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202602%2F0317%2F13004a1e1f9f7a90933604ec069bd725173b446dfb8dc1c0.png&w=512&output=jpg",
+  "intro_gap": {
+   "《暗黑破坏神2》重制版": 1,
+   "八大职业，八人联机，无限重玩价值": 1,
+   "全新职业-术士": 1,
+   "全新挑战，全新流派": 1,
+   "精益求精，传承经典-《暗黑破坏神2》重制版": 1
+  },
+  "intro_gexact": true,
+  "intro_boldlines": [
+   "精益求精，传承经典-《暗黑破坏神2》重制版"
+  ],
+  "intro_nobold": [
+   "术士降临《暗黑破坏神2》重制版，这位掌控禁忌力量的大师拥有三条独特的技能路径："
+  ]
  },
  "Diablo Ⅱ": {
   "genres": [
@@ -1468,14 +1507,44 @@
   "_cid": "UP0002-CUSA00242_00-ASIAERNALCOLL000"
  },
  "暗黑破坏神4（完整版）": {
+  "_cid": "UP0002-PPSA02442_00-DIVLOHCOMBO00000",
+  "store_name": "《暗黑破坏神® IV》：憎恨的时代收藏",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "暗黑破坏神4（完整版）",
+  "display_name": "暗黑破坏神4（完整版）",
+  "en": "Diablo IV（Complete Edition）",
   "genres": [
-   "UNIQUE"
+   "暗黑刷宝",
+   "生存冒险",
+   "砍杀动作"
   ],
-  "players": "2人",
-  "release": "2024年6月10日",
-  "publisher": "ACTIVISION BLIZZARD",
-  "shots": [],
-  "_cid": "UP0002-PPSA02442_00-DIVBASEGAME00000"
+  "capacity": "192.8 GB",
+  "players": "本地1-2人，线上1-4人",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文",
+   "日文"
+  ],
+  "release": "2026年4月28日",
+  "platforms": "PS5/PS4",
+  "intro": "《暗黑破坏神IV》憎恨的时代收藏版包含：\n- 2 额外角色栏位\n- 1 额外储藏箱页\n- 3 《魔兽世界》装饰物品¹\n通过《暗黑破坏神IV》：憎恨的时代收藏，开始你的黑暗沉沦之旅。\n\n憎恨的时代收藏包含：\n- 《暗黑破坏神IV》（PS4 / PS5）\n- 《暗黑破坏神IV》：“憎恨之躯”（PS4 / PS5）\n- 《暗黑破坏神IV》：“憎恨之王”（PS4 / PS5）\n\n《暗黑破坏神IV》带来极致的动作角色扮演体验，无穷无尽的恶魔等你屠戮，数不胜数的技能待你掌握，还有噩梦般的地下城和传奇战利品等你探索与发掘。你可以独自或与好友一同踏上史诗战役，在精美而黑暗的世界中，通过扣人心弦的故事结识令人难忘的角色。在广阔的开放世界中对抗地狱军团，通过八个独特职业打造强大的流派，并支持无缝跨平台游玩和跨平台进度，独自或与好友共闯噩梦般的地下城。\n\n体验人类为生存而战的完整故事，见证天堂与地狱之间的永恒冲突如何深入新的层面。在基础战役中对抗重返庇护之地、腐化众生的憎恨之女莉莉丝。在“憎恨之躯”中延续传奇，见证墨菲斯托的阴谋在纳罕涂的野蛮丛林中扎根，灵巫在此崛起，雇佣兵们集结起来抵抗日益增长的腐化。随后，在“憎恨之王”中迎来最终的清算，前往斯科沃斯群岛，精通两大全新职业：圣骑士和术士。在庇护之地的命运悬于一线之际，挺身对抗墨菲斯托的征伐。\n\n憎恨的时代收藏拥有宏大的战役、不断演进的终局系统、全新区域和持续扩展的内容，是体验《暗黑破坏神IV》每一刻精彩的最佳方式。",
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202511/1201/0c801bd4169720fb20e9f973d4fd6f799a680cc4869e8fc5.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202511/1201/0dca4fedbbbf89d0068c8a781b01f7ab473737b7c55326ec.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202511/1201/6c45505b4814f6e38a18e6bf0e348042cbaddc8557b2f6a6.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202511/1201/61b351a5ae870553a440041557feea1d54cb1c989c1b7151.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202511/1201/1fe3382b5462038bb369cd633223ae3d2a7e9db0aa5a4bbb.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202511%2F1222%2F3dc096ad91dfb6a8d4c48b0cbedc4f90717b806221d4c9e9.png&w=512&output=jpg",
+  "intro_gap": {
+   "憎恨的时代收藏包含：": 1,
+   "《暗黑破坏神IV》带来极致的动作角色扮演体验，无穷无尽的恶魔等你屠戮，数不胜数的技能待你掌握，还有噩梦般的地下城和传奇战利品等你探索与发掘。你可以独自或与好友一同踏上史诗战役，在精美而黑暗的世界中，通过扣人心弦的故事结识令人难忘的角色。在广阔的开放世界中对抗地狱军团，通过八个独特职业打造强大的流派，并支持无缝跨平台游玩和跨平台进度，独自或与好友共闯噩梦般的地下城。": 1,
+   "体验人类为生存而战的完整故事，见证天堂与地狱之间的永恒冲突如何深入新的层面。在基础战役中对抗重返庇护之地、腐化众生的憎恨之女莉莉丝。在“憎恨之躯”中延续传奇，见证墨菲斯托的阴谋在纳罕涂的野蛮丛林中扎根，灵巫在此崛起，雇佣兵们集结起来抵抗日益增长的腐化。随后，在“憎恨之王”中迎来最终的清算，前往斯科沃斯群岛，精通两大全新职业：圣骑士和术士。在庇护之地的命运悬于一线之际，挺身对抗墨菲斯托的征伐。": 1,
+   "憎恨的时代收藏拥有宏大的战役、不断演进的终局系统、全新区域和持续扩展的内容，是体验《暗黑破坏神IV》每一刻精彩的最佳方式。": 1
+  },
+  "intro_gexact": true
  },
  "Diablo IV（Complete Edition）": {
   "genres": [
@@ -1488,15 +1557,49 @@
   "_cid": "UP0002-PPSA02442_00-DIVBASEGAME00000"
  },
  "暗黑血统1（战神版）": {
+  "_cid": "EP4389-PPSA31977_00-DSWARMASTEREDPS5",
+  "store_name": "Darksiders Warmastered Edition",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "暗黑血统1（战神版）",
+  "display_name": "暗黑血统1（战神版）",
+  "en": "Darksiders1（Warmastered Edition）",
   "genres": [
-   "动作",
-   "格斗"
+   "动作战斗",
+   "角色扮演",
+   "末日废土"
   ],
-  "players": "1人",
+  "capacity": "38.5 GB",
+  "players": "1位玩家",
+  "languages": [
+   "中文",
+   "韩文",
+   "英文",
+   "日文"
+  ],
   "release": "2026年5月19日",
-  "publisher": "THQ NORDIC GAMES GMBH",
-  "shots": [],
-  "_cid": "EP4389-PPSA31977_00-DSWARMASTEREDPS5"
+  "platforms": "PS5/PS4",
+  "intro": "在新世代主机上体验这款经典的动作冒险游戏！\n\n天启四骑士之首“战争”被邪恶势力所欺骗，过早引致末日降临。他被指控触犯了圣律、挑起了天堂与地狱之间的战争。在随之而来的屠杀中，恶魔势力击败了天使大军，并占领了地球。\n\n“战争”被带往神圣的天焚之会前，被指控犯有重罪，其神力被尽数剥夺。名誉扫地、命悬一线之际，“战争”被给予一次机会——重返地球，查明真相，并惩处那些罪魁祸首。\n\n在复仇心切的天使们的追杀下，“战争”要对抗地狱的种种势力、与他所追猎的恶魔们暂且联手、穿越满目疮痍的地球废墟，踏上洗清罪名、寻求复仇的征程。\n\nFEATURES:\n• 原生4K渲染（适用于PS5）\n• 流畅稳定的60帧游戏体验\n• 拍照模式（适用于PS5）",
+  "shots": [
+   "https://vulcan.dl.playstation.net/img/rnd/202010/1213/3lENAKrdhh20jgKuI9GKXcl9.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP4389/CUSA05347_00/FREE_CONTENT7g8G0iT9fRZXnb2fyBmB/PREVIEW_SCREENSHOT9_148770.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP4389/CUSA05347_00/FREE_CONTENTkTQnrojxVce56v4FsVkd/PREVIEW_SCREENSHOT8_148770.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202010/1213/rr9165koAGRelyNvM1NOHwTl.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202010/1213/VJ6IoqYfQrrjv0bUuAjo8BMj.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202010/1213/2NWpRi1mpm3fVLSXksTtCR6w.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202010/1213/mmXggWZawIy2DVvM1iycvebm.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202010/1213/pwX5TAk6POfLncLWjcsJ4EVC.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202010/1213/6GuNloFBQNIhZmOnl69FgAlc.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202010/1213/kn3I6cBt2JgA6JnDpLvLZU5r.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202603%2F3013%2F49ee576031ebd4035516f98f7c753319a501543cb2148444.png&w=512&output=jpg",
+  "intro_gap": {
+   "天启四骑士之首“战争”被邪恶势力所欺骗，过早引致末日降临。他被指控触犯了圣律、挑起了天堂与地狱之间的战争。在随之而来的屠杀中，恶魔势力击败了天使大军，并占领了地球。": 1,
+   "“战争”被带往神圣的天焚之会前，被指控犯有重罪，其神力被尽数剥夺。名誉扫地、命悬一线之际，“战争”被给予一次机会——重返地球，查明真相，并惩处那些罪魁祸首。": 1,
+   "在复仇心切的天使们的追杀下，“战争”要对抗地狱的种种势力、与他所追猎的恶魔们暂且联手、穿越满目疮痍的地球废墟，踏上洗清罪名、寻求复仇的征程。": 1,
+   "FEATURES:": 1
+  },
+  "intro_gexact": true
  },
  "Darksiders1（Warmastered Edition）": {
   "genres": [
@@ -1510,12 +1613,53 @@
   "_cid": "EP4389-PPSA31977_00-DSWARMASTEREDPS5"
  },
  "暗黑血统2（决定版）": {
-  "genres": [],
-  "players": "",
-  "release": "",
-  "publisher": "",
-  "shots": [],
-  "_cid": "10012906"
+  "_cid": "EP4389-PPSA23806_00-DARKSIDERS2PS5GP",
+  "store_name": "Darksiders II Deathinitive Edition",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "暗黑血统2（决定版）",
+  "display_name": "暗黑血统2（决定版）",
+  "en": "Darksiders2（Definitive Edition）",
+  "genres": [
+   "角色扮演",
+   "动作冒险",
+   "战斗砍杀"
+  ],
+  "capacity": "21.8 GB",
+  "players": "1位玩家",
+  "languages": [
+   "中文",
+   "韩文",
+   "英文",
+   "日文"
+  ],
+  "release": "2024年10月15日",
+  "platforms": "PS5/PS4",
+  "intro": "化身为人人畏惧却无法逃避的可怖力量。在“世界末日”之后被唤醒、“天启四骑士”之中最令人闻风丧胆的“死神”，开启了一场为他哥哥洗脱罪名的冒险之旅。\n\n在冒险途中，这位骑士发现了一个可能会威胁到所有“生灵”的远古怨灵。“死神”终将永生！\n\nDeathinitive Edition特色：\n- 包括《Darksiders 2》与其所有DLC，提供总计超过30小时的游戏内容\n- 重新打造并调整了游戏的平衡性与战利品分布\n- 改善图形渲染引擎，提供更高质量的视觉效果，特别是照明与阴影\n- 改进并重做游戏关卡、角色和环境图象\n\n内含DLC：\n- Maker Armor Set\n- The Abyssal Forge\n- The Demon Lord Belial\n- Death Rides\n- Angel of Death\n- Deadly Despair\n- Shadow of Death\n- Mortis Pack\n- Rusanov's Axe\n- Van Der Schmash Hammer\n- Fletcher's Crow Hammer\n- Mace Maximus\n- Argul's Tomb\n\n令人惊叹的视觉效果：以精美的4K画面来体验这款充满特色、内容丰富的动作冒险游戏。画面效果通过使用光线追踪得到了增强，并且光照和阴影效果也得到了大幅改进。\n\n快速加载：《Darksiders II Deathinitive Edition》能够充分利用超高速固态硬盘SSD的优势，实现快速加载的效果。\n\n扮演“死神”：成为传奇四骑士中最令人恐惧的存在，强大到足以将各个世界摧毁、与超脱于“天堂”和“地狱”的各势力为战。\n\n史诗级的宇宙：以Joe Mad的独特风格呈现出的、令玩家耳目一新的游戏宇宙。\n\n玩家自由选择与定制：您可以定制您的游戏体验，通过使用各种各样的盔甲套装、武器和“技能树”，玩家能够创造出专属于自己的“死神”。\n\n高度的重复可玩性：探索广阔的开放世界，完成数十个支线任务，并通过完备的升级系统、技能树和无尽的装备组合定制您的“死神”。\n\n于世界中自由穿梭：“死神”是一个灵活敏捷的角色，能够做出令人难以置信的、杂技般的动作，让玩家能够以前所未有的方式探索世界。",
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202409/1714/a534b51b91666f0d080741bc41e46718a0bf46afed6e9ec0.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202409/1714/a38d8c56112f9654d02288f81864cdc73785d754e38de9fd.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202409/1714/8ec435ca76422be7efe22ffaaae3b29ca6ccfd0141b3d8fc.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202409/1714/56fc5af6bfeb4e45293fd0ff235796e180ae3e39039e830a.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202409/1714/e1b961d8d20daaa9b882505e6b09568f00713e2b2b1b5a1a.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202409/1714/05577ca7242e5f1c69dd7c998ddb29a758c87642a376d811.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202409/1714/b400403e1919b2f3a348bbef7c0a13bc706638e2059419d0.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202409/1714/f23c89596a84e7496ffd62ff098a970e2ad9b286630f3000.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fimg%2Frnd%2F202010%2F1408%2Ff27coM2aLU4zL8WhH5J0dXdR.png&w=512&output=jpg",
+  "intro_gap": {
+   "在冒险途中，这位骑士发现了一个可能会威胁到所有“生灵”的远古怨灵。“死神”终将永生！": 1,
+   "Deathinitive Edition特色：": 1,
+   "内含DLC：": 1,
+   "令人惊叹的视觉效果：以精美的4K画面来体验这款充满特色、内容丰富的动作冒险游戏。画面效果通过使用光线追踪得到了增强，并且光照和阴影效果也得到了大幅改进。": 1,
+   "快速加载：《Darksiders II Deathinitive Edition》能够充分利用超高速固态硬盘SSD的优势，实现快速加载的效果。": 1,
+   "扮演“死神”：成为传奇四骑士中最令人恐惧的存在，强大到足以将各个世界摧毁、与超脱于“天堂”和“地狱”的各势力为战。": 1,
+   "史诗级的宇宙：以Joe Mad的独特风格呈现出的、令玩家耳目一新的游戏宇宙。": 1,
+   "玩家自由选择与定制：您可以定制您的游戏体验，通过使用各种各样的盔甲套装、武器和“技能树”，玩家能够创造出专属于自己的“死神”。": 1,
+   "高度的重复可玩性：探索广阔的开放世界，完成数十个支线任务，并通过完备的升级系统、技能树和无尽的装备组合定制您的“死神”。": 1,
+   "于世界中自由穿梭：“死神”是一个灵活敏捷的角色，能够做出令人难以置信的、杂技般的动作，让玩家能够以前所未有的方式探索世界。": 1
+  },
+  "intro_gexact": true
  },
  "Darksiders2（Definitive Edition）": {
   "genres": [],
@@ -1526,12 +1670,37 @@
   "_cid": "10012906"
  },
  "暗黑血统3（豪华版）": {
-  "genres": [],
-  "players": "",
-  "release": "",
-  "publisher": "",
-  "shots": [],
-  "_cid": "10003514"
+  "_cid": "UP4389-CUSA08880_00-ASIA000000000001",
+  "store_name": "Darksiders III Digital Deluxe Edition",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "暗黑血统3（豪华版）",
+  "display_name": "暗黑血统3（豪华版）",
+  "en": "Darksiders3（Deluxe Edition）",
+  "genres": [
+   "角色扮演",
+   "动作冒险",
+   "战斗砍杀"
+  ],
+  "capacity": "20.2 GB",
+  "players": "1位玩家",
+  "languages": [
+   "中文"
+  ],
+  "release": "2018年11月28日",
+  "platforms": "PS5/PS4",
+  "intro": "砍杀动作冒险游戏《暗黑血统 III》的玩家将扮演“怒神”，\n重返灾变的人间界，展开猎杀“七宗罪”的任务。\n\n包含《暗黑血统 3》和 2 项将在《暗黑血统 3》推出后发布的付费 DLC。",
+  "shots": [
+   "https://apollo2.dl.playstation.net/cdn/UP4389/CUSA08880_00/FREE_CONTENTS3A5ApYmhOdZm2riNU8r/1.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP4389/CUSA08880_00/FREE_CONTENTaBfMLWwdR8ZhTJcqriqR/2.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP4389/CUSA08880_00/FREE_CONTENTIqma5SAfrjZyni9ex9gu/3.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fapollo2.dl.playstation.net%2Fcdn%2FUP4389%2FCUSA08880_00%2FLc4mMDBCkwaKJXJMbQlUFNF9TWAYwQkS5JFOJ0wXbhXUTW0grJM38j2oVjogoJ28.png&w=512&output=jpg",
+  "intro_gap": {
+   "砍杀动作冒险游戏《暗黑血统 III》的玩家将扮演“怒神”，": 1,
+   "包含《暗黑血统 3》和 2 项将在《暗黑血统 3》推出后发布的付费 DLC。": 1
+  },
+  "intro_gexact": true
  },
  "Darksiders3（Deluxe Edition）": {
   "genres": [],
@@ -1542,15 +1711,37 @@
   "_cid": "10003514"
  },
  "暗黑血统：创世纪": {
+  "_cid": "UP4389-CUSA12988_00-ASIA000000000000",
+  "store_name": "Darksiders Genesis",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "暗黑血统：创世纪",
+  "display_name": "暗黑血统：创世纪",
+  "en": "Darksiders Genesis",
   "genres": [
-   "动作",
-   "冒险"
+   "动作冒险",
+   "剧情探索",
+   "任务战役",
+   "收集养成"
   ],
-  "players": "2人",
+  "capacity": "9.8 GB",
+  "players": "本地1-2人，线上1-2人",
+  "languages": [
+   "中文"
+  ],
   "release": "2020年2月17日",
-  "publisher": "THQ NORDIC GAMES GMBH",
-  "shots": [],
-  "_cid": "UP4389-CUSA12988_00-ASIA000000000000"
+  "platforms": "PS5/PS4",
+  "intro": "《暗黑血统：创世纪》是一款动作/冒险游戏，玩家将在枪林弹雨和刀光剑影之中，穿越成群的恶魔、天使以及所有的拦路者，厮杀出一条去往地狱并返回的道路。《创世纪》将让玩家首次看到游戏初作事件发生之前的《暗黑血统》世界，并介绍了四大天启骑士之一的斗神。\n\n• 扮演首次可玩的带枪骑士斗神，轰飞天使和恶魔\n• 在疯狂的单机游戏中，即时切换强大的剑客战神和斗神\n• 在两名玩家的合作模式中，与好友一同探究《暗黑血统》那史诗般的世界\n• 体验发生在初代《暗黑血统》之前的全新剧情战役，追寻七封印的起源\n• 在收集物品、能力和武器强化器、生物核心等等时，实力和力量也会随之增强",
+  "shots": [
+   "https://vulcan.dl.playstation.net/img/cfn/11307xZlOhcJBf5_-2lR-8WcISsp9DjJ65jRMTtWu3ctJH8IBl-mHcgF1MlWC-P5QeIz_R-zIxUSFgfff-uoX45c9rgYaxNX.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307beXXUMGt83jr34goIOE0kf4bLRgOexfEBceSgbNACCMEz0CP4KwDG6Dr8Km_TwAatuuc5vmWOcO9k6iSZQdaFc9_PJy.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307fe_H4XeCHUBng2zvGXgKiBuu7sNqLhuKTBKJcQdS_iQjx4LALd-xsQnZMBLZ7sqX6dCQ4kamVohy5bq8TNdgjYxss7X.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fimg%2Fcfn%2F11307WOYSi_le6Xu6BrOQMWrqpXSpBsba3L17rapwRXLgRXcFNyZK67W4ZUKaCOSHXmqQa8ns5XhYDKeeMSpTuWIZEk5iq7S.png&w=512&output=jpg",
+  "intro_gap": {
+   "• 扮演首次可玩的带枪骑士斗神，轰飞天使和恶魔": 1
+  },
+  "intro_gexact": true
  },
  "Darksiders Genesis": {
   "genres": [
@@ -1564,12 +1755,58 @@
   "_cid": "UP4389-CUSA12988_00-ASIA000000000000"
  },
  "艾恩格朗特 回荡新声1": {
-  "genres": [],
-  "players": "",
-  "release": "",
-  "publisher": "",
-  "shots": [],
-  "_cid": "JP0700-PPSA22969_00-SWORDARTONLINEV0"
+  "_cid": "JP0700-PPSA22969_00-SWORDARTONLINEV0",
+  "store_name": "艾恩葛朗特 回荡新声 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "_src": "official",
+  "_via": "storefront",
+  "_cn": "艾恩格朗特 回荡新声1",
+  "display_name": "艾恩格朗特 回荡新声",
+  "en": "Echoes of Aincrad",
+  "genres": [
+   "动作冒险",
+   "角色扮演",
+   "战斗砍杀"
+  ],
+  "capacity": "27.6 GB",
+  "players": "1位玩家",
+  "languages": [
+   "中文",
+   "泰文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "release": "2026年7月9日",
+  "platforms": "PS5",
+  "intro": "我们，确实曾存在于此。\n世界首款完全潜行型MMORPG《Sword Art Online》。\n连同意识一起潜行至虚拟空间的冒险体验，吸引了众多玩家。\n然而，这个划时代的虚拟世界，却演变成游戏内的死亡即为在现实世界中死亡的死亡游戏。\n\n困于其中的无数玩家里，也有“您”的身影。\n在这个远比现实残酷的世界里，您将与封测中一同冒险的剑士“伊织”重逢。\n这是一款描写玩家们被困于生死一线牵的虚拟世界浮游城“艾恩葛朗特”的烦恼、纠葛的启程RPG。\n\n这是个在残酷的世界里，寻找共进退的同伴的故事\n为了在化为死亡游戏的虚拟世界中生存，您从“起始之城镇”踏上旅程，并选择挺身而战。\n之后，便与封测中相遇的剑士“伊织”，一同在这个游戏结束即代表死亡的世界中，邂逅众多同伴、挑战无数困难。而这一切，都是为了能一同在这个世界存活下去。\n\n亲身体验既美丽又危险的虚拟世界之旅\n请依照喜好打造化身成您分身的虚拟角色，让他成为生活在艾恩葛朗特的一名冒险者吧。\n请尽情探索美丽的草原、潜伏未知敌人的地下迷宫与城镇等各式各样的地点，并与同伴一同攻略不为人知的艾恩葛朗特。\n随着冒险展开，您可以寻找强敌、稀有道具或武器，也能为了追求壮大自我，专注在提升等级。\n偶尔也会接到来自居民或其他玩家的任务委托。\n\n拿起剑吧，为了存活下去。\n与在区域中徘徊的敌人展开无缝即时动作战斗。\n单手剑或双手斧等不同类型的武器，会有不同的战斗风格，来使用适合自己的武器战斗吧！\n请善用回复、攻击类型的道具，在对同伴下达指示的同时，也利用敌人的攻击开辟出一条活路。\n若感到实力不足，就收集素材来强化武器，并提升等级、学习新的“剑技”再行挑战吧。",
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/1808/099fe72958e2806a20c9b4ffd11c22f553339ebf4c2f39de.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/1808/f873690ebe366203484a6063c379d6eb6ab93724a298b181.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/1808/9a9a72b33d5d292e916c6fd00178d0c39084590b49ad357a.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/1808/756ddc79948a79b2ac907b956efc6e2aa99a260bd1aab51c.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/1808/a49fe373dc907c304d032be4fd0d5995060dbfd1bc890b0c.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/1808/8de7b2304c36bee19b1c8dc2cbba78729a21295d4844f3b2.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/1808/4b90460138fd679f6fcb497b69a710748ec8680d2f44dd44.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/1808/6076723f44d33e18cb5b4b30c63c24907b430afd93aa0eb5.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/1808/b3a2609a5686a2ec4f0c5e93d853f436121ea8d390b7802e.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202602/1808/8e3de77d933284582218738fc5c4243a7cbde81aa5c394c9.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202605/2603/6d59ba9edf30bcd6e3ba708243ce5caff6cc7e7a73221bb0.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202605/2603/c6de9d8e002304e38251bd4c242e97e2a20b779edacaa0cb.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc38028a704716.jpg&w=256&q=82&output=jpg",
+  "intro_gap": {
+   "困于其中的无数玩家里，也有“您”的身影。": 1,
+   "这是个在残酷的世界里，寻找共进退的同伴的故事": 1,
+   "亲身体验既美丽又危险的虚拟世界之旅": 1,
+   "拿起剑吧，为了存活下去。": 1
+  },
+  "intro_gexact": true,
+  "intro_boldlines": [
+   "我们，确实曾存在于此。",
+   "困于其中的无数玩家里，也有“您”的身影。",
+   "这是个在残酷的世界里，寻找共进退的同伴的故事",
+   "拿起剑吧，为了存活下去。"
+  ]
  },
  "Echoes of Aincrad": {
   "genres": [],
@@ -1588,16 +1825,65 @@
   "_cid": "JP0700-PPSA22969_00-SWORDARTONLINEV0"
  },
  "阿西，美女室友竟然1": {
+  "_cid": "HB1312-CUSA55074_00-0990427065479366",
+  "store_name": "Five Hearts Under One Roof",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "阿西，美女室友竟然1",
+  "display_name": "阿西，美女室友竟然1",
+  "en": "Five Hearts Under One Roof 1",
   "genres": [
-   "休闲",
-   "冒险",
-   "策略"
+   "休闲治愈",
+   "文字冒险",
+   "恋爱模拟养成"
   ],
-  "players": "1人",
+  "capacity": "10.9 GB",
+  "players": "1位玩家",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文",
+   "泰文",
+   "日文"
+  ],
   "release": "2026年2月2日",
-  "publisher": "STORYTACO.INC",
-  "shots": [],
-  "_cid": "HB1312-CUSA55074_00-0990427065479366"
+  "platforms": "PS5/PS4",
+  "intro": "《阿西, 美女室友竟然...？》是一款 FMV 真人视频恋爱游戏，你将以第一人称与5位美女室友一起体验别样合租生活。\n在本作中，您将扮演合租公寓的房东男主 吴宥万(直译:牛奶男)，一直独来独往的你，生活中突然闯入 5 位性格各异美女租客。你们之间又将擦出怎样的火花呢？最后陪在你身边的会是谁呢？\n\n第一位租客，相识20年的青梅竹马：高末淑\n\"你真的..只把我当朋友吗？\"\n\n第二位租客，初恋白月光, 过气偶像：朴敏静\n\"我和哥哥的关系，不想只限于歌手和粉丝...\"\n\n第三位租客，难搞的职场上司姐姐：佟圆圆\n\"诶~ 真可爱，原来你喜欢这种play...？\"\n\n第四位租客，天然呆的直球妹妹：高恩妃\n\"哥哥! 请和我结婚吧！\"\n\n第五位租客，可爱的孤僻社恐宅女：曹圣依\n\"你...你是来救我的吗..?! \"\n\n各类美女的轮番攻势下，是一心一意，爱我所爱；还是来者不拒，雨露均沾？\n亦或是一不小心迎来BAD END，又或者……你还能找到另一种别样的爱情（？）\n\n亮点介绍\n\n第一人称沉浸式恋爱模拟游戏\n本游戏从头至尾以第一视角进行游戏。你将在各种引人入胜的事件中做出决定和选择。在游戏中，你将置身于真实发生在生活中的情节与场景，无论是温馨的合租日常、怦然心动的约会时刻，还是让人脸红心跳的暧昧互动，都将由你亲自体验、选择与改变！这不仅仅是一款恋爱模拟游戏，更是一款关于选择和爱情的游戏。\n\n丰富的故事情节\n在这款游戏中，你的每一个选择都将影响故事的走向，带来完全不同的体验！我们为您精心设计了百余种故事分支、十几种截然不同的结局，让您能够反复探索、深入挖掘这场恋爱旅程的每一个可能性。每章中隐藏的后记和奖励视频将丰富您的模拟体验。意想不到的选择可能会解锁隐藏彩蛋视频哦~~或许是一场未曾曝光的甜蜜约会，或许是某位女主角不为人知的内心独白，或许是.......\n\n自然的演技和高质量的视觉效果\n这款游戏全程由人气油管博主真人出演，以自然流畅的演技与高水准的视觉呈现，让你仿佛置身于一场真实的恋爱故事之中。与五位可爱的女主角一起，体验身临其境的恋爱心动的感觉！\n我们与专业电影导演合作，采用超高质量的影像呈现，精美的画面细腻还原每一个动作与表情，让玩家仿佛亲临现场，与心仪的女孩面对面交流。打造出一场既具电影质感，又充满互动性的恋爱体验。\n\n魅力无法抵挡的女主角们\n“口嫌体正直”的青梅竹马，到慢慢依赖你信任你的过气小偶像，从霸道又透露着可爱的职场上司姐姐，到直率可爱，满眼是你的直球妹妹，甚至还有阁楼上的神秘房客等你解锁！\n每一位都有独特的魅力，保证总有一位能让你心动！相信总有一位会是你的菜！",
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202505/2906/f66f17487e31a346a17c2c306df6e38f20e42db6fa91dc55.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202505/2906/815ae32124827d33066c5bb4dfefc17107e86fb97eeb54b8.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202505/2906/199f942eba8b226955a3bd11206ec67ab180685be5896a8d.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202505/2906/710f039d5c384134bdcc3b4e505d31595b3180b3450c9dca.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202505/2906/2501299d454341ca252671f5d62725a1b4533e49030964f4.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202505/2906/1fe81f2ad0bd2f0fdbcf9fce074e02b2629a6a6fb7518b41.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202505/2906/fbfd117bad3c77a7e4b13837e0cebf6e1249f88cf21b1e35.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202505/2906/7bb188adb25352f1e37548082f3739d1cb6c0d21f776fe4c.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202505%2F2906%2Fa7fa3217cee6dcb00e63bf6a4d469ca08d3f2dddde6b184d.png&w=512&output=jpg",
+  "intro_gap": {
+   "《阿西, 美女室友竟然...？》是一款 FMV 真人视频恋爱游戏，你将以第一人称与5位美女室友一起体验别样合租生活。": 1,
+   "第一位租客，相识20年的青梅竹马：高末淑": 1,
+   "第二位租客，初恋白月光, 过气偶像：朴敏静": 1,
+   "第三位租客，难搞的职场上司姐姐：佟圆圆": 1,
+   "第四位租客，天然呆的直球妹妹：高恩妃": 1,
+   "第五位租客，可爱的孤僻社恐宅女：曹圣依": 1,
+   "各类美女的轮番攻势下，是一心一意，爱我所爱；还是来者不拒，雨露均沾？": 1,
+   "亮点介绍": 2,
+   "第一人称沉浸式恋爱模拟游戏": 1,
+   "丰富的故事情节": 1,
+   "自然的演技和高质量的视觉效果": 1,
+   "魅力无法抵挡的女主角们": 1
+  },
+  "intro_gexact": true,
+  "intro_boldlines": [
+   "第一位租客，相识20年的青梅竹马：高末淑"
+  ],
+  "intro_nobold": [
+   "\"你真的..只把我当朋友吗？\"",
+   "\"我和哥哥的关系，不想只限于歌手和粉丝...\"",
+   "\"哥哥! 请和我结婚吧！\"",
+   "\"你...你是来救我的吗..?! \""
+  ]
  },
  "Five Hearts Under One Roof 1": {
   "genres": [
@@ -1612,16 +1898,65 @@
   "_cid": "HB1312-CUSA55074_00-0990427065479366"
  },
  "阿西，美女室友竟然2": {
+  "_cid": "HB1312-PPSA36824_00-0218376215595728",
+  "store_name": "阿西, 美女室友竟然...？2 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "_src": "official",
+  "_via": "storefront",
+  "_cn": "阿西，美女室友竟然2",
+  "display_name": "阿西，美女室友竟然2",
+  "en": "Five Hearts Under One Roof 2",
   "genres": [
-   "休闲",
-   "冒险",
-   "策略"
+   "休闲治愈",
+   "文字冒险",
+   "恋爱模拟养成"
   ],
-  "players": "1人",
-  "release": "2026年2月2日",
-  "publisher": "STORYTACO.INC",
-  "shots": [],
-  "_cid": "HB1312-CUSA55074_00-0990427065479366"
+  "capacity": "61.2 GB",
+  "players": "1位玩家",
+  "languages": [
+   "中文",
+   "泰文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "release": "2026年9月16日",
+  "platforms": "PS5",
+  "intro": "“诚招能够重新经营合租公寓的房东！”\nFMV恋爱模拟游戏《阿西，美女室友竟然...？》第二季华丽回归。\n玩家们将再次化身为房东，与六位女主一起打造充满爱的合租公寓。\n第二季中，高末淑、佟圆圆、朴敏静依旧相伴，并有三位新住客加入。\n尽情享受令人心跳的新事件和她们更加成熟的魅力吧！\n最终，谁将留在你身边呢？\n\n高末淑 / 第一位住客 / 20年青梅竹马\n“从今天开始，他就是我的小跟班了！”\n心有灵犀，鼓声一响便应声而动。吴宥万唯一的朋友——末淑。\n二人共同度过了21年时光，彼此之间无所不知。\n至少，直到几个月前为止。\n末淑有了无法告诉宥万的秘密。\n\n佟圆圆 / 第二位住客 / 职场上司\n“在外面别叫我科长了，直接喊名字吧。”\n她是名副其实的工作狂，工作成瘾者，\n除了工作，佟圆圆没有多余的时间和心思浪费在其他事情上。\n而唯一能引起她兴趣的人，就是吴宥万。\n佟圆圆非常享受注视吴宥万的时光。\n\n郑有娜 / 第三位住客 / 财阀千金\n“我来照顾你了，吴宥万先生。我说过的话，绝不会食言。”\n她是大企业风光无限的小女儿。\n喜欢玩乐，总是一副天真无邪的模样，仿佛没有烦恼忧虑，\n但实际上在家里却是个不堪重用的捣蛋鬼。\n而这个捣蛋鬼，果真惹出了乱子。\n\n朴敏静 / 第四位住客 / 初恋\n“我现在除了这里，无处可去。”\n曾经默默无闻、努力争取关注的爱豆敏静，如今已成为“国民妹妹”。\n正值事业最辉煌、最忙碌的顶峰时期，\n却又一次有事件试图将她拉下谷底。\n此刻，敏静唯一能依靠的，就是吴宥万。\n\n梁有情 / 最后一位住客 / 学着敞开心扉的少女\n“您是第一个真正了解我的人。”\n有情除了吃饭和睡觉，几乎所有时间都在工作。\n因为曾经遭受校园欺凌，她很难与人相处。\n她甚至因为害怕面对他人，一再推迟上大学的时间。\n但吴宥万这样的人生转机进入了她的生活。\n\n方久梨 / 预定入住者/ 温柔护士\n“吴宥万先生现在是病人哦，病人！”\n她以温和的性格和可爱的面容，成为医院患者们心中的爱豆般的存在。\n尽管护理工作辛苦，久梨仍怀揣使命感，尽力而为。\n而某位患者对她来说格外特别。\n久梨开始在意吴宥万——不再只是作为一个患者，而是作为一个男人。\n\n在这六位各具魅力的女性中，你会与谁坠入爱河？\n还是…这六人之外的另一个人…？！",
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202604/1405/4c2a55b8d71249e06eed849ba4b150d2008d6aec814826b7.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202604/1405/e30c012e2aadeb7128d49b479afe74e54d4b552035e0580a.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202604/1405/e0bc2887152a3ee5f40d3e48c6a38ce9028ac0f8d4c60a27.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202604/1405/56c4b0e39042bc537ec29979bbffe0c934c993d1aec4a387.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202604/1405/1b185aec59d3fedad5291953bc243f8bdd6832e79eefa208.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202604/1405/4f6277ff5243cf391fc94ae44704aafd44614385aed57380.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202604/1405/bf348f9eee414ce2f0e9b379b9938b8b308ae3502a0cf7ee.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202604/1405/6213388bc61a5ba0b8b7ff5a297423a2a29199903fcb1d4d.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202604/1405/68cb47d3cf79237c69a4ca9b8da52a9e769c7ce4b99da8be.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc3cd03c49ed0b.jpg&w=256&q=82&output=jpg",
+  "intro_gap": {
+   "高末淑 / 第一位住客 / 20年青梅竹马": 2,
+   "佟圆圆 / 第二位住客 / 职场上司": 1,
+   "郑有娜 / 第三位住客 / 财阀千金": 1,
+   "朴敏静 / 第四位住客 / 初恋": 1,
+   "梁有情 / 最后一位住客 / 学着敞开心扉的少女": 1,
+   "方久梨 / 预定入住者/ 温柔护士": 1,
+   "在这六位各具魅力的女性中，你会与谁坠入爱河？": 1
+  },
+  "intro_gexact": true,
+  "intro_boldlines": [
+   "高末淑 / 第一位住客 / 20年青梅竹马",
+   "梁有情 / 最后一位住客 / 学着敞开心扉的少女"
+  ],
+  "intro_nobold": [
+   "尽情享受令人心跳的新事件和她们更加成熟的魅力吧！",
+   "“从今天开始，他就是我的小跟班了！”",
+   "“在外面别叫我科长了，直接喊名字吧。”",
+   "“我现在除了这里，无处可去。”",
+   "“您是第一个真正了解我的人。”",
+   "“吴宥万先生现在是病人哦，病人！”",
+   "还是…这六人之外的另一个人…？！"
+  ]
  },
  "Five Hearts Under One Roof 2": {
   "genres": [
@@ -1636,12 +1971,51 @@
   "_cid": "HB1312-CUSA55074_00-0990427065479366"
  },
  "黯井微光1": {
-  "genres": [],
-  "players": "",
-  "release": "",
-  "publisher": "",
-  "shots": [],
-  "_cid": "UP5155-PPSA38721_00-WELLDWELLERDEMO0"
+  "_cid": "UP5155-PPSA38720_00-WELLDWELLER00000",
+  "store_name": "黯井微光 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "_src": "official",
+  "_via": "storefront",
+  "_cn": "黯井微光1",
+  "display_name": "黯井微光",
+  "en": "Well Dweller",
+  "genres": [
+   "2D横版动作",
+   "类银河恶魔城",
+   "精致画风",
+   "暗黑童话"
+  ],
+  "capacity": "817.7 MB",
+  "players": "1位玩家",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "release": "2026年9月22日",
+  "platforms": "PS5",
+  "intro": "《黯井微光》是一款暗黑童话风格的类银河城游戏\n由《冥界清道夫》（Crypt Custodian）和《小岛》（Islets）的原班人马倾力打造。\n\n在森林深处井底之地，栖息着唯一敢于挑战女王的生灵。\n玩家将扮演一只手持火柴棒的小鸟——微光，踏上焚灭邪恶女王、拯救家族的旅程。探索充满暗黑童话气息的世界，与居住在王国底层之中的迷人角色成为朋友。与可怖的怪兽激战，习得新能力，拓展你的地图。解开谜题，发现秘密，揭开这座腐朽王国中隐藏的神秘真相。\n\n在腐朽废墟之中，有一群努力求生的可爱角色等待相遇。\n与阿尔多一起露营——这只小老鼠正在逃离女王的魔爪。与神秘拾荒者鲁特同行，探索一座废弃城堡——鲁特在王国各地搜寻最珍贵的战利品。找到并解救那些原本一直受到庇护、却在一夜之间被疯狂猎人掳走的、四散躲藏的兄弟姐妹。\n\n点燃你柴棒，照亮黑暗世界，并在战斗中助你一臂之力。\n收集小饰品以强化自身能力，自由组合搭配，打造属于你的独特玩法。解开谜题，击败凶恶的首领，开辟通往女王寝宫的道路，拯救你的家人。",
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202608/0917/fe7ccefd983a73830be663be5fd27b9f18bf70304216bb79.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202608/0917/318ff5bda43b2e649f97f71858b1b093f73a0fcff9435070.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202608/0917/b64986632e6e2cff4034482f490e1c6db6a92d71233ebe1f.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202608/0917/278e65247aae551b2be6f8ac2c09a0e687ee8f6b80e15b8d.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202608/0917/5d9cfdb2e46647c6da6bd50625bc8bcb239993403d002dc5.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202609/2215/5a37a974325117e99d492a6aefe64ca2020fbd4348dcc43d.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rcdc99552b027e.jpg&w=256&q=82&output=jpg",
+  "intro_gap": {
+   "在森林深处井底之地，栖息着唯一敢于挑战女王的生灵。": 1,
+   "在腐朽废墟之中，有一群努力求生的可爱角色等待相遇。": 1,
+   "点燃你柴棒，照亮黑暗世界，并在战斗中助你一臂之力。": 1
+  },
+  "intro_gexact": true,
+  "intro_boldlines": [
+   "《黯井微光》是一款暗黑童话风格的类银河城游戏",
+   "在森林深处井底之地，栖息着唯一敢于挑战女王的生灵。",
+   "在腐朽废墟之中，有一群努力求生的可爱角色等待相遇。",
+   "点燃你柴棒，照亮黑暗世界，并在战斗中助你一臂之力。"
+  ]
  },
  "Well Dweller": {
   "genres": [],
