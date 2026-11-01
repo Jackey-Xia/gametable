@@ -1154,7 +1154,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 
 <button id="toTop" class="toTop" aria-label="跳到底部" title="跳到底部">↓ 跳到底部</button>
 <script src="pinyin.js?v=20260911"></script>
-<script>window.__GT_DATA_VER="2026-11-01T19:15:39+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
+<script>window.__GT_DATA_VER="2026-11-01T19:20:56+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
 <!-- 改85: 数据文件改为动态加载(带时间戳)
      原来写死 `<script src="data.js?t=20260909155923">`, URL 恒定不变, 而 GitHub Pages 给
      data.js 的 max-age 是 600s —— 库存改完后 10 分钟内(或更久)URL 相同, 浏览器直接用缓存,
@@ -3036,7 +3036,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-11-01T19:15:39+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-11-01T19:20:56+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-det-preload">
 /* 改163-begin: 详情数据「空闲预加载」 —— 卡片上的「详情 ›」已同步显示、不再等数据；
    game_details.json 推迟到首屏渲染完、浏览器空闲时才拉取，不跟首屏抢带宽。
@@ -3082,7 +3082,12 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
           document.body.appendChild(t);
         }catch(e){}
         setTimeout(function(){
-          try{location.replace(location.href.split("#")[0]+(location.hash||""));}
+          /* 改163: 刷新时给 URL 拼 ?_v=<新版本号> —— 否则浏览器会用缓存里的旧 HTML,
+             版本校验发现不一致 → 再次刷新 → 最多追 3 次后放弃, 顾客就一直看到旧内容 */
+          try{
+            var base=location.href.split("#")[0].split("?")[0];
+            location.replace(base+"?_v="+encodeURIComponent(v)+(location.hash||""));
+          }
           catch(e){try{location.reload();}catch(e2){}}
         },380);
       };
