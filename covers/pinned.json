@@ -1,8 +1,7 @@
 {
  "_meta": {
   "count": 1120,
-  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-11-01T12:44:26"
+  "updated": "2026-11-01T12:52:19"
  },
  "locks": {
   "p0001": {
@@ -2693,9 +2692,9 @@
     "吸血鬼幸存者（完整版）"
    ],
    "en": "",
-   "file": "covers/rcc8d511845897.jpg",
-   "md5": "c8d511845897ec52b3b4177039f3d9e2",
-   "note": "吸血鬼幸存者 街霸6式拼接(主图381顶对齐+8张辅图卡两行各4):本体+ Bloodmoon/Emergency Meeting/Tides/Moonspell + Ode to Castlevania/Operation Guns/Emerald Diorama/Ante Chamber(Bloodmoon重复已去重)",
+   "file": "covers/9093ff91a69d_s.jpg",
+   "md5": "27503418b9dc9b9ff46d5617d6a65a4b",
+   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc75eab009cc93.jpg",
    "platform": "PS",
    "role": "P",
    "store": "",
@@ -9218,7 +9217,7 @@
     "爆钻小英雄 钻头乐园"
    ],
    "en": "",
-   "file": "covers/321a5b6ccd20_s.jpg",
+   "file": "covers/rc6b90043b6f92.jpg",
    "md5": "6b90043b6f92d8df5ff5d8f557191890",
    "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc51615e6cb0c0.jpg",
    "platform": "PS",
@@ -9248,7 +9247,7 @@
    "en": "Outward（Definitive Edition）",
    "file": "covers/01bd11ac5f96_s.jpg",
    "md5": "02fb459ea77d7db31553b6969142c0b4",
-   "note": "★人工锁死沿用(锁p0708, 中文名一致)",
+   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc4225d7fb1f98.jpg",
    "platform": "PS",
    "role": "P",
    "store": "",
