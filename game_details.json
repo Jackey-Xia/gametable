@@ -440,13 +440,38 @@
  },
  "阿斯泰利克斯历险记：全拍飞1": {
   "genres": [
-   "动作"
+   "动作战斗",
+   "手绘画风",
+   "合家欢"
   ],
-  "players": "2人",
+  "players": "本地1-2人",
   "release": "2024年5月1日",
   "publisher": "Microids",
-  "shots": [],
-  "_cid": "EP4295-PPSA08576_00-AOSTAPS5000000EU"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202110/1809/RoVx233TpvPGErFroza04kHU.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202110/1809/rcEZpp8nyLhFlIp6TYluKsxd.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202110/1809/ybTimXPWNQxBH0G3bRs6nlOS.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202110/1809/V5RMTJpBV4xKvfs55z8GHDWa.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202110/1809/4NecGKlPXmFxIFSLFnUSfmi3.jpg"
+  ],
+  "_cid": "EP4295-PPSA08576_00-AOSTAPS5000000EU",
+  "store_name": "阿斯泰利克斯历险记：全拍飞",
+  "platforms": "PS5/PS4",
+  "capacity": "1.5 GB",
+  "players_local": "1-2",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "英文",
+   "日文"
+  ],
+  "intro": "公元前 50 年，高卢被罗马人全面占领。额，也不能说全面……\n在一个小村庄，不屈不饶的高卢人仍在坚持抵抗入侵者。\n\n一切都在分崩离析！我们的两位英雄将环游世界，在 2D 横版 Beat Them Up 游戏中与罗马帝国作战，这款游戏为纯手绘作品，并采用该类游戏最纯粹的传统制作。\n\n敌人和野猪要小心了！Asterix 和 Obelix 回来了……这将是另一场伟大的战斗！\n\n扮演 Asterix 和 Obelix，与家人或朋友一起合作（本地多人模式）！\n\n采用为每个角色提供的大量动作和独特组合，击退成千上万的罗马人！\n\n冒险模式章节根据现有的 Asterix & Obelix 专辑设计。游戏还具有专为游戏创作的独家章节。\n\n除了主要冒险外，还可以参与小游戏，完成我们高卢朋友的盛宴！\n\n享受手绘设计，这些设计完全忠于原创漫画书系列和专为游戏创作的动画。",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fimg%2Frnd%2F202112%2F0210%2F0qHNKcXht9Vo34e0dmIKzmtA.png&w=512&output=jpg",
+  "en": "Asterix & Obelix：Slap them All 1",
+  "display_name": "阿斯泰利克斯历险记：全拍飞1",
+  "warn": "",
+  "_cn": "阿斯泰利克斯历险记：全拍飞1",
+  "intro_plain": true
  },
  "Asterix & Obelix：Slap them All 1": {
   "genres": [
@@ -460,13 +485,44 @@
  },
  "阿斯泰利克斯历险记：全拍飞2": {
   "genres": [
-   "动作"
+   "动作战斗",
+   "手绘画风",
+   "合家欢"
   ],
-  "players": "2人",
+  "players": "本地1-2人",
   "release": "2024年6月3日",
   "publisher": "Microids",
-  "shots": [],
-  "_cid": "EP4295-PPSA16746_00-AOSTA2PS500000EU"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202311/0714/d737f66552f688390079c6ae5f3b74b40712bf669e0473b3.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202311/0714/e25d52e109bfbe15a1b30a08c647eac96499c93ddc3bac04.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202311/0714/d944f7c06bc6b7ef647de40372a52de05be536878a4551e0.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202311/0714/3b97d083d2dd2a8d18c4223b505c263adcb111d9c520c9fc.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202311/0714/24b5f870135840a724d69023eb895c26b7a78457f7691833.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202311/0714/bd1c941fdccc800fa7b1491c4b80c34360270d964522b834.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202311/0714/e6df01d070e2e3eba1ba8f229c2441e0a205836a97b8e9d2.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202311/0714/2bed4e4604b6b00d164e0e77fa5a909b1a56f9c1f783f084.jpg"
+  ],
+  "_cid": "EP4295-PPSA16746_00-AOSTA2PS500000EU",
+  "store_name": "阿斯泰利克斯历险记：全拍飞2",
+  "platforms": "PS5/PS4",
+  "capacity": "2.4 GB",
+  "players_local": "1-2",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文",
+   "日文"
+  ],
+  "intro": "前来寻求帮助的Justforkix的突然到来，让Asterix、Obelix和其他村民本就艰苦的乡村生活雪上加霜。他透露，他的父亲Doublehelix被诬犯有盗窃罪而入狱……\n\n罗马军团珍贵的金色徽章Lutetia Eagle（卢泰西亚之鹰）刚刚被盗，而一名无辜的男子因而被关进了监狱！Asterix承诺进行调查，并让Justforkix呆在村里，以保证安全。这两名高卢战士前往卢泰西亚，想从一位熟悉该市各种小道消息的熟人那里获得更多信息……但很明显，如果不重“掌”出击，他们就无法在漫长的旅程中找到所需的答案！\n\n《Asterix & Obelix - Slap them all! 2（阿斯泰利克斯历险记：全拍飞2）》是一款充满原创“打脸”情节的横幅动作游戏。旅途中你将经过许多不同的地方：黑暗森林中被遗忘的废墟、有史以来最大的罗马营地，甚至还有卢泰西亚……这是一次前往遥远地域的旅程，充满了各种各样的环境，其间穿插着无数的邂逅，当然还有大量的“打脸”情节！加上原创动画场景，让你如临其境！\n\n《Asterix & Obelix - Slap them all! 2（阿斯泰利克斯历险记：全拍飞2）》通过更多的敌人和敌军头目，以及许多新功能和游戏改进，将战斗提升到一个新的水平。除了他们可以“冲锋”的独特动作，以及更具活力和流畅的战斗外，Asterix和Obelix还拥有愤怒模式和毁灭性的终极大招攻击。更不用说还可以破坏环境中的某些元素以及在战斗中投掷木桶或门！\n\n罗马人和所有其他敌人得小心点儿了！\n\n特色\n- 景色美丽、全新的水平，从卢泰西亚开始，直到世界的尽头！\n- 故事曲折离奇，充满打斗情节。\n- 可以在战斗中激活的全新愤怒模式…\n- …以及每位人物都拥有的终极大招攻击。\n- 还有需要“打脸”的全新敌人和敌军头目！\n- 可以摧毁环境中特点要素的能力。\n- 忠实于漫画的地点和人物。\n- 2名玩家以本地合作模式进行游戏。\n- 精彩的原创故事，栩栩如生的动画画面。",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202310%2F2013%2F543500658ca77438b97563767faf3cac6fe4b284fbb3d9de.png&w=512&output=jpg",
+  "en": "Asterix & Obelix：Slap them All 2",
+  "display_name": "阿斯泰利克斯历险记：全拍飞2",
+  "warn": "",
+  "_cn": "阿斯泰利克斯历险记：全拍飞2",
+  "intro_nobold": [
+   "罗马人和所有其他敌人得小心点儿了！"
+  ]
  },
  "Asterix & Obelix：Slap them All 2": {
   "genres": [
@@ -479,12 +535,46 @@
   "_cid": "EP4295-PPSA16746_00-AOSTA2PS500000EU"
  },
  "艾诺提亚：失落之歌（豪华版）": {
-  "genres": [],
-  "players": "",
-  "release": "",
+  "genres": [
+   "角色扮演",
+   "动作冒险",
+   "类魂战斗"
+  ],
+  "players": "1位玩家",
+  "release": "2024年9月19日",
   "publisher": "",
-  "shots": [],
-  "_cid": "HP7809-PPSA20517_00-0367815466733956"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202403/2115/78b402b46bffbb850cfd5e921427f676a873f9bf8293265c.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202403/2115/810c1e39f467856b4da35838aa4ebee6a15727c5030b2fe8.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202403/2115/12d597a05a22cd168089866a1c6174f608c01dd628e04032.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202403/2115/e5f893520d3fd77f8365281e530de1a031f0675982488d17.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202403/2115/b17e03671d06a2f662a31f012330f925941665b7a302f0de.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202403/2115/6e355c394c8805faf44c81b2111eb6d3f9d18dd12f1c5a90.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202403/2115/eaf8166b20dac14a8f8d53bbb98663c84edddf7cfd955fc0.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202403/2115/0134469a0064e4c249b30f67742a6941a4ed1b5fb7cdfe6c.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202403/2115/03b06fbe92f4d8aee9d77778e20510f0cd143bf7874c3c8b.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202403/2115/2a21363125df053f8ba187ee073a183e39dc8a38111fc407.jpg"
+  ],
+  "_cid": "HP7809-PPSA20517_00-0367815466733956",
+  "store_name": "Enotria: The Last Song - Deluxe edition (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "platforms": "PS5",
+  "capacity": "13.93 GB",
+  "players_local": "1位玩家",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "intro": "《恩诺提利亚：终曲》这款类魂角色扮演动作游戏的背景设在阳光明媚的美丽奇幻世界，汲取了意大利民间传说和文化元素。\n游戏希望能为这个类型探索新的开发方向，借鉴意大利的夏日，打造了生机勃勃的明媚世界，游戏玩法允许玩家改变敌人和身边的世界。\n\n游戏虽然归为“类魂游戏”，但与其他类魂作品不同，因为我们希望利用意大利夏日的色彩塑造这个世界，所以我们称之为“夏日类魂”。\n\n我们的目标是以新的方式表现意大利悠久的历史与丰富的文化，以此激发更多人的兴趣。\n我们的美术理念希望展现那种绚烂和热闹，让人切身体会到意大利的风情。\n\n《恩诺提利亚：终曲》包含有价值的探索、多样的流派、丰富的敌人设计和独具匠心的特色，希望以此俘获类魂玩家的心与魂。\n另外，由于带有“阿多雷”这一元素，玩家随时可以影响敌人的行为，改变身边的世界，破解谜题，利用恩诺提利亚的场景元素，以此构思各式各样的战术与策略。\n\n现在预购，即可获得以下数字版内容：\n原声带节选\n数字版画册节选",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fimage.api.playstation.com%2Fvulcan%2Fap%2Frnd%2F202308%2F0214%2Fb6aab4f9a6cf0940f15ecc4cdbe0de678e7d69eff632006d.png&w=512&output=jpg",
+  "en": "Enotria：The Last Song（Deluxe Edition）",
+  "display_name": "艾诺提亚：失落之歌（豪华版）",
+  "warn": "官方容器204，已用商店页补齐官方数据；容量待补（商店页无容量字段）",
+  "_via": "storefront",
+  "_cn": "艾诺提亚：失落之歌（豪华版）",
+  "intro_plain": true
  },
  "Enotria：The Last Song（Deluxe Edition）": {
   "genres": [],
@@ -496,13 +586,43 @@
  },
  "暗喻幻想": {
   "genres": [
-   "角色扮演"
+   "角色扮演游戏",
+   "沙盒建造",
+   "战棋回合"
   ],
-  "players": "1人",
+  "players": "1位玩家",
   "release": "2024年10月11日",
   "publisher": "SEGA CORPORATION",
-  "shots": [],
-  "_cid": "UP0177-PPSA20800_00-METAPHORDLC00007"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202402/2202/0b5c4b468c758587c6ff3f94936d784f2ced64485e874fc8.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202402/2202/2f439c13677e924bb1b543ee28a07d7b6ccc08e873685cfa.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202402/2202/91cafdd235345f39d9f9c8a966ce38095caf470ee607f566.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202402/2202/6c77943e7967757efc6d83398b9b43abfa81f99318576b88.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202402/2202/9949e32b26b44449c4412cadfb48cb1976c959e1b5899754.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202402/2202/b43b12222dc0a52af39f9b2988b44d0335b3da3c0c3f1874.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202402/2202/04adcacc6e14d160b5589b592476ad27c592d2da486ee45d.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202402/2202/272916a4acedf5fd0e490cdc9b56f826ffbbe45e43e74590.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202402/2202/fd8c61ff414b5269b50155ca736187259882f784ed209212.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202402/2202/6a1450cdb540738df1b16080e9043672fca66fa2b9ffe278.jpg"
+  ],
+  "_cid": "UP0177-PPSA20800_00-METAPHORNA000001",
+  "store_name": "暗喻幻想：ReFantazio PS4 & PS5",
+  "platforms": "PS5/PS4",
+  "capacity": "44.9 GB",
+  "players_local": "1",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文",
+   "日文"
+  ],
+  "intro": "▽成为新王候选人，踏上改变世界的旅途。\n\n本作是《女神异闻录３》《女神异闻录４》《女神异闻录5》 制作班底带来的最新幻想风格RPG游戏。\n\n为了解开自儿时起的好友王子身上的“死亡诅咒”，玩家将化身为“旅行的少年”与同伴妖精“加莉卡”一同漂泊于世界各地。玩家和同伴将被卷入在王国发生的大事件中，挑战等待在前方的命运。\n\n主角因某个契机唤醒了“阿基态（职业）”的力量。它有着战士、魔法师等各式能力。\n唤醒各种独具特色的阿基态，与同伴一起组成最强的队伍，与无数强敌一决高下吧。\n\n敬请畅享新生的幻想世界之旅。\n\n▽旅程中可尽情体验广阔幻想世界中的日常与冒险。\n\n在环游世界的旅途中，做出行动会耗费时间，您可自由决定要做什么，有时也需要为达成目标而有计划地进行选择。\n白天可以帮城镇里的居民解决烦恼、潜入迷宫寻找宝物、搜寻困扰着人们的悬赏目标等，而夜晚可选择与同伴一同度过，或锻炼自身的“资质”等。打造一段只属于你的“旅程”吧。\n\n▽乘坐移动据点“铁甲战车”踏上旅途\n\n主角一行将乘坐铁甲战车前往较远的迷宫或城镇。\n在“铁甲战车”中可选择如何度过路上的时间。\n可以与同伴对话加深情谊、通过锻炼提高能力、为探索迷宫做准备，有时也可眺望窗外的景色等。这样的“铁甲战车”可称得上是移动据点，在其中度过充实的旅行时光吧。\n\n▽活用职业制服强敌，一击歼灭弱小的敌人，体验紧张与爽快并存的战斗系统\n迷宫中出现的敌人很是棘手，他们会用各式各样的攻击考验主角一行。\n主角和同伴们需要使用不同阿基态的能力来击败这些强敌。\n与强敌的战斗为回合制指令战斗，在激烈的战斗中思考策略，攻击敌人的弱点，将其击败时会获得巨大的成就感。\n主角一行成长之后，实力也会超越曾经的强敌。\n届时可以在场地上发起攻击动作，一击扫灭弱小的敌人，在迷宫中体验爽快的战斗。\n按照自己的想法编制队伍，朝着强敌遍布的迷宫前进吧。",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202405%2F2406%2F672cc5f97e84c564649093d4f6a3726f328e0de1814ab2e0.png&w=512&output=jpg",
+  "en": "Metaphor：ReFantazio",
+  "display_name": "暗喻幻想",
+  "warn": "",
+  "_cn": "暗喻幻想"
  },
  "Metaphor：ReFantazio": {
   "genres": [
@@ -516,13 +636,38 @@
  },
  "阿加莎·克里斯蒂：东方快车谋杀案": {
   "genres": [
-   "冒险"
+   "剧情冒险",
+   "推理悬疑",
+   "休闲解谜",
+   "第三人称视角"
   ],
-  "players": "1人",
+  "players": "1位玩家",
   "release": "2023年10月20日",
   "publisher": "Microids",
-  "shots": [],
-  "_cid": "HP4295-PPSA18113_00-AGATHACOEPS500AS"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202307/2614/8812f47c8f1d6723f4389cf530dc08884b2786e204862ecc.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202307/2614/fc6edfbd1bdaebd1c061440a0617eb989701bb0cddfb3300.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202307/2614/85ede80fac8cd0848de721a879a869d60e58dd9b9e222526.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202307/2614/de1b5ceccde8002f5ae8fe32f7f6ba56d46040dc977893ef.jpg"
+  ],
+  "_cid": "HP4295-PPSA18113_00-AGATHACOEPS500AS",
+  "store_name": "阿加莎·克里斯蒂：东方快车谋杀案",
+  "platforms": "PS5/PS4",
+  "capacity": "9.6 GB",
+  "players_local": "1",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文",
+   "日文"
+  ],
+  "intro": "登上传说中的东方快车，化身最著名的侦探，与时间赛跑，揭开凶手的真面目。\n\n体验阿加莎·克里斯蒂经典小说的现代版本。这一版本的《东方快车谋杀案》以2023年为背景，重新演绎经典的故事情节，为忠实粉丝带来无比惊艳的体验。在原著的基础上加入了全新的元素，玩家可以在重新调查赫尔克里·波洛著名的案件中，体验到前所未有的神秘和悬念。\n\n东方快车上发生了一起命案。在这次旅行中，赫尔克里·波洛要调查出一众嫌疑人的秘密和动机，了结刚刚发生的谋杀案。\n\n解开这个谜团并不容易。在无数的反转中，你必须利用你的聪明才智和侦探技巧来让案件真相大白。\n\n无论你是这个经典小说或电影的粉丝，还是神秘谋杀案的爱好者，或者只是在寻找惊险刺激的冒险，这个全新版本都再适合不过了。所以，登上东方快车，开始你的旅程吧！\n\n体验惊险的调查\n准备好体验刺激的反转吧，这些反转会让你沉浸到最后一刻，因为《东方快车谋杀案》中的情节转折在文学史上久负盛名。\n\n两名侦探齐办案\n重新体验《东方快车谋杀案》。背景设置在2023年的现代，忠实与原著但增强了改编，引入了一位名叫乔安娜·洛克的新角色。化身私家侦探，在可游玩的闪回中负责在美国进行第二次调查。\n\n思维导图和时间线解决\n进入赫尔克里·波洛的大脑，构建思维导图并进行推理，为游戏玩法增加了额外的深度。\n\n扮演波洛和乔安娜两位角色，解开谜题并进行推理，揭开谋杀背后的真相。当你查看场景、与所有主角交谈并质问时，可以以第三人称进行游戏。",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202306%2F1408%2F8fe2d0f859b21474097d392f7d45371f7963029ed6cad2a4.png&w=512&output=jpg",
+  "en": "Agatha Christie - Murder on the Orient Express",
+  "display_name": "阿加莎·克里斯蒂：东方快车谋杀案",
+  "warn": "",
+  "_cn": "阿加莎·克里斯蒂：东方快车谋杀案"
  },
  "Agatha Christie - Murder on the Orient Express": {
   "genres": [
@@ -536,13 +681,42 @@
  },
  "阿加莎·克里斯蒂 - 赫丘勒·白罗：最初的案件": {
   "genres": [
-   "冒险"
+   "剧情冒险",
+   "推理悬疑",
+   "休闲解谜"
   ],
-  "players": "1人",
+  "players": "1位玩家",
   "release": "2024年4月25日",
   "publisher": "Microids",
-  "shots": [],
-  "_cid": "EP4295-CUSA23753_00-YOUNGPOIROT000EU"
+  "shots": [
+   "https://vulcan.dl.playstation.net/img/rnd/202109/2413/PRuvctev6FffuJSBTnIDQmbz.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202109/2413/iG2FmJ7auxNqc8zVHutcA1PK.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202109/2413/cYushiOPhRd7xsIZOnWhVcgB.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202109/2413/0zQp6VvK3lsxQdB2ol3SLrT6.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202109/2413/tIwMSZNzMz6QYHxofw6cUzH0.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202109/2413/LCwAGbVZ9bEyGI7hvPAk8DAK.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202109/2413/AeUpFlL72gZHQ3C6Wzry762F.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202107/1912/UAHTQG3rgRrkHlxzuwQyHETU.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202107/1912/kFvBBIi54HEA5zi1VeS0wVQI.jpg"
+  ],
+  "_cid": "EP4295-CUSA23753_00-YOUNGPOIROT000EU",
+  "store_name": "阿加莎·克里斯蒂 - 赫尔克里·波洛：最初的案件",
+  "platforms": "PS5/PS4",
+  "capacity": "4.5 GB",
+  "players_local": "1",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文",
+   "日文"
+  ],
+  "intro": "回溯著名侦探赫尔克里·波洛充满神秘气息的年轻时代，探索彼时一宗尚无人知晓的案件。\n\n在他侦探生涯的早期，赫尔克里·波洛受邀参加了势力庞大的凡登布希家族为宣布女儿的订婚喜讯而举办的宴席。但宾客之间的关系开始变得剑拔弩张，而一场暴风雪席卷整个城镇，把所有人都困在了府邸中。这场幸事很快因一名宾客被谋杀而被笼上阴影……\n\n在正确的时间和正确的地点，波洛立刻着手调查。他将揭开哪些被隐藏的秘密和致命的竞争？\n\n一个您从未见过的赫尔克里·波洛：\n- 通过一个全新的谋杀案件，再次领略传奇侦探的风采。\n\n- 扮演早年的侦探赫尔克里·波洛，当时的他还需尽全力证明自己。\n\n- 解决一起复杂的谋杀案件，每个人都有要隐藏的秘密。\n\n- 揭开凡登布希家族在虚假的表面下隐藏着什么。\n\n您的心智就是您的法宝：\n- 询问所有嫌疑人，在不被他们知晓的情况下从他们身上获取关键信息。\n\n- 注意所有可疑的行为，揭开上层社会的阴暗秘密和竞争。\n\n- 探索一间埋藏着各种奥秘的奢华府邸。这里要寻找的不止是杀人犯……\n\n- 利用您的推理才华，在您的思维图中连接线索。",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202107%2F1912%2Fu655jXLcVXQGGAPoJHCIez7v.png&w=512&output=jpg",
+  "en": "Agatha Christie - Hercule Poirot：The First Cases",
+  "display_name": "阿加莎·克里斯蒂 - 赫丘勒·白罗：最初的案件",
+  "warn": "",
+  "_cn": "阿加莎·克里斯蒂 - 赫丘勒·白罗：最初的案件"
  },
  "Agatha Christie - Hercule Poirot：The First Cases": {
   "genres": [
@@ -556,13 +730,38 @@
  },
  "埃里克斯霍姆：被偷走的梦": {
   "genres": [
-   "冒险"
+   "剧情冒险",
+   "休闲解谜",
+   "潜行暗杀"
   ],
-  "players": "1人",
+  "players": "1位玩家",
   "release": "2025年7月15日",
   "publisher": "Nordcurrent GmbH",
-  "shots": [],
-  "_cid": "EB0757-PPSA20548_00-0286086241569047"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202406/0714/ec85a307b966247f0836a5020d8585a698cf0975c7096b78.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202406/0714/7aeab1fbe41337ee8a0442d6b35baf0fe4a2ad00c92ab92e.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202406/0714/356cb359ea6985f7b058b35add0e5823776f78a9cd9b1269.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202406/0714/f9ca8cb8cdcbaa018ae28d46212af30604660a60272b1988.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202406/0714/c67dda97e8d2d47b581b8a64eb50134f141486794fa49ab4.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202406/0714/e00498a513c6a597329eafbf43e4436a5835f5b2e27e4690.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202406/0714/27fae2da5e9702baadf16cd0ea1b251dd0b33fb12d3d9cdf.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202406/0714/5535fc0d1a401380940ed029367cb946f6ff671564248909.jpg"
+  ],
+  "_cid": "EB0757-PPSA20548_00-0286086241569047",
+  "store_name": "埃里克斯霍姆：被偷走的梦",
+  "platforms": "PS5",
+  "capacity": "11.62 GB",
+  "players_local": "1",
+  "players_online": "",
+  "languages": [
+   "中文"
+  ],
+  "intro": "这款通过叙事推动的等距视角隐蔽类游戏设定在生气蓬勃的城市埃里克斯霍姆。在弟弟赫尔曼神秘失踪并遭到警方追捕后，汉娜踏上寻弟之旅，由此引发一连串灾难性事件，不仅改变了各自的生活，也影响了整个城市的命运。携手盟友智取无穷无尽的敌人，运用你的奇思妙计揭晓赫尔曼失踪背后的真相——其中涉及的势力远远超乎你的想象。\n\n跟随汉娜的冒险脚步，穿过埃里克斯霍姆生气蓬勃的街道，在这座交错蔓延的北欧风格城市中体验二十世纪早期斯堪的纳维亚的优雅与锐气。在这个世界中，每片阴影都可以是藏身之地，每个角落都隐藏着新的挑战。盟友和快速反应是你揭晓城市秘密和设法摆脱追踪者的最有效工具。\n\n叙事冒险\n加入汉娜的冒险之旅，穿越埃里克斯霍姆寻找她的弟弟，揭晓弟弟失踪背后的谜团。投入壮丽的冒险场景，展开扣人心弦的故事，伴随汉娜一起争分夺秒地为找回家人而努力。\n\n独特角色\n在三个独特角色之间切换，利用他们独一无二的能力进入新的区域，完成各种挑战和谜题，运用计谋挫败敌人。\n\n策略玩法\n在三个独特角色之间切换，利用他们独一无二的能力进入新的区域，完成各种挑战和谜题，运用计谋挫败敌人。\n\n策略玩法\n观察警卫行为，分析环境线索，找到巧妙的解决方案来破除障碍。仔细侦查环境，借助掩体和潜行，运用声东击西的战术避开敌方侦测。\n\n活力世界\n探索虚构的埃里克斯霍姆世界，这个美丽与困苦并存的冒险之地高度还原了二十世纪北欧城市的风格。",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202406%2F0714%2F2160eca251f55b2db79a9cf21c88e146b0855c55c35dc575.png&w=512&output=jpg",
+  "en": "Eriksholm：The Stolen Dream",
+  "display_name": "埃里克斯霍姆：被偷走的梦",
+  "warn": "",
+  "_cn": "埃里克斯霍姆：被偷走的梦"
  },
  "Eriksholm：The Stolen Dream": {
   "genres": [
@@ -575,12 +774,45 @@
   "_cid": "EB0757-PPSA20548_00-0286086241569047"
  },
  "暗斗迷宫": {
-  "genres": [],
-  "players": "",
-  "release": "",
+  "genres": [
+   "动作",
+   "2D横版卷轴",
+   "类银河恶魔城"
+  ],
+  "players": "1位玩家",
+  "release": "2025年7月17日",
   "publisher": "",
-  "shots": [],
-  "_cid": "HP0700-PPSA20296_00-SHADOWLABYRINTH0"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202412/1203/fd6e40a1bbaab2c3d4a278ef56457d0d5ce894668ef47ac2.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202412/1203/a8f9b10a36438366d2b52477eec07f0a2b1ce326cf7236d5.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202412/1203/442b139a35ed56e5078562e99de94e5da29d40937f96f8ae.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202412/1203/78c16c796ece82a1a539857587a65dc363bda99453e9cf45.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202412/1203/ebad466c023284d4b27e0373063877f01c98b61b8a221363.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202412/1203/595389d304c8927d4072b0de9309e082a64ea26790cffc8c.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202412/1203/850e08d976f8253347c188cae6690462705864f4ea815ea1.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202412/1203/005dee45ed839b4c9d8eb59405e49a595c3694913039b586.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202412/1203/75c8f1c972ba76adb62024a67092669bb2a5746571e32c03.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202412/1203/84703bdce7dacab851db12a185e355909e3ebbd01cef7add.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202503/0505/fc7251974fc6bec27edadfc2b8a22bd8af037671ebb10133.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202503/0505/8c23b7c6340d179133d6779dc0166b98d97e231d587543ce.jpg"
+  ],
+  "_cid": "HP0700-PPSA20296_00-SHADOWLABYRINTH0",
+  "store_name": "Shadow Labyrinth 暗斗迷宫 (韩语, 简体中文, 繁体中文)",
+  "platforms": "PS5",
+  "capacity": "3.56 GB",
+  "players_local": "1位玩家",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "韩文"
+  ],
+  "intro": "继承了吃豆人基因的探索类2D动作游戏“Shadow Labyrinth 暗斗迷宫”。\n\n在某个荒废的星球上，残留着过去战争的遗骸……\n主角受到神秘的黄色球体-PUCK-召唤，以第8位适任者的身份来到了此地。\n\n为了在残酷的世界中生存，吞食敌人，开拓自己的命运吧。\n\n探索\n深不见底的洞窟、茂密的丛林、无尽的荒野——\n踏上这片不可思议的土地，挑战阻挡在前方的强敌，往黑暗深处前进吧。\n\n动作\n吞食敌人就能获得全新的力量。\n强化自己，制定专属于自己的战术，攻略迷宫吧。\n\n故事\n在神秘的黄色球体-PUCK-的引导下，前往伫立在远方的巨大黑塔……\nPUCK真正的目的究竟为何，又在和什么战斗着？解开这个世界的谜团吧。",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202503%2F0605%2F13c1d90c4b2a6fdc30d83692cac73778ff4ff6c2c5cae143.png&w=512&output=jpg",
+  "en": "Shadow Labyrinth",
+  "display_name": "暗斗迷宫",
+  "warn": "官方容器204，已用商店页补齐官方数据；容量待补（商店页无容量字段）",
+  "_via": "storefront",
+  "_cn": "暗斗迷宫"
  },
  "Shadow Labyrinth": {
   "genres": [],
@@ -592,13 +824,39 @@
  },
  "ARC Raiders 穹顶突击队1": {
   "genres": [
-   "动作"
+   "动作射击",
+   "合作战斗",
+   "搜打撤"
   ],
-  "players": "",
+  "players": "线上1-21人",
   "release": "2025年10月30日",
   "publisher": "Embark Studios AB",
-  "shots": [],
-  "_cid": "EP6848-PPSA04998_00-4085881659726287"
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202509/1814/d8fe1cbb0a3f30673003363089667bc932e5bd1f2f4ab4b2.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202509/1814/545919c3eb68b7a80f26585a9eb213f62cd8bfa1da4c52a5.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202509/1814/1854db4af5285cf9e6a2d5e64188f2cf61dcf373e12cc8db.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202509/1814/e52c17aca8d3dedc85e586c97502787ddf22b6823684b6c9.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202509/1814/8cbbaa5b92d0ce745153ac6ea4ab5083546729e80b792023.jpg"
+  ],
+  "_cid": "EP6848-PPSA04998_00-4085881659726287",
+  "store_name": "ARC Raiders",
+  "platforms": "PS5",
+  "capacity": "34.2 GB",
+  "players_local": "",
+  "players_online": "1-21",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文",
+   "日文"
+  ],
+  "intro": "回收，生存，兴盛。\n\n在《ARC Raiders》中，你将穿梭于由致命机器统治的地表和热闹非凡的地下社会“斯佩兰扎”之间。在前往上层探索那片满目疮痍却壮丽依旧的世界之前，你可以在自己的工坊中安心地制作、修理或升级装备。你可以独自冒险或与至多三名队友结伴，全力应对ARC机器的威胁以及幸存者同伴们出其不意的决定。到头来，只有你能定义自己是何种奇袭者，以及愿意为了胜利付出何种努力。\n\n探索沉浸式世界\n\n游戏初期可探索四张独特地图，随着地下社会的发展与扩张，更多区域将逐渐开放。每一处目的地都铭刻着两次灾难的沉重记忆，以及新旧战火留下的伤痕。在废墟中搜寻有价值的战利品，逐渐拼凑出被大自然覆盖的往昔世界。在不断变迁的地图里，每次行动都将独一无二，天气、敌人和机制的差异会让你随时陷入意想不到的境地。\n\n宣告身份\n\n在这个崇尚胆识与气势的社会中，你需要向所有人彰显自己作为奇袭者的身份。你搜集到的战利品既可出售换取钱币，也能用来制作全新装备，使你能够做好准备，迎接层出不穷的危险挑战。无论胜利或磨难，你都将积累宝贵经验，解锁多样技能，开启全新玩法。此外，你还将为各怀心思的商人完成委托，在这个随时可能瓦解的地下社会中体验充满摩擦、但又相互扶持的社区情谊。\n\n警惕机器\n\n地表由名为ARC的杀戮机器主宰，从穷追不舍的无人机蜂群到摧枯拉朽的庞然巨兽，它们无所不在。虽然无人知晓它们的来历，但每一步前行，你都感觉自己踩在挥之不去的危险阴影里。每一台机器都有独特的强项与战术，你必须识别其弱点，并在瞬息之间做出反应。记住：战斗的声响会传得很远。其他奇袭者或许正在暗中观望，准备瓜分你遗落的物资。\n\n开拓自己的道路\n\n奇袭者依靠拆解和重组回收材料生存，利用过往的技术与掠夺来的ARC零件制作武器、装备和各类小道具。升级你的工坊工作台，学习蓝图以打造更先进的物品，或在野外随机应变、快速修理，解决燃眉之急。随着你逐渐打响名号，可以通过试炼与其他奇袭者一较高下，冲击排行榜，赢取珍贵奖励。\n\n任务\n\n斯佩兰扎的每个人心里都有一把自己的算盘，那些商人自然也不例外。他们会支付报酬，委托你前往上层执行任务，在此过程中，你将渐渐了解他们的真实身份，以及他们对斯佩兰扎未来的规划。通过完成任务，你可以获取装备、制作材料及经验值，提升奇袭者等级并解锁新的技能点。\n\n技能树\n\nARC奇袭者的技能树共有三条分支：生存、机动性和强化。花费技能点来塑造独属于你的玩法风格。借助生存技能，你能加快搜刮速度，行动也更加悄无声息。利用机动性，你能巧妙甩开敌人，化解各类威胁。强化则能增强你的力量与耐力。自主规划成长路线，决定你的奇袭者将在战场上带来何种表现。\n\n打造军火库\n\n无论是消灭特定的ARC目标，还是与敌对奇袭者对抗，每场战斗你都应当挑选最适合的武器上阵。根据个人作战风格选择武器，从冲锋枪、步枪、霰弹枪，到轨道炮和能量武器等高级装备一应俱全。手雷、陷阱、滑索和可部署装置可为你提供战术上的灵活性，而强化则能让你根据偏好自由调整配装，解锁专属物品栏栏位和额外玩法加成。",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202610%2F2911%2F330ecd4da66e479a9814eea7bfdcfd20b15e1b601468db4e.png&w=512&output=jpg",
+  "en": "ARC Raiders",
+  "display_name": "ARC Raiders 穹顶突击队1",
+  "warn": "",
+  "_cn": "ARC Raiders 穹顶突击队1",
+  "intro_bold1": true
  },
  "ARC Raiders": {
   "genres": [
@@ -623,13 +881,43 @@
  "暗黑地牢1（完整版）": {
   "genres": [
    "角色扮演",
-   "策略"
+   "策略战斗",
+   "肉鸽试炼"
   ],
-  "players": "1人",
+  "players": "1位玩家",
   "release": "2021年4月20日",
   "publisher": "H2 Interactive Co., Ltd.",
-  "shots": [],
-  "_cid": "EP2483-CUSA05967_00-RHSDDPS4000000AE"
+  "shots": [
+   "https://vulcan.dl.playstation.net/img/cfn/11307FYlJz0zzVwlUjHrYVr_zAvWlHaXPVvrBEU86jaHJoXY4xUrDMSuTmI3C7mYxcvExTI3CS-MR3YERj2nTByX6cAirWO9.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/113073JoGZncfFPWHn1mU8-rYyLzuIRoDV-ZtrvGZiW_IK1Io5a4kV67YQe8DSAzTKcDmPqEPDAXKqjF_lbXZq6DSJUpcskU.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307p-meowbr1TRWYsxNedNpOZ-j6Kb9x_wX_54zoR8T7Xwwnz-Emm88hXx-uZ6kTxJt6jD4e9iOLWE3LIqYgCC6H8GOtLY.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307iduW_LlZXOJNbdJRJ0vaA4txLDWetY6Zv-RwK9fQfO0r2UFxZXucu1gzUhpe0MDm7hs1OL7IX1GLCo1PyQMXgI3jMn8.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307WRFzHXCuW6DHRKkfxXFIblPNd8g66OqByeKdoqWK-2EIHQy2kul4ttDHegHdn7-xkzSekqBGgF6U0BcgzvMDJQlGND-.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307GJRZmLqWirML48BuRsShbfoN1GiVwYYSO4fGgRW65cYvH8ZOFhcLiqzRcIvrrh_g2JQWjquVwdA_tvwgOr6aYAss449.jpg"
+  ],
+  "_cid": "EP2483-CUSA05967_00-RHSDDPS4000000AE",
+  "store_name": "Darkest Dungeon®: Ancestral Edition (Chinese (Simplified))",
+  "platforms": "PS5/PS4",
+  "capacity": "1.2 GB",
+  "players_local": "1",
+  "players_online": "",
+  "languages": [
+   "中文",
+   "韩文",
+   "英文",
+   "日文"
+  ],
+  "intro": "Darkest Dungeon®: Ancestral Edition 包括游戏本片与如下追加内容。\n\n- Darkest Dungeon®: The Color Of Madness\n\n- Darkest Dungeon©: The Crimson Court\n\n- Darkest Dungeon®: The Shieldbreaker\n\n《Darkest Dungeon》是一个极具挑战性的哥特式类 Rogue 回合制 RPG，聚焦冒险的心理压力。\n\nDarkest Dungeon©: The Crimson Court\n\nDarkest Dungeon® 的第一个扩展包。\nCrimson Court 是在 Darkest Dungeon 内容基础上的一个平行战役，为玩家提供全新挑战以及多个难度级别。\n为玩家提供全新挑战以及多个难度级别。故事背景会以同样的过场动画形式呈现给大家，带大家走进先祖的早期生活。\n\nDarkest Dungeon®: The Shieldbreaker\n\n可以雇用新英雄职业“破盾者”。\n她是一名高战略性英雄，拥有稳定的输出伤害，尤其精通于打击高防护性以及保护盟友的怪物。\n破盾者的移动、速度和定向技能使她成为了分解棘手怪物团体的珍贵盟友。\n\nDarkest Dungeon®: The Color Of Madness\n\n可恶的外星碎片划破夜空，撞上了小镇郊区磨坊主的农场！\n那些不幸目睹彗星坠毁的人们，已经被一种变幻不定的强腐蚀色调所蒙蔽。\n在时空迷失之后尽可能地存活下去，一边应对不断来袭的新老敌人，一边逐渐靠近彗星坠毁地点。",
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fimg%2Fcfn%2F11307H5sbxT_ZNq1HxQfxB3TTzQ091tZMMwsv8jvAqptQ1jk1DsI4MK8-qp_PfzSUBXgwdV45roz0K71uRwo0pHALCERrp-i.png&w=512&output=jpg",
+  "en": "Darkest Dungeon 1（Ancestral Edition）",
+  "display_name": "暗黑地牢1（完整版）",
+  "warn": "",
+  "_cn": "暗黑地牢1（完整版）",
+  "intro_boldlines": [
+   "Darkest Dungeon®: Ancestral Edition 包括游戏本片与如下追加内容。",
+   "Darkest Dungeon©: The Crimson Court",
+   "Darkest Dungeon®: The Shieldbreaker"
+  ]
  },
  "Darkest Dungeon 1（Ancestral Edition）": {
   "genres": [
