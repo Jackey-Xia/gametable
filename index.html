@@ -921,6 +921,8 @@ footer b{color:#4b5563}
 /* 逐商品开关 intro_pgap：段落之间加大到「一行」间隔（店主2026-11-01 #24 裁定） */
 .gt-dintro.gt-pgap .gt-dp{margin-bottom:26px}
 .gt-dintro .gt-dsub{display:block;font-weight:700;color:#1f2937;font-size:13px;margin:12px 0 0;letter-spacing:.2px}
+/* 逐商品开关 intro_gexact：空行完全由数据指定（编辑器用），取消标题自带 12px 上间距 */
+.gt-dintro.gt-gexact .gt-dsub{margin-top:0}
 .gt-dintro.gt-dempty{color:#9aa3af}
 .gt-dgal{position:relative;margin-top:6px;padding-top:2px}
 .gt-dgal .gt-dwrap{display:flex;gap:8px;overflow-x:auto;padding:10px 18px 4px;margin:0;
@@ -2436,7 +2438,7 @@ function gtRenderDetail(card,g,cov,e){
     row.appendChild(k);row.appendChild(v);body.appendChild(row);
   });
   if(e.intro&&e.intro.trim()){
-    var it=document.createElement("div");it.className="gt-dintro"+(e.intro_pgap?" gt-pgap":"");
+    var it=document.createElement("div");it.className="gt-dintro"+(e.intro_pgap?" gt-pgap":"")+(e.intro_gexact?" gt-gexact":"");
     var blks=e.intro.split("\n\n");
     var lastP=null,lastBul=false,bold1Done=false;
     for(var bi=0;bi<blks.length;bi++){
@@ -2448,9 +2450,11 @@ function gtRenderDetail(card,g,cov,e){
         var rt=raw[ri].trim();if(!rt)continue;
         var rb=/^[•·\-*・\t]/.test(rt);
         var rh=gtIntroSub(rt);
-        /* 逐行强制另起一段（intro_breaklines）／逐行下方空行（intro_gap，值=空行数）*/
+        /* 逐行强制另起一段（intro_breaklines）／逐行下方空行（intro_gap，值=空行数）
+           intro_gexact（编辑器模式）：intro_gap 即「本段前空几行」，>0 才另起段，0 表示紧接 */
         var rbrk=!!(e&&e.intro_breaklines&&e.intro_breaklines.indexOf(rt)>=0);
-        var rgap=!!(e&&e.intro_gap&&e.intro_gap[rt]);
+        var gn0=(e&&e.intro_gap&&e.intro_gap[rt])||0;
+        var rgap=e&&e.intro_gexact?(gn0>0):!!gn0;
         /* 长正文后紧跟的分段标题（如「大型游戏地图：」）另起一段，避免粘在上一段末尾 */
         var cut=(curB!==null)&&((rb!==curB)||(rh&&!curH&&prevLen>26)||rbrk||rgap);
         if(curB===null){curB=rb;curH=rh;cur.push(rt);}
@@ -2461,12 +2465,18 @@ function gtRenderDetail(card,g,cov,e){
       if(cur.length)subA.push({b:curB,ls:cur});
       for(var si=0;si<subA.length;si++){
         var sb=subA[si];
+        /* gexact：本段前空几行（0=紧接 → 上段 margin 与标题 12px 全部清零）*/
+        var gFirst=(e&&e.intro_gexact&&e.intro_gap)?(e.intro_gap[sb.ls[0]]||0):0;
         /* 连续子弹点段落合并为一段（取消条目之间的空行间隔，店主2026-11-01裁定） */
-        var merged=!!(sb.b&&lastBul&&lastP);
+        var merged=!!(sb.b&&lastBul&&lastP&&!gFirst);
         var p=merged?lastP:document.createElement("p");
         if(!merged)p.className="gt-dp";
+        if(e&&e.intro_gexact&&!merged){
+          p.style.marginTop=(gFirst*22)+"px";
+          p.style.marginBottom="0";
+        }
         /* 逐行下方空行：值=额外空行数（基础 13px；已开 pgap 则基础 26px）*/
-        if(e&&e.intro_gap){
+        if(e&&e.intro_gap&&!e.intro_gexact){
           for(var gq=0;gq<sb.ls.length;gq++){
             var gv=e.intro_gap[sb.ls[gq]];
             if(gv){p.style.marginBottom=((e.intro_pgap?26:13)+13*gv)+"px";break;}
@@ -3024,7 +3034,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-11-01T17:25:22+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-11-01T18:52:39+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-autorefresh">
 /* 改157f-begin: 版本自动刷新健壮版 —— 修复改143「空刷一次即锁死」缺陷。
    部署时注入 __GT_PAGE_VER, 与 ver.json(no-store) 对比: 不一致才刷新,
