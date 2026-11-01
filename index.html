@@ -901,7 +901,7 @@ footer b{color:#4b5563}
 .gt-dhead{display:flex;gap:14px;padding:18px 18px 12px;border-bottom:1px solid #eef0f3;position:sticky;top:0;background:#fff;border-radius:18px 18px 0 0}
 .gt-dcov{width:96px;height:128px;flex:0 0 auto;border-radius:8px;overflow:hidden;background:#eef1f6}
 .gt-dcov img{width:100%;height:100%;object-fit:cover;display:block}
-.gt-dhtxt{flex:1;min-width:0;padding-top:2px}
+.gt-dhtxt{flex:1;min-width:0;padding-top:2px;padding-right:40px}
 .gt-dtitle{font-size:17px;font-weight:800;line-height:1.35;word-break:break-word;color:#3a5bbf}
 .gt-den{font-size:12px;color:#9aa3af;margin-top:3px;word-break:break-word}
 /* 改157d：× 按钮常驻 —— 挂在不滚动的 .gt-dmodal 上（内容滚动在 .gt-dscroll 里），下拉也不消失；
@@ -964,7 +964,7 @@ html.nohint #gtLoadHint{display:none!important}</style>
 if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 </script>
 <!-- 改123a-end -->
-<div id="gtLoadHint" class="gt-loadhint" role="status"><span class="d"></span><span>发现新版本，正在加载数据，请勿刷新页面……</span></div>
+<div id="gtLoadHint" class="gt-loadhint" role="status"><span class="d"></span><span id="gtLoadHintTxt">正在加载数据，请勿刷新页面……</span></div>
 <header class="hero">
   <div class="hero-scrim" aria-hidden="true"></div>
   <div class="memhead">
@@ -2289,17 +2289,86 @@ function openDetail(g){
   card.addEventListener("contextmenu",function(ev){if(ev.target.tagName==="IMG")ev.preventDefault();});
   gtDetLoad().then(function(det){
     if(!mask.classList.contains("show"))return;
-    var e=det[g.name]||null;
+    var e=gtFindDet(det,g);
     gtRenderDetail(card,g,cov,e);
   });
 }
 function gtIntroSub(t){
-  if(!t||t.length>26)return false;
-  if(/[。！？.!?，,]/.test(t.slice(-1)))return false;
+  if(!t)return false;
+  /* 列表项（• / - / * / ・ / 制表符开头）一律不当标题（含 •/・ 短行），店主2026-11-01修正 */
+  if(/^[•\-*・\t]/.test(t))return false;
+  /* 方括号标题（如【关于 BLUE REFLECTION】）—— 不限长度 */
+  if(t.charAt(0)==="【"||t.charAt(0)==="[")return true;
+  /* 引述短句：行尾 ：/ : */
+  if(t.endsWith("：")||t.endsWith(":"))return true;
+  /* 【店主2026-11-01】行首特殊符号 + 明显短于上下文的标题行（· ★ ◆ 等，不含 •/・ 子弹点），≤22字视为分段标题加粗 */
+  if(/^[·★◆◈◇▶►▸●○◉※‥]/.test(t) && t.trim().length<=22)return true;
+  /* 【店主2026-11-01】"短标题：解释" 整行作为分段标题 —— 短标题(≤10字)后接：引出说明，整行加粗 */
+  var ci=t.indexOf("："), ci2=t.indexOf(":"), cpos;
+  if(ci<0)cpos=ci2; else if(ci2<0)cpos=ci; else cpos=Math.min(ci,ci2);
+  if(cpos>0 && cpos<=10){
+    var hd=t.slice(0,cpos).trim();
+    if(hd.length>0 && hd.length<=10 && !/[，。、；！？!?.,;:]/.test(hd)) return true;
+  }
+  /* 带感叹号的玩法/特性短句：行尾 ！/ ! 且 ≤30 字（过长正文句不加重） */
+  if(t.length<=30&&(t.endsWith("！")||t.endsWith("!")))return true;
+  if(t.length>26)return false;
+  /* 短行内含 ： 的标签句（如「本作包含：xxx」类） */
   if(/[：:]/.test(t))return true;
+  /* 以句号/问号/逗号等收尾 → 判定为正文，不加重 */
+  if(/[。！？.!?，,]/.test(t.slice(-1)))return false;
+  /* ≤20 字短句 / 名词词组 → 视为分段标题（记忆规则：凡短句标题均以标题处理加粗） */
+  if(t.length<=20)return true;
+  /* 兜底：以叙事/特色/玩法… 等前缀开头 */
   var H=["叙事","特色","玩法","系统","故事","角色","世界","模式","关于","简介","概览","背景","音乐","画面","操作","评测","剧情","战斗","探索","生存","建造","多人","单人","流程","设定","体验","要素","机制","冒险","挑战","关卡","内容"];
   for(var i=0;i<H.length;i++){if(t.indexOf(H[i])===0)return true;}
   return false;
+}
+/* 简介逐行渲染：行内「短标题：解释」仅标题加粗，解释保持正常（店主 2026-11-01 裁定） */
+function gtIntroEmit(p,t){
+  /* 仅当「≤10字短标题 + ：/ : + 解释」在同一行时，把标题部分加粗，解释作普通文本 */
+  var ci=t.indexOf("："), ci2=t.indexOf(":"), cpos;
+  if(ci<0)cpos=ci2; else if(ci2<0)cpos=ci; else cpos=Math.min(ci,ci2);
+  if(cpos>0 && cpos<=10){
+    var hd=t.slice(0,cpos).trim();
+    if(hd.length>0 && hd.length<=10 && !/[，。、；！？!?.,;:]/.test(hd)){
+      var b=document.createElement("b");b.className="gt-dsub";
+      b.textContent=hd+(t.charAt(cpos)==="："?"：":"");
+      p.appendChild(b);
+      var rest=t.slice(cpos+1).replace(/^\s+/,"");
+      if(rest)p.appendChild(document.createTextNode(rest));
+      return;
+    }
+  }
+  if(gtIntroSub(t)){var b2=document.createElement("b");b2.className="gt-dsub";b2.textContent=t;p.appendChild(b2);}
+  else p.appendChild(document.createTextNode(t));
+}
+/* 游玩人数类标签：与「人数」字段重复，渲染时一律剔除（店主 2026-11-01 裁定） */
+var GT_PLAYER_TAGS={"单人游玩":1,"双人同屏":1,"多人同屏":1,"双人联机":1,"多人联机":1,"双人合作":1,"本地多人":1,"线上多人":1,"单人":1,"多人":1,"合作":1};
+function gtStripPlayerTags(arr){return (arr||[]).filter(function(t){return !GT_PLAYER_TAGS[t];});}
+/* 语言：有中文时中文排最前；简体+繁体中文合并为「中文」（店主 2026-11-01 裁定） */
+function gtLangCNFirst(arr){
+  if(!arr||!arr.length)return arr;
+  var hasCN=arr.some(function(x){return x==="中文"||x==="繁體中文";});
+  var others=arr.filter(function(x){return x!=="中文"&&x!=="繁體中文";});
+  return (hasCN?["中文"]:[]).concat(others);
+}
+/* 详情查找：网格名可能带多库存序号后缀（漫威金刚狼1 → 漫威金刚狼），需回退基名 */
+function gtFindDet(det,g){
+  if(!det||!g)return null;
+  var n=g.name||"";
+  if(det[n])return det[n];
+  var m=/^(.*?)(\d+)$/.exec(n);
+  if(m && det[m[1]]) return det[m[1]];
+  return null;
+}
+/* 人数：原始范围(1 / 1-2 / 4) → 规范展示；已是「本地/线上」形式则原样 */
+function gtFmtPlayers(p){
+  if(!p)return "—";
+  if(/本地|线上/.test(p))return p;
+  var t=String(p).trim();
+  if(/^\d+(\-\d+)?$/.test(t))return t==="1"?"1位玩家":"本地"+t+"人";
+  return p;
 }
 function gtRenderDetail(card,g,cov,e){
   card.innerHTML="";
@@ -2320,15 +2389,16 @@ function gtRenderDetail(card,g,cov,e){
   head.appendChild(ht);sc.appendChild(head);
   if(!e)return;
   var body=document.createElement("div");body.className="gt-dbody";
-  if(e.genres&&e.genres.length){
+  var gtags=gtStripPlayerTags(e.genres||[]);
+  if(gtags.length){
     var tags=document.createElement("div");tags.className="gt-dtags";
-    e.genres.forEach(function(gg){var s=document.createElement("span");s.className="gt-dtag";s.textContent=gg;tags.appendChild(s);});
+    gtags.forEach(function(gg){var s=document.createElement("span");s.className="gt-dtag";s.textContent=gg;tags.appendChild(s);});
     body.appendChild(tags);
   }
   var rows=[
-    ["人数", e.players||"—"],
+    ["人数", gtFmtPlayers(e.players)],
     ["容量", e.capacity||"—"],
-    ["语言", (e.languages&&e.languages.length)?e.languages.join(" / "):"—"],
+    ["语言", (e.languages&&e.languages.length)?gtLangCNFirst(e.languages).join(" / "):"—"],
     ["发售", e.release||g.date||"—"],
     ["平台", e.platforms||((g.hs||[]).join(" "))||"—"]
   ];
@@ -2348,8 +2418,7 @@ function gtRenderDetail(card,g,cov,e){
       for(var li=0;li<lns.length;li++){
         var t=lns[li].trim();if(!t)continue;
         if(li)p.appendChild(document.createElement("br"));
-        if(gtIntroSub(t)){var b=document.createElement("b");b.className="gt-dsub";b.textContent=t;p.appendChild(b);}
-        else p.appendChild(document.createTextNode(t));
+        gtIntroEmit(p,t);
       }
       it.appendChild(p);
     }
@@ -2454,7 +2523,7 @@ function gameCard(g,idx){
   prices.appendChild(priceTile("限定版 · 30天",fmtMoney(g.xd30),[stockLight("库存："+(g.xd?"有":"无"),g.xd)],[g.xd]));
   card.appendChild(prices);
   /* 改157: 右上角「详情 ›」——仅点按钮开详情, 无数据则不显示 */
-  gtDetLoad().then(function(det){if(!det[g.name])return;
+  gtDetLoad().then(function(det){if(!gtFindDet(det,g))return;
     var h=document.createElement("span");h.className="gt-hint";h.innerHTML='详情 <i class="gt-ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></i>';
     h.onclick=function(ev){ev.stopPropagation();openDetail(g);};
     nm.appendChild(h);
@@ -2841,6 +2910,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
   }
   function hide(){ if(hint&&hint.className.indexOf("hide")<0)hint.classList.add("hide"); }
   function tick(){
+    if(window.__GT_UPDATING)return;     /* 改159: 版本更新进行中，红框提示锁定可见，不隐藏 */
     if(!hint||hint.className.indexOf("hide")>=0)return;
     var cards=document.querySelectorAll(".gcover");
     var el=Date.now()-t0;
@@ -2879,7 +2949,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-10-28T03:30:37+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-11-01T14:50:16+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-autorefresh">
 /* 改157f-begin: 版本自动刷新健壮版 —— 修复改143「空刷一次即锁死」缺陷。
    部署时注入 __GT_PAGE_VER, 与 ver.json(no-store) 对比: 不一致才刷新,
@@ -2899,6 +2969,8 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
       var n=0; try{n=sessionStorage.getItem("gt_vn")|0;}catch(e){}
       if(n>=3)return;                                /* 本会话最多追3次, 防循环 */
       try{sessionStorage.setItem("gt_vn",String(n+1));}catch(e){}
+      /* 改159: 红框加载提示两态 —— 检测到新版本时切换为「发现新版本，正在加载更新」并锁定不隐藏 */
+      try{ window.__GT_UPDATING=true; var _hl=document.getElementById("gtLoadHintTxt"); if(_hl)_hl.textContent="发现新版本，正在加载更新，请勿刷新页面……"; }catch(e){}
       var go=function(){
         try{
           var t=document.createElement("div");
@@ -3020,6 +3092,25 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
       requestAnimationFrame(function(){m.className="gtwg-mask on "+curKind;});
     }catch(e){}
   };
+})();
+</script>
+
+
+
+<!-- 本地测试用：?q=游戏名 直达详情 -->
+<script>
+(function(){
+  try{
+    var q=new URLSearchParams(location.search).get('q');
+    if(!q)return;
+    function go(){
+      if(!window.GT_DATA||!window.GT_DATA.ps){setTimeout(go,200);return;}
+      var g=null;
+      for(var i=0;i<window.GT_DATA.ps.length;i++){var x=window.GT_DATA.ps[i];if(x.name===q||x.en===q){g=x;break;}}
+      if(g&&window.openDetail){window.openDetail(g);}else if(g){setTimeout(go,300);}
+    }
+    if(document.readyState==="complete")go();else window.addEventListener("load",go);
+  }catch(e){}
 })();
 </script>
 
