@@ -1154,7 +1154,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 
 <button id="toTop" class="toTop" aria-label="跳到底部" title="跳到底部">↓ 跳到底部</button>
 <script src="pinyin.js?v=20260911"></script>
-<script>window.__GT_DATA_VER="2026-10-28T01:08:55+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
+<script>window.__GT_DATA_VER="2026-11-01T19:15:39+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
 <!-- 改85: 数据文件改为动态加载(带时间戳)
      原来写死 `<script src="data.js?t=20260909155923">`, URL 恒定不变, 而 GitHub Pages 给
      data.js 的 max-age 是 600s —— 库存改完后 10 分钟内(或更久)URL 相同, 浏览器直接用缓存,
@@ -2294,6 +2294,7 @@ function openDetail(g){
   gtDetLoad().then(function(det){
     if(!mask.classList.contains("show"))return;
     var e=gtFindDet(det,g);
+    if(!e){card.innerHTML='<div style="padding:34px 18px;text-align:center;color:#8a94a6;font-size:13px">该商品暂无详情</div>';return;}
     gtRenderDetail(card,g,cov,e);
   });
 }
@@ -2607,12 +2608,13 @@ function gameCard(g,idx){
   prices.appendChild(priceTile("非认证 · 7天",fmtMoney(g.fc7),[stockLight("库存："+(g.fc?"有":"无"),g.fc)],[g.fc]));
   prices.appendChild(priceTile("限定版 · 30天",fmtMoney(g.xd30),[stockLight("库存："+(g.xd?"有":"无"),g.xd)],[g.xd]));
   card.appendChild(prices);
-  /* 改157: 右上角「详情 ›」——仅点按钮开详情, 无数据则不显示 */
-  gtDetLoad().then(function(det){if(!gtFindDet(det,g))return;
-    var h=document.createElement("span");h.className="gt-hint";h.innerHTML='详情 <i class="gt-ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></i>';
-    h.onclick=function(ev){ev.stopPropagation();openDetail(g);};
-    nm.appendChild(h);
-  });
+  /* 改163: 右上角「详情 ›」与卡片同步渲染 —— 不再等 game_details.json 下载完才浮现
+     （店主 2026-11-01 裁定：按钮必须与卡片其他内容一并快速出现）。
+     数据到齐后复核一次，若确认该商品无详情则自动移除按钮。 */
+  var _gth=document.createElement("span");_gth.className="gt-hint";_gth.innerHTML='详情 <i class="gt-ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></i>';
+  _gth.onclick=function(ev){ev.stopPropagation();openDetail(g);};
+  nm.appendChild(_gth);
+  gtDetLoad().then(function(det){if(!gtFindDet(det,g)){try{_gth.remove();}catch(e){}}});
   return card;
 }
 
@@ -3034,7 +3036,20 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-11-01T18:52:39+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-11-01T19:15:39+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script id="gt-det-preload">
+/* 改163-begin: 详情数据「空闲预加载」 —— 卡片上的「详情 ›」已同步显示、不再等数据；
+   game_details.json 推迟到首屏渲染完、浏览器空闲时才拉取，不跟首屏抢带宽。
+   用户在此之前点开详情会看到「加载中…」，数据到了自动填充。 */
+(function(){
+  try{
+    var kick=function(){try{gtDetLoad();}catch(e){}};
+    if(window.requestIdleCallback){requestIdleCallback(kick,{timeout:2500});}
+    else{setTimeout(kick,1000);}
+  }catch(e){}
+})();
+/* 改163-end */
+</script>
 <script id="gt-autorefresh">
 /* 改157f-begin: 版本自动刷新健壮版 —— 修复改143「空刷一次即锁死」缺陷。
    部署时注入 __GT_PAGE_VER, 与 ver.json(no-store) 对比: 不一致才刷新,
