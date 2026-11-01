@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1120,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-11-01T08:02:06"
+  "updated": "2026-11-01T16:17:31"
  },
  "locks": {
   "p0001": {
@@ -2207,13 +2207,13 @@
     "午夜之南"
    ],
    "en": "",
-   "file": "covers/rcab0b1e099de8.jpg",
-   "md5": "ab0b1e099de82d6b6d3bc6c2bc888d9d",
-   "note": "批量3: 官方竖版满铺保顶部字母",
+   "file": "covers/rc88e82aacd73e.jpg",
+   "md5": "88e82aacd73e7146b0055e51a6656dcd",
+   "note": "午夜之南 换 PS 港服标准版官方竖版 PORTRAIT_BANNER(1400x2100) 保顶裁底 504x672 (ID UP6312-PPSA29642_00-0514019496666397) 原图为Weaver's Edition",
    "platform": "PS",
    "role": "P-pad",
    "store": "South of Midnight Weaver's Edition (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-10-28T00:27:05"
+   "time": "2026-11-01T16:17:31"
   },
   "p0169": {
    "cn": [
@@ -2693,13 +2693,13 @@
     "吸血鬼幸存者（完整版）"
    ],
    "en": "",
-   "file": "covers/9093ff91a69d_s.jpg",
-   "md5": "27503418b9dc9b9ff46d5617d6a65a4b",
-   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc75eab009cc93.jpg",
+   "file": "covers/rcc8d511845897.jpg",
+   "md5": "c8d511845897ec52b3b4177039f3d9e2",
+   "note": "吸血鬼幸存者 街霸6式拼接(主图381顶对齐+8张辅图卡两行各4):本体+ Bloodmoon/Emergency Meeting/Tides/Moonspell + Ode to Castlevania/Operation Guns/Emerald Diorama/Ante Chamber(Bloodmoon重复已去重)",
    "platform": "PS",
    "role": "P",
    "store": "",
-   "time": "2026-09-21T00:21:31"
+   "time": "2026-11-01T16:17:31"
   },
   "p0207": {
    "cn": [
@@ -3086,13 +3086,13 @@
     "圣女战旗（完整版）"
    ],
    "en": "Banner of the Maid（Complete Edition）",
-   "file": "covers/rcb9287a60fabc.jpg",
-   "md5": "9fca166c4d894e79552f484e0900c46c",
-   "note": "店主指认改满铺 · 竖图原图直上",
+   "file": "covers/rc81e91518b4f3.jpg",
+   "md5": "81e91518b4f3c2ccd17063ed63549f9f",
+   "note": "圣女战旗 街霸6式拼接(主图455+2张辅图卡235x170):本体+ 云自海上来 + 伊莱莎小姐的笔记",
    "platform": "PS",
    "role": "P-orig",
    "store": "圣女战旗 Banner of the Maid (简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:40"
+   "time": "2026-11-01T16:17:31"
   },
   "p0237": {
    "cn": [
@@ -6934,13 +6934,13 @@
     "星界战士 星座上升（完整版）"
    ],
    "en": "",
-   "file": "covers/rc4c907a9b7509.jpg",
-   "md5": "9bcd11acaafb0df004caf123955b4682",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 rescan 504x756）",
+   "file": "covers/rc52a7e3b1c2d0.jpg",
+   "md5": "52a7e3b1c2d0ff65f6bd23362265313b",
+   "note": "星界战士 街霸6式拼接(主图511+4张辅图卡111x114):本体+ Yamat + 天界乐园DLC + 大型扩展包狱外世界 + Arven",
    "platform": "PS",
    "role": "P-fill",
    "store": "星界战士 (Astral Ascent) PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
-   "time": "2026-09-20T10:23:41"
+   "time": "2026-11-01T16:17:31"
   },
   "p0531": {
    "cn": [
@@ -11841,13 +11841,13 @@
     "血污 赤痕：夜之仪式（完整版）"
    ],
    "en": "",
-   "file": "covers/rc288381d3ad0f.jpg",
-   "md5": "48dae8d3a3d61230df4f00411bddd66f",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",
+   "file": "covers/rca9a771bd223f.jpg",
+   "md5": "a9a771bd223fc7014ff55e23f82ccead",
+   "note": "赤痕：夜之仪式 街霸6式拼接(B版:主图485+辅图卡153x140):本体+ Iga's Back Pack + 米莉娅姆完整服装造型包 + 经典模式II多米尼克的诅咒",
    "platform": "PS",
    "role": "M-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-11-01T16:17:31"
   },
   "p0906": {
    "cn": [
