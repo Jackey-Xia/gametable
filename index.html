@@ -1001,7 +1001,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
   
   <div class="hero-inner">
     <div class="brand">
-      <div class="logo"><img src="avatar_fill.png?v=1793615460" alt="夏天Jackey"></div>
+      <div class="logo"><img src="avatar_fill.png?v=1793616635" alt="夏天Jackey"></div>
       <div>
         <h1>「夏天Jackey」PS数字版游戏</h1>
         <div class="sub">千款游戏 · 会员特价 · 一人一号</div>
@@ -1260,6 +1260,7 @@ gtIdb().then(function(db){
 }).catch(function(){});
 /* 封面渲染: 本地有 → blobURL 秒出; 没有 → 网络取一次并顺带入库 */
 function gtCoverSrc(im,url){
+  if(typeof gtProg!=="undefined"&&gtProg)gtProg.total++;   /* 改159e: 仅封面真正开始取图(进入视口)时计入, 避免全量卡片数致进度到不了100% */
   gtGet(url).then(function(b){
     if(b){try{im.src=URL.createObjectURL(b);}catch(e){im.src=url;}return;}
     fetch(url).then(function(r){return r&&r.ok?r.blob():null}).then(function(bl){
@@ -1271,7 +1272,6 @@ function gtCoverSrc(im,url){
 /* 改111: 懒加载 —— 只有接近视口(提前 600px)才真正取封面, 首屏不再一次拉 120 张 */
 var gtIO=null;
 function gtLazyCover(im,url){
-  if(typeof gtProg!=="undefined"&&gtProg)gtProg.total++;   /* 改159: 计入待加载封面, 供提示条真实百分比 */
   if(!("IntersectionObserver" in window)){gtCoverSrc(im,url);return;}
   if(!gtIO){
     gtIO=new IntersectionObserver(function(ents){
@@ -2583,7 +2583,7 @@ function gameCard(g,idx){
     /* 改108: 用带回退的 coverOf(精确 -> 去库存序号 -> 展示名), 解决新增库存后封面消失 */
     let f=coverOf(g,dispName);
     const box=el("div","gcover"+(f?"":" ph"));
-    if(f){const im=document.createElement("img");im.alt="";im.loading="lazy";im.decoding="async";box.classList.add("loading");const sk=el("div","gskel");sk.appendChild(el("span","gspin"));sk.appendChild(el("span","gskeltxt","加载中…"));box.appendChild(im);box.appendChild(sk);function gtDone(){box.classList.remove("loading");if(sk.parentNode)sk.parentNode.removeChild(sk);}im.addEventListener("load",gtDone,{once:true});im.addEventListener("error",gtDone,{once:true});gtLazyCover(im,f);}
+    if(f){const im=document.createElement("img");im.alt="";im.loading="lazy";im.decoding="async";box.classList.add("loading");const sk=el("div","gskel");sk.appendChild(el("span","gspin"));sk.appendChild(el("span","gskeltxt","加载中…"));box.appendChild(im);box.appendChild(sk);function gtDone(){box.classList.remove("loading");if(sk.parentNode)sk.parentNode.removeChild(sk);if(typeof gtProg!=="undefined"&&gtProg)gtProg.done++;}im.addEventListener("load",gtDone,{once:true});im.addEventListener("error",gtDone,{once:true});gtLazyCover(im,f);}
     else{box.appendChild(el("div","phc",String(dispName).slice(0,1)));box.appendChild(el("div","pht","封面待接入"));}
     card.appendChild(box);
   })();
@@ -2687,7 +2687,7 @@ function showTab(name){
   curTab=name;     /* 改81 */
   /* 改159: 页头真实背景元素, 随 tab 显式换图(微信 WebView 伪元素不重绘兜底) */
   var heroBg=document.getElementById("heroBg");
-  if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793615460')";heroBg.style.opacity=1;}
+  if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793616635')";heroBg.style.opacity=1;}
   /* 改114/159e: 页头封面随 tab 切换 —— PS白金(ns)换奖杯大图, 会员资费(mem)与 PS游戏(ps)均用 banner_mem.jpg(会员资费同款图, 替换原小熊图) */
   const hero=document.querySelector(".hero");
   if(hero){hero.classList.toggle("tmem",name==="mem");hero.classList.toggle("tplat",name==="ns");}
@@ -3294,7 +3294,7 @@ var gtProg={total:0,done:0};   /* 改159: 封面加载进度计数器, 供提示
     else { base=Math.min(90, base + (Date.now()-t0<1500?3:1)); p=base; }
     if(!loaded) p=Math.min(p, total>0 ? 92 : 90);
     setPct(p);
-    if(loaded){ setPct(100); setTimeout(hide,250); return; }
+    if(loaded && (total===0 || done>=total)){ setPct(100); setTimeout(hide,300); return; }
     if(Date.now()-t0>25000){ setPct(100); setTimeout(hide,200); return; }
     setTimeout(tick,200);
   }
