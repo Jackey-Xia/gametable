@@ -156,6 +156,15 @@
   "store": "",
   "time": "2026-09-19T02:49:15"
  },
+ "GTA侠盗猎车手6/给他爱6": {
+  "file": "covers/rcc669c9fd6939.jpg",
+  "source": "manual",
+  "role": "M-fill",
+  "store": "",
+  "time": "2026-11-02T04:02:19",
+  "note": "★人工锁死沿用(锁p0014, 近似匹配 0.75 《GTA侠盗猎车手三部曲/给他爱三部曲》)",
+  "en": "Grand Theft Auto 6"
+ },
  "GTA侠盗猎车手三部曲/给他爱三部曲": {
   "file": "covers/rc69ca2ddcf557.jpg",
   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x756）",
