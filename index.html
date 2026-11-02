@@ -374,7 +374,19 @@ footer b{color:#4b5563}
 </style>
 </head>
 <body>
-<div id="gtLoadHint" class="gt-loadhint" role="status"><span class="d"></span><span id="gtPct" class="pct">0%</span><span>正在加载封面，请稍候……</span></div>
+<div id="gtLoadHint" class="gt-loadhint" role="status"><span class="d"></span><span id="gtPct" class="pct">0%</span><span id="gtHintTxt">正在加载数据，请勿刷新页面……</span></div>
+<script>
+/* 改159b: 若为「系统/逻辑更新」(触发了版本重载), 加载文案切换为「发现新版本…」; 否则默认「正在加载数据…」 */
+(function(){
+  try{
+    if(sessionStorage.getItem('gt_newver')==='1'){
+      var s=document.getElementById('gtHintTxt');
+      if(s)s.textContent='发现新版本，正在加载数据，请勿刷新页面……';
+      try{sessionStorage.removeItem('gt_newver');}catch(e){}
+    }
+  }catch(e){}
+})();
+</script>
 <header class="hero">
   <div class="hero-inner">
     <div class="brand">
@@ -1552,7 +1564,12 @@ function gtBackgroundRefresh(){
       var m=txt.match(/window\.GT_DATA\s*=\s*([\s\S]*)\s*;\s*$/); if(!m)return;
       var nd; try{ nd=(new Function("return ("+m[1]+")"))(); }catch(e){ return; }
       var old=(window.GT_DATA||{}).synced;
-      if(nd&&nd.synced&&nd.synced!==old)gtApply(nd);
+      if(nd&&nd.synced&&nd.synced!==old){
+        var h=document.getElementById("gtLoadHint"), t=document.getElementById("gtHintTxt");
+        if(h&&t){ t.textContent="正在加载数据，请勿刷新页面……"; h.classList.remove("hide"); }
+        gtApply(nd);
+        if(h)setTimeout(function(){h.classList.add("hide");},700);
+      }
     }).catch(function(){});
   }catch(e){}
 }
@@ -1727,6 +1744,7 @@ var gtProg={total:0,done:0};   /* 改159: 封面加载进度计数器, 供提示
       var last=null; try{last=localStorage.getItem(K);}catch(e){}
       if(last && last!==v && !sessionStorage.getItem(RK)){
         try{sessionStorage.setItem(RK,"1");}catch(e){}
+        try{sessionStorage.setItem("gt_newver","1");}catch(e){}   /* 改159b: 标记本次为「系统/逻辑更新」, 供加载文案切换 */
         /* 改159: 版本变更时先清空 SW 缓存(封面/数据走 SW), 再强制刷新, 确保老客拿到新页而非缓存旧页 */
         try{ if(navigator.serviceWorker&&navigator.serviceWorker.controller){ navigator.serviceWorker.controller.postMessage({type:"clear"}); } }catch(e){}
         location.reload(true); return;
