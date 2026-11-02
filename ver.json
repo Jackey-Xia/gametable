@@ -1,5 +1,5 @@
 {
-  "v": "1793623153",
-  "data_v": "1793623153",
-  "note": "修复: ①SW stale-while-revalidate 首访误返回空缓存致详情/game_details 失败; ②taobao.json/game_details.json 加20s超时兜底(弱网不卡死); ③加载条等 data.js+taobao.json+封面+load 全就绪才消失; ④加载条缩小间距并避让返回顶部按钮"
+  "v": "1793627653",
+  "data_v": "1793627653",
+  "note": "修复封面待接入: ①covers/manifest.json 加载加15s超时+3次重试+失败兜底, 弱网/国内偶发失败不再永久'封面待接入'; ②weserv 代理被墙时封面自动回退同源直链(仓库已存原图); ③SW对封面图走cache:'reload'直连线上, 同源直链更快更稳"
 }
