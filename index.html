@@ -1002,7 +1002,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
   
   <div class="hero-inner">
     <div class="brand">
-      <div class="logo"><img src="avatar_fill.png?v=1793627653" alt="夏天Jackey"></div>
+      <div class="logo"><img src="avatar_fill.png?v=1793635069" alt="夏天Jackey"></div>
       <div>
         <h1>「夏天Jackey」PS数字版游戏</h1>
         <div class="sub">千款游戏 · 会员特价 · 一人一号</div>
@@ -1176,11 +1176,63 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
      顾客/手机端刷新也看不到新库存, 只有强刷才更新。
      改成每次加载都拼新时间戳: 数据没变时命中 ETag 返回 304(几乎无流量), 数据一变立刻取到新的。 -->
 <script>
+/* 改160: 微信内秒开缓存层 —— 不依赖 ServiceWorker(微信 WebView 多不支持 SW), 独立 IndexedDB 存 GT_DATA+taobao 数据,
+   老客首屏先读本地缓存秒出, 随后后台拉网络确认/更新。封面 blob 已由 gtImg DB 缓存, 此层补齐「数据」秒出。 */
+var GTJC={db:null,pend:null};
+function gtJDb(){
+  if(GTJC.db)return Promise.resolve(GTJC.db);
+  if(GTJC.pend)return GTJC.pend;
+  GTJC.pend=new Promise(function(res){
+    var d=false;function fin(v){if(d)return;d=true;if(!v)GTJC.pend=null;res(v);}
+    try{
+      if(!window.indexedDB){return fin(null);}
+      var r=indexedDB.open("gtJsonCache",1);
+      r.onupgradeneeded=function(){try{if(!r.result.objectStoreNames.contains("kv"))r.result.createObjectStore("kv");}catch(e){}};
+      r.onsuccess=function(){GTJC.db=r.result;fin(r.result);};
+      r.onerror=function(){fin(null);};
+    }catch(e){fin(null);}
+  });
+  return GTJC.pend;
+}
+function gtJGet(k){return gtJDb().then(function(db){if(!db)return null;return new Promise(function(res){try{var t=db.transaction("kv").objectStore("kv").get(k);t.onsuccess=function(){res(t.result||null)};t.onerror=function(){res(null)}}catch(e){res(null)}})})}
+function gtJPut(k,obj){return gtJDb().then(function(db){if(!db)return;return new Promise(function(res){try{var t=db.transaction("kv","readwrite");t.objectStore("kv").put(obj,k);t.oncomplete=function(){res()};t.onerror=function(){res()}}catch(e){res()}})})}
 (function(){
-  var s=document.createElement("script");
-  s.src="data.js?v="+window.__GT_DATA_VER;
-  s.onload=s.onerror=function(){ if(window.__GTBOOT) window.__GTBOOT(); };
-  document.head.appendChild(s);
+  var _booted=false,_firstSrc="";
+  function bootOnce(){
+    if(_booted)return;
+    var D=window.GT_DATA||window.__GT_CACHE_DATA;
+    if(!D||!D.ps)return;                       /* 缓存/网络都未就绪, 等另一方 */
+    if(!window.GT_DATA)window.GT_DATA=window.__GT_CACHE_DATA;   /* 首渲染用缓存(秒开) */
+    _booted=true;
+    _firstSrc=window.__GT_NET_DONE?"net":"cache";
+    window.__GT_INSTANT=(_firstSrc==="cache");
+    if(window.__GTBOOT)window.__GTBOOT();        /* 首渲染: IIFE 随此初始化(HOSTS/renderPS等) */
+  }
+  function loadNet(){
+    var s=document.createElement("script");
+    s.src="data.js?v="+window.__GT_DATA_VER;
+    s.onload=function(){
+      window.__GT_NET_DONE=true;
+      /* 改160: 首渲染用缓存时, 网络到后比对 synced: 相同仅更新缓存(防闪), 不同用新数据重渲染 */
+      if(_booted&&_firstSrc==="cache"){
+        if(window.__GT_CACHE_SYNC&&window.GT_DATA&&window.GT_DATA.synced===window.__GT_CACHE_SYNC){
+          try{ gtJPut("gt_data",{D:window.GT_DATA,synced:window.GT_DATA.synced}); }catch(e){}
+        }else{
+          try{ gtApply(window.GT_DATA); gtJPut("gt_data",{D:window.GT_DATA,synced:window.GT_DATA.synced}); }catch(e){}
+        }
+        return;
+      }
+      bootOnce();   /* 未首渲染(网络先到/缓存未命中) -> 用网络渲染 */
+    };
+    s.onerror=function(){ window.__GT_NET_DONE=true; bootOnce(); };   /* 网络失败也确保至少渲染(可能用缓存) */
+    document.head.appendChild(s);
+  }
+  /* 改160: 先读 IDB 缓存(本地, 微信内也秒出), 命中立即首渲染; 同时并行拉网络确认 */
+  gtJGet("gt_data").then(function(c){
+    if(c&&c.D&&c.D.ps){ window.__GT_CACHE_DATA=c.D; window.__GT_CACHE_SYNC=c.D.synced; }
+    bootOnce();
+  }).catch(function(){ bootOnce(); });
+  loadNet();
 })();
 </script>
 <script>
@@ -2075,17 +2127,17 @@ function tbPaint(){
   }
   try{tbFixHref();}catch(e){}
 }
+function gtFillTB(m){ if(!m||typeof m!=="object")return; var n=0;for(var k in m){if(m[k]&&/^https?:\/\//i.test(String(m[k]))){TB[tbKey(k)]=String(m[k]);n++;}} TB_N=n; var xy=m._xianyu||{};for(var k2 in xy){if(xy[k2]&&/^https?:\/\//i.test(String(xy[k2])))TB_XY[tbKey(k2)]=String(xy[k2]);} var xi=m._xid||{};for(var k3 in xi){TB_XID[tbKey(k3)]=String(xi[k3]).replace(/[^\d]/g,"");} }
 (function(){try{
+  /* 改160: 先读 IDB 缓存秒出库存/购买按钮(微信内也秒出), 再拉网络确认 */
+  gtJGet("gt_taobao").then(function(cm){ if(cm&&typeof cm==="object"){ gtFillTB(cm); try{TB_READY=true;wxMeasure();}catch(e){TB_READY=true;} tbPaint(); try{ if(typeof gtProg!=="undefined") gtProg.tb=true; }catch(e){} } });
   gtFetchJSON("taobao.json?t="+Date.now(),{cache:"no-store"}).then(function(m){
     m=m||{};
-    var n=0;for(var k in m){if(m[k]&&/^https?:\/\//i.test(String(m[k]))){TB[tbKey(k)]=String(m[k]);n++;}}
-    TB_N=n;
-    /* 改137: 闲鱼链接表(_xianyu) 与 闲鱼商品 id 表(_xid) */
-    var xy=m._xianyu||{};for(var k2 in xy){if(xy[k2]&&/^https?:\/\//i.test(String(xy[k2])))TB_XY[tbKey(k2)]=String(xy[k2]);}
-    var xi=m._xid||{};for(var k3 in xi){TB_XID[tbKey(k3)]=String(xi[k3]).replace(/[^\d]/g,"");}
+    gtFillTB(m);
     try{TB_READY=true;wxMeasure();}catch(e){TB_READY=true;}   /* 改153: 表到齐了才允许出「联系商家」 */
     tbPaint();
     try{ if(typeof gtProg!=="undefined") gtProg.tb=true; }catch(e){}   /* 改159fix: 库存/购买数据就绪(含超时兜底), 供底部提示条判定 */
+    try{ gtJPut("gt_taobao", m); }catch(e){}   /* 改160: 写回 IDB 缓存供下次秒出 */
   });   /* gtFetchJSON 永不 reject, 超时也会 resolve({}) -> 按钮降级为「联系商家」, 不卡加载条 */
 }catch(e){}})();
 /* 改136-begin: 淘宝 id 表 + 微信点击处理 —— 必须与 tbKey/tbCut/tbUrl/curRows 同作用域, 否则闭包读不到 */
@@ -2736,7 +2788,7 @@ function showTab(name){
   curTab=name;     /* 改81 */
   /* 改159: 页头真实背景元素, 随 tab 显式换图(微信 WebView 伪元素不重绘兜底) */
   var heroBg=document.getElementById("heroBg");
-  if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793627653')";heroBg.style.opacity=1;}
+  if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793635069')";heroBg.style.opacity=1;}
   /* 改114/159e: 页头封面随 tab 切换 —— PS白金(ns)换奖杯大图, 会员资费(mem)与 PS游戏(ps)均用 banner_mem.jpg(会员资费同款图, 替换原小熊图) */
   const hero=document.querySelector(".hero");
   if(hero){hero.classList.toggle("tmem",name==="mem");hero.classList.toggle("tplat",name==="ns");}
@@ -2915,6 +2967,8 @@ const pq=params.get("q");
 if(pq!==null&&pq!==""){$("#q").value=pq;kw=pq;}
 const pt=params.get("tab");
 if(pt==="ns"||pt==="mem"){showTab(pt);}else{showTab("ps");}
+/* 改160: 首屏数据就绪后写回 IDB 缓存(首访客建档/老客更新), 供下次微信内秒出 */
+try{ if(window.GT_DATA&&window.GT_DATA.ps) gtJPut("gt_data",{D:window.GT_DATA,synced:window.GT_DATA.synced}); }catch(e){}
 
 /* 改71b/72: 尽早注册 SW(updateViaCache=none); 每次打开让 SW 续传预存; 页脚指示器读 IDB 锁存数(在闭包内才能访问 gtIdbCount) */
 if("serviceWorker" in navigator){
@@ -3304,6 +3358,7 @@ function gtBackgroundRefresh(){
         var h=document.getElementById("gtLoadHint"), t=document.getElementById("gtHintTxt");
         if(h&&t){ t.textContent="正在加载数据，请勿刷新页面……"; h.classList.remove("hide"); }
         gtApply(nd);
+        try{ gtJPut("gt_data",{D:nd,synced:nd.synced}); }catch(e){}   /* 改160: 后台刷新变更后同步写回 IDB 缓存 */
         if(h)setTimeout(function(){h.classList.add("hide");},700);
       }
     }).catch(function(){});
