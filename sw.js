@@ -1,9 +1,9 @@
 /* 改159: Service Worker —— 老客秒出核心
  * stale-while-revalidate: 命中缓存立即返回(秒出), 同时后台静默刷新缓存。
- * 每部署一次 CACHE 版本号(1793596679)随之变化 -> 新 SW 激活即清掉旧缓存, 不会把旧页喂给老客。
- * 例外: ver.json 永远走网络(保证版本探测/自动刷新生效); 跨域封面(weserv)不拦截(由 IndexedDB 接管); 带 _bg=1 / no-store 的后台探测直连网络。
+ * 每部署一次 CACHE 版本号(1793598568)随之变化 -> 新 SW 激活即清掉旧缓存, 不会把旧页喂给老客。
+ * 例外: ver.json 永远走网络(保证版本探测/自动刷新生效); 跨域封面(weserv)不拦截(由 IndexedDB 接管); 头图/头像等可变图片不进 SW 缓存且强制绕过 HTTP 缓存直连线上(避免老客长期看到旧缓存图); 带 _bg=1 / no-store 的后台探测直连网络。
  */
-const CACHE = 'gt-sw-v1793596679';
+const CACHE = 'gt-sw-v1793598568';
 const VER_URL = 'ver.json';
 
 self.addEventListener('install', function(e){ self.skipWaiting(); });
@@ -43,6 +43,10 @@ self.addEventListener('fetch', function(e){
   try{ u = new URL(req.url); }catch(err){ return; }
   if(u.origin !== self.location.origin) return;            // 跨域(封面走 weserv)不拦截, 交给 IndexedDB
   if(neverCache(u)) return;                                // ver.json 永远网络
+  // 可变图片(头图/头像/横幅)不进 SW 缓存, 且强制绕过 HTTP 缓存直连线上最新, 避免老客长期看到旧缓存图
+  if(/\.(jpe?g|png|gif|webp|svg|avif)(\?|$)/i.test(u.pathname)){
+    e.respondWith(fetch(req, {cache:'reload'})); return;
+  }
   var cc = req.headers.get('cache-control') || '';
   if(cc.indexOf('no-store') >= 0 || u.searchParams.has('_bg')){
     e.respondWith(fetch(req));                             // 后台探测直连网络, 不读写缓存
