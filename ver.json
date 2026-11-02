@@ -1,5 +1,5 @@
 {
-  "v": "1793619587",
-  "data_v": "1793619587",
-  "note": "修复加载条过早消失: 底部提示条改为等 data.js(卡片)+taobao.json(库存/购买)+封面+window.load 全部就绪才 100% 消失, 与系统进度条同步; 百分比分级封顶(数据30/库存60/封面90)不提前满格"
+  "v": "1793623153",
+  "data_v": "1793623153",
+  "note": "修复: ①SW stale-while-revalidate 首访误返回空缓存致详情/game_details 失败; ②taobao.json/game_details.json 加20s超时兜底(弱网不卡死); ③加载条等 data.js+taobao.json+封面+load 全就绪才消失; ④加载条缩小间距并避让返回顶部按钮"
 }
