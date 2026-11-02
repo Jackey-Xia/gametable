@@ -51,13 +51,13 @@ input,select{font:inherit}
 
 /* ---------- 顶部 ---------- */
 .hero{position:relative;background:#0d1440;color:#fff;padding:22px 16px 66px;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:url('bg.jpg?v=1793600580') center/cover no-repeat;opacity:.5}
+.hero-bg{position:absolute;inset:0;z-index:0;background-position:center;background-size:cover;background-repeat:no-repeat;opacity:.5;background-image:url('bg.jpg?v=1793601878')}
 /* 改114: 页头封面随 tab 切换 —— 会员资费/PS白金 换主题大图; 文字侧暗色渐变保证标题/活动框可读 */
 .hero::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0;transition:opacity .25s;
   background:linear-gradient(100deg,rgba(13,20,64,.96) 0%,rgba(13,20,64,.88) 40%,rgba(13,20,64,.32) 78%,rgba(13,20,64,.18) 100%)}
 .hero.tmem::after,.hero.tplat::after{opacity:1}
-.hero.tmem::before{background:url('banner_mem.jpg?v=1793600580') center/cover no-repeat;opacity:1}
-.hero.tplat::before{background:url('banner_plat.jpg?v=1793600580') center 58%/cover no-repeat;opacity:1}
+.hero.tmem .hero-bg{background-image:url('banner_mem.jpg?v=1793601878');opacity:1}
+.hero.tplat .hero-bg{background-image:url('banner_plat.jpg?v=1793601878');opacity:1}
 /* 白底彩带图需更重的暗色渐变才不泛白 */
 .hero.tmem::after{background:linear-gradient(100deg,rgba(13,20,64,.97) 0%,rgba(13,20,64,.92) 40%,rgba(13,20,64,.55) 78%,rgba(13,20,64,.45) 100%)}
 .hero-inner{position:relative;z-index:1;max-width:1060px;margin:0 auto}
@@ -361,7 +361,7 @@ footer b{color:#4b5563}
 @keyframes gtspin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.gspin{animation:none}.gt-loadhint .d{animation:none}}
 /* 改111: 顶部加载提示条 */
-.gt-loadhint{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:9999;display:flex;align-items:center;gap:8px;max-width:92vw;padding:7px 14px;background:rgba(255,255,255,.86);color:#8a6d3b;border:1px solid rgba(253,233,191,.95);border-radius:999px;font-size:12px;font-weight:600;line-height:1.3;box-shadow:0 3px 14px rgba(20,40,80,.10);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.gt-loadhint{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:9999;display:flex;align-items:center;gap:9px;max-width:92vw;padding:9px 15px;background:#fff7e6;color:#333;border:1px solid #f0d8a8;border-radius:22px;font-size:12.5px;font-weight:600;line-height:1.4;box-shadow:0 2px 10px rgba(120,90,30,.18)}
 .gt-loadhint .d{width:13px;height:13px;border:2px solid #e0a94a;border-right-color:transparent;border-radius:50%;flex:0 0 auto;animation:gtspin .9s linear infinite}
 .gt-loadhint.hide{display:none}
 .gt-loadhint .pct{font-variant-numeric:tabular-nums;min-width:46px;text-align:right;font-weight:800;color:#b45309}
@@ -388,9 +388,10 @@ footer b{color:#4b5563}
 })();
 </script>
 <header class="hero">
+  <div class="hero-bg" id="heroBg"></div>
   <div class="hero-inner">
     <div class="brand">
-      <div class="logo"><img src="avatar_fill.png?v=1793600580" alt="夏天Jackey"></div>
+      <div class="logo"><img src="avatar_fill.png?v=1793601878" alt="夏天Jackey"></div>
       <div>
         <h1>「夏天Jackey」PS数字版游戏</h1>
         <div class="sub">千款游戏 · 会员特价 · 一人一号</div>
@@ -1375,6 +1376,16 @@ function showTab(name){
   /* 改114: 页头封面随 tab 切换 —— PS白金(ns)换奖杯大图, 会员资费(mem)换PS四键彩带图, PS游戏保持 bg.jpg */
   const hero=document.querySelector(".hero");
   if(hero){hero.classList.toggle("tmem",name==="mem");hero.classList.toggle("tplat",name==="ns");}
+  /* 改159e: 用真实元素显式设置页头背景图, 强制重绘 —— 修正微信 WebView 切换 tab 时 ::before 背景不刷新的老问题(导致 PS游戏/会员资费 显示同一张图) */
+  var heroBg=document.getElementById("heroBg");
+  if(heroBg){
+    var bUrl, bOp=.5;
+    if(name==="mem"){ bUrl="banner_mem.jpg?v=1793601878"; bOp=1; }
+    else if(name==="ns"){ bUrl="banner_plat.jpg?v=1793601878"; bOp=1; }
+    else { bUrl="bg.jpg?v=1793601878"; bOp=.5; }
+    heroBg.style.backgroundImage="url('"+bUrl+"')";
+    heroBg.style.opacity=bOp;
+  }
   $("#psView").style.display=name==="ps"?"block":"none";
   $("#nsView").style.display=name==="ns"?"block":"none";
   $("#memView").style.display=name==="mem"?"block":"none";
