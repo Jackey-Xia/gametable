@@ -364,7 +364,7 @@ footer b{color:#4b5563}
 @keyframes gtspin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.gspin{animation:none}.gt-loadhint .d{animation:none}}
 /* 改111: 顶部加载提示条 */
-.gt-loadhint{display:flex;align-items:center;gap:9px;padding:9px 14px;background:#fff7e6;color:#92500e;border-bottom:1px solid #fde9bf;font-size:12.5px;font-weight:600;line-height:1.4}
+.gt-loadhint{display:flex;align-items:center;gap:6px;padding:9px 14px;background:#fff7e6;color:#92500e;border-bottom:1px solid #fde9bf;font-size:12.5px;font-weight:600;line-height:1.4}
 .gt-loadhint .d{width:13px;height:13px;border:2px solid #e0a94a;border-right-color:transparent;border-radius:50%;flex:0 0 auto;animation:gtspin .9s linear infinite}
 .gt-loadhint.hide{display:none}
 .gt-loadhint .pct{margin:0 3px;font-variant-numeric:tabular-nums;min-width:36px;text-align:center;font-weight:700}
@@ -684,8 +684,9 @@ footer b{color:#4b5563}
    改 fixed 后不占文档流，页头与 tab 栏位置恒定。 */
 .gt-loadhint{position:fixed;left:10px;right:auto;top:auto;
   bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:70;
-  border:1px solid #fde9bf;border-radius:999px;padding:7px 12px;
-  font-size:11.5px;line-height:1.35;max-width:calc(100vw - 20px);
+  border:1px solid #fde9bf;border-radius:999px;padding:6px 11px;
+  font-size:11.5px;line-height:1.3;gap:5px;                /* 改159fix: 缩小加载圈-百分比-文案间距 */
+  max-width:calc(100vw - 112px);                          /* 改159fix: 右侧留出返回顶部按钮空间, 避免重叠 */
   background:rgba(255,247,230,.97);box-shadow:0 6px 18px rgba(0,0,0,.22)}
 /* 改126-end */
 </style>
@@ -1001,7 +1002,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
   
   <div class="hero-inner">
     <div class="brand">
-      <div class="logo"><img src="avatar_fill.png?v=1793619587" alt="夏天Jackey"></div>
+      <div class="logo"><img src="avatar_fill.png?v=1793623153" alt="夏天Jackey"></div>
       <div>
         <h1>「夏天Jackey」PS数字版游戏</h1>
         <div class="sub">千款游戏 · 会员特价 · 一人一号</div>
@@ -2044,16 +2045,17 @@ function tbPaint(){
   try{tbFixHref();}catch(e){}
 }
 (function(){try{
-  fetch("taobao.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():{}}).then(function(m){
+  gtFetchJSON("taobao.json?t="+Date.now(),{cache:"no-store"}).then(function(m){
+    m=m||{};
     var n=0;for(var k in m){if(m[k]&&/^https?:\/\//i.test(String(m[k]))){TB[tbKey(k)]=String(m[k]);n++;}}
     TB_N=n;
     /* 改137: 闲鱼链接表(_xianyu) 与 闲鱼商品 id 表(_xid) */
     var xy=m._xianyu||{};for(var k2 in xy){if(xy[k2]&&/^https?:\/\//i.test(String(xy[k2])))TB_XY[tbKey(k2)]=String(xy[k2]);}
     var xi=m._xid||{};for(var k3 in xi){TB_XID[tbKey(k3)]=String(xi[k3]).replace(/[^\d]/g,"");}
     try{TB_READY=true;wxMeasure();}catch(e){TB_READY=true;}   /* 改153: 表到齐了才允许出「联系商家」 */
-    try{ if(typeof gtProg!=="undefined") gtProg.tb=true; }catch(e){}   /* 改159fix: 库存/购买数据就绪, 供底部提示条判定 */
     tbPaint();
-  }).catch(function(){ try{ if(typeof gtProg!=="undefined") gtProg.tb=true; }catch(e){} });   /* 改159fix: 即便库存表拉取失败, 页面仍视为就绪, 不卡加载条 */
+    try{ if(typeof gtProg!=="undefined") gtProg.tb=true; }catch(e){}   /* 改159fix: 库存/购买数据就绪(含超时兜底), 供底部提示条判定 */
+  });   /* gtFetchJSON 永不 reject, 超时也会 resolve({}) -> 按钮降级为「联系商家」, 不卡加载条 */
 }catch(e){}})();
 /* 改136-begin: 淘宝 id 表 + 微信点击处理 —— 必须与 tbKey/tbCut/tbUrl/curRows 同作用域, 否则闭包读不到 */
 /* 改134-begin: 商品 id 表 —— 淘宝链接的永久身份, 不依赖会过期的短链 tk 令牌 */
@@ -2243,11 +2245,24 @@ function tbIdOf(g){
 
 /* 改157-begin: 卡片右上角「详情 ›」+ 详情弹层（仅点按钮进入, 整卡不可点） */
 var __GTDET=null,__GTDET_PEND=null;
+/* 改159fix: 带超时的 JSON 拉取 —— 避免大文件(taobao.json/game_details.json)在弱网或被 SW 拦截时无限挂起,
+   导致详情「加载中」卡死、系统进度条不消失。超时(20s)直接降级为空对象, 页面走「暂无详情」兜底。 */
+function gtFetchJSON(url, opts){
+  return new Promise(function(resolve){
+    var done=false;
+    function fin(v){ if(done)return; done=true; resolve(v||{}); }
+    var to=setTimeout(function(){ fin({}); }, 20000);   /* 20s 超时兜底 */
+    try{
+      fetch(url, opts).then(function(r){ return (r&&r.ok) ? r.json() : {}; })
+        .then(function(d){ clearTimeout(to); fin(d); })
+        .catch(function(){ clearTimeout(to); fin({}); });
+    }catch(e){ clearTimeout(to); fin({}); }
+  });
+}
 function gtDetLoad(){
   if(__GTDET)return Promise.resolve(__GTDET);
   if(__GTDET_PEND)return __GTDET_PEND;
-  __GTDET_PEND=fetch("game_details.json?v="+window.__GT_DATA_VER).then(function(r){return r.ok?r.json():{};})
-    .then(function(d){__GTDET=d;return d;}).catch(function(){__GTDET={};return {};});
+  __GTDET_PEND=gtFetchJSON("game_details.json?v="+window.__GT_DATA_VER).then(function(d){__GTDET=d||{};return __GTDET;});
   return __GTDET_PEND;
 }
 /* 改157d：灯箱带左右切换 —— 支持手势滑动 + ‹›按钮 + 键盘方向键；仍禁长按保存 */
@@ -2690,7 +2705,7 @@ function showTab(name){
   curTab=name;     /* 改81 */
   /* 改159: 页头真实背景元素, 随 tab 显式换图(微信 WebView 伪元素不重绘兜底) */
   var heroBg=document.getElementById("heroBg");
-  if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793619587')";heroBg.style.opacity=1;}
+  if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793623153')";heroBg.style.opacity=1;}
   /* 改114/159e: 页头封面随 tab 切换 —— PS白金(ns)换奖杯大图, 会员资费(mem)与 PS游戏(ps)均用 banner_mem.jpg(会员资费同款图, 替换原小熊图) */
   const hero=document.querySelector(".hero");
   if(hero){hero.classList.toggle("tmem",name==="mem");hero.classList.toggle("tplat",name==="ns");}
