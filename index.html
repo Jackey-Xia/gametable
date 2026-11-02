@@ -51,13 +51,13 @@ input,select{font:inherit}
 
 /* ---------- 顶部 ---------- */
 .hero{position:relative;background:#0d1440;color:#fff;padding:22px 16px 66px;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:url('bg.jpg') center/cover no-repeat;opacity:.5}
+.hero::before{content:"";position:absolute;inset:0;background:url('bg.jpg?v=1793600580') center/cover no-repeat;opacity:.5}
 /* 改114: 页头封面随 tab 切换 —— 会员资费/PS白金 换主题大图; 文字侧暗色渐变保证标题/活动框可读 */
 .hero::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0;transition:opacity .25s;
   background:linear-gradient(100deg,rgba(13,20,64,.96) 0%,rgba(13,20,64,.88) 40%,rgba(13,20,64,.32) 78%,rgba(13,20,64,.18) 100%)}
 .hero.tmem::after,.hero.tplat::after{opacity:1}
-.hero.tmem::before{background:url('banner_mem.jpg') center/cover no-repeat;opacity:1}
-.hero.tplat::before{background:url('banner_plat.jpg') center 58%/cover no-repeat;opacity:1}
+.hero.tmem::before{background:url('banner_mem.jpg?v=1793600580') center/cover no-repeat;opacity:1}
+.hero.tplat::before{background:url('banner_plat.jpg?v=1793600580') center 58%/cover no-repeat;opacity:1}
 /* 白底彩带图需更重的暗色渐变才不泛白 */
 .hero.tmem::after{background:linear-gradient(100deg,rgba(13,20,64,.97) 0%,rgba(13,20,64,.92) 40%,rgba(13,20,64,.55) 78%,rgba(13,20,64,.45) 100%)}
 .hero-inner{position:relative;z-index:1;max-width:1060px;margin:0 auto}
@@ -361,7 +361,7 @@ footer b{color:#4b5563}
 @keyframes gtspin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){.gspin{animation:none}.gt-loadhint .d{animation:none}}
 /* 改111: 顶部加载提示条 */
-.gt-loadhint{position:fixed;left:0;right:0;bottom:0;z-index:9999;display:flex;align-items:center;gap:9px;padding:9px 14px;background:#fff7e6;color:#92500e;border-top:1px solid #fde9bf;font-size:12.5px;font-weight:600;line-height:1.4}
+.gt-loadhint{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:9999;display:flex;align-items:center;gap:8px;max-width:92vw;padding:7px 14px;background:rgba(255,255,255,.86);color:#8a6d3b;border:1px solid rgba(253,233,191,.95);border-radius:999px;font-size:12px;font-weight:600;line-height:1.3;box-shadow:0 3px 14px rgba(20,40,80,.10);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
 .gt-loadhint .d{width:13px;height:13px;border:2px solid #e0a94a;border-right-color:transparent;border-radius:50%;flex:0 0 auto;animation:gtspin .9s linear infinite}
 .gt-loadhint.hide{display:none}
 .gt-loadhint .pct{font-variant-numeric:tabular-nums;min-width:46px;text-align:right;font-weight:800;color:#b45309}
@@ -390,7 +390,7 @@ footer b{color:#4b5563}
 <header class="hero">
   <div class="hero-inner">
     <div class="brand">
-      <div class="logo"><img src="avatar_fill.png" alt="夏天Jackey"></div>
+      <div class="logo"><img src="avatar_fill.png?v=1793600580" alt="夏天Jackey"></div>
       <div>
         <h1>「夏天Jackey」PS数字版游戏</h1>
         <div class="sub">千款游戏 · 会员特价 · 一人一号</div>
@@ -1716,17 +1716,22 @@ var gtProg={total:0,done:0};   /* 改159: 封面加载进度计数器, 供提示
   var hint=document.getElementById("gtLoadHint");
   var pctEl=document.getElementById("gtPct");
   if(!hint)return;
-  var t0=Date.now(), base=8, hid=false;
-  function setPct(p){ if(pctEl)pctEl.textContent=Math.max(0,Math.min(100,p))+"%"; }
+  var t0=Date.now(), base=8, hid=false, loaded=false;
+  function setPct(p){ if(pctEl)pctEl.textContent=Math.max(0,Math.min(100,Math.round(p)))+"%"; }
   function hide(){ if(hid)return; hid=true; hint.classList.add("hide"); }
+  /* 与浏览器/微信原生进度条(顶部绿色)同步: 页面所有资源 window.load 完成才算真正加载完毕 */
+  function onLoad(){ loaded=true; }
+  if(document.readyState==="complete") loaded=true; else window.addEventListener("load", onLoad);
   function tick(){
     if(hid)return;
     var total=gtProg.total, done=gtProg.done, p;
     if(total>0){ p = done>=total ? 100 : Math.round(done/total*100); }
-    else { base=Math.min(48, base + (Date.now()-t0<1500?3:1)); p=base; }   /* 封面未唤醒前的初始化爬升 */
+    else { base=Math.min(90, base + (Date.now()-t0<1500?3:1)); p=base; }   /* 封面未唤醒前的初始化爬升 */
+    /* 页面整体未加载完时, 进度停在 ~92% 等待(与微信绿色进度条同步), 不提前消失 */
+    if(!loaded) p=Math.min(p, total>0 ? 92 : 90);
     setPct(p);
-    if(total>0 && done>=total){ setPct(100); setTimeout(hide,300); return; }   /* 真实加载到 100% 才消失 */
-    if(Date.now()-t0>15000){ setPct(100); setTimeout(hide,200); return; }      /* 兜底: 防止极端情况永久卡住 */
+    if(loaded){ setPct(100); setTimeout(hide,250); return; }              /* 真·加载完成才消失 */
+    if(Date.now()-t0>25000){ setPct(100); setTimeout(hide,200); return; } /* 兜底: 防止极端情况永久卡住 */
     setTimeout(tick,200);
   }
   setPct(base);
