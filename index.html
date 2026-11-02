@@ -1002,7 +1002,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
   
   <div class="hero-inner">
     <div class="brand">
-      <div class="logo"><img src="avatar_fill.png?v=1793623153" alt="夏天Jackey"></div>
+      <div class="logo"><img src="avatar_fill.png?v=1793627653" alt="夏天Jackey"></div>
       <div>
         <h1>「夏天Jackey」PS数字版游戏</h1>
         <div class="sub">千款游戏 · 会员特价 · 一人一号</div>
@@ -1262,15 +1262,29 @@ gtIdb().then(function(db){
   else{GTS="none";GTI.err="no-idb";gtSwFallback();}
 }).catch(function(){});
 /* 封面渲染: 本地有 → blobURL 秒出; 没有 → 网络取一次并顺带入库 */
+/* 改159g: weserv 代理在国内常被墙 → 一旦失败自动回退同源直链(仓库已存有原图), 保证封面必出, 不再 broken/待接入 */
+function gtWeservFallback(url){
+  try{var m=String(url).match(/covers\/(rc[0-9a-f]+\.(?:jpe?g|png))/i);return m?"covers/"+m[1]:null;}catch(e){return null;}
+}
 function gtCoverSrc(im,url){
   if(typeof gtProg!=="undefined"&&gtProg)gtProg.total++;   /* 改159e: 仅封面真正开始取图(进入视口)时计入, 避免全量卡片数致进度到不了100% */
+  var fb=gtWeservFallback(url);
+  function tryFallback(){
+    if(!fb||fb===url)return;
+    gtGet(fb).then(function(b){
+      if(b){try{im.src=URL.createObjectURL(b);}catch(e){im.src=fb;}return;}
+      fetch(fb).then(function(r){return r&&r.ok?r.blob():null}).then(function(bl){
+        if(bl){gtPut(fb,bl);try{im.src=URL.createObjectURL(bl);}catch(e){im.src=fb;}}
+      }).catch(function(){im.src=fb;});
+    }).catch(function(){});
+  }
   gtGet(url).then(function(b){
     if(b){try{im.src=URL.createObjectURL(b);}catch(e){im.src=url;}return;}
     fetch(url).then(function(r){return r&&r.ok?r.blob():null}).then(function(bl){
       if(bl){gtPut(url,bl);try{im.src=URL.createObjectURL(bl);}catch(e){im.src=url;}}
-      else{im.src=url;}
-    }).catch(function(){im.src=url;});
-  }).catch(function(){im.src=url;});
+      else{tryFallback();}
+    }).catch(function(){tryFallback();});
+  }).catch(function(){tryFallback();});
 }
 /* 改111: 懒加载 —— 只有接近视口(提前 600px)才真正取封面, 首屏不再一次拉 120 张 */
 var gtIO=null;
@@ -1842,8 +1856,25 @@ function coverOf(g,disp){
   }
   return null;
 }
+/* 改159g: manifest 加载加 15s 超时 + 最多 3 次重试 + 失败兜底 —— 弱网/国内偶发失败不再永久"封面待接入" */
+function gtLoadCovers(attempt){
+  return new Promise(function(resolve){
+    var ctrl;try{ctrl=new AbortController();}catch(e){ctrl=null;}
+    var to=setTimeout(function(){try{ctrl&&ctrl.abort();}catch(e){}},15000);
+    var opt=ctrl?{signal:ctrl.signal}:{};
+    fetch("covers/manifest.json?t="+Date.now(),opt)
+      .then(function(r){clearTimeout(to);return r&&r.ok?r.json():{};})
+      .then(function(m){resolve(m);})
+      .catch(function(){clearTimeout(to);resolve(null);});
+  }).then(function(m){
+    if(m&&typeof m==="object"&&Object.keys(m).length)return m;
+    if((attempt||0)>=3)return null;
+    return new Promise(function(r){setTimeout(r,500+(attempt||0)*800);}).then(function(){return gtLoadCovers((attempt||0)+1);});
+  });
+}
 try{
-  fetch("covers/manifest.json?t="+Date.now()).then(r=>r.ok?r.json():{}).then(m=>{
+  gtLoadCovers(0).then(m=>{
+    if(!(m&&typeof m==="object")){ if(rendered>0&&typeof renderPS==="function")renderPS(); return; }
     if(m&&typeof m==="object"){
       Object.keys(m).forEach(k=>{COVERS[k]=m[k];});
       /* 改109: 建同款(多库存)封面索引 —— 新增库存行没登记封面时前端直接沿用同款, 不留空 */
@@ -2705,7 +2736,7 @@ function showTab(name){
   curTab=name;     /* 改81 */
   /* 改159: 页头真实背景元素, 随 tab 显式换图(微信 WebView 伪元素不重绘兜底) */
   var heroBg=document.getElementById("heroBg");
-  if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793623153')";heroBg.style.opacity=1;}
+  if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793627653')";heroBg.style.opacity=1;}
   /* 改114/159e: 页头封面随 tab 切换 —— PS白金(ns)换奖杯大图, 会员资费(mem)与 PS游戏(ps)均用 banner_mem.jpg(会员资费同款图, 替换原小熊图) */
   const hero=document.querySelector(".hero");
   if(hero){hero.classList.toggle("tmem",name==="mem");hero.classList.toggle("tplat",name==="ns");}
