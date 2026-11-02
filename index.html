@@ -1001,7 +1001,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
   
   <div class="hero-inner">
     <div class="brand">
-      <div class="logo"><img src="avatar_fill.png?v=1793616635" alt="夏天Jackey"></div>
+      <div class="logo"><img src="avatar_fill.png?v=1793617536" alt="夏天Jackey"></div>
       <div>
         <h1>「夏天Jackey」PS数字版游戏</h1>
         <div class="sub">千款游戏 · 会员特价 · 一人一号</div>
@@ -2687,7 +2687,7 @@ function showTab(name){
   curTab=name;     /* 改81 */
   /* 改159: 页头真实背景元素, 随 tab 显式换图(微信 WebView 伪元素不重绘兜底) */
   var heroBg=document.getElementById("heroBg");
-  if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793616635')";heroBg.style.opacity=1;}
+  if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793617536')";heroBg.style.opacity=1;}
   /* 改114/159e: 页头封面随 tab 切换 —— PS白金(ns)换奖杯大图, 会员资费(mem)与 PS游戏(ps)均用 banner_mem.jpg(会员资费同款图, 替换原小熊图) */
   const hero=document.querySelector(".hero");
   if(hero){hero.classList.toggle("tmem",name==="mem");hero.classList.toggle("tplat",name==="ns");}
@@ -3089,17 +3089,8 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
       if(n>=3)return;                                /* 本会话最多追3次, 防循环 */
       try{sessionStorage.setItem("gt_vn",String(n+1));}catch(e){}
       /* 改159: 红框加载提示两态 —— 检测到新版本时切换为「发现新版本，正在加载更新」并锁定不隐藏 */
-      try{ window.__GT_UPDATING=true; var _hl=document.getElementById("gtLoadHintTxt"); if(_hl)_hl.textContent="发现新版本，正在加载更新，请勿刷新页面……"; }catch(e){}
+      try{ window.__GT_UPDATING=true; var _hl=document.getElementById("gtLoadHintTxt"); if(_hl)_hl.textContent="发现新版本，正在加载数据，请勿刷新页面……"; }catch(e){}
       var go=function(){
-        try{
-          var t=document.createElement("div");
-          t.id="gtUpdTip";
-          t.style.cssText="position:fixed;left:50%;top:14px;transform:translateX(-50%);z-index:100000;"+
-            "background:rgba(20,26,38,.92);color:#fff;font-size:12.5px;line-height:1;"+
-            "padding:9px 15px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.25)";
-          t.textContent="发现新版本，正在更新\u2026";
-          document.body.appendChild(t);
-        }catch(e){}
         setTimeout(function(){
           /* 改163: 刷新时给 URL 拼 ?_v=<新版本号> —— 否则浏览器会用缓存里的旧 HTML,
              版本校验发现不一致 → 再次刷新 → 最多追 3 次后放弃, 顾客就一直看到旧内容 */
