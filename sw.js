@@ -1,9 +1,9 @@
 /* 改159: Service Worker —— 老客秒出核心
  * stale-while-revalidate: 命中缓存立即返回(秒出), 同时后台静默刷新缓存。
- * 每部署一次 CACHE 版本号(1793601878)随之变化 -> 新 SW 激活即清掉旧缓存, 不会把旧页喂给老客。
+ * 每部署一次 CACHE 版本号(1793623153)随之变化 -> 新 SW 激活即清掉旧缓存, 不会把旧页喂给老客。
  * 例外: ver.json 永远走网络(保证版本探测/自动刷新生效); 跨域封面(weserv)不拦截(由 IndexedDB 接管); 头图/头像等可变图片不进 SW 缓存且强制绕过 HTTP 缓存直连线上(避免老客长期看到旧缓存图); 带 _bg=1 / no-store 的后台探测直连网络。
  */
-const CACHE = 'gt-sw-v1793614148';
+const CACHE = 'gt-sw-v1793623153';
 const VER_URL = 'ver.json';
 
 self.addEventListener('install', function(e){ self.skipWaiting(); });
@@ -28,12 +28,16 @@ function cacheKey(u){
 async function swr(req, u){
   var cache = await caches.open(CACHE);
   var key = cacheKey(u);
-  var cached = await cache.match(key);
-  var network = fetch(req).then(function(res){
-    if(res && res.ok) cache.put(key, res.clone());
-    return res;
-  }).catch(function(){ return cached; });
-  return cached || network;
+  try{
+    var cached = await cache.match(key);
+    if(cached) return cached;                 /* 命中缓存 -> 秒出 */
+  }catch(e){}
+  /* 改159fix: 旧写法 `return cached || network` 中 cached 是 Promise(恒为真),
+     首访会误把空缓存 Promise 当作命中返回 -> 页面拿到 undefined -> game_details.json 等请求失败。
+     这里明确: 有缓存用缓存, 否则走网络并回填。 */
+  var res = await fetch(req);
+  if(res && res.ok){ try{ cache.put(key, res.clone()); }catch(e){} }
+  return res;
 }
 
 self.addEventListener('fetch', function(e){
