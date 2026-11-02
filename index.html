@@ -1001,7 +1001,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
   
   <div class="hero-inner">
     <div class="brand">
-      <div class="logo"><img src="avatar_fill.png?v=1793617536" alt="夏天Jackey"></div>
+      <div class="logo"><img src="avatar_fill.png?v=1793619587" alt="夏天Jackey"></div>
       <div>
         <h1>「夏天Jackey」PS数字版游戏</h1>
         <div class="sub">千款游戏 · 会员特价 · 一人一号</div>
@@ -1187,6 +1187,8 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 window.__GTBOOT=function(){
 (function(){
 const D=window.GT_DATA||{};
+/* 改159fix: data.js 已加载(本函数就是 data.js onload 触发的入口) —— 标记真实数据就绪, 供底部提示条判定 */
+try{ if(typeof gtProg!=="undefined") gtProg.data=true; }catch(e){}
 /* 改86: 页脚显示数据同步时间戳 —— 让店主一眼判断当前看到的是不是最新库存 */
 (function(){
   var el=document.getElementById("dataSynced");
@@ -2049,8 +2051,9 @@ function tbPaint(){
     var xy=m._xianyu||{};for(var k2 in xy){if(xy[k2]&&/^https?:\/\//i.test(String(xy[k2])))TB_XY[tbKey(k2)]=String(xy[k2]);}
     var xi=m._xid||{};for(var k3 in xi){TB_XID[tbKey(k3)]=String(xi[k3]).replace(/[^\d]/g,"");}
     try{TB_READY=true;wxMeasure();}catch(e){TB_READY=true;}   /* 改153: 表到齐了才允许出「联系商家」 */
+    try{ if(typeof gtProg!=="undefined") gtProg.tb=true; }catch(e){}   /* 改159fix: 库存/购买数据就绪, 供底部提示条判定 */
     tbPaint();
-  }).catch(function(){});
+  }).catch(function(){ try{ if(typeof gtProg!=="undefined") gtProg.tb=true; }catch(e){} });   /* 改159fix: 即便库存表拉取失败, 页面仍视为就绪, 不卡加载条 */
 }catch(e){}})();
 /* 改136-begin: 淘宝 id 表 + 微信点击处理 —— 必须与 tbKey/tbCut/tbUrl/curRows 同作用域, 否则闭包读不到 */
 /* 改134-begin: 商品 id 表 —— 淘宝链接的永久身份, 不依赖会过期的短链 tk 令牌 */
@@ -2687,7 +2690,7 @@ function showTab(name){
   curTab=name;     /* 改81 */
   /* 改159: 页头真实背景元素, 随 tab 显式换图(微信 WebView 伪元素不重绘兜底) */
   var heroBg=document.getElementById("heroBg");
-  if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793617536')";heroBg.style.opacity=1;}
+  if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793619587')";heroBg.style.opacity=1;}
   /* 改114/159e: 页头封面随 tab 切换 —— PS白金(ns)换奖杯大图, 会员资费(mem)与 PS游戏(ps)均用 banner_mem.jpg(会员资费同款图, 替换原小熊图) */
   const hero=document.querySelector(".hero");
   if(hero){hero.classList.toggle("tmem",name==="mem");hero.classList.toggle("tplat",name==="ns");}
@@ -3268,7 +3271,10 @@ if("serviceWorker" in navigator){
 gtBackgroundRefresh();   /* 改159: 打开即后台比对数据, 有变更仅重渲染差异 */
 </script>
 <script>
-var gtProg={total:0,done:0};   /* 改159: 封面加载进度计数器, 供提示条显示真实百分比 */
+/* 改159fix: 加载进度计数器 —— 不仅要等封面(window.load + covers), 还要等真实数据到位:
+   data = data.js 已加载且卡片已渲染;  tb = taobao.json 已到位(TB_READY, 购买按钮/库存可用);
+   否则底部提示条会提前 100% 消失, 而网页真实内容(商品卡片/库存)还在加载, 与系统进度条不同步 */
+var gtProg={total:0,done:0,data:false,tb:false};
 (function(){
   var hint=document.getElementById("gtLoadHint");
   var pctEl=document.getElementById("gtPct");
@@ -3278,15 +3284,21 @@ var gtProg={total:0,done:0};   /* 改159: 封面加载进度计数器, 供提示
   function hide(){ if(hid)return; hid=true; hint.classList.add("hide"); }
   function onLoad(){ loaded=true; }
   if(document.readyState==="complete") loaded=true; else window.addEventListener("load", onLoad);
+  function ready(){ return loaded && gtProg.data && gtProg.tb && (gtProg.total===0 || gtProg.done>=gtProg.total); }
   function tick(){
     if(hid)return;
     var total=gtProg.total, done=gtProg.done, p;
     if(total>0){ p = done>=total ? 100 : Math.round(done/total*100); }
     else { base=Math.min(90, base + (Date.now()-t0<1500?3:1)); p=base; }
-    if(!loaded) p=Math.min(p, total>0 ? 92 : 90);
+    /* 分级封顶: 数据/库存未就绪时不显示满格, 让百分比真实反映加载阶段 */
+    var cap=95;
+    if(!gtProg.data) cap=30;
+    else if(!gtProg.tb) cap=60;
+    else if(total>0 && done<total) cap=90;
+    p=Math.min(p,cap);
+    if(ready()){ setPct(100); setTimeout(hide,300); return; }
     setPct(p);
-    if(loaded && (total===0 || done>=total)){ setPct(100); setTimeout(hide,300); return; }
-    if(Date.now()-t0>25000){ setPct(100); setTimeout(hide,200); return; }
+    if(Date.now()-t0>30000){ setPct(100); setTimeout(hide,200); return; }   /* 兜底: 30s 强制消失 */
     setTimeout(tick,200);
   }
   setPct(base);
