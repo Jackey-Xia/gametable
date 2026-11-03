@@ -1,16 +1,11 @@
 {
- "time": "2026-11-03T12:49:21",
+ "time": "2026-11-03T13:03:31",
  "added": [],
- "pending": [
-  {
-   "name": "纸人1",
-   "reason": "失败6次, 需人工核对"
-  }
- ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1265,
-  "covered": 1337,
-  "pending_open": 1
+  "covered": 1338,
+  "pending_open": 0
  }
 }
