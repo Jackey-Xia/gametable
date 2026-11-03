@@ -1,8 +1,8 @@
 {
-  "v": "1793641827",
-  "data_v": "1793641827",
+  "v": "1793678497",
+  "data_v": "1793678497",
   "note": "改162 加载提速四件套: ①ver.json探针(synced/cover_v/tb_v)比对, 二次打开跳过 data.js(283KB)/manifest(169KB)/taobao 全量重下, 纯本地IDB秒出(微信内同效); ②HTML head preload data.js+PS封面manifest并行; ③封面manifest按tab拆分(PS优先,全量留兜底); ④部署期安全minify; 承前: 微信内秒开IDB缓存/封面待接入兜底/weserv回退同源/SW SWR修复/加载条多阶段门控",
-  "synced": "2026-11-02T16:55:49.641Z",
+  "synced": "2026-11-03T03:12:33.358Z",
   "cover_v": "c17ce8bc5a",
   "tb_v": "80331bcb06"
 }
