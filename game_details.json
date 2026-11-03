@@ -4736,7 +4736,16 @@
    "英文"
   ],
   "intro": "由Arkane Studios所制作，赢得超过100个年度游戏奖项的《耻辱1》将会连同附加内容推出在次世代主机上，新版本名为《耻辱1》决定版！\n\n游戏内你可混合超自然技能，武器和配置装置来做成高自由的战斗系统和具创意地消灭敌人。\n\n“Void Walker’s Arsenal”提供独有的角色增强，骨骼魔力插槽和其他帮你复仇的援助。在 “Dunwall City Trails”中你会进入局外人的世界，测试自己战斗，潜行和活动性的能力。\n\n最後，你更可在 “The Knife of Dunwall”及 “The Brigmore Witches”使用傳說中的刺客Daud。",
-  "shots": [],
+  "shots": [
+   "covers/shots/dishonored1_01.jpg",
+   "covers/shots/dishonored1_02.jpg",
+   "covers/shots/dishonored1_03.jpg",
+   "covers/shots/dishonored1_04.jpg",
+   "covers/shots/dishonored1_05.jpg",
+   "covers/shots/dishonored1_06.jpg",
+   "covers/shots/dishonored1_07.jpg",
+   "covers/shots/dishonored1_08.jpg"
+  ],
   "cover": "covers/2953e3914172_s.jpg",
   "en": "Dishonored1（Definitive Edition）",
   "display_name": "耻辱1/羞辱1（决定版）（港版英文）",
