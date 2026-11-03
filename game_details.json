@@ -4674,12 +4674,41 @@
   "_cid": "EB2076-PPSA32793_00-VALORMORTIS00000"
  },
  "苍蓝革命之女武神": {
-  "genres": [],
-  "players": "",
-  "release": "",
-  "publisher": "",
-  "shots": [],
-  "_cid": "10014665"
+  "_cid": "HP0177-CUSA06197_00-ASIAPLACEHOLDER0",
+  "store_name": "苍蓝革命之女武神",
+  "platforms": "PS5/PS4",
+  "release": "2017年1月19日",
+  "genres": [
+   "角色扮演游戏",
+   "动作",
+   "剧情丰富"
+  ],
+  "capacity": "16.6 GB",
+  "players_local": "1",
+  "players_online": "",
+  "players": "1位玩家",
+  "languages": [
+   "中文"
+  ],
+  "intro": "VALKYRIA PROJECT全新RPG作品！\n\n圣历1853年，挑战帝国拥有人称“死神”的超自然存在「女武神」，并拯救了祖国日德兰的5名年轻人，后来却被视为因复仇私怨而欺骗了国家的“大罪人”处死。\n\n后世的历史会问──他们是英雄？还是罪人？",
+  "shots": [
+   "https://apollo2.dl.playstation.net/cdn/HP0177/CUSA06197_00/FREE_CONTENTKSYnW4uj5mxi5abd6rIJ/HP0177-CUSA06197_00-ARVALKYRIE000100_1.jpg",
+   "https://apollo2.dl.playstation.net/cdn/HP0177/CUSA06197_00/FREE_CONTENTcc7AIogJ0ugGjjOaJdfb/HP0177-CUSA06197_00-ARVALKYRIE000100_2.jpg",
+   "https://apollo2.dl.playstation.net/cdn/HP0177/CUSA06197_00/FREE_CONTENTz9MhuzeVASuUmTbPha7z/HP0177-CUSA06197_00-ARVALKYRIE000100_3.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fapollo2.dl.playstation.net%2Fcdn%2FHP0177%2FCUSA06197_00%2FQJFQTUF5dNQK3kAzHICFUKrfiYQhstg2lrvf1gTumQmWHGKSLbDOJsT7EXWUfAGQ.png&w=512&output=jpg",
+  "en": "Aoki Kakumei no Valkyria",
+  "display_name": "苍蓝革命之女武神",
+  "warn": "⚠类型由本机常识补(动作/剧情丰富)，待店主校准",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "苍蓝革命之女武神",
+  "intro_plain": false,
+  "intro_boldlines": [],
+  "intro_nobold": [],
+  "intro_breaklines": [],
+  "intro_gap": {},
+  "intro_pgap": false
  },
  "Aoki Kakumei no Valkyria": {
   "genres": [],
@@ -4690,14 +4719,37 @@
   "_cid": "10014665"
  },
  "耻辱1/羞辱1（决定版）（港版英文）": {
-  "genres": [
-   "动作"
-  ],
-  "players": "1人",
+  "_cid": "UP1003-CUSA02218_00-ASIA000000000000",
+  "store_name": "Dishonored®: Definitive Edition",
+  "platforms": "PS5/PS4",
   "release": "2015年8月26日",
-  "publisher": "Bethesda Softworks",
+  "genres": [
+   "动作战斗",
+   "潜行暗杀",
+   "剧情冒险"
+  ],
+  "capacity": "32.3 GB",
+  "players_local": "1",
+  "players_online": "",
+  "players": "1位玩家",
+  "languages": [
+   "英文"
+  ],
+  "intro": "由Arkane Studios所制作，赢得超过100个年度游戏奖项的《耻辱1》将会连同附加内容推出在次世代主机上，新版本名为《耻辱1》决定版！\n\n游戏内你可混合超自然技能，武器和配置装置来做成高自由的战斗系统和具创意地消灭敌人。\n\n“Void Walker’s Arsenal”提供独有的角色增强，骨骼魔力插槽和其他帮你复仇的援助。在 “Dunwall City Trails”中你会进入局外人的世界，测试自己战斗，潜行和活动性的能力。\n\n最後，你更可在 “The Knife of Dunwall”及 “The Brigmore Witches”使用傳說中的刺客Daud。",
   "shots": [],
-  "_cid": "UP1003-CUSA02218_00-ASIA000000000000"
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fapollo2.dl.playstation.net%2Fcdn%2FUP1003%2FCUSA02218_00%2FtUh7UjRYfmmAZ3ua1ntK9ENEFLiDsXNn5bzV9s4t4L4bqokLNYFK7CnVhKwZEdPc.png&w=512&output=jpg",
+  "en": "Dishonored1（Definitive Edition）",
+  "display_name": "耻辱1/羞辱1（决定版）（港版英文）",
+  "warn": "",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "耻辱1/羞辱1（决定版）（港版英文）",
+  "intro_plain": false,
+  "intro_boldlines": [],
+  "intro_nobold": [],
+  "intro_breaklines": [],
+  "intro_gap": {},
+  "intro_pgap": false
  },
  "Dishonored1（Definitive Edition）": {
   "genres": [
@@ -4710,14 +4762,43 @@
   "_cid": "UP1003-CUSA02218_00-ASIA000000000000"
  },
  "耻辱2/羞辱2": {
-  "genres": [
-   "动作"
-  ],
-  "players": "1人",
+  "_cid": "HP1003-CUSA06794_00-DISHONOREDTWOPS4",
+  "store_name": "Dishonored 2",
+  "platforms": "PS5/PS4",
   "release": "2016年11月11日",
-  "publisher": "Bethesda Softworks",
-  "shots": [],
-  "_cid": "HP1003-CUSA06794_00-DISHONOREDTWOPS4"
+  "genres": [
+   "动作战斗",
+   "任务战役",
+   "手绘画风"
+  ],
+  "capacity": "36.1 GB",
+  "players_local": "1",
+  "players_online": "",
+  "players": "1位玩家",
+  "languages": [
+   "中文"
+  ],
+  "intro": "在《耻辱2》中再次扮演神秘刺客角色，它是 Arkane Studios 所创作、获奖项肯定的冒险故事的下一章。以自己的方式，游走这个神秘主义和工业互相碰撞的世界。\n\n你会选择成为艾蜜莉・考德温女皇，还是皇家圣卫科尔沃・阿塔诺呢？\n\n你能隐匿行踪完成所有任务，或充分利用残忍的战斗系统，或是将二者结合呢？\n\n你会怎样组合角色的能力、武器和工具来消灭敌人呢？\n\n在进行游戏的每个精心手绘的任务时，根据你选择不同，故事的结果也将不同。",
+  "shots": [
+   "https://apollo2.dl.playstation.net/cdn/HP1003/CUSA06794_00/FREE_CONTENT6vdbnMGcl9t6dXBmDIGF/161110Dishonored2_screenshot1.jpg",
+   "https://apollo2.dl.playstation.net/cdn/HP1003/CUSA06794_00/FREE_CONTENT1eK8qtaOFMmMNym1RpcP/161110Dishonored2_screenshot2.jpg",
+   "https://apollo2.dl.playstation.net/cdn/HP1003/CUSA06794_00/FREE_CONTENTfedBpYbKCCjZQXhaCiqf/161110Dishonored2_screenshot3.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fapollo2.dl.playstation.net%2Fcdn%2FHP1003%2FCUSA06794_00%2FIDxiKn3IpYxaNZIszsHpvwJ4xlx2XvcjXxNlEGJQGDUyGzruOrsJsdpLxxKrwToU.png&w=512&output=jpg",
+  "en": "Dishonored2",
+  "display_name": "耻辱2/羞辱2",
+  "warn": "",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "耻辱2/羞辱2",
+  "intro_plain": false,
+  "intro_boldlines": [],
+  "intro_nobold": [
+   "在《耻辱2》中再次扮演神秘刺客角色，它是 Arkane Studios 所创作、获奖项肯定的冒险故事的下一章。以自己的方式，游走这个神秘主义和工业互相碰撞的世界。"
+  ],
+  "intro_breaklines": [],
+  "intro_gap": {},
+  "intro_pgap": false
  },
  "Dishonored2": {
   "genres": [
@@ -4730,14 +4811,45 @@
   "_cid": "HP1003-CUSA06794_00-DISHONOREDTWOPS4"
  },
  "耻辱：界外魔之死/羞辱：界外魔之死": {
-  "genres": [
-   "动作"
-  ],
-  "players": "1人",
+  "_cid": "HP1003-CUSA08859_00-BLKHRT0000000000",
+  "store_name": "Dishonored®: Death of the Outsider™",
+  "platforms": "PS5/PS4",
   "release": "2017年9月15日",
-  "publisher": "Bethesda Softworks",
-  "shots": [],
-  "_cid": "HP1003-CUSA08859_00-BLKHRT0000000000"
+  "genres": [
+   "动作战斗",
+   "潜行暗杀",
+   "剧情冒险"
+  ],
+  "capacity": "22.3 GB",
+  "players_local": "1",
+  "players_online": "",
+  "players": "1位玩家",
+  "languages": [
+   "中文"
+  ],
+  "intro": "扮演比莉・勒克（亦称梅根・福斯特），她曾是丹沃尔最恶名昭彰的职业杀手之一。\n\n与曾经的导师，也就是大名鼎鼎的刺客多德重聚，完成一场最惊人的暗杀行动：干掉界外魔。比莉和多德认为这个神一般的人物，正是帝国多项天大罪行的幕后黑手。冒险进入卡纳加最灰暗的地带，揭开界外魔的神秘面纱及来历。\n\n过程中，你将面对致命的敌人、对抗远古力量，并要做出会永远改变周遭世界的艰难决定。",
+  "shots": [
+   "https://apollo2.dl.playstation.net/cdn/UP1003/CUSA08793_00/FREE_CONTENTg7fsqvo9yGUmfnWsVVSQ/PREVIEW_SCREENSHOT7_152471.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP1003/CUSA08793_00/FREE_CONTENTGyWEpYcHU4VK2gSJRYUb/PREVIEW_SCREENSHOT6_152471.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP1003/CUSA08793_00/FREE_CONTENTPVhEfODjvViyahIo2goH/PREVIEW_SCREENSHOT5_152471.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP1003/CUSA08793_00/FREE_CONTENTCuVKUC1HUgRHseaSnkRE/PREVIEW_SCREENSHOT4_152471.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP1003/CUSA08793_00/FREE_CONTENTDFLkOzRigjKRaISE9fkL/PREVIEW_SCREENSHOT3_152471.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP1003/CUSA08793_00/FREE_CONTENTLAFNQcguitd80rP1ZXd3/PREVIEW_SCREENSHOT2_152471.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP1003/CUSA08793_00/FREE_CONTENTqvu3p8w48rp7gNmAHewB/PREVIEW_SCREENSHOT1_152471.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202009%2F2920%2FmUjmWOusNIcAENORucmAnj1k.png&w=512&output=jpg",
+  "en": "Dishonored：Death of the Outsider",
+  "display_name": "耻辱：界外魔之死/羞辱：界外魔之死",
+  "warn": "",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "耻辱：界外魔之死/羞辱：界外魔之死",
+  "intro_plain": false,
+  "intro_boldlines": [],
+  "intro_nobold": [],
+  "intro_breaklines": [],
+  "intro_gap": {},
+  "intro_pgap": false
  },
  "Dishonored：Death of the Outsider": {
   "genres": [
@@ -4750,12 +4862,41 @@
   "_cid": "HP1003-CUSA08859_00-BLKHRT0000000000"
  },
  "沉寂世界": {
-  "genres": [],
-  "players": "",
-  "release": "",
-  "publisher": "",
-  "shots": [],
-  "_cid": "HP1792-PPSA09404_00-SYPS5SILENCEDTHE"
+  "_cid": "HP4226-CUSA11321_00-CEASIASILENC0001",
+  "store_name": "沉寂世界",
+  "platforms": "PS5/PS4",
+  "release": "2018年3月19日",
+  "genres": [
+   "剧情冒险",
+   "奇幻魔法",
+   "末日废土"
+  ],
+  "capacity": "4.8 GB",
+  "players_local": "1",
+  "players_online": "",
+  "players": "1位玩家",
+  "languages": [
+   "中文"
+  ],
+  "intro": "战争肆虐。\n在一次空袭中，16岁的诺亚和他的小妹妹蕾妮在地堡中寻求庇护。\n在那里，他们不仅免受致命轰炸的袭击，而且进入了生与死的交叉世界：沉寂。诺亚把他的妹妹遗失在了沉寂世界中，他被迫冒险进入这个充满威胁的田园世界来寻找她。\n\n然而，沉寂世界也正饱受其战争与苦难的创伤。\n\n黑暗生物在城镇出没，糟蹋着不同世界之间这个曾经平静安详的地方。\n只有一小拨反抗者在顽强地对抗不断逼近的威胁。现在，这对兄妹必须从即将来临的末日中拯救沉寂世界以及其奇幻居民，从而拯救他们自己的生命。加入诺亚和蕾妮激动人心的旅程，穿越沉寂世界。\n\n在这里，宁静与危险交织着，一个扣人心弦的故事就此展开。\n认识一下迷人可爱的斑斑，这只神奇的毛毛虫能够帮助诺亚和蕾妮一路穿越沉寂世界。并且还能证重要的时刻——这对兄妹发现唯一能够拯救他们的是对彼此的爱。",
+  "shots": [
+   "https://apollo2.dl.playstation.net/cdn/HP4226/CUSA11321_00/FREE_CONTENTZB3OJ3TjSNDM5n5eR5jz/1.jpg",
+   "https://apollo2.dl.playstation.net/cdn/HP4226/CUSA11321_00/FREE_CONTENTLkoLSOpBvEJv0xETkga4/2.jpg",
+   "https://apollo2.dl.playstation.net/cdn/HP4226/CUSA11321_00/FREE_CONTENTvDj3KMvxZxMRRJGtSTMG/3.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202503%2F2514%2Fa70dd6f41a64f18c43ed760b0eb9ba430cb2c10f59b274f6.png&w=512&output=jpg",
+  "en": "Silence",
+  "display_name": "沉寂世界",
+  "warn": "",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "沉寂世界",
+  "intro_plain": false,
+  "intro_boldlines": [],
+  "intro_nobold": [],
+  "intro_breaklines": [],
+  "intro_gap": {},
+  "intro_pgap": false
  },
  "Silence": {
   "genres": [],
@@ -4766,14 +4907,41 @@
   "_cid": "HP1792-PPSA09404_00-SYPS5SILENCEDTHE"
  },
  "沉默之人": {
-  "genres": [
-   "动作"
-  ],
-  "players": "",
+  "_cid": "UP0082-CUSA11757_00-ASIA000000000000",
+  "store_name": "THE QUIET MAN™",
+  "platforms": "PS5/PS4",
   "release": "2018年11月2日",
-  "publisher": "SQUARE ENIX CO., LTD.",
-  "shots": [],
-  "_cid": "UP0082-CUSA11757_00-ASIA000000000000"
+  "genres": [
+   "动作战斗",
+   "剧情探索",
+   "写实拟真"
+  ],
+  "capacity": "26.4 GB",
+  "players_local": "1",
+  "players_online": "",
+  "players": "1位玩家",
+  "languages": [
+   "中文"
+  ],
+  "intro": "《THE QUIET MAN™》无缝结合高质量的真人演出、写实的计算机动画与令人血脉偾张的动作游戏玩法，带来一场由剧情推动的沉浸式电影动作体验。\n\n一切都在一夜之间展开，玩家将扮演失聪的主角Dane，在「无声」世界一路奋战，揭开一名神秘蒙面男子绑架女歌手的背后动机，一口气完成这场刺激过瘾的电影式体验。\n\n你将扮演失聪的角色Dane，像他一样体验这个世界：一个鲜有清楚声音，而且没有字幕的世界，整个故事都由你在寻找蒙面男子的过程中自己诠释。",
+  "shots": [
+   "https://apollo2.dl.playstation.net/cdn/UP0082/CUSA11757_00/FREE_CONTENTj2Lo58NUK6PQyhGsRUXO/1.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP0082/CUSA11757_00/FREE_CONTENTzltVD8EN3n0918hz134Y/2.jpg",
+   "https://apollo2.dl.playstation.net/cdn/UP0082/CUSA11757_00/FREE_CONTENTxPDhOoUXTFmPSf1IQO7T/3.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fapollo2.dl.playstation.net%2Fcdn%2FUP0082%2FCUSA11757_00%2FpGywZoHeRa2h4ER5USKYOpyA7zXBIPrHKbmyVkuV95vDwUx0a2IpIFBN0JeJTPrD.png&w=512&output=jpg",
+  "en": "The Quiet Man",
+  "display_name": "沉默之人",
+  "warn": "",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "沉默之人",
+  "intro_plain": false,
+  "intro_boldlines": [],
+  "intro_nobold": [],
+  "intro_breaklines": [],
+  "intro_gap": {},
+  "intro_pgap": false
  },
  "The Quiet Man": {
   "genres": [
@@ -4786,12 +4954,50 @@
   "_cid": "UP0082-CUSA11757_00-ASIA000000000000"
  },
  "城堡破坏者": {
-  "genres": [],
-  "players": "",
-  "release": "",
-  "publisher": "",
-  "shots": [],
-  "_cid": "JP0101-PPSA35399_00-CVBCDXDL00000000"
+  "_cid": "UP2015-CUSA14409_00-CASTLECRASHERSNA",
+  "store_name": "Castle Crashers Remastered",
+  "platforms": "PS5/PS4",
+  "release": "2019年9月17日",
+  "genres": [
+   "动作冒险",
+   "街机",
+   "独立游戏"
+  ],
+  "capacity": "258 MB",
+  "players_local": "1-4",
+  "players_online": "1-4",
+  "players": "本地1-4人，线上1-4人",
+  "languages": [
+   "中文"
+  ],
+  "intro": "\n在通往由 The Behemoth 所制作的这个获奖2D街机冒险游戏的胜利之路上狂劈猛砍狠破坏吧！\n\n通过特有的手绘角色，城堡破坏者（Castle Crashers）提供了玩家未曾见过高清视觉效果。\n\n在本地或线上与3位好友一起拯救公主，保卫王国，并毁灭城堡！\n\n游戏特色：\n• 可解锁超过25 种角色和超过 40种武器！\n• 直观的连击与魔法系统：随著角色在游戏中的进展，可解锁一大批新的攻击方式。\n• 升级角色并调整力量、魔法、防御、敏捷等属性。\n• 造型可爱的动物球是玩家的伙伴。每只动物球都增加不同的属性来在旅途中帮助玩家。\n• 竟技场模式：在个人赛或者团队赛里与其他玩家决斗！\n• 疯狂模式：在究极战役挑战中验证自己游戏技巧！\n• Necromantic 扩展包（包含 Necromancer 和 Cult Minion 等角色）\n• King 扩展包（包含 The King 和 Open-Faced Gray Knight）\n• 所有的小游戏都可以尽情畅玩\n• 同时还包括：Alien Hominid 可用角色",
+  "shots": [
+   "https://vulcan.dl.playstation.net/img/cfn/11307CvuEOFjGDPrLRKaavXPQty0c8YuCknvpsilvutSHhgw83HgDXXxjEQKrbxhMExHW7l76EAzC_j5ozxj9GA3tkQ0f6bB.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/113076V-Nd35TxIzhagOlEy5SYuYZKnEgK698XGAcdKwojEw0X7rm8KVwEFUot859_1kJ-nWse7zpDHuRzXkZNDTbK4GXsWA.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307fAxH8JSf9tb2Z075xKiTBwSDWhaXWMTRZQazx7f3TgIN88gB_vqk-k67vkCJZUS1ZJ7ZLwxO3mLxot-HpD8fj4dtpPI.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307X2sKtMtyJwjaoyu08QZCvbLWXoyZ1BIhodk0nhqtvPk6RqFPRbqo1ASPQqBaT1A9_T6dmziqJ51BrlZEwT4L-Y2rW1a.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307B_F_7HyFNpFbdJIt2nWs7SK-Omkax0Co3N30fNIE5AQZb_Zu4yr3mns-9Gu8_cRHuF9lEyB2dXurbBDhV7xK54pI36Y.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307sf-jWPKdaWTG0KoRQdBCDlfZvjQ0Z8RrVX0onYhRXqEbGNrYi807I9VjV6f8YidJNXfxFa9x_oukoc-fVOZ21oY-cBf.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307kgBVHNY9CPKhR1MoKN-RhsCQb1148obfgKH6VTRIUpo4t06RiqFdzd1XCg5TilVKbwD4vww1KkX3sP_bQtCH1MOlWTP.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307REjoSOBohiDTUfSnU6p6evVgbh-0ObJeZToOBOQ1_S81YJB79QrwNxRHL9jCM_DbAHj3ISa5n2_W6fsjFIkF2ojsrjh.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307qeJd3ZuancrphUPYBH_SYG4sKPclOvq8mW1YltKqIuEfkqASIlAQ4opSGLNtuE1OihRk0cJHgcRXm5UGWVXKCcPMdmO.jpg",
+   "https://vulcan.dl.playstation.net/img/cfn/11307ZPrFtQFYVCv670KJ3TKC9p-HGF_y3TLb2kzGp4iUcygIYu5dZONsXeJKfsrsUhCCAToIwc1pX7xF8FSBEpFdcssRVX4.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fimg%2Fcfn%2F113074Vkl96ZvqHrSjBTWNaDTiW8NseQkbb8DXD-3YK6okvE2AGl1-evtpyI7VP_QVcLZKNFp0Ea2GebTiHHaz1EvBsKAZAm.png&w=512&output=jpg",
+  "en": "Castle Crashers",
+  "display_name": "城堡破坏者",
+  "warn": "",
+  "_src": "official",
+  "_server": "美服",
+  "_cn": "城堡破坏者",
+  "intro_plain": false,
+  "intro_boldlines": [],
+  "intro_nobold": [
+   "在本地或线上与3位好友一起拯救公主，保卫王国，并毁灭城堡！"
+  ],
+  "intro_breaklines": [],
+  "intro_gap": {},
+  "intro_pgap": false
  },
  "Castle Crashers": {
   "genres": [],
@@ -4802,14 +5008,53 @@
   "_cid": "JP0101-PPSA35399_00-CVBCDXDL00000000"
  },
  "尘埃5（年度版）": {
+  "_cid": "EP4001-PPSA01551_00-DIRT5YEARONEEDIT",
+  "store_name": "DIRT 5 Year One Edition PS4 & PS5",
+  "platforms": "PS5/PS4",
+  "release": "2021年5月22日",
   "genres": [
-   "竞速"
+   "赛车",
+   "竞速",
+   "街机"
   ],
-  "players": "4人",
-  "release": "2021年7月6日",
-  "publisher": "ELECTRONIC ARTS",
-  "shots": [],
-  "_cid": "EP4001-PPSA01551_00-YRONEUPGRADEBUND"
+  "capacity": "52.9 GB",
+  "players_local": "1-4",
+  "players_online": "1-12",
+  "players": "本地1-4人，线上1-12人",
+  "languages": [
+   "中文",
+   "英文",
+   "韩文",
+   "日文"
+  ],
+  "intro": "\n“年度版”的玩家们可以立即在他们的车库里获得三辆马上可用的赛车（Ariel Nomad Tactical、Audi TT Safari、Volkswagen Beetle Rallycross），三个玩家赞助商能提供崭新的目标、奖励和赛车涂装，还能更快积累钱币和经验。  发布之后，我们将致力于开发创造更多让人掌声雷动的全新瞬间，还有真正释放自我的全新方式。\n\n“年度版”玩家可以在《尘埃5》发布后的12个月内使用其全部内容\n• 包括至少12辆新车\n• 60场新的“生涯”赛事\n\n全新玩家赞助商、奖励、赛车涂装等更多精彩内容",
+  "shots": [
+   "https://vulcan.dl.playstation.net/img/rnd/202008/2712/ZYADNZnf07RR8IcsFuELpxp6.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202008/2712/x2ikow4VDqn1LyZf5TvjGruA.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202008/2712/vEcFhEkm21KPgDfxQ2jZ6uPe.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202008/2712/RHD2nUgT0oOG17AYuKjdU9rn.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202008/2712/UlpUedgpEPyMeOjRVEYJFOpy.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202008/2712/j82hoCNKHj5bOvyLVblp2Cv8.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202008/2712/LPIeyunIY9iHHbld1GRkF49Y.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202008/2712/622I1rPR5A8FYyIq2UsXAH2a.jpg",
+   "https://vulcan.dl.playstation.net/img/rnd/202008/2712/OveNIK24XFkzFHUXx42lQ8Ie.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202010%2F2110%2F8ZEssUZl5TmCSdAV5C8mZuyY.png&w=512&output=jpg",
+  "en": "Dirt5（Year One Edition）",
+  "display_name": "尘埃5（年度版）",
+  "warn": "⚠类型由本机常识补(街机)，待店主校准",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "尘埃5（年度版）",
+  "intro_plain": false,
+  "intro_boldlines": [],
+  "intro_nobold": [
+   "• 60场新的“生涯”赛事",
+   "• 包括至少12辆新车"
+  ],
+  "intro_breaklines": [],
+  "intro_gap": {},
+  "intro_pgap": false
  },
  "Dirt5（Year One Edition）": {
   "genres": [
@@ -4822,14 +5067,53 @@
   "_cid": "EP4001-PPSA01551_00-YRONEUPGRADEBUND"
  },
  "Re：从零开始的异世界生活 虚假的王选候补": {
-  "genres": [
-   "冒险"
-  ],
-  "players": "1人",
+  "_cid": "JP0365-CUSA18528_00-BSTUBCUSA1852800",
+  "store_name": "Re:从零开始的异世界生活　虚假的王选候补",
+  "platforms": "PS5/PS4",
   "release": "2021年1月28日",
-  "publisher": "SPIKE CHUNSOFT, INC.",
-  "shots": [],
-  "_cid": "JP0365-CUSA18528_00-BSTUBCUSA1852800"
+  "genres": [
+   "剧情冒险",
+   "任务战役",
+   "收集养成"
+  ],
+  "capacity": "6.2 GB",
+  "players_local": "1",
+  "players_online": "",
+  "players": "1位玩家",
+  "languages": [
+   "中文",
+   "日文"
+  ],
+  "intro": "迟迟无法开始的王选，出现了第六位国王候选人。\n\n由原作者・长月达平对脚本进行完全监制，登场角色由大冢真一郎绘制！和原作相同的「死亡回归」将成为游戏系统中最核心的要素。\n\n■本作游戏内容由 4 个环节构成\n\n＜ADV 阶段＞\n以对话为中心推进剧情的阶段。\n\n＜移动阶段＞\n操纵主角「昴」搜集道具与情报的阶段。在移动阶段时可以操作昴与地图上的角色对话，或是调查地点收集有利于攻略「任务」的道具和情报。\n\n＜作战会议阶段＞\n和同伴一起讨论「任务」进行方向的阶段。\n使用收集到的道具、情报让昴发表意见，改变同伴们在「任务」阶段时採取的行动。\n\n＜任务阶段＞\n解决阻挡在昴一行人面前的难关的行动阶段。\n同伴们将会按照「作战会议阶段」时所决定的作战方向独自行动。",
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202101/1503/DR3mBfcrs8lUpuBInXYYaJFT.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202101/1503/J5BTN2ygmxr9VL4Kzb7sjthe.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202101/1503/SZFxIbZvoF5L2nmLmlz5xVHP.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202101/1503/Cvc2jgjiJ9v5w7zebg3fvslm.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202101/1503/GtnVr6cZhkgrmZyV4wkpXFB9.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202101/1503/FoK4DOsmZUDBF5kjlsiYi73q.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202101/1503/3xTCK9MQqr0tpckCMP7loWr7.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202101/1503/pbkGL4A9Tc9hkBCf7fUYRo8D.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202101/1503/Zn8vDCFezwT1gBHdF0MJLVOT.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202101/1503/ZuSIcNOAlkRP7wNL00gxrYHO.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202101%2F1502%2FY11brls75ZyQst2krS8mLMRP.png&w=512&output=jpg",
+  "en": "Re：ZERO Starting Life in Another World - The Prophecy of the Throne",
+  "display_name": "Re：从零开始的异世界生活 虚假的王选候补",
+  "warn": "",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "Re：从零开始的异世界生活 虚假的王选候补",
+  "intro_plain": false,
+  "intro_boldlines": [
+   "迟迟无法开始的王选，出现了第六位国王候选人。"
+  ],
+  "intro_nobold": [
+   "由原作者・长月达平对脚本进行完全监制，登场角色由大冢真一郎绘制！和原作相同的「死亡回归」将成为游戏系统中最核心的要素。"
+  ],
+  "intro_breaklines": [],
+  "intro_gap": {},
+  "intro_pgap": false
  },
  "Re：ZERO Starting Life in Another World - The Prophecy of the Throne": {
   "genres": [
@@ -4842,12 +5126,52 @@
   "_cid": "JP0365-CUSA18528_00-BSTUBCUSA1852800"
  },
  "成长物语：永恒树之歌": {
-  "genres": [],
-  "players": "",
-  "release": "",
-  "publisher": "",
-  "shots": [],
-  "_cid": "10015746"
+  "_cid": "EP4040-CUSA25487_00-PROJECTGROW00000",
+  "store_name": "成长物语：永恒树之歌",
+  "platforms": "PS5/PS4",
+  "release": "2021年11月17日",
+  "genres": [
+   "剧情冒险",
+   "沙盒建造",
+   "休闲解谜"
+  ],
+  "capacity": "2.1 GB",
+  "players_local": "1",
+  "players_online": "",
+  "players": "1位玩家",
+  "languages": [
+   "中文",
+   "韩文",
+   "英文"
+  ],
+  "intro": "从无到有地培育你的世界，与自然万物建立起深厚的联系。这是一款触动人心的创世沙盒游戏，兼具生活管理及冒险元素。\n\n随着时间流逝，阿莱瑞亚的诸多世界早已悉数褪隐。而那棵以无数枝桠承载着各个世界的永恒树，如今不过是一棵幼苗，它的辉煌亦淡出了人类的记忆。再没有别人了解让它生长的秘术——但你不一样。你能分辨太阳掠过天宇的欢歌，听清暴雨席卷大地的话语。你是最后一位永恒术士，身负代代相传的任务——让永恒树发荣滋长，保护它安全无虞！\n\n在生机勃勃、独一无二的世界中探索……步调和节奏都由你决定\n造访神秘地点，发现奇妙莫测的动物植物，整个过程纯粹由探索本能和游戏机制来驱动。想要怎么打发时间？去钓鱼采花、捉虫捡石，还是去探索洞穴、解决谜题……全都由你！\n\n■培育你自己的世界！\n修习创世术，制作世界种子，创造出特征各异的全新世界。悉心照料你创造的世界，观察它们如何脱胎换骨，亲眼见证全新属性的诞生！你可以生成独一无二的草原、沙漠、冰川世界，还有……呃，其实就是……毕竟创世术并不是一门精确科学，有些种子可能包含意想不到的惊喜。\n\n■结识新人，创建社区！\n在游戏中结识各种各样有趣的人物，倾听他们的故事，在他们需要的时候伸出援手。给大家带去快乐的方式有很多，比如说为他们找个住处，帮他们找到理想工作，或者送出各种配饰和家具。\n\n■建设梦想中的小镇\n《成长物语：永恒树之歌》设计了各种各样可爱的建筑和设施供玩家选择。随心所欲放置你的个性化建筑，尽情营造出家的感觉吧！\n\n■绝美原声\n本游戏配乐由著名游戏动漫作曲家凯文·彭金（Kevin Penkin）操刀，不同凡响。\n\n■探明未解之谜！\n世界上随处可见各种废墟、洞穴、秘密地点……探究永恒树的心脏谜团，寻回那消失已久的旧日学识吧。",
+  "shots": [
+   "https://vulcan.dl.playstation.net/ap/rnd/202107/1416/JCshXJasczISWHIFgYKVpsrj.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202107/1416/VahLhLaBnKws030F7TA6Ah4P.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202107/1416/SVVMZ0f33ARUQ8oQEXIUELdd.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202107/1416/6AB6GFUzTxvLBowPgUVYE7kU.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202107/1416/Ztu4VM4K82288Pj5pHd50tUp.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202107/1416/062PpuU4FZmz2xHs6Ket5u2W.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202107/1416/6LJuTdU6iD60f7NJAQn43zYs.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202107/1416/bV5MXG5W0QTu8RaGORjnU7rr.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202107/1416/S7VsClQFEkdBVHAa0MeVlQ7A.jpg",
+   "https://vulcan.dl.playstation.net/ap/rnd/202107/1416/UUireT2HNcABbglbKQHOt0p0.jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202110%2F2023%2FuahbT01NUDZkmJNp7zlQLnXW.png&w=512&output=jpg",
+  "en": "Grow：Song of The Evertree",
+  "display_name": "成长物语：永恒树之歌",
+  "warn": "",
+  "_src": "official",
+  "_server": "港服",
+  "_cn": "成长物语：永恒树之歌",
+  "intro_plain": false,
+  "intro_boldlines": [
+   "从无到有地培育你的世界，与自然万物建立起深厚的联系。这是一款触动人心的创世沙盒游戏，兼具生活管理及冒险元素。"
+  ],
+  "intro_nobold": [],
+  "intro_breaklines": [],
+  "intro_gap": {},
+  "intro_pgap": false
  },
  "Grow：Song of The Evertree": {
   "genres": [],
