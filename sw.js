@@ -1,9 +1,9 @@
 /* 改159: Service Worker —— 老客秒出核心
  * stale-while-revalidate: 命中缓存立即返回(秒出), 同时后台静默刷新缓存。
- * 每部署一次 CACHE 版本号(2026-11-03T17:48:59+0800)随之变化 -> 新 SW 激活即清掉旧缓存, 不会把旧页喂给老客。
+ * 每部署一次 CACHE 版本号(2026-11-03T18:08:29+0800)随之变化 -> 新 SW 激活即清掉旧缓存, 不会把旧页喂给老客。
  * 例外: ver.json 永远走网络(保证版本探测/自动刷新生效); 跨域封面(weserv)不拦截(由 IndexedDB 接管); 头图/头像等可变图片不进 SW 缓存且强制绕过 HTTP 缓存直连线上(避免老客长期看到旧缓存图); 带 _bg=1 / no-store 的后台探测直连网络。
  */
-const CACHE = 'gt-sw-v2026-11-03T17:48:59+0800';
+const CACHE = 'gt-sw-v2026-11-03T18:08:29+0800';
 const VER_URL = 'ver.json';
 
 self.addEventListener('install', function(e){ self.skipWaiting(); });
