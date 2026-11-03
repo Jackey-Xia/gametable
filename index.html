@@ -12,7 +12,7 @@
     <title>「夏天Jackey」PS数字版游戏</title>
 
 <link rel="preconnect" href="https://images.weserv.nl" crossorigin>
-<link rel="preload" href="data.js?v=1793641827" as="script">
+<link rel="preload" href="data.js?v=1793678497" as="script">
 <link rel="preload" href="covers/manifest_ps.json" as="fetch">
 
 <meta property="og:type" content="website">
@@ -87,7 +87,7 @@ try{sessionStorage.removeItem('gt_newver');}catch(e){}
   
   <div class="hero-inner">
     <div class="brand">
-      <div class="logo"><img src="avatar_fill.png?v=1793641827" alt="夏天Jackey"></div>
+      <div class="logo"><img src="avatar_fill.png?v=1793678497" alt="夏天Jackey"></div>
       <div>
         <h1>「夏天Jackey」PS数字版游戏</h1>
         <div class="sub">千款游戏 · 会员特价 · 一人一号</div>
@@ -254,7 +254,7 @@ try{sessionStorage.removeItem('gt_newver');}catch(e){}
 
 <button id="toTop" class="toTop" aria-label="跳到底部" title="跳到底部">↓ 跳到底部</button>
 <script src="pinyin.js?v=20260911"></script>
-<script>window.__GT_DATA_VER="1793641827";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
+<script>window.__GT_DATA_VER="1793678497";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
 
 <script>/* 改160: 微信内秒开缓存层 —— 不依赖 ServiceWorker(微信 WebView 多不支持 SW), 独立 IndexedDB 存 GT_DATA+taobao 数据,
 老客首屏先读本地缓存秒出, 随后后台拉网络确认/更新。封面 blob 已由 gtImg DB 缓存, 此层补齐「数据」秒出。 */
@@ -1239,20 +1239,24 @@ try{tbFixHref();}catch(e){}
 }
 function gtFillTB(m){ if(!m||typeof m!=="object")return; var n=0;for(var k in m){if(m[k]&&/^https?:\/\//i.test(String(m[k]))){TB[tbKey(k)]=String(m[k]);n++;}} TB_N=n; var xy=m._xianyu||{};for(var k2 in xy){if(xy[k2]&&/^https?:\/\//i.test(String(xy[k2])))TB_XY[tbKey(k2)]=String(xy[k2]);} var xi=m._xid||{};for(var k3 in xi){TB_XID[tbKey(k3)]=String(xi[k3]).replace(/[^\d]/g,"");} }
 (function(){try{
-/* 改162-1: 先读 IDB 缓存秒出库存/购买按钮(微信内也秒出); 若版本(ver.json 的 tb_v)一致则纯本地, 跳过 taobao.json 重下; 否则即时渲染并后台更新 */
+/* 改162-1b: 先读 IDB 缓存秒出库存/购买按钮(微信内也秒出); 仅当缓存确有链接数据且版本(ver.json 的 tb_v)一致才跳过 taobao.json 重下;
+超时/空数据绝不留毒化缓存(空 {} 带 __v 会让后续访问永久早退) —— 2026-11-03 修复 */
 gtJGet("gt_taobao").then(function(cm){
 if(cm&&typeof cm==="object"){
-gtFillTB(cm); try{TB_READY=true;wxMeasure();}catch(e){TB_READY=true;} tbPaint();
+gtFillTB(cm);
+if(TB_N>0){                       /* 缓存确有数据才信任 */
+TB_READY=true; try{wxMeasure();}catch(e){} tbPaint();
 try{ if(typeof gtProg!=="undefined") gtProg.tb=true; }catch(e){}
-if(cm.__v&&window.__GT_TB_V&&cm.__v===window.__GT_TB_V) return;   /* 版本一致 -> 不下载 taobao.json */
+if(cm.__v&&window.__GT_TB_V&&cm.__v===window.__GT_TB_V) return;   /* 版本一致且有数据 -> 纯本地, 跳过下载 */
+}
 }
 gtFetchJSON("taobao.json?t="+Date.now(),{cache:"no-store"}).then(function(m){
 m=m||{};
 gtFillTB(m);
-try{TB_READY=true;wxMeasure();}catch(e){TB_READY=true;}   /* 改153: 表到齐了才允许出「联系商家」 */
+TB_READY=true; try{wxMeasure();}catch(e){}   /* 改153: 表到齐了才允许出「联系商家」 */
 tbPaint();
 try{ if(typeof gtProg!=="undefined") gtProg.tb=true; }catch(e){}   /* 改159fix: 库存/购买数据就绪(含超时兜底), 供底部提示条判定 */
-try{ m.__v=window.__GT_TB_V||""; gtJPut("gt_taobao", m); }catch(e){}   /* 改162-1: 带版本号写回, 下次比对用 */
+if(TB_N>0){ try{ m.__v=window.__GT_TB_V||""; gtJPut("gt_taobao", m); }catch(e){} }  /* 改162-1b: 仅在有数据时写回缓存, 防空缓存毒化 */
 });   /* gtFetchJSON 永不 reject, 超时也会 resolve({}) -> 按钮降级为「联系商家」, 不卡加载条 */
 });
 }catch(e){}})();
@@ -1443,7 +1447,7 @@ function gtFetchJSON(url, opts){
 return new Promise(function(resolve){
 var done=false;
 function fin(v){ if(done)return; done=true; resolve(v||{}); }
-var to=setTimeout(function(){ fin({}); }, 20000);   /* 20s 超时兜底 */
+var to=setTimeout(function(){ fin({}); }, 35000);   /* 35s 超时兜底(338KB taobao.json 在弱网/预览代理下常需 >20s) —— 改162-1b */
 try{
 fetch(url, opts).then(function(r){ return (r&&r.ok) ? r.json() : {}; })
 .then(function(d){ clearTimeout(to); fin(d); })
@@ -1892,7 +1896,7 @@ function showTab(name){
 curTab=name;     /* 改81 */
 /* 改159: 页头真实背景元素, 随 tab 显式换图(微信 WebView 伪元素不重绘兜底) */
 var heroBg=document.getElementById("heroBg");
-if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793641827')";heroBg.style.opacity=1;}
+if(heroBg){var hb=name==="mem"?"banner_mem.jpg":name==="ns"?"banner_plat.jpg":"banner_mem.jpg";heroBg.style.backgroundImage="url('"+hb+"?v=1793678497')";heroBg.style.opacity=1;}
 /* 改114/159e: 页头封面随 tab 切换 —— PS白金(ns)换奖杯大图, 会员资费(mem)与 PS游戏(ps)均用 banner_mem.jpg(会员资费同款图, 替换原小熊图) */
 const hero=document.querySelector(".hero");
 if(hero){hero.classList.toggle("tmem",name==="mem");hero.classList.toggle("tplat",name==="ns");}
