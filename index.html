@@ -2647,6 +2647,7 @@ function gtRenderDetail(card,g,cov,e){
     var lastP=null,lastBul=false,bold1Done=false;
     for(var bi=0;bi<blks.length;bi++){
       var blk=blks[bi].trim();if(!blk)continue;
+      var blkFirst=true;
       var raw=blk.split("\n");
       /* 再按「子弹点 / 普通段落」切子块：紧跟在子弹点后的标题行（如 互动：/敌人：）不会被粘到上一条里 */
       var subA=[],cur=[],curB=null,curH=null,prevLen=0;
@@ -2708,7 +2709,8 @@ function gtRenderDetail(card,g,cov,e){
           while(nxB&&nxB.nodeName==="BR"){var nx2=nxB.nextSibling;p.removeChild(nxB);nxB=nx2;}
         }
         if(!merged)it.appendChild(p);
-        lastP=p;lastBul=sb.b;
+        if(!merged && sb.b && lastBul===false && !blkFirst && lastP){ lastP.style.marginBottom="0"; }
+        lastP=p;lastBul=sb.b; blkFirst=false;
       }
     }
     body.appendChild(it);
