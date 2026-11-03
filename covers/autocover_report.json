@@ -1,11 +1,7 @@
 {
- "time": "2026-11-03T12:43:53",
+ "time": "2026-11-03T12:45:37",
  "added": [],
  "pending": [
-  {
-   "name": "质量效应123（传奇版）（港版日英文）",
-   "reason": "失败6次, 需人工核对"
-  },
   {
    "name": "纸人1",
    "reason": "失败6次, 需人工核对"
@@ -14,7 +10,7 @@
  "errors": [],
  "stats": {
   "total": 1265,
-  "covered": 1336,
-  "pending_open": 2
+  "covered": 1337,
+  "pending_open": 1
  }
 }
