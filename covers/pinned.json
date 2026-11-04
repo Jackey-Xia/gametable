@@ -1,7 +1,8 @@
 {
  "_meta": {
   "count": 1121,
-  "updated": "2026-11-04T01:40:08"
+  "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
+  "updated": "2026-11-04T01:56:12"
  },
  "locks": {
   "p0001": {
@@ -7433,7 +7434,7 @@
    "en": "Final Fantasy 7 Rebirth",
    "file": "covers/2681dcb95976_s.jpg",
    "md5": "e43f75dd447105a4da29216f5f76d6b0",
-   "note": "竖图原图直上(前端 96×128 裁切不遮挡文字/字母, 主体更大) · 原留边版 covers/rc62e836cdf2d9.jpg",
+   "note": "★人工锁死沿用(锁p0567, 中文名一致)",
    "platform": "PS",
    "role": "P",
    "store": "",
