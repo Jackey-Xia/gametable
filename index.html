@@ -2528,8 +2528,7 @@ function gtIntroSub(t){
   /* 带感叹号的玩法/特性短句：行尾 ！/ ! 且 ≤30 字（过长正文句不加重） */
   if(t.length<=30&&(t.endsWith("！")||t.endsWith("!")))return true;
   if(t.length>26)return false;
-  /* 短行内含 ： 的标签句（如「本作包含：xxx」类） */
-  if(/[：:]/.test(t))return true;
+
   /* 以句号/问号/逗号等收尾 → 判定为正文，不加重 */
   if(/[。！？.!?，,]/.test(t.slice(-1)))return false;
   /* ≤20 字短句 / 名词词组 → 视为分段标题（记忆规则：凡短句标题均以标题处理加粗） */
