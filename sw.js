@@ -1,9 +1,9 @@
 /* 改159: Service Worker —— 老客秒出核心
  * stale-while-revalidate: 命中缓存立即返回(秒出), 同时后台静默刷新缓存。
- * 每部署一次 CACHE 版本号(2026-11-03T20:46:00+0800)随之变化 -> 新 SW 激活即清掉旧缓存, 不会把旧页喂给老客。
- * 例外: ver.json 永远走网络(保证版本探测/自动刷新生效); 跨域封面(weserv)不拦截(由 IndexedDB 接管); 头图/头像等可变图片不进 SW 缓存且强制绕过 HTTP 缓存直连线上(避免老客长期看到旧缓存图); 带 _bg=1 / no-store 的后台探测直连网络。
+ * 每部署一次 CACHE 版本号(1793893284)随之变化 -> 新 SW 激活即清掉旧缓存, 不会把旧页喂给老客。
+ * 例外: ver.json 永远走网络(保证版本探测/自动刷新生效); 跨域封面(weserv)不拦截(由 IndexedDB 接管); 可变图片(商品封面等)强制绕过 HTTP 缓存直连线上最新(避免老客长期看到旧封面); 固定图片(头像 avatar_fill.png / 背景 bg.jpg)走 SW 缓存秒出(改动极少, 老客免重复下载); 带 _bg=1 / no-store 的后台探测直连网络。
  */
-const CACHE = 'gt-sw-v2026-11-05T00:54:13+0800';
+const CACHE = 'gt-sw-v1793893284';
 const VER_URL = 'ver.json';
 
 self.addEventListener('install', function(e){ self.skipWaiting(); });
@@ -23,6 +23,11 @@ function cacheKey(u){
   if(p.slice(-8) === 'data.js') return '/data.js';           // 每次带 ?t= 去重 -> 归一成同一份
   if(p === '/' || p === '/gametable/' || p.slice(-10) === 'index.html') return '/index.html';
   return p;
+}
+
+// 固定图片(头像/背景)改动极少, 适合 SW 缓存秒出; 其余图片(商品封面等)为可变资源
+function isFixedImage(u){
+  return /(?:^|\/)(avatar_fill\.png|bg\.jpg)$/.test(u.pathname);
 }
 
 async function swr(req, u){
@@ -47,9 +52,10 @@ self.addEventListener('fetch', function(e){
   try{ u = new URL(req.url); }catch(err){ return; }
   if(u.origin !== self.location.origin) return;            // 跨域(封面走 weserv)不拦截, 交给 IndexedDB
   if(neverCache(u)) return;                                // ver.json 永远网络
-  // 可变图片(头图/头像/横幅)不进 SW 缓存, 且强制绕过 HTTP 缓存直连线上最新, 避免老客长期看到旧缓存图
+  // 图片分流: 固定图(头像/背景)走 SWR 秒出; 其余可变图片(商品封面等)强制直连最新
   if(/\.(jpe?g|png|gif|webp|svg|avif)(\?|$)/i.test(u.pathname)){
-    e.respondWith(fetch(req, {cache:'reload'})); return;
+    if(isFixedImage(u)){ e.respondWith(swr(req, u)); return; }   // 固定图: 老客秒出, 后台静默刷新
+    e.respondWith(fetch(req, {cache:'reload'})); return;          // 可变图: 绕过 HTTP 缓存直连线上
   }
   var cc = req.headers.get('cache-control') || '';
   if(cc.indexOf('no-store') >= 0 || u.searchParams.has('_bg')){
