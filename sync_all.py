@@ -116,6 +116,15 @@ if os.path.isdir(cv_src):
         shutil.rmtree(cv_dst)
     shutil.copytree(cv_src, cv_dst, ignore=shutil.ignore_patterns("*.pyc"))
     print("covers/ 已同步:", len([f for f in os.listdir(cv_dst) if f.endswith(".jpg")]), "张")
+
+# 用户上传的截图画廊图片（与 covers 分离，避免干扰封面清单/自动抓取逻辑）
+sh_src = os.path.join(BASE, "shots")
+if os.path.isdir(sh_src):
+    sh_dst = os.path.join(site, "shots")
+    if os.path.isdir(sh_dst):
+        shutil.rmtree(sh_dst)
+    shutil.copytree(sh_src, sh_dst, ignore=shutil.ignore_patterns("*.pyc"))
+    print("shots/ 已同步:", len([f for f in os.listdir(sh_dst) if f.endswith(".jpg")]), "张")
 # 审核预览目录（如 pad_review/）原样带上站点
 for extra in ("pad_review", "blank_review"):
     ex_src = os.path.join(BASE, extra)
