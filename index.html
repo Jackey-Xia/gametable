@@ -2616,6 +2616,12 @@ function gtRenderDetail(card,g,cov,e){
           else if(e.intro_breaklines&&e.intro_breaklines.indexOf(t)>=0)isNoBold=true;
         }
         if(li2)p.appendChild(document.createElement("br"));
+        if(e&&e.locked){
+          /* 锁死项：符号像素级原样，连原始子弹符号都保留，绝不归一为 • ；加粗仍以 intro_boldlines 为准 */
+          if(isBold){var b=document.createElement("b");b.className="gt-dsub";b.textContent=t;p.appendChild(b);}
+          else{p.appendChild(document.createTextNode(t));}
+          continue;
+        }
         if(isBold){
           var b=document.createElement("b");b.className="gt-dsub";b.textContent=disp;p.appendChild(b);
         }else if(isBul){
