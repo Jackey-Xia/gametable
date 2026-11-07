@@ -44,7 +44,9 @@
   "release": "2016年4月28日",
   "publisher": "SEGA CORPORATION",
   "shots": [],
-  "_cid": "HP0177-CUSA03873_00-ODINSPHERELE0000"
+  "_cid": "HP0177-CUSA03873_00-ODINSPHERELE0000",
+  "locked": true,
+  "locked_cid": "HP0177-CUSA03873_00-ODINSPHERELE0000"
  },
  "艾希ICEY": {
   "genres": [
@@ -91,7 +93,9 @@
   "release": "2016年11月18日",
   "publisher": "X.D. Network Inc.",
   "shots": [],
-  "_cid": "HP1637-CUSA05660_00-0000000000000001"
+  "_cid": "HP1637-CUSA05660_00-0000000000000001",
+  "locked": true,
+  "locked_cid": "HP1637-CUSA05660_00-0000000000000001"
  },
  "阿斯达伦：地球之泪": {
   "genres": [
@@ -142,7 +146,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10008704"
+  "_cid": "10008704",
+  "locked": true,
+  "locked_cid": "10008704"
  },
  "暗影火炬城": {
   "genres": [
@@ -194,7 +200,9 @@
   "release": "2021年9月6日",
   "publisher": "Astrolabe Games",
   "shots": [],
-  "_cid": "HP6808-PPSA03970_00-FISTASIAPS5HK003"
+  "_cid": "HP6808-PPSA03970_00-FISTASIAPS5HK003",
+  "locked": true,
+  "locked_cid": "HP6808-PPSA03970_00-FISTASIAPS5HK003"
  },
  "奥力奥力世界（拉德版）": {
   "genres": [
@@ -258,7 +266,9 @@
   "release": "2022年2月8日",
   "publisher": "Take-Two",
   "shots": [],
-  "_cid": "UP4581-PPSA02304_00-OLLIOLLIWORLDRAD"
+  "_cid": "UP4581-PPSA02304_00-OLLIOLLIWORLDRAD",
+  "locked": true,
+  "locked_cid": "UP4581-PPSA02304_00-OLLIOLLIWORLDRAD"
  },
  "暗夜长梦（PS4）": {
   "genres": [
@@ -311,7 +321,9 @@
   "release": "2022年3月29日",
   "publisher": "Maximum Entertainment",
   "shots": [],
-  "_cid": "UP2080-CUSA28257_00-INNIGHTMARE00000"
+  "_cid": "UP2080-CUSA28257_00-INNIGHTMARE00000",
+  "locked": true,
+  "locked_cid": "UP2080-CUSA28257_00-INNIGHTMARE00000"
  },
  "暗夜长梦（PS5）": {
   "genres": [
@@ -410,7 +422,9 @@
   "release": "2022年7月29日",
   "publisher": "Annapurna Interactive",
   "shots": [],
-  "_cid": "UP2470-PPSA06207_00-EFINCHPS5SIEA000"
+  "_cid": "UP2470-PPSA06207_00-EFINCHPS5SIEA000",
+  "locked": true,
+  "locked_cid": "UP2470-PPSA06207_00-EFINCHPS5SIEA000"
  },
  "暗邪西部": {
   "genres": [
@@ -470,7 +484,9 @@
   "release": "2022年11月22日",
   "publisher": "Focus Entertainment",
   "shots": [],
-  "_cid": "EP4133-PPSA02371_00-EVILWESTGAME0000"
+  "_cid": "EP4133-PPSA02371_00-EVILWESTGAME0000",
+  "locked": true,
+  "locked_cid": "EP4133-PPSA02371_00-EVILWESTGAME0000"
  },
  "阿斯泰利克斯历险记：幻想新国度2": {
   "genres": [
@@ -519,7 +535,9 @@
   "release": "2018年11月30日",
   "publisher": "H2 Interactive Co., Ltd.",
   "shots": [],
-  "_cid": "EP4295-CUSA13367_00-ASIARIXXXL2EUR00"
+  "_cid": "EP4295-CUSA13367_00-ASIARIXXXL2EUR00",
+  "locked": true,
+  "locked_cid": "EP4295-CUSA13367_00-ASIARIXXXL2EUR00"
  },
  "阿斯泰利克斯历险记：全拍飞1": {
   "genres": [
@@ -571,7 +589,9 @@
   "release": "2024年5月1日",
   "publisher": "Microids",
   "shots": [],
-  "_cid": "EP4295-PPSA08576_00-AOSTAPS5000000EU"
+  "_cid": "EP4295-PPSA08576_00-AOSTAPS5000000EU",
+  "locked": true,
+  "locked_cid": "EP4295-PPSA08576_00-AOSTAPS5000000EU"
  },
  "阿斯泰利克斯历险记：全拍飞2": {
   "genres": [
@@ -632,7 +652,9 @@
   "release": "2024年6月3日",
   "publisher": "Microids",
   "shots": [],
-  "_cid": "EP4295-PPSA16746_00-AOSTA2PS500000EU"
+  "_cid": "EP4295-PPSA16746_00-AOSTA2PS500000EU",
+  "locked": true,
+  "locked_cid": "EP4295-PPSA16746_00-AOSTA2PS500000EU"
  },
  "艾诺提亚：失落之歌（豪华版）": {
   "genres": [
@@ -690,7 +712,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "HP7809-PPSA20517_00-0367815466733956"
+  "_cid": "HP7809-PPSA20517_00-0367815466733956",
+  "locked": true,
+  "locked_cid": "HP7809-PPSA20517_00-0367815466733956"
  },
  "暗喻幻想": {
   "genres": [
@@ -753,7 +777,9 @@
   "release": "2024年10月11日",
   "publisher": "SEGA CORPORATION",
   "shots": [],
-  "_cid": "UP0177-PPSA20800_00-METAPHORDLC00007"
+  "_cid": "UP0177-PPSA20800_00-METAPHORDLC00007",
+  "locked": true,
+  "locked_cid": "UP0177-PPSA20800_00-METAPHORDLC00007"
  },
  "阿加莎·克里斯蒂：东方快车谋杀案": {
   "genres": [
@@ -811,7 +837,9 @@
   "release": "2023年10月20日",
   "publisher": "Microids",
   "shots": [],
-  "_cid": "HP4295-PPSA18113_00-AGATHACOEPS500AS"
+  "_cid": "HP4295-PPSA18113_00-AGATHACOEPS500AS",
+  "locked": true,
+  "locked_cid": "HP4295-PPSA18113_00-AGATHACOEPS500AS"
  },
  "阿加莎·克里斯蒂 - 赫丘勒·白罗：最初的案件": {
   "genres": [
@@ -872,7 +900,9 @@
   "release": "2024年4月25日",
   "publisher": "Microids",
   "shots": [],
-  "_cid": "EP4295-CUSA23753_00-YOUNGPOIROT000EU"
+  "_cid": "EP4295-CUSA23753_00-YOUNGPOIROT000EU",
+  "locked": true,
+  "locked_cid": "EP4295-CUSA23753_00-YOUNGPOIROT000EU"
  },
  "埃里克斯霍姆：被偷走的梦": {
   "genres": [
@@ -930,7 +960,9 @@
   "release": "2025年7月15日",
   "publisher": "Nordcurrent GmbH",
   "shots": [],
-  "_cid": "EB0757-PPSA20548_00-0286086241569047"
+  "_cid": "EB0757-PPSA20548_00-0286086241569047",
+  "locked": true,
+  "locked_cid": "EB0757-PPSA20548_00-0286086241569047"
  },
  "暗斗迷宫": {
   "genres": [
@@ -991,7 +1023,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "HP0700-PPSA20296_00-SHADOWLABYRINTH0"
+  "_cid": "HP0700-PPSA20296_00-SHADOWLABYRINTH0",
+  "locked": true,
+  "locked_cid": "HP0700-PPSA20296_00-SHADOWLABYRINTH0"
  },
  "ARC Raiders 穹顶突击队1": {
   "genres": [
@@ -1054,7 +1088,9 @@
   "release": "2025年10月30日",
   "publisher": "Embark Studios AB",
   "shots": [],
-  "_cid": "EP6848-PPSA04998_00-4085881659726287"
+  "_cid": "EP6848-PPSA04998_00-4085881659726287",
+  "locked": true,
+  "locked_cid": "EP6848-PPSA04998_00-4085881659726287"
  },
  "ARC Raiders 穹顶突击队2": {
   "genres": [
@@ -1064,7 +1100,9 @@
   "release": "2025年10月30日",
   "publisher": "Embark Studios AB",
   "shots": [],
-  "_cid": "EP6848-PPSA04998_00-4085881659726287"
+  "_cid": "EP6848-PPSA04998_00-4085881659726287",
+  "locked": true,
+  "locked_cid": "EP6848-PPSA04998_00-4085881659726287"
  },
  "暗黑地牢1（完整版）": {
   "genres": [
@@ -1127,7 +1165,9 @@
   "release": "2021年4月20日",
   "publisher": "H2 Interactive Co., Ltd.",
   "shots": [],
-  "_cid": "EP2483-CUSA05967_00-RHSDDPS4000000AE"
+  "_cid": "EP2483-CUSA05967_00-RHSDDPS4000000AE",
+  "locked": true,
+  "locked_cid": "EP2483-CUSA05967_00-RHSDDPS4000000AE"
  },
  "暗黑地牢2（完整版）": {
   "_cid": "UP2619-PPSA19590_00-0083000215619347",
@@ -1200,7 +1240,9 @@
   "release": "2025年12月2日",
   "publisher": "RED HOOK STUDIOS INC.",
   "shots": [],
-  "_cid": "UP2619-PPSA19590_00-0083000215619347"
+  "_cid": "UP2619-PPSA19590_00-0083000215619347",
+  "locked": true,
+  "locked_cid": "UP2619-PPSA19590_00-0083000215619347"
  },
  "艾尔登法环/老头环（黄金树幽影版）": {
   "_cid": "HP0700-PPSA04608_00-ELDENRINGSOTEE00",
@@ -1256,7 +1298,9 @@
   "release": "2024年6月21日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-PPSA04608_00-ELDENRINGSOTEE00"
+  "_cid": "HP0700-PPSA04608_00-ELDENRINGSOTEE00",
+  "locked": true,
+  "locked_cid": "HP0700-PPSA04608_00-ELDENRINGSOTEE00"
  },
  "艾尔登法环/老头环 黑夜君临（豪华版）（1）": {
   "_cid": "HP0700-PPSA25379_00-ERSLDX0000000000",
@@ -1312,7 +1356,9 @@
   "release": "2025年5月30日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-PPSA25379_00-ERSLDX0000000000"
+  "_cid": "HP0700-PPSA25379_00-ERSLDX0000000000",
+  "locked": true,
+  "locked_cid": "HP0700-PPSA25379_00-ERSLDX0000000000"
  },
  "艾尔登法环/老头环 黑夜君临（豪华版）（2）": {
   "genres": [
@@ -1322,7 +1368,9 @@
   "release": "2025年5月30日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-PPSA25379_00-ERSLDX0000000000"
+  "_cid": "HP0700-PPSA25379_00-ERSLDX0000000000",
+  "locked": true,
+  "locked_cid": "HP0700-PPSA25379_00-ERSLDX0000000000"
  },
  "阿凡达：潘多拉边境（完整版）": {
   "_cid": "JP0001-PPSA01579_00-AVATAR2COMPED000",
@@ -1383,7 +1431,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP0001-PPSA01579_00-AVATAR2COMPED000"
+  "_cid": "JP0001-PPSA01579_00-AVATAR2COMPED000",
+  "locked": true,
+  "locked_cid": "JP0001-PPSA01579_00-AVATAR2COMPED000"
  },
  "埃博拉3": {
   "_cid": "UB0714-CUSA52227_00-0102297760391314",
@@ -1447,7 +1497,9 @@
   "release": "2025年2月25日",
   "publisher": "404 GAMES LTD",
   "shots": [],
-  "_cid": "UB0714-CUSA52227_00-0102297760391314"
+  "_cid": "UB0714-CUSA52227_00-0102297760391314",
+  "locked": true,
+  "locked_cid": "UB0714-CUSA52227_00-0102297760391314"
  },
  "埃博拉村庄": {
   "_cid": "UB0245-PPSA23684_00-0987842916872143",
@@ -1500,7 +1552,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UB0245-PPSA23684_00-0987842916872143"
+  "_cid": "UB0245-PPSA23684_00-0987842916872143",
+  "locked": true,
+  "locked_cid": "UB0245-PPSA23684_00-0987842916872143"
  },
  "AI梦境档案": {
   "_cid": "JP0365-CUSA14673_00-ASIAFULLGAME0000",
@@ -1551,7 +1605,9 @@
   "release": "2019年9月19日",
   "publisher": "Spike Chunsoft Co., Ltd.",
   "shots": [],
-  "_cid": "JP0365-CUSA14673_00-ASIAFULLGAME0000"
+  "_cid": "JP0365-CUSA14673_00-ASIAFULLGAME0000",
+  "locked": true,
+  "locked_cid": "JP0365-CUSA14673_00-ASIAFULLGAME0000"
  },
  "AI梦境档案 涅槃肇始": {
   "_cid": "JP0365-CUSA25634_00-AI20000000000000",
@@ -1606,7 +1662,9 @@
   "release": "2022年6月23日",
   "publisher": "SPIKE CHUNSOFT, INC.",
   "shots": [],
-  "_cid": "JP0365-CUSA25634_00-AI20000000000000"
+  "_cid": "JP0365-CUSA25634_00-AI20000000000000",
+  "locked": true,
+  "locked_cid": "JP0365-CUSA25634_00-AI20000000000000"
  },
  "无法成眠的伊达键 From AI梦境档案": {
   "_cid": "JP0365-PPSA22652_00-NOSLEEPFKANAMEDT",
@@ -1670,7 +1728,9 @@
   "release": "2026年2月26日",
   "publisher": "SPIKE CHUNSOFT, INC.",
   "shots": [],
-  "_cid": "JP0365-PPSA22652_00-NOSLEEPFKANAMEDT"
+  "_cid": "JP0365-PPSA22652_00-NOSLEEPFKANAMEDT",
+  "locked": true,
+  "locked_cid": "JP0365-PPSA22652_00-NOSLEEPFKANAMEDT"
  },
  "埃德娜和哈维（完整版）": {
   "_cid": "EP8923-CUSA17658_00-EDNABUNDLEPS4EU0",
@@ -1726,7 +1786,9 @@
   "release": "2026年2月26日",
   "publisher": "DAEDALIC ENTERTAINMENT",
   "shots": [],
-  "_cid": "EP8923-CUSA17658_00-EDNABUNDLEPS4EU0"
+  "_cid": "EP8923-CUSA17658_00-EDNABUNDLEPS4EU0",
+  "locked": true,
+  "locked_cid": "EP8923-CUSA17658_00-EDNABUNDLEPS4EU0"
  },
  "暗黑破坏神2：浴火重生（重制版）": {
   "_cid": "UP0002-PPSA02443_00-D2RBUNDLE0000000",
@@ -1789,7 +1851,9 @@
   "release": "2017年6月27日",
   "publisher": "Blizzard Entertainment, Inc.",
   "shots": [],
-  "_cid": "UP0002-CUSA00242_00-ASIAERNALCOLL000"
+  "_cid": "UP0002-CUSA00242_00-ASIAERNALCOLL000",
+  "locked": true,
+  "locked_cid": "UP0002-CUSA00242_00-ASIAERNALCOLL000"
  },
  "暗黑破坏神4（完整版）": {
   "_cid": "UP0002-PPSA02442_00-DIVLOHCOMBO00000",
@@ -1841,7 +1905,9 @@
   "release": "2024年6月10日",
   "publisher": "ACTIVISION BLIZZARD",
   "shots": [],
-  "_cid": "UP0002-PPSA02442_00-DIVBASEGAME00000"
+  "_cid": "UP0002-PPSA02442_00-DIVBASEGAME00000",
+  "locked": true,
+  "locked_cid": "UP0002-PPSA02442_00-DIVBASEGAME00000"
  },
  "暗黑血统1（战神版）": {
   "_cid": "EP4389-PPSA31977_00-DSWARMASTEREDPS5",
@@ -1899,7 +1965,9 @@
   "release": "2026年5月19日",
   "publisher": "THQ NORDIC GAMES GMBH",
   "shots": [],
-  "_cid": "EP4389-PPSA31977_00-DSWARMASTEREDPS5"
+  "_cid": "EP4389-PPSA31977_00-DSWARMASTEREDPS5",
+  "locked": true,
+  "locked_cid": "EP4389-PPSA31977_00-DSWARMASTEREDPS5"
  },
  "暗黑血统2（决定版）": {
   "_cid": "EP4389-PPSA23806_00-DARKSIDERS2PS5GP",
@@ -1958,7 +2026,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10012906"
+  "_cid": "10012906",
+  "locked": true,
+  "locked_cid": "10012906"
  },
  "暗黑血统3（豪华版）": {
   "_cid": "UP4389-CUSA08880_00-ASIA000000000001",
@@ -1999,7 +2069,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10003514"
+  "_cid": "10003514",
+  "locked": true,
+  "locked_cid": "10003514"
  },
  "暗黑血统：创世纪": {
   "_cid": "UP4389-CUSA12988_00-ASIA000000000000",
@@ -2044,7 +2116,9 @@
   "release": "2020年2月17日",
   "publisher": "THQ NORDIC GAMES GMBH",
   "shots": [],
-  "_cid": "UP4389-CUSA12988_00-ASIA000000000000"
+  "_cid": "UP4389-CUSA12988_00-ASIA000000000000",
+  "locked": true,
+  "locked_cid": "UP4389-CUSA12988_00-ASIA000000000000"
  },
  "艾恩格朗特 回荡新声1": {
   "_cid": "JP0700-PPSA22969_00-SWORDARTONLINEV0",
@@ -2105,7 +2179,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP0700-PPSA22969_00-SWORDARTONLINEV0"
+  "_cid": "JP0700-PPSA22969_00-SWORDARTONLINEV0",
+  "locked": true,
+  "locked_cid": "JP0700-PPSA22969_00-SWORDARTONLINEV0"
  },
  "艾恩格朗特 回荡新声2": {
   "genres": [],
@@ -2113,7 +2189,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP0700-PPSA22969_00-SWORDARTONLINEV0"
+  "_cid": "JP0700-PPSA22969_00-SWORDARTONLINEV0",
+  "locked": true,
+  "locked_cid": "JP0700-PPSA22969_00-SWORDARTONLINEV0"
  },
  "阿西，美女室友竟然1": {
   "_cid": "HB1312-CUSA55074_00-0990427065479366",
@@ -2184,7 +2262,9 @@
   "release": "2026年2月2日",
   "publisher": "STORYTACO.INC",
   "shots": [],
-  "_cid": "HB1312-CUSA55074_00-0990427065479366"
+  "_cid": "HB1312-CUSA55074_00-0990427065479366",
+  "locked": true,
+  "locked_cid": "HB1312-CUSA55074_00-0990427065479366"
  },
  "阿西，美女室友竟然2": {
   "_cid": "HB1312-PPSA36824_00-0218376215595728",
@@ -2258,7 +2338,9 @@
   "release": "2026年2月2日",
   "publisher": "STORYTACO.INC",
   "shots": [],
-  "_cid": "HB1312-CUSA55074_00-0990427065479366"
+  "_cid": "HB1312-CUSA55074_00-0990427065479366",
+  "locked": true,
+  "locked_cid": "HB1312-CUSA55074_00-0990427065479366"
  },
  "黯井微光1": {
   "_cid": "UP5155-PPSA38720_00-WELLDWELLER00000",
@@ -2312,7 +2394,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP5155-PPSA38721_00-WELLDWELLERDEMO0"
+  "_cid": "UP5155-PPSA38721_00-WELLDWELLERDEMO0",
+  "locked": true,
+  "locked_cid": "UP5155-PPSA38721_00-WELLDWELLERDEMO0"
  },
  "黯井微光2": {
   "genres": [],
@@ -2320,7 +2404,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP5155-PPSA38721_00-WELLDWELLERDEMO0"
+  "_cid": "UP5155-PPSA38721_00-WELLDWELLERDEMO0",
+  "locked": true,
+  "locked_cid": "UP5155-PPSA38721_00-WELLDWELLERDEMO0"
  },
  "暴雨+超凡双生": {
   "_cid": "HP9000-CUSA02567_00-HRPS4BEYOND00000",
@@ -2366,7 +2452,9 @@
   "release": "2016年3月2日",
   "publisher": "Sony Interactive Entertainment",
   "shots": [],
-  "_cid": "HP9000-CUSA02567_00-HRPS4BEYOND00000"
+  "_cid": "HP9000-CUSA02567_00-HRPS4BEYOND00000",
+  "locked": true,
+  "locked_cid": "HP9000-CUSA02567_00-HRPS4BEYOND00000"
  },
  "蝙蝠侠：阿卡姆合辑（港版英文）": {
   "_cid": "UP1018-CUSA00133_00-ASIA000000000064",
@@ -2412,7 +2500,9 @@
   "release": "2024年2月2日",
   "publisher": "Warner Bros. Interactive",
   "shots": [],
-  "_cid": "UP1018-PPSA02182_00-SUICIDESQUADKTJL"
+  "_cid": "UP1018-PPSA02182_00-SUICIDESQUADKTJL",
+  "locked": true,
+  "locked_cid": "UP1018-PPSA02182_00-SUICIDESQUADKTJL"
  },
  "迸发1/机甲狂潮1（增强版）": {
   "_cid": "EP4133-CUSA04849_00-ASIA000000000010",
@@ -2463,7 +2553,9 @@
   "release": "2019年1月9日",
   "publisher": "Focus Entertainment",
   "shots": [],
-  "_cid": "EP4133-CUSA04849_00-ASIA000000000010"
+  "_cid": "EP4133-CUSA04849_00-ASIA000000000010",
+  "locked": true,
+  "locked_cid": "EP4133-CUSA04849_00-ASIA000000000010"
  },
  "迸发2/机甲狂潮2（高级版）": {
   "_cid": "UP4133-CUSA12564_00-ASIA000000000008",
@@ -2518,7 +2610,9 @@
   "release": "2020年1月16日",
   "publisher": "Focus Entertainment",
   "shots": [],
-  "_cid": "UP4133-CUSA12564_00-ASIA000000000008"
+  "_cid": "UP4133-CUSA12564_00-ASIA000000000008",
+  "locked": true,
+  "locked_cid": "UP4133-CUSA12564_00-ASIA000000000008"
  },
  "避风港": {
   "_cid": "HP0918-PPSA02467_00-HAVENPS5SIEJA001",
@@ -2575,7 +2669,9 @@
   "release": "2020年12月3日",
   "publisher": "The Game Bakers",
   "shots": [],
-  "_cid": "HP0918-PPSA02467_00-HAVENPS5SIEJA001"
+  "_cid": "HP0918-PPSA02467_00-HAVENPS5SIEJA001",
+  "locked": true,
+  "locked_cid": "HP0918-PPSA02467_00-HAVENPS5SIEJA001"
  },
  "北方之灵 北方之魂（增强版）": {
   "_cid": "UP1260-PPSA02306_00-SPIRITPS5SIEA001",
@@ -2624,7 +2720,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP1260-PPSA02306_00-SPIRITPS5SIEA001"
+  "_cid": "UP1260-PPSA02306_00-SPIRITPS5SIEA001",
+  "locked": true,
+  "locked_cid": "UP1260-PPSA02306_00-SPIRITPS5SIEA001"
  },
  "不义联盟2（传奇版）": {
   "_cid": "UP1018-CUSA10992_00-ASIA000000000000",
@@ -2675,7 +2773,9 @@
   "release": "2018年3月28日",
   "publisher": "Warner Bros. Interactive",
   "shots": [],
-  "_cid": "UP1018-CUSA10992_00-ASIA000000000000"
+  "_cid": "UP1018-CUSA10992_00-ASIA000000000000",
+  "locked": true,
+  "locked_cid": "UP1018-CUSA10992_00-ASIA000000000000"
  },
  "不思议的皇冠": {
   "_cid": "EP4064-CUSA25244_00-CROWNTRICK000000",
@@ -2734,7 +2834,9 @@
   "release": "2021年9月7日",
   "publisher": "Team17 Digital Ltd",
   "shots": [],
-  "_cid": "EP4064-CUSA25244_00-CROWNTRICK000000"
+  "_cid": "EP4064-CUSA25244_00-CROWNTRICK000000",
+  "locked": true,
+  "locked_cid": "EP4064-CUSA25244_00-CROWNTRICK000000"
  },
  "爆钻小英雄 钻头乐园": {
   "_cid": "HP0700-PPSA02341_00-PS5MRDRILLERASIA",
@@ -2791,7 +2893,9 @@
   "release": "2021年11月18日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-CUSA30802_00-MRDRILLERDEMO000"
+  "_cid": "HP0700-CUSA30802_00-MRDRILLERDEMO000",
+  "locked": true,
+  "locked_cid": "HP0700-CUSA30802_00-MRDRILLERDEMO000"
  },
  "遍体鳞伤": {
   "_cid": "UP6714-PPSA08596_00-4886581446111662",
@@ -2853,7 +2957,9 @@
   "release": "2023年2月28日",
   "publisher": "Prime Matter",
   "shots": [],
-  "_cid": "UP6714-PPSA08596_00-4886581446111662"
+  "_cid": "UP6714-PPSA08596_00-4886581446111662",
+  "locked": true,
+  "locked_cid": "UP6714-PPSA08596_00-4886581446111662"
  },
  "8道门：雅兰的来世冒险": {
   "_cid": "HP1804-PPSA07178_00-9201806710366558",
@@ -2918,7 +3024,9 @@
   "release": "2023年4月14日",
   "publisher": "NEOWIZ",
   "shots": [],
-  "_cid": "HP1804-PPSA07178_00-9201806710366558"
+  "_cid": "HP1804-PPSA07178_00-9201806710366558",
+  "locked": true,
+  "locked_cid": "HP1804-PPSA07178_00-9201806710366558"
  },
  "白日梦魇：沙堡1994": {
   "_cid": "HP8260-PPSA16730_00-DAYMARE1994ASIA5",
@@ -2981,7 +3089,9 @@
   "release": "2023年8月31日",
   "publisher": "4Divinity Pte Ltd",
   "shots": [],
-  "_cid": "HP8260-PPSA16730_00-DAYMARE1994ASIA5"
+  "_cid": "HP8260-PPSA16730_00-DAYMARE1994ASIA5",
+  "locked": true,
+  "locked_cid": "HP8260-PPSA16730_00-DAYMARE1994ASIA5"
  },
  "博德之门3（1）": {
   "_cid": "HP3470-PPSA14486_00-0137097724824368",
@@ -3042,7 +3152,9 @@
   "release": "2023年9月3日",
   "publisher": "Larian Studios Games Ltd",
   "shots": [],
-  "_cid": "HP3470-PPSA14486_00-0195549183779146"
+  "_cid": "HP3470-PPSA14486_00-0195549183779146",
+  "locked": true,
+  "locked_cid": "HP3470-PPSA14486_00-0195549183779146"
  },
  "博德之门3（2）": {
   "genres": [
@@ -3052,7 +3164,9 @@
   "release": "2023年9月3日",
   "publisher": "Larian Studios Games Ltd",
   "shots": [],
-  "_cid": "HP3470-PPSA14486_00-0195549183779146"
+  "_cid": "HP3470-PPSA14486_00-0195549183779146",
+  "locked": true,
+  "locked_cid": "HP3470-PPSA14486_00-0195549183779146"
  },
  "百英雄传：崛起": {
   "_cid": "UP4040-PPSA04717_00-EIYUDENRISINGPS5",
@@ -3110,7 +3224,9 @@
   "release": "2022年5月11日",
   "publisher": "505 GAMES S.R.L.",
   "shots": [],
-  "_cid": "UP4040-PPSA04717_00-EIYUDENRISINGPS5"
+  "_cid": "UP4040-PPSA04717_00-EIYUDENRISINGPS5",
+  "locked": true,
+  "locked_cid": "UP4040-PPSA04717_00-EIYUDENRISINGPS5"
  },
  "百英雄传（豪华版）": {
   "_cid": "UP4040-PPSA04721_00-HUNDREDHEROESDLX",
@@ -3170,7 +3286,9 @@
   "release": "2024年4月21日",
   "publisher": "Justdan International Co., Ltd.",
   "shots": [],
-  "_cid": "UP4040-PPSA04721_00-HUNDREDHEROESDLX"
+  "_cid": "UP4040-PPSA04721_00-HUNDREDHEROESDLX",
+  "locked": true,
+  "locked_cid": "UP4040-PPSA04721_00-HUNDREDHEROESDLX"
  },
  "波与月夜之青莲": {
   "_cid": "JP0507-PPSA22388_00-BOTEALLOTUS000JP",
@@ -3224,7 +3342,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP0507-PPSA22388_00-BOTEALLOTUS000DD"
+  "_cid": "JP0507-PPSA22388_00-BOTEALLOTUS000DD",
+  "locked": true,
+  "locked_cid": "JP0507-PPSA22388_00-BOTEALLOTUS000DD"
  },
  "边境猎人：艾尔莎的命运之轮（豪华版）": {
   "_cid": "HP8714-PPSA20226_00-0809157426745693",
@@ -3283,7 +3403,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10003514"
+  "_cid": "10003514",
+  "locked": true,
+  "locked_cid": "10003514"
  },
  "波斯王子：失落的王冠（完全版）": {
   "_cid": "JP0001-PPSA10529_00-MEMORYCOMPLETEDI",
@@ -3349,7 +3471,9 @@
   "release": "2024年9月17日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "JP0001-PPSA10529_00-MEMORYCOMPLETEDI"
+  "_cid": "JP0001-PPSA10529_00-MEMORYCOMPLETEDI",
+  "locked": true,
+  "locked_cid": "JP0001-PPSA10529_00-MEMORYCOMPLETEDI"
  },
  "碧海黑帆（豪华版）": {
   "_cid": "JP0001-PPSA02203_00-SBDELUXE000000Y3",
@@ -3411,7 +3535,9 @@
   "release": "2026年8月18日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "JP0001-PPSA02203_00-SBDELUXE000000Y3"
+  "_cid": "JP0001-PPSA02203_00-SBDELUXE000000Y3",
+  "locked": true,
+  "locked_cid": "JP0001-PPSA02203_00-SBDELUXE000000Y3"
  },
  "波提：字节国度大冒险": {
   "_cid": "UP6963-PPSA19445_00-0795905284482387",
@@ -3476,7 +3602,9 @@
   "release": "2025年1月10日",
   "publisher": "Untold Tales S.A.",
   "shots": [],
-  "_cid": "UP6963-PPSA19445_00-0795905284482387"
+  "_cid": "UP6963-PPSA19445_00-0795905284482387",
+  "locked": true,
+  "locked_cid": "UP6963-PPSA19445_00-0795905284482387"
  },
  "冰宫之境2 超越冰宫2": {
   "genres": [
@@ -3542,7 +3670,9 @@
   "release": "2025年3月11日",
   "publisher": "PQUBE",
   "shots": [],
-  "_cid": "UP4293-PPSA27155_00-BEYONDTHEIP2ASIA"
+  "_cid": "UP4293-PPSA27155_00-BEYONDTHEIP2ASIA",
+  "locked": true,
+  "locked_cid": "UP4293-PPSA27155_00-BEYONDTHEIP2ASIA"
  },
  "8号出口+8号站台（PS5同捆版）": {
   "genres": [
@@ -3592,7 +3722,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP0122-PPSA24944_00-0213432248533543"
+  "_cid": "JP0122-PPSA24944_00-0213432248533543",
+  "locked": true,
+  "locked_cid": "JP0122-PPSA24944_00-0213432248533543"
  },
  "八方旅人0/歧路旅人0": {
   "genres": [
@@ -3653,7 +3785,9 @@
   "release": "2025年12月4日",
   "publisher": "SQUARE ENIX",
   "shots": [],
-  "_cid": "JP0082-PPSA28492_00-OCTOPATH000PS5JP"
+  "_cid": "JP0082-PPSA28492_00-OCTOPATH000PS5JP",
+  "locked": true,
+  "locked_cid": "JP0082-PPSA28492_00-OCTOPATH000PS5JP"
  },
  "八方旅人1/歧路旅人1": {
   "genres": [
@@ -3714,7 +3848,9 @@
   "release": "2024年6月6日",
   "publisher": "SQUARE ENIX CO., LTD.",
   "shots": [],
-  "_cid": "HP0082-PPSA18288_00-0191310621323614"
+  "_cid": "HP0082-PPSA18288_00-0191310621323614",
+  "locked": true,
+  "locked_cid": "HP0082-PPSA18288_00-0191310621323614"
  },
  "八方旅人2/歧路旅人2": {
   "genres": [
@@ -3775,7 +3911,9 @@
   "release": "2023年2月24日",
   "publisher": "SQUARE ENIX CO., LTD.",
   "shots": [],
-  "_cid": "HP0082-PPSA09810_00-OCTOPATH2PS5A000"
+  "_cid": "HP0082-PPSA09810_00-OCTOPATH2PS5A000",
+  "locked": true,
+  "locked_cid": "HP0082-PPSA09810_00-OCTOPATH2PS5A000"
  },
  "不寐之境：女巫与魔咒": {
   "genres": [
@@ -3839,7 +3977,9 @@
   "release": "2026年3月5日",
   "publisher": "Pocketpair",
   "shots": [],
-  "_cid": "UP6360-CUSA51746_00-0756053259517685"
+  "_cid": "UP6360-CUSA51746_00-0756053259517685",
+  "locked": true,
+  "locked_cid": "UP6360-CUSA51746_00-0756053259517685"
  },
  "8020号指令（豪华版）": {
   "genres": [
@@ -3902,7 +4042,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP8253-PPSA16384_00-SMGDARKPICSDLXB1"
+  "_cid": "EP8253-PPSA16384_00-SMGDARKPICSDLXB1",
+  "locked": true,
+  "locked_cid": "EP8253-PPSA16384_00-SMGDARKPICSDLXB1"
  },
  "布鲁伊寻找金笔": {
   "genres": [
@@ -3962,7 +4104,9 @@
   "release": "2026年5月28日",
   "publisher": "PM Studios",
   "shots": [],
-  "_cid": "UP2011-CUSA58072_00-0131238031884816"
+  "_cid": "UP2011-CUSA58072_00-0131238031884816",
+  "locked": true,
+  "locked_cid": "UP2011-CUSA58072_00-0131238031884816"
  },
  "碧蓝幻想Relink：无尽黄昏": {
   "genres": [
@@ -4024,7 +4168,9 @@
   "release": "2026年6月18日",
   "publisher": "Cygames, Inc.",
   "shots": [],
-  "_cid": "HP8902-PPSA35116_00-GBRELINKERDEMO01"
+  "_cid": "HP8902-PPSA35116_00-GBRELINKERDEMO01",
+  "locked": true,
+  "locked_cid": "HP8902-PPSA35116_00-GBRELINKERDEMO01"
  },
  "不朽遗志": {
   "genres": [
@@ -4084,7 +4230,9 @@
   "release": "2026年10月14日",
   "publisher": "LYRICAL GAMES, LLC",
   "shots": [],
-  "_cid": "EB2076-PPSA32793_00-VALORMORTIS00000"
+  "_cid": "EB2076-PPSA32793_00-VALORMORTIS00000",
+  "locked": true,
+  "locked_cid": "EB2076-PPSA32793_00-VALORMORTIS00000"
  },
  "苍蓝革命之女武神": {
   "_cid": "HP0177-CUSA06197_00-ASIAPLACEHOLDER0",
@@ -4134,7 +4282,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10014665"
+  "_cid": "10014665",
+  "locked": true,
+  "locked_cid": "10014665"
  },
  "耻辱1/羞辱1（决定版）（港版英文）": {
   "_cid": "UP1003-CUSA02218_00-ASIA000000000000",
@@ -4188,7 +4338,9 @@
   "release": "2015年8月26日",
   "publisher": "Bethesda Softworks",
   "shots": [],
-  "_cid": "UP1003-CUSA02218_00-ASIA000000000000"
+  "_cid": "UP1003-CUSA02218_00-ASIA000000000000",
+  "locked": true,
+  "locked_cid": "UP1003-CUSA02218_00-ASIA000000000000"
  },
  "耻辱2/羞辱2": {
   "_cid": "HP1003-CUSA06794_00-DISHONOREDTWOPS4",
@@ -4241,7 +4393,9 @@
   "release": "2016年11月11日",
   "publisher": "Bethesda Softworks",
   "shots": [],
-  "_cid": "HP1003-CUSA06794_00-DISHONOREDTWOPS4"
+  "_cid": "HP1003-CUSA06794_00-DISHONOREDTWOPS4",
+  "locked": true,
+  "locked_cid": "HP1003-CUSA06794_00-DISHONOREDTWOPS4"
  },
  "耻辱：界外魔之死/羞辱：界外魔之死": {
   "_cid": "HP1003-CUSA08859_00-BLKHRT0000000000",
@@ -4295,7 +4449,9 @@
   "release": "2017年9月15日",
   "publisher": "Bethesda Softworks",
   "shots": [],
-  "_cid": "HP1003-CUSA08859_00-BLKHRT0000000000"
+  "_cid": "HP1003-CUSA08859_00-BLKHRT0000000000",
+  "locked": true,
+  "locked_cid": "HP1003-CUSA08859_00-BLKHRT0000000000"
  },
  "沉寂世界": {
   "_cid": "HP4226-CUSA11321_00-CEASIASILENC0001",
@@ -4343,7 +4499,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "HP1792-PPSA09404_00-SYPS5SILENCEDTHE"
+  "_cid": "HP1792-PPSA09404_00-SYPS5SILENCEDTHE",
+  "locked": true,
+  "locked_cid": "HP1792-PPSA09404_00-SYPS5SILENCEDTHE"
  },
  "沉默之人": {
   "_cid": "UP0082-CUSA11757_00-ASIA000000000000",
@@ -4393,7 +4551,9 @@
   "release": "2018年11月2日",
   "publisher": "SQUARE ENIX CO., LTD.",
   "shots": [],
-  "_cid": "UP0082-CUSA11757_00-ASIA000000000000"
+  "_cid": "UP0082-CUSA11757_00-ASIA000000000000",
+  "locked": true,
+  "locked_cid": "UP0082-CUSA11757_00-ASIA000000000000"
  },
  "城堡破坏者": {
   "_cid": "UP2015-CUSA14409_00-CASTLECRASHERSNA",
@@ -4454,7 +4614,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP0101-PPSA35399_00-CVBCDXDL00000000"
+  "_cid": "JP0101-PPSA35399_00-CVBCDXDL00000000",
+  "locked": true,
+  "locked_cid": "JP0101-PPSA35399_00-CVBCDXDL00000000"
  },
  "尘埃5（年度版）": {
   "_cid": "EP4001-PPSA01551_00-DIRT5YEARONEEDIT",
@@ -4514,7 +4676,9 @@
   "release": "2021年7月6日",
   "publisher": "ELECTRONIC ARTS",
   "shots": [],
-  "_cid": "EP4001-PPSA01551_00-YRONEUPGRADEBUND"
+  "_cid": "EP4001-PPSA01551_00-YRONEUPGRADEBUND",
+  "locked": true,
+  "locked_cid": "EP4001-PPSA01551_00-YRONEUPGRADEBUND"
  },
  "Re：从零开始的异世界生活 虚假的王选候补": {
   "_cid": "JP0365-CUSA18528_00-BSTUBCUSA1852800",
@@ -4576,7 +4740,9 @@
   "release": "2021年1月28日",
   "publisher": "SPIKE CHUNSOFT, INC.",
   "shots": [],
-  "_cid": "JP0365-CUSA18528_00-BSTUBCUSA1852800"
+  "_cid": "JP0365-CUSA18528_00-BSTUBCUSA1852800",
+  "locked": true,
+  "locked_cid": "JP0365-CUSA18528_00-BSTUBCUSA1852800"
  },
  "成长物语：永恒树之歌": {
   "_cid": "EP4040-CUSA25487_00-PROJECTGROW00000",
@@ -4639,7 +4805,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10015746"
+  "_cid": "10015746",
+  "locked": true,
+  "locked_cid": "10015746"
  },
  "拆箱": {
   "genres": [
@@ -4685,7 +4853,9 @@
   "release": "2022年5月10日",
   "publisher": "Good Games Group, Inc.",
   "shots": [],
-  "_cid": "UP3864-PPSA07117_00-UNPACKINGPS5000A"
+  "_cid": "UP3864-PPSA07117_00-UNPACKINGPS5000A",
+  "locked": true,
+  "locked_cid": "UP3864-PPSA07117_00-UNPACKINGPS5000A"
  },
  "春逝百年抄": {
   "genres": [
@@ -4727,7 +4897,9 @@
   "release": "2022年9月14日",
   "publisher": "SQUARE ENIX",
   "shots": [],
-  "_cid": "JP0082-CUSA31699_00-SHIJIMASTORYDEMO"
+  "_cid": "JP0082-CUSA31699_00-SHIJIMASTORYDEMO",
+  "locked": true,
+  "locked_cid": "JP0082-CUSA31699_00-SHIJIMASTORYDEMO"
  },
  "创尸纪（豪华版）": {
   "genres": [
@@ -4787,7 +4959,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10003514"
+  "_cid": "10003514",
+  "locked": true,
+  "locked_cid": "10003514"
  },
  "吃豆人 博物馆+": {
   "genres": [
@@ -4847,7 +5021,9 @@
   "release": "2022年5月26日",
   "publisher": "Bandai Namco Entertainment Inc.",
   "shots": [],
-  "_cid": "JP0700-CUSA28815_00-PACMUSEUMPLUS001"
+  "_cid": "JP0700-CUSA28815_00-PACMUSEUMPLUS001",
+  "locked": true,
+  "locked_cid": "JP0700-CUSA28815_00-PACMUSEUMPLUS001"
  },
  "采石场惊魂（豪华版）/猎逃惊魂（豪华版）": {
   "genres": [
@@ -4896,7 +5072,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10003514"
+  "_cid": "10003514",
+  "locked": true,
+  "locked_cid": "10003514"
  },
  "茶杯头（完整版）": {
   "genres": [
@@ -4946,7 +5124,9 @@
   "release": "2022年6月30日",
   "publisher": "StudioMDHR Entertainment",
   "shots": [],
-  "_cid": "UP8062-CUSA20499_00-7502140045575654"
+  "_cid": "UP8062-CUSA20499_00-7502140045575654",
+  "locked": true,
+  "locked_cid": "UP8062-CUSA20499_00-7502140045575654"
  },
  "残月之锁宫": {
   "genres": [
@@ -4998,7 +5178,9 @@
   "release": "2022年12月22日",
   "publisher": "CLOUDED LEOPARD ENTERTAINMENT INC.",
   "shots": [],
-  "_cid": "HP5846-CUSA34612_00-LABYPS4SIEJ00004"
+  "_cid": "HP5846-CUSA34612_00-LABYPS4SIEJ00004",
+  "locked": true,
+  "locked_cid": "HP5846-CUSA34612_00-LABYPS4SIEJ00004"
  },
  "城市：天际线（复刻版）": {
   "genres": [
@@ -5053,7 +5235,9 @@
   "release": "2026年3月10日",
   "publisher": "Paradox Interactive",
   "shots": [],
-  "_cid": "EP4139-CUSA06407_00-CSCCPRENEWEDHIST"
+  "_cid": "EP4139-CUSA06407_00-CSCCPRENEWEDHIST",
+  "locked": true,
+  "locked_cid": "EP4139-CUSA06407_00-CSCCPRENEWEDHIST"
  },
  "重生之旅：平凡故事（决定版）": {
   "genres": [
@@ -5109,7 +5293,9 @@
   "release": "2023年3月16日",
   "publisher": "Untold Tales S.A.",
   "shots": [],
-  "_cid": "EP2911-CUSA12772_00-0713248542971282"
+  "_cid": "EP2911-CUSA12772_00-0713248542971282",
+  "locked": true,
+  "locked_cid": "EP2911-CUSA12772_00-0713248542971282"
  },
  "层层恐惧": {
   "genres": [
@@ -5164,7 +5350,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP4176-PPSA08681_00-3639609726712198"
+  "_cid": "UP4176-PPSA08681_00-3639609726712198",
+  "locked": true,
+  "locked_cid": "UP4176-PPSA08681_00-3639609726712198"
  },
  "超疯狂节奏城堡": {
   "genres": [
@@ -5225,7 +5413,9 @@
   "release": "2023年11月14日",
   "publisher": "KONAMI",
   "shots": [],
-  "_cid": "HP0101-CUSA31587_00-2485111022347537"
+  "_cid": "HP0101-CUSA31587_00-2485111022347537",
+  "locked": true,
+  "locked_cid": "HP0101-CUSA31587_00-2485111022347537"
  },
  "摧毁Dysmantle（1）": {
   "genres": [
@@ -5277,7 +5467,9 @@
   "release": "2024年4月4日",
   "publisher": "10TONS LTD.",
   "shots": [],
-  "_cid": "UP4403-PPSA05133_00-DYSMANTLE0000000"
+  "_cid": "UP4403-PPSA05133_00-DYSMANTLE0000000",
+  "locked": true,
+  "locked_cid": "UP4403-PPSA05133_00-DYSMANTLE0000000"
  },
  "摧毁Dysmantle（2）": {
   "genres": [
@@ -5288,7 +5480,9 @@
   "release": "2024年4月4日",
   "publisher": "10TONS LTD.",
   "shots": [],
-  "_cid": "UP4403-PPSA05133_00-DYSMANTLE0000000"
+  "_cid": "UP4403-PPSA05133_00-DYSMANTLE0000000",
+  "locked": true,
+  "locked_cid": "UP4403-PPSA05133_00-DYSMANTLE0000000"
  },
  "摧毁Dysmantle（3）": {
   "genres": [
@@ -5299,7 +5493,9 @@
   "release": "2024年4月4日",
   "publisher": "10TONS LTD.",
   "shots": [],
-  "_cid": "UP4403-PPSA05133_00-DYSMANTLE0000000"
+  "_cid": "UP4403-PPSA05133_00-DYSMANTLE0000000",
+  "locked": true,
+  "locked_cid": "UP4403-PPSA05133_00-DYSMANTLE0000000"
  },
  "超侦探事件簿 雾雨迷宫PLUS": {
   "genres": [
@@ -5359,7 +5555,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP0365-PPSA18133_00-0513958178260443"
+  "_cid": "JP0365-PPSA18133_00-0513958178260443",
+  "locked": true,
+  "locked_cid": "JP0365-PPSA18133_00-0513958178260443"
  },
  "传奇重装步兵（PS5）": {
   "genres": [
@@ -5405,7 +5603,9 @@
   "release": "2025年6月11日",
   "publisher": "Ravenage Games LLC",
   "shots": [],
-  "_cid": "HP8289-CUSA50234_00-0840687363333694"
+  "_cid": "HP8289-CUSA50234_00-0840687363333694",
+  "locked": true,
+  "locked_cid": "HP8289-CUSA50234_00-0840687363333694"
  },
  "传说法师1": {
   "genres": [
@@ -5449,7 +5649,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP3864-PPSA24743_00-0078859640351172"
+  "_cid": "UP3864-PPSA24743_00-0078859640351172",
+  "locked": true,
+  "locked_cid": "UP3864-PPSA24743_00-0078859640351172"
  },
  "传说法师2": {
   "genres": [
@@ -5500,7 +5702,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP3864-PPSA24743_00-0078859640351172"
+  "_cid": "UP3864-PPSA24743_00-0078859640351172",
+  "locked": true,
+  "locked_cid": "UP3864-PPSA24743_00-0078859640351172"
  },
  "超级忍 反攻的斩击（豪华版）": {
   "genres": [
@@ -5556,7 +5760,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10003514"
+  "_cid": "10003514",
+  "locked": true,
+  "locked_cid": "10003514"
  },
  "超级机器人大战30（豪华版）": {
   "genres": [
@@ -5633,7 +5839,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "HP0700-PPSA25217_00-SPWYDLXEDITION00"
+  "_cid": "HP0700-PPSA25217_00-SPWYDLXEDITION00",
+  "locked": true,
+  "locked_cid": "HP0700-PPSA25217_00-SPWYDLXEDITION00"
  },
  "超级机器人大战Y（豪华版）": {
   "genres": [
@@ -5693,7 +5901,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "HP0700-PPSA25217_00-SPWYDLXEDITION00"
+  "_cid": "HP0700-PPSA25217_00-SPWYDLXEDITION00",
+  "locked": true,
+  "locked_cid": "HP0700-PPSA25217_00-SPWYDLXEDITION00"
  },
  "超英派遣中心": {
   "genres": [
@@ -5749,7 +5959,9 @@
   "release": "2025年10月22日",
   "publisher": "Adhoc Studio, Inc.",
   "shots": [],
-  "_cid": "HP7386-PPSA27158_00-0022337374597692"
+  "_cid": "HP7386-PPSA27158_00-0022337374597692",
+  "locked": true,
+  "locked_cid": "HP7386-PPSA27158_00-0022337374597692"
  },
  "冲就完事模拟器1（完整版）": {
   "genres": [
@@ -5800,7 +6012,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10018256"
+  "_cid": "10018256",
+  "locked": true,
+  "locked_cid": "10018256"
  },
  "冲就完事模拟器2": {
   "genres": [
@@ -5855,7 +6069,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP4143-PPSA23671_00-0423780972011050"
+  "_cid": "EP4143-PPSA23671_00-0423780972011050",
+  "locked": true,
+  "locked_cid": "EP4143-PPSA23671_00-0423780972011050"
  },
  "超级鸡马": {
   "genres": [
@@ -5901,7 +6117,9 @@
   "release": "2018年1月9日",
   "publisher": "Clever Endeavour Games",
   "shots": [],
-  "_cid": "UP1665-CUSA08580_00-ASIA000000000000"
+  "_cid": "UP1665-CUSA08580_00-ASIA000000000000",
+  "locked": true,
+  "locked_cid": "UP1665-CUSA08580_00-ASIA000000000000"
  },
  "超级浣熊羊": {
   "genres": [
@@ -5959,7 +6177,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "HP1782-PPSA29645_00-0161391443657215"
+  "_cid": "HP1782-PPSA29645_00-0161391443657215",
+  "locked": true,
+  "locked_cid": "HP1782-PPSA29645_00-0161391443657215"
  },
  "苍翼：混沌效应X（豪华版）": {
   "genres": [
@@ -6027,7 +6247,9 @@
   "release": "2026年2月12日",
   "publisher": "Chengdu Gedou Technology Co.,Ltd",
   "shots": [],
-  "_cid": "UB0473-PPSA29714_00-GREATACTGAMEBBEE"
+  "_cid": "UB0473-PPSA29714_00-GREATACTGAMEBBEE",
+  "locked": true,
+  "locked_cid": "UB0473-PPSA29714_00-GREATACTGAMEBBEE"
  },
  "城市猎人": {
   "genres": [
@@ -6081,7 +6303,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP5784-PPSA34366_00-CITYHUNTER000000"
+  "_cid": "JP5784-PPSA34366_00-CITYHUNTER000000",
+  "locked": true,
+  "locked_cid": "JP5784-PPSA34366_00-CITYHUNTER000000"
  },
  "尘埃异变1": {
   "genres": [
@@ -6136,7 +6360,9 @@
   "release": "2022年12月16日",
   "publisher": "Akupara Games, LLC",
   "shots": [],
-  "_cid": "UP3385-CUSA27308_00-3001450709154982"
+  "_cid": "UP3385-CUSA27308_00-3001450709154982",
+  "locked": true,
+  "locked_cid": "UP3385-CUSA27308_00-3001450709154982"
  },
  "尘埃异变2": {
   "genres": [
@@ -6185,7 +6411,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP6928-PPSA34673_00-0786583551129266"
+  "_cid": "JP6928-PPSA34673_00-0786583551129266",
+  "locked": true,
+  "locked_cid": "JP6928-PPSA34673_00-0786583551129266"
  },
  "超级肉食男孩3D": {
   "genres": [
@@ -6231,7 +6459,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP0822-PPSA31162_00-SUPERMEATBOY3D05"
+  "_cid": "EP0822-PPSA31162_00-SUPERMEATBOY3D05",
+  "locked": true,
+  "locked_cid": "EP0822-PPSA31162_00-SUPERMEATBOY3D05"
  },
  "刺客信条：大革命": {
   "genres": [
@@ -6269,7 +6499,9 @@
   "release": "2015年1月14日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "EP0001-CUSA00605_00-DLCUNDEADKINGS00"
+  "_cid": "EP0001-CUSA00605_00-DLCUNDEADKINGS00",
+  "locked": true,
+  "locked_cid": "EP0001-CUSA00605_00-DLCUNDEADKINGS00"
  },
  "刺客信条：枭雄（黄金版）": {
   "genres": [
@@ -6322,7 +6554,9 @@
   "release": "2015年10月23日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "EP0001-CUSA02376_00-ASIA000000000010"
+  "_cid": "EP0001-CUSA02376_00-ASIA000000000010",
+  "locked": true,
+  "locked_cid": "EP0001-CUSA02376_00-ASIA000000000010"
  },
  "刺客信条：艾吉奥合集（2+兄弟会+启示录）": {
   "genres": [
@@ -6361,7 +6595,9 @@
   "release": "2020年9月14日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "EP0001-CUSA04893_00-SYNDICATEEZIO000"
+  "_cid": "EP0001-CUSA04893_00-SYNDICATEEZIO000",
+  "locked": true,
+  "locked_cid": "EP0001-CUSA04893_00-SYNDICATEEZIO000"
  },
  "刺客信条：起源（黄金版）（1）": {
   "genres": [
@@ -6414,7 +6650,9 @@
   "release": "2020年9月14日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "EP0001-CUSA09303_00-ODYSSEYORIGINS00"
+  "_cid": "EP0001-CUSA09303_00-ODYSSEYORIGINS00",
+  "locked": true,
+  "locked_cid": "EP0001-CUSA09303_00-ODYSSEYORIGINS00"
  },
  "刺客信条：起源（黄金版）（2）": {
   "genres": [
@@ -6426,7 +6664,9 @@
   "release": "2020年9月14日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "EP0001-CUSA09303_00-ODYSSEYORIGINS00"
+  "_cid": "EP0001-CUSA09303_00-ODYSSEYORIGINS00",
+  "locked": true,
+  "locked_cid": "EP0001-CUSA09303_00-ODYSSEYORIGINS00"
  },
  "刺客信条：黑旗（豪华版）": {
   "genres": [
@@ -6464,7 +6704,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP0001-PPSA28183_00-DELUXE0000000000"
+  "_cid": "EP0001-PPSA28183_00-DELUXE0000000000",
+  "locked": true,
+  "locked_cid": "EP0001-PPSA28183_00-DELUXE0000000000"
  },
  "刺客信条：自由的呐喊": {
   "genres": [
@@ -6507,7 +6749,9 @@
   "release": "2014年3月18日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "JP0001-CUSA00441_00-ASIADLCSPSA00001"
+  "_cid": "JP0001-CUSA00441_00-ASIADLCSPSA00001",
+  "locked": true,
+  "locked_cid": "JP0001-CUSA00441_00-ASIADLCSPSA00001"
  },
  "刺客信条：叛变（重置版）": {
   "genres": [
@@ -6550,7 +6794,9 @@
   "release": "2018年3月22日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "EP0001-CUSA10123_00-ASIAACRGAMEPS400"
+  "_cid": "EP0001-CUSA10123_00-ASIAACRGAMEPS400",
+  "locked": true,
+  "locked_cid": "EP0001-CUSA10123_00-ASIAACRGAMEPS400"
  },
  "刺客信条：奥德赛（黄金版）": {
   "genres": [
@@ -6598,7 +6844,9 @@
   "release": "2020年9月14日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "EP0001-CUSA09303_00-ODYSSEYORIGINS00"
+  "_cid": "EP0001-CUSA09303_00-ODYSSEYORIGINS00",
+  "locked": true,
+  "locked_cid": "EP0001-CUSA09303_00-ODYSSEYORIGINS00"
  },
  "刺客信条3（重置版）": {
   "genres": [
@@ -6642,7 +6890,9 @@
   "release": "2019年3月29日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "EP0001-CUSA11560_00-ASIAAC3GAMEPS401"
+  "_cid": "EP0001-CUSA11560_00-ASIAAC3GAMEPS401",
+  "locked": true,
+  "locked_cid": "EP0001-CUSA11560_00-ASIAAC3GAMEPS401"
  },
  "刺客信条：英灵殿（完全版）": {
   "genres": [
@@ -6700,7 +6950,9 @@
   "release": "2022年3月10日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "JP0001-PPSA01504_00-EDITIONCOMPLETE0"
+  "_cid": "JP0001-PPSA01504_00-EDITIONCOMPLETE0",
+  "locked": true,
+  "locked_cid": "JP0001-PPSA01504_00-EDITIONCOMPLETE0"
  },
  "刺客信条：幻景": {
   "genres": [
@@ -6757,7 +7009,9 @@
   "release": "2023年10月5日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "JP0001-PPSA07232_00-ACMACVBUNDLE0000"
+  "_cid": "JP0001-PPSA07232_00-ACMACVBUNDLE0000",
+  "locked": true,
+  "locked_cid": "JP0001-PPSA07232_00-ACMACVBUNDLE0000"
  },
  "刺客信条：影（高级版）（1）": {
   "genres": [
@@ -6810,7 +7064,9 @@
   "release": "2025年9月16日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "JP0001-PPSA20398_00-EDITIONCOMPLETE0"
+  "_cid": "JP0001-PPSA20398_00-EDITIONCOMPLETE0",
+  "locked": true,
+  "locked_cid": "JP0001-PPSA20398_00-EDITIONCOMPLETE0"
  },
  "刺客信条：影（高级版）（2）": {
   "genres": [
@@ -6820,7 +7076,9 @@
   "release": "2025年9月16日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "JP0001-PPSA20398_00-EDITIONCOMPLETE0"
+  "_cid": "JP0001-PPSA20398_00-EDITIONCOMPLETE0",
+  "locked": true,
+  "locked_cid": "JP0001-PPSA20398_00-EDITIONCOMPLETE0"
  },
  "刺客信条：黑旗（重制版）（1）": {
   "genres": [
@@ -6876,7 +7134,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP0001-PPSA28183_00-ULCITEM000000002"
+  "_cid": "EP0001-PPSA28183_00-ULCITEM000000002",
+  "locked": true,
+  "locked_cid": "EP0001-PPSA28183_00-ULCITEM000000002"
  },
  "刺客信条：黑旗（重制版）（2）": {
   "genres": [],
@@ -6884,7 +7144,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP0001-PPSA28183_00-ULCITEM000000002"
+  "_cid": "EP0001-PPSA28183_00-ULCITEM000000002",
+  "locked": true,
+  "locked_cid": "EP0001-PPSA28183_00-ULCITEM000000002"
  },
  "沉没之城1（死灵之书版）": {
   "genres": [
@@ -6936,7 +7198,9 @@
   "release": "2024年4月17日",
   "publisher": "FROGWARES IRELAND LTD",
   "shots": [],
-  "_cid": "EP4008-CUSA13152_00-TSCSIEENECROBUN0"
+  "_cid": "EP4008-CUSA13152_00-TSCSIEENECROBUN0",
+  "locked": true,
+  "locked_cid": "EP4008-CUSA13152_00-TSCSIEENECROBUN0"
  },
  "沉没之城1（豪华版）": {
   "genres": [
@@ -6991,7 +7255,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP4860-PPSA02921_00-2527416918830591"
+  "_cid": "JP4860-PPSA02921_00-2527416918830591",
+  "locked": true,
+  "locked_cid": "JP4860-PPSA02921_00-2527416918830591"
  },
  "沉没之城2（尊爵版）": {
   "genres": [
@@ -7048,7 +7314,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP5205-PPSA18543_00-TSC2PREMIUM00PS5"
+  "_cid": "EP5205-PPSA18543_00-TSC2PREMIUM00PS5",
+  "locked": true,
+  "locked_cid": "EP5205-PPSA18543_00-TSC2PREMIUM00PS5"
  },
  "沉星之序": {
   "genres": [
@@ -7100,7 +7368,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP1980-PPSA33741_00-0017643181051680"
+  "_cid": "UP1980-PPSA33741_00-0017643181051680",
+  "locked": true,
+  "locked_cid": "UP1980-PPSA33741_00-0017643181051680"
  },
  "弹丸论破1+2 枪弹辩驳1+2": {
   "genres": [
@@ -7140,7 +7410,9 @@
   "release": "2017年5月18日",
   "publisher": "Spike Chunsoft Co., Ltd.",
   "shots": [],
-  "_cid": "JP0365-CUSA06660_00-ASIA000000000000"
+  "_cid": "JP0365-CUSA06660_00-ASIA000000000000",
+  "locked": true,
+  "locked_cid": "JP0365-CUSA06660_00-ASIA000000000000"
  },
  "弹丸论破V3/新枪弹辩驳V3 大家自相残杀的新学期": {
   "genres": [
@@ -7178,7 +7450,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10016381"
+  "_cid": "10016381",
+  "locked": true,
+  "locked_cid": "10016381"
  },
  "堕灭暴徒 废墟": {
   "genres": [
@@ -7225,7 +7499,9 @@
   "release": "2018年3月29日",
   "publisher": "Devolver Digital",
   "shots": [],
-  "_cid": "UP3643-CUSA08417_00-ASIARUINERPS4US0"
+  "_cid": "UP3643-CUSA08417_00-ASIARUINERPS4US0",
+  "locked": true,
+  "locked_cid": "UP3643-CUSA08417_00-ASIARUINERPS4US0"
  },
  "底特律：变人/化身为人": {
   "genres": [
@@ -7264,7 +7540,9 @@
   "release": "2018年5月25日",
   "publisher": "Sony Interactive Entertainment",
   "shots": [],
-  "_cid": "HP9000-CUSA08392_00-ASIAPLACEHOLDER0"
+  "_cid": "HP9000-CUSA08392_00-ASIAPLACEHOLDER0",
+  "locked": true,
+  "locked_cid": "HP9000-CUSA08392_00-ASIAPLACEHOLDER0"
  },
  "德军总部2：新巨像（完整版）": {
   "genres": [
@@ -7288,7 +7566,7 @@
    "英文"
   ],
   "platforms": "PS5/PS4",
-  "intro": "纳粹分子统治美国。你必须发动第二次美国革命。\n\n完整版包含：\n* 游戏本体\n* 〈神射手老喬大冒險〉DLC\n* 〈寂灭死神探员日志〉DLC\n* 〈威金斯上尉事迹录〉DLC\n\n扮演打不倒的喬瑟夫．斯坦林。曾是職業美式足球四分衛的他，在納粹脅迫下只能改踢足球！利用你的「增力盔甲」能力，突破納粹層層阻撓，從芝加哥的廢墟直衝浩瀚外太空！\n\n你就是阻止納粹的最後一道防線……精彩內容盡在《自由編年史》！\n\n若要使用本追加內容，需先購買個別發售的製品版遊戲光碟或先從PlayStation®Store購買遊戲的製品版及完成最新的網上更新。\n本追加內容、資料或軟件僅與SIE或其他正式代理商發行的亞洲版遊戲軟件（行貨）相容。不保證其他地區發售的遊戲軟件與此追加內容的相容性。\n\nCopyright：\n\nWolfenstein® II: The New Colossus™ is a fictional story set in an alternate universe in the 1960’s. Names, characters, organizations, locations and events are either imaginary or depicted in a fictionalized manner. The story and contents of this game are not intended to and should not be construed in any way to condone, glorify or endorse the beliefs, ideologies, events, actions, persons or behavior of the Nazi regime or to trivialize its war crimes, genocide and other crimes against humanity.\n\n購買或使用本內容需遵守SEN使用條款及用戶合約。\n\n继广受好评的《德军总部：新秩序》后，获奖无数的MachineGames工作室推出了万众瞩目的续作《德军总部II：新巨像》。\n《Wolfenstein®II》采用领先业界的id Tech®6引擎，完美呈现了一场精彩刺激的冒险。\n\n玩家将前往受纳粹控制的美国，召集所有遗留下的英勇反抗军领袖。在美国各个知名地标与纳粹浴血奋战，并装备强力武装、解放全新技能，在这场第一人称射击游戏中力搏纳粹军队，杀出一条血路。\n\n1961年，美国。整个世界仍受纳粹的魔爪所操控。你是人称“恐怖威廉”的B・J・布拉柯威奇，是反抗军的一员、纳粹帝国的心腹之患，也是人类重获自由的最后希望。只有你有足够的胆识、武力和决心返回美国境内，击杀所有视线内的纳粹分子，发动第二次美国革命。",
+  "intro": "纳粹分子统治美国。你必须发动第二次美国革命。\n\n完整版包含：\n* 游戏本体\n* 〈神射手老喬大冒險〉DLC\n* 〈寂灭死神探员日志〉DLC\n* 〈威金斯上尉事迹录〉DLC\n\n扮演打不倒的喬瑟夫．斯坦林。曾是職業美式足球四分衛的他，在納粹脅迫下只能改踢足球！利用你的「增力盔甲」能力，突破納粹層層阻撓，從芝加哥的廢墟直衝浩瀚外太空！\n\n你就是阻止納粹的最後一道防線……精彩內容盡在《自由編年史》！\n\n继广受好评的《德军总部：新秩序》后，获奖无数的MachineGames工作室推出了万众瞩目的续作《德军总部II：新巨像》。\n《Wolfenstein®II》采用领先业界的id Tech®6引擎，完美呈现了一场精彩刺激的冒险。\n\n玩家将前往受纳粹控制的美国，召集所有遗留下的英勇反抗军领袖。在美国各个知名地标与纳粹浴血奋战，并装备强力武装、解放全新技能，在这场第一人称射击游戏中力搏纳粹军队，杀出一条血路。\n\n1961年，美国。整个世界仍受纳粹的魔爪所操控。你是人称“恐怖威廉”的B・J・布拉柯威奇，是反抗军的一员、纳粹帝国的心腹之患，也是人类重获自由的最后希望。只有你有足够的胆识、武力和决心返回美国境内，击杀所有视线内的纳粹分子，发动第二次美国革命。",
   "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc0057234d9058.jpg&w=256&q=82&output=jpg",
   "intro_gap": {},
   "intro_boldlines": [
@@ -7307,7 +7585,9 @@
   "release": "2017年10月27日",
   "publisher": "Bethesda Softworks",
   "shots": [],
-  "_cid": "HP1003-CUSA09021_00-COLOSSUSFULLGAME"
+  "_cid": "HP1003-CUSA09021_00-COLOSSUSFULLGAME",
+  "locked": true,
+  "locked_cid": "HP1003-CUSA09021_00-COLOSSUSFULLGAME"
  },
  "德军总部：新血脉（豪华版）": {
   "genres": [
@@ -7350,7 +7630,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10003514"
+  "_cid": "10003514",
+  "locked": true,
+  "locked_cid": "10003514"
  },
  "东京喰种：re CALL to EXIST": {
   "genres": [
@@ -7389,7 +7671,9 @@
   "release": "2019年11月14日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-CUSA12655_00-MKD0000000000001"
+  "_cid": "HP0700-CUSA12655_00-MKD0000000000001",
+  "locked": true,
+  "locked_cid": "HP0700-CUSA12655_00-MKD0000000000001"
  },
  "岛屿生存者（豪华版）": {
   "genres": [
@@ -7447,7 +7731,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10003514"
+  "_cid": "10003514",
+  "locked": true,
+  "locked_cid": "10003514"
  },
  "渡神纪：芬尼斯崛起（黄金版）": {
   "genres": [
@@ -7496,7 +7782,9 @@
   "release": "2020年12月3日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "JP0001-PPSA01508_00-EDITIONGOLD00000"
+  "_cid": "JP0001-PPSA01508_00-EDITIONGOLD00000",
+  "locked": true,
+  "locked_cid": "JP0001-PPSA01508_00-EDITIONGOLD00000"
  },
  "地铁：离去 离乡（黄金版）": {
   "genres": [
@@ -7538,7 +7826,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10009337"
+  "_cid": "10009337",
+  "locked": true,
+  "locked_cid": "10009337"
  },
  "对马岛之魂（导演剪辑版）": {
   "genres": [
@@ -7588,7 +7878,9 @@
   "release": "2021年8月20日",
   "publisher": "Sony Interactive Entertainment",
   "shots": [],
-  "_cid": "HP9000-CUSA16972_00-GHOSTDIRECTORPS4"
+  "_cid": "HP9000-CUSA16972_00-GHOSTDIRECTORPS4",
+  "locked": true,
+  "locked_cid": "HP9000-CUSA16972_00-GHOSTDIRECTORPS4"
  },
  "岛民": {
   "genres": [
@@ -7639,7 +7931,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP8936-PPSA26224_00-ISLANDERSTWO0000"
+  "_cid": "EP8936-PPSA26224_00-ISLANDERSTWO0000",
+  "locked": true,
+  "locked_cid": "EP8936-PPSA26224_00-ISLANDERSTWO0000"
  },
  "喋血复仇（终极版）": {
   "genres": [
@@ -7694,7 +7988,9 @@
   "release": "2021年10月7日",
   "publisher": "Warner Bros. Interactive",
   "shots": [],
-  "_cid": "UP1018-PPSA01695_00-BACK4BLOODULTIMA"
+  "_cid": "UP1018-PPSA01695_00-BACK4BLOODULTIMA",
+  "locked": true,
+  "locked_cid": "UP1018-PPSA01695_00-BACK4BLOODULTIMA"
  },
  "地产大亨：狂乐派对": {
   "genres": [
@@ -7745,7 +8041,9 @@
   "release": "2021年12月9日",
   "publisher": "Ubisoft",
   "shots": [],
-  "_cid": "JP0001-CUSA27124_00-MONOPOLYGAME0000"
+  "_cid": "JP0001-CUSA27124_00-MONOPOLYGAME0000",
+  "locked": true,
+  "locked_cid": "JP0001-CUSA27124_00-MONOPOLYGAME0000"
  },
  "地平线1：零之曙光（重制版）": {
   "genres": [
@@ -7795,7 +8093,9 @@
   "release": "2024年10月31日",
   "publisher": "Sony Interactive Entertainment",
   "shots": [],
-  "_cid": "UP9000-PPSA13428_00-HORIZONREMASTERA"
+  "_cid": "UP9000-PPSA13428_00-HORIZONREMASTERA",
+  "locked": true,
+  "locked_cid": "UP9000-PPSA13428_00-HORIZONREMASTERA"
  },
  "地平线2：西之绝境/西部禁域（完整版）": {
   "genres": [
@@ -7852,7 +8152,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP9000-PPSA17903_00-HFWCE00000000000"
+  "_cid": "EP9000-PPSA17903_00-HFWCE00000000000",
+  "locked": true,
+  "locked_cid": "EP9000-PPSA17903_00-HFWCE00000000000"
  },
  "地狱之魂": {
   "genres": [
@@ -7905,7 +8207,9 @@
   "release": "2022年4月7日",
   "publisher": "THE ARCADE CREW",
   "shots": [],
-  "_cid": "HP5035-CUSA32042_00-INFERNAXTACSIEJA"
+  "_cid": "HP5035-CUSA32042_00-INFERNAXTACSIEJA",
+  "locked": true,
+  "locked_cid": "HP5035-CUSA32042_00-INFERNAXTACSIEJA"
  },
  "地下城 决斗（完整版）": {
   "genres": [
@@ -7963,7 +8267,9 @@
   "release": "2022年6月28日",
   "publisher": "NEXON",
   "shots": [],
-  "_cid": "HP3629-PPSA06170_00-7690783676743744"
+  "_cid": "HP3629-PPSA06170_00-7690783676743744",
+  "locked": true,
+  "locked_cid": "HP3629-PPSA06170_00-7690783676743744"
  },
  "哆啦A梦：牧场物语 自然王国与和乐家人（豪华版）": {
   "genres": [
@@ -8014,7 +8320,9 @@
   "release": "2022年11月2日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-PPSA02495_00-DRFM2DELUXE00000"
+  "_cid": "HP0700-PPSA02495_00-DRFM2DELUXE00000",
+  "locked": true,
+  "locked_cid": "HP0700-PPSA02495_00-DRFM2DELUXE00000"
  },
  "袋鼠闯天关（年度版）": {
   "genres": [
@@ -8063,7 +8371,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP4385-PPSA05594_00-0932085230526608"
+  "_cid": "EP4385-PPSA05594_00-0932085230526608",
+  "locked": true,
+  "locked_cid": "EP4385-PPSA05594_00-0932085230526608"
  },
  "盗贼遗产2": {
   "genres": [
@@ -8126,7 +8436,9 @@
   "release": "2023年6月20日",
   "publisher": "Cellar Door Games Inc.",
   "shots": [],
-  "_cid": "EP4488-PPSA15506_00-0843633431123623"
+  "_cid": "EP4488-PPSA15506_00-0843633431123623",
+  "locked": true,
+  "locked_cid": "EP4488-PPSA15506_00-0843633431123623"
  },
  "加速世界VS刀剑神域 千年的黄昏": {
   "genres": [
@@ -8166,7 +8478,9 @@
   "release": "2017年4月6日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-CUSA07516_00-ASIAPLACEHOLDER0"
+  "_cid": "HP0700-CUSA07516_00-ASIAPLACEHOLDER0",
+  "locked": true,
+  "locked_cid": "HP0700-CUSA07516_00-ASIAPLACEHOLDER0"
  },
  "刀剑神域：夺命凶弹（完全版）": {
   "genres": [
@@ -8203,7 +8517,9 @@
   "release": "2019年1月17日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-CUSA09152_00-SAOFBCOMPLETE000"
+  "_cid": "HP0700-CUSA09152_00-SAOFBCOMPLETE000",
+  "locked": true,
+  "locked_cid": "HP0700-CUSA09152_00-SAOFBCOMPLETE000"
  },
  "刀剑神域：导演典藏版": {
   "genres": [
@@ -8213,7 +8529,9 @@
   "release": "2015年11月19日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-CUSA03218_00-SAOLOSTSONG00000"
+  "_cid": "HP0700-CUSA03218_00-SAOLOSTSONG00000",
+  "locked": true,
+  "locked_cid": "HP0700-CUSA03218_00-SAOLOSTSONG00000"
  },
  "Sword Art OnlineGhost of Tsushima（Game Director's Edition）": {
   "genres": [
@@ -8223,7 +8541,9 @@
   "release": "2015年11月19日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-CUSA03218_00-SAOLOSTSONG00000"
+  "_cid": "HP0700-CUSA03218_00-SAOLOSTSONG00000",
+  "locked": true,
+  "locked_cid": "HP0700-CUSA03218_00-SAOLOSTSONG00000"
  },
  "刀剑神域：异绊集结（豪华版）": {
   "genres": [
@@ -8233,7 +8553,9 @@
   "release": "2023年10月5日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-PPSA06957_00-SAOLRDLXEDITION0"
+  "_cid": "HP0700-PPSA06957_00-SAOLRDLXEDITION0",
+  "locked": true,
+  "locked_cid": "HP0700-PPSA06957_00-SAOLRDLXEDITION0"
  },
  "Sword Art Online：Last Recollection（Deluxe Edition）": {
   "genres": [
@@ -8243,7 +8565,9 @@
   "release": "2023年10月5日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-PPSA06957_00-SAOLRDLXEDITION0"
+  "_cid": "HP0700-PPSA06957_00-SAOLRDLXEDITION0",
+  "locked": true,
+  "locked_cid": "HP0700-PPSA06957_00-SAOLRDLXEDITION0"
  },
  "堕落之主（豪华版）": {
   "genres": [],
@@ -8251,7 +8575,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10012069"
+  "_cid": "10012069",
+  "locked": true,
+  "locked_cid": "10012069"
  },
  "Lords of the Fallen（Deluxe Edition）": {
   "genres": [],
@@ -8259,7 +8585,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10012069"
+  "_cid": "10012069",
+  "locked": true,
+  "locked_cid": "10012069"
  },
  "大富翁11（1）": {
   "genres": [
@@ -8271,7 +8599,9 @@
   "release": "2024年4月19日",
   "publisher": "eastasiasoft",
   "shots": [],
-  "_cid": "UP2005-PPSA16959_00-RICHMANELEVEN000"
+  "_cid": "UP2005-PPSA16959_00-RICHMANELEVEN000",
+  "locked": true,
+  "locked_cid": "UP2005-PPSA16959_00-RICHMANELEVEN000"
  },
  "Richman 11": {
   "genres": [
@@ -8283,7 +8613,9 @@
   "release": "2024年4月19日",
   "publisher": "eastasiasoft",
   "shots": [],
-  "_cid": "UP2005-PPSA16959_00-RICHMANELEVEN000"
+  "_cid": "UP2005-PPSA16959_00-RICHMANELEVEN000",
+  "locked": true,
+  "locked_cid": "UP2005-PPSA16959_00-RICHMANELEVEN000"
  },
  "大富翁11（2）": {
   "genres": [
@@ -8295,7 +8627,9 @@
   "release": "2024年4月19日",
   "publisher": "eastasiasoft",
   "shots": [],
-  "_cid": "UP2005-PPSA16959_00-RICHMANELEVEN000"
+  "_cid": "UP2005-PPSA16959_00-RICHMANELEVEN000",
+  "locked": true,
+  "locked_cid": "UP2005-PPSA16959_00-RICHMANELEVEN000"
  },
  "迪托之剑（港版日/英文）": {
   "genres": [
@@ -8307,7 +8641,9 @@
   "release": "2024年4月29日",
   "publisher": "Devolver Digital",
   "shots": [],
-  "_cid": "UP3643-CUSA10443_00-THESWORDSOFDITTO"
+  "_cid": "UP3643-CUSA10443_00-THESWORDSOFDITTO",
+  "locked": true,
+  "locked_cid": "UP3643-CUSA10443_00-THESWORDSOFDITTO"
  },
  "The Swords of Ditto：Mormo's Curse": {
   "genres": [
@@ -8319,7 +8655,9 @@
   "release": "2024年4月29日",
   "publisher": "Devolver Digital",
   "shots": [],
-  "_cid": "UP3643-CUSA10443_00-THESWORDSOFDITTO"
+  "_cid": "UP3643-CUSA10443_00-THESWORDSOFDITTO",
+  "locked": true,
+  "locked_cid": "UP3643-CUSA10443_00-THESWORDSOFDITTO"
  },
  "电钻少女": {
   "genres": [
@@ -8330,7 +8668,9 @@
   "release": "2024年8月7日",
   "publisher": "Devolver Digital",
   "shots": [],
-  "_cid": "EP3643-PPSA23280_00-PEPPGRINPS5SIEE1"
+  "_cid": "EP3643-PPSA23280_00-PEPPGRINPS5SIEE1",
+  "locked": true,
+  "locked_cid": "EP3643-PPSA23280_00-PEPPGRINPS5SIEE1"
  },
  "Pepper Grinder": {
   "genres": [
@@ -8341,7 +8681,9 @@
   "release": "2024年8月7日",
   "publisher": "Devolver Digital",
   "shots": [],
-  "_cid": "EP3643-PPSA23280_00-PEPPGRINPS5SIEE1"
+  "_cid": "EP3643-PPSA23280_00-PEPPGRINPS5SIEE1",
+  "locked": true,
+  "locked_cid": "EP3643-PPSA23280_00-PEPPGRINPS5SIEE1"
  },
  "电锯甜心": {
   "genres": [
@@ -8351,7 +8693,9 @@
   "release": "2024年12月2日",
   "publisher": "Dragami Games, Ltd.",
   "shots": [],
-  "_cid": "JP7907-CUSA48704_00-LOLLIPCHAINREPOP"
+  "_cid": "JP7907-CUSA48704_00-LOLLIPCHAINREPOP",
+  "locked": true,
+  "locked_cid": "JP7907-CUSA48704_00-LOLLIPCHAINREPOP"
  },
  "Lollipop Chainsaw Repop": {
   "genres": [
@@ -8361,7 +8705,9 @@
   "release": "2024年12月2日",
   "publisher": "Dragami Games, Ltd.",
   "shots": [],
-  "_cid": "JP7907-CUSA48704_00-LOLLIPCHAINREPOP"
+  "_cid": "JP7907-CUSA48704_00-LOLLIPCHAINREPOP",
+  "locked": true,
+  "locked_cid": "JP7907-CUSA48704_00-LOLLIPCHAINREPOP"
  },
  "渎神1 神之亵渎1": {
   "genres": [],
@@ -8369,7 +8715,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP4875-PPSA17759_00-0498248698981905"
+  "_cid": "JP4875-PPSA17759_00-0498248698981905",
+  "locked": true,
+  "locked_cid": "JP4875-PPSA17759_00-0498248698981905"
  },
  "Blasphemous 1": {
   "genres": [],
@@ -8377,7 +8725,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP4875-PPSA17759_00-0498248698981905"
+  "_cid": "JP4875-PPSA17759_00-0498248698981905",
+  "locked": true,
+  "locked_cid": "JP4875-PPSA17759_00-0498248698981905"
  },
  "渎神2 神之亵渎2（完整版）": {
   "genres": [],
@@ -8385,7 +8735,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP4875-PPSA17759_00-BLASPHEMOUS2MCE0"
+  "_cid": "JP4875-PPSA17759_00-BLASPHEMOUS2MCE0",
+  "locked": true,
+  "locked_cid": "JP4875-PPSA17759_00-BLASPHEMOUS2MCE0"
  },
  "Blasphemous 2（Complete Edition）": {
   "genres": [],
@@ -8393,7 +8745,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP4875-PPSA17759_00-BLASPHEMOUS2MCE0"
+  "_cid": "JP4875-PPSA17759_00-BLASPHEMOUS2MCE0",
+  "locked": true,
+  "locked_cid": "JP4875-PPSA17759_00-BLASPHEMOUS2MCE0"
  },
  "大头盔英雄": {
   "genres": [],
@@ -8401,7 +8755,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UB0045-PPSA19943_00-BIGHELMETPS50000"
+  "_cid": "UB0045-PPSA19943_00-BIGHELMETPS50000",
+  "locked": true,
+  "locked_cid": "UB0045-PPSA19943_00-BIGHELMETPS50000"
  },
  "Big Helmet Heroes": {
   "genres": [],
@@ -8409,7 +8765,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UB0045-PPSA19943_00-BIGHELMETPS50000"
+  "_cid": "UB0045-PPSA19943_00-BIGHELMETPS50000",
+  "locked": true,
+  "locked_cid": "UB0045-PPSA19943_00-BIGHELMETPS50000"
  },
  "第一狂战士：卡赞（豪华版）（1）": {
   "genres": [],
@@ -8417,7 +8775,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP8236-PPSA20447_00-0119011093070089"
+  "_cid": "UP8236-PPSA20447_00-0119011093070089",
+  "locked": true,
+  "locked_cid": "UP8236-PPSA20447_00-0119011093070089"
  },
  "The First Berserker：Khazan（Deluxe Edition）": {
   "genres": [],
@@ -8425,7 +8785,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP8236-PPSA20447_00-0119011093070089"
+  "_cid": "UP8236-PPSA20447_00-0119011093070089",
+  "locked": true,
+  "locked_cid": "UP8236-PPSA20447_00-0119011093070089"
  },
  "第一狂战士：卡赞（豪华版）（2）": {
   "genres": [],
@@ -8433,7 +8795,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP8236-PPSA20447_00-0119011093070089"
+  "_cid": "UP8236-PPSA20447_00-0119011093070089",
+  "locked": true,
+  "locked_cid": "UP8236-PPSA20447_00-0119011093070089"
  },
  "地平线5 极限竞速（顶级版）": {
   "genres": [],
@@ -8441,7 +8805,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP6312-PPSA22327_00-0810100104879906"
+  "_cid": "UP6312-PPSA22327_00-0810100104879906",
+  "locked": true,
+  "locked_cid": "UP6312-PPSA22327_00-0810100104879906"
  },
  "Forza Horizon 5（Premium Edition）": {
   "genres": [],
@@ -8449,7 +8815,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP6312-PPSA22327_00-0810100104879906"
+  "_cid": "UP6312-PPSA22327_00-0810100104879906",
+  "locked": true,
+  "locked_cid": "UP6312-PPSA22327_00-0810100104879906"
  },
  "迪士尼午后合集": {
   "genres": [
@@ -8459,7 +8827,9 @@
   "release": "2017年4月18日",
   "publisher": "CAPCOM ASIA",
   "shots": [],
-  "_cid": "UP0102-CUSA06809_00-ASIAPLACEHOLDER0"
+  "_cid": "UP0102-CUSA06809_00-ASIAPLACEHOLDER0",
+  "locked": true,
+  "locked_cid": "UP0102-CUSA06809_00-ASIAPLACEHOLDER0"
  },
  "The Disney Afternoon Collection": {
   "genres": [
@@ -8469,7 +8839,9 @@
   "release": "2017年4月18日",
   "publisher": "CAPCOM ASIA",
   "shots": [],
-  "_cid": "UP0102-CUSA06809_00-ASIAPLACEHOLDER0"
+  "_cid": "UP0102-CUSA06809_00-ASIAPLACEHOLDER0",
+  "locked": true,
+  "locked_cid": "UP0102-CUSA06809_00-ASIAPLACEHOLDER0"
  },
  "迪士尼 传奇米老鼠 米奇（重制版）": {
   "genres": [
@@ -8479,7 +8851,9 @@
   "release": "2024年9月23日",
   "publisher": "THQ NORDIC GAMES GMBH",
   "shots": [],
-  "_cid": "EP4389-PPSA15657_00-EPICMICKEYREMAKE"
+  "_cid": "EP4389-PPSA15657_00-EPICMICKEYREMAKE",
+  "locked": true,
+  "locked_cid": "EP4389-PPSA15657_00-EPICMICKEYREMAKE"
  },
  "Disney Epic Mickey：Rebrushed": {
   "genres": [
@@ -8489,7 +8863,9 @@
   "release": "2024年9月23日",
   "publisher": "THQ NORDIC GAMES GMBH",
   "shots": [],
-  "_cid": "EP4389-PPSA15657_00-EPICMICKEYREMAKE"
+  "_cid": "EP4389-PPSA15657_00-EPICMICKEYREMAKE",
+  "locked": true,
+  "locked_cid": "EP4389-PPSA15657_00-EPICMICKEYREMAKE"
  },
  "迪士尼幻梦岛：与米奇和朋友们历险": {
   "genres": [],
@@ -8497,7 +8873,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP1082-PPSA17219_00-0870447033747384"
+  "_cid": "UP1082-PPSA17219_00-0870447033747384",
+  "locked": true,
+  "locked_cid": "UP1082-PPSA17219_00-0870447033747384"
  },
  "Disney Illusion Island": {
   "genres": [],
@@ -8505,7 +8883,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP1082-PPSA17219_00-0870447033747384"
+  "_cid": "UP1082-PPSA17219_00-0870447033747384",
+  "locked": true,
+  "locked_cid": "UP1082-PPSA17219_00-0870447033747384"
  },
  "地狱之刃2：塞娜的传说": {
   "genres": [],
@@ -8513,7 +8893,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "227151"
+  "_cid": "227151",
+  "locked": true,
+  "locked_cid": "227151"
  },
  "Senua's Saga: Hellblade II": {
   "genres": [],
@@ -8521,7 +8903,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "227151"
+  "_cid": "227151",
+  "locked": true,
+  "locked_cid": "227151"
  },
  "夺宝奇兵/印第安纳琼斯：古老之圈（高级版）": {
   "genres": [
@@ -8531,7 +8915,9 @@
   "release": "2025年4月15日",
   "publisher": "Bethesda Softworks",
   "shots": [],
-  "_cid": "UP1003-PPSA26786_00-PREMIUMEDITION00"
+  "_cid": "UP1003-PPSA26786_00-PREMIUMEDITION00",
+  "locked": true,
+  "locked_cid": "UP1003-PPSA26786_00-PREMIUMEDITION00"
  },
  "Indiana Jones and the Great Circle（Premium Edition）": {
   "genres": [
@@ -8541,7 +8927,9 @@
   "release": "2025年4月15日",
   "publisher": "Bethesda Softworks",
   "shots": [],
-  "_cid": "UP1003-PPSA26786_00-PREMIUMEDITION00"
+  "_cid": "UP1003-PPSA26786_00-PREMIUMEDITION00",
+  "locked": true,
+  "locked_cid": "UP1003-PPSA26786_00-PREMIUMEDITION00"
  },
  "地狱即我们": {
   "genres": [
@@ -8552,7 +8940,9 @@
   "release": "2025年9月4日",
   "publisher": "NACON SA",
   "shots": [],
-  "_cid": "EP6665-PPSA09259_00-HIU0000000000000"
+  "_cid": "EP6665-PPSA09259_00-HIU0000000000000",
+  "locked": true,
+  "locked_cid": "EP6665-PPSA09259_00-HIU0000000000000"
  },
  "Hell is Us": {
   "genres": [
@@ -8563,7 +8953,9 @@
   "release": "2025年9月4日",
   "publisher": "NACON SA",
   "shots": [],
-  "_cid": "EP6665-PPSA09259_00-HIU0000000000000"
+  "_cid": "EP6665-PPSA09259_00-HIU0000000000000",
+  "locked": true,
+  "locked_cid": "EP6665-PPSA09259_00-HIU0000000000000"
  },
  "达尔文悖论": {
   "genres": [],
@@ -8571,7 +8963,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP0101-PPSA29595_00-0921775211935640"
+  "_cid": "UP0101-PPSA29595_00-0921775211935640",
+  "locked": true,
+  "locked_cid": "UP0101-PPSA29595_00-0921775211935640"
  },
  "Darwin's Paradox": {
   "genres": [],
@@ -8579,7 +8973,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP0101-PPSA29595_00-0921775211935640"
+  "_cid": "UP0101-PPSA29595_00-0921775211935640",
+  "locked": true,
+  "locked_cid": "UP0101-PPSA29595_00-0921775211935640"
  },
  "帝国时代2+神话时代（高级版）": {
   "genres": [],
@@ -8587,7 +8983,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP6312-PPSA18654_00-0652781314894066"
+  "_cid": "UP6312-PPSA18654_00-0652781314894066",
+  "locked": true,
+  "locked_cid": "UP6312-PPSA18654_00-0652781314894066"
  },
  "Age of Empires 2+Age of Mythology（Premium Editions Bundle）": {
   "genres": [],
@@ -8595,7 +8993,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP6312-PPSA18654_00-0652781314894066"
+  "_cid": "UP6312-PPSA18654_00-0652781314894066",
+  "locked": true,
+  "locked_cid": "UP6312-PPSA18654_00-0652781314894066"
  },
  "帝国时代4（完整版）": {
   "genres": [],
@@ -8603,7 +9003,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP6312-PPSA25366_00-0950569117932928"
+  "_cid": "UP6312-PPSA25366_00-0950569117932928",
+  "locked": true,
+  "locked_cid": "UP6312-PPSA25366_00-0950569117932928"
  },
  "Age of Empires 4（Complete Edition）": {
   "genres": [],
@@ -8611,7 +9013,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP6312-PPSA25366_00-0950569117932928"
+  "_cid": "UP6312-PPSA25366_00-0950569117932928",
+  "locked": true,
+  "locked_cid": "UP6312-PPSA25366_00-0950569117932928"
  },
  "地狱黑杰克": {
   "genres": [],
@@ -8619,7 +9023,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP6337-PPSA34148_00-0773297922006667"
+  "_cid": "EP6337-PPSA34148_00-0773297922006667",
+  "locked": true,
+  "locked_cid": "EP6337-PPSA34148_00-0773297922006667"
  },
  "Black Jacket": {
   "genres": [],
@@ -8627,7 +9033,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP6337-PPSA34148_00-0773297922006667"
+  "_cid": "EP6337-PPSA34148_00-0773297922006667",
+  "locked": true,
+  "locked_cid": "EP6337-PPSA34148_00-0773297922006667"
  },
  "地狱丧钟": {
   "genres": [],
@@ -8635,7 +9043,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UB0788-PPSA33042_00-0315813052436806"
+  "_cid": "UB0788-PPSA33042_00-0315813052436806",
+  "locked": true,
+  "locked_cid": "UB0788-PPSA33042_00-0315813052436806"
  },
  "Hell Clock": {
   "genres": [],
@@ -8643,7 +9053,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UB0788-PPSA33042_00-0315813052436806"
+  "_cid": "UB0788-PPSA33042_00-0315813052436806",
+  "locked": true,
+  "locked_cid": "UB0788-PPSA33042_00-0315813052436806"
  },
  "多重人生（豪华版）": {
   "genres": [],
@@ -8651,7 +9063,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10003514"
+  "_cid": "10003514",
+  "locked": true,
+  "locked_cid": "10003514"
  },
  "The Alters（Deluxe Edition）": {
   "genres": [],
@@ -8659,7 +9073,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10003514"
+  "_cid": "10003514",
+  "locked": true,
+  "locked_cid": "10003514"
  },
  "电车炫客": {
   "genres": [],
@@ -8667,7 +9083,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP2660-PPSA29952_00-SIEESIEADSHA0000"
+  "_cid": "UP2660-PPSA29952_00-SIEESIEADSHA0000",
+  "locked": true,
+  "locked_cid": "UP2660-PPSA29952_00-SIEESIEADSHA0000"
  },
  "Denshattack！": {
   "genres": [],
@@ -8675,7 +9093,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "UP2660-PPSA29952_00-SIEESIEADSHA0000"
+  "_cid": "UP2660-PPSA29952_00-SIEESIEADSHA0000",
+  "locked": true,
+  "locked_cid": "UP2660-PPSA29952_00-SIEESIEADSHA0000"
  },
  "代号三国：龙起": {
   "genres": [],
@@ -8683,7 +9103,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "HB0700-PPSA37472_00-0750524791868371"
+  "_cid": "HB0700-PPSA37472_00-0750524791868371",
+  "locked": true,
+  "locked_cid": "HB0700-PPSA37472_00-0750524791868371"
  },
  "Rewritten：The Three Kingdoms": {
   "genres": [],
@@ -8691,7 +9113,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "HB0700-PPSA37472_00-0750524791868371"
+  "_cid": "HB0700-PPSA37472_00-0750524791868371",
+  "locked": true,
+  "locked_cid": "HB0700-PPSA37472_00-0750524791868371"
  },
  "队长小翼1 新秀崛起（终极版）": {
   "genres": [
@@ -8701,7 +9125,9 @@
   "release": "2023年9月15日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-CUSA14834_00-TSUBASAULTIMATE0"
+  "_cid": "HP0700-CUSA14834_00-TSUBASAULTIMATE0",
+  "locked": true,
+  "locked_cid": "HP0700-CUSA14834_00-TSUBASAULTIMATE0"
  },
  "Captain Tsubasa 1 Rise of New Champions（Ultimate Edition）": {
   "genres": [
@@ -8711,7 +9137,9 @@
   "release": "2023年9月15日",
   "publisher": "Bandai Namco Entertainment",
   "shots": [],
-  "_cid": "HP0700-CUSA14834_00-TSUBASAULTIMATE0"
+  "_cid": "HP0700-CUSA14834_00-TSUBASAULTIMATE0",
+  "locked": true,
+  "locked_cid": "HP0700-CUSA14834_00-TSUBASAULTIMATE0"
  },
  "队长小翼2 世界群星": {
   "genres": [],
@@ -8719,7 +9147,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP0700-PPSA22728_00-MAINGAME00000000"
+  "_cid": "JP0700-PPSA22728_00-MAINGAME00000000",
+  "locked": true,
+  "locked_cid": "JP0700-PPSA22728_00-MAINGAME00000000"
  },
  "Captain Tsubasa 2 World Fighters": {
   "genres": [],
@@ -8727,7 +9157,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "JP0700-PPSA22728_00-MAINGAME00000000"
+  "_cid": "JP0700-PPSA22728_00-MAINGAME00000000",
+  "locked": true,
+  "locked_cid": "JP0700-PPSA22728_00-MAINGAME00000000"
  },
  "动物园之星2": {
   "genres": [],
@@ -8735,7 +9167,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP2377-PPSA29934_00-PLANETZOO2000000"
+  "_cid": "EP2377-PPSA29934_00-PLANETZOO2000000",
+  "locked": true,
+  "locked_cid": "EP2377-PPSA29934_00-PLANETZOO2000000"
  },
  "Planet Zoo 2": {
   "genres": [],
@@ -8743,7 +9177,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "EP2377-PPSA29934_00-PLANETZOO2000000"
+  "_cid": "EP2377-PPSA29934_00-PLANETZOO2000000",
+  "locked": true,
+  "locked_cid": "EP2377-PPSA29934_00-PLANETZOO2000000"
  },
  "动物迷城": {
   "genres": [
@@ -8753,7 +9189,9 @@
   "release": "2026年10月22日",
   "publisher": "CLOUDED LEOPARD ENTERTAINMENT INC.",
   "shots": [],
-  "_cid": "JP5784-PPSA37850_00-BACKTOTHEDAWN000"
+  "_cid": "JP5784-PPSA37850_00-BACKTOTHEDAWN000",
+  "locked": true,
+  "locked_cid": "JP5784-PPSA37850_00-BACKTOTHEDAWN000"
  },
  "Back to The Dawn": {
   "genres": [
@@ -8763,7 +9201,9 @@
   "release": "2026年10月22日",
   "publisher": "CLOUDED LEOPARD ENTERTAINMENT INC.",
   "shots": [],
-  "_cid": "JP5784-PPSA37850_00-BACKTOTHEDAWN000"
+  "_cid": "JP5784-PPSA37850_00-BACKTOTHEDAWN000",
+  "locked": true,
+  "locked_cid": "JP5784-PPSA37850_00-BACKTOTHEDAWN000"
  },
  "恶名昭彰：破晓": {
   "genres": [
@@ -8773,7 +9213,9 @@
   "release": "2014年8月26日",
   "publisher": "Sony Interactive Entertainment",
   "shots": [],
-  "_cid": "HP9000-CUSA01064_00-FIRSTLIGHTSHIP00"
+  "_cid": "HP9000-CUSA01064_00-FIRSTLIGHTSHIP00",
+  "locked": true,
+  "locked_cid": "HP9000-CUSA01064_00-FIRSTLIGHTSHIP00"
  },
  "inFamous First Light": {
   "genres": [
@@ -8783,7 +9225,9 @@
   "release": "2014年8月26日",
   "publisher": "Sony Interactive Entertainment",
   "shots": [],
-  "_cid": "HP9000-CUSA01064_00-FIRSTLIGHTSHIP00"
+  "_cid": "HP9000-CUSA01064_00-FIRSTLIGHTSHIP00",
+  "locked": true,
+  "locked_cid": "HP9000-CUSA01064_00-FIRSTLIGHTSHIP00"
  },
  "恶名昭彰：次子": {
   "genres": [
@@ -8793,7 +9237,9 @@
   "release": "2014年8月26日",
   "publisher": "Sony Interactive Entertainment",
   "shots": [],
-  "_cid": "HP9000-CUSA01064_00-FIRSTLIGHTSHIP00"
+  "_cid": "HP9000-CUSA01064_00-FIRSTLIGHTSHIP00",
+  "locked": true,
+  "locked_cid": "HP9000-CUSA01064_00-FIRSTLIGHTSHIP00"
  },
  "inFamous First Son": {
   "genres": [
@@ -8803,7 +9249,9 @@
   "release": "2014年8月26日",
   "publisher": "Sony Interactive Entertainment",
   "shots": [],
-  "_cid": "HP9000-CUSA01064_00-FIRSTLIGHTSHIP00"
+  "_cid": "HP9000-CUSA01064_00-FIRSTLIGHTSHIP00",
+  "locked": true,
+  "locked_cid": "HP9000-CUSA01064_00-FIRSTLIGHTSHIP00"
  },
  "恶灵附身1（完整版）": {
   "genres": [],
@@ -8811,7 +9259,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10019441"
+  "_cid": "10019441",
+  "locked": true,
+  "locked_cid": "10019441"
  },
  "The Evil Within 1（Complete Edition）": {
   "genres": [],
@@ -8819,7 +9269,9 @@
   "release": "",
   "publisher": "",
   "shots": [],
-  "_cid": "10019441"
+  "_cid": "10019441",
+  "locked": true,
+  "locked_cid": "10019441"
  },
  "恶灵附身2": {
   "genres": [
@@ -8831,7 +9283,9 @@
   "release": "2017年10月13日",
   "publisher": "Bethesda Softworks",
   "shots": [],
-  "_cid": "HP1003-CUSA09363_00-ASIAPLACEHOLDER0"
+  "_cid": "HP1003-CUSA09363_00-ASIAPLACEHOLDER0",
+  "locked": true,
+  "locked_cid": "HP1003-CUSA09363_00-ASIAPLACEHOLDER0"
  },
  "The Evil Within 2": {
   "genres": [
@@ -8843,7 +9297,9 @@
   "release": "2017年10月13日",
   "publisher": "Bethesda Softworks",
   "shots": [],
-  "_cid": "HP1003-CUSA09363_00-ASIAPLACEHOLDER0"
+  "_cid": "HP1003-CUSA09363_00-ASIAPLACEHOLDER0",
+  "locked": true,
+  "locked_cid": "HP1003-CUSA09363_00-ASIAPLACEHOLDER0"
  },
  "恶魔之魂（重制版）": {
   "genres": [
@@ -8872,7 +9328,9 @@
   ],
   "intro": "PlayStation Studios 与 Bluepoint Games 联手推出 PlayStation 经典游戏 Demon's Souls 的重制版。经过全面的重新设计和精妙的改动，新世代玩家们可以重新体验那片被浓雾笼罩的黑暗幻想之地的重重恐惧。曾经历试炼与磨难的玩家，亦可在惊人的画面质量与完美的视觉效果下，再次向黑暗发起挑战。\n\n源于对力量的渴求，柏雷塔尼亚的阿兰特十二世国王施展古老的灵魂之术，唤醒了创世之初即已存在的恶魔——古兽。\n随着古兽的降临，一片无色浓雾席卷了这片土地。恶魔们随之而来，以人类的灵魂为食。被夺去灵魂之人，也失去了理智，仅剩下对理智尚存者的攻击欲。\n\n如今，柏雷塔尼亚与外界的联系已经断绝。那些胆敢踏入浓雾，企图拯救柏雷塔尼亚的骑士们，没有一个平安归来。作为敢于踏入浓雾的孤胆勇士，你必须面对最艰难的挑战，来赢得“弑魔者”的称号，并让古兽再次沉睡。",
   "en": "Demon's Souls",
-  "platforms": "PS5"
+  "platforms": "PS5",
+  "locked": true,
+  "locked_cid": "HP9000-PPSA01340_00-DEMONSSOULSDX000"
  },
  "Demon's Souls": {
   "genres": [
@@ -8882,7 +9340,9 @@
   "release": "2020年11月12日",
   "publisher": "Sony Interactive Entertainment",
   "shots": [],
-  "_cid": "HP9000-PPSA01340_00-DEMONSSOULSDX000"
+  "_cid": "HP9000-PPSA01340_00-DEMONSSOULSDX000",
+  "locked": true,
+  "locked_cid": "HP9000-PPSA01340_00-DEMONSSOULSDX000"
  },
  "饿狼传说 群狼之城（特别版）": {
   "genres": [
@@ -8892,7 +9352,9 @@
   "release": "2025年4月24日",
   "publisher": "SNK CORPORATION",
   "shots": [],
-  "_cid": "JP0576-PPSA19359_00-PS5JPGAROU07COTW"
+  "_cid": "JP0576-PPSA19359_00-PS5JPGAROU07COTW",
+  "locked": true,
+  "locked_cid": "JP0576-PPSA19359_00-PS5JPGAROU07COTW"
  },
  "Fatal Fury：City of the Wolves（Special Edition）": {
   "genres": [
@@ -8902,7 +9364,9 @@
   "release": "2025年4月24日",
   "publisher": "SNK CORPORATION",
   "shots": [],
-  "_cid": "JP0576-PPSA19359_00-PS5JPGAROU07COTW"
+  "_cid": "JP0576-PPSA19359_00-PS5JPGAROU07COTW",
+  "locked": true,
+  "locked_cid": "JP0576-PPSA19359_00-PS5JPGAROU07COTW"
  },
  "鳄鱼侦探：布罗格": {
   "genres": [
@@ -8913,7 +9377,9 @@
   "release": "2023年3月1日",
   "publisher": "FABRICE BRETON",
   "shots": [],
-  "_cid": "HP2005-PPSA13517_00-BROKPS5000000000"
+  "_cid": "HP2005-PPSA13517_00-BROKPS5000000000",
+  "locked": true,
+  "locked_cid": "HP2005-PPSA13517_00-BROKPS5000000000"
  },
  "Brok the InvestiGator": {
   "genres": [
@@ -8924,7 +9390,9 @@
   "release": "2023年3月1日",
   "publisher": "FABRICE BRETON",
   "shots": [],
-  "_cid": "HP2005-PPSA13517_00-BROKPS5000000000"
+  "_cid": "HP2005-PPSA13517_00-BROKPS5000000000",
+  "locked": true,
+  "locked_cid": "HP2005-PPSA13517_00-BROKPS5000000000"
  },
  "鳄鱼侦探：布罗格 乱斗酒吧": {
   "genres": [
@@ -8935,7 +9403,9 @@
   "release": "2025年12月2日",
   "publisher": "FABRICE BRETON",
   "shots": [],
-  "_cid": "EP1762-PPSA32853_00-BROKTBRAWLBARPS5"
+  "_cid": "EP1762-PPSA32853_00-BROKTBRAWLBARPS5",
+  "locked": true,
+  "locked_cid": "EP1762-PPSA32853_00-BROKTBRAWLBARPS5"
  },
  "Brok：The Brawl Bar": {
   "genres": [
@@ -8946,7 +9416,9 @@
   "release": "2025年12月2日",
   "publisher": "FABRICE BRETON",
   "shots": [],
-  "_cid": "EP1762-PPSA32853_00-BROKTBRAWLBARPS5"
+  "_cid": "EP1762-PPSA32853_00-BROKTBRAWLBARPS5",
+  "locked": true,
+  "locked_cid": "EP1762-PPSA32853_00-BROKTBRAWLBARPS5"
  },
  "漫威金刚狼": {
   "genres": [
@@ -8978,7 +9450,8 @@
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/19edb5f9d28d2b0038a71313347a8f98d7f341723e125461.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/3778048484ad27095e8aa04be71254582d86b153ceadc314.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202609/1000/b3010de3b9a5b23818bc3b30289afb3481ce4b769fb2a855.jpg"
-  ]
+  ],
+  "locked": true
  },
  "蔚蓝反射 少女们的奇迹": {
   "genres": [
@@ -8993,7 +9466,8 @@
   ],
   "intro": "我们的泪水，让世界染上了一点蓝——\n\n关于 BLUE REFLECTION\n以少女们细腻情感与深厚情谊为主线的《BLUE REFLECTION》系列，由岸田梅尔担纲角色设计与监修，并衍生至多种媒体平台。\n如今，汇聚所有少女情感的系列四部作品尽数收录于此！\n\n本作搭载了多种便利功能，相较原版大幅优化游玩体验。即使是新玩家也能轻松理解游戏世界观，老玩家亦能进一步加深对“BLUE REFLECTION”世界的理解。\n\nBLUE REFLECTION 幻舞少女之剑\n系列的第一部作品，讲述一名受伤少女在与他人相遇中收获情谊，以魔法少女“反像者”的力量对抗世界威胁的单机游戏。\n\n本作中，水波光影等世界观的视觉表现全面升级，贴图纹理高清重制。同时新增自动存档等原版没有的多项实用功能。\n\nBLUE REFLECTION: 澪\n讲述各怀心事的少女们，在摩擦与碰撞中依然选择相信彼此，最终寻得光明的动画故事。\n\n本作中动画剧情经过重新编排，主要角色以3D模型呈现！\n两名少女穿梭于名为“可梦”的世界，在接触少女们情感的同时，一步步走向企图改变世界的少女。\n\n新增可深入了解《澪》的短篇故事，以及描绘系列作品之间关联的序章与终章。\n\nBLUE REFLECTION: 灿\n讲述在逐步走向终结的世界里，少女们依然相信希望、编织未来的手机/PC游戏。\n\n《灿》的故事以全新形态在家用机上重现！\n玩家可在校园中移动并与少女们交流互动。战斗部分则沿用《帝》的系统，还原《灿》中令人印象深刻的战斗场面！\n本作还全新创作了24话的角色剧情，并收录描绘系列作品之间关联的序章与终章。\n\nBLUE REFLECTION: 帝\n讲述失去记忆的少女们在直面内心的过程中寻回记忆，逐步逼近世界真相的单机游戏。\n\n本作中来自《灿》《澪》的八位少女加入战斗阵容！\n不仅如此，新增角色以及夕月、来梦还可以在拍照模式中使用！\n本作还搭载了剧情快进等多项便利功能，带来更加流畅的游戏体验。\n\nREFERENCE\n本作搭载能让玩家更深入了解“BLUE REFLECTION”世界的数据库“REFERENCE”！\n世界图谱按时间顺序清晰呈现，还可以查阅系列全作的人物关系图。\n玩家能更深入地理解角色的背景故事和系列整体的世界观，进一步感受“BLUE REFLECTION”的魅力！\n此外新增“GALLERY”功能，可以欣赏岸田梅尔的插画。\n\n※图片为开发中版本，与实际游戏内容可能存在差异。",
   "en": "Blue Reflection Quartet",
-  "platforms": "PS5"
+  "platforms": "PS5",
+  "locked": true
  },
  "诡野西部（决定版）": {
   "genres": [
@@ -9024,7 +9498,8 @@
    "https://vulcan.dl.playstation.net/ap/rnd/202209/3023/28gm6JBkMt7cKrrIsxr5f8xD.jpg"
   ],
   "en": "Weird West（Definitive Edition）",
-  "platforms": "PS5/PS4"
+  "platforms": "PS5/PS4",
+  "locked": true
  },
  "天命奇御2": {
   "release": "2024年7月4日",
@@ -9053,7 +9528,8 @@
    "https://vulcan.dl.playstation.net/ap/rnd/202404/2203/cb21d76dc9819f84bfc8ecb8a915fd4f46dcb61106cd4eed.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202404/2203/cdf6e63594d4479d5f37286ad6ebde6919f47e0d81d1ae75.jpg"
   ],
-  "players": "1"
+  "players": "1",
+  "locked": true
  },
  "长日将尽": {
   "genres": [
@@ -9086,7 +9562,8 @@
    "https://vulcan.dl.playstation.net/ap/rnd/202607/0710/73c362c15bff8b5416dc7eb7a927313a3175d5515ae5a7e6.jpg",
    "https://vulcan.dl.playstation.net/ap/rnd/202607/0710/28508eb3336b33d4c3e28e4f0450ab9fd955db8d7c1e9518.jpg"
   ],
-  "intro_gap": {}
+  "intro_gap": {},
+  "locked": true
  },
  "洛克人 遗产收藏版2": {
   "genres": [
@@ -9107,7 +9584,8 @@
    "https://apollo2.dl.playstation.net/cdn/UP0102/CUSA08268_00/FREE_CONTENTidcIjrAjW0TuboMVaE1Q/3.jpg"
   ],
   "en": "Mega Man Legacy Collection 2",
-  "platforms": "PS5/PS4"
+  "platforms": "PS5/PS4",
+  "locked": true
  },
  "虐杀原形1": {
   "genres": [
@@ -9137,6 +9615,7 @@
    "https://apollo2.dl.playstation.net/cdn/UP0002/CUSA01654_00/FREE_CONTENTiw91qQuyg2dO41hk0KfQ/PREVIEW_SCREENSHOT10_88723.jpg"
   ],
   "en": "Prototype 1",
-  "platforms": "PS5/PS4"
+  "platforms": "PS5/PS4",
+  "locked": true
  }
 }
