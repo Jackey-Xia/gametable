@@ -966,11 +966,23 @@ footer b{color:#4b5563}
 </style>
 
 <style id="gt-badge-css">
-/* 改168-final: 平台角标（官方 PNG 内联 data URI，零额外请求） */
+/* 改169: 平台角标（官方 PNG 内联 data URI，零额外请求）。
+   手机端改144/改146 有 .gcard .gcover img{width:100%;height:100%;min-height:99px}，
+   优先级高于 .gcover .gt-badge，曾把角标拉伸成整张封面；此处用更高优先级 + !important 强制。 */
 .gcover,.gt-dcov{position:relative}
-.gt-badge{position:absolute;left:5px;bottom:5px;z-index:3;display:block;width:auto;height:15px;max-width:none;object-fit:contain;border-radius:3px;box-shadow:0 1px 3px rgba(0,0,0,.4);pointer-events:none;background:transparent}
-.gcover .gt-badge,.gt-dcov .gt-badge{height:15px;width:auto;max-width:none;object-fit:contain;left:5px;bottom:5px}
-@media (max-width:640px){.gcover .gt-badge,.gt-dcov .gt-badge{height:12px;left:4px;bottom:4px}}
+.gt-badge{position:absolute!important;left:5px;bottom:5px;z-index:3;display:block;
+  width:auto!important;height:15px!important;min-height:0!important;min-width:0!important;
+  max-width:none!important;object-fit:contain!important;flex:0 0 auto;
+  border-radius:3px;box-shadow:0 1px 3px rgba(0,0,0,.4);pointer-events:none;background:transparent}
+img.gt-badge,
+.gcover img.gt-badge,
+.gcard .gcover img.gt-badge,
+.gt-dcov img.gt-badge{width:auto!important;height:15px!important;
+  min-height:0!important;min-width:0!important;max-width:none!important;object-fit:contain!important}
+@media (max-width:640px){
+  .gcover .gt-badge,.gt-dcov .gt-badge,
+  .gcard .gcover img.gt-badge,.gt-dcov img.gt-badge{height:12px!important;left:4px;bottom:4px}
+}
 </style>
 </head>
 <body>
@@ -1181,7 +1193,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 
 <button id="toTop" class="toTop" aria-label="跳到底部" title="跳到底部">↓ 跳到底部</button>
 <script src="pinyin.js?v=20260911"></script>
-<script>window.__GT_DATA_VER="2026-11-08T21:54:59+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
+<script>window.__GT_DATA_VER="2026-11-08T22:06:21+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
 <!-- 改85: 数据文件改为动态加载(带时间戳)
      原来写死 `<script src="data.js?t=20260909155923">`, URL 恒定不变, 而 GitHub Pages 给
      data.js 的 max-age 是 600s —— 库存改完后 10 分钟内(或更久)URL 相同, 浏览器直接用缓存,
@@ -3192,7 +3204,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-11-08T21:54:59+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-11-08T22:06:21+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-det-preload">
 /* 改163-begin: 详情数据「空闲预加载」 —— 卡片上的「详情 ›」已同步显示、不再等数据；
    game_details.json 推迟到首屏渲染完、浏览器空闲时才拉取，不跟首屏抢带宽。
