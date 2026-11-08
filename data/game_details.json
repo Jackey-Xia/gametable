@@ -8207,13 +8207,39 @@
  },
  "刀剑神域：导演典藏版": {
   "genres": [
-   "角色扮演"
+   "角色扮演",
+   "动作战斗",
+   "剧情探索"
   ],
-  "players": "",
+  "players": "1位玩家",
   "release": "2015年11月19日",
   "publisher": "Bandai Namco Entertainment",
-  "shots": [],
-  "_cid": "HP0700-CUSA03218_00-SAOLOSTSONG00000"
+  "shots": [
+   "https://jackey-xia.github.io/gametable/shots/sao-de-1.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-de-2.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-de-3.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-de-4.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-de-5.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-de-6.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-de-7.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-de-8.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-de-9.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-de-10.jpg"
+  ],
+  "_cid": "HP0700-CUSA03218_00-SAOLOSTSONG00000",
+  "display_name": "刀剑神域：导演典藏版",
+  "en": "Sword Art Online（Game Directors Edition）",
+  "capacity": "15.7 GB",
+  "languages": [
+   "中文",
+   "韩文"
+  ],
+  "platforms": "PS5/PS4",
+  "intro": "互相呼应的两个歌声，如今又将迈向更高的顶点──\n\n2015年4月于PlayStation®Vita、PlayStation®3发售的「刀剑神域 －Lost Song－」在PlayStation®4堂堂登场！\n\n游戏的舞台是妖精与魔法的世界・VRMMO＜＜ALfheim Online＞＞，在传说的失落大陆中，响彻着光与闇之歌──\n\n操纵喜爱的角色，自由自在地驰骋于天空之中，体验SAO的动作吧！\n游戏中才能体验到的全新故事情节正在等着您！\n\n来吧，飞越这个世界的天空──\n还附有永久特典──PS4™版的「刀剑神域 Ｒe：－虚空断章－」喔！",
+  "intro_boldlines": [
+   "互相呼应的两个歌声，如今又将迈向更高的顶点──"
+  ],
+  "intro_gap": {}
  },
  "Sword Art OnlineGhost of Tsushima（Game Director's Edition）": {
   "genres": [
@@ -8227,13 +8253,38 @@
  },
  "刀剑神域：异绊集结（豪华版）": {
   "genres": [
-   "角色扮演"
+   "角色扮演",
+   "动作战斗",
+   "剧情探索"
   ],
-  "players": "1人",
+  "players": "本地1人，线上1-4人",
   "release": "2023年10月5日",
   "publisher": "Bandai Namco Entertainment",
-  "shots": [],
-  "_cid": "HP0700-PPSA06957_00-SAOLRDLXEDITION0"
+  "shots": [
+   "https://jackey-xia.github.io/gametable/shots/sao-lr-1.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-lr-2.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-lr-3.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-lr-4.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-lr-5.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-lr-6.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-lr-7.jpg",
+   "https://jackey-xia.github.io/gametable/shots/sao-lr-8.jpg"
+  ],
+  "_cid": "HP0700-PPSA06957_00-SAOLRDLXEDITION0",
+  "display_name": "刀剑神域：异绊集结（豪华版）",
+  "en": "Sword Art Online：Last Recollection（Deluxe Edition）",
+  "capacity": "32.9 GB",
+  "languages": [
+   "中文",
+   "韩文"
+  ],
+  "platforms": "PS5/PS4",
+  "intro": "灵魂、热情，以及由此编织而成的生命物语。\n\n《刀剑神域》游戏系列集大成的RPG作品众望登场！\n当两边的世界即将开始最终战争时，神秘的暗黑骑士少女出现在桐人他们面前。\n假设在绝对无法改变的悲剧命运中，有“桐人”在的话……有“尤吉欧”在的话……\n在运用种类五花八门的武器进行战斗，并与个性十足的伙伴们一同携手作战之下，无人知晓的生命物语由此编织而成，即将开幕。\n\n数字豪华版的内容：\n・《刀剑神域 异绊集结》游戏本体\n・超值套票",
+  "intro_boldlines": [
+   "灵魂、热情，以及由此编织而成的生命物语。",
+   "数字豪华版的内容："
+  ],
+  "intro_gap": {}
  },
  "Sword Art Online：Last Recollection（Deluxe Edition）": {
   "genres": [
@@ -8246,12 +8297,48 @@
   "_cid": "HP0700-PPSA06957_00-SAOLRDLXEDITION0"
  },
  "堕落之主（豪华版）": {
-  "genres": [],
-  "players": "",
-  "release": "",
+  "genres": [
+   "角色扮演",
+   "类魂动作",
+   "黑暗奇幻"
+  ],
+  "players": "本地1人，线上1-3人",
+  "release": "2023年10月13日",
   "publisher": "",
-  "shots": [],
-  "_cid": "10012069"
+  "shots": [
+   "https://jackey-xia.github.io/gametable/shots/lords-fallen-1.jpg",
+   "https://jackey-xia.github.io/gametable/shots/lords-fallen-2.jpg",
+   "https://jackey-xia.github.io/gametable/shots/lords-fallen-3.jpg",
+   "https://jackey-xia.github.io/gametable/shots/lords-fallen-4.jpg",
+   "https://jackey-xia.github.io/gametable/shots/lords-fallen-5.jpg",
+   "https://jackey-xia.github.io/gametable/shots/lords-fallen-6.jpg",
+   "https://jackey-xia.github.io/gametable/shots/lords-fallen-7.jpg",
+   "https://jackey-xia.github.io/gametable/shots/lords-fallen-8.jpg",
+   "https://jackey-xia.github.io/gametable/shots/lords-fallen-9.jpg",
+   "https://jackey-xia.github.io/gametable/shots/lords-fallen-10.jpg"
+  ],
+  "_cid": "10012069",
+  "display_name": "堕落之主（豪华版）",
+  "en": "Lords of the Fallen（Deluxe Edition）",
+  "capacity": "33.5 GB",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "platforms": "PS5",
+  "intro": "《堕落之主》豪华版包含\n- 游戏：见证广阔世界，一切尽在这款全新黑暗奇幻动作RPG\n- 黑暗远征军初始职业：作为传说中信仰坚定、勇猛无比且鼎鼎大名的黑暗远征军踏上史诗旅程。\n- 黑暗远征军护甲与武器套装：穿上黑暗远征军标志性的全套装备，包括威力惊人的伊萨的长剑、圣光炸药、全套护甲与圣骑士吊坠\n- 100页的数字画集：内含专属插图，尽情欣赏超过100页精美而又恐怖的画作，画中描绘的是《堕落之主》世界各地的风貌\n- 数字原声音乐：完整的原声音乐让你沉溺在莫恩斯特德那萦绕心头的旋律之中（由知名音乐人Cris Velasco与Knut Avenstroup Haugen创作）\n- 3D模型查看器：查看游戏内所有角色的高分辨率精细模型\n\n《Lords of the Fallen》在相互连通的广袤世界中讲述了一段全新史诗角色扮演冒险之旅。\n\n漫长的时光过去，被人类击败的邪神阿迪尔即将卷土重来。化身为神话中的黑暗远征军，在这段宏大的角色扮演体验中，让阿迪尔永世不得超生。在两个平行国度中穿梭冒险，与庞大首领进行殊死战、面对瞬息万变的战斗，并沉浸在深刻的故事之中。\n\n探索相互连通的广袤世界\n穿行于两个广阔的平行世界之间。生者的国度和亡者的世界中都有各自不同的道路、秘密、宝藏和敌人。\n\n掌握颇具挑战性的高速战斗\n在超过百余种凶猛兵器中做出选择，从重型连枷到速射弩一应俱全，也可以施展奥秘之力发动毁灭性的魔法攻击。\n\n书写你的传奇\n自定义设置你的角色外观，然后就可以在 9 种不同的角色职业中选择一个。无论选择哪一条起始路径，都可以通过升级属性和武器来贯彻自己的游戏风格。\n\n参与在线多人模式，团结一心\n独自体验单人战役，或在在线合作模式与其他玩家齐心奋战。你可以随时与他人同行，无论是休闲模式或“共享进度”模式，双方玩家都会储存所有进度。此外，使用“免费好友通行证”可以邀请任何人加入游戏，即使对方未拥有本游戏也不例外。\n\n70 余次发行后更新\n70 余次的发行后更新包括大受好评的 2.0 版，我们透过完全重制的战斗系统和显著的效能强化大幅改善体验、对众多新任务线和模式的难度平衡进行严谨调整，并新增大量提升游玩舒适度功能。",
+  "intro_boldlines": [
+   "《堕落之主》豪华版包含",
+   "《Lords of the Fallen》在相互连通的广袤世界中讲述了一段全新史诗角色扮演冒险之旅。",
+   "探索相互连通的广袤世界",
+   "掌握颇具挑战性的高速战斗",
+   "书写你的传奇",
+   "参与在线多人模式，团结一心",
+   "70 余次发行后更新"
+  ],
+  "intro_gap": {}
  },
  "Lords of the Fallen（Deluxe Edition）": {
   "genres": [],
@@ -8263,15 +8350,41 @@
  },
  "大富翁11（1）": {
   "genres": [
-   "家庭",
-   "PARTY",
-   "休闲"
+   "休闲派对",
+   "回合策略",
+   "家庭娱乐"
   ],
-  "players": "4人",
+  "players": "本地1-4人，线上1-4人",
   "release": "2024年4月19日",
   "publisher": "eastasiasoft",
-  "shots": [],
-  "_cid": "UP2005-PPSA16959_00-RICHMANELEVEN000"
+  "shots": [
+   "https://jackey-xia.github.io/gametable/shots/richman11-1.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-2.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-3.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-4.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-5.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-6.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-7.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-8.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-9.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-10.jpg"
+  ],
+  "_cid": "UP2005-PPSA16959_00-RICHMANELEVEN000",
+  "display_name": "大富翁11",
+  "en": "Richman 11",
+  "capacity": "3.8 GB",
+  "languages": [
+   "中文",
+   "日文",
+   "英文"
+  ],
+  "platforms": "PS5/PS4",
+  "intro": "《大富翁》长篇系列游戏推出迄今为止最高端、最过瘾的新作《大富翁11》！\n\n在这款投资理财主题的 3D 棋盘游戏中，玩家可从众多神气活现、生机勃勃的角色中选择一位来代表自己，设置玩家人数，然后步入轻松欢快的沉浸式游戏世界中，努力发财致富，保持领先！\n\n从致敬本系列 1989 年原作的经典地图，到运用导弹和炸弹的大乱斗棋盘，不计其数的玩法足以让多人大混战保持新鲜火爆的势头，无论你玩多少次，是玩单人模式还是与朋友及家人对玩！掷出骰子，即可在棋盘上闪展腾挪，抽取卡牌，购置空地，建造房屋或连锁店，升级建筑物以收取更高租金，路过银行时办理存款，并在前进的道路上惩罚竞争对手，走向财务胜利！\n\n游戏特点：\n• 从 16 个玩家角色中选择一个，代表你在游戏棋盘上叱咤风云！\n• 与朋友和家人一起畅玩，也能与 CPU 控制的对手对战。\n• 升级你拥有的建筑物和财产，以增加租金和利润！\n• 让你的竞争对手更早破产，从而大获全胜。\n• 登陆某些地块可改变游戏棋盘，从而改变路径走向等等！",
+  "intro_boldlines": [
+   "《大富翁》长篇系列游戏推出迄今为止最高端、最过瘾的新作《大富翁11》！",
+   "游戏特点："
+  ],
+  "intro_gap": {}
  },
  "Richman 11": {
   "genres": [
@@ -8287,27 +8400,74 @@
  },
  "大富翁11（2）": {
   "genres": [
-   "家庭",
-   "PARTY",
-   "休闲"
+   "休闲派对",
+   "回合策略",
+   "家庭娱乐"
   ],
-  "players": "4人",
+  "players": "本地1-4人，线上1-4人",
   "release": "2024年4月19日",
   "publisher": "eastasiasoft",
-  "shots": [],
-  "_cid": "UP2005-PPSA16959_00-RICHMANELEVEN000"
+  "shots": [
+   "https://jackey-xia.github.io/gametable/shots/richman11-1.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-2.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-3.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-4.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-5.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-6.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-7.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-8.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-9.jpg",
+   "https://jackey-xia.github.io/gametable/shots/richman11-10.jpg"
+  ],
+  "_cid": "UP2005-PPSA16959_00-RICHMANELEVEN000",
+  "display_name": "大富翁11",
+  "en": "Richman 11",
+  "capacity": "3.8 GB",
+  "languages": [
+   "中文",
+   "日文",
+   "英文"
+  ],
+  "platforms": "PS5/PS4",
+  "intro": "《大富翁》长篇系列游戏推出迄今为止最高端、最过瘾的新作《大富翁11》！\n\n在这款投资理财主题的 3D 棋盘游戏中，玩家可从众多神气活现、生机勃勃的角色中选择一位来代表自己，设置玩家人数，然后步入轻松欢快的沉浸式游戏世界中，努力发财致富，保持领先！\n\n从致敬本系列 1989 年原作的经典地图，到运用导弹和炸弹的大乱斗棋盘，不计其数的玩法足以让多人大混战保持新鲜火爆的势头，无论你玩多少次，是玩单人模式还是与朋友及家人对玩！掷出骰子，即可在棋盘上闪展腾挪，抽取卡牌，购置空地，建造房屋或连锁店，升级建筑物以收取更高租金，路过银行时办理存款，并在前进的道路上惩罚竞争对手，走向财务胜利！\n\n游戏特点：\n• 从 16 个玩家角色中选择一个，代表你在游戏棋盘上叱咤风云！\n• 与朋友和家人一起畅玩，也能与 CPU 控制的对手对战。\n• 升级你拥有的建筑物和财产，以增加租金和利润！\n• 让你的竞争对手更早破产，从而大获全胜。\n• 登陆某些地块可改变游戏棋盘，从而改变路径走向等等！",
+  "intro_boldlines": [
+   "《大富翁》长篇系列游戏推出迄今为止最高端、最过瘾的新作《大富翁11》！",
+   "游戏特点："
+  ],
+  "intro_gap": {}
  },
  "迪托之剑（港版日/英文）": {
   "genres": [
-   "动作",
-   "角色扮演",
-   "冒险"
+   "角色动作",
+   "动作冒险",
+   "卡通画风"
   ],
-  "players": "2人",
+  "players": "本地1-2人",
   "release": "2024年4月29日",
   "publisher": "Devolver Digital",
-  "shots": [],
-  "_cid": "UP3643-CUSA10443_00-THESWORDSOFDITTO"
+  "shots": [
+   "https://jackey-xia.github.io/gametable/shots/ditto-1.jpg",
+   "https://jackey-xia.github.io/gametable/shots/ditto-2.jpg",
+   "https://jackey-xia.github.io/gametable/shots/ditto-3.jpg",
+   "https://jackey-xia.github.io/gametable/shots/ditto-4.jpg",
+   "https://jackey-xia.github.io/gametable/shots/ditto-5.jpg",
+   "https://jackey-xia.github.io/gametable/shots/ditto-6.jpg",
+   "https://jackey-xia.github.io/gametable/shots/ditto-7.jpg",
+   "https://jackey-xia.github.io/gametable/shots/ditto-8.jpg",
+   "https://jackey-xia.github.io/gametable/shots/ditto-9.jpg",
+   "https://jackey-xia.github.io/gametable/shots/ditto-10.jpg"
+  ],
+  "_cid": "UP3643-CUSA10443_00-THESWORDSOFDITTO",
+  "display_name": "迪托之剑",
+  "en": "The Swords of Ditto：Mormo's Curse",
+  "capacity": "786.7 MB",
+  "languages": [
+   "日文",
+   "英文"
+  ],
+  "platforms": "PS5/PS4",
+  "intro": "迪托之剑是一款动作RPG游戏，每位新的传奇英雄都会与邪恶的墨魔作斗争，而世代轮回的故事又各具特色、不尽相同。游戏背景轻松愉快但不乏危机：玩家需要探索杀机四伏的地牢，在祥和的小镇升级各项能力，最终扫清整座大陆上的魑魅魍魉。你还可以邀请伙伴开启合作模式，共同释放迪托之剑的力量，操纵萌萌的角色，扫荡丰厚的战利品，完成史诗般的对决，让每次冒险经历永生难忘！\n\n内容迥异的冒险，环环相扣：每一代历险都带有丰富的传奇色彩，既与前代传奇截然不同，又与它们共同构成一整部壮丽的史诗。每位英雄的所作所为、生死成败都将影响后世英雄——以及搜寻武器的能力，或是回收死亡英雄物品的能力。\n\n单人或多人模式，相得益彰：你可以与墨魔和她邪恶的爪牙单打独斗，也可以召唤英勇的伙伴与你进行本地合作游玩。不要害怕，即便再初出茅庐的菜鸟也能通过同伴质朴的拥抱获得重生的魔力！\n\n武器、道具和贴纸，如虎添翼：手上的武器既有传统的利剑弓箭组合，也有不那么常规的黑胶唱片飞盘、魔法高尔夫球棍和来自天国的大脚丫。挥舞它们，将墨魔大军击溃吧！收集并装备贴纸可提升角色能力，为装备附魔，让你在面对那邪恶巫婆时底气十足。\n\n主线支线剧情，层出不穷：用你独有的方式书写传奇！你可以按任意顺序击破各个地牢，在深穴暗井中完成各项支线任务，你甚至可以直接挑战终极难度——一上手就与墨魔正面交锋！",
+  "intro_gap": {}
  },
  "The Swords of Ditto：Mormo's Curse": {
   "genres": [
@@ -8323,14 +8483,32 @@
  },
  "电钻少女": {
   "genres": [
-   "动作",
-   "冒险"
+   "动作冒险",
+   "平台跳跃",
+   "像素画风"
   ],
   "players": "1人",
   "release": "2024年8月7日",
   "publisher": "Devolver Digital",
   "shots": [],
-  "_cid": "EP3643-PPSA23280_00-PEPPGRINPS5SIEE1"
+  "_cid": "EP3643-PPSA23280_00-PEPPGRINPS5SIEE1",
+  "display_name": "电钻少女",
+  "en": "Pepper Grinder",
+  "capacity": "519.6 MB",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "platforms": "PS5/PS4",
+  "intro": "《电钻少女》讲述了一段紧张刺激的海盗冒险之旅，故事的主角名叫佩珀，是一个对勘探满怀热情的海魂少女；她手中挥舞的是研磨枪，那是她超强力的钻孔装置。\n\n遭遇海难后，佩珀的宝藏被洗劫一空，如今她必须发动手中值得信赖的武器，夺回淘气的纳林斯偷走的东西。手持研磨枪的佩珀可以在各类地形和水面中钻进钻出，还能控制机器，用各种异想天开的方式粉碎任何胆敢阻拦她的敌人，直到她找回自己应得的财富——连本带息都找回来！\n\n只不过，佩珀的进展并没有想象中顺利，因为阴影中开始有神秘生物不断浮现……\n\n砂石遍地的游戏之旅\n施展精确的移动、流畅的钻探和刺激的飞跃，你将在栩栩如生、色彩斑斓的世界中翱翔。\n\n钻进钻出好不刺激\n研磨枪在手，钻遍世界无敌手。你还能发现新的钻头，让混乱程度更上层楼，同时还能揭开更巧妙的谜题。\n\n征服与收集\n在冒险过程中，你将拾获珠宝和其他的宝物，在商店变现后即可为佩珀购买升级能力、在世界地图上开辟新路径，还能为你的贴纸簿收集典藏版贴纸。",
+  "intro_boldlines": [
+   "砂石遍地的游戏之旅",
+   "钻进钻出好不刺激",
+   "征服与收集"
+  ],
+  "intro_gap": {}
  },
  "Pepper Grinder": {
   "genres": [
@@ -8345,13 +8523,30 @@
  },
  "电锯甜心": {
   "genres": [
-   "动作"
+   "角色扮演",
+   "动作砍杀",
+   "僵尸题材"
   ],
   "players": "1人",
-  "release": "2024年12月2日",
+  "release": "2024年9月26日",
   "publisher": "Dragami Games, Ltd.",
   "shots": [],
-  "_cid": "JP7907-CUSA48704_00-LOLLIPCHAINREPOP"
+  "_cid": "JP7907-CUSA48704_00-LOLLIPCHAINREPOP",
+  "display_name": "电锯甜心",
+  "en": "Lollipop Chainsaw Repop",
+  "capacity": "13.1 GB",
+  "languages": [
+   "繁体中文",
+   "日文",
+   "英文"
+  ],
+  "platforms": "PS5",
+  "intro": "无需说明！直观享受僵尸狩猎的乐趣！ ！那位传说中的僵尸猎人茱丽叶已准备就绪，重新回归！ ！\n\n在全世界累计销量达124万套的动作游戏，以全新的画风重新归来！\n出生于僵尸猎人一家的茱丽叶，依旧穿着一身啦啦队服，以电锯作为武器，在僵尸群中大杀四方。在RePOP版中，透过不断提升电锯攻击速度的新技能，以及追加自动连射功能的爆破攻击，为您带来自始至终、持续不断的打击快感！这次重制不仅提升了游戏性能，还有华丽的画面演出和新增的BGM等，快来体验这款强化后回归，独一无二的僵尸狩猎动作游戏吧！\n\n＜故事＞\n故事舞台位于美国西海岸最大的学校「圣洛美洛高中」。\n主角茱丽叶是一名啦啦队员，同时也是圣洛美洛高中的模范生。\n然而，她的家族——史塔林一家，又是自古以来带领亡者前往天国的僵尸猎人家族。\n事件在茱丽叶的生日当天爆发，茱丽叶为了与男朋友碰面而前往学校。当她骑着脚踏车来到学校时，迎接她的竟是已变成僵尸的昔日同学……",
+  "intro_boldlines": [
+   "无需说明！直观享受僵尸狩猎的乐趣！ ！那位传说中的僵尸猎人茱丽叶已准备就绪，重新回归！ ！",
+   "＜故事＞"
+  ],
+  "intro_gap": {}
  },
  "Lollipop Chainsaw Repop": {
   "genres": [
@@ -8364,12 +8559,28 @@
   "_cid": "JP7907-CUSA48704_00-LOLLIPCHAINREPOP"
  },
  "渎神1 神之亵渎1": {
-  "genres": [],
-  "players": "",
-  "release": "",
+  "genres": [
+   "动作平台",
+   "银河恶魔城",
+   "黑暗奇幻"
+  ],
+  "players": "1位玩家",
+  "release": "2019年9月12日",
   "publisher": "",
   "shots": [],
-  "_cid": "JP4875-PPSA17759_00-0498248698981905"
+  "_cid": "JP4875-PPSA17759_00-0498248698981905",
+  "display_name": "渎神1 神之亵渎1",
+  "en": "Blasphemous 1",
+  "capacity": "2.8 GB",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "platforms": "PS5/PS4",
+  "intro": "Blasphemous 是一款高难度的平台动作游戏，它结合了砍杀型游戏的快节奏技巧战斗，以及深邃动人的故事核心，通过探索由非直线关卡组成的庞大宇宙展开叙事。\n\n一条邪恶的诅咒降临在 Cvstodia 的土地和其居民身上 - 人们只知道它叫“奇迹”。\n\n在游戏中扮演“无声的悲哀”大屠杀惨剧中唯一的幸存者“悔罪者一号”。陷入死亡和重生的无休止轮回中，从这一厄运中解救世界并找到痛苦的根源就要靠你了。\n\n探索邪恶宗教的噩梦般世界，并发现深藏其中的诸多秘密。使用威力强大的技能组合和残酷的终结技，消灭大批奇异怪物和巨型首领，它们只想把你撕成碎片。找到并装备遗物、念珠和祷文，它们可以召唤天堂的力量来帮助你打破永恒的诅咒。",
+  "intro_gap": {}
  },
  "Blasphemous 1": {
   "genres": [],
@@ -8380,12 +8591,32 @@
   "_cid": "JP4875-PPSA17759_00-0498248698981905"
  },
  "渎神2 神之亵渎2（完整版）": {
-  "genres": [],
-  "players": "",
-  "release": "",
+  "genres": [
+   "动作平台",
+   "银河恶魔城",
+   "黑暗奇幻"
+  ],
+  "players": "1位玩家",
+  "release": "2024年11月1日",
   "publisher": "",
   "shots": [],
-  "_cid": "JP4875-PPSA17759_00-BLASPHEMOUS2MCE0"
+  "_cid": "JP4875-PPSA17759_00-BLASPHEMOUS2MCE0",
+  "display_name": "渎神2 神之亵渎2（完整版）",
+  "en": "Blasphemous 2（Complete Edition）",
+  "capacity": "3.1 GB",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "platforms": "PS5",
+  "intro": "《神之亵渎2》是这个黑暗风横版银河城游戏系列的第二作，在推出后受到了广泛好评。\n\n忏悔者在一片全新的陌生土地上醒来，又一次远离安息之地的他必须继续和奇迹进行无休止的斗争。玩家将进入充满谜团和秘密的危险新世界，在展开探索的同时一路拼杀，放肆地铲除那些妨碍你终结这邪崇循环的可怕敌人。\n\nBlasphemous 2\n《神之亵渎》系列的续作预示着“悔罪者一号”的回归，剧情延续自原版游戏的免费可下载内容“Wounds of Eventide”，天空中的心预告着“奇迹”的回归，也代表了新的奇迹之子就要诞生。\n\n《神之亵渎2》提供了更多可自定义和优化技能组合的机会，更准备了数件独特的新武器，供玩家宣泄正义狂热和无尽怒火。有这等神兵在手，胜利或将唾手可得。\n\n《我之罪》DLC\n在全新的任务线中重铸标志性武器「我之罪」；击倒拦路的敌人，探索库斯托迪亚内通往那久被遗忘区域的新道路；从而再次体验接受惩罚时双手感受到的刺痛。",
+  "intro_boldlines": [
+   "Blasphemous 2",
+   "《我之罪》DLC"
+  ],
+  "intro_gap": {}
  },
  "Blasphemous 2（Complete Edition）": {
   "genres": [],
@@ -8396,12 +8627,35 @@
   "_cid": "JP4875-PPSA17759_00-BLASPHEMOUS2MCE0"
  },
  "大头盔英雄": {
-  "genres": [],
-  "players": "",
-  "release": "",
+  "genres": [
+   "清版动作",
+   "合作闯关",
+   "卡通画风"
+  ],
+  "players": "本地1-2人",
+  "release": "2025年2月7日",
   "publisher": "",
   "shots": [],
-  "_cid": "UB0045-PPSA19943_00-BIGHELMETPS50000"
+  "_cid": "UB0045-PPSA19943_00-BIGHELMETPS50000",
+  "display_name": "大头盔英雄",
+  "en": "Big Helmet Heroes",
+  "capacity": "4.5 GB",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "platforms": "PS5",
+  "intro": "欢迎体验《Big Helmet Heroes》，这款爆笑3D横版动作冒险游戏，战斗与冒险完美结合。在奇幻王国中发现隐藏的29位可爱英雄，挑选你的最爱，拯救公主！通过单人游玩或者与好友一起游玩，试着攻克前方等着的所有挑战吧！\n\n● 史诗又可爱的英雄阵容\n总计29位英雄，每位英雄都精通4种强力战斗风格中的一种，并拥有各自独特的超级技能——在游玩过程中集齐他们吧！\n\n● 欢乐激燃的战斗\n面对成群结队的哥布林和强大头目，巧妙利用环境、挥舞脑洞大开的武器，一路过关斩将！\n\n● 广阔奇幻的冒险世界\n探索多样化的精彩关卡，从中世纪魔幻到充满木乃伊、海盗，甚至有迷人又危险的独角兽的奇妙领域！\n\n● 本地合作模式\n与好友并肩作战，携手击败敌人，制定策略，共同享受战斗中的混乱与乐趣！\n\n● 老少皆宜的挑战\n入门简单，但对于技术娴熟且敢于冒险的玩家，绝对是实力的考验。",
+  "intro_boldlines": [
+   "● 史诗又可爱的英雄阵容",
+   "● 欢乐激燃的战斗",
+   "● 广阔奇幻的冒险世界",
+   "● 本地合作模式",
+   "● 老少皆宜的挑战"
+  ],
+  "intro_gap": {}
  },
  "Big Helmet Heroes": {
   "genres": [],
