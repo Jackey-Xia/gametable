@@ -160,5 +160,11 @@
   "wps_platform": "PS5",
   "detail_platforms": "PS5",
   "reason": "店主指令，WPS U列 UP2660-PPSA29264_00-SIEESIEADUSK0000"
+ },
+ "css_fix_2026_11_08": {
+  "issue": "手机端 .gcard .gcover img 优先级更高导致角标拉伸满铺遮挡封面",
+  "fix": "gt-badge-css 增加更高优先级选择器 + !important, 手机端 12px",
+  "ver": "2026-11-08T22:06:21+0800",
+  "cover_changed": false
  }
 }
