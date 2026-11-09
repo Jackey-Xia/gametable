@@ -1226,7 +1226,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
   setTimeout(load,4000);                 /* 兜底：任何环境下都不会让同音搜索失效 */
 })();
 </script>
-<script>window.__GT_DATA_VER="2026-11-10T01:22:54+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
+<script>window.__GT_DATA_VER="2026-11-10T02:03:53+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
 <!-- 改85: 数据文件改为动态加载(带时间戳)
      原来写死 `<script src="data.js?t=20260909155923">`, URL 恒定不变, 而 GitHub Pages 给
      data.js 的 max-age 是 600s —— 库存改完后 10 分钟内(或更久)URL 相同, 浏览器直接用缓存,
@@ -1359,6 +1359,9 @@ let PS=D.ps||[], NS=D.ns||[], MEM=D.membership||{};   /* 改159: let 以便后�
    缓存也不写回 -> 永远显示旧库存。这里把真正的重渲染实现注册到 window 供尾部 gtApply 代理调用。 */
 window.__GT_APPLY=function(D){
   PS=D.ps||[]; NS=D.ns||[]; MEM=D.membership||{};
+  /* 改172 ★铁律★: 新 PS 是全新行对象(无 _gid), 必须立即重算分组, 否则后台刷新后
+     同商品同版本拆2张、同名不同地区合并成1张。dupOf/mergeRows 判据一字未改。 */
+  try{ gtAssignGid(); }catch(e){ window.__GT_GID_ERR=String(e); }
   window.GT_DATA=D;
   try{
     var pe=$("#promoTxt");
@@ -1605,10 +1608,12 @@ var MERGE_EXCLUDE=["最终幻想","虐杀原形"];
    伊瓦利斯战记1/2 都= Final Fantasy Tactics - The Ivalice Chronicles, 库存 12/6/25 完全一致 */
 var MERGE_FORCE=["伊瓦利斯战记","最终幻想：共鸣"];   /* 改112: 共鸣1/2 同商品多库存(同价同日同英文名), 强制合并 */
 function isForceMerge(base){const s=String(base||"");return MERGE_FORCE.some(x=>s.slice(-x.length)===x);}
-/* 改99: 启动时一次性给每行 PS 数据算好同游戏多账号分组 id(_gid), 供主列表合并与款数统计用。
+/* 改99: 给每行 PS 数据算好同游戏多账号分组 id(_gid), 供主列表合并与款数统计用。
    必须放在 SEQ_BARE/MERGE_EXCLUDE 等常量赋值之后(var 提升不会带初始化, 提前跑 dupOf 会崩)。
-   先按英文名(归一化)分桶再桶内两两 dupOf, 避免全量 O(n²) 拖慢手机端首屏。 */
-(function(){
+   先按英文名(归一化)分桶再桶内两两 dupOf, 避免全量 O(n²) 拖慢手机端首屏。
+   改172: 抽成具名函数 —— 后台 __GT_APPLY 整体替换 PS 后必须重算, 否则新行无 _gid,
+   mergeRows 会退回 solo:name 兜底, 导致「同商品同版本拆成2张 / 同名不同地区合并成1张」铁律失效。 */
+function gtAssignGid(){
   const buckets={};
   for(let i=0;i<PS.length;i++){
     const k=enKey(PS[i].en);
@@ -1626,7 +1631,9 @@ function isForceMerge(base){const s=String(base||"");return MERGE_FORCE.some(x=>
       gid++;
     }
   });
-})();
+}
+/* 改172: 启动时算一次(行为与改99 IIFE 完全一致) */
+gtAssignGid();
 $("#cntPS").textContent=mergeRows(PS).length;   /* 改99: 页头款数改为合并后的真实款数 */
 /* 改78: 英文名归一化——真"多账号库存"英文名必然相同(如 九张羊皮纸1/2 都是 Nine Parchments);
    若英文名不同则是不同作品(如 纪念碑谷1=Monument Valley 1 vs 纪念碑谷2=Monument Valley 2, 生化危机5=Resident Evil 5 vs 6), 不合并 */
@@ -3336,7 +3343,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-11-10T01:22:54+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-11-10T02:03:53+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-det-preload">
 /* 改168-3: 详情数据改为「真点开才取」。
    openDetail() 里的 gtDetLoad() 会在顾客第一次点「详情 ›」时才发起请求；
