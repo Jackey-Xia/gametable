@@ -71,6 +71,21 @@ if os.path.exists(vj):
         _m = _re.search(r'"synced"\s*:\s*"([^"]*)"', _js)
         if _m and _m.group(1):
             _ver["synced"] = _m.group(1)
+        # 改167-3: 把封面清单 / 淘宝表的内容指纹写进 ver.json。
+        #   老客 IDB 里存有 gt_cover_map + gt_cover_v / gt_taobao + __v,
+        #   指纹一致即可跳过 manifest(约30KB) 与 taobao(约97KB) 的重下; 内容一变指纹就变。
+        import hashlib as _hash
+        def _fp(*_paths):
+            _hh = _hash.md5()
+            for _pp in _paths:
+                _qq = os.path.join(BASE, _pp)
+                if os.path.exists(_qq):
+                    with open(_qq, "rb") as _fb:
+                        _hh.update(_fb.read())
+            return _hh.hexdigest()[:12]
+        _ver["cover_v"] = _fp("covers/manifest.json", "covers/manifest_ps.json")
+        _ver["tb_v"] = _fp("data/taobao.json")
+        print("ver.json 已注入 cover_v/tb_v:", _ver.get("cover_v"), _ver.get("tb_v"))
         with open(dst_vj, "w", encoding="utf-8") as _f:
             json.dump(_ver, _f, ensure_ascii=False, indent=1)
         print("ver.json 已注入 synced:", _ver.get("synced"))
