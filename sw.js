@@ -3,7 +3,7 @@
  * 每部署一次 CACHE 版本号(1794081423)随之变化 -> 新 SW 激活即清掉旧缓存, 不会把旧页喂给老客。
  * 例外: ver.json 永远走网络(保证版本探测/自动刷新生效); 跨域封面(weserv)不拦截(由 IndexedDB 接管); 可变图片(商品封面等)强制绕过 HTTP 缓存直连线上最新(避免老客长期看到旧封面); 固定图片(头像 avatar_fill.png / 背景 bg.jpg)走 SW 缓存秒出(改动极少, 老客免重复下载); 带 _bg=1 / no-store 的后台探测直连网络。
  */
-const CACHE = 'gt-sw-v1794193996';
+const CACHE = 'gt-sw-v1794195813';
 const VER_URL = 'ver.json';
 
 self.addEventListener('install', function(e){ self.skipWaiting(); });
@@ -60,6 +60,23 @@ self.addEventListener('fetch', function(e){
   var cc = req.headers.get('cache-control') || '';
   if(cc.indexOf('no-store') >= 0 || u.searchParams.has('_bg')){
     e.respondWith(fetch(req));                             // 后台探测直连网络, 不读写缓存
+    return;
+  }
+  /* 改164: data.js 是价格库存主数据。旧逻辑把 data.js?v=xxx 归一成 /data.js 做 cache-first,
+     且注释里承诺的 stale-while-revalidate 并未实现(命中即 return, 从不后台刷新) ->
+     WPS 推送新库存后老客永远拿到第一份缓存。改为网络优先 + 最近一次缓存兜底(离线可用),
+     前端另有 IndexedDB 秒出层, 不会牺牲首屏速度。 */
+  if(/(?:^|\/)data\.js$/.test(u.pathname)){
+    e.respondWith((async function(){
+      try{
+        var res = await fetch(req);
+        if(res && res.ok){ try{ var c=await caches.open(CACHE); c.put('/data.js',res.clone()); }catch(e2){} }
+        return res;
+      }catch(err){
+        try{ var c2=await caches.open(CACHE); var old=await c2.match('/data.js'); if(old)return old; }catch(e2){}
+        return Response.error();
+      }
+    })());
     return;
   }
   e.respondWith(swr(req, u));
