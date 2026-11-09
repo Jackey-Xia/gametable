@@ -12,7 +12,8 @@
     <title>「夏天Jackey」PS数字版游戏</title>
 <!-- 改162-2: 资源提示 —— HTML 解析阶段即并行拉取大文件, 缩短首屏 -->
 <link rel="preconnect" href="https://images.weserv.nl" crossorigin>
-<link rel="preload" href="data.js?v=__GT_DV__" as="script">
+<!-- 改164: 移除失效的 data.js preload —— 占位符 __GT_DV__ 从未替换, 请求的 URL 与真正加载的 data.js 不一致,
+     既白下 283KB, 又会把旧响应以 /data.js 为键写进 SW 缓存; 改由 gtFetchVer 拿到 synced 后动态加载。 -->
 <link rel="preload" href="covers/manifest_ps.json" as="fetch">
 <!-- ===== 分享卡片（微信 / QQ / 朋友圈）· 头像方形图 ===== -->
 <meta property="og:type" content="website">
@@ -1194,7 +1195,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 
 <button id="toTop" class="toTop" aria-label="跳到底部" title="跳到底部">↓ 跳到底部</button>
 <script src="pinyin.js?v=20260911"></script>
-<script>window.__GT_DATA_VER="2026-11-09T11:13:16+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
+<script>window.__GT_DATA_VER="2026-11-09T11:43:33+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
 <!-- 改85: 数据文件改为动态加载(带时间戳)
      原来写死 `<script src="data.js?t=20260909155923">`, URL 恒定不变, 而 GitHub Pages 给
      data.js 的 max-age 是 600s —— 库存改完后 10 分钟内(或更久)URL 相同, 浏览器直接用缓存,
@@ -1245,16 +1246,18 @@ function gtJPut(k,obj){return gtJDb().then(function(db){if(!db)return;return new
   }
   function loadNet(){
     var s=document.createElement("script");
-    s.src="data.js?v="+window.__GT_DATA_VER;
+    /* 改164: &s=<ver.json.synced> —— WPS 每次价格库存推送 synced 都会变, URL 随之变化,
+       绕开 GitHub Pages / 微信 WebView 对固定 URL 的强缓存; SW 侧同步改为网络优先。 */
+    s.src="data.js?v="+window.__GT_DATA_VER+"&s="+encodeURIComponent(window.__GT_SYNC||"0");
     s.onload=function(){
       window.__GT_NET_DONE=true;
-      /* 改160: 首渲染用缓存时, 网络到后比对 synced: 相同仅更新缓存(防闪), 不同用新数据重渲染 */
+      /* 改160/164: 首渲染用缓存时, 网络到后比对 synced: 相同仅更新缓存(防闪), 不同用新数据重渲染。
+         改164: 拆开 try —— 原写法把 gtApply 和 gtJPut 放在同一个 try 里, gtApply 抛错会连带跳过缓存写回,
+         老客 IDB 永远停留在旧库存; 现在各自独立兜底, 异常暴露到 window.__GT_APPLY_ERR。 */
       if(_booted&&_firstSrc==="cache"){
-        if(window.__GT_CACHE_SYNC&&window.GT_DATA&&window.GT_DATA.synced===window.__GT_CACHE_SYNC){
-          try{ gtJPut("gt_data",{D:window.GT_DATA,synced:window.GT_DATA.synced}); }catch(e){}
-        }else{
-          try{ gtApply(window.GT_DATA); gtJPut("gt_data",{D:window.GT_DATA,synced:window.GT_DATA.synced}); }catch(e){}
-        }
+        var _same=!!(window.__GT_CACHE_SYNC&&window.GT_DATA&&window.GT_DATA.synced===window.__GT_CACHE_SYNC);
+        if(!_same){ try{ gtApply(window.GT_DATA); }catch(e){ window.__GT_APPLY_ERR=String(e); } }
+        try{ gtJPut("gt_data",{D:window.GT_DATA,synced:window.GT_DATA.synced}); }catch(e){}
         return;
       }
       bootOnce();   /* 未首渲染(网络先到/缓存未命中) -> 用网络渲染 */
@@ -1301,6 +1304,27 @@ try{ if(typeof gtProg!=="undefined") gtProg.data=true; }catch(e){}
   el.textContent="📦 数据同步于 "+s;
 })();
 let PS=D.ps||[], NS=D.ns||[], MEM=D.membership||{};   /* 改159: let 以便后台数据变更时本地重渲染 */
+/* 改164 ★核心修复★: 后台数据刷新桥。
+   原 gtApply() 定义在页面尾部另一个 <script> 的全局作用域, 但里面的 PS/NS/MEM/curTab/renderPS/$
+   全是本 IIFE 内的 let/const/function, 全局根本访问不到 -> 一调用就抛
+   ReferenceError: curTab is not defined, 又被 .catch(function(){}) 静默吞掉。
+   后果: WPS 价格库存更新后, 手机/微信老客首屏用 IDB 旧缓存, 网络新 data.js 到了却无法重渲染,
+   缓存也不写回 -> 永远显示旧库存。这里把真正的重渲染实现注册到 window 供尾部 gtApply 代理调用。 */
+window.__GT_APPLY=function(D){
+  PS=D.ps||[]; NS=D.ns||[]; MEM=D.membership||{};
+  window.GT_DATA=D;
+  try{
+    var pe=$("#promoTxt");
+    if(pe)pe.innerHTML=D.promo?"<b>可认证 / 非认证</b>"+D.promo.split("，").map(function(s){return "<i>"+s+"</i>";}).join(""):"";
+    var de=document.getElementById("dataSynced");
+    if(de&&D.synced){ var d=new Date(D.synced); if(!isNaN(d.getTime())){ var p=function(n){return n<10?"0"+n:""+n;}; de.textContent="📦 数据同步于 "+d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate())+" "+p(d.getHours())+":"+p(d.getMinutes()); } }
+  }catch(e){}
+  try{
+    if(curTab==="ps"){renderPS(); var c=$("#cntPS"); if(c)c.textContent=mergeRows(PS).length;}
+    else if(curTab==="mem")renderMEM();
+    else renderNSComing();
+  }catch(e){ window.__GT_APPLY_ERR=String(e); }
+};
 const CONFIG={ shopUrl:"", q:"" };   // 如需“立即购买”跳转，请填店铺下单链接
 const $=s=>document.querySelector(s);
 const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e;};
@@ -3217,7 +3241,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-11-09T11:13:16+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-11-09T11:43:33+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-det-preload">
 /* 改163-begin: 详情数据「空闲预加载」 —— 卡片上的「详情 ›」已同步显示、不再等数据；
    game_details.json 推迟到首屏渲染完、浏览器空闲时才拉取，不跟首屏抢带宽。
@@ -3394,38 +3418,54 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 
 <!-- 改159: 后台比对数据版本(synced), 仅当数据有增减时本地重渲染差异部分 —— 老客秒出 + 不整页刷新 -->
 <script>
+/* 改164: 全局 gtApply 只做代理。真正的实现在 __GTBOOT 的 IIFE 内(window.__GT_APPLY),
+   因为 PS/curTab/renderPS 等都在那个闭包里, 全局作用域访问不到(旧版因此每次调用都抛 ReferenceError)。 */
 function gtApply(D){
-  PS=D.ps||[]; NS=D.ns||[]; MEM=D.membership||{};
-  window.GT_DATA=D;
-  try{
-    var pe=$("#promoTxt");
-    if(pe)pe.innerHTML=D.promo?"<b>可认证 / 非认证</b>"+D.promo.split("，").map(function(s){return "<i>"+s+"</i>";}).join(""):"";
-    var de=document.getElementById("dataSynced");
-    if(de){ var sy=D.synced; if(sy){ var d=new Date(sy); if(!isNaN(d.getTime())){ var p=function(n){return n<10?"0"+n:""+n;}; de.textContent="📦 数据同步于 "+d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate())+" "+p(d.getHours())+":"+p(d.getMinutes()); } } }
-  }catch(e){}
-  if(curTab==="ps"){renderPS(); var c=$("#cntPS"); if(c)c.textContent=mergeRows(PS).length;}
-  else if(curTab==="mem")renderMEM();
-  else renderNSComing();
+  return window.__GT_APPLY ? window.__GT_APPLY(D) : null;
+}
+/* 改164: 价格库存内容签名 —— 不只比 synced, 防止时间戳没变但 WPS 内容已经改了的情况 */
+function gtStockSig(D){
+  if(!D||!D.ps)return "";
+  var h=0,s="";
+  for(var i=0;i<D.ps.length;i++){
+    var g=D.ps[i]||{};
+    s=(g.name||"")+"|"+(g.ck7||"")+"|"+(g.fc7||"")+"|"+(g.xd30||"")+"|"+(g.ck4||0)+"|"+(g.ck5||0)+"|"+(g.fc||0)+"|"+(g.xd||0);
+    for(var j=0;j<s.length;j++)h=((h<<5)-h+s.charCodeAt(j))|0;
+  }
+  return D.ps.length+":"+h;
 }
 function gtBackgroundRefresh(){
   try{
-    /* 改162-1: ver.json 的 synced 与本页一致 -> 数据不可能有变化, 直接跳过 data.js 全量重下(二次打开省 283KB) */
+    /* ver.json 的 synced 与本页一致 -> 数据不可能有变化, 跳过 data.js 全量重下 */
     if(window.__GT_SYNC && window.GT_DATA && window.GT_DATA.synced && window.__GT_SYNC===window.GT_DATA.synced) return;
     fetch("data.js?t="+Date.now()+"&_bg=1",{cache:"no-store"}).then(function(r){return r.text();}).then(function(txt){
       var m=txt.match(/window\.GT_DATA\s*=\s*([\s\S]*)\s*;\s*$/); if(!m)return;
-      var nd; try{ nd=(new Function("return ("+m[1]+")"))(); }catch(e){ return; }
-      var old=(window.GT_DATA||{}).synced;
-      if(nd&&nd.synced&&nd.synced!==old){
+      var nd; try{ nd=(new Function("return ("+m[1]+")"))(); }catch(e){ window.__GT_BG_ERR="parse "+e; return; }
+      if(!nd||!nd.ps)return;
+      var old=window.GT_DATA||{};
+      var changed=(nd.synced&&nd.synced!==old.synced)||gtStockSig(nd)!==gtStockSig(old);
+      if(changed){
         var h=document.getElementById("gtLoadHint"), t=document.getElementById("gtHintTxt");
         if(h&&t){ t.textContent="正在加载数据，请勿刷新页面……"; h.classList.remove("hide"); }
-        gtApply(nd);
-        try{ gtJPut("gt_data",{D:nd,synced:nd.synced}); }catch(e){}   /* 改160: 后台刷新变更后同步写回 IDB 缓存 */
+        try{ gtApply(nd); }catch(e){ window.__GT_BG_ERR="apply "+e; }
+        try{ gtJPut("gt_data",{D:nd,synced:nd.synced}); }catch(e){}
         if(h)setTimeout(function(){h.classList.add("hide");},700);
       }
-    }).catch(function(){});
-  }catch(e){}
+    }).catch(function(e){ window.__GT_BG_ERR="fetch "+e; });
+  }catch(e){ window.__GT_BG_ERR=String(e); }
 }
 document.addEventListener("visibilitychange",function(){ if(!document.hidden)gtBackgroundRefresh(); });
+window.addEventListener("pageshow",function(){ gtBackgroundRefresh(); });   /* 改164: 微信 bfcache 返回时补一次 */
+/* 改164: 页面一直开着时也跟随 WPS 库存推送 —— 每 60s 只取 ~300B 的 ver.json, synced 变了才重拉 data.js */
+setInterval(function(){
+  if(document.hidden)return;
+  try{
+    fetch("ver.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(j){
+      if(j&&j.synced)window.__GT_SYNC=j.synced;
+      if(j&&j.synced&&window.GT_DATA&&window.GT_DATA.synced!==j.synced)gtBackgroundRefresh();
+    }).catch(function(){});
+  }catch(e){}
+},60000);
 /* 改71b/72: 尽早注册 SW(updateViaCache=none) —— 老客秒出 + 后台静默刷新 */
 if("serviceWorker" in navigator){
   navigator.serviceWorker.register("sw.js",{updateViaCache:"none"}).catch(function(){});
