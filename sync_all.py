@@ -57,9 +57,26 @@ sw = os.path.join(BASE, "sw.js")
 if os.path.exists(sw):
     shutil.copyfile(sw, os.path.join(site, "sw.js"))
 # 版本号文件(页面自动刷新机制用): 每次改版必须更新 ver.json 的 v 值
+# 改164: WPS 价格库存同步后把 data.js 的 synced 注入 site/ver.json。
+#        前端据此判定 IndexedDB 缓存是否过期, 并给 data.js 请求拼 &s=<synced> 绕开 HTTP/SW 缓存;
+#        没有这一步, 手机/微信老客在 WPS 表改价改库存后会一直看到旧数据。
 vj = os.path.join(BASE, "ver.json")
 if os.path.exists(vj):
-    shutil.copyfile(vj, os.path.join(site, "ver.json"))
+    dst_vj = os.path.join(site, "ver.json")
+    try:
+        import re as _re
+        with open(vj, encoding="utf-8") as _f:
+            _ver = json.load(_f)
+        _js = open(os.path.join(BASE, "data.js"), encoding="utf-8").read()
+        _m = _re.search(r'"synced"\s*:\s*"([^"]*)"', _js)
+        if _m and _m.group(1):
+            _ver["synced"] = _m.group(1)
+        with open(dst_vj, "w", encoding="utf-8") as _f:
+            json.dump(_ver, _f, ensure_ascii=False, indent=1)
+        print("ver.json 已注入 synced:", _ver.get("synced"))
+    except Exception as _e:
+        print("ver.json 注入 synced 失败, 回退原样拷贝:", _e)
+        shutil.copyfile(vj, dst_vj)
 av = os.path.join(BASE, "avatar.jpg")
 if os.path.exists(av):
     shutil.copyfile(av, os.path.join(site, "avatar.jpg"))
