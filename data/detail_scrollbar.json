@@ -1,0 +1,7 @@
+{
+  "rule": ".gt-dscroll",
+  "css": ".gt-dscroll{overflow:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none}\n.gt-dscroll::-webkit-scrollbar{display:none;width:0;height:0}",
+  "ver": "2026-11-09T11:13:16+0800",
+  "scope": "全部现有商品详情 + 未来新增商品详情（全局 CSS，弹层共用容器）",
+  "keep": "overflow:auto 与 -webkit-overflow-scrolling:touch 保留，滚动功能不变"
+}
