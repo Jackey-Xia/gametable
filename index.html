@@ -14,7 +14,11 @@
 <link rel="preconnect" href="https://images.weserv.nl" crossorigin>
 <!-- 改164: 移除失效的 data.js preload —— 占位符 __GT_DV__ 从未替换, 请求的 URL 与真正加载的 data.js 不一致,
      既白下 283KB, 又会把旧响应以 /data.js 为键写进 SW 缓存; 改由 gtFetchVer 拿到 synced 后动态加载。 -->
-<link rel="preload" href="covers/manifest_ps.json" as="fetch">
+<script>
+/* 改167-2: 封面清单在 HTML 解析阶段就并行拉一次, 结果缓存成 Promise 供 __GTBOOT 复用。
+   原 <link rel=preload as=fetch> 与 JS fetch 缓存键不一致, 实测同样 30KB 下了两遍。 */
+window.__GT_COVER_PS_P=fetch("covers/manifest_ps.json").then(function(r){return r&&r.ok?r.json():null;}).catch(function(){return null;});
+</script>
 <!-- ===== 分享卡片（微信 / QQ / 朋友圈）· 头像方形图 ===== -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="夏天Jackey 游戏价目表">
@@ -1195,7 +1199,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 
 <button id="toTop" class="toTop" aria-label="跳到底部" title="跳到底部">↓ 跳到底部</button>
 <script src="pinyin.js?v=20260911"></script>
-<script>window.__GT_DATA_VER="2026-11-09T11:43:33+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
+<script>window.__GT_DATA_VER="2026-11-09T15:03:38+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
 <!-- 改85: 数据文件改为动态加载(带时间戳)
      原来写死 `<script src="data.js?t=20260909155923">`, URL 恒定不变, 而 GitHub Pages 给
      data.js 的 max-age 是 600s —— 库存改完后 10 分钟内(或更久)URL 相同, 浏览器直接用缓存,
@@ -1223,17 +1227,19 @@ function gtJDb(){
 function gtJGet(k){return gtJDb().then(function(db){if(!db)return null;return new Promise(function(res){try{var t=db.transaction("kv").objectStore("kv").get(k);t.onsuccess=function(){res(t.result||null)};t.onerror=function(){res(null)}}catch(e){res(null)}})})}
 function gtJPut(k,obj){return gtJDb().then(function(db){if(!db)return;return new Promise(function(res){try{var t=db.transaction("kv","readwrite");t.objectStore("kv").put(obj,k);t.oncomplete=function(){res()};t.onerror=function(){res()}}catch(e){res()}})})}
 (function(){
-  var _booted=false,_firstSrc="";
-  /* 改162-1: 轻量取 ver.json(含 synced/cover_v/tb_v), 供各加载器比对版本, 一致则跳过对应大文件重下 */
-  function gtFetchVer(){
-    return new Promise(function(res){
+  var _booted=false,_firstSrc="",_netStarted=false;
+  /* 改167-2: 单次 ver.json Promise —— 启动链 / 版本自动刷新 / 尾部版本检查共用一次请求(原来首屏要发 3 次) */
+  window.__GT_VER=function(){
+    if(window.__GT_VER_P)return window.__GT_VER_P;
+    window.__GT_VER_P=new Promise(function(res){
       var ctrl;try{ctrl=new AbortController();}catch(e){ctrl=null;}
       var to=setTimeout(function(){try{ctrl&&ctrl.abort();}catch(e){}},15000);
-      var opt=ctrl?{signal:ctrl.signal}:{};
+      var opt={cache:"no-store"};if(ctrl)opt.signal=ctrl.signal;
       fetch("ver.json?t="+Date.now(),opt).then(function(r){clearTimeout(to);return r&&r.ok?r.json():null;})
         .then(function(j){res(j);}).catch(function(){clearTimeout(to);res(null);});
     });
-  }
+    return window.__GT_VER_P;
+  };
   function bootOnce(){
     if(_booted)return;
     var D=window.GT_DATA||window.__GT_CACHE_DATA;
@@ -1245,15 +1251,16 @@ function gtJPut(k,obj){return gtJDb().then(function(db){if(!db)return;return new
     if(window.__GTBOOT)window.__GTBOOT();        /* 首渲染: IIFE 随此初始化(HOSTS/renderPS等) */
   }
   function loadNet(){
+    if(_netStarted)return;
+    _netStarted=true; window.__GT_NET_PENDING=true;
     var s=document.createElement("script");
-    /* 改164: &s=<ver.json.synced> —— WPS 每次价格库存推送 synced 都会变, URL 随之变化,
-       绕开 GitHub Pages / 微信 WebView 对固定 URL 的强缓存; SW 侧同步改为网络优先。 */
-    s.src="data.js?v="+window.__GT_DATA_VER+"&s="+encodeURIComponent(window.__GT_SYNC||"0");
+    /* 改164: &s=<ver.json.synced> 绕开强缓存; 改167: 并行发起时用缓存/内联版本兜底, URL 不含 undefined */
+    var sv=window.__GT_SYNC||(window.__GT_CACHE_DATA&&window.__GT_CACHE_DATA.synced)||window.__GT_DATA_VER||"0";
+    var dv=window.__GT_DATA_VER||"0";
+    s.src="data.js?v="+encodeURIComponent(dv)+"&s="+encodeURIComponent(sv);
     s.onload=function(){
-      window.__GT_NET_DONE=true;
-      /* 改160/164: 首渲染用缓存时, 网络到后比对 synced: 相同仅更新缓存(防闪), 不同用新数据重渲染。
-         改164: 拆开 try —— 原写法把 gtApply 和 gtJPut 放在同一个 try 里, gtApply 抛错会连带跳过缓存写回,
-         老客 IDB 永远停留在旧库存; 现在各自独立兜底, 异常暴露到 window.__GT_APPLY_ERR。 */
+      window.__GT_NET_DONE=true; window.__GT_NET_PENDING=false;
+      /* 改160/164: 首渲染用缓存时, 网络到后比对 synced: 相同仅更新缓存(防闪), 不同用新数据重渲染 */
       if(_booted&&_firstSrc==="cache"){
         var _same=!!(window.__GT_CACHE_SYNC&&window.GT_DATA&&window.GT_DATA.synced===window.__GT_CACHE_SYNC);
         if(!_same){ try{ gtApply(window.GT_DATA); }catch(e){ window.__GT_APPLY_ERR=String(e); } }
@@ -1261,14 +1268,23 @@ function gtJPut(k,obj){return gtJDb().then(function(db){if(!db)return;return new
         return;
       }
       bootOnce();   /* 未首渲染(网络先到/缓存未命中) -> 用网络渲染 */
+      /* 改167-1: 新客首访也写回 IDB, 否则第二次打开永远没有缓存可秒出 */
+      try{ gtJPut("gt_data",{D:window.GT_DATA,synced:window.GT_DATA.synced}); }catch(e){}
     };
-    s.onerror=function(){ window.__GT_NET_DONE=true; bootOnce(); };   /* 网络失败也确保至少渲染(可能用缓存) */
+    s.onerror=function(){ window.__GT_NET_DONE=true; window.__GT_NET_PENDING=false; bootOnce(); };
     document.head.appendChild(s);
   }
-  /* 改162-1: 先读 IDB 缓存, 再取 ver.json 比对版本; 一致则纯本地秒出, 跳过 data.js 全量重下(缓存无效/版本变了才下网络) */
+  /* 改167-1: IDB 有完整缓存就立刻渲染, 版学校验挪到后台并行(老客首卡不再等于 ver.json RTT);
+     新客立即发 data.js 与 ver.json 并行, 不再串行叠加两个网络往返。 */
   gtJGet("gt_data").then(function(c){
-    if(c&&c.D&&c.D.ps){ window.__GT_CACHE_DATA=c.D; window.__GT_CACHE_SYNC=c.D.synced; }
-    return gtFetchVer();
+    var hasCache=!!(c&&c.D&&c.D.ps);
+    if(hasCache){
+      window.__GT_CACHE_DATA=c.D; window.__GT_CACHE_SYNC=c.D.synced;
+      window.__GT_INSTANT=1;
+      bootOnce();                         /* 首屏: 完整数据一次摆出, 0.1s 级 */
+    }
+    if(!hasCache)loadNet();               /* 新客: data.js 立即发, 不等 ver.json */
+    return window.__GT_VER();              /* 并行: 仅决定后续是否需要刷新 */
   }).then(function(j){
     if(j){
       window.__GT_SYNC=j.synced||null;
@@ -1277,11 +1293,15 @@ function gtJPut(k,obj){return gtJDb().then(function(db){if(!db)return;return new
       if(j.data_v)window.__GT_DATA_VER=String(j.data_v);
     }
     var cacheOK = !!(window.__GT_CACHE_DATA && window.__GT_CACHE_SYNC && window.__GT_SYNC && window.__GT_CACHE_SYNC===window.__GT_SYNC);
-    if(cacheOK){ window.__GT_INSTANT=1; bootOnce(); }   /* 缓存有效且版本一致 -> 用缓存秒出, 不下载 data.js */
-    if(_booted) return;          /* 已真正秒出, 跳过 loadNet */
-    bootOnce();
-    loadNet();
-  }).catch(function(){ bootOnce(); loadNet(); });
+    window.__GT_BOOT_SETTLED=true;
+    if(cacheOK)return;                    /* 老客版本一致: 已渲染, 不下 data.js(保持省流量) */
+    if(_booted){ if(!_netStarted)loadNet(); return; }   /* 老客版本变了: 补网络数据 -> gtApply 重渲染 */
+    if(!_netStarted)loadNet();
+  }).catch(function(){
+    window.__GT_BOOT_SETTLED=true;
+    if(!_booted)bootOnce();
+    if(!_netStarted)loadNet();
+  });
 })();
 </script>
 <script>
@@ -2015,13 +2035,22 @@ function gtMergeCovers(m){
   }catch(e){}
   /* 封面到货后若列表已渲染, 刷新当前列表让占位变封面 */
   if(rendered>0&&typeof renderPS==="function"){renderPS();}
-  /* 改72/74: 后台全量预存进 IndexedDB(全平台含微信iPhone); 完成后清理已不再引用的旧图 */
-  setTimeout(function(){
+  /* 改167-4: 后台全量预存错峰 —— 等 window.load + 浏览器空闲才开跑, 首屏关键资源不再被 3 并发抢带宽 */
+  var startPrecache=function(){
     try{var cn=navigator.connection||{};if(cn.saveData||/^(slow-2g|2g)$/.test(cn.effectiveType||""))return;}catch(e){}
     if(document.hidden)return;
-    const valid=new Set(["avatar_fill.png","bg.jpg"]);
+    const valid=new Set();   /* 改167-2: 头像/背景由页面带 ?v= 自行加载, 预存不再重复下 339KB */
     Object.keys(m).forEach(function(k){if(typeof m[k]==="string")valid.add(m[k]);});
     const arr=Array.from(valid);
+    /* 改167-4: 首屏/前两页会用到的封面排到队首, 3 并发先存它们 */
+    try{
+      var nearSet={},rows=(typeof curRows!=="undefined"&&curRows)||[];
+      for(var ri=0;ri<Math.min(rows.length,240);ri++){
+        var nm=rows[ri]&&(rows[ri].name||rows[ri]._disp);
+        if(nm&&typeof m[nm]==="string")nearSet[m[nm]]=1;
+      }
+      arr.sort(function(a,b){return (nearSet[b]?1:0)-(nearSet[a]?1:0);});
+    }catch(e){}
     GTI.total=arr.length;
     try{GTI.lastKnown=parseInt(localStorage.getItem("gtIdbLast")||"0",10)||0;}catch(e){GTI.lastKnown=0;}
     var rebuilt=0;
@@ -2051,7 +2080,13 @@ function gtMergeCovers(m){
       GTI.base=base;gtSwPaint();
       return gtCycle();
     }).catch(function(){if(!GTI.err)GTI.err="precache-fail";gtSwPaint();});
-  },2000);
+  };
+  var kickPrecache=function(){
+    if(window.requestIdleCallback)requestIdleCallback(startPrecache,{timeout:12000});
+    else setTimeout(startPrecache,6000);
+  };
+  if(document.readyState==="complete")setTimeout(kickPrecache,1200);
+  else window.addEventListener("load",function(){setTimeout(kickPrecache,1200);},{once:true});
 }
 function gtFetchJsonTO(url){
   return new Promise(function(res){
@@ -2068,7 +2103,8 @@ function gtCoverPersist(){
 /* 改162-3: 按 tab 加载拆分后的 manifest; 缺失/失败回退全量 manifest.json(保留作兜底) */
 function gtLoadTabCovers(tab){
   if(GT_COVER_LOADED[tab])return Promise.resolve(true);
-  return gtFetchJsonTO("covers/manifest_"+tab+".json").then(function(m){
+  var src=(tab==="ps"&&window.__GT_COVER_PS_P)?window.__GT_COVER_PS_P:gtFetchJsonTO("covers/manifest_"+tab+".json");
+  return src.then(function(m){
     if(m&&typeof m==="object"&&Object.keys(m).length){
       GT_COVER_LOADED[tab]=true;
       gtMergeCovers(m); gtCoverPersist();
@@ -2250,6 +2286,10 @@ function tbPaint(){
 }
 function gtFillTB(m){ if(!m||typeof m!=="object")return; var n=0;for(var k in m){if(m[k]&&/^https?:\/\//i.test(String(m[k]))){TB[tbKey(k)]=String(m[k]);n++;}} TB_N=n; var xy=m._xianyu||{};for(var k2 in xy){if(xy[k2]&&/^https?:\/\//i.test(String(xy[k2])))TB_XY[tbKey(k2)]=String(xy[k2]);} var xi=m._xid||{};for(var k3 in xi){TB_XID[tbKey(k3)]=String(xi[k3]).replace(/[^\d]/g,"");} }
 (function(){try{
+  /* 改167-2: 全页共用一份 taobao.json 结果 —— 链接表与商品 id 表不再各下一次 */
+  var __tbDone;
+  window.__GT_TB_JSON_P=new Promise(function(res){__tbDone=res;});
+  setTimeout(function(){try{__tbDone({});}catch(e){}},38000);
   /* 改162-1b: 先读 IDB 缓存秒出库存/购买按钮(微信内也秒出); 仅当缓存确有链接数据且版本(ver.json 的 tb_v)一致才跳过 taobao.json 重下;
      超时/空数据绝不留毒化缓存(空 {} 带 __v 会让后续访问永久早退) —— 2026-11-03 修复 */
   gtJGet("gt_taobao").then(function(cm){
@@ -2258,11 +2298,12 @@ function gtFillTB(m){ if(!m||typeof m!=="object")return; var n=0;for(var k in m)
       if(TB_N>0){                       /* 缓存确有数据才信任 */
         TB_READY=true; try{wxMeasure();}catch(e){} tbPaint();
         try{ if(typeof gtProg!=="undefined") gtProg.tb=true; }catch(e){}
-        if(cm.__v&&window.__GT_TB_V&&cm.__v===window.__GT_TB_V) return;   /* 版本一致且有数据 -> 纯本地, 跳过下载 */
+        if(cm.__v&&window.__GT_TB_V&&cm.__v===window.__GT_TB_V){ try{__tbDone(cm);}catch(e){} return; }   /* 版本一致且有数据 -> 纯本地, 跳过下载 */
       }
     }
     gtFetchJSON("taobao.json?t="+Date.now(),{cache:"no-store"}).then(function(m){
       m=m||{};
+      try{__tbDone(m);}catch(e){}
       gtFillTB(m);
       TB_READY=true; try{wxMeasure();}catch(e){}   /* 改153: 表到齐了才允许出「联系商家」 */
       tbPaint();
@@ -2283,7 +2324,8 @@ function tbIdOf(g){
   return mm?mm[1]:"";
 }
 (function(){try{
-  fetch("taobao.json").then(function(r){return r.ok?r.json():{}}).then(function(m){
+  (window.__GT_TB_JSON_P||Promise.resolve({})).then(function(m){
+    m=m||{};
     var ids=m._ids||{};
     for(var k in ids){TB_ID[tbKey(k)]=String(ids[k]).replace(/[^\d]/g,"");}
     /* 没单独配 id 的: 链接本身含 id 参数也照样可用 */
@@ -3241,7 +3283,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-11-09T11:43:33+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-11-09T15:03:38+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-det-preload">
 /* 改163-begin: 详情数据「空闲预加载」 —— 卡片上的「详情 ›」已同步显示、不再等数据；
    game_details.json 推迟到首屏渲染完、浏览器空闲时才拉取，不跟首屏抢带宽。
@@ -3263,7 +3305,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
   try{
     var MY=String(window.__GT_PAGE_VER||"");
     if(!MY)return;
-    fetch("ver.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(j){
+    (window.__GT_VER?window.__GT_VER():fetch("ver.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();})).then(function(j){
       var v=j&&j.v?String(j.v):"";if(j&&j.data_v)window.__GT_DATA_VER=String(j.data_v);
       if(!v)return;
       if(v===MY){
@@ -3436,6 +3478,8 @@ function gtStockSig(D){
 }
 function gtBackgroundRefresh(){
   try{
+    /* 改167-2: 启动链未定 / data.js 正在加载时不抢发第二次, 打开即调用的那次交给启动链处理 */
+    if(!window.__GT_BOOT_SETTLED||window.__GT_NET_PENDING)return;
     /* ver.json 的 synced 与本页一致 -> 数据不可能有变化, 跳过 data.js 全量重下 */
     if(window.__GT_SYNC && window.GT_DATA && window.GT_DATA.synced && window.__GT_SYNC===window.GT_DATA.synced) return;
     fetch("data.js?t="+Date.now()+"&_bg=1",{cache:"no-store"}).then(function(r){return r.text();}).then(function(txt){
@@ -3512,7 +3556,7 @@ var gtProg={total:0,done:0,data:false,tb:false};
 (function(){
   try{
     var K="gt_ver", RK="gt_ver_reloaded";
-    fetch("ver.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(function(d){
+    (window.__GT_VER?window.__GT_VER():fetch("ver.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();})).then(function(d){
       var v=d&&d.v; if(!v) return;
       var last=null; try{last=localStorage.getItem(K);}catch(e){}
       if(last && last!==v && !sessionStorage.getItem(RK)){
