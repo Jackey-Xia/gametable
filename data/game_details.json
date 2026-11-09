@@ -8655,12 +8655,49 @@
   "_cid": "UP8236-PPSA20447_00-0119011093070089"
  },
  "地平线5 极限竞速（顶级版）": {
-  "genres": [],
-  "players": "",
-  "release": "",
+  "genres": [
+   "竞速驾驶",
+   "赛车模拟",
+   "车辆收藏"
+  ],
+  "players": "本地1人，线上1-12人",
+  "release": "2025年4月25日",
   "publisher": "",
-  "shots": [],
-  "_cid": "UP6312-PPSA22327_00-0810100104879906"
+  "shots": [
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1219%2Fa39f264d4cf10a29197d28c848411e711583901dbaa6df29.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1219%2Ff786499c1bb0565b00febb2dcee8d04911bb235c310f393d.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1219%2F028499dd0faf6d1a141f0629ef5d43396c48f4d4991afcf1.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1219%2Fde66fcc463c3a31f31f27353e74df81f214b18ca530a2bed.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1219%2F088a280474227e833cb59b7f52586b1f265759c113bdf38f.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1219%2F02fb3147fc172cb0fb67a32a07de55a2ea046ab8f8f73496.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1219%2Fc52e465919d6a86df2bd075ca2ebba46cb5e3c00177fddc1.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1219%2F3da68d2eb1020edafaaa1d56b0923c427b0bfb5185fd0323.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F2722%2F1fa1f6ec04612e123570a3c01c98f43ddd57b956e7d74dca.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F2722%2F7e9a77833b8b89935843fb95187594489194b9432e0713f9.jpg&w=720&q=82&output=jpg"
+  ],
+  "_cid": "UP6312-PPSA22327_00-0810100104879906",
+  "display_name": "地平线5 极限竞速（顶级版）",
+  "en": "Forza Horizon 5（Premium Edition）",
+  "capacity": "157.0 GB",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "platforms": "PS5",
+  "intro": "终极极限竞速冒险等待着您！\n\n驾驶世界上最棒的赛车，探索墨西哥生机勃勃的开放世界景观，体验无限的驾驶乐趣。\n\n尊享版包括全新的扩展包《极限竞速：地平线 5：拉力赛冒险》、《极限竞速：地平线 5：风火轮》、VIP、汽车通行证和欢迎包。",
+  "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rcd322b788b392.jpg&w=256&q=82&output=jpg",
+  "intro_boldlines": [
+   "终极极限竞速冒险等待着您！"
+  ],
+  "intro_gap": {},
+  "_cn": "地平线5 极限竞速（顶级版）",
+  "store_name": "极限竞速：地平线 5 顶级版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "intro_plain": false,
+  "intro_pgap": false,
+  "intro_breaklines": [],
+  "intro_gexact": false
  },
  "Forza Horizon 5（Premium Edition）": {
   "genres": [],
@@ -8672,13 +8709,40 @@
  },
  "迪士尼午后合集": {
   "genres": [
-   "动作"
+   "动作战斗",
+   "像素复古",
+   "平台跳跃",
+   "怀旧合集",
+   "横版过关"
   ],
-  "players": "2人",
+  "players": "本地1-2人",
   "release": "2017年4月18日",
   "publisher": "CAPCOM ASIA",
-  "shots": [],
-  "_cid": "UP0102-CUSA06809_00-ASIAPLACEHOLDER0"
+  "shots": [
+   "https://images.weserv.nl/?url=https%3A%2F%2Fapollo2.dl.playstation.net%2Fcdn%2FUP0102%2FCUSA06809_00%2FFREE_CONTENTDHprJZJMyq405AATpeGF%2F1.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fapollo2.dl.playstation.net%2Fcdn%2FUP0102%2FCUSA06809_00%2FFREE_CONTENT1CRQtcKJDQfXFabpZUZ7%2F2.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fapollo2.dl.playstation.net%2Fcdn%2FUP0102%2FCUSA06809_00%2FFREE_CONTENTqPEbEt8BGmTUj04rdWZw%2F3.jpg&w=720&q=82&output=jpg"
+  ],
+  "_cid": "UP0102-CUSA06809_00-ASIAPLACEHOLDER0",
+  "display_name": "迪士尼午后合集",
+  "en": "The Disney Afternoon Collection",
+  "capacity": "362.9 MB",
+  "languages": [
+   "英文"
+  ],
+  "platforms": "PS5/PS4",
+  "intro": "The Disney Afternoon Collection由一众受欢迎的迪士尼角色带你重回游戏的黄金时代，并重温那些年充满冒险的下午。\n\n与Scrooge McDuck到处去寻宝、以英雄Darkwing的姿态打击罪行、化身为最精明的Baloo熊机师翱翔天际、与Chip及Dale联手对付Fat Cat。\n\n除6部经典游戏外，加插新的特点，更好的画面以及滤镜选择让玩家找回复古的感觉。\n\n此作品集带给玩家全新的方式游玩Boss Rush及Time Attak模式，以时间竞赛为卖点及有线上排行榜。另外，全新的可复原倒退功能，令新玩家可以更易上手。而历史爱好者则可享受丰富的主题艺术品、音乐等档案，重温最原始的版本。",
+  "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rcb95d22e6c706.jpg&w=256&q=82&output=jpg",
+  "intro_boldlines": [
+   "The Disney Afternoon Collection由一众受欢迎的迪士尼角色带你重回游戏的黄金时代，并重温那些年充满冒险的下午。"
+  ],
+  "intro_gap": {},
+  "_cn": "迪士尼午后合集",
+  "store_name": "The Disney Afternoon Collection",
+  "intro_plain": false,
+  "intro_pgap": false,
+  "intro_breaklines": [],
+  "intro_gexact": false
  },
  "The Disney Afternoon Collection": {
   "genres": [
@@ -8692,13 +8756,44 @@
  },
  "迪士尼 传奇米老鼠 米奇（重制版）": {
   "genres": [
-   "动作"
+   "动作战斗",
+   "关卡挑战",
+   "平台游戏"
   ],
-  "players": "1人",
+  "players": "1位玩家",
   "release": "2024年9月23日",
   "publisher": "THQ NORDIC GAMES GMBH",
-  "shots": [],
-  "_cid": "EP4389-PPSA15657_00-EPICMICKEYREMAKE"
+  "shots": [
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202402%2F0507%2F5051de70d469ab0b2a70d2aca67da94d05aa2eea51187d72.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202402%2F0507%2F7e40735a509b3c70b06c847a9426d87398c1dc807c9bb614.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202402%2F0507%2F26a83ec0f3add72724edab086fe301087b792af882729279.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202402%2F0507%2F930d1ccd9e2aefd0701a32e0267eea8a0cd6bd82d75253b0.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202402%2F0507%2Ff8f9287a995d702ba32c2fd6930c934330c236314d0f5f3b.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202402%2F0507%2Fb7dbe6ccd3a0ce3fad785802f0faabcfb25bbff1085eeb28.jpg&w=720&q=82&output=jpg"
+  ],
+  "_cid": "EP4389-PPSA15657_00-EPICMICKEYREMAKE",
+  "display_name": "迪士尼 传奇米老鼠 米奇（重制版）",
+  "en": "Disney Epic Mickey：Rebrushed",
+  "capacity": "33.7 GB",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "platforms": "PS5/PS4",
+  "intro": "《Disney Epic Mickey：Rebrushed》以充满活力的3D平台游戏形式，将迪士尼的魔力栩栩如生地呈现出来。\n\n在这部精美的重制作品中，米奇将踏上一段史诗之旅、穿越“遗弃之地”——这个世界有着各种被遗忘的迪士尼角色。你将扮演米奇，进入一个奇幻的世界，用配备的颜料和稀释剂，绘制出你的冒险旅程、勾勒出这个异世界的命运。\n\n你手中魔笔所挥出的每一划都至关重要！使用颜料来恢复原本的美丽与和谐，或使用稀释剂来改变你周围的环境，并将隐藏着的秘密逐一揭露。你的选择将会影响米奇的命运，并左右这场艺术之旅的结果。你会成为遗弃之地所需要的那位史诗英雄吗？\n\n随着你在遗弃之地的各个领域间旅行，你会遇到各种标志性的角色，例如华特·迪士尼创作的第一个角色“幸运兔奥斯华”。在深受动画电影和短片启发的众多经典平台关卡中探索，与此同时，收集虚拟迪士尼徽章，应对各种有创意的挑战，挖掘各式各样的秘密。\n\n《Disney Epic Mickey: Rebrushed》最初由沃伦·斯佩克特（Warren Spector）设想，并由紫灯工作室（Purple Lamp）加以重新构思，这款游戏采用了最先进的视觉技术，并对操控做出了改进，为这款深受喜爱的经典作品注入了新的活力。体验米奇的各种新动作新技能，例如冲刺、地面重击和疾跑。不论是老粉丝还是新玩家，都能从游戏中扣人心弦的故事中收获一段难忘的冒险体验。在这一部致敬迪士尼遗产的作品中，与米奇一起同行，揭开遗弃之地的神秘面纱。\n\n- 在重新构想出的“遗弃之地”中探索，这里充满了迪士尼的各种经久不衰的角色和故事。\n- 挥动魔法画笔：用颜料来创造，用稀释剂来做出改变。在一次次的选择中勾勒出你的故事。\n- 在一个内容丰富、叙事驱动的世界中，与迪士尼初期的明星——幸运兔奥斯华相遇。\n- 在经典的背景环境中，享受新的技能能力和增强的视觉效果带来的更出色的游戏体验。\n- 米奇现在拥有了冲刺、地面重击和疾跑等新动作。\n- 具有很高的重复可玩性，根据您自己的游玩风格以及做出的各项决定的不同，会有多种结局。",
+  "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rcda227ddcf8a2.jpg&w=256&q=82&output=jpg",
+  "intro_boldlines": [
+   "《Disney Epic Mickey：Rebrushed》以充满活力的3D平台游戏形式，将迪士尼的魔力栩栩如生地呈现出来。"
+  ],
+  "intro_gap": {},
+  "_cn": "迪士尼 传奇米老鼠 米奇（重制版）",
+  "store_name": "Disney Epic Mickey: Rebrushed",
+  "intro_plain": false,
+  "intro_pgap": false,
+  "intro_breaklines": [],
+  "intro_gexact": false
  },
  "Disney Epic Mickey：Rebrushed": {
   "genres": [
@@ -8711,12 +8806,53 @@
   "_cid": "EP4389-PPSA15657_00-EPICMICKEYREMAKE"
  },
  "迪士尼幻梦岛：与米奇和朋友们历险": {
-  "genres": [],
-  "players": "",
-  "release": "",
+  "genres": [
+   "平台跳跃",
+   "卡通画风",
+   "家庭娱乐"
+  ],
+  "players": "本地1-4人",
+  "release": "2025年5月30日",
   "publisher": "",
-  "shots": [],
-  "_cid": "UP1082-PPSA17219_00-0870447033747384"
+  "shots": [
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202501%2F3118%2F3d8bddf3c3ae832e72f68885cd641045af092910abdbc593.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202501%2F3118%2F9ba641b9abeb1e9a37e8aa2539a3e99205f5dfd0e98f7055.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202501%2F3118%2Fdb69fffe5a2c1fb9801a8b13f287fcad11de3e41aa3daabc.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202501%2F3118%2F8bbd16a8fe2ea35efe67f592988acf48a13c4cea05bd0a33.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202501%2F3118%2F9e6487c4f2d42f89bcb9a2070c5146029d4b894215d0e4ce.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202501%2F3118%2Ff4e35bb0095df0bed0382645834548181b898f25420b84ca.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202501%2F3118%2Fa001ff47163591406f73f590f533ba3de1b5a95019219ea0.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202501%2F3118%2F967b9ce2f9b048ff97e0e1f9746fe907821b77b6f264a0f5.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202501%2F3118%2Fb99589e2c412ea90afb6b68a7b513da93f877879bad223a0.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202501%2F3118%2Fbaa18d2d761bb55eb4be382af9a46de58e9022ffeacad416.jpg&w=720&q=82&output=jpg"
+  ],
+  "_cid": "UP1082-PPSA17219_00-0870447033747384",
+  "display_name": "迪士尼幻梦岛：与米奇和朋友们历险",
+  "en": "Disney Illusion Island",
+  "capacity": "10.2 GB",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "platforms": "PS5",
+  "intro": "与米奇和朋友们一起探索神秘的莫诺斯岛，找回三本神秘魔法书，拯救世界！\n\n《迪士尼幻梦岛：与米奇和朋友们历险》囊括了基础版游戏以及“你追我赶”（Keeper Up）、“莫诺斯之谜”（Mystery in Monoth）更新，外加带来史高治的全新“C.A.S.H.”扩展内容。\n\n扮演米奇和朋友们\n选择你最喜欢的角色，并在完成高空飞行平台壮举、解决有趣谜题、进行史诗般 Boss 战的过程中，不断解锁特殊能力。\n\n揭开迪士尼幻梦岛的神秘面纱\n在美丽而神秘的岛屿上奔跑、游泳、摆荡、跳跃，发现丰富的生物群落、有趣的角色和隐藏的秘密。\n\n在 4 人合作模式中与好友同乐\n进行单人游戏，或者召集最多三位好友，在 4 人沙发合作模式中拯救莫诺斯岛。与朋友组队并使用独特的技能，例如绳降、蛙跳和爱心礼物拥抱。\n\n融入真正的米奇卡通\n通过手绘动画、精心编排的原创乐谱和真实的配音，体验全新的米奇和朋友们冒险之旅。",
+  "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc0884f33256bc.jpg&w=256&q=82&output=jpg",
+  "intro_boldlines": [
+   "与米奇和朋友们一起探索神秘的莫诺斯岛，找回三本神秘魔法书，拯救世界！",
+   "扮演米奇和朋友们",
+   "揭开迪士尼幻梦岛的神秘面纱",
+   "在 4 人合作模式中与好友同乐",
+   "融入真正的米奇卡通"
+  ],
+  "intro_gap": {},
+  "_cn": "迪士尼幻梦岛：与米奇和朋友们历险",
+  "store_name": "迪士尼幻梦岛：与米奇和朋友们历险 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "intro_plain": false,
+  "intro_pgap": false,
+  "intro_breaklines": [],
+  "intro_gexact": false
  },
  "Disney Illusion Island": {
   "genres": [],
@@ -8727,12 +8863,54 @@
   "_cid": "UP1082-PPSA17219_00-0870447033747384"
  },
  "地狱之刃2：塞娜的传说": {
-  "genres": [],
-  "players": "",
-  "release": "",
+  "genres": [
+   "心理恐怖",
+   "动作冒险",
+   "剧情探索",
+   "北欧神话"
+  ],
+  "players": "1位玩家",
+  "release": "2025年8月12日",
   "publisher": "",
-  "shots": [],
-  "_cid": "227151"
+  "shots": [
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202505%2F2009%2F39f7f68533a6aabf0d56d7c1a32e2b9b718135d1bcf43bf1.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202505%2F2009%2F684b7efb50310cdbd1e3d7bdf40899f052724f7fcd26c383.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202505%2F2009%2Fa8ec09f259dd87f32c43b7fedff664a177082dd2bad63276.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202505%2F2009%2F3d14402ae837867ed0b5a2e8f822becdb3e893dd7801ca46.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202505%2F2009%2F06263e0e31a124c9b0d0c731588897ed115d0e24c1aba0a4.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202505%2F2009%2Faa5bdacf1443792d71bbd4423d5ea693710edfdfdc477ab2.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202505%2F2009%2F2116d11262902d13a6855ad07c03567c156faca0e7246d7a.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202505%2F2009%2F1e717038c893edf4926630f1645bdcc5a1bc957e1a1e64eb.jpg&w=720&q=82&output=jpg"
+  ],
+  "_cid": "EP6311-PPSA25991_00-0714721000209651",
+  "display_name": "地狱之刃2：塞娜的传说",
+  "en": "Senua's Saga: Hellblade II",
+  "capacity": "41.2 GB",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "platforms": "PS5",
+  "intro": "作为屡获殊荣的 Hellblade: Senua’s Sacrifice 的续作，塞娜再度现身，将在维京冰岛的神话背景和磨难下踏上一段残酷的生存之旅。\n\n塞娜一心想要拯救那些沦为暴政恐怖受害者的人们，为此她面临着一场战胜内心与外界黑暗的战斗。\n\nHellblade II: Senua’s Saga 针对 PlayStation 5 进行了优化，并支持 PS5 Pro 增强功能，增添了特色内容以及沉浸式触觉反馈，为玩家带来全新方式，去体验塞娜这一屡获殊荣且广受赞誉的故事新篇章。\n\n塞娜的故事仍在继续\n塞娜再度现身，将在维京冰岛的神话背景和磨难下踏上一段残酷的生存之旅。\n\n一场精心打造的电影般沉浸式体验\n凭借精美逼真的视觉效果与极具感染力的音效，深度沉浸于塞娜的世界与故事之中。\n\n体验塞娜独特的视角\n以一位患有精神疾病的凯尔特战士的视角，通过塞娜的所见所闻来体验这个世界。\n\n踏上前往维京冰岛的旅程\n这是一场跨越 10 世纪冰岛的史诗般旅程，游戏世界依据真实地点精心重现，细节令人惊叹。\n\n每一场战斗都诉说着一个故事\n当塞娜为生存而战时，展开的是残酷且极具震撼力的战斗。\n\n屡获殊荣的体验\n在游戏大奖（TGA）、2025 年 BAFTA 游戏奖等众多奖项中，获得了广受赞誉的佳绩。",
+  "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rcbfb61cac0401.jpg&w=256&q=82&output=jpg",
+  "intro_boldlines": [
+   "作为屡获殊荣的 Hellblade: Senua’s Sacrifice 的续作，塞娜再度现身，将在维京冰岛的神话背景和磨难下踏上一段残酷的生存之旅。",
+   "塞娜的故事仍在继续",
+   "一场精心打造的电影般沉浸式体验",
+   "体验塞娜独特的视角",
+   "踏上前往维京冰岛的旅程",
+   "每一场战斗都诉说着一个故事",
+   "屡获殊荣的体验"
+  ],
+  "intro_gap": {},
+  "_cn": "地狱之刃2：塞娜的传说",
+  "store_name": "Hellblade II: Senua’s Saga (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "intro_plain": false,
+  "intro_pgap": false,
+  "intro_breaklines": [],
+  "intro_gexact": false
  },
  "Senua's Saga: Hellblade II": {
   "genres": [],
@@ -8744,13 +8922,54 @@
  },
  "夺宝奇兵/印第安纳琼斯：古老之圈（高级版）": {
   "genres": [
-   "冒险"
+   "第一人称",
+   "剧情冒险",
+   "电影叙事",
+   "古迹探秘"
   ],
-  "players": "1人",
-  "release": "2025年4月15日",
+  "players": "1位玩家",
+  "release": "2025年9月4日",
   "publisher": "Bethesda Softworks",
-  "shots": [],
-  "_cid": "UP1003-PPSA26786_00-PREMIUMEDITION00"
+  "shots": [
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202408%2F1520%2F4011b3b2b419b9e7f56aca88bbd76f9e35a699bf55885002.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202408%2F1520%2Ff89153c9bb46ff88548a052bca4d545bb29c91fb3fa97261.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202408%2F1520%2F90bfb371de3c3ca7eac1a8941c7a9ca25e4dd63f9c2af1e4.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202408%2F1520%2F4ccb3c027b89461edcf9e70780421e96f0b45daa9df7a55c.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202408%2F1520%2Fcb2925b00cc52bd0370ae37666686735eaba25217706d69c.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202408%2F1520%2F9ea72b53c5300ed3cfde3b8b6365f0d23f562ca9e2b1b158.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202408%2F1520%2Fabc89156a3e28cbf6435d465556bd89134361c27efdfc573.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202408%2F1520%2F392fd348d09fc171c1050166113157dc897e681f1228b36e.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202408%2F1520%2Fa0a099e3e70c51df4f133c4cb58219a4092e239adb0d6e01.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202506%2F0414%2Fb5b89138e627b5a7b05acc567c669f9598c4c86c1a2ed570.jpg&w=720&q=82&output=jpg"
+  ],
+  "_cid": "UP1003-PPSA26786_00-PREMIUMEDITION00",
+  "display_name": "夺宝奇兵/印第安纳琼斯：古老之圈（高级版）",
+  "en": "Indiana Jones and the Great Circle（Premium Edition）",
+  "capacity": "140.2 GB",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "platforms": "PS5",
+  "intro": "购买《夺宝奇兵：古老之圈™》豪华版，体验冒险之旅！\n包括：\n• 基础版游戏（密钥）\n• 《夺宝奇兵：古老之圈™》巨人教团故事DLC （自2025年9月4日起也可单独购买，需要基础版游戏）\n• 数字艺术画册\n• 魔域奇兵™套装\n\n在《夺宝奇兵：古老之圈™》这款第一人称单人冒险游戏中，揭开历史上最伟大的谜团之一吧。\n故事设定在《法柜奇兵™》和《圣战奇兵™》之间，游戏背景是1937年，邪恶势力正在全球范围内，搜寻与古老之圈相关的远古力量之奥秘。唯有一人可以阻止他们——那就是印第安纳·琼斯™。\n\n在这款电影动作冒险游戏中，你将扮演这位传奇的考古学家。游戏由屡获殊荣的游戏工作室MachineGames（曾开发出备受赞誉的《Wolfenstein》系列）打造，并由名人堂级游戏设计师Todd Howard担任执行制作人。\n\n你就是印第安纳·琼斯\n在这个扣人心弦的故事中，扮演印第安纳·琼斯，体验一段缤纷冒险之旅，充满着丰富的探索、身临其境的动作、以及耐人寻味的谜题。身为这位以才思敏锐、足智多谋和标志性幽默而闻名的杰出考古学家，你将环游世界，并与敌对势力展开竞争，揭开有史以来最伟大的谜团之一。\n\n神秘世界等待着你\n从马歇尔学院的厅堂，到梵蒂冈的腹地；从埃及的金字塔，到素可泰的沉没神庙。更多领域，超乎想象。夜深人静的一场入侵意外，让你与一位神秘的巨人发生了冲突。故事由此展开，你必须出发揭露这起看似不起眼的文物盗窃事件背后，惊天动地的秘密。你将与各种有趣的角色打交道，一边建立新的联盟，一边遭遇熟悉的敌人，同时还要以巧思和智慧解开古老谜题，并全力从激烈冲突中生存下来。\n\n鞭辟入里的动作\n印第安纳的标志性鞭子仍然是他装备的核心，可以用来分散敌人的注意力、解除武装，并进行攻击。但鞭子并不仅仅是一件武器，也是印第驾驭环境的最宝贵工具。你能利用鞭子越过毫无戒心的巡逻队，并攀爬峭壁、顺利前行，穿越这令人惊叹的世界。你与敌人的斗争与解开谜团的过程中，结合了潜行渗透、紧张刺激的近战格斗与火力对抗。\n\n探索精神\n通过线性、叙事驱动的游戏玩法和开放地图的精彩融合，你将进行一场冒险体验。尽情发挥你内心的探险精神，发掘一个充满着迷人秘密、致命陷阱和棘手谜题的世界。任意一个角落都有可能藏着下一个谜团的片段——或是蛇。为什么非得是蛇呢？",
+  "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc924edea2be59.jpg&w=256&q=82&output=jpg",
+  "intro_boldlines": [
+   "购买《夺宝奇兵：古老之圈™》豪华版，体验冒险之旅！",
+   "包括：",
+   "你就是印第安纳·琼斯",
+   "神秘世界等待着你",
+   "鞭辟入里的动作",
+   "探索精神"
+  ],
+  "intro_gap": {},
+  "_cn": "夺宝奇兵/印第安纳琼斯：古老之圈（高级版）",
+  "store_name": "夺宝奇兵：古老之圈：Premium Edition",
+  "intro_plain": false,
+  "intro_pgap": false,
+  "intro_breaklines": [],
+  "intro_gexact": false
  },
  "Indiana Jones and the Great Circle（Premium Edition）": {
   "genres": [
@@ -8764,14 +8983,52 @@
  },
  "地狱即我们": {
   "genres": [
-   "冒险",
-   "动作"
+   "第三人称",
+   "动作冒险",
+   "剧情推理"
   ],
-  "players": "1人",
+  "players": "1位玩家",
   "release": "2025年9月4日",
   "publisher": "NACON SA",
-  "shots": [],
-  "_cid": "EP6665-PPSA09259_00-HIU0000000000000"
+  "shots": [
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202610%2F0614%2Ff6555f843edb3e881b9141f513da6f22a8686dcf19045b33.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202610%2F0614%2Fb504bd160b4d1fed64e34b2803a4d260328792338b3324a0.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202610%2F0614%2F5f3ebc560513b8f4b329f99393b8b065356f11c8b57d6b8f.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202610%2F0614%2F3434039fc13fc08066a5514018e2c305d91c527618fdb604.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202610%2F0614%2F8d8985b0787842e8c27b01a74a8b3b12481c0c5b77696905.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202610%2F0614%2F5593f3b81fa9325d7bdb3460e81086160dd86469c7b53ac5.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202610%2F0614%2Fe4b4480848a90fc9a1a191511a6bc922ea00b992aec3aeba.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202610%2F0614%2F6bdcb08b788373c6bd311d12056a06209942ee411ba64b57.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202610%2F0614%2Ff92d678c0fc9fc8758fc4617ca977eeb4e2ab9ef6a4e735d.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202610%2F0614%2F689c78df4391188919397c1c5468e5f2ffc1988a991bf75e.jpg&w=720&q=82&output=jpg"
+  ],
+  "_cid": "EP6665-PPSA09259_00-HIU0000000000000",
+  "display_name": "地狱即我们",
+  "en": "Hell is Us",
+  "capacity": "21.7 GB",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "platforms": "PS5",
+  "intro": "如果战争是我们最所接近的人间地狱，那会因为这世界上藏着最可怕的恶魔——人类。在一个被内乱摧残与世隔绝的国家，发现你过去的秘密，应对一场神秘灾难的后果。\n\n《Hell is Us》是一款第三人称动作冒险游戏，结合了激烈的肉搏战和探索的刺激。探索半开放的世界，寻找问题的答案，并在旅途中迎战神秘生物。\n\n充满敌意的世界\n除了分裂国家的内乱，该地区也正面临一场神秘的灾难，这场灾难催生了任何现代武器都无法击败的超自然生物。你的无人机和来自不同时代的剑是你忠实的盟友，陪伴你在布满可怕怪物的土地上开辟道路，并试图解开它们出现的谜团。\n\n独特的探索系统\n没有地图、没有指南针、也没有任务标记，跟随直觉就是你冒险的一部份。享受使用创新叙事和关卡设计的独特体验，让你在探索的过程中自己做决定并按直觉行事。你的发现只会属于你。\n\n与原始生物作战\n剑、长矛和斧头：有一系列专门为对抗这些超自然生物而锻造的武器。你需要学习如何对抗这些怪物，并明智地使用无人机以保生命无忧。\n\n“《Hell is Us》的主轴即是：人类暴力是一个由人类情感和激情推动的永恒循环。”——创意总监 Jonathan Jacques-Belletête",
+  "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rce0d60f349e6f.jpg&w=256&q=82&output=jpg",
+  "intro_boldlines": [
+   "如果战争是我们最所接近的人间地狱，那会因为这世界上藏着最可怕的恶魔——人类。在一个被内乱摧残与世隔绝的国家，发现你过去的秘密，应对一场神秘灾难的后果。",
+   "充满敌意的世界",
+   "独特的探索系统",
+   "与原始生物作战",
+   "“《Hell is Us》的主轴即是：人类暴力是一个由人类情感和激情推动的永恒循环。”——创意总监 Jonathan Jacques-Belletête"
+  ],
+  "intro_gap": {},
+  "_cn": "地狱即我们",
+  "store_name": "Hell is Us",
+  "intro_plain": false,
+  "intro_pgap": false,
+  "intro_breaklines": [],
+  "intro_gexact": false
  },
  "Hell is Us": {
   "genres": [
@@ -8785,12 +9042,54 @@
   "_cid": "EP6665-PPSA09259_00-HIU0000000000000"
  },
  "达尔文悖论": {
-  "genres": [],
-  "players": "",
-  "release": "",
+  "genres": [
+   "冒险",
+   "平台解谜",
+   "卡通画风",
+   "剧情探索"
+  ],
+  "players": "1位玩家",
+  "release": "2026年4月2日",
   "publisher": "",
-  "shots": [],
-  "_cid": "UP0101-PPSA29595_00-0921775211935640"
+  "shots": [
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1300%2F3b7c31db0d4d7464ca73756b97582d70441eb255e79124c2.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1300%2Fa3625c046f240456dca863dc60074dd694181664bbafd370.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1300%2Fd51b0bd08567ae8f61be3f7b437fabf87b9b94f4905b50c1.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1300%2Fc39a0278b062c57f911035762914e3267861800e97e9f385.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1300%2F157c8f0067b74f1e1ee4b873eefbd3e72b27c5dda7185535.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1300%2F7d2730cf0dd045958db35db1d67b5def375218e87608104b.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202502%2F1300%2Fa56a45f3544ab8a26027a63d81d5912e08a44b32b3c0df8d.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202511%2F0718%2Fba451c107597116e1142c707fe7edf368dfdb0cad97cb0f7.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202511%2F0718%2F471cf492fb83ecfa00bb362154d577ba390daca6671dd24f.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202511%2F0718%2F5b72fdbb87adb10bacd89cc6fd1198d40ba3f2c2601c00c1.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202511%2F0718%2F96eaabdf07b8aa4245441078dc4c22c1c4a33e8787dbeac4.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202511%2F0718%2F0e46f60701af250fad1b06a173c3d06817b5b4f0627bdd3d.jpg&w=720&q=82&output=jpg"
+  ],
+  "_cid": "UP0101-PPSA36024_00-0453951512571586",
+  "display_name": "达尔文悖论",
+  "en": "Darwin's Paradox",
+  "capacity": "7.3 GB",
+  "languages": [
+   "中文",
+   "英文"
+  ],
+  "platforms": "PS5",
+  "intro": "和达尔文一起踏上一场堪比动画电影的宏大冒险！\n\n达尔文是一只聪明可爱的章鱼，被什么人从海洋家乡中强行带走，困在了这座巨大而神秘的工业建筑之中。\n\n在这款集平台跳跃、冒险和解密要素于一体的游戏中，你要利用达尔文过人的智慧和独特的能力——游泳、伪装、还有更多精彩技能——帮他突破重重险阻。\n\n故事开始于和平广阔的大海中。年轻的章鱼达尔文本在自在地探索深海，但一道诡异的光束划破了深渊，将他吸向了水面。达尔文醒过来时，发现自己身处一座巨大的废弃工厂，四周堆满了工业垃圾。\n\n但明显有什么地方不对。工厂里四处都是充满威胁的机械、神秘的培育缸、以及住在这里的各种危险的生物和角色。达尔文很快便意识到，自己正身处险境。想要重返大海故乡，达尔文必须要利用智慧，不断进化，克服困难。在这段历险中，玩家也会逐步揭开这背后暗藏的足以撼动人类命运的惊天阴谋！\n\n堪比动画电影的宏大冒险\nDarwin's Paradox拥有丰富的美术风格和鲜活的世界，带领玩家体验视觉与情感的史诗，其中每一处细节都让这个不可思议的故事更加完整。\n\n原创玩法\n这款游戏完美的平衡了平台游戏的节奏感和精彩的解谜时刻。游泳，躲藏，潜入，跳跃，利用章鱼的超凡能力在冒险中前进，逃离危险的境地，解开游戏里诸多谜题。\n\n鲜活的互动世界\n探索复杂的关卡，体验独特而精致的美术风格。每一关中都充满了谜题、危险以及惊艳的生物与角色。\n\n令人身临其境的悲情故事\n达尔文带你踏上难忘的漫长旅途，品味其中的幽默、激情和悬疑。",
+  "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rcbc148b48379d.jpg&w=256&q=82&output=jpg",
+  "intro_boldlines": [
+   "和达尔文一起踏上一场堪比动画电影的宏大冒险！",
+   "堪比动画电影的宏大冒险",
+   "原创玩法",
+   "鲜活的互动世界",
+   "令人身临其境的悲情故事"
+  ],
+  "intro_gap": {},
+  "_cn": "达尔文悖论",
+  "store_name": "达尔文悖论！ (简体中文, 英语)",
+  "intro_plain": false,
+  "intro_pgap": false,
+  "intro_breaklines": [],
+  "intro_gexact": false
  },
  "Darwin's Paradox": {
   "genres": [],
@@ -9434,5 +9733,64 @@
    "《我之罪》DLC"
   ],
   "intro_gap": {}
+ },
+ "第一狂战士：卡赞（豪华版）": {
+  "display_name": "第一狂战士：卡赞（豪华版）",
+  "en": "The First Berserker：Khazan（Deluxe Edition）",
+  "genres": [
+   "类魂动作",
+   "黑暗奇幻",
+   "剧情探索",
+   "硬核战斗"
+  ],
+  "capacity": "27.6 GB",
+  "players": "1位玩家",
+  "languages": [
+   "中文",
+   "日文",
+   "韩文",
+   "英文"
+  ],
+  "release": "2025年3月27日",
+  "platforms": "PS5",
+  "intro": "《The First Berserker：Khazan DELUXE EDITION》内含：\n\n1. 《The First Berserker: Khazan》（完整游戏）\n\n2. 英雄武器套装\n・英雄刀斧\n・英雄长枪\n・英雄巨剑\n\n3. 英雄防具套裝\n・英雄头盔\n・英雄护腕\n・英雄臂甲\n・英雄腿甲\n・英雄军靴\n\n4. 数字版原画集\n・可在游戏主菜单中查看原画集，欣赏多种专属游戏概念原画。\n\n※ 英雄系列武器与防具套装仅限购买《The First Berserker: Khazan DELUXE EDITION》的玩家领取，无法通过其他途径获取。\n※ 该武器与防具可用于装饰，玩家也可通过强化和更改选项，使其成为可持续使用的装备。\n※ 完成任务2后，可前往边界裂缝，在装有专属福利的木桶中领取英雄系列武器&防具套装。\n※ 部分内容可能需要将游戏更新至最新版本后方可使用。\n\n[游戏介绍]\n本作以地下城与勇士世界观800年前的故事为背景，您将踏入硬核动作RPG的恢弘世界，探索阿拉德大陆，并揭开大将军卡赞不为人知的往事。您还将与形形色色的敌人和BOSS展开策略性战斗，体验富有深度且沉浸式的战斗系统。快来体验《The First Berserker: Khazan》的残酷战斗，看看您能否成为“第一狂战士”，完成卡赞的复仇之路。\n\n[狂战士的暴走]\n使用技能点解锁多样技能，释放卡赞内在的狂战士本能，在战场上大杀四方吧。想换种方式横扫战场？游戏中技能加点支持随时重置，让玩家可以灵活搭配不同技能，对战各类BOSS，寻找最强连招，突破生存极限。\n\n[直面陨落/身经百战的大将军]\n在死亡面前低头？不，对卡赞而言，失败只是通往强者之路的一环。即使倒下，只要能收回拉克里玛，便能重获在浴血奋战中积累的全部经验。从跌倒之处重新站起，继续踏上复仇之路，无论遇到何种试炼，都别停下脚步。\n\n[整装待发，迎战强敌！]\n在复仇之旅中，卡赞会获得各类武器和装备。集齐套装并穿戴后，可解锁独特能力和技能，从而扭转战局。您还可以根据个人喜好，自由搭配装备道具，打造属于自己的战斗风格。\n\n[史诗级BOSS]\n游戏中，每个BOSS都拥有独特的攻击模式、弱点和能力，为您带来难忘的战斗体验。这些BOSS战不仅考验您的策略和反应能力，还需要您深入理解战斗系统。通过灵活运用卡赞的多种武器和技能，根据不同BOSS的特性调整战术，您将能够在战场中游刃有余。\n\n[动画与3A的邂逅]\n《The First Berserker: Khazan》采用独特的3D渲染画风，让阿拉德世界如动画电影般生动呈现在您的眼前。游戏大胆融合动画渲染技术与写实纹理设计，勾勒出地下城与勇士宇宙的核心元素，为您带来沉浸感十足的视觉体验。\n\n[愈战愈勇]\n通关后将解锁“绝命征途”模式，可在“大将军的激战”与“狂战士的血战”中，与强大的BOSS展开激烈战斗，持续磨练战技。您可以选择攻略不同类型的BOSS组，也可一口气连战16个BOSS，成为真正的狂战士。收集赢得挑战后获得的战斗勋章，兑换特殊装备道具，见证自己的成长吧！",
+  "shots": [
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202312%2F1802%2Fc530111d34848a38ba545e6641aad483aa03ebd7beff6603.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202312%2F1802%2F927adb172896d41fdabc085a3ba25fdb310d399226f07b3b.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202312%2F1802%2F5397b72afab023a35da5fe23cf4afa420d61c313a1dce814.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202312%2F1802%2F5bf7c7e56f766894a936657a6717450714354ed2acdff1fd.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202312%2F1802%2F5e317df3992edf9cf7e987d0befbbbfa34452c59b5cf86d0.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202312%2F1802%2F89d7f26803f98ed9b37bab6f65e44168db629c4ca217b3be.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202312%2F1802%2F7ea10405a25ae68acffc1ead7ec63fe4de9182a832013927.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202312%2F1802%2F54ae03fbfe26a0cd5e73e67b8c4712095899dd2f29e859af.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202312%2F1802%2F82217e33ccee2c0c217ec117d496c924c3a72f473893e047.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202312%2F1802%2F89c3da88b9f4eaed8b464a50bdf7753fac3bf4236d2c3dc8.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202412%2F1209%2Ffbca83b5acc58ae0a7beec5b780beb1c836b303f38c604ff.jpg&w=720&q=82&output=jpg",
+   "https://images.weserv.nl/?url=https%3A%2F%2Fvulcan.dl.playstation.net%2Fap%2Frnd%2F202411%2F2508%2F0b20f454927e596e22547e656e891757d8938695fda8328b.jpg&w=720&q=82&output=jpg"
+  ],
+  "cover": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rca29f004d3068.jpg&w=256&q=82&output=jpg",
+  "intro_boldlines": [
+   "《The First Berserker：Khazan DELUXE EDITION》内含：",
+   "[游戏介绍]",
+   "[狂战士的暴走]",
+   "[直面陨落/身经百战的大将军]",
+   "[史诗级BOSS]",
+   "[动画与3A的邂逅]",
+   "[愈战愈勇]"
+  ],
+  "intro_nobold": [
+   "2. 英雄武器套装",
+   "3. 英雄防具套裝",
+   "4. 数字版原画集"
+  ],
+  "intro_gap": {},
+  "_cn": "第一狂战士：卡赞（豪华版）",
+  "_cid": "UP8236-PPSA20447_00-0119011093070089",
+  "store_name": "The First Berserker: Khazan Deluxe Edition (日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "publisher": "",
+  "intro_plain": false,
+  "intro_pgap": false,
+  "intro_breaklines": [],
+  "intro_gexact": false
  }
 }
