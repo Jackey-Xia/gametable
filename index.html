@@ -1032,7 +1032,10 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
   
   <div class="hero-inner">
     <div class="brand">
-      <div class="logo"><img src="avatar_fill.png?v=1794063534" alt="夏天Jackey"></div>
+      <!-- 改168-1: logo 实际只显示 46×46，原图却是 976×976 / 339KB，本机实测下载 59.8s 并压住 load 事件。
+     icon.png 是线上同一图案的 180×180 / 28KB 版本，且作为 favicon 本来就会被下载 —— 直接复用，
+     零新增文件、零图片替换，46×46 下平均像素差仅 0.315/255（肉眼不可辨）。 -->
+      <div class="logo"><img src="icon.png?v=2" alt="夏天Jackey"></div>
       <div>
         <h1>「夏天Jackey」PS数字版游戏</h1>
         <div class="sub">千款游戏 · 会员特价 · 一人一号</div>
@@ -1198,8 +1201,32 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
 </footer>
 
 <button id="toTop" class="toTop" aria-label="跳到底部" title="跳到底部">↓ 跳到底部</button>
-<script src="pinyin.js?v=20260911"></script>
-<script>window.__GT_DATA_VER="2026-11-09T15:03:38+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
+<!-- 改168-2: 拼音表改为「首屏渲染完 + 浏览器空闲」才动态加载。
+     原同步脚本标签会阻塞 HTML 解析（本机实测 30KB 传输耗时 6.5s），商品卡被它拖住；
+     同音搜索是兜底功能，表到位后自动生效；若顾客在表到位前已搜到「无结果」，到位后补跑一次。 -->
+<script>
+(function(){
+  var done=false;
+  var load=function(){
+    if(done||window.GT_PINYIN)return; done=true;
+    var sc=document.createElement("script");
+    sc.src="pinyin.js?v=20260911"; sc.async=true;
+    sc.onload=function(){
+      try{
+        var q=document.getElementById("q");
+        if(q&&q.value.trim()&&!document.querySelectorAll("#psList .gcard").length)
+          q.dispatchEvent(new Event("input",{bubbles:true}));
+      }catch(e){}
+    };
+    document.head.appendChild(sc);
+  };
+  window.__GT_PY_LOAD=load;               /* 供同音搜索即时唤起 */
+  if(window.requestIdleCallback)requestIdleCallback(load,{timeout:2000});
+  window.addEventListener("load",load);  /* 首屏资源完成后 */
+  setTimeout(load,4000);                 /* 兜底：任何环境下都不会让同音搜索失效 */
+})();
+</script>
+<script>window.__GT_DATA_VER="2026-11-09T16:10:07+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
 <!-- 改85: 数据文件改为动态加载(带时间戳)
      原来写死 `<script src="data.js?t=20260909155923">`, URL 恒定不变, 而 GitHub Pages 给
      data.js 的 max-age 是 600s —— 库存改完后 10 分钟内(或更久)URL 相同, 浏览器直接用缓存,
@@ -1543,14 +1570,17 @@ function subseq(needle,hay){let i=0;for(let j=0;j<hay.length&&i<needle.length;j+
 var PYM=window.GT_PINYIN||{};
 function toPY(s){
   s=normStr(s);let out="";
+  var pym=window.GT_PINYIN||PYM||{};   /* 改168-2: 惰性取，拼音表可能后到 */
   for(const ch of s){
-    if(PYM[ch])out+=PYM[ch];
+    if(pym[ch])out+=pym[ch];
     else if(/[a-z0-9]/.test(ch))out+=ch;
     /* 库外生僻字/符号: 跳过, 不阻断其余字的匹配 */
   }
   return out;
 }
 function homophoneRows(q){
+  /* 改168-2: 顾客真用到同音搜索时若拼音表还没到，立刻加载；onload 会自动补跑一次搜索 */
+  if(!window.GT_PINYIN&&window.__GT_PY_LOAD)try{window.__GT_PY_LOAD();}catch(e){}
   const qpy=toPY(q);
   if(!qpy)return [];
   /* 中文名同音优先(更相关), 没有再退而用英文名同音(如"慢"→batMAN/dysMANtle) */
@@ -2542,7 +2572,19 @@ function gtFetchJSON(url, opts){
 function gtDetLoad(){
   if(__GTDET)return Promise.resolve(__GTDET);
   if(__GTDET_PEND)return __GTDET_PEND;
-  __GTDET_PEND=gtFetchJSON("game_details.json?v="+window.__GT_DATA_VER).then(function(d){__GTDET=d||{};return __GTDET;});
+  __GTDET_PEND=gtFetchJSON("game_details.json?v="+window.__GT_DATA_VER).then(function(d){
+    __GTDET=d||{};
+    /* 改168-3: 数据到手后，统一复核首屏登记的「详情 ›」按钮（原本是每张卡渲染时各做一次，
+       代价是首屏就把 192KB 详情数据拉下来）。 */
+    try{
+      var todo=window.__GT_HINT_TODO||[];
+      for(var i=0;i<todo.length;i++){
+        if(!gtFindDet(__GTDET,todo[i].g)){try{todo[i].el.remove();}catch(e){}}
+      }
+      window.__GT_HINT_TODO=[];
+    }catch(e){}
+    return __GTDET;
+  });
   return __GTDET_PEND;
 }
 /* 改157d：灯箱带左右切换 —— 支持手势滑动 + ‹›按钮 + 键盘方向键；仍禁长按保存 */
@@ -2854,7 +2896,16 @@ function gameCard(g,idx){
   var _gth=document.createElement("span");_gth.className="gt-hint";_gth.innerHTML='详情 <i class="gt-ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></i>';
   _gth.onclick=function(ev){ev.stopPropagation();openDetail(g);};
   nm.appendChild(_gth);
-  gtDetLoad().then(function(det){if(!gtFindDet(det,g)){try{_gth.remove();}catch(e){}}});
+  /* 改168-3: 不在每张卡渲染时触发 gtDetLoad() —— 那会让 192KB 详情数据在首屏就下载。
+     仅登记待复核；顾客第一次点开「详情 ›」时才由 openDetail() 真正取数据。 */
+  if(__GTDET){if(!gtFindDet(__GTDET,g)){try{_gth.remove();}catch(e){}}}
+  else{(window.__GT_HINT_TODO||(window.__GT_HINT_TODO=[])).push({el:_gth,g:g});}
+  /* 改168-3b: 顾客手指/鼠标一碰到「详情 ›」就提前取数据。首屏仍然完全不下载，
+     但真正点开时数据大概率已就绪，不会盯着「加载中…」等一个网络往返。 */
+  var prefetch=function(){try{gtDetLoad();}catch(e){}};
+  _gth.addEventListener("mouseenter",prefetch,{once:true});
+  _gth.addEventListener("touchstart",prefetch,{once:true,passive:true});
+  _gth.addEventListener("pointerdown",prefetch,{once:true});
   return card;
 }
 
@@ -3283,19 +3334,13 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-11-09T15:03:38+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="2026-11-09T16:10:07+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
 <script id="gt-det-preload">
-/* 改163-begin: 详情数据「空闲预加载」 —— 卡片上的「详情 ›」已同步显示、不再等数据；
-   game_details.json 推迟到首屏渲染完、浏览器空闲时才拉取，不跟首屏抢带宽。
-   用户在此之前点开详情会看到「加载中…」，数据到了自动填充。 */
-(function(){
-  try{
-    var kick=function(){try{gtDetLoad();}catch(e){}};
-    if(window.requestIdleCallback){requestIdleCallback(kick,{timeout:2500});}
-    else{setTimeout(kick,1000);}
-  }catch(e){}
-})();
-/* 改163-end */
+/* 改168-3: 详情数据改为「真点开才取」。
+   openDetail() 里的 gtDetLoad() 会在顾客第一次点「详情 ›」时才发起请求；
+   老客命中 SW/HTTP 缓存几乎无等待；首屏省下约 192KB 传输。
+   （原改163 的空闲预加载块在独立脚本块里，gtDetLoad 属于上方 IIFE，
+     全局访问不到，调用必然抛错被 catch 吞掉 —— 实际从未生效，此处正式移除。） */
 </script>
 <script id="gt-autorefresh">
 /* 改157f-begin: 版本自动刷新健壮版 —— 修复改143「空刷一次即锁死」缺陷。
