@@ -88,9 +88,5 @@ jobs:
         with:
           path: site
 
-      # ★ 改176(2026-11-10): 病根是 deploy-pages@v4 内部 timeout 默认600000ms(10min)轮询上限；放宽到30min
-      # job/step 级 timeout-minutes 管不到 action 内部轮询，必须走 with.timeout；设35min避免先于内部掐断
+      # ★ 改176 回退(2026-11-10)：deploy-pages@v4 内部 timeout 硬上限600000ms(10min)，改175 timeout-minutes / 改176 with.timeout 均无效已撤；Pages 后端 syncing_files 偶发>10min 失败只取消当次发布、不回滚、不影响线上，等自愈或重跑即可
       - uses: actions/deploy-pages@v4
-        timeout-minutes: 35
-        with:
-          timeout: 1800000
