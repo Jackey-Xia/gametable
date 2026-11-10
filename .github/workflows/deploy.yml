@@ -88,4 +88,6 @@ jobs:
         with:
           path: site
 
+      # ★ 改175(2026-11-10): Pages 后端 syncing_files 偶发 >10min, 放宽步骤超时避免误判失败
       - uses: actions/deploy-pages@v4
+        timeout-minutes: 30
