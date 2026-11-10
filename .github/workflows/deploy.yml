@@ -88,5 +88,10 @@ jobs:
         with:
           path: site
 
-      # ★ 改176 回退(2026-11-10)：deploy-pages@v4 内部 timeout 硬上限600000ms(10min)，改175 timeout-minutes / 改176 with.timeout 均无效已撤；Pages 后端 syncing_files 偶发>10min 失败只取消当次发布、不回滚、不影响线上，等自愈或重跑即可
+      # ★ 改178(2026-11-10) Pages 抽风失败容错：deploy-pages@v4 内部 timeout 硬上限 600000ms(10min)，
+      #   Pages 后端 syncing_files 抽风时偶发 >10min 超时，每失败一次就发一封失败邮件。
+      #   此处仅给本 step 加 continue-on-error：只吞「发布超时」这一种 Pages 抽风；
+      #   build / sync_all / autocover 等其余 step 真失败仍照常让 job 失败、照常发邮件。
+      #   失败只取消当次 Pages 发布，不回滚不降级线上；下个整点 cron / 下次 push / 手动 dispatch 会重试，Pages 恢复后自动补上。
       - uses: actions/deploy-pages@v4
+        continue-on-error: true
