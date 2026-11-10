@@ -88,6 +88,9 @@ jobs:
         with:
           path: site
 
-      # ★ 改175(2026-11-10): Pages 后端 syncing_files 偶发 >10min, 放宽步骤超时避免误判失败
+      # ★ 改176(2026-11-10): 病根是 deploy-pages@v4 内部 timeout 默认600000ms(10min)轮询上限；放宽到30min
+      # job/step 级 timeout-minutes 管不到 action 内部轮询，必须走 with.timeout；设35min避免先于内部掐断
       - uses: actions/deploy-pages@v4
-        timeout-minutes: 30
+        timeout-minutes: 35
+        with:
+          timeout: 1800000
