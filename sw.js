@@ -3,7 +3,7 @@
  * 每部署一次 CACHE 版本号(1794081423)随之变化 -> 新 SW 激活即清掉旧缓存, 不会把旧页喂给老客。
  * 例外: ver.json 永远走网络(保证版本探测/自动刷新生效); 跨域封面(weserv)不拦截(由 IndexedDB 接管); 可变图片(商品封面等)强制绕过 HTTP 缓存直连线上最新(避免老客长期看到旧封面); 固定图片(站点图标 icon.png / 背景 bg.jpg)走 SW 缓存秒出(改动极少, 老客免重复下载); 带 _bg=1 / no-store 的后台探测直连网络。
  */
-const CACHE = 'gt-sw-v1794471796';
+const CACHE = 'gt-sw-v1794471801';
 const VER_URL = 'ver.json';
 
 self.addEventListener('install', function(e){ self.skipWaiting(); });
@@ -60,6 +60,11 @@ self.addEventListener('fetch', function(e){
   if(/\.(jpe?g|png|gif|webp|svg|avif)(\?|$)/i.test(u.pathname)){
     if(isFixedImage(u)){ e.respondWith(swr(req, u)); return; }   // 固定图: 老客秒出, 后台静默刷新
     e.respondWith(fetch(req, {cache:'reload'})); return;          // 可变图: 绕过 HTTP 缓存直连线上
+  }
+  // 封面 manifest 为可变数据(持续增删封面), 强制直连最新,
+  // 避免老客命中 SW 陈旧缓存 -> 新增封面永不显示(修复: GTA6终极版手机端缺封面)
+  if(/\/covers\/manifest.*\.json$/.test(u.pathname)){
+    e.respondWith(fetch(req, {cache:'reload'})); return;
   }
   var cc = req.headers.get('cache-control') || '';
   if(cc.indexOf('no-store') >= 0 || u.searchParams.has('_bg')){
