@@ -1,11 +1,21 @@
 {
- "time": "2026-11-13T10:36:18",
- "added": [],
+ "time": "2026-11-13T11:50:23",
+ "added": [
+  {
+   "name": "范马刃牙：血之竞技场（完整版）",
+   "product": "JP0078-PPSA29819_00-BAKIDOUMUSASHBDL",
+   "storeName": "Baki-Dou: Blood Arena PS4 & PS5 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/acb401d1ae281fp34.jpg",
+   "role": "P-pad",
+   "bytes": 115706
+  }
+ ],
  "pending": [],
  "errors": [],
  "stats": {
-  "total": 1270,
-  "covered": 1346,
+  "total": 1271,
+  "covered": 1347,
   "pending_open": 0
  }
 }
