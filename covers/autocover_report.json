@@ -1,22 +1,11 @@
 {
- "time": "2026-11-13T13:28:25",
+ "time": "2026-11-13T13:34:34",
  "added": [],
- "pending": [
-  {
-   "name": "球比伦战记（完整版）（1）",
-   "reason": "匹配有歧义或无命中",
-   "top": ""
-  },
-  {
-   "name": "球比伦战记（完整版）（2）",
-   "reason": "匹配有歧义或无命中",
-   "top": ""
-  }
- ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1271,
-  "covered": 1347,
-  "pending_open": 2
+  "covered": 1349,
+  "pending_open": 0
  }
 }
