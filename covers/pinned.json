@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1122,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-11-13T04:17:06"
+  "updated": "2026-11-13T12:42:10"
  },
  "locks": {
   "p0001": {
@@ -14765,13 +14765,13 @@
     "GTA6/侠盗猎车手6/给他爱6（终极版）（2）"
    ],
    "en": "Grand Theft Auto VI Ultimate Edition",
-   "file": "covers/rcef5bd7dd5807.jpg",
-   "md5": "ef5bd7dd58073a986639e8b242413aeb",
-   "note": "GTA6 终极版封面: PS Store HK 官方竖版(PPSA01547_00-GTAVIULTIMATE001) 满铺裁 504x672, 底部合成 ULTIMATE EDITION 金标(官方美术本身无版标文字). 仅覆盖两张终极版卡, 标准版/三部曲不动.",
+   "file": "covers/rc108a9006f03d.jpg",
+   "md5": "108a9006f03d87a2c5f78bfe83e62087",
+   "note": "GTA6 终极版封面(第二版): PS Store HK 官方竖版(PPSA01547_00-GTAVIULTIMATE001) 满铺裁 504x672, 加 PS Store 红框(16px) + 顶部合成 ULTIMATE EDITION 金标. 替换原底部带版本. 仅两张终极版卡, 标准版/三部曲不动.",
    "platform": "PS",
    "role": "PB-fill",
    "store": "PS Store HK",
-   "time": "2026-11-13T12:16:33"
+   "time": "2026-11-13T12:42:10"
   }
  }
 }
