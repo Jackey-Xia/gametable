@@ -3,7 +3,7 @@
  * 每部署一次 CACHE 版本号(1794081423)随之变化 -> 新 SW 激活即清掉旧缓存, 不会把旧页喂给老客。
  * 例外: ver.json 永远走网络(保证版本探测/自动刷新生效); 跨域封面(weserv)不拦截(由 IndexedDB 接管); 可变图片(商品封面等)强制绕过 HTTP 缓存直连线上最新(避免老客长期看到旧封面); 固定图片(站点图标 icon.png / 背景 bg.jpg)走 SW 缓存秒出(改动极少, 老客免重复下载); 带 _bg=1 / no-store 的后台探测直连网络。
  */
-const CACHE = 'gt-sw-v1794471803';
+const CACHE = 'gt-sw-v1794471901';
 const VER_URL = 'ver.json';
 
 self.addEventListener('install', function(e){ self.skipWaiting(); });
@@ -64,6 +64,13 @@ self.addEventListener('fetch', function(e){
   // 封面 manifest 为可变数据(持续增删封面), 强制直连最新,
   // 避免老客命中 SW 陈旧缓存 -> 新增封面永不显示(修复: GTA6终极版手机端缺封面)
   if(/\/covers\/manifest.*\.json$/.test(u.pathname)){
+    e.respondWith(fetch(req, {cache:'reload'})); return;
+  }
+  /* 改167fix: taobao.json 是可变链接表(持续增删购买/闲鱼链接)。旧逻辑落入默认 swr() ->
+     SW 把首次缓存的陈旧 taobao.json 立即返回, 后台才刷新; 而前端仅当 tb_v 变化时才会重拉,
+     重拉拿到的仍是 SW 陈旧副本 -> 新增链接"永久不更新"直至强刷(GTA6封面的同类坑)。
+     与封面 manifest 同理强制直连最新。普通加载前端走 IDB 秒出根本不发此请求, 不影响老客速度。 */
+  if(/(?:^|\/)taobao\.json$/.test(u.pathname)){
     e.respondWith(fetch(req, {cache:'reload'})); return;
   }
   var cc = req.headers.get('cache-control') || '';
