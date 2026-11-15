@@ -2331,15 +2331,17 @@ function gtFillTB(m){ if(!m||typeof m!=="object")return; var n=0;for(var k in m)
   /* 改162-1b: 先读 IDB 缓存秒出库存/购买按钮(微信内也秒出); 仅当缓存确有链接数据且版本(ver.json 的 tb_v)一致才跳过 taobao.json 重下;
      超时/空数据绝不留毒化缓存(空 {} 带 __v 会让后续访问永久早退) —— 2026-11-03 修复 */
   gtJGet("gt_taobao").then(function(cm){
-    if(cm&&typeof cm==="object"){
+      /* 改167fix: 首屏先用 IDB 缓存秒出(老客/微信内即时见按钮); 随后无条件后台重校验, 杜绝"陈旧链接永久不更新"。 */
+      if(cm&&typeof cm==="object"){
       gtFillTB(cm);
       if(TB_N>0){                       /* 缓存确有数据才信任 */
         TB_READY=true; try{wxMeasure();}catch(e){} tbPaint();
         try{ if(typeof gtProg!=="undefined") gtProg.tb=true; }catch(e){}
-        if(cm.__v&&window.__GT_TB_V&&cm.__v===window.__GT_TB_V){ try{__tbDone(cm);}catch(e){} return; }   /* 版本一致且有数据 -> 纯本地, 跳过下载 */
+        /* 改167fix: 不再因"版本一致"早退跳过校验 —— 否则 SW 喂陈旧 taobao.json 时, 陈旧链接会被写回 IDB 永久不更新。改为后台永远直连校正(见下方 fetch)。 */
       }
     }
-    gtFetchJSON("taobao.json?t="+Date.now(),{cache:"no-store"}).then(function(m){
+    /* 改167fix: 后台永远直连最新 —— 带 ?v=tb_v 破 CDN/SW 缓存, 并发送真实 cache-control:no-store 请求头, 让当前已部署的 SW 也走 no-store 直连分支(不读 SW 陈旧缓存)。普通加载(IDB 秒出)本就不发此请求, 不影响老客速度。 */
+    gtFetchJSON("taobao.json?v="+encodeURIComponent(window.__GT_TB_V||(""+Date.now())),{cache:"no-store",headers:{"cache-control":"no-store"}}).then(function(m){
       m=m||{};
       try{__tbDone(m);}catch(e){}
       gtFillTB(m);
