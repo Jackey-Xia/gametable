@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1125,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-11-15T14:13:56"
+  "updated": "2026-11-15T06:14:25"
  },
  "locks": {
   "p0001": {
@@ -14789,6 +14789,19 @@
    "store": "GTA6 终极版",
    "time": "2026-11-13T14:42:29"
   },
+  "p1137": {
+   "cn": [
+    "恐惧轮回"
+   ],
+   "en": "Fear The Timeloop",
+   "file": "covers/rcc4af5f262bb9.jpg",
+   "md5": "c4af5f262bb97ea5f3c33b30fad1a61b",
+   "note": "店长指定B满铺·官方PS Store HK PORTRAIT_BANNER EP1549-PPSA37540_00-0759643370032487",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "Fear The Timeloop - PS5 (港服)",
+   "time": "2026-11-15T14:13:56"
+  },
   "p_baki_blood_001": {
    "cn": [
     "范马刃牙：血之竞技场（完整版）"
@@ -14803,19 +14816,6 @@
    "role": "P-fill",
    "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
    "time": "2026-10-13T08:04:16"
-  },
-  "p1137": {
-   "cn": [
-    "恐惧轮回"
-   ],
-   "en": "Fear The Timeloop",
-   "file": "covers/rcc4af5f262bb9.jpg",
-   "md5": "c4af5f262bb97ea5f3c33b30fad1a61b",
-   "note": "店长指定B满铺·官方PS Store HK PORTRAIT_BANNER EP1549-PPSA37540_00-0759643370032487",
-   "platform": "PS",
-   "role": "P-fill",
-   "store": "Fear The Timeloop - PS5 (港服)",
-   "time": "2026-11-15T14:13:56"
   }
  }
 }
