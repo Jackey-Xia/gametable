@@ -1,11 +1,21 @@
 {
- "time": "2026-11-16T10:49:30",
- "added": [],
+ "time": "2026-11-16T11:51:57",
+ "added": [
+  {
+   "name": "东北往事",
+   "product": "HP8406-PPSA39837_00-NIUDDGANGSAGA001",
+   "storeName": "东北往事 (日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/ac62be2efeb811p34.jpg",
+   "role": "P-pad",
+   "bytes": 99942
+  }
+ ],
  "pending": [],
  "errors": [],
  "stats": {
-  "total": 1272,
-  "covered": 1350,
+  "total": 1273,
+  "covered": 1351,
   "pending_open": 0
  }
 }
