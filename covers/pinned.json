@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1125,
+  "count": 1127,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-11-17T04:01:43"
+  "updated": "2026-11-17T05:46:25"
  },
  "locks": {
   "p0001": {
@@ -14801,6 +14801,32 @@
    "role": "P-fill",
    "store": "Fear The Timeloop - PS5 (港服)",
    "time": "2026-11-15T14:13:56"
+  },
+  "p1138": {
+   "cn": [
+    "GTA6/侠盗猎车手6/给他爱6（终极版）（3）"
+   ],
+   "en": "",
+   "file": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc2d005c9842c2.jpg&w=256&q=82&output=jpg",
+   "md5": "",
+   "note": "多库存沿用: 与《GTA6/侠盗猎车手6/给他爱6（终极版）（1）》同一商品仅增加库存, 直接沿用同款封面",
+   "platform": "PS",
+   "role": "",
+   "store": "",
+   "time": "2026-11-17T05:46:25"
+  },
+  "p1139": {
+   "cn": [
+    "GTA6/侠盗猎车手6/给他爱6（终极版）（4）"
+   ],
+   "en": "",
+   "file": "https://images.weserv.nl/?url=jackey-xia.github.io/gametable/covers/rc2d005c9842c2.jpg&w=256&q=82&output=jpg",
+   "md5": "",
+   "note": "多库存沿用: 与《GTA6/侠盗猎车手6/给他爱6（终极版）（1）》同一商品仅增加库存, 直接沿用同款封面",
+   "platform": "PS",
+   "role": "",
+   "store": "",
+   "time": "2026-11-17T05:46:25"
   },
   "p_baki_blood_001": {
    "cn": [
