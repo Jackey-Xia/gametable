@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1135,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-11-20T15:56:48"
+  "updated": "2026-11-20T07:57:31"
  },
  "locks": {
   "p0001": {
@@ -14919,6 +14919,19 @@
    "store": "",
    "time": "2026-11-18T12:01:42"
   },
+  "p1147": {
+   "cn": [
+    "东北往事"
+   ],
+   "en": "DONGDA Gangster",
+   "file": "covers/rc7b11a2387481.jpg",
+   "md5": "7b11a2387481e79754a1d0a20f681a4d",
+   "note": "店长指定B满铺·官方PS Store HK竖版 PORTRAIT_BANNER HP8406-PPSA39837_00-NIUDDGANGSAGA001",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "DONGDA Gangster - PS5 (港服)",
+   "time": "2026-11-20T15:56:48"
+  },
   "p_baki_blood_001": {
    "cn": [
     "范马刃牙：血之竞技场（完整版）"
@@ -14933,19 +14946,6 @@
    "role": "P-fill",
    "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
    "time": "2026-10-13T08:04:16"
-  },
-  "p1147": {
-   "cn": [
-    "东北往事"
-   ],
-   "en": "DONGDA Gangster",
-   "file": "covers/rc7b11a2387481.jpg",
-   "md5": "7b11a2387481e79754a1d0a20f681a4d",
-   "note": "店长指定B满铺·官方PS Store HK竖版 PORTRAIT_BANNER HP8406-PPSA39837_00-NIUDDGANGSAGA001",
-   "platform": "PS",
-   "role": "P-fill",
-   "store": "DONGDA Gangster - PS5 (港服)",
-   "time": "2026-11-20T15:56:48"
   }
  }
 }
