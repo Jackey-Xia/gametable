@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1135,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-11-21T06:21:25"
+  "updated": "2026-11-21T14:34:31"
  },
  "locks": {
   "p0001": {
@@ -13124,16 +13124,16 @@
   },
   "p1002": {
    "cn": [
-    "阿西，美女室友竟然2"
+    "阿西，美女室友竟然2+冬日之旅DLC"
    ],
-   "en": "",
-   "file": "covers/rc3cd03c49ed0b.jpg",
-   "md5": "53facfed609b535bde054c88d3a9c3e4",
-   "note": "①店主审核: 改为不留边·3:4满填充版（原图 cache 504x504）",
+   "en": "Five Hearts Under One Roof season2：Winter Trip DLC",
+   "file": "covers/rc3d96d6b3e9d4.jpg",
+   "md5": "3d96d6b3e9d47aa7f296245b8eaeef8f",
+   "note": "店主审核A版·主图现有封面(保标题)+辅图DLC宣传图·帝国时代4同款拼接",
    "platform": "PS",
    "role": "M-fill",
    "store": "",
-   "time": "2026-09-20T10:23:43"
+   "time": "2026-11-21T14:34:31"
   },
   "p1003": {
    "cn": [
