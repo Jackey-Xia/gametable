@@ -1,11 +1,21 @@
 {
- "time": "2026-11-21T06:01:42",
- "added": [],
+ "time": "2026-11-21T06:20:33",
+ "added": [
+  {
+   "name": "阿西，美女室友竟然2+冬日之旅DLC",
+   "product": "HB1312-PPSA36824_00-0627386333890874",
+   "storeName": "阿西, 美女室友竟然...？2 : 冬日之旅 DLC (中日英韩文版)",
+   "score": 0.85,
+   "file": "covers/acda132b1ab5a7p34.jpg",
+   "role": "M-pad",
+   "bytes": 71670
+  }
+ ],
  "pending": [],
  "errors": [],
  "stats": {
   "total": 1281,
-  "covered": 1360,
+  "covered": 1361,
   "pending_open": 0
  }
 }
