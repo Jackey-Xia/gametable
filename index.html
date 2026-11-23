@@ -891,6 +891,9 @@ footer b{color:#4b5563}
   user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
 .gt-hint:hover{color:#3b74d1;background:#e8f0fb}
 .gt-hint:active{opacity:.7}
+/* 复核16: 无详情占位态 —— 手机端 absolute 角标直接隐藏(视觉=现状: 没有角标, 无留白无重排)。
+   桌面端在 @media(min-width:641px) 里把 .off 覆盖成"等宽极淡 en dash 占位"。 */
+.gt-hint.off{visibility:hidden}
 /* 改158: 长中英文名不与详情按钮重叠 —— 手机端给名称区右侧留白, 文本提前换行, 不进按钮区 */
 @media(max-width:640px){
   .gname,.gen{padding-right:64px}
@@ -901,10 +904,16 @@ footer b{color:#4b5563}
 .gt-ar svg{display:block;width:7px;height:7px;stroke:currentColor}
 /* 改157e-begin: 电脑端(≥641px)详情入口改为游戏名右侧小胶囊（手机端绝对定位不变） */
 @media (min-width:641px){
-  .gt-hint{position:static;display:inline-flex;align-items:center;font-size:12px;line-height:1;font-weight:600;
+  .gt-hint{position:static;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;min-width:58px;font-size:12px;line-height:1;font-weight:600;
     color:#7c8698;background:#f1f4f9;border-radius:5px;padding:3px 8px;margin-left:8px;
     vertical-align:2px;z-index:auto}
   .gt-hint:hover{color:#3b74d1;background:#e8f0fb}
+  /* 复核16: 等宽胶囊 + 极淡横杠占位。min-width:58px 保证有/无详情两态同宽(换行一致);
+     .off 覆盖基础规则的 visibility:hidden -> 桌面改显示 en dash, 极淡、不可点、不聚焦。
+     pointer-events:none + :hover 覆盖防止占位变蓝。用 span(非 button), 无 tabindex 天然不进 Tab。 */
+  .gt-hint.off{visibility:visible;color:#c9d1de;background:transparent;cursor:default;pointer-events:none}
+  .gt-hint.off:hover{color:#c9d1de;background:transparent}
+  .gt-hint.off:active{opacity:1}
 }
 /* 改157e-end */
 .gt-dmodal{box-sizing:border-box;position:relative;max-width:460px;max-height:86vh;overflow:hidden;display:flex;flex-direction:column;text-align:left;padding:0 0 18px}
@@ -1226,7 +1235,7 @@ if(m==="mem"||m==="ns"){document.documentElement.className+=" nohint";}})();
   setTimeout(load,4000);                 /* 兜底：任何环境下都不会让同音搜索失效 */
 })();
 </script>
-<script>window.__GT_DATA_VER="2026-11-12T16:23:16+0800";/* 改157-opt: 数据缓存版本号,部署时注入,与 ver.json.data_v 一致 */</script>
+<script>window.__GT_DATA_VER="";/* 改2026-11-22: 部署时由 sync_all.py 注入,与 ver.json.data_v 一致; 源码留空 -> 注入失败时前端跳过版本自检,不再空刷 */</script>
 <!-- 改85: 数据文件改为动态加载(带时间戳)
      原来写死 `<script src="data.js?t=20260909155923">`, URL 恒定不变, 而 GitHub Pages 给
      data.js 的 max-age 是 600s —— 库存改完后 10 分钟内(或更久)URL 相同, 浏览器直接用缓存,
@@ -2571,7 +2580,142 @@ window.gtPlatTxt=function(s){var t=String(s||"");return /PS5/i.test(t)&&/PS4/i.t
 /* 改130-end */
 
 /* 改157-begin: 卡片右上角「详情 ›」+ 详情弹层（仅点按钮进入, 整卡不可点） */
-var __GTDET=null,__GTDET_PEND=null;
+/* D-GTDET(店主 11-23 16:3x 裁决, 随含前端的批次一并落地): 失败=未知, 不是权威空。
+   ⑤ __GTDET_FAIL 上限 2 次, 只挡整包 344KB 的重复主动拉取; ⑥ 成功一次即清零。
+   ★ gtFetchJSON 通用契约不动(taobao.json 依赖它失败返回 {} 降级「联系商家」),
+     详情侧用「d 是否为非空对象」判别失败。 */
+var __GTDET=null,__GTDET_PEND=null,__GTDET_FAIL=0;
+/* 改2026-11-22: 详情按首字符 64 桶分片 —— 点一次只取 1 片(均 6.4KB gz), 不再整包 344KB。
+   分片未命中/404/超时 -> 自动回落整包 game_details.json(行为与改168-3 完全兼容)。
+   桶号必须与 split_details.py 一致: ord(首字符) % 64 <=> charCodeAt(0) % 64。 */
+var __GTDET_ONE={}, __GTKEYS=null, __GTKEYS_PEND=null;
+/* 复核14: 按钮登记表统一挂在 window.__GT_HINT_TODO(渲染分支/复核函数共用同一数组, 不用局部别名避免重赋值分叉)。
+   首屏每个「详情 ›」按钮都登记, 供后台新 keys 到达后二次复核(可恢复可见); done/settled 只管本轮结算。 */
+function gtDetShard(g){
+  var n=String((g&&g.name)||"");
+  var b=(n.length?n.charCodeAt(0):0)%64;
+  return "p"+(b<10?"0":"")+b;
+}
+function gtHasDet(g){
+  if(!g)return false;
+  if(!__GTKEYS)return true;              /* 索引未到: 先保留按钮, 不误删 */
+  var n=g.name||"", c=[n];
+  if(g.region)c.push(n+"（"+String(g.region).replace(/\s/g,"")+"）");
+  var m=/^(.*?)(\d+)$/.exec(n); if(m)c.push(m[1]);
+  var b=n.replace(/[（(]\s*\d+\s*[)）]\s*$/,""); if(b!==n)c.push(b);
+  for(var i=0;i<c.length;i++){ if(Object.prototype.hasOwnProperty.call(__GTKEYS,c[i]))return true; }
+  return false;
+}
+/* 复核16: 统一的按钮状态切换 —— 三处(渲染分支/gtReconcileHints/gtDetLoad)共用, 双向可逆。
+   ★桌面决策(店主 2026-11-23 定稿): 有详情=等宽胶囊"详情 ›"(可点/可聚焦); 无详情=等宽胶囊极淡 en dash "–"
+     (pointer-events:none 不可点 + aria-hidden 不进无障碍树 + span 无 tabindex 不进 Tab)。两态 min-width:58px 同宽。
+   ★手机端不动: .off 在 @media(max-width:640px) 基础规则里 visibility:hidden, 无详情=没有角标(与现状逐像素一致)。
+   恢复时用原始 HTML 常量重建内容并重绑 onclick, 不保留 remove()(不可逆)。 */
+var GT_HINT_HTML='详情 <i class="gt-ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></i>';
+function gtSetHint(el,g,hasDet){
+  if(!el)return;
+  try{
+    if(hasDet){
+      if(el.classList.contains("off")){
+        el.classList.remove("off");
+        el.removeAttribute("aria-hidden");
+        el.innerHTML=GT_HINT_HTML;
+        el.onclick=function(ev){ev.stopPropagation();openDetail(g);};
+      }
+    }else{
+      if(!el.classList.contains("off")){
+        el.classList.add("off");
+        el.setAttribute("aria-hidden","true");
+        el.textContent="–";                 /* en dash, 极淡着色由 CSS .off 控制 */
+        el.onclick=null;                     /* 二次复核恢复时 gtSetHint(hasDet=true) 会重绑 */
+      }
+    }
+  }catch(e){}
+}
+/* 复核14: 按钮状态复核抽成可重复调用的函数 —— 首轮 keys / 后台新 keys 到达都跑一次, 且双向:
+   有详情→正常胶囊, 无详情→.off 占位。登记表不清空, 只剔除已脱离 DOM 的按钮防内存无限增长;
+   settled 只管本轮 Promise 结算一次, 不再"一锁终身"禁止后续复核。 */
+function gtReconcileHints(){
+  /* 复核28(店主定案Q1·功能改动唯一落点): keys 无权威值(未到/超时=未知)时一个按钮都不动。
+     ★三分: undefined/null→未知,禁止隐藏/恢复/remove; []/{}→权威空,必须照常全收起(合法,勿"顺手"
+     改成 ||__GTKEYS.length===0); 非空→按集合决定。时间窗只决定等不等,永不决定显隐。 */
+  if(!__GTKEYS)return;
+  var todo=window.__GT_HINT_TODO||[], live=[];
+  for(var i=0;i<todo.length;i++){
+    var it=todo[i];
+    if(!it||!it.el||!it.el.isConnected) continue;   /* 卡片已翻页/移除 -> 丢弃引用 */
+    live.push(it);
+    gtSetHint(it.el,it.g,gtHasDet(it.g));
+  }
+  window.__GT_HINT_TODO=live;
+}
+function gtDetKeys(){
+  if(__GTKEYS)return Promise.resolve(__GTKEYS);
+  if(__GTKEYS_PEND)return __GTKEYS_PEND;
+  __GTKEYS_PEND=new Promise(function(res){
+    var settled=false;
+    /* 复核14: 800ms 放弃门禁 —— 只控制本轮 Promise 结算, 按钮保持"默认显示"(点开有整包兜底)。
+       迟到 keys 仍会走 apply() 复核, 不再"只记索引不复核"。 */
+    /* 复核28补(店主14:4x·契约归一): resolve 值全站无消费方, 带 .keys 的对象只是仪式字段且
+       与 apply() 裸值形状不一致(将来 .then(k=>k.length) 会静默失败) → 退回 res(null)=未知。
+       ★绝不返回 []/{}(那是权威空, 会把按钮全收起); 时间窗只决定等不等, 显隐只由守卫决定。 */
+    var giveUp=function(){ if(settled)return; settled=true; res(null); };
+    var timer=setTimeout(giveUp,800);
+    var apply=function(k){
+      clearTimeout(timer);
+      if(!k||typeof k!=="object"){ if(!settled){settled=true;res(null);} return; }
+      __GTKEYS=k;
+      gtReconcileHints();                 /* 首轮: 竞速吐旧 keys 时新商品按钮被 hidden */
+      if(!settled){settled=true;res(k);}
+      /* 复核15: SW netFirst 300ms 竞速可能先吐旧缓存(后台 netP 才回填), 二次复核拿线上最新 keys 恢复按钮。
+         ★复核14 漏洞: _bg 只让 sw.js 119 行跳过 SW Cache Storage, e.respondWith(fetch(req)) 仍走浏览器 HTTP 缓存
+         (Pages 的 _keys.json 带 max-age=600); data_v 未 bump 时 URL 每次会话相同 -> 10 分钟内二次复核拿到同一份旧 keys,
+         修复等于没修。★修法三管齐下: ①cache:'no-store' 强制绕 HTTP 缓存 ②&t=<Date.now()> 每次唯一 URL 破缓存键
+         ③&_bg=1 让 SW 不读写 Cache Storage。
+         ★性能: 仅当首轮复核确实产生 hidden 按钮(竞速吐旧的典型后果)才发这次请求 —— 无 hidden 说明首轮 keys 已是最新,
+         不为每次会话多花一次 6.9KB。失败/超时静默: 保持首轮结果, 不阻塞后续复核。 */
+      var _needRecheck=false;
+      try{
+        var _todo=window.__GT_HINT_TODO||[];
+        for(var _i=0;_i<_todo.length;_i++){
+          if(_todo[_i]&&_todo[_i].el&&_todo[_i].el.classList.contains("off")){ _needRecheck=true; break; }
+        }
+      }catch(e){}
+      if(_needRecheck)try{
+        fetch("details/_keys.json?v="+window.__GT_DATA_VER+"&_bg=1&t="+Date.now(),{cache:"no-store"})
+          .then(function(r){return (r&&r.ok)?r.json():null;})
+          .then(function(k2){
+            if(!k2||typeof k2!=="object")return;
+            __GTKEYS=k2;
+            gtReconcileHints();           /* 可逆: 该显示的按钮恢复 visible */
+          }).catch(function(){});
+      }catch(e){}
+    };
+    try{
+      /* 不走 gtFetchJSON: 它失败返回 {}, 会被误当成"索引为空"从而删掉所有按钮 */
+      fetch("details/_keys.json?v="+window.__GT_DATA_VER).then(function(r){return (r&&r.ok)?r.json():null;})
+        .then(apply).catch(function(){ clearTimeout(timer); if(!settled){settled=true;res(null);} });
+    }catch(e){ clearTimeout(timer); if(!settled){settled=true;res(null);} }
+  });
+  return __GTKEYS_PEND;
+}
+function gtDetLoadOne(g){
+  if(__GTDET && gtFindDet(__GTDET,g))return Promise.resolve(__GTDET);
+  var sh=gtDetShard(g);
+  if(__GTDET_ONE[sh])return __GTDET_ONE[sh];
+  __GTDET_ONE[sh]=gtFetchJSON("details/"+sh+".json?v="+window.__GT_DATA_VER).then(function(d){
+    /* D-GTDET③: 失败/空片一律不把 Promise 缓存成永久结论, 失败即删该键(允许下次点击重试) */
+    if(!d||typeof d!=="object"||!Object.keys(d).length){ delete __GTDET_ONE[sh]; return gtDetLoad(); } /* 空/404/失败 -> 整包兜底 */
+    __GTDET=__GTDET||{};
+    for(var k in d){ if(Object.prototype.hasOwnProperty.call(d,k))__GTDET[k]=d[k]; }
+    __GTDET_FAIL=0;                                  /* D-GTDET⑥: 任一权威数据到手即清零失败计数 */
+    if(!gtFindDet(__GTDET,g))return gtDetLoad();    /* 分片未命中 -> 整包兜底 */
+    return __GTDET;
+  }).catch(function(){ delete __GTDET_ONE[sh]; return gtDetLoad(); });
+  return __GTDET_ONE[sh];
+}
+/* 首屏渲染后空闲时拉 6.9KB 的键索引, 只用于决定是否显示「详情 ›」按钮 */
+try{(window.requestIdleCallback||function(f){setTimeout(f,900);})(function(){gtDetKeys();});}catch(e){}
 /* 改159fix: 带超时的 JSON 拉取 —— 避免大文件(taobao.json/game_details.json)在弱网或被 SW 拦截时无限挂起,
    导致详情「加载中」卡死、系统进度条不消失。超时(20s)直接降级为空对象, 页面走「暂无详情」兜底。 */
 function gtFetchJSON(url, opts){
@@ -2589,16 +2733,33 @@ function gtFetchJSON(url, opts){
 function gtDetLoad(){
   if(__GTDET)return Promise.resolve(__GTDET);
   if(__GTDET_PEND)return __GTDET_PEND;
+  if(__GTDET_FAIL>=2)return Promise.resolve(null);  /* D-GTDET⑤: 弱网下不再反复下 344KB 整包(分片 6.4KB 仍随点击发) */
   __GTDET_PEND=gtFetchJSON("game_details.json?v="+window.__GT_DATA_VER).then(function(d){
-    __GTDET=d||{};
+    /* D-GTDET①②④: gtFetchJSON 四条失败路径(35s 超时 / 非 200 / reject / fin(v||{}))
+       全归一 {}; 而 {} 是真值 —— 写进 __GTDET 会让上面的 if(__GTDET) 短路, 下面 todo 循环
+       再用 !!gtFindDet({},g) 把全部按钮置 .off, 整会话锁死。
+       ⇒ 失败=未知: 保持 __GTDET=null、清 PEND 允许重试、FAIL+1、整体跳过复核(按钮一律不动)。 */
+    if(!d||typeof d!=="object"||!Object.keys(d).length){
+      __GTDET=null;
+      __GTDET_PEND=null;
+      __GTDET_FAIL++;
+      return null;
+    }
+    __GTDET=d;                                     /* ① 只有权威非空数据才落, 绝不写 {} */
+    __GTDET_PEND=null;                             /* ② 完成即释放 */
+    __GTDET_FAIL=0;                                /* ⑥ 成功清零 */
+    __GTDET_ONE={};                                /* ⑥ 整包已权威, 分片缓存整体释放(含失败残留) */
     /* 改168-3: 数据到手后，统一复核首屏登记的「详情 ›」按钮（原本是每张卡渲染时各做一次，
        代价是首屏就把 192KB 详情数据拉下来）。 */
+    /* 复核14: 整包 __GTDET 已到手=权威数据, 用它判显隐(双向)比 __GTKEYS 更准 —— keys 可能超时为 null
+       导致 gtHasDet 恒 true 误显示。但仍不清空登记表: 保留供后台新 keys 到达后 gtReconcileHints 二次复核。 */
     try{
       var todo=window.__GT_HINT_TODO||[];
       for(var i=0;i<todo.length;i++){
-        if(!gtFindDet(__GTDET,todo[i].g)){try{todo[i].el.remove();}catch(e){}}
+        var it=todo[i];
+        if(!it||!it.el||!it.el.isConnected) continue;
+        gtSetHint(it.el,it.g,!!gtFindDet(__GTDET,it.g));
       }
-      window.__GT_HINT_TODO=[];
     }catch(e){}
     return __GTDET;
   });
@@ -2667,10 +2828,19 @@ function openDetail(g){
   mask.appendChild(card);mask.className="cta-mask show";
   mask.onclick=function(e){if(e.target===mask)mask.className="cta-mask";};
   card.addEventListener("contextmenu",function(ev){if(ev.target.tagName==="IMG")ev.preventDefault();});
-  gtDetLoad().then(function(det){
+  gtDetLoadOne(g).then(function(det){
     if(!mask.classList.contains("show"))return;
-    var e=gtFindDet(det,g);
-    if(!e){card.innerHTML='<div style="padding:34px 18px;text-align:center;color:#8a94a6;font-size:13px">该商品暂无详情</div>';return;}
+    /* D-GTDET⑦(店主 11-23 17:1x 裁决): 失败=未知, 绝不把「加载失败」说成「暂无详情」。
+       gtFetchJSON 四条失败路径归一 {} → 详情侧判未知 → gtDetLoad/gtDetLoadOne 返回 null;
+       只有「权威非空数据已到手、但 gtFindDet 未命中该商品」才是真·暂无详情。
+       弱网下把失败当事实, 会让真实有详情的商品被误判, 且顾客不会再点第二次。 */
+    var authoritative=!!(det&&typeof det==="object"&&Object.keys(det).length);
+    var e=authoritative?gtFindDet(det,g):null;
+    if(!e){
+      card.innerHTML='<div style="padding:34px 18px;text-align:center;color:#8a94a6;font-size:13px">'+
+        (authoritative?"该商品暂无详情":"加载失败，请稍后再试")+'</div>';
+      return;
+    }
     gtRenderDetail(card,g,cov,e);
   });
 }
@@ -2915,16 +3085,21 @@ function gameCard(g,idx){
   /* 改163: 右上角「详情 ›」与卡片同步渲染 —— 不再等 game_details.json 下载完才浮现
      （店主 2026-11-01 裁定：按钮必须与卡片其他内容一并快速出现）。
      数据到齐后复核一次，若确认该商品无详情则自动移除按钮。 */
-  var _gth=document.createElement("span");_gth.className="gt-hint";_gth.innerHTML='详情 <i class="gt-ar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></i>';
+  var _gth=document.createElement("span");_gth.className="gt-hint";_gth.innerHTML=GT_HINT_HTML;
   _gth.onclick=function(ev){ev.stopPropagation();openDetail(g);};
   nm.appendChild(_gth);
   /* 改168-3: 不在每张卡渲染时触发 gtDetLoad() —— 那会让 192KB 详情数据在首屏就下载。
      仅登记待复核；顾客第一次点开「详情 ›」时才由 openDetail() 真正取数据。 */
-  if(__GTDET){if(!gtFindDet(__GTDET,g)){try{_gth.remove();}catch(e){}}}
-  else{(window.__GT_HINT_TODO||(window.__GT_HINT_TODO=[])).push({el:_gth,g:g});}
+  /* 复核13: 与 gtDetKeys() 内 TODO 清理保持一致, 改 visibility:hidden 保留占位(不重排)。
+     此分支是"keys 已到但商品无详情"的同步渲染路径 —— 同样避免静态定位按钮被 remove 引起抖动。 */
+  /* 复核14: 无条件登记每个「详情 ›」按钮(不再只在 __GTKEYS 未到时 push) —— 登记表是二次复核的载体:
+     首轮 keys 若因竞速吐旧值把新商品按钮 hidden, 它必须仍在表里, 后台新 keys 到达才能恢复 visible。
+     随即按当前已知索引判一次显隐(keys 未到则 gtHasDet 恒 true → 保持 visible)。 */
+  (window.__GT_HINT_TODO||(window.__GT_HINT_TODO=[])).push({el:_gth,g:g});
+  gtSetHint(_gth,g,gtHasDet(g));
   /* 改168-3b: 顾客手指/鼠标一碰到「详情 ›」就提前取数据。首屏仍然完全不下载，
      但真正点开时数据大概率已就绪，不会盯着「加载中…」等一个网络往返。 */
-  var prefetch=function(){try{gtDetLoad();}catch(e){}};
+  var prefetch=function(){try{gtDetLoadOne(g);}catch(e){}};
   _gth.addEventListener("mouseenter",prefetch,{once:true});
   _gth.addEventListener("touchstart",prefetch,{once:true,passive:true});
   _gth.addEventListener("pointerdown",prefetch,{once:true});
@@ -3356,7 +3531,7 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 })();
 </script>
 <!-- 改123b-end -->
-<script>window.__GT_PAGE_VER="2026-11-12T16:23:16+0800";/* 改157f: 部署时注入页面自身版本号 */</script>
+<script>window.__GT_PAGE_VER="";/* 改2026-11-22: 部署时由 sync_all.py 注入,与 ver.json.v 一致; 源码留空 */</script>
 <script id="gt-det-preload">
 /* 改168-3: 详情数据改为「真点开才取」。
    openDetail() 里的 gtDetLoad() 会在顾客第一次点「详情 ›」时才发起请求；
@@ -3366,39 +3541,125 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCta();}
 </script>
 <script id="gt-autorefresh">
 /* 改157f-begin: 版本自动刷新健壮版 —— 修复改143「空刷一次即锁死」缺陷。
-   部署时注入 __GT_PAGE_VER, 与 ver.json(no-store) 对比: 不一致才刷新,
-   同一会话最多重试3次(首次立即, 之后隔45s), 绝不把旧页误标成新版本。 */
+   部署时注入 __GT_PAGE_VER, 与 ver.json(no-store) 对比: 不一致才刷新。
+   改2026-11-23复核8: 三处硬修 ——
+     ① __GT_UPDATING 必须可解锁(原全站只设不清, 三次重试用尽后提示条永久假死);
+     ② 监听 controllerchange, 新 SW claim 完成立即跳(弱网/微信 WebView 比固定定时可靠), 定时仅兜底;
+     ③ 总超时 6.5s 仍未收敛 → 解锁 + 给「点此刷新」出口, 绝不把顾客锁在假死页。 */
 (function(){
   try{
     var MY=String(window.__GT_PAGE_VER||"");
     if(!MY)return;
+    /* DONE 只表示"已放弃并解锁"; LEAVING 表示页面确已在跳转(有 beforeunload 佐证)。
+       两者分开: 发起跳转不等于成功, 页面没离开就要继续让 controllerchange/定时兜底生效。 */
+    var TARGET="", LEAVING=false, DONE=false, T0=Date.now(), RETRY=null, SWREG=null, onCtrl=null;
+    try{ window.addEventListener("beforeunload",function(){ LEAVING=true; }); }catch(e){}
+    function clearRetry(){ if(RETRY){clearInterval(RETRY);RETRY=null;} }
+    function go(){
+      if(DONE||LEAVING||!TARGET)return;              /* 页面已在离开则不重复跳 */
+      try{ window.__GT_UPDATING=false; }catch(e){}   /* 跳转前先解锁, 防新页继承锁 */
+      try{
+        var base=location.href.split("#")[0].split("?")[0];
+        location.replace(base+"?_v="+encodeURIComponent(TARGET)+(location.hash||""));
+        LEAVING=true;                                 /* 同步置位: replace 成功后本页即卸载 */
+      }catch(e){
+        try{ location.reload(); LEAVING=true; }catch(e2){}
+      }
+    }
+    /* 改2026-11-23复核9-①: 解锁 + 恢复文案 + 给可点刷新出口。三次用尽/超时都会走到这里。
+       ★复核9-1: 必须先 remove("hide") —— 两个隐藏源都会把注入的按钮一起藏掉:
+         (a) tick() 在 __GT_UPDATING 置位前的 500ms 已跑过一轮(网络慢时), 可能已 add("hide");
+         (b) gt-hint-tabfix 在 tmem/tplat tab 下单向 add("hide") 不 remove。
+         不显式 remove, 「点此刷新」就藏在隐藏提示条里, 顾客根本看不见(复核9 店主发现)。 */
+    function unlock(){
+      try{ window.__GT_UPDATING=false; }catch(e){}
+      var hint=document.getElementById("gtLoadHint"), txt=document.getElementById("gtHintTxt");
+      if(hint)hint.classList.remove("hide");          /* 复核9-1: 显式解除隐藏, 按钮才可见 */
+      if(txt)txt.textContent="更新暂未就绪，请点击刷新重试";
+      if(hint){
+        var btn=document.getElementById("gtReloadBtn");
+        if(!btn){
+          btn=document.createElement("button");
+          btn.id="gtReloadBtn";
+          btn.textContent="点此刷新";
+          btn.style.cssText="margin-left:8px;padding:2px 9px;border:1px solid #e0a94a;border-radius:4px;background:#fff;color:#92500e;font-size:12px;font-weight:700;cursor:pointer";
+          /* 复核9-1: 必须带 ?_v 直连回源 —— 裸 reload 会被旧 SW 的 swr 重新送回旧页, 按钮点了等于没点。
+             TARGET 为空(fetch 失败未拿到 v)时用 manual+时间戳强制唯一值, 同样绕过旧 SW 缓存。 */
+          btn.onclick=function(){
+            try{
+              var b=location.href.split("#")[0].split("?")[0];
+              var tv=TARGET||("manual"+Date.now());
+              location.replace(b+"?_v="+encodeURIComponent(tv)+(location.hash||""));
+            }catch(e){ try{location.reload();}catch(e2){} }
+          };
+          hint.appendChild(btn);
+        }
+      }
+    }
+    function giveUp(){
+      if(DONE||LEAVING)return;
+      DONE=true; clearRetry();
+      if(SWREG&&onCtrl){ try{SWREG.removeEventListener("controllerchange",onCtrl);}catch(e){} }
+      unlock();                                      /* 解锁 + 文案 + 可点刷新, 杜绝永久假死 */
+    }
     (window.__GT_VER?window.__GT_VER():fetch("ver.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();})).then(function(j){
       var v=j&&j.v?String(j.v):"";if(j&&j.data_v)window.__GT_DATA_VER=String(j.data_v);
-      if(!v)return;
+      if(!v){giveUp();return;}
       if(v===MY){
+        /* 复核9-3: 落地后抹掉 URL 里的 ?_v —— 否则地址栏/历史/分享链接都带这个参数,
+           而 sw.js 对带 _v 的请求直连回源, 用户下次用书签/微信复访/店家分享的链接打开时
+           每次都下 106KB index.html, 秒开优势在这个 URL 上永久失效且不自愈。
+           MY===v 说明已在正确新页, 用 replaceState 无痕抹掉即可(不动 hash/其它参数)。 */
+        try{
+          if(/[?&]_v=/.test(location.search)){
+            var href=location.href, hash="", main=href, hi=href.indexOf("#");
+            if(hi>=0){ hash=href.slice(hi); main=href.slice(0,hi); }  /* 先分离 hash, 防被 [^&]* 吞掉 */
+            var clean=main.replace(/([?&])_v=[^&]*&?/g,function(m,sep){
+              return sep==="?" ? "?" : "";
+            }).replace(/[?&]$/,"")+hash;
+            history.replaceState(history.state,"",clean);
+          }
+        }catch(e){}
         try{sessionStorage.removeItem("gt_vn");}catch(e){}
         try{localStorage.setItem("gt_ver",v);}catch(e){}
         return;
       }
       var n=0; try{n=sessionStorage.getItem("gt_vn")|0;}catch(e){}
-      if(n>=3)return;                                /* 本会话最多追3次, 防循环 */
+      if(n>=3){ giveUp(); return; }                  /* 本会话最多追3次, 用尽则解锁给出口(改复核8) */
       try{sessionStorage.setItem("gt_vn",String(n+1));}catch(e){}
-      /* 改159: 红框加载提示两态 —— 检测到新版本时切换为「发现新版本，正在加载更新」并锁定不隐藏 */
-      try{ window.__GT_UPDATING=true; var _hl=document.getElementById("gtLoadHintTxt"); if(_hl)_hl.textContent="发现新版本，正在加载数据，请勿刷新页面……"; }catch(e){}
-      var go=function(){
-        setTimeout(function(){
-          /* 改163: 刷新时给 URL 拼 ?_v=<新版本号> —— 否则浏览器会用缓存里的旧 HTML,
-             版本校验发现不一致 → 再次刷新 → 最多追 3 次后放弃, 顾客就一直看到旧内容 */
-          try{
-            var base=location.href.split("#")[0].split("?")[0];
-            location.replace(base+"?_v="+encodeURIComponent(v)+(location.hash||""));
-          }
-          catch(e){try{location.reload();}catch(e2){}}
-        },380);
-      };
-      if(n===0){go();}else{setTimeout(go,45000);}
-    }).catch(function(){});
-  }catch(e){}
+      try{sessionStorage.setItem("gt_newver","1");}catch(e){}
+      TARGET=v;
+      /* 复核9-bugfix: 原文案用 getElementById("gtLoadHintTxt"), 但 HTML 里真实 ID 是 gtHintTxt
+         (见 1003 行 <span id="gtHintTxt">), 一直取不到元素 —— 「发现新版本」文案从未生效。改回正确 ID。 */
+      try{ window.__GT_UPDATING=true; var _hl=document.getElementById("gtHintTxt"); if(_hl)_hl.textContent="发现新版本，正在加载数据，请勿刷新页面……"; }catch(e){}
+      /* 改2026-11-23复核8-② + 复核9-追问1: 监听 controllerchange, 新 SW claim 完成立即跳。
+         ★追问1确认: 此监听只在 v!==MY 分支注册(上方 v===MY 已 return), 新客首访不会误触发白跳。 */
+      if("serviceWorker" in navigator){
+        SWREG=navigator.serviceWorker;
+        onCtrl=function(){ go(); };
+        SWREG.addEventListener("controllerchange",onCtrl);
+      }
+      /* 复核9-2: 不再无条件 380ms 盲跳。原盲跳时新 SW 多半未 claim, ?_v 被旧 SW 归一成 /index.html
+         返回旧页 —— 白闪一次后才收敛。改为先看 reg.installing||reg.waiting 判断有无待接管 SW:
+           有 pending -> 不立即跳, 等 controllerchange(已注册)接管后跳; 常见发版路径 = 1 次跳转 0 次闪烁;
+           无 pending -> 新 SW 已接管或无 SW, 立即 go();
+         getRegistration 失败/超时 -> 立即 go() 兜底, 绝不阻塞更新; 总超时 6.5s giveUp() 解锁给出口。 */
+      (function(){
+        try{
+          navigator.serviceWorker.getRegistration().then(function(reg){
+            if(DONE||LEAVING)return;
+            if(!(reg&&(reg.installing||reg.waiting))) go();   /* 无 pending SW, 立即跳 */
+            /* 有 pending SW: 交给 controllerchange; 下方 RETRY 6.5s 兜底 */
+          })['catch'](function(){ go(); });
+        }catch(e){ go(); }
+      })();
+      RETRY=setInterval(function(){
+        if(DONE||LEAVING){ clearRetry(); return; }
+        if(Date.now()-T0>6500){ giveUp(); return; }
+        go();   /* 1.5s 兜底: 防 controllerchange 因故未触发时仍可跳 */
+      },1500);
+    }).catch(function(){ giveUp(); });
+  }catch(e){ try{ window.__GT_UPDATING=false; }catch(e2){} }
 })();
 /* 改157f-end */
 </script>
@@ -3618,20 +3879,18 @@ var gtProg={total:0,done:0,data:false,tb:false};
   setTimeout(tick,200);
 })();
 </script>
-<!-- 版本自动刷新: GitHub Pages 对 index.html 有 max-age=600 缓存, 老顾客可能看到旧页; 每次加载拉取 ver.json(no-store), 版本变化则自动刷新一次(带防循环保护) -->
+<!-- 改2026-11-22复核6: 版本记账段(不再刷新)。原先这里有第二套刷新逻辑, 与 gt-autorefresh 抢跑:
+     两套同 tick 都拉 ver.json 拿到新 v, 本段同步 postMessage(clear)+reload, 而 clear 是异步消息,
+     清完=1次 / 没清完=旧页再经 gt-autorefresh 补跳=2次, 不可预测; 且 clear 会连带清掉 data.js 的 SW 缓存
+     (CACHE 已由 v 派生、activate 本就删旧缓存, 纯属多余, 发版后老客多下一次 data.js 47KB)。
+     现在刷新统一收敛到唯一路径 #gt-autorefresh(比对 MY vs v -> 380ms 后 ?_v 直连 -> 新页 MY==v 停, 固定 1 次)。
+     本段只保留 localStorage.gt_ver 记账, 供外部查看当前生效版本; 不再 reload / clear / 设 gt_newver。 -->
 <script>
 (function(){
   try{
-    var K="gt_ver", RK="gt_ver_reloaded";
+    var K="gt_ver";
     (window.__GT_VER?window.__GT_VER():fetch("ver.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();})).then(function(d){
       var v=d&&d.v; if(!v) return;
-      var last=null; try{last=localStorage.getItem(K);}catch(e){}
-      if(last && last!==v && !sessionStorage.getItem(RK)){
-        try{sessionStorage.setItem(RK,"1");}catch(e){}
-        try{sessionStorage.setItem("gt_newver","1");}catch(e){}
-        try{ if(navigator.serviceWorker&&navigator.serviceWorker.controller){ navigator.serviceWorker.controller.postMessage({type:"clear"}); } }catch(e){}
-        location.reload(true); return;
-      }
       try{localStorage.setItem(K,v);}catch(e){}
     }).catch(function(){});
   }catch(e){}
