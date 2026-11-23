@@ -3,12 +3,30 @@ name: sync-and-deploy
 on:
   schedule:
     - cron: '0 * * * *'   # 每小时整点(UTC, 与北京时间整点一致) - 安全兜底重建
-  workflow_dispatch: {}    # 支持手动触发
+  workflow_dispatch:       # 支持手动触发; dry_run=true 只跑构建门禁不发布(演练, 见复核19/20)
+    inputs:
+      # 复核20: 必须是 boolean 不能是 choice。choice 拿到的是字符串 'false', 在表达式里为真值,
+      # 一旦守卫写成 !inputs.dry_run 会把正式发布当成演练跳过 —— 且这种 bug 在演练里永远发现不了。
+      # boolean 下: dispatch=true→true / dispatch=false→false / push·cron 未传→null(假值), 统一用 !inputs.dry_run。
+      dry_run:
+        description: '演练模式: true=只跑 sync_all→split→check 门禁并记 summary, 跳过封面回写/上传/部署/基线; false=正式发布'
+        required: false
+        default: false
+        type: boolean
   push:
     branches: [main]
     paths:                # 命中任一即立即构建发布
       - 'data/**'         # AirScript 云端脚本推新数据
       - 'covers/**'       # 手工/脚本换封面(manifest+图片)
+      # 复核12: 补丁分批 commit 只改这些文件时, 旧 paths 不触发构建 -> 店主看到"推完线上没变"反复确认。
+      # 加入后每批推送立即构建, 无需再手动 dispatch。ver.json 的 v 由人手动 bump, cron 不改。
+      - 'index.html'
+      - 'sw.js'
+      - 'sync_all.py'
+      - 'ver.json'
+      - 'split_details.py'
+      - 'check_details_shards.py'
+      - 'deploy.yml'
                           # 注: 构建内 autocover 的 bot commit 用 GITHUB_TOKEN 推送, 不会再触发本 workflow
 
 permissions:
@@ -22,13 +40,36 @@ concurrency:
 
 jobs:
   build-deploy:
+    # 复核12: workflow_dispatch 可在任意分支点按, 而 Pages 是"发布 artifact 不区分分支" -> 
+    # feature 分支 dispatch 会用该分支产物覆盖线上。job 层守卫: 只有 main 才允许发布。
+    # cron(schedule) 在默认分支跑、push 已限定 main, 均不受影响。
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2   # 复核9: git 判据改用 before..sha 后不再强依赖 HEAD~1; 保留 depth=2 作补 fetch 打底, 无害
+                           # (唯一用到 git 判据的 checkout 就是这一个; Build step 内还会按 GT_BEFORE 补 fetch 多 commit 场景)
 
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      # 复核10: idx_v 门禁 C 支的本地基线。key 按本次 v 派生(md5[:12], 避开时间戳里的 :/+ 等字符),
+      # 本次 v 尚未发布 -> 精确 key 必 miss -> 走 restore-keys 前缀拿「上次成功发布」写入的基线。
+      - name: Derive idx baseline cache key from v
+        id: idxkey
+        run: echo "vhash=$(python3 -c 'import json,hashlib; print(hashlib.md5(str(json.load(open("ver.json"))["v"]).encode()).hexdigest()[:12])')" >> "$GITHUB_OUTPUT"
+
+      - name: Restore last successful idx baseline
+        uses: actions/cache/restore@v4
+        with:
+          path: .gt_idxbase.json
+          key: gt-idxbase-${{ steps.idxkey.outputs.vhash }}
+          # 复核11: 本 workflow 只在 main(push)/默认分支(cron,dispatch) 跑, 基线均由 main 产生;
+          # actions/cache 按分支隔离, 默认分支的 cache 对本 workflow 全部触发方式可见, 前缀必命中。
+          # 精确 key 本次 v 未发布必 miss -> 靠此前缀取「上次成功发布」的基线。
+          restore-keys: gt-idxbase-
 
       # 留边版封面(无竖图时把方图补虚化边到 3:4)依赖 Pillow
       - name: Install Pillow for cover padding
@@ -68,7 +109,9 @@ jobs:
         run: python3 autocover.py
 
       # 有新封面则提交回仓库(只动 covers/**, 不会再触发本 workflow)
+      # 复核19: dry_run 必须跳过 —— 否则演练会真的 git push 回仓库、触发一次新部署, 违背"不改生产"。
       - name: Commit auto-fetched covers
+        if: ${{ !inputs.dry_run }}
         run: |
           git config user.name "autocover-bot"
           git config user.email "autocover-bot@users.noreply.github.com"
@@ -82,9 +125,30 @@ jobs:
           fi
 
       - name: Build site from latest data
-        run: python3 sync_all.py
+        # 复核9-③: git 降级判据用 github.event.before..github.sha (不用 HEAD~1)。
+        # 多 commit push 时 before 可能不在浅克隆(fetch-depth:2)里, 补 fetch 一份供 diff;
+        # cron/dispatch 时 before 为空 -> 跳过 fetch, Python 侧判据直接放行+告警。
+        env:
+          GT_BEFORE: ${{ github.event.before }}
+          GT_SHA: ${{ github.sha }}
+        run: |
+          if [ -n "${GT_BEFORE:-}" ]; then
+            git fetch --no-tags origin "${GT_BEFORE}" --depth=1 2>/dev/null \
+              || git fetch --no-tags origin "${GT_BEFORE}" 2>/dev/null || true
+          fi
+          python3 sync_all.py
 
+      # 改2026-11-22: 详情节流 —— 点开一款只取 1 片(均 6.4KB gz / 最大 22.5KB), 不再整包 344KB
+      - name: Split game details into letter buckets
+        run: python3 split_details.py
+      # 改2026-11-22复核5: 分片门禁(桶号一致性硬断言), 任一不过 -> job 失败 -> 不发布
+      - name: Verify detail shards (bucket consistency gate)
+        run: python3 check_details_shards.py
+
+      # 复核12: 基线 Prepare/Save 已挪到 deploy-pages 之后 —— 只有真正发布成功才推进基线,
+      # 语义保持"线上内容指纹"而非"构建产物指纹"。原位置(发布前)会用 success() 把未上线的指纹写进基线。
       - uses: actions/upload-pages-artifact@v3
+        if: ${{ !inputs.dry_run }}   # 复核19: 演练不上传产物
         with:
           path: site
 
@@ -94,4 +158,72 @@ jobs:
       #   build / sync_all / autocover 等其余 step 真失败仍照常让 job 失败、照常发邮件。
       #   失败只取消当次 Pages 发布，不回滚不降级线上；下个整点 cron / 下次 push / 手动 dispatch 会重试，Pages 恢复后自动补上。
       - uses: actions/deploy-pages@v4
+        if: ${{ !inputs.dry_run }}   # 复核19: 演练不发布
+        id: deploy
         continue-on-error: true
+
+      # 复核12: 基线只在「deploy-pages 真正成功」时推进。
+      # ★不能用 success(): deploy-pages 有 continue-on-error, 发布失败时 job 仍为 success,
+      #   success() 会把「构建成功但没上线」的指纹写进基线 -> 语义从"线上内容"退化为"构建产物",
+      #   下次 C 支拿这个假基线比对, 会把本该拦的情况放行。改用 steps.deploy.outcome == 'success':
+      #   仅当发布真成功才写; 发布失败(超时/抽风)沿用旧基线, 下个 cron 重试后再推进。
+      # 复核14: 原名 "from published ver.json" 会误以为回拉线上(CDN 滞后 → 基线落后一版 → cron 误拒)。
+      # 实际读的是本地 site/ver.json(sync_all.py 刚写入本次产物指纹), 从不回拉。改名消除歧义, 判据/行为不变。
+      - name: Prepare idx baseline from this build's site/ver.json
+        # 复核19: dry_run 跳过基线准备(演练不发布, 不该推进任何基线)
+        if: ${{ !inputs.dry_run && steps.deploy.outcome == 'success' }}
+        run: |
+          python3 - <<'PY'
+          import json
+          d = json.load(open('site/ver.json', encoding='utf-8'))
+          base = {'v': d.get('v',''), 'idx_v': d.get('idx_v',''), 'sw_v': d.get('sw_v','')}
+          json.dump(base, open('.gt_idxbase.json','w'), ensure_ascii=False)
+          print('idx baseline prepared: v=%s idx_v=%s sw_v=%s' % (base['v'], base['idx_v'], base['sw_v']))
+          PY
+      # 复核11: continue-on-error —— cache/save 同 key 已存在返回 409 会标红 step,
+      #   但此刻发布已成功, 不因缓存 409 误报失败邮件。
+      - name: Save idx baseline to cache (only after successful deploy)
+        if: ${{ !inputs.dry_run && steps.deploy.outcome == 'success' }}
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: .gt_idxbase.json
+          key: gt-idxbase-${{ steps.idxkey.outputs.vhash }}
+
+      # ★ 复核26（店主拍板：保留 continue-on-error，只补可见性）: 发布结论「机器判据行」。
+      #   deploy-pages 失败时 job 仍绿，而门禁 Summary 只证明「放行」、不证明「上线」——
+      #   T2 那张漂亮截图可能被误记成已上线。故必须有一行独立的 deploy outcome。
+      #   用唯一前缀 GT_PUBLISH 放在末尾固定区块首行：grep -m1 '^GT_PUBLISH ' 一行即可判，
+      #   不受 _summary_write 的 14 行上限截断，也不怕中间插进别的 summary 块。
+      #   ★ 不做 prepend/重写：$GITHUB_STEP_SUMMARY 是各 step 追加写的
+      #     (sync_all.py 与 check_details_shards.py 都是 open(...,"a"))，且 outcome 只有 deploy 跑完才知道，
+      #     时间上必然排在 Build 之后 —— 物理「第一行」做不到，唯一前缀比行号更稳。
+      - name: Record deploy outcome (machine-readable, always)
+        if: ${{ always() }}
+        env:
+          GT_DEPLOY_OUTCOME: ${{ steps.deploy.outcome }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          p = os.environ.get("GITHUB_STEP_SUMMARY", "").strip()
+          if not p:
+              print("GITHUB_STEP_SUMMARY unset, skip"); raise SystemExit(0)
+          try:
+              d = json.load(open("site/ver.json", encoding="utf-8"))
+          except Exception:
+              d = {}
+          # ★ 第 32 轮(店主要求): marker 必须能唯一标识「本次上线」。
+          #   原行虽带 v, 但验收脚本只 grep 'deploy=success' —— 第 1 批的绿标会被拿来判第 2 批(串批),
+          #   「绿了」就等于「上线了」, 双条件其实是空的。补 run_id(GitHub Actions 默认环境变量,
+          #   无需在 env 块另传): 验收脚本须同时匹配本次 v + 本次 run_id, 只判 deploy=success 一律不算过。
+          line = "GT_PUBLISH deploy=%s idx_v=%s sw_v=%s v=%s run_id=%s" % (
+              os.environ.get("GT_DEPLOY_OUTCOME", "unknown"),
+              d.get("idx_v", "-"), d.get("sw_v", "-"), d.get("v", "-"),
+              os.environ.get("GITHUB_RUN_ID", "-"))
+          try:
+              with open(p, "a", encoding="utf-8") as f:
+                  f.write("### 发布结论（独立上线判据，复核26）\n\n```\n" + line + "\n```\n\n")
+              print(line)
+          except Exception as e:
+              print("!! job summary 写入失败（已忽略，不影响发布）: %s" % e)
+          PY
