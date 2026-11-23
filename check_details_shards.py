@@ -137,8 +137,9 @@ def main():
         #   covers/manifest_<tab>.json（index.html:2152），写死列表会漏掉新增 tab 清单。
         found = sorted(glob.glob(os.path.join(covers_dir, "manifest*.json")))
         names = [os.path.basename(x) for x in found]
+        CORE_MANIFESTS = ("manifest.json", "manifest_ps.json")
         # ① 核心两份仍必须存在（站点运行基线；缺一 = 普通失败 exit 1，不与 480 的 exit 4 混淆）
-        for core in ("manifest.json", "manifest_ps.json"):
+        for core in CORE_MANIFESTS:
             if core not in names:
                 die("site/ 已生成但缺 covers/%s（封面清单必须进站，否则此断言形同虚设）" % core)
         # ② 覆盖率断言（第 31 轮新增）：打印扫描文件数 + 完整清单，N 必须 >= 预期值。
@@ -153,17 +154,33 @@ def main():
                 "CI 产物可能未完整生成，断言形同虚设" % (len(found), expected, names))
         # ③ 逐份全扫：每一份扫到的清单都做 480 检查 + 打印三元数（不再只查写死两份）
         for fp in found:
-            rel = "covers/" + os.path.basename(fp)
-            mp = json.load(open(fp, encoding="utf-8"))
+            base = os.path.basename(fp)
+            rel = "covers/" + base
+            try:
+                mp = json.load(open(fp, encoding="utf-8"))
+            except Exception as ex:
+                die("空清单门禁: %s 不是合法 JSON（解析失败: %s）—— 文件损坏不得报 PASS" % (rel, ex))
+            # ★ 第 35 轮实测订正（CI run 45160744208 failure）：原「每份 manifest 必须 URL 数 > 0」
+            #   误杀了 2026-11-02 改162 留下的合法空 tab 占位 manifest_mem.json / manifest_ns.json
+            #   （两个 tab 业务上就 0 条封面，文件为 {}）。前端 gtLoadCovers(tab) 动态拉
+            #   covers/manifest_<tab>.json 且用 Object.keys(m).length 判空 —— 空是合法业务状态。
+            #   空清单门禁原意是防「文件在、内容 0 条 URL 却报 PASS」的静默失败，故只放宽这一态：
+            #     ① 每份必须是合法 JSON 对象(dict)：非对象 / 解析失败一律拒；
+            #     ② 核心两份必须 URL 数 > 0：被清空 = 真故障，仍 exit 1；
+            #     ③ tab 清单仅允许「空 dict」{}：有键却 0 条 URL（损坏 / 被清空）仍 exit 1。
+            #   合法空 tab 清单仍计入覆盖率扫描数、仍逐份打印、仍做 480 检查，断言覆盖面不缩小。
+            if not isinstance(mp, dict):
+                die("空清单门禁: %s 不是合法 JSON 对象（tab 清单只允许 {} 或含 URL 的映射）—— "
+                    "文件损坏或被写成非对象不得报 PASS" % rel)
             urls = []
             _walk_urls(mp, urls)
-            # ★ 第 32 轮(店主要求): 空清单检查 —— 只判 N>=预期 / 核心两份存在 挡不住
-            #   「文件在、内容 0 条 URL」: 那样等于一份封面都没扫到却报 PASS(静默失败)。
-            #   每份扫到的 manifest 必须 URL 数 > 0; 固定文案前缀「空清单门禁」+ exit 1
-            #   (与 480 宽度门禁的 exit 4、覆盖率门禁的 exit 1 各自可区分)。
-            if not urls:
+            is_core = base in CORE_MANIFESTS
+            empty_ok = (not is_core) and len(mp) == 0
+            if not urls and not empty_ok:
                 die("空清单门禁: %s 扫到 0 条 URL（文件存在但内容为空 / 值全非字符串）—— "
                     "封面清单不得为空，否则断言形同虚设" % rel)
+            if empty_ok:
+                print("门禁4 合法空 tab 清单[%s]: {} 占位，计入覆盖率/480 检查，不判失败" % rel)
             bad = [u for u in urls if re.search(r"[?&](w|width)=480\b|480x672", u)]
             if bad:
                 die("480 宽度门禁: 命中 %d 条（禁止进列表位/预取清单）｜文件=%s ｜样例=%s"
