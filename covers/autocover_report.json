@@ -1,11 +1,17 @@
 {
- "time": "2026-11-26T12:01:35",
+ "time": "2026-11-26T13:50:14",
  "added": [],
- "pending": [],
+ "pending": [
+  {
+   "name": "我独自升级 起立觉醒",
+   "reason": "匹配有歧义或无命中",
+   "top": ""
+  }
+ ],
  "errors": [],
  "stats": {
-  "total": 1283,
+  "total": 1284,
   "covered": 1362,
-  "pending_open": 0
+  "pending_open": 1
  }
 }
