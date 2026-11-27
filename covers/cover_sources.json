@@ -9707,6 +9707,15 @@
   "store": "This War of Mine: Complete Edition (PS Store HK)",
   "time": "2026-09-20T04:25:31"
  },
+ "进击的巨人3": {
+  "file": "covers/ac3862eb091828p34.jpg",
+  "source": "store_zh_hk",
+  "role": "M-pad",
+  "store": "进击的巨人 (日文版)",
+  "time": "2026-11-27T15:33:59",
+  "note": "autocover 自动抓取 · 港服中文页（方图 504x504, 留边版(前端会左右各裁 63px)） · 版本: 标准版(商品名未标注,取标准版)",
+  "en": "Attack on Titan 3"
+ },
  "迪士尼 传奇米老鼠 米奇（重制版）": {
   "file": "covers/rcda227ddcf8a2.jpg",
   "note": "店主审核 B41 · 换成港服页面图 · 竖图 504x756 上下各裁 5.6%, 裁切带内无文字, 原图直上",

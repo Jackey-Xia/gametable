@@ -1,11 +1,21 @@
 {
- "time": "2026-11-27T14:35:37",
- "added": [],
+ "time": "2026-11-27T15:33:59",
+ "added": [
+  {
+   "name": "进击的巨人3",
+   "product": "JP0106-CUSA03497_00-ASIAPHDDGAME0000",
+   "storeName": "进击的巨人 (日文版)",
+   "score": 0.85,
+   "file": "covers/ac3862eb091828p34.jpg",
+   "role": "M-pad",
+   "bytes": 111403
+  }
+ ],
  "pending": [],
  "errors": [],
  "stats": {
-  "total": 1280,
-  "covered": 1363,
+  "total": 1281,
+  "covered": 1364,
   "pending_open": 0
  }
 }
