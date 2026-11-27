@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1137,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-11-27T10:20:53"
+  "updated": "2026-11-27T02:21:46"
  },
  "locks": {
   "p0001": {
@@ -14945,6 +14945,19 @@
    "store": "雷曼：传奇再叙 (日语, 简体中文, 繁体中文, 英语)",
    "time": "2026-11-22T21:27:16+0800"
   },
+  "p1149": {
+   "cn": [
+    "我独自升级 起立觉醒"
+   ],
+   "en": "Solo Leveling：Arise Overdrive",
+   "file": "covers/rcf52961cd34d0.jpg",
+   "md5": "f52961cd34d060bcfc10cb15b742db80",
+   "note": "港服官方竖版PORTRAIT_BANNER居中满铺504x672; 保留ARISE OVERDRIVE版标; 店主A上线 2026-11-27",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "PS Store HK",
+   "time": "2026-11-27T10:20:53"
+  },
   "p_baki_blood_001": {
    "cn": [
     "范马刃牙：血之竞技场（完整版）"
@@ -14959,19 +14972,6 @@
    "role": "P-fill",
    "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
    "time": "2026-10-13T08:04:16"
-  },
-  "p1149": {
-   "cn": [
-    "我独自升级 起立觉醒"
-   ],
-   "en": "Solo Leveling：Arise Overdrive",
-   "file": "covers/rcf52961cd34d0.jpg",
-   "md5": "f52961cd34d060bcfc10cb15b742db80",
-   "note": "港服官方竖版PORTRAIT_BANNER居中满铺504x672; 保留ARISE OVERDRIVE版标; 店主A上线 2026-11-27",
-   "platform": "PS",
-   "role": "P-fill",
-   "store": "PS Store HK",
-   "time": "2026-11-27T10:20:53"
   }
  }
 }

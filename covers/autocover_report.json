@@ -1,16 +1,11 @@
 {
- "time": "2026-11-27T01:01:23",
+ "time": "2026-11-27T02:21:47",
  "added": [],
- "pending": [
-  {
-   "name": "我独自升级 起立觉醒",
-   "reason": "失败6次, 需人工核对"
-  }
- ],
+ "pending": [],
  "errors": [],
  "stats": {
   "total": 1284,
-  "covered": 1362,
-  "pending_open": 1
+  "covered": 1363,
+  "pending_open": 0
  }
 }
