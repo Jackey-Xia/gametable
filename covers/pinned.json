@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1137,
+  "count": 1138,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-11-27T16:39:47"
+  "updated": "2026-11-28T00:51:38"
  },
  "locks": {
   "p0001": {
@@ -14972,6 +14972,19 @@
    "role": "P-fill",
    "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
    "time": "2026-10-13T08:04:16"
+  },
+  "p1150": {
+   "cn": [
+    "进击的巨人3"
+   ],
+   "en": "Attack on Titan 3",
+   "file": "covers/rcfac710477e96.jpg",
+   "md5": "fac710477e96a1efc82db5ff0e267c9e",
+   "note": "港服官方MASTER方图(1400x1400)完整不裁切+上下模糊延展; 保留Attack on Titan 3红字logo; 店主D上线 新商品 2026-11-28",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "PS Store HK",
+   "time": "2026-11-28T00:51:38"
   }
  }
 }
