@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "count": 1138,
+  "count": 1140,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-11-28T09:35:19"
+  "updated": "2026-11-28T17:46:58"
  },
  "locks": {
   "p0001": {
@@ -14985,6 +14985,32 @@
    "role": "P-fill",
    "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
    "time": "2026-10-13T08:04:16"
+  },
+  "p1151": {
+   "cn": [
+    "女王魔域"
+   ],
+   "en": "Queen's Domain",
+   "file": "covers/rceb1a6faf1654.jpg",
+   "md5": "eb1a6faf16546d1f96b1c8b05bdf6158",
+   "note": "港服官方MASTER方图(1400x1400)居中满铺; 完整保留QUEEN'S DOMAIN logo与金边框; 店主A上线 2026-11-28",
+   "platform": "PS",
+   "role": "P-center",
+   "store": "PS Store HK",
+   "time": "2026-11-28T17:46:58"
+  },
+  "p1152": {
+   "cn": [
+    "抱歉，只有我一个男嘉宾"
+   ],
+   "en": "Lucky Me",
+   "file": "covers/rce4d129704ded.jpg",
+   "md5": "e4d129704dedddc63fadb376902b97d2",
+   "note": "港服官方PORTRAIT_BANNER竖版(1400x2100)完整不裁+左右模糊延展; 保人物脸与三行标题; 店主D上线 2026-11-28",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "PS Store HK",
+   "time": "2026-11-28T17:46:58"
   }
  }
 }
