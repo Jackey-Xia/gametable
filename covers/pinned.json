@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1142,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-11-29T01:32:15"
+  "updated": "2026-11-28T17:33:32"
  },
  "locks": {
   "p0001": {
@@ -15010,6 +15010,19 @@
    "store": "PS Store HK",
    "time": "2026-11-28T23:35:26"
   },
+  "p1154": {
+   "cn": [
+    "方舟：生存飞升"
+   ],
+   "en": "ARK：Survival Ascended",
+   "file": "covers/rc0b2e4c003440.jpg",
+   "md5": "0b2e4c003440a85074b05cf48c70a45d",
+   "note": "港服官方MASTER方图(1400x1400)居中裁3:4满铺; 机械霸王龙+骑手持枪角色+ARK三角logo+SURVIVAL ASCENDED白字完整(左侧弓箭手骑红龙被裁); 店主E上线 2026-11-29",
+   "platform": "PS",
+   "role": "P-fill",
+   "store": "PS Store HK",
+   "time": "2026-11-29T01:32:15"
+  },
   "p_baki_blood_001": {
    "cn": [
     "范马刃牙：血之竞技场（完整版）"
@@ -15024,19 +15037,6 @@
    "role": "P-fill",
    "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
    "time": "2026-10-13T08:04:16"
-  },
-  "p1154": {
-   "cn": [
-    "方舟：生存飞升"
-   ],
-   "en": "ARK：Survival Ascended",
-   "file": "covers/rc0b2e4c003440.jpg",
-   "md5": "0b2e4c003440a85074b05cf48c70a45d",
-   "note": "港服官方MASTER方图(1400x1400)居中裁3:4满铺; 机械霸王龙+骑手持枪角色+ARK三角logo+SURVIVAL ASCENDED白字完整(左侧弓箭手骑红龙被裁); 店主E上线 2026-11-29",
-   "platform": "PS",
-   "role": "P-fill",
-   "store": "PS Store HK",
-   "time": "2026-11-29T01:32:15"
   }
  }
 }
