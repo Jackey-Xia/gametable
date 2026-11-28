@@ -1,11 +1,30 @@
 {
- "time": "2026-11-28T08:02:07",
- "added": [],
+ "time": "2026-11-28T09:07:34",
+ "added": [
+  {
+   "name": "抱歉，只有我一个男嘉宾",
+   "product": "HB0700-PPSA40679_00-0535065184512103",
+   "storeName": "抱歉，只有我一个男嘉宾 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/ac122e907719c1p34.jpg",
+   "role": "P-pad",
+   "bytes": 85105
+  },
+  {
+   "name": "女王魔域",
+   "product": "EP7107-PPSA38239_00-0207824653085036",
+   "storeName": "Queen's Domain (日语, 简体中文, 英语)",
+   "score": 0.85,
+   "file": "covers/ac51de5da4fc81p34.jpg",
+   "role": "M-pad",
+   "bytes": 128162
+  }
+ ],
  "pending": [],
  "errors": [],
  "stats": {
-  "total": 1281,
-  "covered": 1364,
+  "total": 1283,
+  "covered": 1366,
   "pending_open": 0
  }
 }

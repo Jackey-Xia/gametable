@@ -3106,6 +3106,15 @@
   "store": "UP4581-PPSA02304_00-OLLIOLLIWORLDRAD (zh-Hans-HK)",
   "time": "2026-09-18T14:13:18"
  },
+ "女王魔域": {
+  "file": "covers/ac51de5da4fc81p34.jpg",
+  "source": "store_zh_hk",
+  "role": "M-pad",
+  "store": "Queen's Domain (日语, 简体中文, 英语)",
+  "time": "2026-11-28T09:07:34",
+  "note": "autocover 自动抓取 · 港服中文页（方图 504x504, 留边版(前端会左右各裁 63px)） · 版本: 标准版(商品名未标注,取标准版)",
+  "en": "Queen's Domain"
+ },
  "女神异闻录3：Reload+后日谈DLC/P3R": {
   "en": "Persona 5 Reload+Episode Aegis（Complete Edition）",
   "file": "covers/rc3e981042ffd7.jpg",
@@ -4883,6 +4892,15 @@
   "source": "manual",
   "store": "",
   "time": "2026-09-18T21:52:24"
+ },
+ "抱歉，只有我一个男嘉宾": {
+  "file": "covers/ac122e907719c1p34.jpg",
+  "source": "store_zh_hk",
+  "role": "P-pad",
+  "store": "抱歉，只有我一个男嘉宾 (泰语, 日语, 韩语, 简体中文, 繁体中文, 英语)",
+  "time": "2026-11-28T09:07:33",
+  "note": "autocover 自动抓取 · 港服中文页（竖图 504x756 上下各裁 5.6%, 未识别到文字, 保守留边） · 版本: 标准版(商品名未标注,取标准版)",
+  "en": "Lucky Me"
  },
  "拆箱": {
   "file": "covers/717df8a83155_s.jpg",
