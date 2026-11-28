@@ -2,7 +2,7 @@
  "_meta": {
   "count": 1141,
   "rule": "人工确认过的封面永久锁死: 改名可重挂, 图片绝不删除",
-  "updated": "2026-11-28T23:35:26"
+  "updated": "2026-11-28T15:38:19"
  },
  "locks": {
   "p0001": {
@@ -14997,6 +14997,19 @@
    "store": "PS Store HK",
    "time": "2026-11-28T17:46:58"
   },
+  "p1153": {
+   "cn": [
+    "修道院：红衣修女遗迹"
+   ],
+   "en": "Remothered: Red Nun's Legacy",
+   "file": "covers/rc389abc520412.jpg",
+   "md5": "389abc5204126301f21b9fc2182ba583",
+   "note": "港服官方PORTRAIT_BANNER竖版(1400x2100)居中裁3:4满铺; 完整保留红衣修女头饰+REMOTHERED logo+女主; 店主A上线 2026-11-28",
+   "platform": "PS",
+   "role": "P-center",
+   "store": "PS Store HK",
+   "time": "2026-11-28T23:35:26"
+  },
   "p_baki_blood_001": {
    "cn": [
     "范马刃牙：血之竞技场（完整版）"
@@ -15011,19 +15024,6 @@
    "role": "P-fill",
    "store": "007 First Light - 豪华版 (日语, 韩语, 简体中文, 繁体中文, 英语)",
    "time": "2026-10-13T08:04:16"
-  },
-  "p1153": {
-   "cn": [
-    "修道院：红衣修女遗迹"
-   ],
-   "en": "Remothered: Red Nun's Legacy",
-   "file": "covers/rc389abc520412.jpg",
-   "md5": "389abc5204126301f21b9fc2182ba583",
-   "note": "港服官方PORTRAIT_BANNER竖版(1400x2100)居中裁3:4满铺; 完整保留红衣修女头饰+REMOTHERED logo+女主; 店主A上线 2026-11-28",
-   "platform": "PS",
-   "role": "P-center",
-   "store": "PS Store HK",
-   "time": "2026-11-28T23:35:26"
   }
  }
 }
